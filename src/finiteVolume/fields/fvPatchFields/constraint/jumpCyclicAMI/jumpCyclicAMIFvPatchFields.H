@@ -26,8 +26,8 @@ License
 #ifndef jumpCyclicAMIFvPatchFields_H
 #define jumpCyclicAMIFvPatchFields_H
 
-#include "jumpCyclicAMIFvPatchField.H"
-#include "fieldTypes.H"
+#include "./jumpCyclicAMIFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

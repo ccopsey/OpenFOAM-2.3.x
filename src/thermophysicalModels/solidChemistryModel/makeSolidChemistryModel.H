@@ -29,8 +29,8 @@ Description
 #ifndef makeSolidChemistryModel_H
 #define makeSolidChemistryModel_H
 
-#include "addToRunTimeSelectionTable.H"
-#include "solidChemistryModel.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./solidChemistryModel/solidChemistryModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

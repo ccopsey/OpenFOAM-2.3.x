@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldMinMax.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "Time.H"
+#include "./fieldMinMax.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

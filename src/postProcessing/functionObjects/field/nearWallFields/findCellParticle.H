@@ -35,8 +35,8 @@ SourceFiles
 #ifndef findCellParticle_H
 #define findCellParticle_H
 
-#include "particle.H"
-#include "autoPtr.H"
+#include "./particle/particle.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

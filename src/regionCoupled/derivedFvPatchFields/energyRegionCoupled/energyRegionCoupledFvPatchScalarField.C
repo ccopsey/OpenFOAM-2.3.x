@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "addToRunTimeSelectionTable.H"
-#include "energyRegionCoupledFvPatchScalarField.H"
-#include "Time.H"
-#include "turbulenceModel.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./energyRegionCoupledFvPatchScalarField.H"
+#include "./db/Time/Time.H"
+#include "./turbulenceModel.H"
 
 // * * * * * * * * * * * * * Static Member Data  * * * * * * * * * * * * * * //
 

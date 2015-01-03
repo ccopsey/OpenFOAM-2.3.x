@@ -43,13 +43,13 @@ SourceFiles
 #ifndef MULES_H
 #define MULES_H
 
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
-#include "primitiveFieldsFwd.H"
-#include "geometricOneField.H"
-#include "zero.H"
-#include "zeroField.H"
-#include "UPtrList.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
+#include "./fields/GeometricFields/geometricOneField/geometricOneField.H"
+#include "./primitives/zero/zero.H"
+#include "./fields/Fields/zeroField/zeroField.H"
+#include "./containers/Lists/UPtrList/UPtrList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -173,7 +173,7 @@ void limitSum(SurfaceScalarFieldList& phiPsiCorrs);
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "MULESTemplates.C"
+#   include "./MULESTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

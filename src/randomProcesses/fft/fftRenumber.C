@@ -28,7 +28,7 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fftRenumber.H"
+#include "./fftRenumber.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -104,7 +104,7 @@ void fftRenumberRecurse
 // fftRenumber : fold the n-d data array to get the fft components in
 // the right places.
 
-#include "fftRenumber.H"
+#include "./fftRenumber.H"
 
 void fftRenumber
 (

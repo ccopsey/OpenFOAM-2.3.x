@@ -25,10 +25,10 @@ set(SOURCES
   CaCO3/CaCO3.C
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/thermophysicalModels/specie/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/thermophysicalModels/specie)
 
 add_library(libsolidProperties ${SOURCES})
 set_target_properties(libsolidProperties PROPERTIES PREFIX "")

@@ -58,7 +58,7 @@ SourceFiles
 #ifndef DeardorffDiffStress_H
 #define DeardorffDiffStress_H
 
-#include "GenSGSStress.H"
+#include "./GenSGSStress/GenSGSStress.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

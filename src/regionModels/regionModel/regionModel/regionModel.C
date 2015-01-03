@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "regionModel.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "mappedWallPolyPatch.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./regionModel.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./mappedPatches/mappedPolyPatch/mappedWallPolyPatch.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

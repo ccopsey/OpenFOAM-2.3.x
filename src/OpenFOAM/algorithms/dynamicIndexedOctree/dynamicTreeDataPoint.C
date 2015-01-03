@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dynamicTreeDataPoint.H"
-#include "treeBoundBox.H"
-#include "dynamicIndexedOctree.H"
+#include "./dynamicTreeDataPoint.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./dynamicIndexedOctree.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

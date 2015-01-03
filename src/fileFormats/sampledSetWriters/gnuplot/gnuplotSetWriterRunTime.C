@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "gnuplotSetWriter.H"
-#include "writers.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./gnuplotSetWriter.H"
+#include "./sampledSetWriters/writers.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

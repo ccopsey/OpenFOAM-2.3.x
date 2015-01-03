@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Matrix.H"
+#include "./Matrix.H"
 
 // * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * * //
 
@@ -457,6 +457,6 @@ Form Foam::operator*(const Matrix<Form, Type>& a, const Matrix<Form, Type>& b)
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 
-#include "MatrixIO.C"
+#include "./MatrixIO.C"
 
 // ************************************************************************* //

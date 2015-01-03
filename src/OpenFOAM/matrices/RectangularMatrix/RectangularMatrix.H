@@ -38,7 +38,7 @@ SourceFiles
 #ifndef RectangularMatrix_H
 #define RectangularMatrix_H
 
-#include "Matrix.H"
+#include "./matrices/Matrix/Matrix.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -83,7 +83,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "RectangularMatrixI.H"
+#   include "./RectangularMatrixI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

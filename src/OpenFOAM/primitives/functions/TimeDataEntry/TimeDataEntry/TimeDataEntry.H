@@ -36,8 +36,8 @@ SourceFiles
 #ifndef TimeDataEntry_H
 #define TimeDataEntry_H
 
-#include "DataEntry.H"
-#include "Time.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -143,7 +143,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "TimeDataEntry.C"
+#   include "./TimeDataEntry.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

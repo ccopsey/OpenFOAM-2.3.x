@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "domainDecomposition.H"
-#include "decompositionMethod.H"
-#include "cpuTime.H"
-#include "cellSet.H"
-#include "regionSplit.H"
-#include "Tuple2.H"
-#include "faceSet.H"
+#include "./domainDecomposition.H"
+#include "./decompositionMethod/decompositionMethod.H"
+#include "./cpuTime/cpuTime.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./regionSplit/regionSplit.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./sets/topoSets/faceSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

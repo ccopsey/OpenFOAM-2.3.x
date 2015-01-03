@@ -50,7 +50,7 @@ Description
 #ifndef ReitzDiwakar_H
 #define ReitzDiwakar_H
 
-#include "BreakupModel.H"
+#include "./submodels/BreakupModel/BreakupModel/BreakupModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -140,7 +140,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ReitzDiwakar.C"
+#   include "./ReitzDiwakar.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

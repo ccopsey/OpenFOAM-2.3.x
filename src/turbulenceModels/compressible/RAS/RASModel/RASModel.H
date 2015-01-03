@@ -43,17 +43,17 @@ SourceFiles
 #define compressibleRASModel_H
 
 #include "compressible/turbulenceModel/turbulenceModel.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "fvm.H"
-#include "fvc.H"
-#include "fvMatrices.H"
-#include "fluidThermo.H"
-#include "IOdictionary.H"
-#include "Switch.H"
-#include "bound.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./finiteVolume/fvm/fvm.H"
+#include "./finiteVolume/fvc/fvc.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./fluidThermo/fluidThermo.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./cfdTools/general/bound/bound.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

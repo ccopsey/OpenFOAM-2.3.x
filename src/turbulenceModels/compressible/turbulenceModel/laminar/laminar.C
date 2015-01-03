@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "laminar.H"
-#include "Time.H"
-#include "volFields.H"
-#include "fvcGrad.H"
-#include "fvcDiv.H"
-#include "fvmLaplacian.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./laminar.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./finiteVolume/fvm/fvmLaplacian.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -35,12 +35,12 @@ SourceFiles
 #ifndef writeFuns_H
 #define writeFuns_H
 
-#include "floatScalar.H"
-#include "DynamicList.H"
-#include "volFieldsFwd.H"
-#include "pointFieldsFwd.H"
-#include "vtkMesh.H"
-#include "volPointInterpolation.H"
+#include "./primitives/Scalar/floatScalar/floatScalar.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/GeometricFields/pointFields/pointFieldsFwd.H"
+#include "./vtkMesh.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -170,7 +170,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeFunsTemplates.C"
+#   include "./writeFunsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

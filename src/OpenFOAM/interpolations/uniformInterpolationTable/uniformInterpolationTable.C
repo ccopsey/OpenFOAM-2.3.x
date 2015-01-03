@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "uniformInterpolationTable.H"
-#include "Time.H"
+#include "./uniformInterpolationTable.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * *  Private Member Functions * * * * * * * * * * * * //
 

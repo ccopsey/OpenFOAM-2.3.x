@@ -34,8 +34,8 @@ SourceFiles
 #ifndef thermoParcelInjectionDataIOList_H
 #define thermoParcelInjectionDataIOList_H
 
-#include "IOList.H"
-#include "thermoParcelInjectionData.H"
+#include "./db/IOobjects/IOList/IOList.H"
+#include "./thermoParcelInjectionData.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

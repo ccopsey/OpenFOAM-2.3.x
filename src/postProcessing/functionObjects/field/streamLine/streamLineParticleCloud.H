@@ -35,8 +35,8 @@ SourceFiles
 #ifndef streamLineCloud_H
 #define streamLineCloud_H
 
-#include "Cloud.H"
-#include "streamLineParticle.H"
+#include "./Cloud/Cloud.H"
+#include "./streamLineParticle.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

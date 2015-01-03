@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "WenYu.H"
-#include "phasePair.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./WenYu.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

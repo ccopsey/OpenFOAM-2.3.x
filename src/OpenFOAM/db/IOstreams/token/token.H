@@ -37,16 +37,16 @@ SourceFiles
 #ifndef token_H
 #define token_H
 
-#include "label.H"
-#include "uLabel.H"
-#include "scalar.H"
-#include "word.H"
-#include "InfoProxy.H"
-#include "refCount.H"
-#include "typeInfo.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/ints/uLabel/uLabel.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/strings/word/word.H"
+#include "./db/IOstreams/IOstreams/InfoProxy.H"
+#include "./memory/refCount/refCount.H"
+#include "./db/typeInfo/typeInfo.H"
 
 #define NoHashTableC
-#include "runTimeSelectionTables.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 #include <iostream>
 
@@ -451,8 +451,8 @@ Ostream& operator<<(Ostream&, const token::compound&);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "tokenI.H"
-#include "Istream.H"
+#include "./tokenI.H"
+#include "./db/IOstreams/IOstreams/Istream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

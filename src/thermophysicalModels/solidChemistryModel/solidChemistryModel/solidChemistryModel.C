@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "solidChemistryModel.H"
-#include "reactingMixture.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./solidChemistryModel.H"
+#include "./mixtures/reactingMixture/reactingMixture.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

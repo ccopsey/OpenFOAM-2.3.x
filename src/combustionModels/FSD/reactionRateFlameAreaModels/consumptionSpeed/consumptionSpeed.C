@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "consumptionSpeed.H"
+#include "./consumptionSpeed.H"
 
 /* * * * * * * * * * * * * * * private static data * * * * * * * * * * * * * */
 

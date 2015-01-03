@@ -35,8 +35,8 @@ SourceFiles
 #ifndef polyLineEdge_H
 #define polyLineEdge_H
 
-#include "curvedEdge.H"
-#include "polyLine.H"
+#include "./curvedEdge.H"
+#include "./polyLine.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

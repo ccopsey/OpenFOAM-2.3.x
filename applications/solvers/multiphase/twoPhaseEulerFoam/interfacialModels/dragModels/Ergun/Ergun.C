@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Ergun.H"
-#include "phasePair.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./Ergun.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

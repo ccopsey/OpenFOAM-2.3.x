@@ -36,7 +36,7 @@
         mesh
     );
 
-    #include "compressibleCreatePhi.H"
+    #include "./cfdTools/compressible/compressibleCreatePhi.H"
 
 
     label pRefCell = 0;

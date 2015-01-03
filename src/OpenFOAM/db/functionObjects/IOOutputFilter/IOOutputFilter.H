@@ -41,8 +41,8 @@ SourceFiles
 #ifndef IOOutputFilter_H
 #define IOOutputFilter_H
 
-#include "IOdictionary.H"
-#include "pointFieldFwd.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -148,7 +148,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "IOOutputFilter.C"
+#   include "./IOOutputFilter.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

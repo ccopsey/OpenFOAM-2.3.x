@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMesh.H"
-#include "Time.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "slicedVolFields.H"
-#include "slicedSurfaceFields.H"
-#include "SubField.H"
-#include "cyclicFvPatchFields.H"
-#include "cyclicAMIFvPatchFields.H"
+#include "./fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/volFields/slicedVolFields.H"
+#include "./fields/surfaceFields/slicedSurfaceFields.H"
+#include "./fields/Fields/Field/SubField.H"
+#include "./fields/fvPatchFields/constraint/cyclic/cyclicFvPatchFields.H"
+#include "./fields/fvPatchFields/constraint/cyclicAMI/cyclicAMIFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

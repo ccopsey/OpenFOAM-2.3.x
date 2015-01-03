@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "engineValve.H"
-#include "engineTime.H"
-#include "polyMesh.H"
-#include "interpolateXY.H"
+#include "./engineValve.H"
+#include "./engineTime/engineTime.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./interpolations/interpolateXY/interpolateXY.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

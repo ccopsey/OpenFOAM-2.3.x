@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cuttingPlane.H"
-#include "primitiveMesh.H"
-#include "linePointRef.H"
-#include "meshTools.H"
+#include "./cuttingPlane.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
+#include "./meshes/primitiveShapes/line/linePointRef.H"
+#include "./meshTools/meshTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

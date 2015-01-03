@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PDRkEpsilon.H"
-#include "PDRDragModel.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./PDRkEpsilon.H"
+#include "./PDRModels/dragModels/PDRDragModel/PDRDragModel.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibility/wallFunctions/backwardsCompatibilityWallFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

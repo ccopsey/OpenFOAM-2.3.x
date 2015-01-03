@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mappedFlowRateFvPatchVectorField.H"
-#include "volFields.H"
-#include "addToRunTimeSelectionTable.H"
-#include "fvPatchFieldMapper.H"
-#include "mappedPatchBase.H"
-#include "surfaceFields.H"
+#include "./mappedFlowRateFvPatchVectorField.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

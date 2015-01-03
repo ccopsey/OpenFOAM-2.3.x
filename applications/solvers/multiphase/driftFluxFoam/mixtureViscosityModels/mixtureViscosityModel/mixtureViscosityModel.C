@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mixtureViscosityModel.H"
-#include "volFields.H"
+#include "./mixtureViscosityModel.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

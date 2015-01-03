@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "tetrahedron.H"
-#include "triPointRef.H"
-#include "scalarField.H"
+#include "./tetrahedron.H"
+#include "./meshes/primitiveShapes/triangle/triPointRef.H"
+#include "./fields/Fields/scalarField/scalarField.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

@@ -61,8 +61,8 @@ SourceFiles
 #ifndef removeRegisteredObject_H
 #define removeRegisteredObject_H
 
-#include "wordList.H"
-#include "runTimeSelectionTables.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

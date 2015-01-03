@@ -41,7 +41,7 @@ SourceFiles
 #ifndef mapDistributePolyMesh_H
 #define mapDistributePolyMesh_H
 
-#include "mapDistribute.H"
+#include "./mapDistribute.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,18 +23,18 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Pstream.H"
-#include "functionObjectList.H"
-#include "streamLine.H"
-#include "fvMesh.H"
-#include "streamLineParticleCloud.H"
-#include "ReadFields.H"
-#include "meshSearch.H"
-#include "sampledSet.H"
-#include "globalIndex.H"
-#include "mapDistribute.H"
-#include "interpolationCellPoint.H"
-#include "PatchTools.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./db/functionObjects/functionObjectList/functionObjectList.H"
+#include "./streamLine.H"
+#include "./fvMesh/fvMesh.H"
+#include "./streamLineParticleCloud.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./meshSearch/meshSearch.H"
+#include "./sampledSet/sampledSet/sampledSet.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./interpolation/interpolation/interpolationCellPoint/interpolationCellPoint.H"
+#include "./meshes/primitiveMesh/PatchTools/PatchTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef ulong_H
 #define ulong_H
 
-#include "word.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

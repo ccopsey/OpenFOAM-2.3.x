@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "data.H"
-#include "Time.H"
-#include "solverPerformance.H"
+#include "./data.H"
+#include "./db/Time/Time.H"
+#include "./matrices/_LduMatrix/LduMatrix/solverPerformance.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

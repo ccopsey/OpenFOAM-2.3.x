@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "calcFvcDiv.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "calcFvcDiv.H"
+#include "./calcFvcDiv.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./calcFvcDiv.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

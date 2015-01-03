@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "symmTransformField.H"
-#include "FieldM.H"
+#include "./symmTransformField.H"
+#include "./fields/Fields/Field/FieldM.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

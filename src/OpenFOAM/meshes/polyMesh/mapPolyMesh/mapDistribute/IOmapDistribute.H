@@ -37,8 +37,8 @@ SourceFiles
 #ifndef IOmapDistribute_H
 #define IOmapDistribute_H
 
-#include "mapDistribute.H"
-#include "regIOobject.H"
+#include "./mapDistribute.H"
+#include "./db/regIOobject/regIOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

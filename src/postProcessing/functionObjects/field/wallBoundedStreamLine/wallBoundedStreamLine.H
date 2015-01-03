@@ -103,16 +103,16 @@ SourceFiles
 #ifndef wallBoundedStreamLine_H
 #define wallBoundedStreamLine_H
 
-#include "volFieldsFwd.H"
-#include "pointFieldFwd.H"
-#include "Switch.H"
-#include "DynamicList.H"
-#include "scalarList.H"
-#include "vectorList.H"
-#include "polyMesh.H"
-#include "writer.H"
-#include "indirectPrimitivePatch.H"
-#include "tetIndices.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./primitives/Scalar/lists/scalarList.H"
+#include "./primitives/Vector/lists/vectorList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./sampledSetWriters/writer.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./meshes/polyMesh/polyMeshTetDecomposition/tetIndices.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

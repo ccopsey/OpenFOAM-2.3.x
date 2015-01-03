@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "scalarRange.H"
-#include "token.H"
+#include "./scalarRange.H"
+#include "./db/IOstreams/token/token.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

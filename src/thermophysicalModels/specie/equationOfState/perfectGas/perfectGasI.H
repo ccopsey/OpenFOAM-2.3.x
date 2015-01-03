@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "perfectGas.H"
+#include "./perfectGas.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

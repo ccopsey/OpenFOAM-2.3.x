@@ -36,11 +36,11 @@ SourceFiles
 #ifndef relaxationModel_H
 #define relaxationModel_H
 
-#include "point.H"
-#include "Time.H"
-#include "dictionary.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./db/Time/Time.H"
+#include "./db/dictionary/dictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

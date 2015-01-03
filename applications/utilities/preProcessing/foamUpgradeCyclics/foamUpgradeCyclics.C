@@ -39,20 +39,20 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "timeSelector.H"
-#include "IOdictionary.H"
-#include "polyMesh.H"
-#include "entry.H"
-#include "IOPtrList.H"
-#include "cyclicPolyPatch.H"
-#include "dictionaryEntry.H"
-#include "IOobjectList.H"
-#include "volFields.H"
-#include "pointFields.H"
-#include "surfaceFields.H"
-#include "string.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/dictionary/entry/entry.H"
+#include "./db/IOobjects/IOPtrList/IOPtrList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
+#include "./db/dictionary/dictionaryEntry/dictionaryEntry.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./primitives/strings/string/string.H"
 
 using namespace Foam;
 
@@ -399,10 +399,10 @@ int main(int argc, char *argv[])
         "enableFunctionEntries",
         "enable expansion of dictionary directives - #include, #codeStream etc"
     );
-#   include "addRegionOption.H"
+#   include "./include/addRegionOption.H"
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
 
     // Make sure we do not use the master-only reading since we read

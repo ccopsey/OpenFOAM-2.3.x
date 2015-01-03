@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mapNearestAMI.H"
+#include "./mapNearestAMI.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

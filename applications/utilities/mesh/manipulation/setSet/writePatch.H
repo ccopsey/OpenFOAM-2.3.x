@@ -36,8 +36,8 @@ SourceFiles
 #ifndef writePatch_H
 #define writePatch_H
 
-#include "primitiveMesh.H"
-#include "primitiveFacePatch.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitiveFacePatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

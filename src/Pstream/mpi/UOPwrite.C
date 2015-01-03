@@ -28,8 +28,8 @@ Description
 
 #include "mpi.h"
 
-#include "UOPstream.H"
-#include "PstreamGlobals.H"
+#include "./db/IOstreams/Pstreams/UOPstream.H"
+#include "./PstreamGlobals.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

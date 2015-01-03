@@ -35,7 +35,7 @@ SourceFiles
 #ifndef uniform_H
 #define uniform_H
 
-#include "distributionModel.H"
+#include "./distributionModel/distributionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

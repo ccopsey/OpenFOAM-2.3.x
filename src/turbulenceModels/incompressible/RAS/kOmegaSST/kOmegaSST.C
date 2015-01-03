@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "kOmegaSST.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./kOmegaSST.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibility/wallFunctions/backwardsCompatibilityWallFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

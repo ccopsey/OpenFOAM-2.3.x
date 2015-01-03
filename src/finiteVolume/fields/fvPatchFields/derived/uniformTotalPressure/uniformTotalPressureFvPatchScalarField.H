@@ -77,8 +77,8 @@ SourceFiles
 #ifndef uniformTotalPressureFvPatchScalarField_H
 #define uniformTotalPressureFvPatchScalarField_H
 
-#include "fixedValueFvPatchFields.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

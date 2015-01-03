@@ -52,9 +52,9 @@ SourceFiles
 #ifndef distributionModel_H
 #define distributionModel_H
 
-#include "IOdictionary.H"
-#include "autoPtr.H"
-#include "cachedRandom.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./primitives/random/cachedRandom/cachedRandom.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

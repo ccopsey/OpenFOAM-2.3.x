@@ -57,8 +57,8 @@ SourceFiles
 #ifndef freestreamPressureFvPatchScalarFields_H
 #define freestreamPressureFvPatchScalarFields_H
 
-#include "fvPatchFields.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFields.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

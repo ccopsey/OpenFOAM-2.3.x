@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "syncTools.H"
-#include "polyMesh.H"
-#include "processorPolyPatch.H"
-#include "cyclicPolyPatch.H"
-#include "globalMeshData.H"
-#include "contiguous.H"
-#include "transform.H"
-#include "transformList.H"
-#include "SubField.H"
+#include "./syncTools.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
+#include "./primitives/contiguous/contiguous.H"
+#include "./primitives/transform/transform.H"
+#include "./fields/Fields/transformList/transformList.H"
+#include "./fields/Fields/Field/SubField.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

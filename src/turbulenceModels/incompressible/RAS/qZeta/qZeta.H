@@ -52,7 +52,7 @@ SourceFiles
 #ifndef qZeta_H
 #define qZeta_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

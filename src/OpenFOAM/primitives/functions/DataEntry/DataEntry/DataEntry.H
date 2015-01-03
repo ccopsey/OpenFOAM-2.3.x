@@ -39,9 +39,9 @@ SourceFiles
 #ifndef DataEntry_H
 #define DataEntry_H
 
-#include "dictionary.H"
-#include "Field.H"
-#include "dimensionedType.H"
+#include "./db/dictionary/dictionary.H"
+#include "./fields/Fields/Field/Field.H"
+#include "./dimensionedTypes/dimensionedType/dimensionedType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -227,8 +227,8 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DataEntry.C"
-#   include "DataEntryNew.C"
+#   include "./DataEntry.C"
+#   include "./DataEntryNew.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

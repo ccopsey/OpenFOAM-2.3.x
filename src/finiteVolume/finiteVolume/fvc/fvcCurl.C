@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcCurl.H"
-#include "fvcGrad.H"
-#include "fvMesh.H"
+#include "./fvcCurl.H"
+#include "./fvcGrad.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

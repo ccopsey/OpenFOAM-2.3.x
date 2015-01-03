@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "indexedVertexOps.H"
-#include "indexedCellOps.H"
+#include "./indexedVertex/indexedVertexOps.H"
+#include "./indexedCell/indexedCellOps.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

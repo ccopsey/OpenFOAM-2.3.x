@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvFieldReconstructor.H"
-#include "Time.H"
-#include "PtrList.H"
-#include "fvPatchFields.H"
-#include "emptyFvPatch.H"
-#include "emptyFvPatchField.H"
-#include "emptyFvsPatchField.H"
+#include "./fvFieldReconstructor.H"
+#include "./db/Time/Time.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFields.H"
+#include "./fvMesh/fvPatches/constraint/empty/emptyFvPatch.H"
+#include "./fields/fvPatchFields/constraint/empty/emptyFvPatchField.H"
+#include "./fields/fvsPatchFields/constraint/empty/emptyFvsPatchField.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

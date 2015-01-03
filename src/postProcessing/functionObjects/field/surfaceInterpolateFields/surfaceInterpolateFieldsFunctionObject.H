@@ -36,8 +36,8 @@ SourceFiles
 #ifndef surfaceInterpolateFieldsFunctionObject_H
 #define surfaceInterpolateFieldsFunctionObject_H
 
-#include "surfaceInterpolateFields.H"
-#include "OutputFilterFunctionObject.H"
+#include "./surfaceInterpolateFields.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

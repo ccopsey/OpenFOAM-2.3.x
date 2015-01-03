@@ -41,7 +41,7 @@ SourceFiles
 #ifndef normal_H
 #define normal_H
 
-#include "distributionModel.H"
+#include "./distributionModel/distributionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

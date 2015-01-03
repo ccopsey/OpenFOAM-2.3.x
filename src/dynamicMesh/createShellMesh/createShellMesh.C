@@ -23,20 +23,20 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "createShellMesh.H"
-#include "polyTopoChange.H"
-#include "meshTools.H"
-#include "mapPolyMesh.H"
-#include "polyAddPoint.H"
-#include "polyAddFace.H"
-#include "polyModifyFace.H"
-#include "polyAddCell.H"
-#include "labelPair.H"
-#include "indirectPrimitivePatch.H"
-#include "mapDistribute.H"
-#include "globalMeshData.H"
-#include "PatchTools.H"
-#include "globalIndex.H"
+#include "./createShellMesh.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./meshTools/meshTools.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./polyTopoChange/polyTopoChange/addObject/polyAddPoint.H"
+#include "./polyTopoChange/polyTopoChange/addObject/polyAddFace.H"
+#include "./polyTopoChange/polyTopoChange/modifyObject/polyModifyFace.H"
+#include "./polyTopoChange/polyTopoChange/addObject/polyAddCell.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
+#include "./meshes/primitiveMesh/PatchTools/PatchTools.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

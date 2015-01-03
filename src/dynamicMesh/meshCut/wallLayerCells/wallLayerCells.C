@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wallLayerCells.H"
-#include "DynamicList.H"
-#include "MeshWave.H"
-#include "wallNormalInfo.H"
-#include "OFstream.H"
+#include "./wallLayerCells.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./algorithms/MeshWave/MeshWave.H"
+#include "./wallNormalInfo/wallNormalInfo.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "constantTurbulentDispersionCoefficient.H"
-#include "phasePair.H"
-#include "fvc.H"
+#include "./constantTurbulentDispersionCoefficient.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./finiteVolume/fvc/fvc.H"
 #include "PhaseCompressibleTurbulenceModel.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

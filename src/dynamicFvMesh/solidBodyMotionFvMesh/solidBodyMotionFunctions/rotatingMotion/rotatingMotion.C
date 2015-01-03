@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rotatingMotion.H"
-#include "addToRunTimeSelectionTable.H"
-#include "mathematicalConstants.H"
+#include "./rotatingMotion.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant::mathematical;
 

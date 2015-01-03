@@ -48,8 +48,8 @@ SourceFiles
 #ifndef DictionaryBase_H
 #define DictionaryBase_H
 
-#include "HashTable.H"
-#include "wordList.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./primitives/strings/lists/wordList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -180,7 +180,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DictionaryBase.C"
+#   include "./DictionaryBase.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

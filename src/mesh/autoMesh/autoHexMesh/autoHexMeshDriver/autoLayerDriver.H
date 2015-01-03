@@ -35,7 +35,7 @@ SourceFiles
 #ifndef autoLayerDriver_H
 #define autoLayerDriver_H
 
-#include "meshRefinement.H"
+#include "./autoHexMesh/meshRefinement/meshRefinement.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -610,7 +610,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "autoLayerDriverTemplates.C"
+#   include "./autoLayerDriverTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

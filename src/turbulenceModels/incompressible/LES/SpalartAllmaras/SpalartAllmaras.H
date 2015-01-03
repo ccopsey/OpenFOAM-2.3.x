@@ -47,9 +47,9 @@ SourceFiles
 #ifndef SpalartAllmaras_H
 #define SpalartAllmaras_H
 
-#include "DESModel.H"
-#include "volFields.H"
-#include "wallDist.H"
+#include "./DESModel/DESModel.H"
+#include "./fields/volFields/volFields.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

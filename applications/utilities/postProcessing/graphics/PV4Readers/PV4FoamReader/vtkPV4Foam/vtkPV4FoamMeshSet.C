@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4Foam.H"
+#include "./vtkPV4Foam.H"
 
 // OpenFOAM includes
 #include "faceSet.H"
 #include "pointSet.H"
-#include "vtkOpenFOAMPoints.H"
+#include "./vtkOpenFOAMPoints.H"
 
 // VTK includes
 #include "vtkPoints.h"

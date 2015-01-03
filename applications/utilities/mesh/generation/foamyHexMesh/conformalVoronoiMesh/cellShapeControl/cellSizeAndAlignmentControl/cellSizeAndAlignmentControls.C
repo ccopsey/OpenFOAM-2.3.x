@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellSizeAndAlignmentControls.H"
-#include "searchableSurfaceControl.H"
+#include "./cellSizeAndAlignmentControls.H"
+#include "./searchableSurfaceControl/searchableSurfaceControl.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

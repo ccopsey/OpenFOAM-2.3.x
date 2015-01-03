@@ -51,17 +51,17 @@ Note
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "triSurface.H"
-#include "surfMesh.H"
-#include "surfFields.H"
-#include "surfPointFields.H"
-#include "PackedBoolList.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./triSurface/triSurface.H"
+#include "./surfMesh/surfMesh.H"
+#include "./surfFields/surfFields/surfFields.H"
+#include "./surfFields/surfPointFields/surfPointFields.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
 
-#include "MeshedSurfaces.H"
-#include "UnsortedMeshedSurfaces.H"
+#include "./MeshedSurface/MeshedSurfaces.H"
+#include "./UnsortedMeshedSurface/UnsortedMeshedSurfaces.H"
 
 using namespace Foam;
 
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
         "geometry scaling factor - default is 1"
     );
 
-#   include "setRootCase.H"
+#   include "./include/setRootCase.H"
 
     const scalar scaleFactor = args.optionLookupOrDefault("scale", 0.0);
 

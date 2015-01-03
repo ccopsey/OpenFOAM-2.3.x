@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "qZeta.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./qZeta.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibility/wallFunctions/backwardsCompatibilityWallFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

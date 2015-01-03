@@ -36,11 +36,11 @@ SourceFiles
 #ifndef curvedEdges_H
 #define curvedEdges_H
 
-#include "edge.H"
-#include "pointField.H"
-#include "typeInfo.H"
-#include "HashTable.H"
-#include "autoPtr.H"
+#include "./meshes/meshShapes/edge/edge.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -175,7 +175,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "curvedEdgeI.H"
+#include "./curvedEdgeI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

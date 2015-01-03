@@ -38,18 +38,18 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
 
-#include "IOobjectList.H"
-#include "labelIOList.H"
-#include "processorPolyPatch.H"
-#include "mapAddedPolyMesh.H"
-#include "polyMeshAdder.H"
-#include "faceCoupleInfo.H"
-#include "fvMeshAdder.H"
-#include "polyTopoChange.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./primitives/ints/lists/labelIOList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapAddedPolyMesh.H"
+#include "./polyMeshAdder/polyMeshAdder.H"
+#include "./polyMeshAdder/faceCoupleInfo.H"
+#include "./fvMeshAdder/fvMeshAdder.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 using namespace Foam;
 
@@ -451,10 +451,10 @@ int main(int argc, char *argv[])
         "decomposition method or as a volScalarField for post-processing."
     );
 
-    #include "addTimeOptions.H"
-    #include "addRegionOption.H"
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/addTimeOptions.H"
+    #include "./include/addRegionOption.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     Info<< "This is an experimental tool which tries to merge"
         << " individual processor" << nl
@@ -571,7 +571,7 @@ int main(int argc, char *argv[])
     );
 
     // set startTime and endTime depending on -time and -latestTime options
-    #include "checkTimeOptions.H"
+    #include "./include/checkTimeOptions.H"
 
     if (Times.empty())
     {

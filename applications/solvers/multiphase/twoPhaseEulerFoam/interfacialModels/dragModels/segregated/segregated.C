@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "segregated.H"
-#include "phasePair.H"
-#include "addToRunTimeSelectionTable.H"
-#include "fvc.H"
+#include "./segregated.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./finiteVolume/fvc/fvc.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

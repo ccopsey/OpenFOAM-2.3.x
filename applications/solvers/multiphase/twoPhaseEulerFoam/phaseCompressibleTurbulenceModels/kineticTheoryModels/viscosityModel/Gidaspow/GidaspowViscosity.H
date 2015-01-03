@@ -34,7 +34,7 @@ SourceFiles
 #ifndef Gidaspow_H
 #define Gidaspow_H
 
-#include "viscosityModel.H"
+#include "./kineticTheoryModels/viscosityModel/viscosityModel/viscosityModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

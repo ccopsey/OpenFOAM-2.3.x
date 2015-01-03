@@ -58,10 +58,10 @@ SeeAlso
 #ifndef solidMixtureProperties_H
 #define solidMixtureProperties_H
 
-#include "scalarField.H"
-#include "PtrList.H"
-#include "solidProperties.H"
-#include "autoPtr.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./solidProperties/solidProperties.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

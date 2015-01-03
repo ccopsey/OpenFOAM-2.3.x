@@ -43,7 +43,7 @@ volScalarField& p = thermo.p();
 const volScalarField& psi = thermo.psi();
 const volScalarField& T = thermo.T();
 
-#include "compressibleCreatePhi.H"
+#include "./cfdTools/compressible/compressibleCreatePhi.H"
 
 Info << "Creating turbulence model.\n" << nl;
 autoPtr<compressible::turbulenceModel> turbulence

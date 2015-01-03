@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "localAxesRotation.H"
-#include "axesRotation.H"
-#include "addToRunTimeSelectionTable.H"
-#include "polyMesh.H"
-#include "tensorIOField.H"
+#include "./localAxesRotation.H"
+#include "./axesRotation.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./fields/Fields/tensorField/tensorIOField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

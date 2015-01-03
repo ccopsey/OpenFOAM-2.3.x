@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV3Foam.H"
+#include "./vtkPV3Foam.H"
 
 // OpenFOAM includes
 #include "cellSet.H"
 #include "faceSet.H"
 #include "pointSet.H"
-#include "fvMeshSubset.H"
-#include "vtkPV3FoamReader.h"
-#include "uindirectPrimitivePatch.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
+#include "./PV3Readers/PV3FoamReader/PV3FoamReader/vtkPV3FoamReader.h"
+#include "./meshes/primitiveMesh/primitivePatch/uindirectPrimitivePatch.H"
 
 // VTK includes
 #include "vtkDataArraySelection.h"

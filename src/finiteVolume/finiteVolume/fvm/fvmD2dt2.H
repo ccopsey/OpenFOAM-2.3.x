@@ -35,8 +35,8 @@ SourceFiles
 #ifndef fvmD2dt2_H
 #define fvmD2dt2_H
 
-#include "volFieldsFwd.H"
-#include "fvMatrix.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fvMatrices/fvMatrix/fvMatrix.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -78,7 +78,7 @@ namespace fvm
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvmD2dt2.C"
+#   include "./fvmD2dt2.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

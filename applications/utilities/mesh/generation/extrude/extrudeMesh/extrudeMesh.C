@@ -34,23 +34,23 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "dimensionedTypes.H"
-#include "IFstream.H"
-#include "polyTopoChange.H"
-#include "polyTopoChanger.H"
-#include "edgeCollapser.H"
-#include "globalMeshData.H"
-#include "perfectInterface.H"
-#include "addPatchCellLayer.H"
-#include "fvMesh.H"
-#include "MeshedSurfaces.H"
-#include "globalIndex.H"
-#include "cellSet.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./dimensionedTypes/dimensionedTypes.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChanger/polyTopoChanger.H"
+#include "./polyTopoChange/polyTopoChange/edgeCollapser.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
+#include "./perfectInterface/perfectInterface.H"
+#include "./polyTopoChange/polyTopoChange/addPatchCellLayer.H"
+#include "./fvMesh/fvMesh.H"
+#include "./MeshedSurface/MeshedSurfaces.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./sets/topoSets/cellSet.H"
 
-#include "extrudedMesh.H"
-#include "extrudeModel.H"
+#include "./extrudedMesh/extrudedMesh.H"
+#include "./extrudeModel/extrudeModel.H"
 
 using namespace Foam;
 
@@ -214,9 +214,9 @@ void updateCellSet(const mapPolyMesh& map, labelHashSet& cellLabels)
 
 int main(int argc, char *argv[])
 {
-    #include "addRegionOption.H"
-    #include "setRootCase.H"
-    #include "createTimeExtruded.H"
+    #include "./include/addRegionOption.H"
+    #include "./include/setRootCase.H"
+    #include "./createTimeExtruded.H"
 
     // Get optional regionName
     word regionName;
@@ -329,7 +329,7 @@ int main(int argc, char *argv[])
             sourceCaseDir
         );
 
-        #include "createMesh.H"
+        #include "./include/createMesh.H"
 
         const polyBoundaryMesh& patches = mesh.boundaryMesh();
 

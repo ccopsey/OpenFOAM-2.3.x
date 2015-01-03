@@ -25,11 +25,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SloanRenumber.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./SloanRenumber.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 #include "decompositionMethod.H"
-#include "processorPolyPatch.H"
-#include "syncTools.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
 
 #include <boost/config.hpp>
 #include <vector>

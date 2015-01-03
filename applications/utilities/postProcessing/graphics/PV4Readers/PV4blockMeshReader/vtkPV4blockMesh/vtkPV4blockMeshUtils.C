@@ -26,8 +26,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4blockMesh.H"
-#include "vtkPV4blockMeshReader.h"
+#include "./vtkPV4blockMesh.H"
+#include "./PV4Readers/PV4blockMeshReader/PV4blockMeshReader/vtkPV4blockMeshReader.h"
 
 // VTK includes
 #include "vtkDataArraySelection.h"

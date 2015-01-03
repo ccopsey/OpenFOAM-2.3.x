@@ -26,16 +26,16 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "md.H"
-#include "fvCFD.H"
+#include "./mdTools/md.H"
+#include "./cfdTools/general/include/fvCFD.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-#   include "setRootCase.H"
-#   include "createTime.H"
-#   include "createMesh.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
+#   include "./include/createMesh.H"
 
     IOdictionary mdInitialiseDict
     (

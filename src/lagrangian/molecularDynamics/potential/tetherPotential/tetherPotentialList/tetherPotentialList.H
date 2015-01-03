@@ -34,10 +34,10 @@ SourceFiles
 #ifndef tetherPotentialList_H
 #define tetherPotentialList_H
 
-#include "ListOps.H"
-#include "PtrList.H"
-#include "word.H"
-#include "tetherPotential.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./primitives/strings/word/word.H"
+#include "./tetherPotential/basic/tetherPotential.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -124,7 +124,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "tetherPotentialListI.H"
+#include "./tetherPotentialListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

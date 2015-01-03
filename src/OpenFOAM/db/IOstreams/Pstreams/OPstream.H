@@ -32,12 +32,12 @@ SourceFiles
 
 \*---------------------------------------------------------------------------*/
 
-#include "Pstream.H"
+#include "./Pstream.H"
 
 #ifndef OPstream_H
 #define OPstream_H
 
-#include "UOPstream.H"
+#include "./UOPstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

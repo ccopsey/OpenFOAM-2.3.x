@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "RNGkEpsilon.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./RNGkEpsilon.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibility/wallFunctions/backwardsCompatibilityWallFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

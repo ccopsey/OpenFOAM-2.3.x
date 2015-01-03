@@ -30,27 +30,27 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "psiThermo.H"
-#include "RASModel.H"
-#include "mixedFvPatchFields.H"
-#include "bound.H"
-#include "simpleControl.H"
-#include "fvIOoptionList.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./psiThermo/psiThermo.H"
+#include "./RASModel.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchFields.H"
+#include "./cfdTools/general/bound/bound.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     simpleControl simple(mesh);
 
     #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "initContinuityErrs.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
         {
             #include "UEqn.H"
             #include "EEqn.H"
-            #include "pEqn.H"
+            #include "./pEqn.H"
         }
 
         turbulence->correct();

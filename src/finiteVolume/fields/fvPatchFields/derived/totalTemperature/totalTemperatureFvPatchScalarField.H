@@ -61,7 +61,7 @@ SeeAlso
 #ifndef totalTemperatureFvPatchScalarField_H
 #define totalTemperatureFvPatchScalarField_H
 
-#include "fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

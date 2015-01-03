@@ -29,11 +29,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "dynamicFvMesh.H"
-#include "vtkSurfaceWriter.H"
-#include "cyclicAMIPolyPatch.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./sampledSurface/writers/vtk/vtkSurfaceWriter.H"
+#include "./AMIInterpolation/patches/cyclicAMI/cyclicAMIPolyPatch/cyclicAMIPolyPatch.H"
 
 using namespace Foam;
 
@@ -111,16 +111,16 @@ void writeWeights(const polyMesh& mesh)
 
 int main(int argc, char *argv[])
 {
-#   include "addRegionOption.H"
+#   include "./include/addRegionOption.H"
     argList::addBoolOption
     (
         "checkAMI",
         "check AMI weights"
     );
 
-#   include "setRootCase.H"
-#   include "createTime.H"
-#   include "createNamedDynamicFvMesh.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
+#   include "./include/createNamedDynamicFvMesh.H"
 
     const bool checkAMI  = args.optionFound("checkAMI");
 

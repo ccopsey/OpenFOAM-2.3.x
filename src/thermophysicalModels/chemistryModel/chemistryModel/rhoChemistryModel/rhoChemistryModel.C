@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rhoChemistryModel.H"
-#include "fvMesh.H"
+#include "./rhoChemistryModel.H"
+#include "./fvMesh/fvMesh.H"
 
 /* * * * * * * * * * * * * * * private static data * * * * * * * * * * * * * */
 

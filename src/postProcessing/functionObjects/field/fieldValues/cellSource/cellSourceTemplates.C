@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellSource.H"
-#include "volFields.H"
+#include "./cellSource.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * * //
 

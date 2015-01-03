@@ -36,7 +36,7 @@ SourceFiles
 #ifndef perfectFluid_H
 #define perfectFluid_H
 
-#include "autoPtr.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -222,10 +222,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "perfectFluidI.H"
+#include "./perfectFluidI.H"
 
 #ifdef NoRepository
-#   include "perfectFluid.C"
+#   include "./perfectFluid.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "gradientEnergyFvPatchScalarField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "fvPatchFieldMapper.H"
-#include "volFields.H"
-#include "basicThermo.H"
+#include "./gradientEnergyFvPatchScalarField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fields/volFields/volFields.H"
+#include "./basicThermo/basicThermo.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

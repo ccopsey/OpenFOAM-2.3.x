@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcMagSqrGradGrad.H"
-#include "fvcGrad.H"
-#include "fvMesh.H"
+#include "./fvcMagSqrGradGrad.H"
+#include "./fvcGrad.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

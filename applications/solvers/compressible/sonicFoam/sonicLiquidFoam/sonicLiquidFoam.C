@@ -30,23 +30,23 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "pimpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     pimpleControl pimple(mesh);
 
-    #include "readThermodynamicProperties.H"
-    #include "readTransportProperties.H"
-    #include "createFields.H"
-    #include "initContinuityErrs.H"
+    #include "./readThermodynamicProperties.H"
+    #include "./readTransportProperties.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -56,8 +56,8 @@ int main(int argc, char *argv[])
     {
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "readTimeControls.H"
-        #include "compressibleCourantNo.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/compressible/compressibleCourantNo.H"
 
         solve(fvm::ddt(rho) + fvc::div(phi));
 
@@ -110,7 +110,7 @@ int main(int argc, char *argv[])
                 phi += pEqn.flux();
 
                 solve(fvm::ddt(rho) + fvc::div(phi));
-                #include "compressibleContinuityErrs.H"
+                #include "./compressibleContinuityErrs.H"
 
                 U -= rAU*fvc::grad(p);
                 U.correctBoundaryConditions();

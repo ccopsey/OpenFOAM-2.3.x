@@ -26,9 +26,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "keyType.H"
-#include "regExp.H"
-#include "IOstreams.H"
+#include "./keyType.H"
+#include "./regExp.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

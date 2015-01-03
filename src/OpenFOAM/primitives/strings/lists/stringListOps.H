@@ -35,11 +35,11 @@ SourceFiles
 #ifndef stringListOps_H
 #define stringListOps_H
 
-#include "regExp.H"
-#include "labelList.H"
-#include "stringList.H"
-#include "wordReList.H"
-#include "wordReListMatcher.H"
+#include "./regExp.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./stringList.H"
+#include "./wordReList.H"
+#include "./wordReListMatcher.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -303,7 +303,7 @@ namespace Foam
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "stringListOpsTemplates.C"
+#   include "./stringListOpsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

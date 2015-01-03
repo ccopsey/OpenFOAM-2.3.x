@@ -35,8 +35,8 @@ SourceFiles
 #ifndef forceList_H
 #define forceList_H
 
-#include "PtrList.H"
-#include "force.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./submodels/kinematic/force/force/force.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SLTSDdtScheme.H"
-#include "fvMesh.H"
+#include "./SLTSDdtScheme.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

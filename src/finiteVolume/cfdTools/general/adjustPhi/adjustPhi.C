@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "adjustPhi.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "processorFvsPatchFields.H"
-#include "inletOutletFvPatchFields.H"
+#include "./adjustPhi.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/fvsPatchFields/constraint/processor/processorFvsPatchFields.H"
+#include "./fields/fvPatchFields/derived/inletOutlet/inletOutletFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * Global Functions  * * * * * * * * * * * * * //
 

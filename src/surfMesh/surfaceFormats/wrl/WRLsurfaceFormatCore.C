@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "WRLsurfaceFormatCore.H"
-#include "clock.H"
+#include "./WRLsurfaceFormatCore.H"
+#include "./global/clock/clock.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

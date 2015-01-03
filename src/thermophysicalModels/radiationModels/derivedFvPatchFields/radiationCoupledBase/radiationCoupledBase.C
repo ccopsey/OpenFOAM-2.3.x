@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "radiationCoupledBase.H"
-#include "volFields.H"
-#include "mappedPatchBase.H"
-#include "fvPatchFieldMapper.H"
-#include "radiationModel.H"
-#include "absorptionEmissionModel.H"
+#include "./radiationCoupledBase.H"
+#include "./fields/volFields/volFields.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./submodels/absorptionEmissionModel/absorptionEmissionModel/absorptionEmissionModel.H"
 
 // * * * * * * * * * * * * * Static Member Data  * * * * * * * * * * * * * * //
 

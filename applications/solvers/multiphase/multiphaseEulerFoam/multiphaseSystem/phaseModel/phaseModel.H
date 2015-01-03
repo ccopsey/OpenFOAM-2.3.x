@@ -32,11 +32,11 @@ SourceFiles
 #ifndef phaseModel_H
 #define phaseModel_H
 
-#include "dictionary.H"
-#include "dictionaryEntry.H"
-#include "dimensionedScalar.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/dictionary/dictionaryEntry/dictionaryEntry.H"
+#include "./dimensionedTypes/dimensionedScalar/dimensionedScalar.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

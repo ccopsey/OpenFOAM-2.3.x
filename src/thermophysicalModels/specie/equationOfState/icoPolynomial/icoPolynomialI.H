@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "icoPolynomial.H"
+#include "./icoPolynomial.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

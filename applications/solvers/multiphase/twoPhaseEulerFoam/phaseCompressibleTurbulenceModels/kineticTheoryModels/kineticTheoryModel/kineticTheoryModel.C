@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "kineticTheoryModel.H"
-#include "mathematicalConstants.H"
-#include "twoPhaseSystem.H"
+#include "./kineticTheoryModel.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./twoPhaseSystem.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

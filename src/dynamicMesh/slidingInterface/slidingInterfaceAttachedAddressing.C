@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "slidingInterface.H"
-#include "polyMesh.H"
-#include "mapPolyMesh.H"
-#include "polyTopoChanger.H"
+#include "./slidingInterface.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./polyTopoChange/polyTopoChanger/polyTopoChanger.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

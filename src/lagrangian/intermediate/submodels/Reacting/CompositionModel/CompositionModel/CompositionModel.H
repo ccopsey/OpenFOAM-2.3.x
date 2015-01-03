@@ -38,15 +38,15 @@ SourceFiles
 #ifndef CompositionModel_H
 #define CompositionModel_H
 
-#include "CloudSubModelBase.H"
-#include "IOdictionary.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./submodels/CloudSubModelBase.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
-#include "PtrList.H"
-#include "SLGThermo.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./SLGThermo/SLGThermo.H"
 
-#include "phasePropertiesList.H"
+#include "./phaseProperties/phasePropertiesList/phasePropertiesList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -309,7 +309,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "CompositionModel.C"
+#   include "./CompositionModel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

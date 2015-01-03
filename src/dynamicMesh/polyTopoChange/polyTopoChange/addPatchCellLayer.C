@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "addPatchCellLayer.H"
-#include "polyMesh.H"
-#include "polyTopoChange.H"
-#include "meshTools.H"
-#include "mapPolyMesh.H"
-#include "syncTools.H"
-#include "polyAddPoint.H"
-#include "polyAddFace.H"
-#include "polyModifyFace.H"
-#include "polyAddCell.H"
-#include "globalIndex.H"
+#include "./addPatchCellLayer.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./polyTopoChange.H"
+#include "./meshTools/meshTools.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./addObject/polyAddPoint.H"
+#include "./addObject/polyAddFace.H"
+#include "./modifyObject/polyModifyFace.H"
+#include "./addObject/polyAddCell.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

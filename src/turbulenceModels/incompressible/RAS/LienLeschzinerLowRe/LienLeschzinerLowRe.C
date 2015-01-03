@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LienLeschzinerLowRe.H"
-#include "wallFvPatch.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./LienLeschzinerLowRe.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibility/wallFunctions/backwardsCompatibilityWallFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -339,8 +339,8 @@ void LienLeschzinerLowRe::correct()
 
     epsEqn().relax();
 
-    #include "LienLeschzinerLowReSetWallDissipation.H"
-    #include "wallDissipationI.H"
+    #include "./LienLeschzinerLowReSetWallDissipation.H"
+    #include "./include/wallDissipationI.H"
 
     solve(epsEqn);
     bound(epsilon_, epsilonMin_);

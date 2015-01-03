@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "patchSeedSet.H"
-#include "polyMesh.H"
-#include "addToRunTimeSelectionTable.H"
-#include "treeBoundBox.H"
-#include "treeDataFace.H"
-#include "Time.H"
-#include "meshTools.H"
+#include "./patchSeedSet.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./indexedOctree/treeDataFace.H"
+#include "./db/Time/Time.H"
+#include "./meshTools/meshTools.H"
 //#include "Random.H"
 // For 'facePoint' helper function only
-#include "mappedPatchBase.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

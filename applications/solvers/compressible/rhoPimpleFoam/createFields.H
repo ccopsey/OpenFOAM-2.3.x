@@ -37,7 +37,7 @@
         mesh
     );
 
-    #include "compressibleCreatePhi.H"
+    #include "./cfdTools/compressible/compressibleCreatePhi.H"
 
     dimensionedScalar rhoMax(pimple.dict().lookup("rhoMax"));
     dimensionedScalar rhoMin(pimple.dict().lookup("rhoMin"));

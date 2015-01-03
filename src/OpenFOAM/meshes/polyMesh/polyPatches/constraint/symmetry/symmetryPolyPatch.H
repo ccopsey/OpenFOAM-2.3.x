@@ -38,7 +38,7 @@ SeeAlso
 #ifndef symmetryPolyPatch_H
 #define symmetryPolyPatch_H
 
-#include "polyPatch.H"
+#include "./meshes/polyMesh/polyPatches/polyPatch/polyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

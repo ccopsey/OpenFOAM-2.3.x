@@ -32,8 +32,8 @@ Description
 #ifndef IOLambda2_H
 #define IOLambda2_H
 
-#include "Lambda2.H"
-#include "IOOutputFilter.H"
+#include "./Lambda2.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -32,8 +32,8 @@ Description
 #ifndef IOfieldCoordinateSystemTransform_H
 #define IOfieldCoordinateSystemTransform_H
 
-#include "fieldCoordinateSystemTransform.H"
-#include "IOOutputFilter.H"
+#include "./fieldCoordinateSystemTransform.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

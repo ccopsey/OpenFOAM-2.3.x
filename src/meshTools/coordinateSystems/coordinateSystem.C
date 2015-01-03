@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IOstream.H"
-#include "axesRotation.H"
-#include "coordinateSystem.H"
-#include "coordinateSystems.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./db/IOstreams/IOstreams/IOstream.H"
+#include "./coordinateRotation/axesRotation.H"
+#include "./coordinateSystem.H"
+#include "./coordinateSystems.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

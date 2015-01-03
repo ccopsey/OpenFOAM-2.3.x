@@ -43,10 +43,10 @@ SourceFiles
 #ifndef pointConstraints_H
 #define pointConstraints_H
 
-#include "MeshObject.H"
-#include "tensorField.H"
-#include "pointFieldsFwd.H"
-#include "pointConstraint.H"
+#include "./meshes/MeshObject/MeshObject.H"
+#include "./fields/Fields/tensorField/tensorField.H"
+#include "./fields/GeometricFields/pointFields/pointFieldsFwd.H"
+#include "./fields/pointPatchFields/pointPatchField/pointConstraint/pointConstraint.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -204,7 +204,7 @@ void pointConstraints::constrainCorners<label>
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "pointConstraintsTemplates.C"
+#   include "./pointConstraintsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DESModelRegions.H"
-#include "volFields.H"
+#include "./DESModelRegions.H"
+#include "./fields/volFields/volFields.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/LES/DESModel/DESModel.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"

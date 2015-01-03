@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "specie.H"
-#include "IOstreams.H"
-#include "constants.H"
+#include "./specie.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./global/constants/constants.H"
 
 /* * * * * * * * * * * * * * * public constants  * * * * * * * * * * * * * * */
 

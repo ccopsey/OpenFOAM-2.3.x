@@ -37,10 +37,10 @@ SourceFiles
 #ifndef PatchEdgeFaceWave_H
 #define PatchEdgeFaceWave_H
 
-#include "scalarField.H"
-#include "PackedBoolList.H"
-#include "PrimitivePatch.H"
-#include "vectorTensorTransform.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./meshes/primitiveMesh/_PrimitivePatch/PrimitivePatch.H"
+#include "./primitives/globalIndexAndTransform/vectorTensorTransform/vectorTensorTransform.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -358,7 +358,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PatchEdgeFaceWave.C"
+#   include "./PatchEdgeFaceWave.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

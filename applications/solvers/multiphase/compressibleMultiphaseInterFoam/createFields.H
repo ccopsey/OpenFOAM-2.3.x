@@ -26,7 +26,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     Info<< "Constructing multiphaseMixtureThermo\n" << endl;
     multiphaseMixtureThermo mixture(U, phi);

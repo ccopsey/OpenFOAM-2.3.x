@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldFromFile.H"
-#include "addToRunTimeSelectionTable.H"
-#include "triSurfaceMesh.H"
-#include "triSurfaceFields.H"
-#include "Time.H"
+#include "./fieldFromFile.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./triSurfaceFields/triSurfaceFields.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

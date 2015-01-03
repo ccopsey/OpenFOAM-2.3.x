@@ -50,9 +50,9 @@ SourceFiles
 #ifndef wordRe_H
 #define wordRe_H
 
-#include "word.H"
-#include "regExp.H"
-#include "keyType.H"
+#include "./primitives/strings/word/word.H"
+#include "./regExp.H"
+#include "./primitives/strings/keyType/keyType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -242,7 +242,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "wordReI.H"
+#include "./wordReI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

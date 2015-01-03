@@ -35,8 +35,8 @@ SourceFiles
 #ifndef nonuniformTransformCyclicPointPatchField_H
 #define nonuniformTransformCyclicPointPatchField_H
 
-#include "cyclicPointPatchField.H"
-#include "nonuniformTransformCyclicPointPatch.H"
+#include "./fields/pointPatchFields/constraint/cyclic/cyclicPointPatchField.H"
+#include "./meshes/pointMesh/pointPatches/constraint/nonuniformTransformCyclic/nonuniformTransformCyclicPointPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -140,7 +140,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#    include "nonuniformTransformCyclicPointPatchField.C"
+#    include "./nonuniformTransformCyclicPointPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

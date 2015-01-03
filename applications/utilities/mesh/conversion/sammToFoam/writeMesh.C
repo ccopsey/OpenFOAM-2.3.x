@@ -26,9 +26,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "sammMesh.H"
-#include "Time.H"
-#include "polyMesh.H"
+#include "./sammMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

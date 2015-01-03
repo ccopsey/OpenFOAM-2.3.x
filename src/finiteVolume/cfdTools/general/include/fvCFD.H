@@ -1,24 +1,24 @@
 #ifndef fvCFD_H
 #define fvCFD_H
 
-#include "parRun.H"
+#include "./global/argList/parRun.H"
 
-#include "Time.H"
-#include "fvMesh.H"
-#include "fvc.H"
-#include "fvMatrices.H"
-#include "fvm.H"
-#include "linear.H"
-#include "uniformDimensionedFields.H"
-#include "calculatedFvPatchFields.H"
-#include "fixedValueFvPatchFields.H"
-#include "adjustPhi.H"
-#include "findRefCell.H"
-#include "constants.H"
+#include "./db/Time/Time.H"
+#include "./fvMesh/fvMesh.H"
+#include "./finiteVolume/fvc/fvc.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./finiteVolume/fvm/fvm.H"
+#include "./interpolation/surfaceInterpolation/schemes/linear/linear.H"
+#include "./fields/UniformDimensionedFields/uniformDimensionedFields.H"
+#include "./fields/fvPatchFields/basic/calculated/calculatedFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./cfdTools/general/adjustPhi/adjustPhi.H"
+#include "./cfdTools/general/findRefCell/findRefCell.H"
+#include "./global/constants/constants.H"
 
-#include "OSspecific.H"
-#include "argList.H"
-#include "timeSelector.H"
+#include "./include/OSspecific.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
 
 #ifndef namespaceFoam
 #define namespaceFoam

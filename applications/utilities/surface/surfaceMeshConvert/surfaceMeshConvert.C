@@ -57,11 +57,11 @@ Note
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
 
-#include "MeshedSurfaces.H"
-#include "coordinateSystems.H"
+#include "./MeshedSurface/MeshedSurfaces.H"
+#include "./coordinateSystems/coordinateSystems.H"
 
 using namespace Foam;
 
@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
         "factor",
         "geometry scaling factor on output"
     );
-    #include "addDictOption.H"
+    #include "./include/addDictOption.H"
     argList::addOption
     (
         "from",

@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "partialFaceAreaWeightAMI.H"
+#include "./partialFaceAreaWeightAMI.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

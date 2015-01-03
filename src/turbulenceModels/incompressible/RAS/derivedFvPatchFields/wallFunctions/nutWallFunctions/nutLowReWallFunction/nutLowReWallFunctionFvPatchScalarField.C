@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "nutLowReWallFunctionFvPatchScalarField.H"
+#include "./nutLowReWallFunctionFvPatchScalarField.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
-#include "fvPatchFieldMapper.H"
-#include "volFields.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -38,9 +38,9 @@ SourceFiles
 #ifndef InflationInjection_H
 #define InflationInjection_H
 
-#include "InjectionModel.H"
-#include "distributionModel.H"
-#include "Switch.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
+#include "./distributionModel/distributionModel.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -198,7 +198,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "InflationInjection.C"
+#   include "./InflationInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

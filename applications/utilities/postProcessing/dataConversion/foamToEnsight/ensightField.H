@@ -34,8 +34,8 @@ SourceFiles
 #ifndef ensightField_H
 #define ensightField_H
 
-#include "ensightMesh.H"
-#include "fvMeshSubset.H"
+#include "./ensightMesh.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -80,7 +80,7 @@ void writePatchField
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ensightField.C"
+#   include "./ensightField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

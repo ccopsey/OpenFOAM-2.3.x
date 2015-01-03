@@ -35,9 +35,9 @@ SourceFiles
 #ifndef general_H
 #define general_H
 
-#include "distributionModel.H"
-#include "Vector.H"
-#include "VectorSpace.H"
+#include "./distributionModel/distributionModel.H"
+#include "./primitives/Vector/Vector.H"
+#include "./primitives/VectorSpace/VectorSpace.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,18 +23,18 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "processorPolyPatch.H"
-#include "addToRunTimeSelectionTable.H"
-#include "dictionary.H"
-#include "SubField.H"
-#include "demandDrivenData.H"
-#include "matchPoints.H"
-#include "OFstream.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "transformList.H"
-#include "PstreamBuffers.H"
-#include "const_circulator.H"
+#include "./processorPolyPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./db/dictionary/dictionary.H"
+#include "./fields/Fields/Field/SubField.H"
+#include "./include/demandDrivenData.H"
+#include "./meshes/meshTools/matchPoints.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./fields/Fields/transformList/transformList.H"
+#include "./db/IOstreams/Pstreams/PstreamBuffers.H"
+#include "./containers/Circulators/const_circulator/const_circulator.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

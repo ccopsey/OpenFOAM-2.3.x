@@ -52,7 +52,7 @@ SourceFiles
 #ifndef JohnsonJacksonParticleSlipFvPatchVectorField_H
 #define JohnsonJacksonParticleSlipFvPatchVectorField_H
 
-#include "partialSlipFvPatchFields.H"
+#include "./fields/fvPatchFields/derived/partialSlip/partialSlipFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

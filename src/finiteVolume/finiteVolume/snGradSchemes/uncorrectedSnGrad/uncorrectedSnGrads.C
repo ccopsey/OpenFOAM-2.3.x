@@ -26,8 +26,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "uncorrectedSnGrad.H"
-#include "fvMesh.H"
+#include "./uncorrectedSnGrad.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

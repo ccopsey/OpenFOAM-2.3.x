@@ -30,35 +30,35 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "turbulenceModel.H"
-#include "basicReactingCloud.H"
-#include "surfaceFilmModel.H"
-#include "psiCombustionModel.H"
-#include "radiationModel.H"
-#include "SLGThermo.H"
-#include "fvIOoptionList.H"
-#include "pimpleControl.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./turbulenceModel.H"
+#include "./clouds/derived/basicReactingCloud/basicReactingCloud.H"
+#include "./surfaceFilmModel/surfaceFilmModel.H"
+#include "./psiCombustionModel/psiCombustionModel/psiCombustionModel.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./SLGThermo/SLGThermo.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readGravitationalAcceleration.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "createClouds.H"
-    #include "createRadiationModel.H"
-    #include "createSurfaceFilmModel.H"
-    #include "initContinuityErrs.H"
-    #include "readTimeControls.H"
-    #include "compressibleCourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./createClouds.H"
+    #include "./include/createRadiationModel.H"
+    #include "./createSurfaceFilmModel.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./cfdTools/compressible/compressibleCourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     pimpleControl pimple(mesh);
 
@@ -68,10 +68,10 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "compressibleCourantNo.H"
-        #include "setMultiRegionDeltaT.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/compressible/compressibleCourantNo.H"
+        #include "./setMultiRegionDeltaT.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
@@ -83,19 +83,19 @@ int main(int argc, char *argv[])
 
         if (solvePrimaryRegion)
         {
-            #include "rhoEqn.H"
+            #include "./rhoEqn.H"
 
             // --- PIMPLE loop
             while (pimple.loop())
             {
-                #include "UEqn.H"
-                #include "YEqn.H"
-                #include "EEqn.H"
+                #include "./UEqn.H"
+                #include "./YEqn.H"
+                #include "./EEqn.H"
 
                 // --- Pressure corrector loop
                 while (pimple.correct())
                 {
-                    #include "pEqn.H"
+                    #include "./pEqn.H"
                 }
 
                 if (pimple.turbCorr())

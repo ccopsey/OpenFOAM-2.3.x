@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "oscillatingFixedValueFvPatchFields.H"
-#include "addToRunTimeSelectionTable.H"
-#include "volFields.H"
+#include "./oscillatingFixedValueFvPatchFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

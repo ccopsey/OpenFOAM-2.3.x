@@ -29,10 +29,10 @@ Description
 #ifndef debugName_H
 #define debugName_H
 
-#include "simpleRegIOobject.H"
-#include "word.H"
-#include "debug.H"
-#include "label.H"
+#include "./global/debug/simpleRegIOobject.H"
+#include "./primitives/strings/word/word.H"
+#include "./global/debug/debug.H"
+#include "./primitives/ints/label/label.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -36,7 +36,7 @@ SourceFiles
 #ifndef linear_H
 #define linear_H
 
-#include "autoPtr.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -219,10 +219,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "linearI.H"
+#include "./linearI.H"
 
 #ifdef NoRepository
-#   include "linear.C"
+#   include "./linear.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

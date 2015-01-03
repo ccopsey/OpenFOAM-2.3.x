@@ -51,11 +51,11 @@ SourceFiles
 #ifndef CSV_H
 #define CSV_H
 
-#include "DataEntry.H"
-#include "TableBase.H"
-#include "Tuple2.H"
-#include "labelList.H"
-#include "ISstream.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
+#include "./primitives/functions/DataEntry/Table/TableBase.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./db/IOstreams/Sstreams/ISstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -217,7 +217,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "CSV.C"
+#   include "./CSV.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

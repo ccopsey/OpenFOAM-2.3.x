@@ -53,7 +53,7 @@ SourceFiles
 #ifndef compressibleLaunderSharmaKE_H
 #define compressibleLaunderSharmaKE_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

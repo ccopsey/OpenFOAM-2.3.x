@@ -35,7 +35,7 @@ SourceFiles
 #ifndef distributionModelFixedValue_H
 #define distributionModelFixedValue_H
 
-#include "distributionModel.H"
+#include "./distributionModel/distributionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -43,8 +43,8 @@ Description
 #ifndef LiquidEvaporationBoil_H
 #define LiquidEvaporationBoil_H
 
-#include "PhaseChangeModel.H"
-#include "liquidMixtureProperties.H"
+#include "./submodels/Reacting/PhaseChangeModel/PhaseChangeModel/PhaseChangeModel.H"
+#include "./liquidMixtureProperties/liquidMixtureProperties.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -156,7 +156,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "LiquidEvaporationBoil.C"
+#   include "./LiquidEvaporationBoil.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

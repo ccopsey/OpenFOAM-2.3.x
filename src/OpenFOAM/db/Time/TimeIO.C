@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Time.H"
-#include "Pstream.H"
-#include "simpleObjectRegistry.H"
-#include "dimensionedConstants.H"
+#include "./Time.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./global/debug/simpleObjectRegistry.H"
+#include "./global/constants/dimensionedConstants.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

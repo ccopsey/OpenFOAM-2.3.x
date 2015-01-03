@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "DLListBase.H"
-#include "IOstreams.H"
-#include "long.H"
+#include "./DLListBase.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./primitives/ints/long/long.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

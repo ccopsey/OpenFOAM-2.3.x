@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rayShooting.H"
-#include "addToRunTimeSelectionTable.H"
-#include "triSurfaceMesh.H"
+#include "./rayShooting.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./searchableSurface/triSurfaceMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

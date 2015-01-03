@@ -31,21 +31,21 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "turbulenceModel.H"
-#include "solidThermo.H"
-#include "wallFvPatch.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./turbulenceModel.H"
+#include "./solidThermo/solidThermo.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
-    #include "addRegionOption.H"
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/addRegionOption.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     instantList timeDirs = timeSelector::select0(runTime, args);
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     forAll(timeDirs, timeI)
     {
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
         Info<< "Time = " << runTime.timeName() << endl;
         mesh.readUpdate();
 
-        #include "createFields.H"
+        #include "./createFields.H"
 
         surfaceScalarField heatFlux
         (

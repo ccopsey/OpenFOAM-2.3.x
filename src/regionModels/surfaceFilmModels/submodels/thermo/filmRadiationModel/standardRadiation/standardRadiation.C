@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "standardRadiation.H"
-#include "volFields.H"
-#include "addToRunTimeSelectionTable.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./standardRadiation.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

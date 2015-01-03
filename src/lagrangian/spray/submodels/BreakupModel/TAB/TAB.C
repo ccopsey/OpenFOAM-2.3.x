@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "TAB.H"
+#include "./TAB.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -194,12 +194,12 @@ bool Foam::TAB<CloudType>::update
                 {
                     case method1:
                     {
-                        #include "TABSMDCalcMethod1.H"
+                        #include "./TABSMDCalcMethod1.H"
                         break;
                     }
                     case method2:
                     {
-                        #include "TABSMDCalcMethod2.H"
+                        #include "./TABSMDCalcMethod2.H"
                         break;
                     }
                 }

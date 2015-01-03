@@ -34,8 +34,8 @@ SourceFiles
 #ifndef readFields_H
 #define readFields_H
 
-#include "IOobjectList.H"
-#include "PtrList.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./containers/Lists/PtrList/PtrList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -55,7 +55,7 @@ namespace Foam
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "readFields.C"
+#   include "./readFields.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

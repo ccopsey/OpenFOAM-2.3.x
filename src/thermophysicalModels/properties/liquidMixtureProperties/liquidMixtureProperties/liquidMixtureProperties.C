@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "liquidMixtureProperties.H"
-#include "dictionary.H"
-#include "specie.H"
+#include "./liquidMixtureProperties.H"
+#include "./db/dictionary/dictionary.H"
+#include "./specie/specie.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -48,11 +48,11 @@ SourceFiles
 #ifndef Polynomial_H
 #define Polynomial_H
 
-#include "word.H"
-#include "scalar.H"
-#include "Ostream.H"
-#include "VectorSpace.H"
-#include "StaticAssert.H"
+#include "./primitives/strings/word/word.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./db/IOstreams/IOstreams/Ostream.H"
+#include "./primitives/VectorSpace/VectorSpace.H"
+#include "./db/error/StaticAssert.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -168,8 +168,8 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Polynomial.C"
-#   include "PolynomialIO.C"
+#   include "./Polynomial.C"
+#   include "./PolynomialIO.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

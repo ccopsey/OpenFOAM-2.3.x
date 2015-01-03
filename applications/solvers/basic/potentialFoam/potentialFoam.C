@@ -30,8 +30,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "fvIOoptionList.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fvOptions/fvIOoptionList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -44,12 +44,12 @@ int main(int argc, char *argv[])
         "initialise U boundary conditions"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readControls.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./readControls.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

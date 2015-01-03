@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "FixedList.H"
-#include "ListLoopM.H"
+#include "./FixedList.H"
+#include "./containers/Lists/List/ListLoopM.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 
@@ -123,6 +123,6 @@ bool Foam::FixedList<T, Size>::operator>=(const FixedList<T, Size>& a) const
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 
-#include "FixedListIO.C"
+#include "./FixedListIO.C"
 
 // ************************************************************************* //

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AMIInterpolation.H"
-#include "regionCoupledBaseGAMGInterface.H"
-#include "addToRunTimeSelectionTable.H"
-#include "Map.H"
-#include "polyMesh.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIInterpolation.H"
+#include "./regionCoupledBaseGAMGInterface.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

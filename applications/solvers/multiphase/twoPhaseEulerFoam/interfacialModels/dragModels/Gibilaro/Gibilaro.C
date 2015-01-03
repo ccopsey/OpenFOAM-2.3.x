@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Gibilaro.H"
-#include "phasePair.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./Gibilaro.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

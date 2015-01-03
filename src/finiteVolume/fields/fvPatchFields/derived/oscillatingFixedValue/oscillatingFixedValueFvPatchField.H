@@ -84,9 +84,9 @@ SourceFiles
 #ifndef oscillatingFixedValueFvPatchField_H
 #define oscillatingFixedValueFvPatchField_H
 
-#include "Random.H"
-#include "fixedValueFvPatchFields.H"
-#include "DataEntry.H"
+#include "./primitives/random/Random/Random.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -267,7 +267,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "oscillatingFixedValueFvPatchField.C"
+#   include "./oscillatingFixedValueFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

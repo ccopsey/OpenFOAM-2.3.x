@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "tabulatedAxialAngularSpring.H"
-#include "addToRunTimeSelectionTable.H"
-#include "sixDoFRigidBodyMotion.H"
-#include "transform.H"
-#include "unitConversion.H"
+#include "./tabulatedAxialAngularSpring.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./sixDoFRigidBodyMotion/sixDoFRigidBodyMotion.H"
+#include "./primitives/transform/transform.H"
+#include "./global/unitConversion/unitConversion.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

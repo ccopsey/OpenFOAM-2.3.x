@@ -44,7 +44,7 @@ SourceFiles
 #ifndef displacementInterpolationMotionSolver_H
 #define displacementInterpolationMotionSolver_H
 
-#include "displacementMotionSolver.H"
+#include "./motionSolver/displacement/displacementMotionSolver.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

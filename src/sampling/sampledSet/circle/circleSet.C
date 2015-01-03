@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "circleSet.H"
-#include "sampledSet.H"
-#include "meshSearch.H"
-#include "DynamicList.H"
-#include "polyMesh.H"
-#include "addToRunTimeSelectionTable.H"
-#include "word.H"
-#include "mathematicalConstants.H"
+#include "./circleSet.H"
+#include "./sampledSet/sampledSet/sampledSet.H"
+#include "./meshSearch/meshSearch.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./primitives/strings/word/word.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

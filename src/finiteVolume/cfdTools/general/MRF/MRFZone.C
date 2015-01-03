@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "MRFZone.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "fvMatrices.H"
-#include "faceSet.H"
-#include "geometricOneField.H"
+#include "./MRFZone.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./fields/GeometricFields/geometricOneField/geometricOneField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

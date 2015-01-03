@@ -59,8 +59,8 @@ SourceFiles
 #ifndef compressibleLaunderGibsonRSTM_H
 #define compressibleLaunderGibsonRSTM_H
 
-#include "RASModel.H"
-#include "wallDistReflection.H"
+#include "./RASModel/RASModel.H"
+#include "./fvMesh/wallDist/wallDistReflection.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

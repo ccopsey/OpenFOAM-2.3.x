@@ -25,9 +25,9 @@ set(LIBRARIES
   libOpenFOAM
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
 
 add_executable(mshToFoam ${SOURCES})
 

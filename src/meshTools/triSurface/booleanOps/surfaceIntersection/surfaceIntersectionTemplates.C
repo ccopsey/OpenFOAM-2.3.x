@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "surfaceIntersection.H"
+#include "./surfaceIntersection.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

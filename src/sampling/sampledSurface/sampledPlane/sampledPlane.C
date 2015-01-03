@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledPlane.H"
-#include "dictionary.H"
-#include "polyMesh.H"
-#include "volFields.H"
+#include "./sampledPlane.H"
+#include "./db/dictionary/dictionary.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./fields/volFields/volFields.H"
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

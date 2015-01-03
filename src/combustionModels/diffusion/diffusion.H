@@ -37,7 +37,7 @@ SourceFiles
 #ifndef diffusion_H
 #define diffusion_H
 
-#include "singleStepCombustion.H"
+#include "./singleStepCombustion/singleStepCombustion.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -113,7 +113,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "diffusion.C"
+#   include "./diffusion.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

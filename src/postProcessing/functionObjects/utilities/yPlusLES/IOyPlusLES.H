@@ -32,8 +32,8 @@ Description
 #ifndef IOyPlusLES_H
 #define IOyPlusLES_H
 
-#include "yPlusLES.H"
-#include "IOOutputFilter.H"
+#include "./yPlusLES.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

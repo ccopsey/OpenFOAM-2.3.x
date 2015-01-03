@@ -34,10 +34,10 @@ SourceFiles
 #ifndef automatic_H
 #define automatic_H
 
-#include "cellSizeCalculationType.H"
-#include "triSurfaceFields.H"
-#include "PrimitivePatchInterpolation.H"
-#include "Switch.H"
+#include "./cellSizeControlSurfaces/surfaceCellSizeFunction/cellSizeCalculationType/cellSizeCalculationType/cellSizeCalculationType.H"
+#include "./triSurfaceFields/triSurfaceFields.H"
+#include "./interpolations/primitivePatchInterpolation/_PrimitivePatchInterpolation.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

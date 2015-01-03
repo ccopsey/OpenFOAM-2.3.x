@@ -21,11 +21,11 @@ set(SOURCES
   dummyPtscotchDecomp.C
 )
 
-include(include.cmake)
-include(../../../src/OpenFOAM/include.cmake)
-include(../../../src/OSspecific/POSIX/include.cmake)
-include(../../../src/parallel/decompose/decompositionMethods/include.cmake)
-include(../../../src/parallel/decompose/ptscotchDecomp/include.cmake)
+include_directories(.)
+include_directories(../../../src/OpenFOAM)
+include_directories(../../../src/OSspecific/POSIX)
+include_directories(../../../src/parallel/decompose/decompositionMethods)
+include_directories(../../../src/parallel/decompose/ptscotchDecomp)
 
 add_library(libdummyptscotchDecomp ${SOURCES})
 set_target_properties(libdummyptscotchDecomp PROPERTIES PREFIX "")

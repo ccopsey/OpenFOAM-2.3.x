@@ -32,7 +32,7 @@ Description
 #ifndef SpecularReflection_H
 #define SpecularReflection_H
 
-#include "WallInteractionModel.H"
+#include "./submodels/WallInteractionModel/WallInteractionModel/WallInteractionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -85,7 +85,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "SpecularReflection.C"
+#   include "./SpecularReflection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

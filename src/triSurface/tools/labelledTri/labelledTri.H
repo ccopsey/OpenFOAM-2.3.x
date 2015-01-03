@@ -35,8 +35,8 @@ SourceFiles
 #ifndef labelledTri_H
 #define labelledTri_H
 
-#include "triFace.H"
-#include "ListListOps.H"
+#include "./meshes/meshShapes/triFace/triFace.H"
+#include "./containers/Lists/ListListOps/ListListOps.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -146,7 +146,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "labelledTriI.H"
+#include "./labelledTriI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

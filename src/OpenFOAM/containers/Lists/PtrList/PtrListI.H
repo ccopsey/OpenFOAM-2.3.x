@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "autoPtr.H"
-#include "tmp.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./memory/tmp/tmp.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

@@ -39,9 +39,9 @@ SourceFiles
 #ifndef FTRsurfaceFormat_H
 #define FTRsurfaceFormat_H
 
-#include "IFstream.H"
-#include "MeshedSurface.H"
-#include "UnsortedMeshedSurface.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./MeshedSurface/MeshedSurface.H"
+#include "./UnsortedMeshedSurface/UnsortedMeshedSurface.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -134,7 +134,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "FTRsurfaceFormat.C"
+#   include "./FTRsurfaceFormat.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

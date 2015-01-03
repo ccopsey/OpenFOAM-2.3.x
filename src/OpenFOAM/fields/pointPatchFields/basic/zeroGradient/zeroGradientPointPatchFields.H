@@ -26,8 +26,8 @@ License
 #ifndef zeroGradientPointPatchFields_H
 #define zeroGradientPointPatchFields_H
 
-#include "zeroGradientPointPatchField.H"
-#include "fieldTypes.H"
+#include "./zeroGradientPointPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

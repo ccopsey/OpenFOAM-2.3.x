@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "regIOobject.H"
-#include "IFstream.H"
-#include "Time.H"
-#include "Pstream.H"
+#include "./regIOobject.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/Time/Time.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
 
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "VariableHardSphere.H"
-#include "constants.H"
+#include "./VariableHardSphere.H"
+#include "./global/constants/constants.H"
 
 using namespace Foam::constant::mathematical;
 

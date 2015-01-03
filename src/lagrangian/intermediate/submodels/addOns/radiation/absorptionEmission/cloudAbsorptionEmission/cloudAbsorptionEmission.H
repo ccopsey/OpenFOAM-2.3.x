@@ -35,7 +35,7 @@ SourceFiles
 #ifndef radiationCloudAbsorptionEmission_H
 #define radiationCloudAbsorptionEmission_H
 
-#include "absorptionEmissionModel.H"
+#include "./submodels/absorptionEmissionModel/absorptionEmissionModel/absorptionEmissionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

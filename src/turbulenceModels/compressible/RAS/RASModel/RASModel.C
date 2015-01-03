@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "RASModel.H"
-#include "wallFvPatch.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./RASModel.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

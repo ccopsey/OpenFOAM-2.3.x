@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "extendedCentredFaceToCellStencil.H"
-#include "mapDistribute.H"
-#include "faceToCellStencil.H"
+#include "./extendedCentredFaceToCellStencil.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./globalIndexStencils/faceToCellStencil.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

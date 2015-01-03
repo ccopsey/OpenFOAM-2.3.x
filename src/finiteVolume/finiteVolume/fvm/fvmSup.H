@@ -35,9 +35,9 @@ SourceFiles
 #ifndef fvmSup_H
 #define fvmSup_H
 
-#include "volFieldsFwd.H"
-#include "fvMatrix.H"
-#include "zeroField.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fvMatrices/fvMatrix/fvMatrix.H"
+#include "./fields/Fields/zeroField/zeroField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -160,7 +160,7 @@ namespace fvm
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvmSup.C"
+#   include "./fvmSup.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

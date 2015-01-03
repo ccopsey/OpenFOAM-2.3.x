@@ -50,8 +50,8 @@ SourceFiles
 #ifndef turbulentHeatFluxTemperatureFvPatchScalarFields_H
 #define turbulentHeatFluxTemperatureFvPatchScalarFields_H
 
-#include "fixedGradientFvPatchFields.H"
-#include "temperatureCoupledBase.H"
+#include "./fields/fvPatchFields/basic/fixedGradient/fixedGradientFvPatchFields.H"
+#include "./derivedFvPatchFields/temperatureCoupledBase/temperatureCoupledBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

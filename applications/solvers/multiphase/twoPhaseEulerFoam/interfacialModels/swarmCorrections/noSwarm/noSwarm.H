@@ -34,7 +34,7 @@ SourceFiles
 #ifndef noSwarm_H
 #define noSwarm_H
 
-#include "swarmCorrection.H"
+#include "./swarmCorrections/swarmCorrection/swarmCorrection.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

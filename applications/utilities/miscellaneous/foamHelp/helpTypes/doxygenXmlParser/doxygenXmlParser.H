@@ -35,8 +35,8 @@ SourceFiles
 #ifndef doxygenXmlParser_H
 #define doxygenXmlParser_H
 
-#include "dictionary.H"
-#include "IFstream.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -89,7 +89,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "doxygenXmlParserTemplates.C"
+    #include "./doxygenXmlParserTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

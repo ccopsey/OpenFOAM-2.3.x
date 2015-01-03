@@ -40,7 +40,7 @@ SourceFiles
 #ifndef Implicit_H
 #define Implicit_H
 
-#include "PackingModel.H"
+#include "./submodels/MPPIC/PackingModels/PackingModel/PackingModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -130,7 +130,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Implicit.C"
+#   include "./Implicit.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

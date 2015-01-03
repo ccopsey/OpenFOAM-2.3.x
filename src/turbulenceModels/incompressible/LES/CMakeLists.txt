@@ -51,15 +51,15 @@ set(LIBRARIES
   libmeshTools
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/finiteVolume/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/finiteVolume)
 include_directories(../../../../src/turbulenceModels)
-include(../../../../src/turbulenceModels/LES/LESdeltas/include.cmake)
-include(../../../../src/turbulenceModels/LES/LESfilters/include.cmake)
+include_directories(../../../../src/turbulenceModels/LES/LESdeltas)
+include_directories(../../../../src/turbulenceModels/LES/LESfilters)
 include_directories(../../../../src/transportModels)
-include(../../../../src/meshTools/include.cmake)
+include_directories(../../../../src/meshTools)
 
 add_library(libincompressibleLESModels ${SOURCES})
 set_target_properties(libincompressibleLESModels PROPERTIES PREFIX "")

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ThermoParcel.H"
-#include "physicoChemicalConstants.H"
+#include "./ThermoParcel.H"
+#include "./global/constants/physicoChemical/physicoChemicalConstants.H"
 
 using namespace Foam::constant;
 
@@ -374,6 +374,6 @@ Foam::ThermoParcel<ParcelType>::ThermoParcel
 
 // * * * * * * * * * * * * * * IOStream operators  * * * * * * * * * * * * * //
 
-#include "ThermoParcelIO.C"
+#include "./ThermoParcelIO.C"
 
 // ************************************************************************* //

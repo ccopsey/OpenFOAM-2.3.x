@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DelaunayMeshTools.H"
-#include "meshTools.H"
-#include "OFstream.H"
-#include "pointConversion.H"
+#include "./DelaunayMeshTools.H"
+#include "./meshTools/meshTools.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./conformalVoronoiMesh/pointConversion.H"
 
 // * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * * //
 

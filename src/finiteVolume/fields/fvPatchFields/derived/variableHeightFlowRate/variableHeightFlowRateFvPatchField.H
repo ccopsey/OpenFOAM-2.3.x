@@ -69,7 +69,7 @@ SourceFiles
 #ifndef variableHeightFlowRateFvPatchScalarField_H
 #define variableHeightFlowRateFvPatchScalarField_H
 
-#include "mixedFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

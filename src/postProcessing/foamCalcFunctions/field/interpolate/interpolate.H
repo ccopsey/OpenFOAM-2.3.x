@@ -35,7 +35,7 @@ SourceFiles
 #ifndef interpolate_H
 #define interpolate_H
 
-#include "calcType.H"
+#include "./calcType/calcType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -126,7 +126,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeInterpolateField.C"
+#   include "./writeInterpolateField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

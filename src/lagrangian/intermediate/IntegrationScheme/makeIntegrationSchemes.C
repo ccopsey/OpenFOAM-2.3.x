@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IntegrationScheme.H"
-#include "Euler.H"
-#include "Analytical.H"
+#include "./IntegrationScheme/IntegrationScheme.H"
+#include "./Euler/Euler.H"
+#include "./Analytical/Analytical.H"
 
-#include "scalar.H"
-#include "vector.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/Vector/vector/vector.H"
 
 namespace Foam
 {

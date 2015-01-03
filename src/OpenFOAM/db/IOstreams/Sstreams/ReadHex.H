@@ -35,7 +35,7 @@ SourceFiles
 #ifndef ReadHex_H
 #define ReadHex_H
 
-#include "ISstream.H"
+#include "./ISstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -53,7 +53,7 @@ T ReadHex(ISstream&);
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ReadHex.C"
+#   include "./ReadHex.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

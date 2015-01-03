@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellAspectRatioControl.H"
-#include "vectorTools.H"
+#include "./cellAspectRatioControl.H"
+#include "./vectorTools.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

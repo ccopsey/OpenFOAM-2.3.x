@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wallLubricationModel.H"
-#include "phasePair.H"
+#include "./wallLubricationModel.H"
+#include "./phasePair/phasePair/phasePair.H"
 
 const Foam::dimensionSet Foam::wallLubricationModel::dimF(1, -2, -2, 0, 0);
 

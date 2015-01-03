@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "noLift.H"
-#include "phasePair.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./noLift.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

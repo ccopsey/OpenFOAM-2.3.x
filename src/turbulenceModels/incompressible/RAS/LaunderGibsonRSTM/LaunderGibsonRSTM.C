@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LaunderGibsonRSTM.H"
-#include "addToRunTimeSelectionTable.H"
-#include "wallFvPatch.H"
+#include "./LaunderGibsonRSTM.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibility/wallFunctions/backwardsCompatibilityWallFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

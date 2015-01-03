@@ -74,10 +74,10 @@ SourceFiles
 #ifndef mappedFieldFvPatchField_H
 #define mappedFieldFvPatchField_H
 
-#include "mappedPatchBase.H"
-#include "mappedPatchFieldBase.H"
-#include "fixedValueFvPatchFields.H"
-#include "interpolation.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
+#include "./mappedPatchFieldBase.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./interpolation/interpolation/interpolation/interpolation.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -212,7 +212,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "mappedFieldFvPatchField.C"
+#   include "./mappedFieldFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

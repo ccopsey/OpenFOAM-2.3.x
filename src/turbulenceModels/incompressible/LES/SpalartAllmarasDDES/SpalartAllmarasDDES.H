@@ -43,7 +43,7 @@ SourceFiles
 #ifndef SpalartAllmarasDDES_H
 #define SpalartAllmarasDDES_H
 
-#include "SpalartAllmaras.H"
+#include "./SpalartAllmaras/SpalartAllmaras.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

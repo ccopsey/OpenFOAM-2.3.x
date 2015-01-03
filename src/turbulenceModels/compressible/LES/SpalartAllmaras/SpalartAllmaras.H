@@ -47,8 +47,8 @@ SourceFiles
 #ifndef compressibleSpalartAllmaras_H
 #define compressibleSpalartAllmaras_H
 
-#include "DESModel.H"
-#include "volFields.H"
+#include "./DESModel/DESModel.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

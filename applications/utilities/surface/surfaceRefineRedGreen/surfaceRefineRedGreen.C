@@ -33,10 +33,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "triSurface.H"
-#include "triSurfaceTools.H"
-#include "argList.H"
-#include "OFstream.H"
+#include "./triSurface/triSurface.H"
+#include "./triSurface/triSurfaceTools/triSurfaceTools.H"
+#include "./global/argList/argList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 using namespace Foam;
 

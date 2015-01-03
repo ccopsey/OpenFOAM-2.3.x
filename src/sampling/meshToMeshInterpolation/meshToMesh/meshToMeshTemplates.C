@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMesh.H"
-#include "volFields.H"
-#include "directFvPatchFieldMapper.H"
-#include "calculatedFvPatchField.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/fvPatchFields/fvPatchField/directFvPatchFieldMapper.H"
+#include "./fields/fvPatchFields/basic/calculated/calculatedFvPatchField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

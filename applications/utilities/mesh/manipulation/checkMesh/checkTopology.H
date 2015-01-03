@@ -1,5 +1,5 @@
-#include "label.H"
-#include "wordList.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/strings/lists/wordList.H"
 
 namespace Foam
 {

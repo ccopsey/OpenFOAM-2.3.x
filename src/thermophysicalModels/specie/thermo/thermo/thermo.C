@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "thermo.H"
-#include "IOstreams.H"
+#include "./thermo.H"
+#include "./db/IOstreams/IOstreams.H"
 
 /* * * * * * * * * * * * * * * private static data * * * * * * * * * * * * * */
 

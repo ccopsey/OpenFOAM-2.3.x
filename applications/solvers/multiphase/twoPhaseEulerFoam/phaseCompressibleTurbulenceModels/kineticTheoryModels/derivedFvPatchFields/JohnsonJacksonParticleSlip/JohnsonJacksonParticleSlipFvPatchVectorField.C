@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "JohnsonJacksonParticleSlipFvPatchVectorField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "twoPhaseSystem.H"
+#include "./JohnsonJacksonParticleSlipFvPatchVectorField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./twoPhaseSystem.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -38,11 +38,11 @@ SourceFiles
 #ifndef chemistryModel_H
 #define chemistryModel_H
 
-#include "Reaction.H"
-#include "ODESystem.H"
-#include "volFieldsFwd.H"
-#include "simpleMatrix.H"
-#include "DimensionedField.H"
+#include "./reaction/_Reactions/Reaction/Reaction.H"
+#include "./ODESystem/ODESystem.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./matrices/simpleMatrix/simpleMatrix.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -260,12 +260,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "chemistryModelI.H"
+#include "./chemistryModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "chemistryModel.C"
+#   include "./chemistryModel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

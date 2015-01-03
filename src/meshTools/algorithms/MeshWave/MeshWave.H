@@ -35,7 +35,7 @@ SourceFiles
 #ifndef MeshWave_H
 #define MeshWave_H
 
-#include "FaceCellWave.H"
+#include "./FaceCellWave.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -167,7 +167,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "MeshWave.C"
+#   include "./MeshWave.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -36,8 +36,8 @@ SourceFiles
 #ifndef OSspecific_H
 #define OSspecific_H
 
-#include "fileNameList.H"
-#include "long.H"
+#include "./primitives/strings/lists/fileNameList.H"
+#include "./primitives/ints/long/long.H"
 
 #include <sys/types.h>
 

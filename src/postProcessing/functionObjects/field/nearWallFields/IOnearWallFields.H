@@ -32,8 +32,8 @@ Description
 #ifndef IOnearWallFields_H
 #define IOnearWallFields_H
 
-#include "nearWallFields.H"
-#include "IOOutputFilter.H"
+#include "./nearWallFields.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

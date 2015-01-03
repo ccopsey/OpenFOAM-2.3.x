@@ -32,7 +32,7 @@ Description
 #ifndef NoStochasticCollision_H
 #define NoStochasticCollision_H
 
-#include "StochasticCollisionModel.H"
+#include "./submodels/Kinematic/StochasticCollision/StochasticCollisionModel/StochasticCollisionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -97,7 +97,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoStochasticCollision.C"
+#   include "./NoStochasticCollision.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

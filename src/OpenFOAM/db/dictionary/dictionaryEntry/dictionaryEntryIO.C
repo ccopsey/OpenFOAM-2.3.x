@@ -26,9 +26,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "keyType.H"
-#include "dictionaryEntry.H"
-#include "IOstreams.H"
+#include "./primitives/strings/keyType/keyType.H"
+#include "./dictionaryEntry.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

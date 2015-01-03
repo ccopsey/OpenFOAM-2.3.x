@@ -38,7 +38,7 @@ SourceFiles
 #ifndef WallCollisionRecord_H
 #define WallCollisionRecord_H
 
-#include "vector.H"
+#include "./primitives/Vector/vector/vector.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -196,12 +196,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "WallCollisionRecordI.H"
+#include "./WallCollisionRecordI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "WallCollisionRecord.C"
+#   include "./WallCollisionRecord.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

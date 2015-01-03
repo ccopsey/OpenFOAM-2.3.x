@@ -36,8 +36,8 @@ SourceFiles
 #ifndef alphaContactAngleFvPatchScalarField_H
 #define alphaContactAngleFvPatchScalarField_H
 
-#include "zeroGradientFvPatchFields.H"
-#include "multiphaseMixture.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./multiphaseMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

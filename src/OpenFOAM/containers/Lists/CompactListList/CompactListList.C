@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CompactListList.H"
+#include "./CompactListList.H"
 
 // * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * * //
 
@@ -251,6 +251,6 @@ const
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 
-#include "CompactListListIO.C"
+#include "./CompactListListIO.C"
 
 // ************************************************************************* //

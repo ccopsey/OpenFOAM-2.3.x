@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "backwardsCompatibilityWallFunctions.H"
-#include "Time.H"
-#include "OSspecific.H"
+#include "./backwardsCompatibilityWallFunctions.H"
+#include "./db/Time/Time.H"
+#include "./include/OSspecific.H"
 
-#include "wallFvPatch.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

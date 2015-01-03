@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CompatibilityConstant.H"
+#include "./CompatibilityConstant.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -117,7 +117,7 @@ Foam::dimensioned<Type> Foam::CompatibilityConstant<Type>::dimIntegrate
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "CompatibilityConstantIO.C"
+#include "./CompatibilityConstantIO.C"
 
 
 // ************************************************************************* //

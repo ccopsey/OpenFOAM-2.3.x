@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PatchToPatchInterpolation.H"
-#include "objectHit.H"
-#include "pointHit.H"
+#include "./_PatchToPatchInterpolation.H"
+#include "./meshes/primitiveShapes/objectHit/objectHit.H"
+#include "./meshes/primitiveShapes/objectHit/pointHit.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

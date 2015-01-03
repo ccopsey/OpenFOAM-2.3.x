@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dragModel.H"
-#include "phasePair.H"
+#include "./dragModel.H"
+#include "./phasePair/phasePair/phasePair.H"
 
 // * * * * * * * * * * * * * * * * Selector  * * * * * * * * * * * * * * * * //
 

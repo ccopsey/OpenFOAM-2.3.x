@@ -32,8 +32,8 @@ Description
 #ifndef pointPatchFieldMapper_H
 #define pointPatchFieldMapper_H
 
-#include "primitiveFields.H"
-#include "FieldMapper.H"
+#include "./fields/Fields/primitiveFields.H"
+#include "./fields/Fields/Field/FieldMapper.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

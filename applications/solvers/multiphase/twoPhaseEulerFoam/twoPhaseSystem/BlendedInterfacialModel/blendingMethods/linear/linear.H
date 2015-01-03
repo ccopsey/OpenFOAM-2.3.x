@@ -34,7 +34,7 @@ SourceFiles
 #ifndef linear_H
 #define linear_H
 
-#include "blendingMethod.H"
+#include "./BlendedInterfacialModel/blendingMethods/blendingMethod/blendingMethod.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

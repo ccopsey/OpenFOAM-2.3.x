@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldMinMax.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "ListOps.H"
+#include "./fieldMinMax.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./containers/Lists/ListOps/ListOps.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

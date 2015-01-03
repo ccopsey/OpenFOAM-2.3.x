@@ -43,16 +43,16 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "polyTopoChange.H"
-#include "mapPolyMesh.H"
-#include "faceSet.H"
-#include "attachDetach.H"
-#include "attachPolyTopoChanger.H"
-#include "regionSide.H"
-#include "primitiveFacePatch.H"
+#include "./global/argList/argList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./attachDetach/attachDetach.H"
+#include "./polyTopoChange/attachPolyTopoChanger/attachPolyTopoChanger.H"
+#include "./regionSide.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitiveFacePatch.H"
 
 using namespace Foam;
 
@@ -112,16 +112,16 @@ void checkPatch(const polyBoundaryMesh& bMesh, const word& name)
 int main(int argc, char *argv[])
 {
     argList::noParallel();
-#   include "addOverwriteOption.H"
+#   include "./include/addOverwriteOption.H"
 
     argList::validArgs.append("faceSet");
     argList::validArgs.append("masterPatch");
     argList::validArgs.append("slavePatch");
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
     runTime.functionObjects().off();
-#   include "createPolyMesh.H"
+#   include "./include/createPolyMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     const word setName = args[1];

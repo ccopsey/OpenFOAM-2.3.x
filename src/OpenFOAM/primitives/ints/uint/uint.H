@@ -35,7 +35,7 @@ SourceFiles
 #ifndef uint_H
 #define uint_H
 
-#include "word.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

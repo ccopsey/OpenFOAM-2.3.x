@@ -36,8 +36,8 @@ SourceFiles
 #ifndef sampledSetsFunctionObject_H
 #define sampledSetsFunctionObject_H
 
-#include "sampledSets.H"
-#include "OutputFilterFunctionObject.H"
+#include "./sampledSet/sampledSets/sampledSets.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

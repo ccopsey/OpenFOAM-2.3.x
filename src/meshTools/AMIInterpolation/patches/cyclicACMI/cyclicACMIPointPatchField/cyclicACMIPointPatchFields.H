@@ -26,8 +26,8 @@ License
 #ifndef cyclicACMIPointPatchFields_H
 #define cyclicACMIPointPatchFields_H
 
-#include "cyclicACMIPointPatchField.H"
-#include "fieldTypes.H"
+#include "./cyclicACMIPointPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

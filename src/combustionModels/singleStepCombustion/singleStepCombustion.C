@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "singleStepCombustion.H"
-#include "fvmSup.H"
+#include "./singleStepCombustion.H"
+#include "./finiteVolume/fvm/fvmSup.H"
 
 namespace Foam
 {

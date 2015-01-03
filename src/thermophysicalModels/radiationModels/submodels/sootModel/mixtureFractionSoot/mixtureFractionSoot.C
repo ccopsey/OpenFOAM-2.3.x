@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mixtureFractionSoot.H"
-#include "singleStepReactingMixture.H"
+#include "./mixtureFractionSoot.H"
+#include "./mixtures/singleStepReactingMixture/singleStepReactingMixture.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

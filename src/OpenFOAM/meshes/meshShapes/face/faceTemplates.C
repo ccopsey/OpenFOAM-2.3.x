@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "face.H"
-#include "DynamicList.H"
+#include "./face.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

@@ -47,9 +47,9 @@ SourceFiles
 #ifndef FaceCellWave_H
 #define FaceCellWave_H
 
-#include "boolList.H"
-#include "labelList.H"
-#include "primitiveFieldsFwd.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -359,7 +359,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "FaceCellWave.C"
+#   include "./FaceCellWave.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

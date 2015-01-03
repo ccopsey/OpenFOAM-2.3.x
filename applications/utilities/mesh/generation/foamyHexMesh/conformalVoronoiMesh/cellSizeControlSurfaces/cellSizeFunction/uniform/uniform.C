@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "uniform.H"
-#include "addToRunTimeSelectionTable.H"
-#include "volumeType.H"
+#include "./uniform.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./algorithms/indexedOctree/volumeType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

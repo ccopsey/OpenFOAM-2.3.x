@@ -32,16 +32,16 @@ Description
 #ifndef particle_H
 #define particle_H
 
-#include "vector.H"
-#include "Cloud.H"
-#include "IDLList.H"
-#include "pointField.H"
-#include "faceList.H"
-#include "OFstream.H"
-#include "tetrahedron.H"
-#include "FixedList.H"
-#include "polyMeshTetDecomposition.H"
-#include "particleMacros.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./Cloud/Cloud.H"
+#include "./containers/LinkedLists/user/IDLList.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./meshes/meshShapes/face/faceList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetrahedron.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./meshes/polyMesh/polyMeshTetDecomposition/polyMeshTetDecomposition.H"
+#include "./particleMacros.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -576,12 +576,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "particleI.H"
+#include "./particleI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "particleTemplates.C"
+#   include "./particleTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -35,9 +35,9 @@ SourceFiles
 #ifndef psiThermoCombustion_H
 #define psiThermoCombustion_H
 
-#include "autoPtr.H"
-#include "psiCombustionModel.H"
-#include "psiReactionThermo.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./psiCombustionModel/psiCombustionModel/psiCombustionModel.H"
+#include "./psiReactionThermo/psiReactionThermo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

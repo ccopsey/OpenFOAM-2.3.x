@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4Foam.H"
+#include "./vtkPV4Foam.H"
 
 // OpenFOAM includes
-#include "IOobjectList.H"
-#include "vtkPV4FoamReader.h"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./PV4Readers/PV4FoamReader/PV4FoamReader/vtkPV4FoamReader.h"
 
 // VTK includes
 #include "vtkDataArraySelection.h"
@@ -36,9 +36,9 @@ License
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 
-#include "vtkPV4FoamVolFields.H"
-#include "vtkPV4FoamPointFields.H"
-#include "vtkPV4FoamLagrangianFields.H"
+#include "./vtkPV4FoamVolFields.H"
+#include "./vtkPV4FoamPointFields.H"
+#include "./vtkPV4FoamLagrangianFields.H"
 
 
 void Foam::vtkPV4Foam::pruneObjectList

@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ThermoSurfaceFilm.H"
-#include "addToRunTimeSelectionTable.H"
-#include "mathematicalConstants.H"
-#include "Pstream.H"
+#include "./ThermoSurfaceFilm.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
 
 using namespace Foam::constant::mathematical;
 

@@ -34,8 +34,8 @@ SourceFiles
 #ifndef cellSizeAndAlignmentControls_H
 #define cellSizeAndAlignmentControls_H
 
-#include "dictionary.H"
-#include "cellSizeAndAlignmentControl.H"
+#include "./db/dictionary/dictionary.H"
+#include "./cellSizeAndAlignmentControl/cellSizeAndAlignmentControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

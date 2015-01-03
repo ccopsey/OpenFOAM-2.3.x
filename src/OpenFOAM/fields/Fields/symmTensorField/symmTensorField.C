@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "symmTensorField.H"
-#include "transformField.H"
+#include "./symmTensorField.H"
+#include "./fields/Fields/transformField/transformField.H"
 
 #define TEMPLATE
-#include "FieldFunctionsM.C"
+#include "./fields/Fields/Field/FieldFunctionsM.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -174,6 +174,6 @@ BINARY_TYPE_OPERATOR(tensor, symmTensor, symmTensor, &, dot)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "undefFieldFunctionsM.H"
+#include "./fields/Fields/Field/undefFieldFunctionsM.H"
 
 // ************************************************************************* //

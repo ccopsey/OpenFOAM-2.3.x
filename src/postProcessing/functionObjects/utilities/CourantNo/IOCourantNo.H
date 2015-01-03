@@ -32,8 +32,8 @@ Description
 #ifndef IOCourantNo_H
 #define IOCourantNo_H
 
-#include "CourantNo.H"
-#include "IOOutputFilter.H"
+#include "./CourantNo.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

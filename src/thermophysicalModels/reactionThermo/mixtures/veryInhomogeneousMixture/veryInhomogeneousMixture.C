@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "veryInhomogeneousMixture.H"
-#include "fvMesh.H"
+#include "./veryInhomogeneousMixture.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

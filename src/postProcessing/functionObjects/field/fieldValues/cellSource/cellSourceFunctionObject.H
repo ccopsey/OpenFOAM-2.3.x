@@ -36,8 +36,8 @@ SourceFiles
 #ifndef cellSourceFunctionObject_H
 #define cellSourceFunctionObject_H
 
-#include "cellSource.H"
-#include "OutputFilterFunctionObject.H"
+#include "./cellSource.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

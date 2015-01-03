@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "faceAreaWeightAMI.H"
+#include "./faceAreaWeightAMI.H"
 
 // * * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * //
 

@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "reactingOneDim.H"
-#include "addToRunTimeSelectionTable.H"
-#include "zeroGradientFvPatchFields.H"
-#include "surfaceInterpolate.H"
-#include "fvm.H"
-#include "fvcDiv.H"
-#include "fvcVolumeIntegrate.H"
-#include "fvMatrices.H"
-#include "absorptionEmissionModel.H"
-#include "fvcLaplacian.H"
+#include "./reactingOneDim.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
+#include "./finiteVolume/fvm/fvm.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./finiteVolume/fvc/fvcVolumeIntegrate.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./submodels/absorptionEmissionModel/absorptionEmissionModel/absorptionEmissionModel.H"
+#include "./finiteVolume/fvc/fvcLaplacian.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

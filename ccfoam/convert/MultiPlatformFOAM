@@ -1,0 +1,245 @@
+#!/bin/bash
+#
+#   Copyright (C) 2014-15 Chris Copsey
+#   
+#   This file is part of ccFOAM.
+#
+#   ccFOAM is free software: you can redistribute it and/or modify it under the
+#   terms of the GNU General Public License as published by the Free Software
+#   Foundation, either version 3 of the License, or (at your option) any later
+#   version.
+#
+#   ccFOAM is distributed in the hope that it will be useful, but WITHOUT ANY
+#   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#   FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+#   details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+include_directories() {
+  sed -i -e 's|include(\(.*\)/\?include.cmake)|include_directories(\1)|g' -e 's|include_directories(\(.*\)/)|include_directories(\1)|g' -e 's|include_directories()|include_directories(.)|g' $1
+}
+
+parse_source() {
+  INCLUDES=""
+  INCLUDESA=`grep -E '^ *# *include \"' $1 | grep -Ev 'include \".*/.*\"'`
+  INCLUDESB="$INCLUDES`grep -E '^ *# *include \"./' $1`"
+  if [ -n "$INCLUDESA" ]
+  then
+    if [ -n "$INCLUDESB" ]
+    then
+      INCLUDES="$INCLUDESA
+$INCLUDESB"
+    else
+      INCLUDES="$INCLUDESA"
+    fi
+  elif [ -n "$INCLUDESB" ]
+  then
+    INCLUDES="$INCLUDESB"
+  fi
+
+  if [ -n "$INCLUDES" ]
+  then
+    while read INCLUDE
+    do
+#      echo "  $INCLUDE"
+      TARGET=`echo $INCLUDE | sed -e 's| *# *include "\(.*\)".*|\1|g' -e 's|\.|\\.|g'`
+      SUBTARGET=`basename $TARGET`
+#      echo "    $SUBTARGET"
+
+      CMAKELIST_DIR="$1"
+      CMAKELIST="$CMAKELIST_DIR/CMakeLists.txt"
+      CMAKELIST_TARGET_COUNT=0
+      while [ ! -f $CMAKELIST ] || [ $CMAKELIST_TARGET_COUNT -lt 1 ] && [ $CMAKELIST_DIR != "." ]
+      do
+        CMAKELIST_DIR=`dirname $CMAKELIST_DIR`
+        CMAKELIST="$CMAKELIST_DIR/CMakeLists.txt"
+        if [ -f $CMAKELIST ]
+        then
+          CMAKELIST_TARGET_COUNT=`grep -c "install" $CMAKELIST`
+        fi
+      done
+      if [ $CMAKELIST_DIR == "." ]
+      then
+        CMAKELIST_DIR="$1"
+        CMAKELIST="$CMAKELIST_DIR/CMakeLists.txt"
+        while [ ! -f $CMAKELIST ]
+        do
+          CMAKELIST_DIR=`dirname $CMAKELIST_DIR`
+          CMAKELIST="$CMAKELIST_DIR/CMakeLists.txt"
+        done
+      fi
+
+#      echo "$CMAKELIST_DIR"
+
+      cd $CMAKELIST_DIR
+
+      DIRS=`grep "include_directories" CMakeLists.txt | sed -e 's|include_directories(\(.*\))|\1|g' | grep -v "{"`
+
+      SRC_DIR="src"
+      PREFIX="."
+      while [ ! -d $SRC_DIR ]
+      do
+        PREFIX="$PREFIX/.."
+        SRC_DIR="$PREFIX/src"
+      done
+      DIRS="$DIRS . $PREFIX/src/OpenFOAM $PREFIX/src/finiteVolume"
+
+      # Overrides.
+      if [ $1 == "applications/solvers/multiphase/driftFluxFoam/incompressibleTwoPhaseInteractingMixture/incompressibleTwoPhaseInteractingMixture.H" ] && [ $SUBTARGET == "mixtureViscosityModel.H" ]
+      then
+        DIRS="mixtureViscosityModels $DIRS"
+      fi
+
+      if [ ${1: -1} != "L" ]
+      then
+        DIRS="$PREFIX/`dirname $1` $DIRS"
+      fi
+
+      for DIR in $DIRS
+      do
+#        echo $DIR
+#        echo "find $DIR -name \"$SUBTARGET\" -printf \"%P\\n\""
+        RESULT=`find $DIR -name "$SUBTARGET" -printf "%P\n"`
+        if [ -n "$RESULT" ]
+        then
+          if [ `echo "$RESULT" | grep -c $SUBTARGET` -lt 2 ]
+          then
+            RESULT="./$RESULT"
+            break
+          fi
+        fi
+      done
+#      echo "      $RESULT"
+
+      cd $ROOT_DIR
+
+      if [ -n "$RESULT" ] && [ $RESULT != $TARGET ]
+      then
+        echo "      $RESULT"
+        sed -i -e "s|\"$TARGET\"|\"$RESULT\"|g" $1
+      fi
+
+    done <<< "$INCLUDES"
+  fi
+}
+
+duplicate_path() {
+  DIRPREFIX=$1
+  DIRNAME=$2
+  BASENAME=$3
+
+  FULLPATH="$DIRPREFIX"
+  if [ $DIRNAME != "." ]
+  then
+    FULLPATH="$FULLPATH/$DIRNAME"
+  fi
+
+  if [ -e $DIRPREFIX/$DIRNAME/$BASENAME ]
+  then
+    git mv $DIRPREFIX/$DIRNAME/$BASENAME $DIRPREFIX/$DIRNAME/_$BASENAME
+  fi
+
+  if [ -f $DIRPREFIX/$DIRNAME/CMakeLists.txt ]
+  then
+    sed -i -e "s|add_subdirectory($BASENAME)|add_subdirectory(_$BASENAME)|g" $DIRPREFIX/$DIRNAME/CMakeLists.txt
+  fi
+
+  DIRNAME2="$DIRPREFIX/$DIRNAME"
+  BASENAME2="$BASENAME"
+  BASENAME3="_$BASENAME"
+  while [ $DIRNAME2 != "." ]
+  do
+    if [ -f $DIRNAME2/CMakeLists.txt ]
+    then
+      sed -i -e "s| $BASENAME2| $BASENAME3|g" $DIRNAME2/CMakeLists.txt
+    fi
+    BASENAME2="`basename $DIRNAME2`/$BASENAME2"
+    BASENAME3="`basename $DIRNAME2`/$BASENAME3"
+    DIRNAME2=`dirname $DIRNAME2`
+  done
+
+  for PASS in "applications src"
+  do
+    MATCHES=`grep -r "include_directories(.*/$FULLPATH/$BASENAME" $PASS | awk -F: '{print $1}'`
+    for MATCH in $MATCHES
+    do
+      sed -i -e "s|include_directories(\(.*\)/$FULLPATH/$BASENAME|include_directories(\1/$FULLPATH/_$BASENAME|g" $MATCH
+    done
+
+    MATCHES=`grep -r "./$DIRNAME/$BASENAME" $PASS | awk -F: '{print $1}'`
+    for MATCH in $MATCHES
+    do
+      sed -i -e "s|\"./$DIRNAME/$BASENAME\([\"/]\)|\"./$DIRNAME/_$BASENAME\1|g" $MATCH
+    done
+  done
+
+  if [ -e $DIRPREFIX/$DIRNAME ]
+  then
+    MATCHES=`grep -r "./$BASENAME" $DIRPREFIX/$DIRNAME | awk -F: '{print \$1}'`
+    for MATCH in $MATCHES
+    do
+      sed -i -e "s|\"./$BASENAME\([\"/]\)|\"./_$BASENAME\1|g" $MATCH
+    done
+  fi
+}
+
+ROOT_DIR=$PWD/$1
+cd $ROOT_DIR
+
+DEBUG=1
+
+PASSES="src applications/solvers applications/utilities"
+
+for PASS in $PASSES
+do
+  CMAKELISTS=`find $PASS -name "CMakeLists.txt"`
+  for CMAKELIST in $CMAKELISTS
+  do
+    include_directories $CMAKELIST
+  done
+done
+
+#PASSES="applications/solvers/multiphase/driftFluxFoam/incompressibleTwoPhaseInteractingMixture"
+
+for PASS in $PASSES
+do
+  SRCS=`find $PASS -name "*.C" -o -name "*.H" -o -name "*.h" -o -name "*.L"`
+  SRCS_COUNT=`echo "$SRCS" | wc -w`
+  SRCS_I=0
+  for SRC in $SRCS
+  do
+    SRCS_I=$((SRCS_I+1))
+    echo "[$SRCS_I/$SRCS_COUNT] $SRC"
+    if [ $SRC != "applications/utilities/mesh/conversion/sammToFoam/readPoints.C" ]
+    then
+      parse_source $SRC
+    fi
+  done
+done
+
+find . -name "include.cmake" -delete
+
+duplicate_path applications test Dictionary
+duplicate_path src/finiteVolume finiteVolume/fvc fvcDDt.C
+duplicate_path src/finiteVolume finiteVolume/fvc fvcDDt.H
+duplicate_path src/finiteVolume finiteVolume/gradSchemes LeastSquaresGrad
+duplicate_path src/fvOptions constraints/general/explicitSetValue ExplicitSetValue.C
+duplicate_path src/fvOptions sources/general/codedSource CodedSource.C
+duplicate_path src/fvOptions sources/general/semiImplicitSource SemiImplicitSource.C
+duplicate_path src/lagrangian . Turbulence
+duplicate_path src/OpenFOAM interpolations/patchToPatchInterpolation PatchToPatchInterpolation.H
+duplicate_path src/OpenFOAM interpolations/primitivePatchInterpolation PrimitivePatchInterpolation.H
+duplicate_path src/OpenFOAM matrices/LduMatrix/LduMatrix SolverPerformance.C
+duplicate_path src/OpenFOAM matrices/LduMatrix/LduMatrix SolverPerformance.H
+duplicate_path src/OpenFOAM matrices LduMatrix
+duplicate_path src/OpenFOAM meshes/MeshObject MeshObject.C
+duplicate_path src/OpenFOAM meshes/primitiveMesh PrimitivePatch
+duplicate_path src/OpenFOAM meshes/primitiveShapes/objectHit PointHit.H
+duplicate_path src/OpenFOAM meshes/primitiveShapes/objectHit PointIndexHit.H
+duplicate_path src/thermophysicalModels/solidSpecie reaction Reactions
+duplicate_path src/thermophysicalModels/specie reaction Reactions
+duplicate_path src . TurbulenceModels
+duplicate_path tutorials combustion/PDRFoam/flamePropagationWithObstacles/0.org B

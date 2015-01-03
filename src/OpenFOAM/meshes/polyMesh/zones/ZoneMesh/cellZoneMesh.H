@@ -29,9 +29,9 @@ Description
 #ifndef cellZoneMesh_H
 #define cellZoneMesh_H
 
-#include "ZoneMesh.H"
-#include "cellZone.H"
-#include "cellZoneMeshFwd.H"
+#include "./ZoneMesh.H"
+#include "./meshes/polyMesh/zones/cellZone/cellZone.H"
+#include "./cellZoneMeshFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

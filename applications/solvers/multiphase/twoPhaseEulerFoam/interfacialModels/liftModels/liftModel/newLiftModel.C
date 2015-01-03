@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "liftModel.H"
-#include "phasePair.H"
+#include "./liftModel.H"
+#include "./phasePair/phasePair/phasePair.H"
 
 // * * * * * * * * * * * * * * * * Selector  * * * * * * * * * * * * * * * * //
 

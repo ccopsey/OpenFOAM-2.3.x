@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "meshToMesh.H"
-#include "OFstream.H"
-#include "Time.H"
-#include "globalIndex.H"
-#include "mergePoints.H"
-#include "processorPolyPatch.H"
-#include "SubField.H"
+#include "./meshToMesh.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./fields/Fields/Field/SubField.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

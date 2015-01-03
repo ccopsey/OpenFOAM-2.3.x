@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SDA.H"
-#include "addToRunTimeSelectionTable.H"
-#include "mathematicalConstants.H"
+#include "./SDA.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant::mathematical;
 

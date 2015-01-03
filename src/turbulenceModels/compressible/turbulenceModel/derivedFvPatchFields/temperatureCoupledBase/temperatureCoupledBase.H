@@ -45,9 +45,9 @@ SourceFiles
 #ifndef temperatureCoupledBase_H
 #define temperatureCoupledBase_H
 
-#include "scalarField.H"
-#include "NamedEnum.H"
-#include "fvPatch.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./fvMesh/fvPatches/fvPatch/fvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

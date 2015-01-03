@@ -35,9 +35,9 @@ SourceFiles
 #ifndef pointFeatureEdgesTypes_H
 #define pointFeatureEdgesTypes_H
 
-#include "HashTable.H"
-#include "extendedFeatureEdgeMesh.H"
-#include "List.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./extendedEdgeMesh/extendedFeatureEdgeMesh/extendedFeatureEdgeMesh.H"
+#include "./containers/Lists/List/List.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -29,10 +29,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "OFstream.H"
+#include "./global/argList/argList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
-#include "MeshedSurfaces.H"
+#include "./MeshedSurface/MeshedSurfaces.H"
 
 using namespace Foam;
 

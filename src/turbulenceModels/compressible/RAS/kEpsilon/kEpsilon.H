@@ -52,7 +52,7 @@ SourceFiles
 #ifndef compressiblekEpsilon_H
 #define compressiblekEpsilon_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

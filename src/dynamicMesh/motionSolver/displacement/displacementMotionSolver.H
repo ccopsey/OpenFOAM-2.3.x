@@ -38,9 +38,9 @@ SourceFiles
 #ifndef displacementMotionSolver_H
 #define displacementMotionSolver_H
 
-#include "motionSolver.H"
-#include "pointFields.H"
-#include "pointIOField.H"
+#include "./motionSolver/motionSolver/motionSolver.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./meshes/primitiveShapes/point/pointIOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

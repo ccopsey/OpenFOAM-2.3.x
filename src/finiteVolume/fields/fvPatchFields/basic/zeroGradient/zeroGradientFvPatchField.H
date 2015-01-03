@@ -49,7 +49,7 @@ SourceFiles
 #ifndef zeroGradientFvPatchField_H
 #define zeroGradientFvPatchField_H
 
-#include "fvPatchField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -184,7 +184,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "zeroGradientFvPatchField.C"
+#   include "./zeroGradientFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

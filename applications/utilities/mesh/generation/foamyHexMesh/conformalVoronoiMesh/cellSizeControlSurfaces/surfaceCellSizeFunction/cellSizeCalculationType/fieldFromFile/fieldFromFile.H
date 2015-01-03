@@ -34,9 +34,9 @@ SourceFiles
 #ifndef fieldFromFile_H
 #define fieldFromFile_H
 
-#include "cellSizeCalculationType.H"
-#include "triSurfaceFields.H"
-#include "PrimitivePatchInterpolation.H"
+#include "./cellSizeControlSurfaces/surfaceCellSizeFunction/cellSizeCalculationType/cellSizeCalculationType/cellSizeCalculationType.H"
+#include "./triSurfaceFields/triSurfaceFields.H"
+#include "./interpolations/primitivePatchInterpolation/_PrimitivePatchInterpolation.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

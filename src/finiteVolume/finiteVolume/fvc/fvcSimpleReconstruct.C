@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcReconstruct.H"
-#include "fvMesh.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./fvcReconstruct.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

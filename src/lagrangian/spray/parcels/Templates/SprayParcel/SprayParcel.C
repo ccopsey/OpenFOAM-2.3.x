@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SprayParcel.H"
-#include "CompositionModel.H"
-#include "AtomizationModel.H"
+#include "./SprayParcel.H"
+#include "./submodels/Reacting/CompositionModel/CompositionModel/CompositionModel.H"
+#include "./submodels/AtomizationModel/AtomizationModel/AtomizationModel.H"
 
 // * * * * * * * * * * *  Protected Member Functions * * * * * * * * * * * * //
 
@@ -457,7 +457,7 @@ Foam::SprayParcel<ParcelType>::SprayParcel
 
 // * * * * * * * * * * * * * * IOStream operators  * * * * * * * * * * * * * //
 
-#include "SprayParcelIO.C"
+#include "./SprayParcelIO.C"
 
 
 // ************************************************************************* //

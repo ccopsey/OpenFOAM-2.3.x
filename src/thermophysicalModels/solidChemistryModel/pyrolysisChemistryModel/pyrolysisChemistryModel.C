@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "pyrolysisChemistryModel.H"
-#include "solidReaction.H"
+#include "./pyrolysisChemistryModel.H"
+#include "./reaction/_Reactions/solidReaction/solidReaction.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

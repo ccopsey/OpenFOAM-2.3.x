@@ -37,7 +37,7 @@ SourceFiles
 #ifndef SyamlalOBrien_H
 #define SyamlalOBrien_H
 
-#include "dragModel.H"
+#include "./dragModels/dragModel/dragModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

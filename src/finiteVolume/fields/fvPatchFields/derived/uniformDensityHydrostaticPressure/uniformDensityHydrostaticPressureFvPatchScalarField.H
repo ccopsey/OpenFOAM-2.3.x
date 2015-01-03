@@ -73,7 +73,7 @@ SourceFiles
 #ifndef uniformDensityHydrostaticPressureFvPatchScalarField_H
 #define uniformDensityHydrostaticPressureFvPatchScalarField_H
 
-#include "fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

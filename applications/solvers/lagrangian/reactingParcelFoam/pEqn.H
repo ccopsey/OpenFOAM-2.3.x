@@ -54,8 +54,8 @@
     // Second part of thermodynamic density update
     thermo.rho() += psi*p;
 
-    #include "rhoEqn.H" // NOTE: flux and time scales now inconsistent
-    #include "compressibleContinuityErrs.H"
+    #include "./rhoEqn.H" // NOTE: flux and time scales now inconsistent
+    #include "./cfdTools/compressible/compressibleContinuityErrs.H"
 
     U = HbyA - rAU*fvc::grad(p);
     U.correctBoundaryConditions();

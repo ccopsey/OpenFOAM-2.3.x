@@ -29,9 +29,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "mirrorFvMesh.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./mirrorFvMesh.H"
 
 using namespace Foam;
 
@@ -40,9 +40,9 @@ using namespace Foam;
 int main(int argc, char *argv[])
 {
 
-#   include "addOverwriteOption.H"
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/addOverwriteOption.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     const bool overwrite = args.optionFound("overwrite");
 

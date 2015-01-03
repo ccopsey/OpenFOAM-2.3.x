@@ -35,7 +35,7 @@ SourceFiles
 #ifndef singleStepCombustion_H
 #define singleStepCombustion_H
 
-#include "singleStepReactingMixture.H"
+#include "./mixtures/singleStepReactingMixture/singleStepReactingMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -117,7 +117,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "singleStepCombustion.C"
+#   include "./singleStepCombustion.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

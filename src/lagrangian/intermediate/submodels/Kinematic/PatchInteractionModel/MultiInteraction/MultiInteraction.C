@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "MultiInteraction.H"
+#include "./MultiInteraction.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

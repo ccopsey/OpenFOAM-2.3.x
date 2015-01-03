@@ -115,8 +115,8 @@ SourceFiles
 #ifndef CodedSource_H
 #define CodedSource_H
 
-#include "fvOption.H"
-#include "codedBase.H"
+#include "./fvOptions/fvOption.H"
+#include "./db/dynamicLibrary/codedBase/codedBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -241,8 +241,8 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "CodedSource.C"
-#   include "CodedSourceIO.C"
+#   include "./_CodedSource.C"
+#   include "./CodedSourceIO.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

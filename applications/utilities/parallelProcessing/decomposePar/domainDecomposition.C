@@ -23,22 +23,22 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "domainDecomposition.H"
-#include "dictionary.H"
-#include "labelIOList.H"
-#include "processorPolyPatch.H"
-#include "processorCyclicPolyPatch.H"
-#include "fvMesh.H"
-#include "OSspecific.H"
-#include "Map.H"
-#include "globalMeshData.H"
-#include "DynamicList.H"
-#include "fvFieldDecomposer.H"
-#include "IOobjectList.H"
-#include "cellSet.H"
-#include "faceSet.H"
-#include "pointSet.H"
-#include "uniformDimensionedFields.H"
+#include "./domainDecomposition.H"
+#include "./db/dictionary/dictionary.H"
+#include "./primitives/ints/lists/labelIOList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processorCyclic/processorCyclicPolyPatch.H"
+#include "./fvMesh/fvMesh.H"
+#include "./include/OSspecific.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./fvFieldDecomposer.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./sets/topoSets/pointSet.H"
+#include "./fields/UniformDimensionedFields/uniformDimensionedFields.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

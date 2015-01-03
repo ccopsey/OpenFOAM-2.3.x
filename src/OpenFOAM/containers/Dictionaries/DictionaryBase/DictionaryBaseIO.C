@@ -26,8 +26,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "DictionaryBase.H"
-#include "IOstreams.H"
+#include "./DictionaryBase.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * * Ostream Operator  * * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef SRIFallOffFunction_H
 #define SRIFallOffFunction_H
 
-#include "scalar.H"
+#include "./primitives/Scalar/scalar/scalar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -110,7 +110,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SRIFallOffFunctionI.H"
+#include "./SRIFallOffFunctionI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

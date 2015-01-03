@@ -26,13 +26,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "fvMesh.H"
-#include "topoSetSource.H"
-#include "cellSet.H"
-#include "faceSet.H"
-#include "volFields.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./fvMesh/fvMesh.H"
+#include "./sets/topoSetSource/topoSetSource.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./fields/volFields/volFields.H"
 
 using namespace Foam;
 
@@ -389,10 +389,10 @@ public:
 
 int main(int argc, char *argv[])
 {
-    #include "addRegionOption.H"
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createNamedMesh.H"
+    #include "./include/addRegionOption.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createNamedMesh.H"
 
     Info<< "Reading setFieldsDict\n" << endl;
 

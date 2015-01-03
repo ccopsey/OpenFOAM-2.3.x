@@ -32,8 +32,8 @@ Description
 #ifndef IOturbulenceFields_H
 #define IOturbulenceFields_H
 
-#include "turbulenceFields.H"
-#include "IOOutputFilter.H"
+#include "./turbulenceFields.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

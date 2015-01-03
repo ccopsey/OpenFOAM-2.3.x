@@ -36,19 +36,19 @@ set(LIBRARIES
   libmeshTools
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
 include_directories(..)
-include(../../../../../src/finiteVolume/include.cmake)
+include_directories(../../../../../src/finiteVolume)
 include_directories(../../../../../src/turbulenceModels/incompressible/turbulenceModel)
 include_directories(../../../../../src/transportModels)
 include_directories(../../../../../src/transportModels/incompressible/singlePhaseTransportModel)
-include(../../../../../src/fvOptions/include.cmake)
-include(../../../../../src/sampling/include.cmake)
-include(../../../../../src/dynamicFvMesh/include.cmake)
-include(../../../../../src/dynamicMesh/include.cmake)
-include(../../../../../src/meshTools/include.cmake)
+include_directories(../../../../../src/fvOptions)
+include_directories(../../../../../src/sampling)
+include_directories(../../../../../src/dynamicFvMesh)
+include_directories(../../../../../src/dynamicMesh)
+include_directories(../../../../../src/meshTools)
 
 add_executable(pimpleDyMFoam ${SOURCES})
 

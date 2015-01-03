@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cyclicAMIPolyPatch.H"
-#include "transformField.H"
-#include "SubField.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "addToRunTimeSelectionTable.H"
-#include "faceAreaIntersect.H"
-#include "ops.H"
+#include "./cyclicAMIPolyPatch.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./fields/Fields/Field/SubField.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./AMIInterpolation/faceAreaIntersect/faceAreaIntersect.H"
+#include "./primitives/ops/ops.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

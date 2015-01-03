@@ -44,8 +44,8 @@ SourceFiles
 #ifndef fvPatchField_H
 #define fvPatchField_H
 
-#include "fvPatch.H"
-#include "DimensionedField.H"
+#include "./fvMesh/fvPatches/fvPatch/fvPatch.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -585,8 +585,8 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvPatchField.C"
-#   include "calculatedFvPatchField.H"
+#   include "./fvPatchField.C"
+#   include "./fields/fvPatchFields/basic/calculated/calculatedFvPatchField.H"
 #endif
 
 

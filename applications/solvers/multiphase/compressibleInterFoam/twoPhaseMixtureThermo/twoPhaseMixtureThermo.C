@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "twoPhaseMixtureThermo.H"
-#include "gradientEnergyFvPatchScalarField.H"
-#include "mixedEnergyFvPatchScalarField.H"
+#include "./twoPhaseMixtureThermo.H"
+#include "./derivedFvPatchFields/gradientEnergy/gradientEnergyFvPatchScalarField.H"
+#include "./derivedFvPatchFields/mixedEnergy/mixedEnergyFvPatchScalarField.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

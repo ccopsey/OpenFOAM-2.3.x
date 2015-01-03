@@ -35,8 +35,8 @@ SourceFiles
 #ifndef multiComponentMixture_H
 #define multiComponentMixture_H
 
-#include "basicMultiComponentMixture.H"
-#include "HashPtrTable.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -153,7 +153,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "multiComponentMixture.C"
+#   include "./multiComponentMixture.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

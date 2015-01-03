@@ -77,8 +77,8 @@ SourceFiles
 #ifndef fanPressureFvPatchScalarField_H
 #define fanPressureFvPatchScalarField_H
 
-#include "totalPressureFvPatchScalarField.H"
-#include "interpolationTable.H"
+#include "./fields/fvPatchFields/derived/totalPressure/totalPressureFvPatchScalarField.H"
+#include "./interpolations/interpolationTable/interpolationTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

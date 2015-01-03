@@ -42,12 +42,12 @@ SourceFiles
 #ifndef syncTools_H
 #define syncTools_H
 
-#include "Pstream.H"
-#include "EdgeMap.H"
-#include "PackedBoolList.H"
-#include "polyMesh.H"
-#include "coupledPolyPatch.H"
-#include "mapDistribute.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./meshes/meshShapes/edge/EdgeMap.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/polyPatches/basic/coupled/coupledPolyPatch.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -615,7 +615,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "syncToolsTemplates.C"
+#   include "./syncToolsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

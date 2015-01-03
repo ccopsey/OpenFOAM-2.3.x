@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "searchableSurfaceControl.H"
-#include "addToRunTimeSelectionTable.H"
-#include "cellSizeFunction.H"
-#include "triSurfaceMesh.H"
-#include "searchableBox.H"
-#include "tetrahedron.H"
-#include "vectorTools.H"
-#include "quaternion.H"
+#include "./searchableSurfaceControl.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./cellSizeControlSurfaces/cellSizeFunction/cellSizeFunction/cellSizeFunction.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./searchableSurface/searchableBox.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetrahedron.H"
+#include "./vectorTools.H"
+#include "./primitives/quaternion/quaternion.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

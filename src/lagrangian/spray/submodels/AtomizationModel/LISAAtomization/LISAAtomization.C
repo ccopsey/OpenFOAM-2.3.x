@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LISAAtomization.H"
+#include "./LISAAtomization.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -258,12 +258,12 @@ void Foam::LISAAtomization<CloudType>::update
         {
             case method1:
             {
-                #include "LISASMDCalcMethod1.H"
+                #include "./LISASMDCalcMethod1.H"
                 break;
             }
             case method2:
             {
-                #include "LISASMDCalcMethod2.H"
+                #include "./LISASMDCalcMethod2.H"
                 break;
             }
         }

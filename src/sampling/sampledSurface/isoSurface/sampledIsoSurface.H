@@ -37,10 +37,10 @@ SourceFiles
 #ifndef sampledIsoSurface_H
 #define sampledIsoSurface_H
 
-#include "isoSurface.H"
-#include "sampledSurface.H"
-#include "ZoneIDs.H"
-#include "fvMeshSubset.H"
+#include "./isoSurface.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./meshes/Identifiers/zones/ZoneIDs.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -276,7 +276,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "sampledIsoSurfaceTemplates.C"
+#   include "./sampledIsoSurfaceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

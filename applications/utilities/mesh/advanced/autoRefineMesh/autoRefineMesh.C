@@ -29,31 +29,31 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "twoDPointCorrector.H"
-#include "OFstream.H"
-#include "multiDirRefinement.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./twoDPointCorrector/twoDPointCorrector.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshCut/meshModifiers/multiDirRefinement/multiDirRefinement.H"
 
-#include "triSurface.H"
-#include "triSurfaceSearch.H"
+#include "./triSurface/triSurface.H"
+#include "./triSurface/triSurfaceSearch/triSurfaceSearch.H"
 
-#include "cellSet.H"
-#include "pointSet.H"
-#include "surfaceToCell.H"
-#include "surfaceToPoint.H"
-#include "cellToPoint.H"
-#include "pointToCell.H"
-#include "cellToCell.H"
-#include "surfaceSets.H"
-#include "polyTopoChange.H"
-#include "polyTopoChanger.H"
-#include "mapPolyMesh.H"
-#include "labelIOList.H"
-#include "emptyPolyPatch.H"
-#include "removeCells.H"
-#include "meshSearch.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/pointSet.H"
+#include "./sets/cellSources/surfaceToCell/surfaceToCell.H"
+#include "./sets/pointSources/surfaceToPoint/surfaceToPoint.H"
+#include "./sets/pointSources/cellToPoint/cellToPoint.H"
+#include "./sets/cellSources/pointToCell/pointToCell.H"
+#include "./sets/cellSources/cellToCell/cellToCell.H"
+#include "./surfaceSets/surfaceSets.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChanger/polyTopoChanger.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./primitives/ints/lists/labelIOList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./polyTopoChange/polyTopoChange/removeCells.H"
+#include "./meshSearch/meshSearch.H"
 
 using namespace Foam;
 
@@ -624,9 +624,9 @@ int main(int argc, char *argv[])
 {
     argList::noParallel();
 
-#   include "setRootCase.H"
-#   include "createTime.H"
-#   include "createPolyMesh.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
+#   include "./include/createPolyMesh.H"
 
     // If nessecary add oldInternalFaces patch
     label newPatchI = addPatch(mesh, "oldInternalFaces");

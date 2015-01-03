@@ -35,9 +35,9 @@ SourceFiles
 #ifndef SLListBase_H
 #define SLListBase_H
 
-#include "bool.H"
-#include "label.H"
-#include "uLabel.H"
+#include "./primitives/bools/bool/bool.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/ints/uLabel/uLabel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -263,7 +263,7 @@ private:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SLListBaseI.H"
+#include "./SLListBaseI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

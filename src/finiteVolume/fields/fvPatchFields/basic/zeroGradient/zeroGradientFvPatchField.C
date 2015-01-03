@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "zeroGradientFvPatchField.H"
-#include "fvPatchFieldMapper.H"
+#include "./zeroGradientFvPatchField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

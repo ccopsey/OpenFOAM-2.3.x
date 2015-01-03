@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "lagrangianWriter.H"
-#include "writeFuns.H"
-#include "IOField.H"
+#include "./lagrangianWriter.H"
+#include "./writeFuns.H"
+#include "./db/IOobjects/IOField/IOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

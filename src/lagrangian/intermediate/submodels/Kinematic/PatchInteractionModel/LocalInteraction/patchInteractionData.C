@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "patchInteractionData.H"
-#include "dictionaryEntry.H"
-#include "PatchInteractionModel.H"
+#include "./patchInteractionData.H"
+#include "./db/dictionary/dictionaryEntry/dictionaryEntry.H"
+#include "./submodels/Kinematic/PatchInteractionModel/PatchInteractionModel/PatchInteractionModel.H"
 
 // * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * * //
 

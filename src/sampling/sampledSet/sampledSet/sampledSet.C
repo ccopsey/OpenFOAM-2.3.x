@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledSet.H"
-#include "polyMesh.H"
-#include "primitiveMesh.H"
-#include "meshSearch.H"
-#include "writer.H"
-#include "particle.H"
+#include "./sampledSet.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
+#include "./meshSearch/meshSearch.H"
+#include "./sampledSetWriters/writer.H"
+#include "./particle/particle.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

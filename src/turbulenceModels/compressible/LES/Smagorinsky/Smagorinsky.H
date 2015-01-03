@@ -52,7 +52,7 @@ SourceFiles
 #ifndef compressibleSmagorinsky_H
 #define compressibleSmagorinsky_H
 
-#include "GenEddyVisc.H"
+#include "./GenEddyVisc/GenEddyVisc.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

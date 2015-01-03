@@ -60,11 +60,11 @@ SourceFiles
 #ifndef processorField_H
 #define processorField_H
 
-#include "OFstream.H"
-#include "pointFieldFwd.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "coordinateSystem.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./coordinateSystems/coordinateSystem.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

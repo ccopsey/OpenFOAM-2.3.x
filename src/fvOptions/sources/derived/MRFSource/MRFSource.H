@@ -48,7 +48,7 @@ SourceFiles
 #ifndef MRFSource_H
 #define MRFSource_H
 
-#include "fvOption.H"
+#include "./fvOptions/fvOption.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

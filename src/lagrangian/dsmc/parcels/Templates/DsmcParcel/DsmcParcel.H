@@ -37,12 +37,12 @@ SourceFiles
 #ifndef DsmcParcel_H
 #define DsmcParcel_H
 
-#include "particle.H"
-#include "IOstream.H"
-#include "autoPtr.H"
-#include "contiguous.H"
+#include "./particle/particle.H"
+#include "./db/IOstreams/IOstreams/IOstream.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./primitives/contiguous/contiguous.H"
 
-#include "DsmcCloud.H"
+#include "./clouds/Templates/DsmcCloud/DsmcCloud.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -323,12 +323,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DsmcParcelI.H"
+#include "./DsmcParcelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "DsmcParcel.C"
+    #include "./DsmcParcel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

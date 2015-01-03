@@ -35,10 +35,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "singlePhaseTransportModel.H"
-#include "RASModel.H"
-#include "wallDist.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
+#include "./RASModel.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
         "write nut field"
     );
 
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
     if (!args.optionFound("ybl") && !args.optionFound("Cbl"))
     {
@@ -92,9 +92,9 @@ int main(int argc, char *argv[])
             << exit(FatalError);
     }
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
     U.write();
 
     // Update/re-write phi
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
     phi.write();
 
     singlePhaseTransportModel laminarTransport(U, phi);

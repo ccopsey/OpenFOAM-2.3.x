@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellMatcher.H"
+#include "./cellMatcher.H"
 
-#include "primitiveMesh.H"
-#include "Map.H"
-#include "faceList.H"
-#include "labelList.H"
-#include "ListOps.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./meshes/meshShapes/face/faceList.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./containers/Lists/ListOps/ListOps.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "TomiyamaLiftForce.H"
+#include "./TomiyamaLiftForce.H"
 
 // * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * * //
 

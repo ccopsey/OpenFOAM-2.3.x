@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wedgePointPatchField.H"
-#include "transformField.H"
+#include "./wedgePointPatchField.H"
+#include "./fields/Fields/transformField/transformField.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

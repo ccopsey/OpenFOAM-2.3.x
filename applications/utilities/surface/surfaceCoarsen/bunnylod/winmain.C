@@ -29,8 +29,8 @@
 #include <sys/timeb.h>
 #include <time.h>
 
-#include "vector.h"
-#include "font.h"
+#include "./vector.h"
+#include "./font.h"
 
 // Functions and Variables from bunny module
 extern void       InitModel();

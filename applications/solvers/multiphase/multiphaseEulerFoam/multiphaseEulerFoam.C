@@ -30,37 +30,37 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "multiphaseSystem.H"
-#include "phaseModel.H"
-#include "dragModel.H"
-#include "heatTransferModel.H"
-#include "singlePhaseTransportModel.H"
-#include "LESModel.H"
-#include "pimpleControl.H"
-#include "IOMRFZoneList.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./multiphaseSystem/multiphaseSystem.H"
+#include "./multiphaseSystem/phaseModel/phaseModel.H"
+#include "./interfacialModels/dragModels/dragModel/dragModel.H"
+#include "./interfacialModels/heatTransferModels/heatTransferModel/heatTransferModel.H"
+#include "./incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
+#include "./LESModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./cfdTools/general/MRF/IOMRFZoneList.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     pimpleControl pimple(mesh);
 
-    #include "createFields.H"
-    #include "createMRFZones.H"
-    #include "initContinuityErrs.H"
-    #include "readTimeControls.H"
-    #include "createPcorrTypes.H"
-    #include "correctPhi.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./createFields.H"
+    #include "./createMRFZones.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./cfdTools/general/include/createPcorrTypes.H"
+    #include "./correctPhi.H"
+    #include "./CourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -68,9 +68,9 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "CourantNo.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./CourantNo.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
         Info<< "Time = " << runTime.timeName() << nl << endl;
@@ -81,18 +81,18 @@ int main(int argc, char *argv[])
             sgsModel->correct();
             fluid.solve();
             rho = fluid.rho();
-            #include "zonePhaseVolumes.H"
+            #include "./zonePhaseVolumes.H"
 
             //#include "TEqns.H"
-            #include "UEqns.H"
+            #include "./UEqns.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
 
-            #include "DDtU.H"
+            #include "./DDtU.H"
         }
 
         runTime.write();

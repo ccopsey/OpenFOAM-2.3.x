@@ -37,9 +37,9 @@ SourceFiles
 #ifndef wallBoundedParticle_H
 #define wallBoundedParticle_H
 
-#include "particle.H"
-#include "autoPtr.H"
-#include "InfoProxy.H"
+#include "./particle/particle.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/IOstreams/IOstreams/InfoProxy.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -344,7 +344,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "wallBoundedParticleTemplates.C"
+#   include "./wallBoundedParticleTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "subModelBase.H"
+#include "./subModelBase.H"
 
 // * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * * * //
 

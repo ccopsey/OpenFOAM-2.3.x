@@ -39,9 +39,9 @@ SourceFiles
 #ifndef ThermoParcel_H
 #define ThermoParcel_H
 
-#include "particle.H"
-#include "SLGThermo.H"
-#include "demandDrivenEntry.H"
+#include "./particle/particle.H"
+#include "./SLGThermo/SLGThermo.H"
+#include "./primitives/demandDrivenEntry/demandDrivenEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -453,13 +453,13 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "ThermoParcelI.H"
-#include "ThermoParcelTrackingDataI.H"
+#include "./ThermoParcelI.H"
+#include "./ThermoParcelTrackingDataI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "ThermoParcel.C"
+    #include "./ThermoParcel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

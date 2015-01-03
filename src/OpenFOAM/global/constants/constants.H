@@ -37,19 +37,19 @@ Description
 // Dimensionless coefficents
 
 // Mathematical constants
-#include "mathematicalConstants.H"
+#include "./mathematical/mathematicalConstants.H"
 
 
 // Dimensioned constants
 
 // Fundamental constants
-#include "fundamentalConstants.H"
+#include "./fundamental/fundamentalConstants.H"
 
 // Derived constants
-#include "universalConstants.H"
-#include "electromagneticConstants.H"
-#include "atomicConstants.H"
-#include "physicoChemicalConstants.H"
+#include "./universal/universalConstants.H"
+#include "./electromagnetic/electromagneticConstants.H"
+#include "./atomic/atomicConstants.H"
+#include "./physicoChemical/physicoChemicalConstants.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

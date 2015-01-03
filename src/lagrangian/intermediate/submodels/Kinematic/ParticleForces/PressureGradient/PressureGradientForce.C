@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PressureGradientForce.H"
-#include "fvcDdt.H"
-#include "fvcGrad.H"
+#include "./PressureGradientForce.H"
+#include "./finiteVolume/fvc/fvcDdt.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

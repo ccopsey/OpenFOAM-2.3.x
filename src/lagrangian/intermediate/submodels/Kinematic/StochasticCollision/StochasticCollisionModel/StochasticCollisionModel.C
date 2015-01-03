@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "StochasticCollisionModel.H"
+#include "./StochasticCollisionModel.H"
 
 // * * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * //
 
@@ -92,6 +92,6 @@ void Foam::StochasticCollisionModel<CloudType>::update(const scalar dt)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "StochasticCollisionModelNew.C"
+#include "./StochasticCollisionModelNew.C"
 
 // ************************************************************************* //

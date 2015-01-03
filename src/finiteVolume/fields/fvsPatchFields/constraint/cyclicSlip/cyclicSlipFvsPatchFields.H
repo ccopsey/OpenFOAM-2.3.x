@@ -26,8 +26,8 @@ License
 #ifndef cyclicSlipFvsPatchFields_H
 #define cyclicSlipFvsPatchFields_H
 
-#include "cyclicSlipFvsPatchField.H"
-#include "fieldTypes.H"
+#include "./cyclicSlipFvsPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

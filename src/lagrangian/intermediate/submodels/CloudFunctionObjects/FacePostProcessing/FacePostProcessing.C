@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "FacePostProcessing.H"
-#include "Pstream.H"
-#include "ListListOps.H"
-#include "surfaceWriter.H"
-#include "globalIndex.H"
+#include "./FacePostProcessing.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./containers/Lists/ListListOps/ListListOps.H"
+#include "./sampledSurface/writers/surfaceWriter.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

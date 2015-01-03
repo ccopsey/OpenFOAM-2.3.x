@@ -35,10 +35,10 @@ SourceFiles
 #ifndef cyclicAMIPolyPatch_H
 #define cyclicAMIPolyPatch_H
 
-#include "coupledPolyPatch.H"
-#include "AMIPatchToPatchInterpolation.H"
-#include "polyBoundaryMesh.H"
-#include "coupleGroupIdentifier.H"
+#include "./meshes/polyMesh/polyPatches/basic/coupled/coupledPolyPatch.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIPatchToPatchInterpolation.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.H"
+#include "./meshes/Identifiers/patch/coupleGroupIdentifier.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -412,12 +412,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "cyclicAMIPolyPatchI.H"
+#include "./cyclicAMIPolyPatchI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "cyclicAMIPolyPatchTemplates.C"
+    #include "./cyclicAMIPolyPatchTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

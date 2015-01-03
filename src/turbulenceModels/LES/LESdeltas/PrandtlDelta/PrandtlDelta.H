@@ -35,7 +35,7 @@ SourceFiles
 #ifndef PrandtlDelta_H
 #define PrandtlDelta_H
 
-#include "LESdelta.H"
+#include "./LESdelta/LESdelta.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

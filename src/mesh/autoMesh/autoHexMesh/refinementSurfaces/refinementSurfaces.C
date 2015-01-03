@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "refinementSurfaces.H"
-#include "Time.H"
-#include "searchableSurfaces.H"
-#include "shellSurfaces.H"
-#include "triSurfaceMesh.H"
-#include "labelPair.H"
-#include "searchableSurfacesQueries.H"
-#include "UPtrList.H"
-#include "volumeType.H"
+#include "./refinementSurfaces.H"
+#include "./db/Time/Time.H"
+#include "./searchableSurface/searchableSurfaces.H"
+#include "./autoHexMesh/shellSurfaces/shellSurfaces.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./searchableSurface/searchableSurfacesQueries.H"
+#include "./containers/Lists/UPtrList/UPtrList.H"
+#include "./algorithms/indexedOctree/volumeType.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

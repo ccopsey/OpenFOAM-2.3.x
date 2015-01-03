@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "polyMesh.H"
-#include "transform.H"
-#include "orientedSurface.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./primitives/transform/transform.H"
+#include "./triSurface/orientedSurface/orientedSurface.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

@@ -36,8 +36,8 @@ SourceFiles
 #ifndef faceSourceFunctionObject_H
 #define faceSourceFunctionObject_H
 
-#include "faceSource.H"
-#include "OutputFilterFunctionObject.H"
+#include "./faceSource.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

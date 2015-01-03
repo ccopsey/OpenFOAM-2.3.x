@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "GidaspowSchillerNaumann.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./GidaspowSchillerNaumann.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "patchWriter.H"
-#include "writeFuns.H"
+#include "./patchWriter.H"
+#include "./writeFuns.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

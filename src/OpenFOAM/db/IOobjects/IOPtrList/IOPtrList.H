@@ -35,8 +35,8 @@ SourceFiles
 #ifndef IOPtrList_H
 #define IOPtrList_H
 
-#include "PtrList.H"
-#include "regIOobject.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./db/regIOobject/regIOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "IOPtrList.C"
+#   include "./IOPtrList.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

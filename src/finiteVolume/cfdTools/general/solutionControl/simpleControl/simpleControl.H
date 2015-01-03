@@ -33,7 +33,7 @@ Description
 #ifndef simpleControl_H
 #define simpleControl_H
 
-#include "solutionControl.H"
+#include "./cfdTools/general/solutionControl/solutionControl/solutionControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

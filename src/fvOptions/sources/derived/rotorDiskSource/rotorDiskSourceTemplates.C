@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rotorDiskSource.H"
-#include "volFields.H"
+#include "./rotorDiskSource.H"
+#include "./fields/volFields/volFields.H"
 
 using namespace Foam::constant;
 

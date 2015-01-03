@@ -36,7 +36,7 @@ SourceFiles
 #ifndef autoSnapDriver_H
 #define autoSnapDriver_H
 
-#include "meshRefinement.H"
+#include "./autoHexMesh/meshRefinement/meshRefinement.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

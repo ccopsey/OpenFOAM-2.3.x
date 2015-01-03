@@ -31,15 +31,15 @@ set(LIBRARIES
   libmolecularMeasurements
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
-include(../../../../../src/lagrangian/molecularDynamics/molecule/include.cmake)
-include(../../../../../src/lagrangian/molecularDynamics/potential/include.cmake)
-include(../../../../../src/lagrangian/molecularDynamics/molecularMeasurements/include.cmake)
-include(../../../../../src/lagrangian/basic/include.cmake)
-include(../../../../../src/meshTools/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
+include_directories(../../../../../src/lagrangian/molecularDynamics/molecule)
+include_directories(../../../../../src/lagrangian/molecularDynamics/potential)
+include_directories(../../../../../src/lagrangian/molecularDynamics/molecularMeasurements)
+include_directories(../../../../../src/lagrangian/basic)
+include_directories(../../../../../src/meshTools)
 
 add_executable(mdEquilibrationFoam ${SOURCES})
 

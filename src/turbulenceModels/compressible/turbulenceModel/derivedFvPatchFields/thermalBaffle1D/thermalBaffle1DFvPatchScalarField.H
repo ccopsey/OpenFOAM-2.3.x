@@ -95,9 +95,9 @@ SourceFiles
 #ifndef thermalBaffle1DFvPatchScalarField_H
 #define thermalBaffle1DFvPatchScalarField_H
 
-#include "mixedFvPatchFields.H"
-#include "autoPtr.H"
-#include "mappedPatchBase.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchFields.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -263,7 +263,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "thermalBaffle1DFvPatchScalarField.C"
+#   include "./thermalBaffle1DFvPatchScalarField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

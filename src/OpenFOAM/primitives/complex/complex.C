@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "complex.H"
-#include "IOstreams.H"
+#include "./complex.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #include <sstream>
 

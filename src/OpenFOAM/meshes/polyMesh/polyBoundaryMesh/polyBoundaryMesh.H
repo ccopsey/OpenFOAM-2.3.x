@@ -35,10 +35,10 @@ SourceFiles
 #ifndef polyBoundaryMesh_H
 #define polyBoundaryMesh_H
 
-#include "polyPatchList.H"
-#include "regIOobject.H"
-#include "labelPair.H"
-#include "HashSet.H"
+#include "./meshes/polyMesh/polyPatches/polyPatch/polyPatchList.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -265,7 +265,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "polyBoundaryMeshTemplates.C"
+    #include "./polyBoundaryMeshTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

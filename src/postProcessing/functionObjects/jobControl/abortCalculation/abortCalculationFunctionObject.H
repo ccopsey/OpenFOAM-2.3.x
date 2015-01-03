@@ -36,8 +36,8 @@ SourceFiles
 #ifndef abortCalculationFunctionObject_H
 #define abortCalculationFunctionObject_H
 
-#include "abortCalculation.H"
-#include "OutputFilterFunctionObject.H"
+#include "./abortCalculation.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

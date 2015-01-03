@@ -41,7 +41,7 @@ SourceFiles
 #ifndef SDA_H
 #define SDA_H
 
-#include "solidBodyMotionFunction.H"
+#include "./solidBodyMotionFvMesh/solidBodyMotionFunctions/solidBodyMotionFunction/solidBodyMotionFunction.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "heSolidThermo.H"
-#include "volFields.H"
+#include "./heSolidThermo.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

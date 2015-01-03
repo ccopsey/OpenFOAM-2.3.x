@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writeFuns.H"
+#include "./writeFuns.H"
 
 #if defined(__mips) && !defined(__SICORTEX__)
 #include <standards.h>

@@ -35,16 +35,16 @@ set(LIBRARIES
   libsolidThermo
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
 include_directories(../../../../../src/turbulenceModels)
-include(../../../../../src/turbulenceModels/compressible/turbulenceModel/include.cmake)
-include(../../../../../src/thermophysicalModels/specie/include.cmake)
-include(../../../../../src/thermophysicalModels/reactionThermo/include.cmake)
-include(../../../../../src/thermophysicalModels/basic/include.cmake)
-include(../../../../../src/thermophysicalModels/solidThermo/include.cmake)
+include_directories(../../../../../src/turbulenceModels/compressible/turbulenceModel)
+include_directories(../../../../../src/thermophysicalModels/specie)
+include_directories(../../../../../src/thermophysicalModels/reactionThermo)
+include_directories(../../../../../src/thermophysicalModels/basic)
+include_directories(../../../../../src/thermophysicalModels/solidThermo)
 
 add_executable(wallHeatFlux ${SOURCES})
 

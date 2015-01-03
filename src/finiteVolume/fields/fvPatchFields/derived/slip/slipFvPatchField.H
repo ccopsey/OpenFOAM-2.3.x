@@ -48,7 +48,7 @@ SourceFiles
 #ifndef slipFvPatchField_H
 #define slipFvPatchField_H
 
-#include "basicSymmetryFvPatchField.H"
+#include "./fields/fvPatchFields/basic/basicSymmetry/basicSymmetryFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -140,7 +140,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "slipFvPatchField.C"
+#   include "./slipFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

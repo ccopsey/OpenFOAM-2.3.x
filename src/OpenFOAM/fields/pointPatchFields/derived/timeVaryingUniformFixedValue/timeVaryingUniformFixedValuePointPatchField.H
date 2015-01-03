@@ -38,8 +38,8 @@ SourceFiles
 #ifndef timeVaryingUniformFixedValuePointPatchField_H
 #define timeVaryingUniformFixedValuePointPatchField_H
 
-#include "fixedValuePointPatchField.H"
-#include "interpolationTable.H"
+#include "./fields/pointPatchFields/basic/fixedValue/fixedValuePointPatchField.H"
+#include "./interpolations/interpolationTable/interpolationTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -157,7 +157,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "timeVaryingUniformFixedValuePointPatchField.C"
+#   include "./timeVaryingUniformFixedValuePointPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

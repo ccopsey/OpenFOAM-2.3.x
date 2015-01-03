@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dsmcParcel.H"
-#include "DsmcCloud.H"
-#include "FreeStream.H"
-#include "NoInflow.H"
+#include "./dsmcParcel.H"
+#include "./clouds/Templates/DsmcCloud/DsmcCloud.H"
+#include "./submodels/InflowBoundaryModel/FreeStream/FreeStream.H"
+#include "./submodels/InflowBoundaryModel/NoInflow/NoInflow.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

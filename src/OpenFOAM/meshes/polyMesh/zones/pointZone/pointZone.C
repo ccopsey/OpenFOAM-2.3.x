@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "pointZone.H"
-#include "addToRunTimeSelectionTable.H"
-#include "pointZoneMesh.H"
-#include "polyMesh.H"
-#include "primitiveMesh.H"
-#include "demandDrivenData.H"
-#include "syncTools.H"
+#include "./pointZone.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshes/polyMesh/zones/ZoneMesh/pointZoneMesh.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
+#include "./include/demandDrivenData.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

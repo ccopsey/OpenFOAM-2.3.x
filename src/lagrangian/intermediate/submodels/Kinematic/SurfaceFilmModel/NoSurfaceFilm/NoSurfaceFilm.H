@@ -35,7 +35,7 @@ SourceFiles
 #ifndef NoSurfaceFilm_H
 #define NoSurfaceFilm_H
 
-#include "SurfaceFilmModel.H"
+#include "./submodels/Kinematic/SurfaceFilmModel/SurfaceFilmModel/SurfaceFilmModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -125,7 +125,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoSurfaceFilm.C"
+#   include "./NoSurfaceFilm.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

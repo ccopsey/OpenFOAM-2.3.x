@@ -36,8 +36,8 @@ SourceFiles
 #ifndef QFunctionObject_H
 #define QFunctionObject_H
 
-#include "Q.H"
-#include "OutputFilterFunctionObject.H"
+#include "./Q.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

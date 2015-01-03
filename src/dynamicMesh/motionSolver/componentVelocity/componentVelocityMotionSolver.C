@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "componentVelocityMotionSolver.H"
-#include "mapPolyMesh.H"
+#include "./componentVelocityMotionSolver.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

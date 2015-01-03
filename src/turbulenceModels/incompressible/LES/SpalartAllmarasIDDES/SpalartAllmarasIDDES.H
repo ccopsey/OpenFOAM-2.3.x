@@ -38,7 +38,7 @@ SourceFiles
 #ifndef SpalartAllmarasIDDES_H
 #define SpalartAllmarasIDDES_H
 
-#include "SpalartAllmaras.H"
+#include "./SpalartAllmaras/SpalartAllmaras.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

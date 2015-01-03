@@ -37,9 +37,9 @@ SourceFiles
 #ifndef phaseModel_H
 #define phaseModel_H
 
-#include "rhoThermo.H"
-#include "volFields.H"
-#include "dictionaryEntry.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionaryEntry/dictionaryEntry.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

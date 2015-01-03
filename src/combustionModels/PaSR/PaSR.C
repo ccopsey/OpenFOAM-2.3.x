@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PaSR.H"
-#include "fvmSup.H"
+#include "./PaSR.H"
+#include "./finiteVolume/fvm/fvmSup.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -38,7 +38,7 @@ SourceFiles
 #ifndef PaSR_H
 #define PaSR_H
 
-#include "laminar.H"
+#include "./laminar/laminar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -125,7 +125,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PaSR.C"
+#   include "./PaSR.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

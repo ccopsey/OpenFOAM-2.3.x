@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Frank.H"
-#include "phasePair.H"
-#include "fvc.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./Frank.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./finiteVolume/fvc/fvc.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

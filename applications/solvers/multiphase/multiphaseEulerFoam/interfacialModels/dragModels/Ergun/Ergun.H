@@ -38,7 +38,7 @@ SourceFiles
 #ifndef Ergun_H
 #define Ergun_H
 
-#include "dragModel.H"
+#include "./dragModels/dragModel/dragModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

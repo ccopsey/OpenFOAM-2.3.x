@@ -23,19 +23,19 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "conformalVoronoiMesh.H"
-#include "initialPointsMethod.H"
-#include "relaxationModel.H"
-#include "faceAreaWeightModel.H"
-#include "meshSearch.H"
-#include "vectorTools.H"
-#include "IOmanip.H"
-#include "indexedCellChecks.H"
-#include "controlMeshRefinement.H"
-#include "smoothAlignmentSolver.H"
-#include "OBJstream.H"
-#include "indexedVertexOps.H"
-#include "DelaunayMeshTools.H"
+#include "./conformalVoronoiMesh.H"
+#include "./initialPointsMethod/initialPointsMethod/initialPointsMethod.H"
+#include "./relaxationModel/relaxationModel/relaxationModel.H"
+#include "./faceAreaWeightModel/faceAreaWeightModel/faceAreaWeightModel.H"
+#include "./meshSearch/meshSearch.H"
+#include "./vectorTools.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
+#include "./indexedCell/indexedCellChecks.H"
+#include "./cellShapeControl/controlMeshRefinement/controlMeshRefinement.H"
+#include "./cellShapeControl/smoothAlignmentSolver/smoothAlignmentSolver.H"
+#include "./surfaceFormats/obj/OBJstream.H"
+#include "./indexedVertex/indexedVertexOps.H"
+#include "./DelaunayMeshTools/DelaunayMeshTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

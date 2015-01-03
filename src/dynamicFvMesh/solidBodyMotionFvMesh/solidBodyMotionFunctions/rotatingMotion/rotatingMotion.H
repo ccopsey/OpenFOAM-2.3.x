@@ -38,11 +38,11 @@ SourceFiles
 #ifndef rotatingMotion_H
 #define rotatingMotion_H
 
-#include "solidBodyMotionFunction.H"
-#include "primitiveFields.H"
-#include "point.H"
-#include "DataEntry.H"
-#include "autoPtr.H"
+#include "./solidBodyMotionFvMesh/solidBodyMotionFunctions/solidBodyMotionFunction/solidBodyMotionFunction.H"
+#include "./fields/Fields/primitiveFields.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

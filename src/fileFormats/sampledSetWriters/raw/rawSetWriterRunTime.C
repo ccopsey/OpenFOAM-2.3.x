@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rawSetWriter.H"
-#include "writers.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./rawSetWriter.H"
+#include "./sampledSetWriters/writers.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

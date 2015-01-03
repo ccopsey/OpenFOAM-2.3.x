@@ -34,7 +34,7 @@ SourceFiles
 #ifndef ensightBinaryStream_H
 #define ensightBinaryStream_H
 
-#include "ensightStream.H"
+#include "./ensightStream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

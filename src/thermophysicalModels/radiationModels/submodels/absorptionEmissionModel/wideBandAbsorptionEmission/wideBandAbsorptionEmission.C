@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wideBandAbsorptionEmission.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./wideBandAbsorptionEmission.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "absolute.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./absolute.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 namespace Foam
 {

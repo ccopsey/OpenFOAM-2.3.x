@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AveragingMethod.H"
-#include "runTimeSelectionTables.H"
-#include "pointMesh.H"
+#include "./AveragingMethod.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./meshes/pointMesh/pointMesh.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

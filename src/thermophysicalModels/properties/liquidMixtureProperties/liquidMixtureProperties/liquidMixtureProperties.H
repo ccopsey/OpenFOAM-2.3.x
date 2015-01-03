@@ -57,11 +57,11 @@ SeeAlso
 #ifndef liquidMixtureProperties_H
 #define liquidMixtureProperties_H
 
-#include "word.H"
-#include "scalarField.H"
-#include "PtrList.H"
-#include "liquidProperties.H"
-#include "autoPtr.H"
+#include "./primitives/strings/word/word.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./liquidProperties/liquidProperties.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

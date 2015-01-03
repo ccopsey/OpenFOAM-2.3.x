@@ -36,8 +36,8 @@ See Also
 #ifndef MapPointField_H
 #define MapPointField_H
 
-#include "Field.H"
-#include "pointMesh.H"
+#include "./fields/Fields/Field/Field.H"
+#include "./meshes/pointMesh/pointMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

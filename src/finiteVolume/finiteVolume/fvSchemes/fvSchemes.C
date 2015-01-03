@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvSchemes.H"
-#include "Time.H"
-#include "steadyStateDdtScheme.H"
+#include "./fvSchemes.H"
+#include "./db/Time/Time.H"
+#include "./finiteVolume/ddtSchemes/steadyStateDdtScheme/steadyStateDdtScheme.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

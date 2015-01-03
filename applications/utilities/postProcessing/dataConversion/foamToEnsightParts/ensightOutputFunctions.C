@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ensightOutputFunctions.H"
+#include "./ensightOutputFunctions.H"
 
-#include "passiveParticle.H"
-#include "IOField.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./passiveParticle/passiveParticle.H"
+#include "./db/IOobjects/IOField/IOField.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
-#include "OFstream.H"
-#include "IOmanip.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
 
 
 // * * * * * * * * * * * * * * * Global Functions  * * * * * * * * * * * * * //

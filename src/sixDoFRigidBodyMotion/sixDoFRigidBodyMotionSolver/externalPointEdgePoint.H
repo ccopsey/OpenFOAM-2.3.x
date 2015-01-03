@@ -38,7 +38,7 @@ SourceFiles
 #ifndef externalPointEdgePoint_H
 #define externalPointEdgePoint_H
 
-#include "pointField.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -254,7 +254,7 @@ inline bool contiguous<externalPointEdgePoint>()
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "externalPointEdgePointI.H"
+#include "./externalPointEdgePointI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "STARCDMeshWriter.H"
+#include "./STARCDMeshWriter.H"
 
-#include "Time.H"
-#include "SortableList.H"
-#include "OFstream.H"
+#include "./db/Time/Time.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -19,9 +19,9 @@
 #include <GL/gl.h>
 #pragma warning(disable : 4244)
 
-#include "vector.h"
-#include "font.h"
-#include "progmesh.h"
+#include "./vector.h"
+#include "./font.h"
+#include "./progmesh.h"
 #include "rabdata.h"
 
 extern float DeltaT;  // change in time since last frame

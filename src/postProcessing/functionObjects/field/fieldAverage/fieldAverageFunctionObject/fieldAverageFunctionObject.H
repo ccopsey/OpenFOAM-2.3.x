@@ -36,8 +36,8 @@ SourceFiles
 #ifndef fieldAverageFunctionObject_H
 #define fieldAverageFunctionObject_H
 
-#include "fieldAverage.H"
-#include "OutputFilterFunctionObject.H"
+#include "./fieldAverage/fieldAverage/fieldAverage.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

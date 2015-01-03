@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "basicKinematicCollidingParcel.H"
-#include "Cloud.H"
+#include "./basicKinematicCollidingParcel.H"
+#include "./Cloud/Cloud.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

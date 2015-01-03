@@ -57,8 +57,8 @@ SourceFiles
 #ifndef TableFile_H
 #define TableFile_H
 
-#include "DataEntry.H"
-#include "Tuple2.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
+#include "./primitives/Tuple2/Tuple2.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -185,7 +185,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "TableFile.C"
+#   include "./TableFile.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

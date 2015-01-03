@@ -38,11 +38,11 @@ SourceFiles
 #ifndef Matrix_H
 #define Matrix_H
 
-#include "bool.H"
-#include "label.H"
-#include "uLabel.H"
-#include "List.H"
-#include "autoPtr.H"
+#include "./primitives/bools/bool/bool.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/ints/uLabel/uLabel.H"
+#include "./containers/Lists/List/List.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -227,12 +227,12 @@ template<class Form, class Type> Form operator*
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "MatrixI.H"
+#   include "./MatrixI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Matrix.C"
+#   include "./Matrix.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

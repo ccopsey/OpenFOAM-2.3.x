@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "triangle.H"
-#include "IOstreams.H"
-#include "tetPoints.H"
-#include "plane.H"
+#include "./meshes/primitiveShapes/triangle/triangle.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./tetPoints.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

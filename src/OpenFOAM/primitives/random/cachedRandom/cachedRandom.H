@@ -47,7 +47,7 @@ SourceFiles
 #ifndef cachedRandom_H
 #define cachedRandom_H
 
-#include "scalarList.H"
+#include "./primitives/Scalar/lists/scalarList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -198,12 +198,12 @@ scalar cachedRandom::globalPosition<scalar>
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "cachedRandomI.H"
+#include "./cachedRandomI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "cachedRandomTemplates.C"
+#   include "./cachedRandomTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

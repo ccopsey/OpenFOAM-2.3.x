@@ -38,34 +38,34 @@ Description
 \*---------------------------------------------------------------------------*/
 
 
-#include "argList.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "distributedTriSurfaceMesh.H"
-#include "cyclicAMIPolyPatch.H"
-#include "triSurfaceTools.H"
-#include "mapDistribute.H"
+#include "./global/argList/argList.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./distributedTriSurfaceMesh/distributedTriSurfaceMesh.H"
+#include "./AMIInterpolation/patches/cyclicAMI/cyclicAMIPolyPatch/cyclicAMIPolyPatch.H"
+#include "./triSurface/triSurfaceTools/triSurfaceTools.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
 
-#include "OFstream.H"
-#include "meshTools.H"
-#include "plane.H"
-#include "uindirectPrimitivePatch.H"
-#include "DynamicField.H"
-#include "IFstream.H"
-#include "unitConversion.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshTools/meshTools.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./meshes/primitiveMesh/primitivePatch/uindirectPrimitivePatch.H"
+#include "./fields/Fields/DynamicField/DynamicField.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./global/unitConversion/unitConversion.H"
 
-#include "mathematicalConstants.H"
-#include "scalarMatrices.H"
-#include "CompactListList.H"
-#include "labelIOList.H"
-#include "labelListIOList.H"
-#include "scalarListIOList.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./matrices/scalarMatrices/scalarMatrices.H"
+#include "./containers/Lists/CompactListList/CompactListList.H"
+#include "./primitives/ints/lists/labelIOList.H"
+#include "./primitives/ints/lists/labelListIOList.H"
+#include "./primitives/Scalar/lists/scalarListIOList.H"
 
-#include "singleCellFvMesh.H"
-#include "IOdictionary.H"
-#include "fixedValueFvPatchFields.H"
+#include "./fvMesh/singleCellFvMesh/singleCellFvMesh.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 using namespace Foam;
 
@@ -251,10 +251,10 @@ void insertMatrixElements
 
 int main(int argc, char *argv[])
 {
-    #include "addRegionOption.H"
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createNamedMesh.H"
+    #include "./include/addRegionOption.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createNamedMesh.H"
 
     // Read view factor dictionary
     IOdictionary viewFactorDict
@@ -481,7 +481,7 @@ int main(int argc, char *argv[])
 
     // Set up searching engine for obstacles
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    #include "searchingEngine.H"
+    #include "./searchingEngine.H"
 
 
     // Determine rays between coarse face centres
@@ -494,7 +494,7 @@ int main(int argc, char *argv[])
     // Return rayStartFace in local index andrayEndFace in global index
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    #include "shootRays.H"
+    #include "./shootRays.H"
 
     // Calculate number of visible faces from local index
     labelList nVisibleFaceFaces(nCoarseFaces, 0);

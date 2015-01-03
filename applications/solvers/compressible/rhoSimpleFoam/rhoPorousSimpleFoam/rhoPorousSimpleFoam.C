@@ -31,27 +31,27 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "rhoThermo.H"
-#include "RASModel.H"
-#include "fvIOoptionList.H"
-#include "IOporosityModelList.H"
-#include "simpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./RASModel.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./cfdTools/general/porosityModel/porosityModel/IOporosityModelList.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     simpleControl simple(mesh);
 
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "createZones.H"
-    #include "initContinuityErrs.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./createZones.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -63,9 +63,9 @@ int main(int argc, char *argv[])
 
         // Pressure-velocity SIMPLE corrector
         {
-            #include "UEqn.H"
-            #include "EEqn.H"
-            #include "pEqn.H"
+            #include "./UEqn.H"
+            #include "./EEqn.H"
+            #include "./pEqn.H"
         }
 
         turbulence->correct();

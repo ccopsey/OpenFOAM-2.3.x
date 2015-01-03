@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "triSurface.H"
-#include "demandDrivenData.H"
-#include "IFstream.H"
-#include "OFstream.H"
-#include "Time.H"
-#include "boundBox.H"
-#include "SortableList.H"
-#include "PackedBoolList.H"
+#include "./triSurface.H"
+#include "./include/demandDrivenData.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/Time/Time.H"
+#include "./meshes/boundBox/boundBox.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

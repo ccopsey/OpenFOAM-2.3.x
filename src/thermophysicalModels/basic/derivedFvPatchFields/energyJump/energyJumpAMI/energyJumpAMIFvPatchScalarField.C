@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "addToRunTimeSelectionTable.H"
-#include "energyJumpAMIFvPatchScalarField.H"
-#include "fixedJumpAMIFvPatchFields.H"
-#include "basicThermo.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./energyJumpAMIFvPatchScalarField.H"
+#include "./fields/fvPatchFields/derived/fixedJumpAMI/fixedJumpAMIFvPatchFields.H"
+#include "./basicThermo/basicThermo.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef magSqr_H
 #define magSqr_H
 
-#include "calcType.H"
+#include "./calcType/calcType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -126,7 +126,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeMagSqrField.C"
+#   include "./writeMagSqrField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

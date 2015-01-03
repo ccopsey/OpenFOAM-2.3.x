@@ -36,8 +36,8 @@ SourceFiles
 #ifndef writeRegisteredObjectFunctionObject_H
 #define writeRegisteredObjectFunctionObject_H
 
-#include "writeRegisteredObject.H"
-#include "OutputFilterFunctionObject.H"
+#include "./writeRegisteredObject.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

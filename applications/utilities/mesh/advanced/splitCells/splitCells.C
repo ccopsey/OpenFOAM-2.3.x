@@ -41,22 +41,22 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyTopoChange.H"
-#include "polyTopoChanger.H"
-#include "mapPolyMesh.H"
-#include "polyMesh.H"
-#include "cellCuts.H"
-#include "cellSet.H"
-#include "cellModeller.H"
-#include "meshCutter.H"
-#include "unitConversion.H"
-#include "geomCellLooper.H"
-#include "plane.H"
-#include "edgeVertex.H"
-#include "meshTools.H"
-#include "ListOps.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChanger/polyTopoChanger.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshCut/cellCuts/cellCuts.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./meshes/meshShapes/cellModeller/cellModeller.H"
+#include "./meshCut/meshModifiers/meshCutter/meshCutter.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./meshCut/cellLooper/geomCellLooper.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./meshCut/edgeVertex/edgeVertex.H"
+#include "./meshTools/meshTools.H"
+#include "./containers/Lists/ListOps/ListOps.H"
 
 using namespace Foam;
 
@@ -523,7 +523,7 @@ int main(int argc, char *argv[])
     (
         "split cells with flat faces"
     );
-    #include "addOverwriteOption.H"
+    #include "./include/addOverwriteOption.H"
     argList::noParallel();
     argList::validArgs.append("edgeAngle [0..360]");
 
@@ -544,10 +544,10 @@ int main(int argc, char *argv[])
         "scalar", "edge snap tolerance (default 0.2)"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
-    #include "createPolyMesh.H"
+    #include "./include/createPolyMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     const scalar featureAngle = args.argRead<scalar>(1);

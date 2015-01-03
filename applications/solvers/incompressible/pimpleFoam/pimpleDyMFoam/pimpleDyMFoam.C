@@ -32,31 +32,31 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "dynamicFvMesh.H"
-#include "singlePhaseTransportModel.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
-#include "fvIOoptionList.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createDynamicFvMesh.H"
-    #include "initContinuityErrs.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createDynamicFvMesh.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     pimpleControl pimple(mesh);
 
     #include "createFields.H"
-    #include "createUf.H"
-    #include "createFvOptions.H"
-    #include "readTimeControls.H"
-    #include "createPcorrTypes.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./cfdTools/incompressible/createUf.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./cfdTools/general/include/createPcorrTypes.H"
+    #include "./cfdTools/incompressible/CourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -64,10 +64,10 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readControls.H"
-        #include "CourantNo.H"
+        #include "./readControls.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
 
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 
         if (mesh.changing() && correctPhi)
         {
-            #include "correctPhi.H"
+            #include "./correctPhi.H"
         }
 
         // Make the flux relative to the mesh motion
@@ -88,18 +88,18 @@ int main(int argc, char *argv[])
 
         if (mesh.changing() && checkMeshCourantNo)
         {
-            #include "meshCourantNo.H"
+            #include "./include/meshCourantNo.H"
         }
 
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "UEqn.H"
+            #include "./UEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
 
             if (pimple.turbCorr())

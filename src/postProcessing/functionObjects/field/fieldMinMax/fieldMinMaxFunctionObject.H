@@ -36,8 +36,8 @@ SourceFiles
 #ifndef fieldMinMaxFunctionObject_H
 #define fieldMinMaxFunctionObject_H
 
-#include "fieldMinMax.H"
-#include "OutputFilterFunctionObject.H"
+#include "./fieldMinMax.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

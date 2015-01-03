@@ -58,16 +58,16 @@ SourceFiles
 #ifndef IDEA_H
 #define IDEA_H
 
-#include "liquidProperties.H"
-#include "NSRDSfunc0.H"
-#include "NSRDSfunc1.H"
-#include "NSRDSfunc2.H"
-#include "NSRDSfunc3.H"
-#include "NSRDSfunc4.H"
-#include "NSRDSfunc5.H"
-#include "NSRDSfunc6.H"
-#include "NSRDSfunc7.H"
-#include "APIdiffCoefFunc.H"
+#include "./liquidProperties/liquidProperties.H"
+#include "./NSRDSfunctions/NSRDSfunc0/NSRDSfunc0.H"
+#include "./NSRDSfunctions/NSRDSfunc1/NSRDSfunc1.H"
+#include "./NSRDSfunctions/NSRDSfunc2/NSRDSfunc2.H"
+#include "./NSRDSfunctions/NSRDSfunc3/NSRDSfunc3.H"
+#include "./NSRDSfunctions/NSRDSfunc4/NSRDSfunc4.H"
+#include "./NSRDSfunctions/NSRDSfunc5/NSRDSfunc5.H"
+#include "./NSRDSfunctions/NSRDSfunc6/NSRDSfunc6.H"
+#include "./NSRDSfunctions/NSRDSfunc7/NSRDSfunc7.H"
+#include "./APIfunctions/APIdiffCoefFunc/APIdiffCoefFunc.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -225,7 +225,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "IDEAI.H"
+#include "./IDEAI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

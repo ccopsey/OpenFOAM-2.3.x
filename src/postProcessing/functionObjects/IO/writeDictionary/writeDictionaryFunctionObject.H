@@ -36,8 +36,8 @@ SourceFiles
 #ifndef writeDictionaryFunctionObject_H
 #define writeDictionaryFunctionObject_H
 
-#include "writeDictionary.H"
-#include "OutputFilterFunctionObject.H"
+#include "./writeDictionary.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

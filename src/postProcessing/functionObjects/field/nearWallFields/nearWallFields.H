@@ -73,10 +73,10 @@ SourceFiles
 #ifndef nearWallFields_H
 #define nearWallFields_H
 
-#include "OFstream.H"
-#include "volFields.H"
-#include "Tuple2.H"
-#include "interpolationCellPoint.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./fields/volFields/volFields.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./interpolation/interpolation/interpolationCellPoint/interpolationCellPoint.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -242,7 +242,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "nearWallFieldsTemplates.C"
+#   include "./nearWallFieldsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

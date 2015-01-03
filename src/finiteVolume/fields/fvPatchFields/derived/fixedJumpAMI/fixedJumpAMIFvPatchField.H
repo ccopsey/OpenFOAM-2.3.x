@@ -68,7 +68,7 @@ SourceFiles
 #ifndef fixedJumpAMIFvPatchField_H
 #define fixedJumpAMIFvPatchField_H
 
-#include "jumpCyclicAMIFvPatchField.H"
+#include "./fields/fvPatchFields/constraint/jumpCyclicAMI/jumpCyclicAMIFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -190,7 +190,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fixedJumpAMIFvPatchField.C"
+#   include "./fixedJumpAMIFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

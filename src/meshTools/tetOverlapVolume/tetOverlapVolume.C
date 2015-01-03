@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "tetOverlapVolume.H"
-#include "tetrahedron.H"
-#include "tetPoints.H"
-#include "polyMesh.H"
-#include "OFstream.H"
-#include "treeBoundBox.H"
-#include "indexedOctree.H"
-#include "treeDataCell.H"
+#include "./tetOverlapVolume.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetrahedron.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetPoints.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./algorithms/indexedOctree/treeDataCell.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

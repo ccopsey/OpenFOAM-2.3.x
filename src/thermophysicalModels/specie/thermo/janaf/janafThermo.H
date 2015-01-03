@@ -37,8 +37,8 @@ SourceFiles
 #ifndef janafThermo_H
 #define janafThermo_H
 
-#include "scalar.H"
-#include "FixedList.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./containers/Lists/FixedList/FixedList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -251,10 +251,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "janafThermoI.H"
+#include "./janafThermoI.H"
 
 #ifdef NoRepository
-#   include "janafThermo.C"
+#   include "./janafThermo.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

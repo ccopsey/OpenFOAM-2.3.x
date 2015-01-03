@@ -49,14 +49,14 @@ SourceFiles
 #ifndef AMIInterpolation_H
 #define AMIInterpolation_H
 
-#include "className.H"
-#include "searchableSurface.H"
-#include "treeBoundBoxList.H"
-#include "boolList.H"
-#include "primitivePatch.H"
-#include "faceAreaIntersect.H"
-#include "globalIndex.H"
-#include "ops.H"
+#include "./db/typeInfo/className.H"
+#include "./searchableSurface/searchableSurface.H"
+#include "./meshes/treeBoundBox/treeBoundBoxList.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
+#include "./AMIInterpolation/faceAreaIntersect/faceAreaIntersect.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./primitives/ops/ops.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -558,13 +558,13 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "AMIInterpolationI.H"
+#include "./AMIInterpolationI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "AMIInterpolation.C"
-#   include "AMIInterpolationParallelOps.C"
+#   include "./AMIInterpolation.C"
+#   include "./AMIInterpolationParallelOps.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

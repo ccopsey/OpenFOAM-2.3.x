@@ -54,14 +54,14 @@ SourceFiles
 #ifndef writer_H
 #define writer_H
 
-#include "fileName.H"
-#include "wordList.H"
-#include "vector.H"
-#include "tensor.H"
-#include "typeInfo.H"
-#include "runTimeSelectionTables.H"
-#include "autoPtr.H"
-#include "Field.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./primitives/Tensor/tensor/tensor.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./fields/Fields/Field/Field.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -209,7 +209,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writer.C"
+#   include "./writer.C"
 #endif
 
 

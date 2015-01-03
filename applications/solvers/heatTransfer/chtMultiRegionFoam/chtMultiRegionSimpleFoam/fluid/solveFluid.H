@@ -3,16 +3,16 @@
     {
         if (frozenFlow)
         {
-            #include "EEqn.H"
+            #include "./EEqn.H"
         }
         else
         {
             p_rgh.storePrevIter();
             rho.storePrevIter();
 
-            #include "UEqn.H"
-            #include "EEqn.H"
-            #include "pEqn.H"
+            #include "./UEqn.H"
+            #include "./EEqn.H"
+            #include "./pEqn.H"
 
             turb.correct();
         }

@@ -39,12 +39,12 @@ SourceFiles
 #ifndef degenerateMatcher_H
 #define degenerateMatcher_H
 
-#include "hexMatcher.H"
-#include "wedgeMatcher.H"
-#include "prismMatcher.H"
-#include "tetWedgeMatcher.H"
-#include "pyrMatcher.H"
-#include "tetMatcher.H"
+#include "./hexMatcher.H"
+#include "./wedgeMatcher.H"
+#include "./prismMatcher.H"
+#include "./tetWedgeMatcher.H"
+#include "./pyrMatcher.H"
+#include "./tetMatcher.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

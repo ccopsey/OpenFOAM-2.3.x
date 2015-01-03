@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "constantAspectRatio.H"
-#include "orderedPhasePair.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./constantAspectRatio.H"
+#include "./phasePair/orderedPhasePair/orderedPhasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

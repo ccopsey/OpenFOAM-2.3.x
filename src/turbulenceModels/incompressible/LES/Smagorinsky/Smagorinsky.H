@@ -53,7 +53,7 @@ SourceFiles
 #ifndef Smagorinsky_H
 #define Smagorinsky_H
 
-#include "GenEddyVisc.H"
+#include "./GenEddyVisc/GenEddyVisc.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

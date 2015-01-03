@@ -35,10 +35,10 @@ SourceFiles
 #ifndef WRLsurfaceFormat_H
 #define WRLsurfaceFormat_H
 
-#include "MeshedSurface.H"
-#include "MeshedSurfaceProxy.H"
-#include "UnsortedMeshedSurface.H"
-#include "WRLsurfaceFormatCore.H"
+#include "./MeshedSurface/MeshedSurface.H"
+#include "./MeshedSurfaceProxy/MeshedSurfaceProxy.H"
+#include "./UnsortedMeshedSurface/UnsortedMeshedSurface.H"
+#include "./WRLsurfaceFormatCore.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "WRLsurfaceFormat.C"
+#   include "./WRLsurfaceFormat.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

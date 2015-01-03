@@ -54,7 +54,7 @@ SourceFiles
 #ifndef compressibleMutSpalartAllmarasWallFunctionFvPatchScalarField_H
 #define compressibleMutSpalartAllmarasWallFunctionFvPatchScalarField_H
 
-#include "mutkWallFunctionFvPatchScalarField.H"
+#include "./compressible/RAS/derivedFvPatchFields/wallFunctions/mutWallFunctions/mutkWallFunction/mutkWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

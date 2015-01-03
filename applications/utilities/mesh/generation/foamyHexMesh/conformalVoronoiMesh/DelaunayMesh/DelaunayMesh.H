@@ -37,14 +37,14 @@ SourceFiles
 #ifndef DelaunayMesh_H
 #define DelaunayMesh_H
 
-#include "Pair.H"
-#include "HashSet.H"
-#include "FixedList.H"
-#include "boundBox.H"
-#include "indexedVertex.H"
-#include "CGALTriangulation3Ddefs.H"
-#include "Time.H"
-#include "autoPtr.H"
+#include "./primitives/Pair/Pair.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./meshes/boundBox/boundBox.H"
+#include "./conformalVoronoiMesh/indexedVertex/indexedVertex.H"
+#include "./conformalVoronoiMesh/CGALTriangulation3Ddefs.H"
+#include "./db/Time/Time.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -276,12 +276,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DelaunayMeshI.H"
+#include "./DelaunayMeshI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DelaunayMesh.C"
+#   include "./DelaunayMesh.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

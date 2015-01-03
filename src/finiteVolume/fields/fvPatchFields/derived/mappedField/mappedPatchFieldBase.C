@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mappedPatchFieldBase.H"
-#include "mappedPatchBase.H"
-#include "interpolationCell.H"
+#include "./mappedPatchFieldBase.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
+#include "./interpolation/interpolation/interpolationCell/interpolationCell.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

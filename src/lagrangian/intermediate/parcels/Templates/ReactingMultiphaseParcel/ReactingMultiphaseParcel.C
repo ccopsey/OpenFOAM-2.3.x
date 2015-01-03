@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ReactingMultiphaseParcel.H"
-#include "mathematicalConstants.H"
+#include "./ReactingMultiphaseParcel.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant::mathematical;
 
@@ -696,6 +696,6 @@ Foam::ReactingMultiphaseParcel<ParcelType>::ReactingMultiphaseParcel
 
 // * * * * * * * * * * * * * * IOStream operators  * * * * * * * * * * * * * //
 
-#include "ReactingMultiphaseParcelIO.C"
+#include "./ReactingMultiphaseParcelIO.C"
 
 // ************************************************************************* //

@@ -47,10 +47,10 @@ SourceFiles
 #ifndef vtkUnstructuredReader_H
 #define vtkUnstructuredReader_H
 
-#include "objectRegistry.H"
-#include "cellShapeList.H"
-#include "HashSet.H"
-#include "NamedEnum.H"
+#include "./db/objectRegistry/objectRegistry.H"
+#include "./meshes/meshShapes/cellShape/cellShapeList.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -365,7 +365,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "vtkUnstructuredReaderTemplates.C"
+#   include "./vtkUnstructuredReaderTemplates.C"
 #endif
 
 

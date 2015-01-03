@@ -82,8 +82,8 @@ else
     }
 }
 
-#include "rhoEqn.H"
-#include "compressibleContinuityErrs.H"
+#include "./rhoEqn.H"
+#include "./cfdTools/compressible/compressibleContinuityErrs.H"
 
 U = HbyA - rAU*fvc::grad(p);
 U.correctBoundaryConditions();

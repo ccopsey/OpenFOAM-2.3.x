@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "oscillatingFixedValueFvPatchField.H"
-#include "mathematicalConstants.H"
+#include "./oscillatingFixedValueFvPatchField.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

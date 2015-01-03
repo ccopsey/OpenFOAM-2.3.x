@@ -26,8 +26,8 @@ License
 #ifndef patchSummaryTemplates_H
 #define patchSummaryTemplates_H
 
-#include "fvCFD.H"
-#include "volFields.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -62,7 +62,7 @@ namespace Foam
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "patchSummaryTemplates.C"
+#   include "./patchSummaryTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

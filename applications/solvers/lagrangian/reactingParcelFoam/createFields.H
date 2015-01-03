@@ -54,7 +54,7 @@
         mesh
     );
 
-    #include "compressibleCreatePhi.H"
+    #include "./cfdTools/compressible/compressibleCreatePhi.H"
 
     dimensionedScalar rhoMax
     (

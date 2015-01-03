@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "psiChemistryModel.H"
-#include "fvMesh.H"
+#include "./psiChemistryModel.H"
+#include "./fvMesh/fvMesh.H"
 
 /* * * * * * * * * * * * * * * private static data * * * * * * * * * * * * * */
 

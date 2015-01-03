@@ -38,7 +38,7 @@ SourceFiles
 #ifndef maxDeltaxyzDelta_H
 #define maxDeltaxyzDelta_H
 
-#include "LESdelta.H"
+#include "./LESdelta/LESdelta.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

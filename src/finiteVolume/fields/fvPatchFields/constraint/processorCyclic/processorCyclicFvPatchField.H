@@ -55,8 +55,8 @@ SourceFiles
 #ifndef processorCyclicFvPatchField_H
 #define processorCyclicFvPatchField_H
 
-#include "processorCyclicFvPatch.H"
-#include "processorFvPatchField.H"
+#include "./fvMesh/fvPatches/constraint/processorCyclic/processorCyclicFvPatch.H"
+#include "./fields/fvPatchFields/constraint/processor/processorFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -180,7 +180,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "processorCyclicFvPatchField.C"
+#   include "./processorCyclicFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

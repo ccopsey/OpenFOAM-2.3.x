@@ -53,9 +53,9 @@ SourceFiles
 #ifndef cyclicACMIFvPatchField_H
 #define cyclicACMIFvPatchField_H
 
-#include "coupledFvPatchField.H"
-#include "cyclicACMILduInterfaceField.H"
-#include "cyclicACMIFvPatch.H"
+#include "./fields/fvPatchFields/basic/coupled/coupledFvPatchField.H"
+#include "./AMIInterpolation/patches/cyclicACMI/cyclicACMILduInterfaceField/cyclicACMILduInterfaceField.H"
+#include "./fvMesh/fvPatches/constraint/cyclicACMI/cyclicACMIFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -321,7 +321,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "cyclicACMIFvPatchField.C"
+#   include "./cyclicACMIFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

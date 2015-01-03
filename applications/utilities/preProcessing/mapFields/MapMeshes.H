@@ -26,10 +26,10 @@ License
 #ifndef MapMeshes_H
 #define MapMeshes_H
 
-#include "MapVolFields.H"
-#include "mapLagrangian.H"
-#include "UnMapped.H"
-#include "pointMesh.H"
+#include "./MapVolFields.H"
+#include "./mapLagrangian.H"
+#include "./UnMapped.H"
+#include "./meshes/pointMesh/pointMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

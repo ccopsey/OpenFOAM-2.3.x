@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "graph.H"
-#include "OFstream.H"
-#include "IOmanip.H"
-#include "Pair.H"
-#include "OSspecific.H"
+#include "./graph.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
+#include "./primitives/Pair/Pair.H"
+#include "./include/OSspecific.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

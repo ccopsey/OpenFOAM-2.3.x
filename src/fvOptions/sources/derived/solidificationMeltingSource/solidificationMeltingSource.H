@@ -94,10 +94,10 @@ SourceFiles
 #ifndef solidificationMeltingSource_H
 #define solidificationMeltingSource_H
 
-#include "fvMesh.H"
-#include "volFields.H"
-#include "fvOption.H"
-#include "NamedEnum.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fvOptions/fvOption.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -270,7 +270,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "solidificationMeltingSourceTemplates.C"
+    #include "./solidificationMeltingSourceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

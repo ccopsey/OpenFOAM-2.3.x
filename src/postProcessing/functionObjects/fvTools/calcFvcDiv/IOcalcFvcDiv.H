@@ -32,8 +32,8 @@ Description
 #ifndef IOcalcFvcDiv_H
 #define IOcalcFvcDiv_H
 
-#include "calcFvcDiv.H"
-#include "IOOutputFilter.H"
+#include "./calcFvcDiv.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

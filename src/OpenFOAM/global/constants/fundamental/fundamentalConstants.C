@@ -26,14 +26,14 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fundamentalConstants.H"
+#include "./fundamentalConstants.H"
 
-#include "universalConstants.H"
-#include "electromagneticConstants.H"
-#include "atomicConstants.H"
-#include "physicoChemicalConstants.H"
+#include "./global/constants/universal/universalConstants.H"
+#include "./global/constants/electromagnetic/electromagneticConstants.H"
+#include "./global/constants/atomic/atomicConstants.H"
+#include "./global/constants/physicoChemical/physicoChemicalConstants.H"
 
-#include "dimensionedConstants.H"
+#include "./global/constants/dimensionedConstants.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PatchTools.H"
+#include "./PatchTools.H"
 
-#include "PatchToolsCheck.C"
-#include "PatchToolsEdgeOwner.C"
-#include "PatchToolsGatherAndMerge.C"
-#include "PatchToolsSearch.C"
-#include "PatchToolsSortEdges.C"
-#include "PatchToolsSortPoints.C"
-#include "PatchToolsNormals.C"
-#include "PatchToolsMatch.C"
+#include "./PatchToolsCheck.C"
+#include "./PatchToolsEdgeOwner.C"
+#include "./PatchToolsGatherAndMerge.C"
+#include "./PatchToolsSearch.C"
+#include "./PatchToolsSortEdges.C"
+#include "./PatchToolsSortPoints.C"
+#include "./PatchToolsNormals.C"
+#include "./PatchToolsMatch.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

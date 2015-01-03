@@ -36,10 +36,10 @@ SourceFiles
 #ifndef SurfaceFilmModel_H
 #define SurfaceFilmModel_H
 
-#include "IOdictionary.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
-#include "CloudSubModelBase.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./submodels/CloudSubModelBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -262,12 +262,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SurfaceFilmModelI.H"
+#include "./SurfaceFilmModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "SurfaceFilmModel.C"
+#   include "./SurfaceFilmModel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

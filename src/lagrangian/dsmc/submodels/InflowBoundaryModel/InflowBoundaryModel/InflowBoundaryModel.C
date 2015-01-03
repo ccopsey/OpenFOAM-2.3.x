@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "InflowBoundaryModel.H"
+#include "./InflowBoundaryModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -89,7 +89,7 @@ const Foam::dictionary& Foam::InflowBoundaryModel<CloudType>::coeffDict() const
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "InflowBoundaryModelNew.C"
+#include "./InflowBoundaryModelNew.C"
 
 // ************************************************************************* //
 

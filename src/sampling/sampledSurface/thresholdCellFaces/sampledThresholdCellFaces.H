@@ -36,8 +36,8 @@ SourceFiles
 #ifndef sampledThresholdCellFaces_H
 #define sampledThresholdCellFaces_H
 
-#include "sampledSurface.H"
-#include "MeshedSurface.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./MeshedSurface/MeshedSurface.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -211,7 +211,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "sampledThresholdCellFacesTemplates.C"
+#   include "./sampledThresholdCellFacesTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

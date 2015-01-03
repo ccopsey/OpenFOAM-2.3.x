@@ -93,7 +93,7 @@ SourceFiles
 #ifndef forceCoeffs_H
 #define forceCoeffs_H
 
-#include "forces.H"
+#include "./forces/forces.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

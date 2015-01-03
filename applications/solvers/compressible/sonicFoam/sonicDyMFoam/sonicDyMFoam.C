@@ -33,31 +33,31 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "dynamicFvMesh.H"
-#include "psiThermo.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
-#include "fvIOoptionList.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./psiThermo/psiThermo.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createDynamicFvMesh.H"
-    #include "initContinuityErrs.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createDynamicFvMesh.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     pimpleControl pimple(mesh);
 
-    #include "readControls.H"
+    #include "./readControls.H"
     #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "createPcorrTypes.H"
-    #include "createRhoUf.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/createPcorrTypes.H"
+    #include "./cfdTools/compressible/createRhoUf.H"
+    #include "./cfdTools/incompressible/CourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -65,10 +65,10 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readControls.H"
-        #include "compressibleCourantNo.H"
+        #include "./readControls.H"
+        #include "./cfdTools/compressible/compressibleCourantNo.H"
 
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         {
             // Store divrhoU from the previous time-step/mesh for the correctPhi
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
                 // Calculate absolute flux from the mapped surface velocity
                 phi = mesh.Sf() & rhoUf;
 
-                #include "correctPhi.H"
+                #include "./correctPhi.H"
 
                 // Make the fluxes relative to the mesh-motion
                 fvc::makeRelative(phi, rho, U);
@@ -102,23 +102,23 @@ int main(int argc, char *argv[])
 
         if (mesh.changing() && checkMeshCourantNo)
         {
-            #include "meshCourantNo.H"
+            #include "./include/meshCourantNo.H"
         }
 
-        #include "rhoEqn.H"
+        #include "./cfdTools/compressible/rhoEqn.H"
         Info<< "rhoEqn max/min : " << max(rho).value()
             << " " << min(rho).value() << endl;
 
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "UEqn.H"
-            #include "EEqn.H"
+            #include "./UEqn.H"
+            #include "./EEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
 
             if (pimple.turbCorr())

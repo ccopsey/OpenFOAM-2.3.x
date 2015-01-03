@@ -34,11 +34,11 @@ Description
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "labelField.H"
-#include "scalarField.H"
-#include "vectorField.H"
-#include "tensorField.H"
-#include "sphericalTensorField.H"
+#include "./labelField/labelField.H"
+#include "./scalarField/scalarField.H"
+#include "./vectorField/vectorField.H"
+#include "./tensorField/tensorField.H"
+#include "./sphericalTensorField/sphericalTensorField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

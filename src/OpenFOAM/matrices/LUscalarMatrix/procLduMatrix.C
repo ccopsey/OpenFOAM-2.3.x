@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "procLduMatrix.H"
-#include "procLduInterface.H"
-#include "lduMatrix.H"
+#include "./procLduMatrix.H"
+#include "./procLduInterface.H"
+#include "./matrices/lduMatrix/lduMatrix/lduMatrix.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -37,7 +37,7 @@ SourceFiles
 #ifndef smoothDelta_H
 #define smoothDelta_H
 
-#include "LESdelta.H"
+#include "./LESdelta/LESdelta.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -281,7 +281,7 @@ inline bool contiguous<smoothDelta::deltaData>()
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "smoothDeltaDeltaDataI.H"
+#include "./smoothDeltaDeltaDataI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "turbulenceModel.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "fvcGrad.H"
+#include "./turbulenceModel.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

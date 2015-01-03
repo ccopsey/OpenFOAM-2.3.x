@@ -39,7 +39,7 @@ SourceFiles
 #ifndef IndirectList_H
 #define IndirectList_H
 
-#include "UIndirectList.H"
+#include "./containers/Lists/UIndirectList/UIndirectList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -159,7 +159,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "IndirectListI.H"
+#include "./IndirectListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

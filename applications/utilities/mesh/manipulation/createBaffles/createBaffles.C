@@ -37,18 +37,18 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyTopoChange.H"
-#include "polyModifyFace.H"
-#include "polyAddFace.H"
-#include "ReadFields.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "fvMeshMapper.H"
-#include "faceSelection.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChange/modifyObject/polyModifyFace.H"
+#include "./polyTopoChange/polyTopoChange/addObject/polyAddFace.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fvMesh/fvMeshMapper/fvMeshMapper.H"
+#include "./faceSelection/faceSelection.H"
 
-#include "fvMeshTools.H"
+#include "./fvMeshTools/fvMeshTools.H"
 
 using namespace Foam;
 
@@ -353,14 +353,14 @@ int main(int argc, char *argv[])
         "Makes internal faces into boundary faces.\n"
         "Does not duplicate points."
     );
-    #include "addDictOption.H"
-    #include "addOverwriteOption.H"
-    #include "addDictOption.H"
-    #include "addRegionOption.H"
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/addDictOption.H"
+    #include "./include/addOverwriteOption.H"
+    #include "./include/addDictOption.H"
+    #include "./include/addRegionOption.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
 
     const bool overwrite = args.optionFound("overwrite");
@@ -368,7 +368,7 @@ int main(int argc, char *argv[])
     const word oldInstance = mesh.pointsInstance();
 
     const word dictName("createBafflesDict");
-    #include "setSystemMeshDictionaryIO.H"
+    #include "./include/setSystemMeshDictionaryIO.H"
 
     Switch internalFacesOnly(false);
 

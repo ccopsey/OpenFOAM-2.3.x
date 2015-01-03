@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wallLubricationModel.H"
-#include "phasePair.H"
+#include "./wallLubricationModel.H"
+#include "./phasePair/phasePair/phasePair.H"
 
 // * * * * * * * * * * * * * * * * Selector  * * * * * * * * * * * * * * * * //
 

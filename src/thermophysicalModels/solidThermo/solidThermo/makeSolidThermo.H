@@ -32,7 +32,7 @@ Description
 #ifndef makeSolidThermo_H
 #define makeSolidThermo_H
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 #define makeSolidThermo(BaseThermo,Cthermo,Mixture,Transport,Type,Thermo,EqnOfState,Specie)\

@@ -36,7 +36,7 @@ Description
 #ifndef SprayCloud_H
 #define SprayCloud_H
 
-#include "sprayCloud.H"
+#include "./clouds/baseClasses/sprayCloud/sprayCloud.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -240,12 +240,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SprayCloudI.H"
+#include "./SprayCloudI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "SprayCloud.C"
+#   include "./SprayCloud.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

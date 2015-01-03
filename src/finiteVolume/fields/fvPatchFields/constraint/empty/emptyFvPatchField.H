@@ -51,8 +51,8 @@ SourceFiles
 #ifndef emptyFvPatchField_H
 #define emptyFvPatchField_H
 
-#include "fvPatchField.H"
-#include "emptyFvPatch.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchField.H"
+#include "./fvMesh/fvPatches/constraint/empty/emptyFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -207,7 +207,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "emptyFvPatchField.C"
+#   include "./emptyFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

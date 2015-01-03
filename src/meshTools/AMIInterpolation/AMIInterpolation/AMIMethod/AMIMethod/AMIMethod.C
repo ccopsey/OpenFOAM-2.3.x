@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AMIMethod.H"
-#include "meshTools.H"
-#include "mapDistribute.H"
-#include "unitConversion.H"
+#include "./AMIMethod.H"
+#include "./meshTools/meshTools.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./global/unitConversion/unitConversion.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

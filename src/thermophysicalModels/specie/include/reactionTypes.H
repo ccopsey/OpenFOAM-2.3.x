@@ -32,12 +32,12 @@ Description
 #ifndef reactionTypes_H
 #define reactionTypes_H
 
-#include "thermoPhysicsTypes.H"
-#include "Reaction.H"
+#include "./thermoPhysicsTypes.H"
+#include "./reaction/_Reactions/Reaction/Reaction.H"
 
-#include "icoPolynomial.H"
-#include "hPolynomialThermo.H"
-#include "polynomialTransport.H"
+#include "./equationOfState/icoPolynomial/icoPolynomial.H"
+#include "./thermo/hPolynomial/hPolynomialThermo.H"
+#include "./transport/polynomial/polynomialTransport.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

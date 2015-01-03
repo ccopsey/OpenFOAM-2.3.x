@@ -61,7 +61,7 @@ SourceFiles
 #ifndef realizableKE_H
 #define realizableKE_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

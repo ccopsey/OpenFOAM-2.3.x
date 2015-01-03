@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "treeDataCell.H"
-#include "indexedOctree.H"
-#include "polyMesh.H"
+#include "./treeDataCell.H"
+#include "./indexedOctree.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

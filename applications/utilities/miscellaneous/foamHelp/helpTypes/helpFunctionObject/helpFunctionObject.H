@@ -45,7 +45,7 @@ SourceFiles
 #ifndef helpFunctionObject_H
 #define helpFunctionObject_H
 
-#include "helpType.H"
+#include "./helpType/helpType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

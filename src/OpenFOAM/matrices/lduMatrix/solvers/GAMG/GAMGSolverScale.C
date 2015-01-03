@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "GAMGSolver.H"
-#include "vector2D.H"
+#include "./GAMGSolver.H"
+#include "./primitives/Vector2D/vector2D/vector2D.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

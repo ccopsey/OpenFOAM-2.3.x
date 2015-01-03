@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "intersectedSurface.H"
-#include "surfaceIntersection.H"
-#include "faceList.H"
-#include "faceTriangulation.H"
-#include "treeBoundBox.H"
-#include "OFstream.H"
-#include "error.H"
-#include "meshTools.H"
-#include "edgeSurface.H"
-#include "DynamicList.H"
-#include "transform.H"
+#include "./intersectedSurface.H"
+#include "./triSurface/booleanOps/surfaceIntersection/surfaceIntersection.H"
+#include "./meshes/meshShapes/face/faceList.H"
+#include "./faceTriangulation/faceTriangulation.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/error/error.H"
+#include "./meshTools/meshTools.H"
+#include "./edgeSurface.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./primitives/transform/transform.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

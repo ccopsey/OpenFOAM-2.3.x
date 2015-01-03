@@ -30,26 +30,26 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "rhoThermo.H"
-#include "RASModel.H"
-#include "radiationModel.H"
-#include "simpleControl.H"
-#include "fvIOoptionList.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./RASModel/RASModel.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readGravitationalAcceleration.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "createRadiationModel.H"
-    #include "initContinuityErrs.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./include/createRadiationModel.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     simpleControl simple(mesh);
 
@@ -63,9 +63,9 @@ int main(int argc, char *argv[])
 
         // Pressure-velocity SIMPLE corrector
         {
-            #include "UEqn.H"
-            #include "EEqn.H"
-            #include "pEqn.H"
+            #include "./UEqn.H"
+            #include "./EEqn.H"
+            #include "./pEqn.H"
         }
 
         turbulence->correct();

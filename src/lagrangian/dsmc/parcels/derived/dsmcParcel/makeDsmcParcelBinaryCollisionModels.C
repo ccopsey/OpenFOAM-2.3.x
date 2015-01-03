@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dsmcParcel.H"
-#include "DsmcCloud.H"
-#include "NoBinaryCollision.H"
-#include "VariableHardSphere.H"
-#include "LarsenBorgnakkeVariableHardSphere.H"
+#include "./dsmcParcel.H"
+#include "./clouds/Templates/DsmcCloud/DsmcCloud.H"
+#include "./submodels/BinaryCollisionModel/NoBinaryCollision/NoBinaryCollision.H"
+#include "./submodels/BinaryCollisionModel/VariableHardSphere/VariableHardSphere.H"
+#include "./submodels/BinaryCollisionModel/LarsenBorgnakkeVariableHardSphere/LarsenBorgnakkeVariableHardSphere.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

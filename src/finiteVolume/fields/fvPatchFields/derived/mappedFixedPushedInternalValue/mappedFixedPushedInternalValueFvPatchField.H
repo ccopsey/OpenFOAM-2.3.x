@@ -70,7 +70,7 @@ SourceFiles
 #ifndef mappedFixedPushedInternalValueFvPatchField_H
 #define mappedFixedPushedInternalValueFvPatchField_H
 
-#include "mappedFixedValueFvPatchField.H"
+#include "./fields/fvPatchFields/derived/mappedFixedValue/mappedFixedValueFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -181,7 +181,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "mappedFixedPushedInternalValueFvPatchField.C"
+#   include "./mappedFixedPushedInternalValueFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

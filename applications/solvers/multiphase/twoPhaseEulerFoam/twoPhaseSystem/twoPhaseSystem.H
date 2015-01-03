@@ -34,12 +34,12 @@ SourceFiles
 #ifndef twoPhaseSystem_H
 #define twoPhaseSystem_H
 
-#include "IOdictionary.H"
-#include "phaseModel.H"
-#include "phasePair.H"
-#include "orderedPhasePair.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./phaseModel/phaseModel.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./phasePair/orderedPhasePair/orderedPhasePair.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -221,7 +221,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "twoPhaseSystemI.H"
+#include "./twoPhaseSystemI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

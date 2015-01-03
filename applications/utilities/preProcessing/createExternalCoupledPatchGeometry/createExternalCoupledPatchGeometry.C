@@ -46,19 +46,19 @@ SeeAlso
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "createExternalCoupledPatchGeometryTemplates.H"
-#include "IOobjectList.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./createExternalCoupledPatchGeometryTemplates.H"
+#include "./db/IOobjectList/IOobjectList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
     argList::validArgs.append("fieldName");
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createNamedMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createNamedMesh.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

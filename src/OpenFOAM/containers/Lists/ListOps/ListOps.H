@@ -36,8 +36,8 @@ SourceFiles
 #ifndef ListOps_H
 #define ListOps_H
 
-#include "labelList.H"
-#include "ops.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./primitives/ops/ops.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -291,7 +291,7 @@ void inplaceRotateList(ListType<DataType>& list, label n);
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ListOpsTemplates.C"
+#   include "./ListOpsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

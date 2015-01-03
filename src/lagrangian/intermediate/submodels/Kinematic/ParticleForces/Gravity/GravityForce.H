@@ -36,7 +36,7 @@ SourceFiles
 #ifndef GravityForce_H
 #define GravityForce_H
 
-#include "ParticleForce.H"
+#include "./submodels/Kinematic/ParticleForces/ParticleForce/ParticleForce.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -121,10 +121,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "GravityForceI.H"
+#include "./GravityForceI.H"
 
 #ifdef NoRepository
-    #include "GravityForce.C"
+    #include "./GravityForce.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cloudScatter.H"
-#include "addToRunTimeSelectionTable.H"
-#include "thermoCloud.H"
+#include "./cloudScatter.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./clouds/baseClasses/thermoCloud/thermoCloud.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

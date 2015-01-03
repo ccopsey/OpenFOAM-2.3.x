@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "isoSurfaceCell.H"
-#include "polyMesh.H"
-#include "tetMatcher.H"
+#include "./isoSurfaceCell.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/meshShapes/cellMatcher/tetMatcher.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

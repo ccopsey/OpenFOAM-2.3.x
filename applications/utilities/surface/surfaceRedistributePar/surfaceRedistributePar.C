@@ -37,15 +37,15 @@ Note
 
 \*---------------------------------------------------------------------------*/
 
-#include "treeBoundBox.H"
-#include "FixedList.H"
-#include "argList.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "distributedTriSurfaceMesh.H"
-#include "mapDistribute.H"
-#include "triSurfaceFields.H"
-#include "Pair.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./distributedTriSurfaceMesh/distributedTriSurfaceMesh.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./triSurfaceFields/triSurfaceFields.H"
+#include "./primitives/Pair/Pair.H"
 
 using namespace Foam;
 
@@ -111,8 +111,8 @@ int main(int argc, char *argv[])
         "preserve surface outside of mesh bounds"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
 
     const fileName surfFileName = args[1];
@@ -145,7 +145,7 @@ int main(int argc, char *argv[])
     }
 
 
-    #include "createPolyMesh.H"
+    #include "./include/createPolyMesh.H"
 
     Random rndGen(653213);
 

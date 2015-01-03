@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "basicSymmetryPointPatchField.H"
-#include "transformField.H"
-#include "symmTransformField.H"
+#include "./basicSymmetryPointPatchField.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./fields/Fields/symmTransformField/symmTransformField.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

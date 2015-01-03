@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "JohnsonJacksonParticleThetaFvPatchScalarField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "twoPhaseSystem.H"
+#include "./JohnsonJacksonParticleThetaFvPatchScalarField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./twoPhaseSystem.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

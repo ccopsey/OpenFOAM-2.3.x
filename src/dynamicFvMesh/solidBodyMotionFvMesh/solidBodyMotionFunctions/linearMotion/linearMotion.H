@@ -35,9 +35,9 @@ SourceFiles
 #ifndef linearMotion_H
 #define linearMotion_H
 
-#include "solidBodyMotionFunction.H"
-#include "primitiveFields.H"
-#include "point.H"
+#include "./solidBodyMotionFvMesh/solidBodyMotionFunctions/solidBodyMotionFunction/solidBodyMotionFunction.H"
+#include "./fields/Fields/primitiveFields.H"
+#include "./meshes/primitiveShapes/point/point.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

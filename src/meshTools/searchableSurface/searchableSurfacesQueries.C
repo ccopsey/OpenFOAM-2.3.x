@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "searchableSurfacesQueries.H"
-#include "ListOps.H"
-#include "OFstream.H"
-#include "meshTools.H"
-#include "DynamicField.H"
+#include "./searchableSurfacesQueries.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshTools/meshTools.H"
+#include "./fields/Fields/DynamicField/DynamicField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

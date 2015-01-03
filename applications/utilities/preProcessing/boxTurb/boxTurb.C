@@ -30,12 +30,12 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "graph.H"
-#include "OFstream.H"
-#include "Kmesh.H"
-#include "turbGen.H"
-#include "calcEk.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./graph/graph.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./Kmesh/Kmesh.H"
+#include "./turbulence/turbGen.H"
+#include "./fft/calcEk.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -43,12 +43,12 @@ Description
 int main(int argc, char *argv[])
 {
     argList::noParallel();
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "readBoxTurbDict.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./readBoxTurbDict.H"
 
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

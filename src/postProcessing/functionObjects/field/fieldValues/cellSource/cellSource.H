@@ -102,10 +102,10 @@ SourceFiles
 #ifndef cellSource_H
 #define cellSource_H
 
-#include "NamedEnum.H"
-#include "fieldValue.H"
-#include "labelList.H"
-#include "volFieldsFwd.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./fieldValues/fieldValue/fieldValue.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -273,12 +273,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "cellSourceI.H"
+#include "./cellSourceI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "cellSourceTemplates.C"
+    #include "./cellSourceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

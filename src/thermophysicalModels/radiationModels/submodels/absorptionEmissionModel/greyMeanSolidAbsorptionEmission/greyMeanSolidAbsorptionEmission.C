@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "greyMeanSolidAbsorptionEmission.H"
-#include "addToRunTimeSelectionTable.H"
-#include "unitConversion.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./greyMeanSolidAbsorptionEmission.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

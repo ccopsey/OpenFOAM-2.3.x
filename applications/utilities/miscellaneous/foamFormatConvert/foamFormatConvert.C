@@ -40,18 +40,18 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
-#include "Time.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "pointFields.H"
-#include "cellIOList.H"
-#include "IOobjectList.H"
-#include "IOPtrList.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./meshes/meshShapes/cell/cellIOList.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./db/IOobjects/IOPtrList/IOPtrList.H"
 
-#include "writeMeshObject.H"
-#include "fieldDictionary.H"
+#include "./writeMeshObject.H"
+#include "./sets/cellSources/fieldToCell/fieldDictionary.H"
 
 using namespace Foam;
 
@@ -149,8 +149,8 @@ int main(int argc, char *argv[])
         "exclude the 'constant/' dir in the times list"
     );
 
-#   include "addRegionOption.H"
-#   include "setRootCase.H"
+#   include "./include/addRegionOption.H"
+#   include "./include/setRootCase.H"
 
     // enable noConstant by switching
     if (!args.optionFound("noConstant"))
@@ -164,7 +164,7 @@ int main(int argc, char *argv[])
     }
 
 
-#   include "createTime.H"
+#   include "./include/createTime.H"
 
 
     // Make sure we do not use the master-only reading since we read

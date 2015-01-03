@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "v2f.H"
-#include "fixedValueFvPatchField.H"
-#include "zeroGradientFvPatchField.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./v2f.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

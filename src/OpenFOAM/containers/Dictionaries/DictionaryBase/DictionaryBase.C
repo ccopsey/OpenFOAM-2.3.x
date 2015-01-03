@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DictionaryBase.H"
+#include "./DictionaryBase.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 
@@ -273,6 +273,6 @@ void Foam::DictionaryBase<IDLListType, T>::operator=
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DictionaryBaseIO.C"
+#include "./DictionaryBaseIO.C"
 
 // ************************************************************************* //

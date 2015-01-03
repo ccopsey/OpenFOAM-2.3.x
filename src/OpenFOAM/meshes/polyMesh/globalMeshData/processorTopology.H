@@ -26,8 +26,8 @@ License
 #ifndef processorTopology_H
 #define processorTopology_H
 
-#include "ProcessorTopology.H"
-#include "processorPolyPatch.H"
+#include "./meshes/ProcessorTopology/ProcessorTopology.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

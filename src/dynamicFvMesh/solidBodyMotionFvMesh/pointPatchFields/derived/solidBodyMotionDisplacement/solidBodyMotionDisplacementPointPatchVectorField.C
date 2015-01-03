@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "solidBodyMotionDisplacementPointPatchVectorField.H"
-#include "transformField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "pointPatchFields.H"
+#include "./solidBodyMotionDisplacementPointPatchVectorField.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/pointPatchFields/pointPatchField/pointPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -38,8 +38,8 @@ SourceFiles
 #ifndef rawTopoChangerFvMesh_H
 #define rawTopoChangerFvMesh_H
 
-#include "topoChangerFvMesh.H"
-#include "PackedBoolList.H"
+#include "./topoChangerFvMesh/topoChangerFvMesh.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -105,7 +105,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "rawTopoChangerFvMeshTemplates.C"
+#   include "./rawTopoChangerFvMeshTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

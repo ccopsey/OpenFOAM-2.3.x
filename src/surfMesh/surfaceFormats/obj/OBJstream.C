@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "OBJstream.H"
+#include "./OBJstream.H"
 //#include "token.H"
-#include "primitivePatch.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

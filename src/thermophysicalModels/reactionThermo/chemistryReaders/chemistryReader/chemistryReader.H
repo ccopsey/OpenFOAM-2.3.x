@@ -35,10 +35,10 @@ SourceFiles
 #ifndef chemistryReader_H
 #define chemistryReader_H
 
-#include "typeInfo.H"
-#include "runTimeSelectionTables.H"
-#include "Reaction.H"
-#include "ReactionList.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./reaction/_Reactions/Reaction/Reaction.H"
+#include "./reaction/_Reactions/ReactionList/ReactionList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -127,7 +127,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "chemistryReader.C"
+#   include "./chemistryReader.C"
 #endif
 
 

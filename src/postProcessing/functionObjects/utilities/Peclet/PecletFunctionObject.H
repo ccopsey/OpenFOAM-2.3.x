@@ -36,8 +36,8 @@ SourceFiles
 #ifndef PecletFunctionObject_H
 #define PecletFunctionObject_H
 
-#include "Peclet.H"
-#include "OutputFilterFunctionObject.H"
+#include "./Peclet.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

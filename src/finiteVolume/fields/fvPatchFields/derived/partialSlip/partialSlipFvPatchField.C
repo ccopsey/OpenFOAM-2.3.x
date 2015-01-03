@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "partialSlipFvPatchField.H"
-#include "symmTransformField.H"
+#include "./partialSlipFvPatchField.H"
+#include "./fields/Fields/symmTransformField/symmTransformField.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

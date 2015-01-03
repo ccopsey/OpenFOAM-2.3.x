@@ -29,11 +29,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "makeChemistryModel.H"
+#include "./chemistryModel/makeChemistryModel.H"
 
-#include "psiChemistryModel.H"
-#include "chemistryModel.H"
-#include "thermoPhysicsTypes.H"
+#include "./psiChemistryModel.H"
+#include "./chemistryModel/chemistryModel/chemistryModel.H"
+#include "./include/thermoPhysicsTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "partialWrite.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "IOobjectList.H"
-#include "polyMesh.H"
-#include "cloud.H"
+#include "./partialWrite.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./fields/cloud/cloud.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

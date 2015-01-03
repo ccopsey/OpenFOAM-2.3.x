@@ -59,7 +59,7 @@ SourceFiles
 #ifndef compressibleDeardorffDiffStress_H
 #define compressibleDeardorffDiffStress_H
 
-#include "GenSGSStress.H"
+#include "./GenSGSStress/GenSGSStress.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

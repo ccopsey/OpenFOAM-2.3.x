@@ -52,9 +52,9 @@ SourceFiles
 #ifndef fixedTemperatureConstraint_H
 #define fixedTemperatureConstraint_H
 
-#include "fvOption.H"
-#include "NamedEnum.H"
-#include "DataEntry.H"
+#include "./fvOptions/fvOption.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

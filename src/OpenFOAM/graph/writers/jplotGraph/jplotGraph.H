@@ -35,7 +35,7 @@ SourceFiles
 #ifndef jplotGraph_H
 #define jplotGraph_H
 
-#include "graph.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

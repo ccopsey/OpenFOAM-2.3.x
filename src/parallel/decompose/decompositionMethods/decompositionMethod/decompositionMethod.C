@@ -26,15 +26,15 @@ InClass
 
 \*---------------------------------------------------------------------------*/
 
-#include "decompositionMethod.H"
-#include "globalIndex.H"
-#include "syncTools.H"
-#include "Tuple2.H"
-#include "faceSet.H"
-#include "regionSplit.H"
-#include "localPointRegion.H"
-#include "minData.H"
-#include "FaceCellWave.H"
+#include "./decompositionMethod.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./regionSplit/regionSplit.H"
+#include "./regionSplit/localPointRegion.H"
+#include "./minData.H"
+#include "./algorithms/MeshWave/FaceCellWave.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

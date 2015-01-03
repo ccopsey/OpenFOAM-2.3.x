@@ -36,9 +36,9 @@ SourceFiles
 #ifndef kShellIntegration_H
 #define kShellIntegration_H
 
-#include "complexFields.H"
-#include "Kmesh.H"
-#include "graph.H"
+#include "./fields/Fields/complexFields/complexFields.H"
+#include "./Kmesh/Kmesh.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

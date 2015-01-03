@@ -35,7 +35,7 @@ SourceFiles
 #ifndef NoCollision_H
 #define NoCollision_H
 
-#include "CollisionModel.H"
+#include "./submodels/Kinematic/CollisionModel/CollisionModel/CollisionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -106,7 +106,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoCollision.C"
+#   include "./NoCollision.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

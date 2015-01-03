@@ -302,7 +302,7 @@ set(SOURCES
   finiteVolume/gradSchemes/gaussGrad/gaussGrads.C
   finiteVolume/gradSchemes/leastSquaresGrad/leastSquaresVectors.C
   finiteVolume/gradSchemes/leastSquaresGrad/leastSquaresGrads.C
-  finiteVolume/gradSchemes/LeastSquaresGrad/LeastSquaresGrads.C
+  finiteVolume/gradSchemes/_LeastSquaresGrad/LeastSquaresGrads.C
   finiteVolume/gradSchemes/fourthGrad/fourthGrads.C
   finiteVolume/gradSchemes/limitedGradSchemes/faceLimitedGrad/faceLimitedGrads.C
   finiteVolume/gradSchemes/limitedGradSchemes/cellLimitedGrad/cellLimitedGrads.C
@@ -354,11 +354,11 @@ set(LIBRARIES
   libmeshTools
 )
 
-include(include.cmake)
-include(../../src/OpenFOAM/include.cmake)
-include(../../src/OSspecific/POSIX/include.cmake)
-include(../../src/triSurface/include.cmake)
-include(../../src/meshTools/include.cmake)
+include_directories(.)
+include_directories(../../src/OpenFOAM)
+include_directories(../../src/OSspecific/POSIX)
+include_directories(../../src/triSurface)
+include_directories(../../src/meshTools)
 
 add_library(libfiniteVolume ${SOURCES})
 set_target_properties(libfiniteVolume PROPERTIES PREFIX "")

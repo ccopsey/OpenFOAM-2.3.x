@@ -34,7 +34,7 @@ SourceFiles
 #ifndef CFCFaceToCellStencil_H
 #define CFCFaceToCellStencil_H
 
-#include "faceToCellStencil.H"
+#include "./faceToCellStencil.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

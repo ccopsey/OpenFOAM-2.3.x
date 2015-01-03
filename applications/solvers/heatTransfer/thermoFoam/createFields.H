@@ -33,9 +33,9 @@
         mesh
     );
 
-    #include "compressibleCreatePhi.H"
+    #include "./cfdTools/compressible/compressibleCreatePhi.H"
 
-    #include "setAlphaEff.H"
+    #include "./setAlphaEff.H"
 
     Info<< "Creating field dpdt\n" << endl;
     volScalarField dpdt

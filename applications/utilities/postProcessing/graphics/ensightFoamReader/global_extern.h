@@ -390,7 +390,7 @@ enum z_element_failure_logic
 /*----------------------------------------------------------
  * We include the prototype header file
  *----------------------------------------------------------*/
-#include "global_extern_proto.h"
+#include "./global_extern_proto.h"
 
 /* ---------------------
  * export the file pointer  if windows

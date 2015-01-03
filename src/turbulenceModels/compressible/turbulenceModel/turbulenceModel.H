@@ -44,14 +44,14 @@ SourceFiles
 #ifndef compressibleturbulenceModel_H
 #define compressibleturbulenceModel_H
 
-#include "primitiveFieldsFwd.H"
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
-#include "fvMatricesFwd.H"
-#include "fluidThermo.H"
-#include "nearWallDist.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./fvMatrices/fvMatricesFwd.H"
+#include "./fluidThermo/fluidThermo.H"
+#include "./fvMesh/wallDist/nearWallDist.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

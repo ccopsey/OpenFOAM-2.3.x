@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "tabulated6DoFMotion.H"
-#include "addToRunTimeSelectionTable.H"
-#include "Tuple2.H"
-#include "IFstream.H"
-#include "interpolateSplineXY.H"
-#include "mathematicalConstants.H"
+#include "./tabulated6DoFMotion.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./interpolations/interpolateSplineXY/interpolateSplineXY.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant::mathematical;
 

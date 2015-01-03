@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SaffmanMeiLiftForce.H"
-#include "mathematicalConstants.H"
+#include "./SaffmanMeiLiftForce.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant;
 

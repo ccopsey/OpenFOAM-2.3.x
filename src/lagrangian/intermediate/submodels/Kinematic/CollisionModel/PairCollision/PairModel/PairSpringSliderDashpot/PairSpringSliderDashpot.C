@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PairSpringSliderDashpot.H"
+#include "./PairSpringSliderDashpot.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

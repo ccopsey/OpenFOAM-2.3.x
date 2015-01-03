@@ -35,8 +35,8 @@ SourceFiles
 #ifndef searchablePlane_H
 #define searchablePlane_H
 
-#include "searchableSurface.H"
-#include "plane.H"
+#include "./searchableSurface.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

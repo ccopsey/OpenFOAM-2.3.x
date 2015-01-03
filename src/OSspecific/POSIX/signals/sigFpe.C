@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sigFpe.H"
-#include "error.H"
-#include "JobInfo.H"
-#include "OSspecific.H"
-#include "IOstreams.H"
+#include "./sigFpe.H"
+#include "./db/error/error.H"
+#include "./global/JobInfo/JobInfo.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #ifdef LINUX_GNUC
 

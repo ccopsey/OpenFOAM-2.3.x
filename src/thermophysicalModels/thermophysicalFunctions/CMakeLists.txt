@@ -31,9 +31,9 @@ set(SOURCES
   APIfunctions/APIdiffCoefFunc/APIdiffCoefFunc.C
 )
 
-include(include.cmake)
-include(../../../src/OpenFOAM/include.cmake)
-include(../../../src/OSspecific/POSIX/include.cmake)
+include_directories(.)
+include_directories(../../../src/OpenFOAM)
+include_directories(../../../src/OSspecific/POSIX)
 
 add_library(libthermophysicalFunctions ${SOURCES})
 set_target_properties(libthermophysicalFunctions PROPERTIES PREFIX "")

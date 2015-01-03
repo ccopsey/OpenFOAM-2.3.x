@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DsmcParcel.H"
-#include "meshTools.H"
+#include "./DsmcParcel.H"
+#include "./meshTools/meshTools.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 
@@ -231,6 +231,6 @@ void Foam::DsmcParcel<ParcelType>::transformProperties
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 
-#include "DsmcParcelIO.C"
+#include "./DsmcParcelIO.C"
 
 // ************************************************************************* //

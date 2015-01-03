@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "standardPhaseChange.H"
-#include "addToRunTimeSelectionTable.H"
-#include "thermoSingleLayer.H"
+#include "./standardPhaseChange.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./thermoSingleLayer/thermoSingleLayer.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

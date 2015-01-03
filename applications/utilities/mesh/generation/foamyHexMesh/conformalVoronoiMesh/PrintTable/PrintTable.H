@@ -53,8 +53,8 @@ SourceFiles
 #ifndef PrintTable_H
 #define PrintTable_H
 
-#include "HashTable.H"
-#include "Ostream.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./db/IOstreams/IOstreams/Ostream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -125,12 +125,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "PrintTableI.H"
+#include "./PrintTableI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PrintTable.C"
+#   include "./PrintTable.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

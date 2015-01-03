@@ -26,10 +26,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4Readers.H"
+#include "./vtkPV4Readers.H"
 
 // OpenFOAM includes
-#include "IFstream.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 
 // VTK includes
 #include "vtkDataArraySelection.h"

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "variableHeatTransfer.H"
-#include "turbulenceModel.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./variableHeatTransfer.H"
+#include "./turbulenceModel.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

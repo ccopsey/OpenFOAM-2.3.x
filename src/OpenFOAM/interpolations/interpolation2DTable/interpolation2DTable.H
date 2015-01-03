@@ -36,9 +36,9 @@ SourceFiles
 #ifndef interpolation2DTable_H
 #define interpolation2DTable_H
 
-#include "List.H"
-#include "Tuple2.H"
-#include "tableReader.H"
+#include "./containers/Lists/List/List.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./interpolations/interpolationTable/tableReaders/tableReader.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -167,7 +167,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "interpolation2DTable.C"
+#   include "./interpolation2DTable.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

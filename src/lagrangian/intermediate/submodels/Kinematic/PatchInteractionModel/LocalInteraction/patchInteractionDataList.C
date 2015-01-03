@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "patchInteractionDataList.H"
-#include "stringListOps.H"
-#include "wallPolyPatch.H"
+#include "./patchInteractionDataList.H"
+#include "./primitives/strings/lists/stringListOps.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
 
 // * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * * //
 

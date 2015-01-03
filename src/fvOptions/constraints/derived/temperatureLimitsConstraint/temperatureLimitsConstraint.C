@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "temperatureLimitsConstraint.H"
-#include "fvMesh.H"
-#include "basicThermo.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./temperatureLimitsConstraint.H"
+#include "./fvMesh/fvMesh.H"
+#include "./basicThermo/basicThermo.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -33,9 +33,9 @@ Description
 #ifndef calc_H
 #define calc_H
 
-#include "argList.H"
-#include "Time.H"
-#include "fvMesh.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

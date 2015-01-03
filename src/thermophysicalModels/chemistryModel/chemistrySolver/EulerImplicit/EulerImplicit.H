@@ -35,7 +35,7 @@ SourceFiles
 #ifndef EulerImplicit_H
 #define EulerImplicit_H
 
-#include "chemistrySolver.H"
+#include "./chemistrySolver/chemistrySolver/chemistrySolver.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -119,7 +119,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "EulerImplicit.C"
+#   include "./EulerImplicit.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

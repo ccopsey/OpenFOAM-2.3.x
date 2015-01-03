@@ -58,8 +58,8 @@ SourceFiles
 #ifndef LaunderGibsonRSTM_H
 #define LaunderGibsonRSTM_H
 
-#include "RASModel.H"
-#include "wallDistReflection.H"
+#include "./RASModel/RASModel.H"
+#include "./fvMesh/wallDist/wallDistReflection.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CSV.H"
-#include "DynamicList.H"
-#include "IFstream.H"
+#include "./CSV.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 
@@ -246,7 +246,7 @@ const Foam::fileName& Foam::CSV<Type>::fName() const
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "CSVIO.C"
+#include "./CSVIO.C"
 
 
 // ************************************************************************* //

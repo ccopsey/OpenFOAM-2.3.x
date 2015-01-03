@@ -29,9 +29,9 @@ Description
 #ifndef className_H
 #define className_H
 
-#include "word.H"
-#include "debug.H"
-#include "debugName.H"
+#include "./primitives/strings/word/word.H"
+#include "./global/debug/debug.H"
+#include "./debugName.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

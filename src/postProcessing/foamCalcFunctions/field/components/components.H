@@ -36,7 +36,7 @@ SourceFiles
 #ifndef components_H
 #define components_H
 
-#include "calcType.H"
+#include "./calcType/calcType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -127,7 +127,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeComponentFields.C"
+#   include "./writeComponentFields.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

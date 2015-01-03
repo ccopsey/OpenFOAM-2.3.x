@@ -41,8 +41,8 @@ SourceFiles
 #ifndef cellZone_H
 #define cellZone_H
 
-#include "zone.H"
-#include "cellZoneMeshFwd.H"
+#include "./meshes/polyMesh/zones/zone/zone.H"
+#include "./meshes/polyMesh/zones/ZoneMesh/cellZoneMeshFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

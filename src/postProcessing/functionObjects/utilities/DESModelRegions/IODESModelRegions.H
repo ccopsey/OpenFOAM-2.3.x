@@ -32,8 +32,8 @@ Description
 #ifndef IODESModelRegions_H
 #define IODESModelRegions_H
 
-#include "DESModelRegions.H"
-#include "IOOutputFilter.H"
+#include "./DESModelRegions.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

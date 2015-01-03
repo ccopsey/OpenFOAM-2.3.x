@@ -35,7 +35,7 @@ SourceFiles
 #ifndef fluidThermo_H
 #define fluidThermo_H
 
-#include "basicThermo.H"
+#include "./basicThermo/basicThermo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

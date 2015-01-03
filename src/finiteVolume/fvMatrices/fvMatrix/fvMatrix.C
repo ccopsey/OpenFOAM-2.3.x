@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "calculatedFvPatchFields.H"
-#include "zeroGradientFvPatchFields.H"
-#include "coupledFvPatchFields.H"
-#include "UIndirectList.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/fvPatchFields/basic/calculated/calculatedFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/coupled/coupledFvPatchFields.H"
+#include "./containers/Lists/UIndirectList/UIndirectList.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 
@@ -2459,6 +2459,6 @@ Foam::Ostream& Foam::operator<<(Ostream& os, const fvMatrix<Type>& fvm)
 
 // * * * * * * * * * * * * * * * * Solvers * * * * * * * * * * * * * * * * * //
 
-#include "fvMatrixSolve.C"
+#include "./fvMatrixSolve.C"
 
 // ************************************************************************* //

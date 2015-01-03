@@ -34,7 +34,7 @@ SourceFiles
 #ifndef rawSetWriter_H
 #define rawSetWriter_H
 
-#include "writer.H"
+#include "./sampledSetWriters/writer.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "rawSetWriter.C"
+#   include "./rawSetWriter.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

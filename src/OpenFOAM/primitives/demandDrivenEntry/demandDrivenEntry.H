@@ -39,7 +39,7 @@ SourceFiles
 #ifndef demandDrivenEntry_H
 #define demandDrivenEntry_H
 
-#include "dictionary.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -124,12 +124,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "demandDrivenEntryI.H"
+#include "./demandDrivenEntryI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "demandDrivenEntry.C"
+    #include "./demandDrivenEntry.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

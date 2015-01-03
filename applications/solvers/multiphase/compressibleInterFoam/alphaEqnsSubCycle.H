@@ -1,5 +1,5 @@
 {
-    #include "alphaControls.H"
+    #include "./cfdTools/general/include/alphaControls.H"
 
     surfaceScalarField phic(mag(phi/mesh.magSf()));
     phic = min(interface.cAlpha()*phic, max(phic));
@@ -27,7 +27,7 @@
             !(++alphaSubCycle).end();
         )
         {
-            #include "alphaEqns.H"
+            #include "./alphaEqns.H"
             rhoPhiSum += (runTime.deltaT()/totalDeltaT)*rhoPhi;
         }
 
@@ -35,6 +35,6 @@
     }
     else
     {
-        #include "alphaEqns.H"
+        #include "./alphaEqns.H"
     }
 }

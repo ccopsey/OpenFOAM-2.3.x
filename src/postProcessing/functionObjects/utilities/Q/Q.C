@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Q.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "fvcGrad.H"
+#include "./Q.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

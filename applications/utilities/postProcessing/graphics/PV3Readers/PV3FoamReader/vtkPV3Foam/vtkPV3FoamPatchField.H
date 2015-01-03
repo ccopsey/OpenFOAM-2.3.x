@@ -36,7 +36,7 @@ InClass
 #include "vtkPointData.h"
 #include "vtkPolyData.h"
 
-#include "vtkOpenFOAMTupleRemap.H"
+#include "./vtkOpenFOAMTupleRemap.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

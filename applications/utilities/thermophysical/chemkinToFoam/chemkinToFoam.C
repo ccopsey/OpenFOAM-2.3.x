@@ -30,9 +30,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "chemkinReader.H"
-#include "OFstream.H"
+#include "./global/argList/argList.H"
+#include "./chemistryReaders/chemkinReader/chemkinReader.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 using namespace Foam;
 

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "particle.H"
-#include "IOstreams.H"
-#include "IOPosition.H"
+#include "./particle.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./IOPosition/IOPosition.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

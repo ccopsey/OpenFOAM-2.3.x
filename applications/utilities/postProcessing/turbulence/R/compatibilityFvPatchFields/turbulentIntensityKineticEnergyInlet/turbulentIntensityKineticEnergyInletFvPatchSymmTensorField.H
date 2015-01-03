@@ -39,7 +39,7 @@ SourceFiles
 #ifndef turbulentIntensityKineticEnergyInletFvPatchSymmTensorField_H
 #define turbulentIntensityKineticEnergyInletFvPatchSymmTensorField_H
 
-#include "fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -38,10 +38,10 @@ SourceFiles
 #ifndef blackModyEmission_H
 #define blackModyEmission_H
 
-#include "volFields.H"
-#include "dimensionedScalar.H"
-#include "interpolationTable.H"
-#include "Vector2D.H"
+#include "./fields/volFields/volFields.H"
+#include "./dimensionedTypes/dimensionedScalar/dimensionedScalar.H"
+#include "./interpolations/interpolationTable/interpolationTable.H"
+#include "./primitives/Vector2D/Vector2D.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

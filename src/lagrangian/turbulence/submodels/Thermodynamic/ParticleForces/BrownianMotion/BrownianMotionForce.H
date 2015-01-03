@@ -36,8 +36,8 @@ SourceFiles
 #ifndef BrownianMotionForce_H
 #define BrownianMotionForce_H
 
-#include "ParticleForce.H"
-#include "cachedRandom.H"
+#include "./submodels/Kinematic/ParticleForces/ParticleForce/ParticleForce.H"
+#include "./primitives/random/cachedRandom/cachedRandom.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -147,10 +147,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "BrownianMotionForceI.H"
+#include "./BrownianMotionForceI.H"
 
 #ifdef NoRepository
-    #include "BrownianMotionForce.C"
+    #include "./BrownianMotionForce.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

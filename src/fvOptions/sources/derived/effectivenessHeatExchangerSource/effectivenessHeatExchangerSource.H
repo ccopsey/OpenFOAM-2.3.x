@@ -133,9 +133,9 @@ SourceFiles
 #ifndef effectivenessHeatExchangerSource_H
 #define effectivenessHeatExchangerSource_H
 
-#include "fvOption.H"
-#include "autoPtr.H"
-#include "interpolation2DTable.H"
+#include "./fvOptions/fvOption.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./interpolations/interpolation2DTable/interpolation2DTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -36,8 +36,8 @@ SourceFiles
 #ifndef blendingFactorFunctionObject_H
 #define blendingFactorFunctionObject_H
 
-#include "blendingFactor.H"
-#include "OutputFilterFunctionObject.H"
+#include "./blendingFactor.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

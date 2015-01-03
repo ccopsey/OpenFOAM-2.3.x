@@ -13,9 +13,9 @@
 #include <assert.h>
 //#include <windows.h>
 
-#include "vector.h"
-#include "list.h"
-#include "progmesh.h"
+#include "./vector.h"
+#include "./list.h"
+#include "./progmesh.h"
 
 #define min(x,y) (((x) <= (y)) ? (x) : (y))
 #define max(x,y) (((x) >= (y)) ? (x) : (y))

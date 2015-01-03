@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "emptyPolyPatch.H"
-#include "commSchedule.H"
-#include "globalMeshData.H"
-#include "cyclicPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./meshes/ProcessorTopology/commSchedule.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
 
 template<class Type, template<class> class PatchField, class GeoMesh>
 void Foam::GeometricField<Type, PatchField, GeoMesh>::GeometricBoundaryField::

@@ -35,16 +35,16 @@ set(LIBRARIES
   libsampling
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
-include(../../../../../src/meshTools/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
+include_directories(../../../../../src/meshTools)
 include_directories(../../../../../src/transportModels)
 include_directories(../../../../../src/turbulenceModels)
 include_directories(../../../../../src/turbulenceModels/compressible/RAS/derivedFvPatchFields/wallFunctions/mutWallFunctions)
 include_directories(../../../../../src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/wallFunctions/nutWallFunctions)
-include(../../../../../src/thermophysicalModels/basic/include.cmake)
+include_directories(../../../../../src/thermophysicalModels/basic)
 
 add_executable(R ${SOURCES})
 

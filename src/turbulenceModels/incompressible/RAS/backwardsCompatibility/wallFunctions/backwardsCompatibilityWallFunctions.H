@@ -37,7 +37,7 @@ SourceFiles
 #ifndef backwardsCompatibilityWallFunctions_H
 #define backwardsCompatibilityWallFunctions_H
 
-#include "fvMesh.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -112,7 +112,7 @@ namespace incompressible
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "backwardsCompatibilityWallFunctionsTemplates.C"
+#   include "./backwardsCompatibilityWallFunctionsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

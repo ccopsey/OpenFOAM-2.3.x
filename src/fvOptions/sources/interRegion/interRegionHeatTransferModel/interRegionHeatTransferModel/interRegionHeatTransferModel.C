@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "interRegionHeatTransferModel.H"
-#include "basicThermo.H"
-#include "fvmSup.H"
-#include "zeroGradientFvPatchFields.H"
-#include "fvcVolumeIntegrate.H"
-#include "fvOptionList.H"
+#include "./interRegionHeatTransferModel.H"
+#include "./basicThermo/basicThermo.H"
+#include "./finiteVolume/fvm/fvmSup.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./finiteVolume/fvc/fvcVolumeIntegrate.H"
+#include "./fvOptions/fvOptionList.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

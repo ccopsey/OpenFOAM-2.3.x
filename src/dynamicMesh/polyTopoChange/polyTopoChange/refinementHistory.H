@@ -71,12 +71,12 @@ SourceFiles
 #ifndef refinementHistory_H
 #define refinementHistory_H
 
-#include "DynamicList.H"
-#include "labelList.H"
-#include "FixedList.H"
-#include "SLList.H"
-#include "autoPtr.H"
-#include "regIOobject.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./containers/LinkedLists/user/SLList.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/regIOobject/regIOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

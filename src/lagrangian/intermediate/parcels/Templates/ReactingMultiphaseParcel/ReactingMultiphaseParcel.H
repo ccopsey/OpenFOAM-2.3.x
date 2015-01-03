@@ -38,9 +38,9 @@ SourceFiles
 #ifndef ReactingMultiphaseParcel_H
 #define ReactingMultiphaseParcel_H
 
-#include "particle.H"
-#include "SLGThermo.H"
-#include "demandDrivenEntry.H"
+#include "./particle/particle.H"
+#include "./SLGThermo/SLGThermo.H"
+#include "./primitives/demandDrivenEntry/demandDrivenEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -460,12 +460,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "ReactingMultiphaseParcelI.H"
+#include "./ReactingMultiphaseParcelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "ReactingMultiphaseParcel.C"
+    #include "./ReactingMultiphaseParcel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

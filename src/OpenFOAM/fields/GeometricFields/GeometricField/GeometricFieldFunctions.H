@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "GeometricScalarField.H"
+#include "./fields/GeometricFields/GeometricScalarField/GeometricScalarField.H"
 
 #define TEMPLATE \
     template<class Type, template<class> class PatchField, class GeoMesh>
-#include "GeometricFieldFunctionsM.H"
+#include "./GeometricFieldFunctionsM.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -493,6 +493,6 @@ PRODUCT_OPERATOR(scalarProduct, &&, dotdot)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "undefFieldFunctionsM.H"
+#include "./fields/Fields/Field/undefFieldFunctionsM.H"
 
 // ************************************************************************* //

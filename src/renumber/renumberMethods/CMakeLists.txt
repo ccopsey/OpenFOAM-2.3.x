@@ -32,12 +32,12 @@ set(LIBRARIES
   libmeshTools
 )
 
-include(include.cmake)
-include(../../../src/OpenFOAM/include.cmake)
-include(../../../src/OSspecific/POSIX/include.cmake)
-include(../../../src/finiteVolume/include.cmake)
-include(../../../src/parallel/decompose/decompositionMethods/include.cmake)
-include(../../../src/meshTools/include.cmake)
+include_directories(.)
+include_directories(../../../src/OpenFOAM)
+include_directories(../../../src/OSspecific/POSIX)
+include_directories(../../../src/finiteVolume)
+include_directories(../../../src/parallel/decompose/decompositionMethods)
+include_directories(../../../src/meshTools)
 
 add_library(librenumberMethods ${SOURCES})
 set_target_properties(librenumberMethods PROPERTIES PREFIX "")

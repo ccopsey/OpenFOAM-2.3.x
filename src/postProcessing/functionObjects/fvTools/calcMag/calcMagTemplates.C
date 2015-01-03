@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMesh.H"
-#include "Time.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 template<class FieldType>
 FieldType& Foam::calcMag::magField

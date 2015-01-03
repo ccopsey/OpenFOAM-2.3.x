@@ -34,7 +34,7 @@ Description
 #define indexedFace_H
 
 #include "CGAL/Triangulation_2.h"
-#include "indexedVertex.H"
+#include "./indexedVertex.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -126,7 +126,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "indexedFaceI.H"
+#include "./indexedFaceI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

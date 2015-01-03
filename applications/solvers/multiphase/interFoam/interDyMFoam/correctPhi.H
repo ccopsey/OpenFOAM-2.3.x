@@ -61,5 +61,5 @@ if (mesh.changing())
 
     #undef divUCorr
 
-    #include "continuityErrs.H"
+    #include "./cfdTools/incompressible/continuityErrs.H"
 }

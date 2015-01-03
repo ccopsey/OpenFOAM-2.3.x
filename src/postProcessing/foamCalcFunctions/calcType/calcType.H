@@ -42,10 +42,10 @@ SourceFiles
 #ifndef calcType_H
 #define calcType_H
 
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
-#include "fvCFD.H"
+#include "./cfdTools/general/include/fvCFD.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

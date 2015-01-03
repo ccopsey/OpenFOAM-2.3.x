@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IDDESDelta.H"
-#include "addToRunTimeSelectionTable.H"
-#include "wallDistReflection.H"
-#include "wallDist.H"
+#include "./IDDESDelta.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fvMesh/wallDist/wallDistReflection.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

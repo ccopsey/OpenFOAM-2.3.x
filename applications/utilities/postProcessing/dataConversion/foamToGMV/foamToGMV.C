@@ -32,13 +32,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "OFstream.H"
-#include "instantList.H"
-#include "IOobjectList.H"
-#include "itoa.H"
-#include "Cloud.H"
-#include "passiveParticle.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/Time/instant/instantList.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./itoa.H"
+#include "./Cloud/Cloud.H"
+#include "./passiveParticle/passiveParticle.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -54,12 +54,12 @@ int main(int argc, char *argv[])
         cloud::prefix
     };
 
-#   include "setRootCase.H"
+#   include "./include/setRootCase.H"
 
-#   include "createTime.H"
-#   include "createMesh.H"
+#   include "./include/createTime.H"
+#   include "./include/createMesh.H"
 
-#   include "readConversionProperties.H"
+#   include "./readConversionProperties.H"
 
     // get the available time-steps
     instantList TimeList = runTime.times();
@@ -78,15 +78,15 @@ int main(int argc, char *argv[])
 
             IOobjectList objects(mesh, runTime.timeName());
 
-#           include "moveMesh.H"
+#           include "./moveMesh.H"
 
             // set the filename of the GMV file
             fileName gmvFileName = "plotGMV." + itoa(n);
             OFstream gmvFile(args.rootPath()/args.caseName()/gmvFileName);
 
-#           include "gmvOutputHeader.H"
-#           include "gmvOutput.H"
-#           include "gmvOutputTail.H"
+#           include "./gmvOutputHeader.H"
+#           include "./gmvOutput.H"
+#           include "./gmvOutputTail.H"
         }
     }
 

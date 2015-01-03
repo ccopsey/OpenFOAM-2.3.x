@@ -61,7 +61,7 @@ SourceFiles
 #ifndef patchDist_H
 #define patchDist_H
 
-#include "volFields.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

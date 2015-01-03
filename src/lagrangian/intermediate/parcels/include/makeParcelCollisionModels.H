@@ -28,13 +28,13 @@ License
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "NoCollision.H"
-#include "PairCollision.H"
+#include "./submodels/Kinematic/CollisionModel/NoCollision/NoCollision.H"
+#include "./submodels/Kinematic/CollisionModel/PairCollision/PairCollision.H"
 
-#include "PairSpringSliderDashpot.H"
+#include "./submodels/Kinematic/CollisionModel/PairCollision/PairModel/PairSpringSliderDashpot/PairSpringSliderDashpot.H"
 
-#include "WallSpringSliderDashpot.H"
-#include "WallLocalSpringSliderDashpot.H"
+#include "./submodels/Kinematic/CollisionModel/PairCollision/WallModel/WallSpringSliderDashpot/WallSpringSliderDashpot.H"
+#include "./submodels/Kinematic/CollisionModel/PairCollision/WallModel/WallLocalSpringSliderDashpot/WallLocalSpringSliderDashpot.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

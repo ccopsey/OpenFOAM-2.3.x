@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "MeshedSurfaceProxy.H"
+#include "./MeshedSurfaceProxy.H"
 
-#include "Time.H"
-#include "surfMesh.H"
-#include "OFstream.H"
-#include "ListOps.H"
+#include "./db/Time/Time.H"
+#include "./surfMesh/surfMesh.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./containers/Lists/ListOps/ListOps.H"
 
 // * * * * * * * * * * * * * Static Member Functions * * * * * * * * * * * * //
 

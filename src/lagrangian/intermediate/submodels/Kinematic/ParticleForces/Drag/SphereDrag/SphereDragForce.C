@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SphereDragForce.H"
+#include "./SphereDragForce.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

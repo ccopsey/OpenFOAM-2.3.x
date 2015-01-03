@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "splineInterpolationWeights.H"
-#include "addToRunTimeSelectionTable.H"
-#include "ListOps.H"
-#include "linearInterpolationWeights.H"
+#include "./splineInterpolationWeights.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./interpolations/interpolationWeights/linearInterpolationWeights/linearInterpolationWeights.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

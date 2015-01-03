@@ -32,13 +32,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./global/argList/argList.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
-#include "wallPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
 
 #include "incompressible/RAS/derivedFvPatchFields/wallFunctions/epsilonWallFunctions/epsilonWallFunction/epsilonWallFunctionFvPatchScalarField.H"
 #include "incompressible/RAS/derivedFvPatchFields/wallFunctions/kqRWallFunctions/kqRWallFunction/kqRWallFunctionFvPatchField.H"
@@ -328,16 +328,16 @@ void updateIncompressibleCase(const fvMesh& mesh)
 
 int main(int argc, char *argv[])
 {
-    #include "addTimeOptions.H"
+    #include "./include/addTimeOptions.H"
     argList::addBoolOption
     (
         "compressible",
         "force use of compressible wall functions. Default is auto-detect."
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     const bool compressible = args.optionFound("compressible");
 

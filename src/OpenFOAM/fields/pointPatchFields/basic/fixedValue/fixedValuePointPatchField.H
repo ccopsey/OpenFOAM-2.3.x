@@ -35,7 +35,7 @@ SourceFiles
 #ifndef fixedValuePointPatchField_H
 #define fixedValuePointPatchField_H
 
-#include "valuePointPatchField.H"
+#include "./fields/pointPatchFields/basic/value/valuePointPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -151,7 +151,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#    include "fixedValuePointPatchField.C"
+#    include "./fixedValuePointPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

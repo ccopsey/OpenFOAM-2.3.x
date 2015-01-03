@@ -39,9 +39,9 @@ SourceFiles
 #ifndef writeDictionary_H
 #define writeDictionary_H
 
-#include "wordList.H"
-#include "runTimeSelectionTables.H"
-#include "SHA1Digest.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./primitives/hashes/SHA1/SHA1Digest.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

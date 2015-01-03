@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "TableFile.H"
+#include "./TableFile.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -78,7 +78,7 @@ Foam::TableFile<Type>::~TableFile()
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "TableFileIO.C"
+#include "./TableFileIO.C"
 
 
 // ************************************************************************* //

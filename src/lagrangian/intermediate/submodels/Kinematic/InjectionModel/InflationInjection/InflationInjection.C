@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "InflationInjection.H"
-#include "mathematicalConstants.H"
-#include "PackedBoolList.H"
-#include "cellSet.H"
-#include "ListListOps.H"
+#include "./InflationInjection.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./containers/Lists/ListListOps/ListListOps.H"
 
 using namespace Foam::constant::mathematical;
 

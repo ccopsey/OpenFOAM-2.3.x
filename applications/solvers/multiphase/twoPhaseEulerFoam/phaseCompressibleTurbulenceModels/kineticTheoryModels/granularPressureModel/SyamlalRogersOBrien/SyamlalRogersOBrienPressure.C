@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SyamlalRogersOBrienPressure.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./SyamlalRogersOBrienPressure.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

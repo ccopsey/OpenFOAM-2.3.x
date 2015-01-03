@@ -40,9 +40,9 @@ SourceFiles
 #ifndef List_H
 #define List_H
 
-#include "UList.H"
-#include "autoPtr.H"
-#include "Xfer.H"
+#include "./containers/Lists/UList/UList.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./memory/Xfer/Xfer.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -251,12 +251,12 @@ List<T> readList(Istream&);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "ListI.H"
+#   include "./ListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "List.C"
+#   include "./List.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

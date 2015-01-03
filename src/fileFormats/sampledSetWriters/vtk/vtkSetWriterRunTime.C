@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkSetWriter.H"
-#include "writers.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./vtkSetWriter.H"
+#include "./sampledSetWriters/writers.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

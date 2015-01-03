@@ -80,11 +80,11 @@ SourceFiles
 #ifndef mappedPatchBase_H
 #define mappedPatchBase_H
 
-#include "pointField.H"
-#include "Tuple2.H"
-#include "pointIndexHit.H"
-#include "AMIPatchToPatchInterpolation.H"
-#include "coupleGroupIdentifier.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./meshes/primitiveShapes/objectHit/pointIndexHit.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIPatchToPatchInterpolation.H"
+#include "./meshes/Identifiers/patch/coupleGroupIdentifier.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -448,12 +448,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "mappedPatchBaseI.H"
+#include "./mappedPatchBaseI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "mappedPatchBaseTemplates.C"
+    #include "./mappedPatchBaseTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

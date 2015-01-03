@@ -62,8 +62,8 @@ SourceFiles
 #ifndef mixedSmagorinsky_H
 #define mixedSmagorinsky_H
 
-#include "scaleSimilarity.H"
-#include "Smagorinsky.H"
+#include "./scaleSimilarity/scaleSimilarity.H"
+#include "./Smagorinsky/Smagorinsky.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

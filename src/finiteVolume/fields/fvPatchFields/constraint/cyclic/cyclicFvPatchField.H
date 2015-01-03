@@ -54,9 +54,9 @@ SourceFiles
 #ifndef cyclicFvPatchField_H
 #define cyclicFvPatchField_H
 
-#include "coupledFvPatchField.H"
-#include "cyclicLduInterfaceField.H"
-#include "cyclicFvPatch.H"
+#include "./fields/fvPatchFields/basic/coupled/coupledFvPatchField.H"
+#include "./matrices/lduMatrix/lduAddressing/lduInterfaceFields/cyclicLduInterfaceField/cyclicLduInterfaceField.H"
+#include "./fvMesh/fvPatches/constraint/cyclic/cyclicFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -236,7 +236,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "cyclicFvPatchField.C"
+#   include "./cyclicFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

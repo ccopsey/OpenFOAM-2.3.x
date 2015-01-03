@@ -32,8 +32,8 @@ Description
 #ifndef IOforces_H
 #define IOforces_H
 
-#include "forces.H"
-#include "IOOutputFilter.H"
+#include "./forces.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

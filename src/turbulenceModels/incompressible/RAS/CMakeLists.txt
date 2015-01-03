@@ -66,13 +66,13 @@ set(LIBRARIES
   libmeshTools
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/finiteVolume/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/finiteVolume)
 include_directories(../../../../src/turbulenceModels)
 include_directories(../../../../src/transportModels)
-include(../../../../src/meshTools/include.cmake)
+include_directories(../../../../src/meshTools)
 
 add_library(libincompressibleRASModels ${SOURCES})
 set_target_properties(libincompressibleRASModels PROPERTIES PREFIX "")

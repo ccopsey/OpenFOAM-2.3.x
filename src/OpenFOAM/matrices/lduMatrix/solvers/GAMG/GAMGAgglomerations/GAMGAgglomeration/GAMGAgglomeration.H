@@ -37,13 +37,13 @@ SourceFiles
 #ifndef GAMGAgglomeration_H
 #define GAMGAgglomeration_H
 
-#include "MeshObject.H"
-#include "lduPrimitiveMesh.H"
-#include "lduInterfacePtrsList.H"
-#include "primitiveFields.H"
-#include "runTimeSelectionTables.H"
+#include "./meshes/MeshObject/MeshObject.H"
+#include "./meshes/lduMesh/lduPrimitiveMesh.H"
+#include "./matrices/lduMatrix/lduAddressing/lduInterface/lduInterfacePtrsList.H"
+#include "./fields/Fields/primitiveFields.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
-#include "boolList.H"
+#include "./primitives/bools/lists/boolList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -494,7 +494,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "GAMGAgglomerationTemplates.C"
+#   include "./GAMGAgglomerationTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

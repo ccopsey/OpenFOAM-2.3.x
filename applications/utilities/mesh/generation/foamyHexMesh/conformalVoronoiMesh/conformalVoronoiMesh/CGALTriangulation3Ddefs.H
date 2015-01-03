@@ -38,10 +38,10 @@ Description
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "CGALTriangulation3DKernel.H"
+#include "./CGALTriangulation3DKernel.H"
 
-#include "indexedVertex.H"
-#include "indexedCell.H"
+#include "./indexedVertex/indexedVertex.H"
+#include "./indexedCell/indexedCell.H"
 
 typedef CGAL::indexedVertex<K>     Vb;
 typedef CGAL::indexedCell<K>       Cb;

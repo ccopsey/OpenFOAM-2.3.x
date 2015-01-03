@@ -35,11 +35,11 @@ SourceFiles
 #ifndef regionCoupledFvPatch_H
 #define regionCoupledFvPatch_H
 
-#include "fvPatch.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "regionCoupledPolyPatch.H"
-#include "regionCoupledBaseFvPatch.H"
+#include "./fvMesh/fvPatches/fvPatch/fvPatch.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./regionCoupled/patches/regionCoupledPolyPatch/regionCoupledPolyPatch.H"
+#include "./regionCoupledBaseFvPatch.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

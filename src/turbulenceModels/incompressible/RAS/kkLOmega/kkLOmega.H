@@ -80,8 +80,8 @@ SourceFiles
 #ifndef kkLOmega_H
 #define kkLOmega_H
 
-#include "RASModel.H"
-#include "wallDist.H"
+#include "./RASModel/RASModel.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

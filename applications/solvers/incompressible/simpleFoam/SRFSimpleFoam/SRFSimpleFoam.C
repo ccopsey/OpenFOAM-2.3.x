@@ -30,23 +30,23 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "singlePhaseTransportModel.H"
-#include "RASModel.H"
-#include "SRFModel.H"
-#include "simpleControl.H"
-#include "fvIOoptionList.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
+#include "./RASModel.H"
+#include "./cfdTools/general/SRF/SRFModel/SRFModel/SRFModel.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "initContinuityErrs.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     simpleControl simple(mesh);
 
@@ -60,8 +60,8 @@ int main(int argc, char *argv[])
 
         // --- Pressure-velocity SIMPLE corrector
         {
-            #include "UrelEqn.H"
-            #include "pEqn.H"
+            #include "./UrelEqn.H"
+            #include "./pEqn.H"
         }
 
         turbulence->correct();

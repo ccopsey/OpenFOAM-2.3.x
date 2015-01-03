@@ -32,7 +32,7 @@ Description
 #ifndef pointConversion_H
 #define pointConversion_H
 
-#include "point.H"
+#include "./meshes/primitiveShapes/point/point.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

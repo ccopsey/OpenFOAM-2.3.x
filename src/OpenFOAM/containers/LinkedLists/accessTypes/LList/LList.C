@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "LList.H"
+#include "./db/error/error.H"
+#include "./LList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -86,7 +86,7 @@ void Foam::LList<LListBase, T>::operator=(const LList<LListBase, T>& lst)
 
 // * * * * * * * * * * * * * * * Friend Operators  * * * * * * * * * * * * * //
 
-#include "LListIO.C"
+#include "./LListIO.C"
 
 
 // ************************************************************************* //

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mappedVariableThicknessWallPolyPatch.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./mappedVariableThicknessWallPolyPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

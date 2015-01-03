@@ -42,9 +42,9 @@ SourceFiles
 #ifndef UList_H
 #define UList_H
 
-#include "bool.H"
-#include "label.H"
-#include "uLabel.H"
+#include "./primitives/bools/bool/bool.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/ints/uLabel/uLabel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -390,7 +390,7 @@ inline void reverse(UList<T>&);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "UListI.H"
+#   include "./UListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -470,7 +470,7 @@ inline void reverse(UList<T>&);
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "UList.C"
+#   include "./UList.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

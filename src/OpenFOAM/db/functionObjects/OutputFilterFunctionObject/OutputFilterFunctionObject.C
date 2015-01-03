@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "OutputFilterFunctionObject.H"
-#include "IOOutputFilter.H"
-#include "polyMesh.H"
-#include "mapPolyMesh.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./OutputFilterFunctionObject.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * Private Members * * * * * * * * * * * * * * //
 

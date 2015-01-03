@@ -26,13 +26,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "polyMesh.H"
-#include "Time.H"
-#include "primitiveMesh.H"
-#include "DynamicList.H"
-#include "indexedOctree.H"
-#include "treeDataCell.H"
-#include "globalMeshData.H"
+#include "./polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./algorithms/indexedOctree/treeDataCell.H"
+#include "./globalMeshData/globalMeshData.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

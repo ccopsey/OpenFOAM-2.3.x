@@ -94,8 +94,8 @@ SourceFiles
 #ifndef codedMixedFvPatchField_H
 #define codedMixedFvPatchField_H
 
-#include "mixedFvPatchFields.H"
-#include "codedBase.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchFields.H"
+#include "./db/dynamicLibrary/codedBase/codedBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -255,7 +255,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "codedMixedFvPatchField.C"
+#   include "./codedMixedFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

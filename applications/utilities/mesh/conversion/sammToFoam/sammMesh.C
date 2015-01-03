@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sammMesh.H"
-#include "emptyPolyPatch.H"
-#include "demandDrivenData.H"
-#include "cellModeller.H"
+#include "./sammMesh.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./include/demandDrivenData.H"
+#include "./meshes/meshShapes/cellModeller/cellModeller.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -42,10 +42,10 @@ SourceFiles
 #ifndef blockMesh_H
 #define blockMesh_H
 
-#include "blockList.H"
-#include "polyMesh.H"
-#include "IOdictionary.H"
-#include "curvedEdgeList.H"
+#include "./block/blockList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./curvedEdges/curvedEdgeList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

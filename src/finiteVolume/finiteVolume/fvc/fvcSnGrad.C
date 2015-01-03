@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcSnGrad.H"
-#include "fvMesh.H"
-#include "snGradScheme.H"
+#include "./fvcSnGrad.H"
+#include "./fvMesh/fvMesh.H"
+#include "./finiteVolume/snGradSchemes/snGradScheme/snGradScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

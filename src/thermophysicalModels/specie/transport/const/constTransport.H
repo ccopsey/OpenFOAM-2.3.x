@@ -213,10 +213,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "constTransportI.H"
+#include "./constTransportI.H"
 
 #ifdef NoRepository
-#   include "constTransport.C"
+#   include "./constTransport.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

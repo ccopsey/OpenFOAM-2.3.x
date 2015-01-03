@@ -35,7 +35,7 @@ SourceFiles
 #ifndef homogeneousMixture_H
 #define homogeneousMixture_H
 
-#include "basicMultiComponentMixture.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -138,7 +138,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 #ifdef NoRepository
-#   include "homogeneousMixture.C"
+#   include "./homogeneousMixture.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

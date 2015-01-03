@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellSource.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./cellSource.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

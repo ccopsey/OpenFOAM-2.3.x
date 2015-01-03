@@ -36,9 +36,9 @@ SourceFiles
 #ifndef outputFilterOutputControl_H
 #define outputFilterOutputControl_H
 
-#include "dictionary.H"
-#include "Time.H"
-#include "NamedEnum.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldToCell.H"
-#include "polyMesh.H"
-#include "cellSet.H"
-#include "Time.H"
-#include "IFstream.H"
-#include "fieldDictionary.H"
+#include "./fieldToCell.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./db/Time/Time.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./fieldDictionary.H"
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

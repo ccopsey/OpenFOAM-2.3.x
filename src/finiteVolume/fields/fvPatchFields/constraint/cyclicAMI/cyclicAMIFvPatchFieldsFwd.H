@@ -26,7 +26,7 @@ License
 #ifndef cyclicAMIFvPatchFieldsFwd_H
 #define cyclicAMIFvPatchFieldsFwd_H
 
-#include "fieldTypes.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

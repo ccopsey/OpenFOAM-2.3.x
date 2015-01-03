@@ -32,12 +32,12 @@ Description
 #ifndef basicReactingMultiphaseCloud_H
 #define basicReactingMultiphaseCloud_H
 
-#include "Cloud.H"
-#include "KinematicCloud.H"
-#include "ThermoCloud.H"
-#include "ReactingCloud.H"
-#include "ReactingMultiphaseCloud.H"
-#include "basicReactingMultiphaseParcel.H"
+#include "./Cloud/Cloud.H"
+#include "./clouds/Templates/KinematicCloud/KinematicCloud.H"
+#include "./clouds/Templates/ThermoCloud/ThermoCloud.H"
+#include "./clouds/Templates/ReactingCloud/ReactingCloud.H"
+#include "./clouds/Templates/ReactingMultiphaseCloud/ReactingMultiphaseCloud.H"
+#include "./parcels/derived/basicReactingMultiphaseParcel/basicReactingMultiphaseParcel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

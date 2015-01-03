@@ -41,32 +41,32 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "dynamicFvMesh.H"
-#include "CMULES.H"
-#include "subCycle.H"
-#include "interfaceProperties.H"
-#include "phaseChangeTwoPhaseMixture.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
-#include "fvIOoptionList.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./fvMatrices/solvers/MULES/CMULES.H"
+#include "./algorithms/subCycle/subCycle.H"
+#include "./interfaceProperties/interfaceProperties.H"
+#include "./phaseChangeTwoPhaseMixtures/phaseChangeTwoPhaseMixture/phaseChangeTwoPhaseMixture.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createDynamicFvMesh.H"
-    #include "readGravitationalAcceleration.H"
-    #include "initContinuityErrs.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createDynamicFvMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     pimpleControl pimple(mesh);
 
-    #include "createFields.H"
-    #include "readTimeControls.H"
-    #include "createPcorrTypes.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./cfdTools/general/include/createPcorrTypes.H"
 
     volScalarField rAU
     (
@@ -82,9 +82,9 @@ int main(int argc, char *argv[])
         dimensionedScalar("rAUf", dimTime/rho.dimensions(), 1.0)
     );
 
-    #include "createUf.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./cfdTools/incompressible/createUf.H"
+    #include "./cfdTools/incompressible/CourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -93,8 +93,8 @@ int main(int argc, char *argv[])
     while (runTime.run())
     {
         #include "../interFoam/interDyMFoam/readControls.H"
-        #include "CourantNo.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
@@ -136,11 +136,11 @@ int main(int argc, char *argv[])
 
                 if (mesh.changing() && checkMeshCourantNo)
                 {
-                    #include "meshCourantNo.H"
+                    #include "./include/meshCourantNo.H"
                 }
             }
 
-            #include "alphaControls.H"
+            #include "./cfdTools/general/include/alphaControls.H"
 
             surfaceScalarField rhoPhi
             (
@@ -156,15 +156,15 @@ int main(int argc, char *argv[])
 
             mixture->correct();
 
-            #include "alphaEqnSubCycle.H"
+            #include "./alphaEqnSubCycle.H"
             interface.correct();
 
-            #include "UEqn.H"
+            #include "./UEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
 
             if (pimple.turbCorr())

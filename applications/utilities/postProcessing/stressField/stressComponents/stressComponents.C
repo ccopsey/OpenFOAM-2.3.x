@@ -30,9 +30,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
+#include "./cfdTools/general/include/fvCFD.H"
 #include "incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -40,12 +40,12 @@ int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
-#   include "createMesh.H"
+#   include "./include/createMesh.H"
 
     forAll(timeDirs, timeI)
     {
@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
             Info<< "    Reading U" << endl;
             volVectorField U(Uheader, mesh);
 
-#           include "createPhi.H"
+#           include "./cfdTools/incompressible/createPhi.H"
 
             singlePhaseTransportModel laminarTransport(U, phi);
 

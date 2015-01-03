@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "openFoamTableReader.H"
-#include "tableReaders.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./openFoamTableReader.H"
+#include "./interpolations/interpolationTable/tableReaders/tableReaders.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,8 +35,8 @@ SourceFiles
 #ifndef csvTableReader_H
 #define csvTableReader_H
 
-#include "tableReader.H"
-#include "labelList.H"
+#include "./interpolations/interpolationTable/tableReaders/tableReader.H"
+#include "./primitives/ints/lists/labelList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -122,7 +122,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "csvTableReader.C"
+#   include "./csvTableReader.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

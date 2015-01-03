@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PatchTools.H"
-#include "ListListOps.H"
-#include "mergePoints.H"
-#include "face.H"
-#include "triFace.H"
-#include "ListListOps.H"
+#include "./PatchTools.H"
+#include "./containers/Lists/ListListOps/ListListOps.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./meshes/meshShapes/face/face.H"
+#include "./meshes/meshShapes/triFace/triFace.H"
+#include "./containers/Lists/ListListOps/ListListOps.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

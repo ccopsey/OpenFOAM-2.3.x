@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "blockMesh.H"
-#include "Time.H"
-#include "preservePatchTypes.H"
-#include "emptyPolyPatch.H"
-#include "cyclicPolyPatch.H"
+#include "./blockMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/preservePatchTypes/preservePatchTypes.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
 
 
 bool Foam::blockMesh::readPatches

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "aspectRatioModel.H"
-#include "orderedPhasePair.H"
+#include "./aspectRatioModel.H"
+#include "./phasePair/orderedPhasePair/orderedPhasePair.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

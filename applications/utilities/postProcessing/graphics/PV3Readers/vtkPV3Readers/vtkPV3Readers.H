@@ -41,11 +41,11 @@ SourceFiles
 # define VTK_EXCLUDE_STRSTREAM_HEADERS
 #endif
 
-#include "className.H"
-#include "fileName.H"
-#include "stringList.H"
-#include "wordList.H"
-#include "HashSet.H"
+#include "./db/typeInfo/className.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./primitives/strings/lists/stringList.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
 
 
 // * * * * * * * * * * * * * Forward Declarations  * * * * * * * * * * * * * //

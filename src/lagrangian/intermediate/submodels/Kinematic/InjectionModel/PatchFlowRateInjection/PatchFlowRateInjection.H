@@ -45,9 +45,9 @@ SourceFiles
 #ifndef PatchFlowRateInjection_H
 #define PatchFlowRateInjection_H
 
-#include "InjectionModel.H"
-#include "patchInjectionBase.H"
-#include "TimeDataEntry.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
+#include "./submodels/Kinematic/InjectionModel/PatchInjection/patchInjectionBase.H"
+#include "./primitives/functions/TimeDataEntry/TimeDataEntry/TimeDataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -176,7 +176,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PatchFlowRateInjection.C"
+#   include "./PatchFlowRateInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

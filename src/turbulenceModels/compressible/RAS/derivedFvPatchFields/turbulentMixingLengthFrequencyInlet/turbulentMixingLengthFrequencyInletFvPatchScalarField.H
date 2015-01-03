@@ -78,7 +78,7 @@ SourceFiles
 #ifndef compressibleturbulentMixingLengthFrequencyInletFvPatchScalarField_H
 #define compressibleturbulentMixingLengthFrequencyInletFvPatchScalarField_H
 
-#include "inletOutletFvPatchFields.H"
+#include "./fields/fvPatchFields/derived/inletOutlet/inletOutletFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "contactAngleForce.H"
-#include "addToRunTimeSelectionTable.H"
-#include "fvcGrad.H"
-#include "unitConversion.H"
-#include "fvPatchField.H"
-#include "patchDist.H"
+#include "./contactAngleForce.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchField.H"
+#include "./fvMesh/wallDist/patchDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

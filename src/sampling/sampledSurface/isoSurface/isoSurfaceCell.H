@@ -44,10 +44,10 @@ SourceFiles
 #ifndef isoSurfaceCell_H
 #define isoSurfaceCell_H
 
-#include "triSurface.H"
-#include "labelPair.H"
-#include "pointIndexHit.H"
-#include "PackedBoolList.H"
+#include "./triSurface/triSurface.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./meshes/primitiveShapes/objectHit/pointIndexHit.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -383,7 +383,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "isoSurfaceCellTemplates.C"
+#   include "./isoSurfaceCellTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

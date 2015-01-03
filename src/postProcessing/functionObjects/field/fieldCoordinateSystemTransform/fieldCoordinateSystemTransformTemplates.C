@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldCoordinateSystemTransform.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "Time.H"
-#include "transformGeometricField.H"
+#include "./fieldCoordinateSystemTransform.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./db/Time/Time.H"
+#include "./fields/GeometricFields/transformGeometricField/transformGeometricField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "regionSplit.H"
-#include "cyclicPolyPatch.H"
-#include "processorPolyPatch.H"
-#include "globalIndex.H"
-#include "syncTools.H"
+#include "./regionSplit.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

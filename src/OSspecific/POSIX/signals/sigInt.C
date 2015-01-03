@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sigInt.H"
-#include "error.H"
-#include "JobInfo.H"
-#include "IOstreams.H"
+#include "./sigInt.H"
+#include "./db/error/error.H"
+#include "./global/JobInfo/JobInfo.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -32,8 +32,8 @@ Description
 #ifndef IOQ_H
 #define IOQ_H
 
-#include "Q.H"
-#include "IOOutputFilter.H"
+#include "./Q.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

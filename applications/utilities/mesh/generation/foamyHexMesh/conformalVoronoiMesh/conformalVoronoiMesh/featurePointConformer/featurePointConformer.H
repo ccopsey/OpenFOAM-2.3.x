@@ -39,12 +39,12 @@ SourceFiles
 #ifndef featurePointConformer_H
 #define featurePointConformer_H
 
-#include "CGALTriangulation3Ddefs.H"
-#include "vector.H"
-#include "DynamicList.H"
-#include "List.H"
-#include "extendedFeatureEdgeMesh.H"
-#include "pointPairs.H"
+#include "./conformalVoronoiMesh/CGALTriangulation3Ddefs.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./containers/Lists/List/List.H"
+#include "./extendedEdgeMesh/extendedFeatureEdgeMesh/extendedFeatureEdgeMesh.H"
+#include "./pointPairs/pointPairs.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -188,7 +188,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "featurePointConformerI.H"
+#include "./featurePointConformerI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

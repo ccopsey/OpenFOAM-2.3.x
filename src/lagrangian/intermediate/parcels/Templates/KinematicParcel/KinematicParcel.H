@@ -44,11 +44,11 @@ SourceFiles
 #ifndef KinematicParcel_H
 #define KinematicParcel_H
 
-#include "particle.H"
-#include "IOstream.H"
-#include "autoPtr.H"
-#include "interpolation.H"
-#include "demandDrivenEntry.H"
+#include "./particle/particle.H"
+#include "./db/IOstreams/IOstreams/IOstream.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./interpolation/interpolation/interpolation/interpolation.H"
+#include "./primitives/demandDrivenEntry/demandDrivenEntry.H"
 
 // #include "ParticleForceList.H" // TODO
 
@@ -652,13 +652,13 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "KinematicParcelI.H"
-#include "KinematicParcelTrackingDataI.H"
+#include "./KinematicParcelI.H"
+#include "./KinematicParcelTrackingDataI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "KinematicParcel.C"
+    #include "./KinematicParcel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

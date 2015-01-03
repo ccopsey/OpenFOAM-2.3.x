@@ -40,8 +40,8 @@ SourceFiles
 #ifndef Constant_H
 #define Constant_H
 
-#include "DataEntry.H"
-#include "dimensionSet.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
+#include "./dimensionSet/dimensionSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -143,7 +143,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Constant.C"
+#   include "./Constant.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

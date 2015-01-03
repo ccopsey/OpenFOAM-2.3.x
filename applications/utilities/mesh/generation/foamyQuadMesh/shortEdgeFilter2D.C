@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "shortEdgeFilter2D.H"
+#include "./shortEdgeFilter2D.H"
 
 namespace Foam
 {

@@ -56,9 +56,9 @@ SourceFiles
 #ifndef kOmegaSSTSAS_H
 #define kOmegaSSTSAS_H
 
-#include "LESModel.H"
-#include "volFields.H"
-#include "wallDist.H"
+#include "./LESModel/LESModel.H"
+#include "./fields/volFields/volFields.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

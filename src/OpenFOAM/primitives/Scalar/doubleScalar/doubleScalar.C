@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "doubleScalar.H"
-#include "IOstreams.H"
+#include "./doubleScalar.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #include <sstream>
 
@@ -36,7 +36,7 @@ License
 #define ScalarROOTVGREAT doubleScalarROOTVGREAT
 #define ScalarROOTVSMALL doubleScalarROOTVSMALL
 #define readScalar readDoubleScalar
-#include "Scalar.C"
+#include "./primitives/Scalar/Scalar.C"
 #undef Scalar
 #undef ScalarVGREAT
 #undef ScalarVSMALL

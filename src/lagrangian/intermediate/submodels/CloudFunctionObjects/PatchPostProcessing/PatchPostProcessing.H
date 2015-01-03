@@ -35,7 +35,7 @@ SourceFiles
 #ifndef PatchPostProcessing_H
 #define PatchPostProcessing_H
 
-#include "CloudFunctionObject.H"
+#include "./submodels/CloudFunctionObjects/CloudFunctionObject/CloudFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -146,12 +146,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "PatchPostProcessingI.H"
+#include "./PatchPostProcessingI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PatchPostProcessing.C"
+#   include "./PatchPostProcessing.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

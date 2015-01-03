@@ -42,9 +42,9 @@ SourceFiles
 #ifndef globalIndexAndTransform_H
 #define globalIndexAndTransform_H
 
-#include "labelPair.H"
-#include "vectorTensorTransform.H"
-#include "HashSet.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./vectorTensorTransform/vectorTensorTransform.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -299,7 +299,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "globalIndexAndTransformI.H"
+#include "./globalIndexAndTransformI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

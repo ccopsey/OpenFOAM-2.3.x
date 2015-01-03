@@ -26,7 +26,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     singlePhaseTransportModel laminarTransport(U, phi);
 
@@ -35,7 +35,7 @@
         incompressible::turbulenceModel::New(U, phi, laminarTransport)
     );
 
-    #include "readGravitationalAcceleration.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
 
     Info<< "Creating field zeta\n" << endl;
     volVectorField zeta

@@ -32,7 +32,7 @@ Description
 #ifndef VariableHardSphere_H
 #define VariableHardSphere_H
 
-#include "BinaryCollisionModel.H"
+#include "./submodels/BinaryCollisionModel/BinaryCollisionModel/BinaryCollisionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "VariableHardSphere.C"
+#   include "./VariableHardSphere.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

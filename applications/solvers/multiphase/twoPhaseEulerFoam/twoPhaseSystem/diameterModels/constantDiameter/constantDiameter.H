@@ -35,7 +35,7 @@ SourceFiles
 #ifndef constant_H
 #define constant_H
 
-#include "diameterModel.H"
+#include "./diameterModels/diameterModel/diameterModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

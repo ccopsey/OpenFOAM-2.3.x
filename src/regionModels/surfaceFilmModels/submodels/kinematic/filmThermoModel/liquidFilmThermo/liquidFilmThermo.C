@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "liquidFilmThermo.H"
-#include "demandDrivenData.H"
-#include "thermoSingleLayer.H"
-#include "SLGThermo.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./liquidFilmThermo.H"
+#include "./include/demandDrivenData.H"
+#include "./thermoSingleLayer/thermoSingleLayer.H"
+#include "./SLGThermo/SLGThermo.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

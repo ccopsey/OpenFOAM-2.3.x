@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "streamLineParticle.H"
-#include "vectorFieldIOField.H"
+#include "./streamLineParticle.H"
+#include "./fields/Fields/vectorField/vectorFieldIOField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

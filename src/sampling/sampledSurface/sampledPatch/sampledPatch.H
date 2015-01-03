@@ -35,8 +35,8 @@ SourceFiles
 #ifndef sampledPatch_H
 #define sampledPatch_H
 
-#include "sampledSurface.H"
-#include "MeshedSurface.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./MeshedSurface/MeshedSurface.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -287,7 +287,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "sampledPatchTemplates.C"
+#   include "./sampledPatchTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

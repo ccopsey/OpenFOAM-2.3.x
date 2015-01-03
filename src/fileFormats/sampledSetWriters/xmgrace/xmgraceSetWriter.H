@@ -34,7 +34,7 @@ SourceFiles
 #ifndef xmgraceSetWriter_H
 #define xmgraceSetWriter_H
 
-#include "writer.H"
+#include "./sampledSetWriters/writer.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "xmgraceSetWriter.C"
+#   include "./xmgraceSetWriter.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mappedVariableThicknessWallFvPatch.H"
-#include "addToRunTimeSelectionTable.H"
-#include "regionModel1D.H"
+#include "./mappedVariableThicknessWallFvPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./regionModel1D/regionModel1D.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

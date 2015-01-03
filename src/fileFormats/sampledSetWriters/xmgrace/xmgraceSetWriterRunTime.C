@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "xmgraceSetWriter.H"
-#include "writers.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./xmgraceSetWriter.H"
+#include "./sampledSetWriters/writers.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

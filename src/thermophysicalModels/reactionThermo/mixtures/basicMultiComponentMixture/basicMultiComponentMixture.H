@@ -36,9 +36,9 @@ SourceFiles
 #ifndef basicMultiComponentMixture_H
 #define basicMultiComponentMixture_H
 
-#include "volFields.H"
-#include "PtrList.H"
-#include "speciesTable.H"
+#include "./fields/volFields/volFields.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./speciesTable/speciesTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -244,7 +244,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "basicMultiComponentMixtureI.H"
+#include "./basicMultiComponentMixtureI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

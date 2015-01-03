@@ -42,8 +42,8 @@ SourceFiles
 #ifndef scaleSimilarity_H
 #define scaleSimilarity_H
 
-#include "LESModel.H"
-#include "LESfilter.H"
+#include "./LESModel/LESModel.H"
+#include "./LES/LESfilters/LESfilter/LESfilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

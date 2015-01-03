@@ -37,10 +37,10 @@ SourceFiles
 #ifndef distanceSurface_H
 #define distanceSurface_H
 
-#include "sampledSurface.H"
-#include "searchableSurface.H"
-#include "isoSurfaceCell.H"
-#include "isoSurface.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./searchableSurface/searchableSurface.H"
+#include "./sampledSurface/isoSurface/isoSurfaceCell.H"
+#include "./sampledSurface/isoSurface/isoSurface.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -274,7 +274,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "distanceSurfaceTemplates.C"
+#   include "./distanceSurfaceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -37,10 +37,10 @@ SourceFiles
 #ifndef rhoCombustionModel_H
 #define rhoCombustionModel_H
 
-#include "combustionModel.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
-#include "rhoReactionThermo.H"
+#include "./combustionModel/combustionModel.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./rhoReactionThermo/rhoReactionThermo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

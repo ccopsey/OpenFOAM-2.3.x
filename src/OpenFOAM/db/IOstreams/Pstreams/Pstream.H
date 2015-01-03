@@ -39,8 +39,8 @@ SourceFiles
 #ifndef Pstream_H
 #define Pstream_H
 
-#include "UPstream.H"
-#include "DynamicList.H"
+#include "./UPstream.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -328,10 +328,10 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "gatherScatter.C"
-#   include "combineGatherScatter.C"
-#   include "gatherScatterList.C"
-#   include "exchange.C"
+#   include "./gatherScatter.C"
+#   include "./combineGatherScatter.C"
+#   include "./gatherScatterList.C"
+#   include "./exchange.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -26,8 +26,8 @@ License
 #ifndef mappedFixedInternalValueFvPatchFields_H
 #define mappedFixedInternalValueFvPatchFields_H
 
-#include "mappedFixedInternalValueFvPatchField.H"
-#include "fieldTypes.H"
+#include "./mappedFixedInternalValueFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

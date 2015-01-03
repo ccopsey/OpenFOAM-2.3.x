@@ -32,15 +32,15 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
 
-#include "triSurfaceMesh.H"
-#include "indexedOctree.H"
-#include "treeBoundBox.H"
-#include "PackedBoolList.H"
-#include "unitConversion.H"
-#include "searchableSurfaces.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./searchableSurface/searchableSurfaces.H"
 
 using namespace Foam;
 
@@ -278,13 +278,13 @@ int main(int argc, char *argv[])
     argList::noParallel();
     argList::validArgs.append("hookTolerance");
 
-#   include "addDictOption.H"
+#   include "./include/addDictOption.H"
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     const word dictName("surfaceHookUpDict");
-#   include "setSystemRunTimeDictionaryIO.H"
+#   include "./include/setSystemRunTimeDictionaryIO.H"
 
     Info<< "Reading " << dictName << nl << endl;
 

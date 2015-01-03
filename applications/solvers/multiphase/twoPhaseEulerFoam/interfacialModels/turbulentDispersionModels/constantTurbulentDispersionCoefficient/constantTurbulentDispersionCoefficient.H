@@ -35,7 +35,7 @@ SourceFiles
 #ifndef constantTurbulentDispersionCoefficient_H
 #define constantTurbulentDispersionCoefficient_H
 
-#include "turbulentDispersionModel.H"
+#include "./turbulentDispersionModels/turbulentDispersionModel/turbulentDispersionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

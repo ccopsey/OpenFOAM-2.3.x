@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "swarmCorrection.H"
-#include "phasePair.H"
+#include "./swarmCorrection.H"
+#include "./phasePair/phasePair/phasePair.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

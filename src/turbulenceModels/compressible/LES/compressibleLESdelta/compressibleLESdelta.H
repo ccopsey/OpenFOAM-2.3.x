@@ -35,7 +35,7 @@ SourceFiles
 #ifndef compressibleLESdelta_H
 #define compressibleLESdelta_H
 
-#include "LESdelta.H"
+#include "./LES/LESdeltas/LESdelta/LESdelta.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

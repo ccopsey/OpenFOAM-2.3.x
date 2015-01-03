@@ -45,11 +45,11 @@ SourceFiles
 #ifndef SLGThermo_H
 #define SLGThermo_H
 
-#include "regIOobject.H"
-#include "fluidThermo.H"
-#include "basicMultiComponentMixture.H"
-#include "liquidMixtureProperties.H"
-#include "solidMixtureProperties.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./fluidThermo/fluidThermo.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
+#include "./liquidMixtureProperties/liquidMixtureProperties.H"
+#include "./solidMixtureProperties/solidMixtureProperties.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

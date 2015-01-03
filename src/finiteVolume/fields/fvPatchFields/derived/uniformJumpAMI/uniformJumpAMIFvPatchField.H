@@ -70,8 +70,8 @@ SourceFiles
 #ifndef uniformJumpAMIFvPatchField_H
 #define uniformJumpAMIFvPatchField_H
 
-#include "fixedJumpAMIFvPatchField.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/derived/fixedJumpAMI/fixedJumpAMIFvPatchField.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -180,7 +180,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "uniformJumpAMIFvPatchField.C"
+#   include "./uniformJumpAMIFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

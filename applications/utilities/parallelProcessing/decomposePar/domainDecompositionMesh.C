@@ -30,10 +30,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "domainDecomposition.H"
-#include "IOstreams.H"
-#include "boolList.H"
-#include "cyclicPolyPatch.H"
+#include "./domainDecomposition.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

@@ -30,7 +30,7 @@ Description
 #ifndef makeChemistryModel_H
 #define makeChemistryModel_H
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

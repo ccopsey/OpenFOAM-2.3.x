@@ -29,23 +29,23 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMesh.H"
-#include "pointMesh.H"
-#include "argList.H"
-#include "Time.H"
-#include "hexRef8.H"
-#include "cellSet.H"
-#include "OFstream.H"
-#include "meshTools.H"
-#include "IFstream.H"
-#include "polyTopoChange.H"
-#include "mapPolyMesh.H"
-#include "volMesh.H"
-#include "surfaceMesh.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "pointFields.H"
-#include "ReadFields.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/pointMesh/pointMesh.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./polyTopoChange/polyTopoChange/hexRef8.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshTools/meshTools.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./volMesh/volMesh.H"
+#include "./surfaceMesh/surfaceMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./fields/ReadFields/ReadFields.H"
 
 using namespace Foam;
 
@@ -53,8 +53,8 @@ using namespace Foam;
 
 int main(int argc, char *argv[])
 {
-    #include "addOverwriteOption.H"
-    #include "addRegionOption.H"
+    #include "./include/addOverwriteOption.H"
+    #include "./include/addRegionOption.H"
     argList::validArgs.append("cellSet");
     argList::addBoolOption
     (
@@ -63,10 +63,10 @@ int main(int argc, char *argv[])
         " (default is to extend set)"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     word cellSetName(args.args()[1]);

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "outputFilterOutputControl.H"
-#include "PstreamReduceOps.H"
+#include "./outputFilterOutputControl.H"
+#include "./db/IOstreams/Pstreams/PstreamReduceOps.H"
 
 // * * * * * * * * * * * * * Static Member Data  * * * * * * * * * * * * * * //
 

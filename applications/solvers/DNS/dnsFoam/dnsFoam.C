@@ -29,25 +29,25 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "Kmesh.H"
-#include "UOprocess.H"
-#include "fft.H"
-#include "calcEk.H"
-#include "graph.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./Kmesh/Kmesh.H"
+#include "./processes/UOprocess/UOprocess.H"
+#include "./fft/fft.H"
+#include "./fft/calcEk.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMeshNoClear.H"
-    #include "readTransportProperties.H"
-    #include "createFields.H"
-    #include "readTurbulenceProperties.H"
-    #include "initContinuityErrs.H"
+    #include "./include/createTime.H"
+    #include "./include/createMeshNoClear.H"
+    #include "./readTransportProperties.H"
+    #include "./createFields.H"
+    #include "./readTurbulenceProperties.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
     {
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "readPISOControls.H"
+        #include "./cfdTools/general/include/readPISOControls.H"
 
         force.internalField() = ReImSum
         (
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
             )
         );
 
-        #include "globalProperties.H"
+        #include "./globalProperties.H"
 
         fvVectorMatrix UEqn
         (
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
 
             phi = phiHbyA - pEqn.flux();
 
-            #include "continuityErrs.H"
+            #include "./cfdTools/incompressible/continuityErrs.H"
 
             U = HbyA - rAU*fvc::grad(p);
             U.correctBoundaryConditions();

@@ -34,7 +34,7 @@ SourceFiles
 #ifndef NoIsotropy_H
 #define NoIsotropy_H
 
-#include "IsotropyModel.H"
+#include "./submodels/MPPIC/IsotropyModels/IsotropyModel/IsotropyModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -97,7 +97,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoIsotropy.C"
+#   include "./NoIsotropy.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

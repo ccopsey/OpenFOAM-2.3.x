@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "conformalVoronoiMesh.H"
-#include "polyModifyFace.H"
-#include "polyModifyCell.H"
-#include "syncTools.H"
-#include "regionSplit.H"
-#include "surfaceZonesInfo.H"
+#include "./conformalVoronoiMesh.H"
+#include "./polyTopoChange/polyTopoChange/modifyObject/polyModifyFace.H"
+#include "./polyTopoChange/polyTopoChange/modifyObject/polyModifyCell.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./regionSplit/regionSplit.H"
+#include "./autoHexMesh/refinementSurfaces/surfaceZonesInfo.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

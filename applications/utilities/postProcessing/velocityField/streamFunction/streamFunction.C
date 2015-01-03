@@ -30,27 +30,27 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "pointFields.H"
-#include "emptyPolyPatch.H"
-#include "symmetryPlanePolyPatch.H"
-#include "symmetryPolyPatch.H"
-#include "wedgePolyPatch.H"
-#include "OSspecific.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/symmetryPlane/symmetryPlanePolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/symmetry/symmetryPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/wedge/wedgePolyPatch.H"
+#include "./include/OSspecific.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     label nD = mesh.nGeometricD();
 

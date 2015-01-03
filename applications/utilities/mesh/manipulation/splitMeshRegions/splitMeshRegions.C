@@ -88,22 +88,22 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "SortableList.H"
-#include "argList.H"
-#include "regionSplit.H"
-#include "fvMeshSubset.H"
-#include "IOobjectList.H"
-#include "volFields.H"
-#include "faceSet.H"
-#include "cellSet.H"
-#include "polyTopoChange.H"
-#include "removeCells.H"
-#include "EdgeMap.H"
-#include "syncTools.H"
-#include "ReadFields.H"
-#include "mappedWallPolyPatch.H"
-#include "fvMeshTools.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./global/argList/argList.H"
+#include "./regionSplit/regionSplit.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./fields/volFields/volFields.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChange/removeCells.H"
+#include "./meshes/meshShapes/edge/EdgeMap.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./mappedPatches/mappedPolyPatch/mappedWallPolyPatch.H"
+#include "./fvMeshTools/fvMeshTools.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 using namespace Foam;
 
@@ -1408,8 +1408,8 @@ int main(int argc, char *argv[])
     (
         "splits mesh into multiple regions (detected by walking across faces)"
     );
-#   include "addRegionOption.H"
-    #include "addOverwriteOption.H"
+#   include "./include/addRegionOption.H"
+    #include "./include/addOverwriteOption.H"
     argList::addBoolOption
     (
         "cellZones",
@@ -1469,10 +1469,10 @@ int main(int argc, char *argv[])
         "prefix region name to all patches, not just coupling patches"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     word blockedFacesName;

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "distributedTriSurfaceMesh.H"
-#include "triSurfaceFields.H"
-#include "mapDistribute.H"
+#include "./distributedTriSurfaceMesh.H"
+#include "./triSurfaceFields/triSurfaceFields.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

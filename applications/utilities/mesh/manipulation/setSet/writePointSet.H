@@ -36,8 +36,8 @@ SourceFiles
 #ifndef writePointSet_H
 #define writePointSet_H
 
-#include "primitiveMesh.H"
-#include "pointSet.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
+#include "./sets/topoSets/pointSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

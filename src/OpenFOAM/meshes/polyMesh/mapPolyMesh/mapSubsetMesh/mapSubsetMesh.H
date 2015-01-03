@@ -34,8 +34,8 @@ SourceFiles
 #ifndef mapSubsetMesh_H
 #define mapSubsetMesh_H
 
-#include "refCount.H"
-#include "labelList.H"
+#include "./memory/refCount/refCount.H"
+#include "./primitives/ints/lists/labelList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

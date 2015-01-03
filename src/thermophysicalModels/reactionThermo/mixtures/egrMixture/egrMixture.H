@@ -35,7 +35,7 @@ SourceFiles
 #ifndef egrMixture_H
 #define egrMixture_H
 
-#include "basicMultiComponentMixture.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -180,7 +180,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 #ifdef NoRepository
-#   include "egrMixture.C"
+#   include "./egrMixture.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -51,7 +51,7 @@ SourceFiles
 #ifndef uniformInterpolatedDisplacementPointPatchVectorField_H
 #define uniformInterpolatedDisplacementPointPatchVectorField_H
 
-#include "fixedValuePointPatchField.H"
+#include "./fields/pointPatchFields/basic/fixedValue/fixedValuePointPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

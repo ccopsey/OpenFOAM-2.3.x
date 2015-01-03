@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dynamicCodeContext.H"
-#include "stringOps.H"
-#include "OSHA1stream.H"
+#include "./dynamicCodeContext.H"
+#include "./primitives/strings/stringOps/stringOps.H"
+#include "./db/IOstreams/hashes/OSHA1stream.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

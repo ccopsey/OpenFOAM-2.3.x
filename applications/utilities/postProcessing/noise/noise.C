@@ -76,11 +76,11 @@ SeeAlso
 \*---------------------------------------------------------------------------*/
 
 
-#include "noiseFFT.H"
-#include "argList.H"
-#include "Time.H"
-#include "functionObjectFile.H"
-#include "CSV.H"
+#include "./noise/noiseFFT.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./primitives/functions/DataEntry/CSV/CSV.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -126,10 +126,10 @@ Foam::scalar checkUniformTimeStep(const scalarField& t)
 int main(int argc, char *argv[])
 {
     argList::noParallel();
-    #include "addDictOption.H"
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createFields.H"
+    #include "./include/addDictOption.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./createFields.H"
 
     Info<< "Reading data file" << endl;
     CSV<scalar> pData("pressure", dict, "Data");

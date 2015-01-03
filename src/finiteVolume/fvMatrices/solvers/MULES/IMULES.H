@@ -43,7 +43,7 @@ SourceFiles
 #ifndef IMULES_H
 #define IMULES_H
 
-#include "MULES.H"
+#include "./MULES.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -84,7 +84,7 @@ void implicitSolve
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "IMULESTemplates.C"
+#   include "./IMULESTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

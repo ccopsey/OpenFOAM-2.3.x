@@ -32,7 +32,7 @@ Description
 \*---------------------------------------------------------------------------*/
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-#include "foamVersion.H"
+#include "./foamVersion.H"
 
 const char* const Foam::FOAMversion = "2.3.x";
 const char* const Foam::FOAMbuild = "2.3.x";
@@ -40,55 +40,55 @@ const char* const Foam::FOAMbuild = "2.3.x";
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Setup an error handler for the global new operator
 
-#include "new.C"
+#include "./new.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Global IO streams
 
-#include "IOstreams.C"
+#include "./db/IOstreams/IOstreams.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "JobInfo.H"
+#include "./JobInfo/JobInfo.H"
 bool Foam::JobInfo::constructed(false);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Global error definitions (initialised by construction)
 
-#include "messageStream.C"
-#include "error.C"
-#include "IOerror.C"
-#include "token.C"
+#include "./db/error/messageStream.C"
+#include "./db/error/error.C"
+#include "./db/error/IOerror.C"
+#include "./db/IOstreams/token/token.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Read the debug and info switches
 
-#include "debug.C"
+#include "./debug/debug.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Read file modification checking switches
 
-#include "regIOobject.C"
+#include "./db/regIOobject/regIOobject.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Read parallel communication switches
 
-#include "UPstream.C"
+#include "./db/IOstreams/Pstreams/UPstream.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Read constants
 
-#include "constants.C"
-#include "dimensionedConstants.C"
+#include "./constants/constants.C"
+#include "./constants/dimensionedConstants.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Read and set cell models
 
-#include "globalCellModeller.C"
+#include "./meshes/meshShapes/cellModeller/globalCellModeller.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Create the jobInfo file in the $FOAM_JOB_DIR/runningJobs directory
 
-#include "JobInfo.C"
+#include "./JobInfo/JobInfo.C"
 
 // ************************************************************************* //

@@ -39,8 +39,8 @@ SourceFiles
 #ifndef regionProperties_H
 #define regionProperties_H
 
-#include "Time.H"
-#include "HashTable.H"
+#include "./db/Time/Time.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

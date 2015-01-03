@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "makeCombustionTypes.H"
+#include "./combustionModel/makeCombustionTypes.H"
 
-#include "psiChemistryCombustion.H"
-#include "rhoChemistryCombustion.H"
-#include "laminar.H"
+#include "./psiCombustionModel/psiChemistryCombustion/psiChemistryCombustion.H"
+#include "./rhoCombustionModel/rhoChemistryCombustion/rhoChemistryCombustion.H"
+#include "./laminar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

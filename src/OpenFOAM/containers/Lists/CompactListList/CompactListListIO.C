@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CompactListList.H"
-#include "Istream.H"
+#include "./CompactListList.H"
+#include "./db/IOstreams/IOstreams/Istream.H"
 
 // * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * * //
 

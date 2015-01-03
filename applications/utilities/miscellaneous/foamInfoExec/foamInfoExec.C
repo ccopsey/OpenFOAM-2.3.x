@@ -29,10 +29,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "dictionary.H"
-#include "IFstream.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 
 using namespace Foam;
 
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
         "keywords",
         "report keywords for the specified dictionary"
     );
-    #include "addDictOption.H"
+    #include "./include/addDictOption.H"
     argList::addOption
     (
         "entry",
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
         "report the named entry for the specified dictionary"
     );
 
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
     if (args.optionFound("times"))
     {

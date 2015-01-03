@@ -113,16 +113,16 @@ SourceFiles
 #ifndef forces_H
 #define forces_H
 
-#include "functionObjectFile.H"
-#include "coordinateSystem.H"
-#include "coordinateSystems.H"
-#include "primitiveFieldsFwd.H"
-#include "volFieldsFwd.H"
-#include "HashSet.H"
-#include "Tuple2.H"
-#include "OFstream.H"
-#include "Switch.H"
-#include "writer.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./coordinateSystems/coordinateSystem.H"
+#include "./coordinateSystems/coordinateSystems.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./sampledSetWriters/writer.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

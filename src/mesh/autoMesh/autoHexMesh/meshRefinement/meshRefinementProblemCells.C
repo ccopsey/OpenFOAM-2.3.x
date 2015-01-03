@@ -23,25 +23,25 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "meshRefinement.H"
-#include "fvMesh.H"
-#include "syncTools.H"
-#include "Time.H"
-#include "refinementSurfaces.H"
-#include "pointSet.H"
-#include "faceSet.H"
-#include "indirectPrimitivePatch.H"
-#include "cellSet.H"
-#include "searchableSurfaces.H"
-#include "polyMeshGeometry.H"
-#include "IOmanip.H"
-#include "unitConversion.H"
-#include "autoSnapDriver.H"
+#include "./meshRefinement.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./db/Time/Time.H"
+#include "./autoHexMesh/refinementSurfaces/refinementSurfaces.H"
+#include "./sets/topoSets/pointSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./searchableSurface/searchableSurfaces.H"
+#include "./motionSmoother/polyMeshGeometry/polyMeshGeometry.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./autoHexMesh/autoHexMeshDriver/autoSnapDriver.H"
 
-#include "snapParameters.H"
-#include "motionSmoother.H"
-#include "topoDistanceData.H"
-#include "FaceCellWave.H"
+#include "./autoHexMesh/autoHexMeshDriver/snapParameters/snapParameters.H"
+#include "./motionSmoother/motionSmoother.H"
+#include "./meshStructure/topoDistanceData.H"
+#include "./algorithms/MeshWave/FaceCellWave.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

@@ -79,7 +79,7 @@ SourceFiles
 #ifndef incompressibleturbulentMixingLengthDissipationRateInlet_H
 #define incompressibleturbulentMixingLengthDissipationRateInlet_H
 
-#include "inletOutletFvPatchFields.H"
+#include "./fields/fvPatchFields/derived/inletOutlet/inletOutletFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

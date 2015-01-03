@@ -26,9 +26,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "IPstream.H"
-#include "long.H"
-#include "PstreamGlobals.H"
+#include "./db/IOstreams/Pstreams/IPstream.H"
+#include "./primitives/ints/long/long.H"
+#include "./PstreamGlobals.H"
 
 extern "C"
 {

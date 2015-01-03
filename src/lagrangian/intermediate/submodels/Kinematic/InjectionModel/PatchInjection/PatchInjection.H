@@ -43,8 +43,8 @@ SourceFiles
 #ifndef PatchInjection_H
 #define PatchInjection_H
 
-#include "InjectionModel.H"
-#include "patchInjectionBase.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
+#include "./patchInjectionBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -170,7 +170,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PatchInjection.C"
+#   include "./PatchInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

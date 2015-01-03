@@ -32,32 +32,32 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "dynamicFvMesh.H"
-#include "barotropicCompressibilityModel.H"
-#include "incompressibleTwoPhaseMixture.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./barotropicCompressibilityModel/barotropicCompressibilityModel.H"
+#include "./incompressible/incompressibleTwoPhaseMixture/incompressibleTwoPhaseMixture.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createDynamicFvMesh.H"
-    #include "initContinuityErrs.H"
+    #include "./include/createTime.H"
+    #include "./include/createDynamicFvMesh.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     pimpleControl pimple(mesh);
 
-    #include "readThermodynamicProperties.H"
-    #include "readControls.H"
-    #include "createFields.H"
-    #include "createUf.H"
-    #include "createPcorrTypes.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./readThermodynamicProperties.H"
+    #include "./readControls.H"
+    #include "./createFields.H"
+    #include "./cfdTools/incompressible/createUf.H"
+    #include "./cfdTools/general/include/createPcorrTypes.H"
+    #include "./CourantNo.H"
+    #include "./setInitialDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -65,9 +65,9 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readControls.H"
-        #include "CourantNo.H"
-        #include "setDeltaT.H"
+        #include "./readControls.H"
+        #include "./CourantNo.H"
+        #include "./setDeltaT.H"
 
         runTime++;
         Info<< "Time = " << runTime.timeName() << nl << endl;
@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
                 // Calculate absolute flux from the mapped surface velocity
                 phi = mesh.Sf() & Uf;
 
-                #include "correctPhi.H"
+                #include "./correctPhi.H"
 
                 // Make the flux relative to the mesh motion
                 fvc::makeRelative(phi, U);
@@ -98,14 +98,14 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "rhoEqn.H"
-            #include "alphavPsi.H"
-            #include "UEqn.H"
+            #include "./rhoEqn.H"
+            #include "./alphavPsi.H"
+            #include "./UEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
 
             if (pimple.turbCorr())

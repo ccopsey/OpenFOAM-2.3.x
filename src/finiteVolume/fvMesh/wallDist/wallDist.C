@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wallDist.H"
-#include "fvMesh.H"
-#include "wallPolyPatch.H"
+#include "./wallDist.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

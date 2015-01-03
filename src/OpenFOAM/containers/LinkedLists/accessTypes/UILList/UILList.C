@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "UILList.H"
+#include "./UILList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -89,7 +89,7 @@ bool Foam::UILList<LListBase, T>::operator!=
 
 // * * * * * * * * * * * * * * * Friend Operators  * * * * * * * * * * * * * //
 
-#include "UILListIO.C"
+#include "./UILListIO.C"
 
 
 // ************************************************************************* //

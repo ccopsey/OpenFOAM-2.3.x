@@ -42,7 +42,7 @@ SourceFiles
 #ifndef GenEddyVisc_H
 #define GenEddyVisc_H
 
-#include "LESModel.H"
+#include "./LESModel/LESModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

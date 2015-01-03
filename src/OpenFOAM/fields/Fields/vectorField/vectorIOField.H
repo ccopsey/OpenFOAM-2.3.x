@@ -32,8 +32,8 @@ Description
 #ifndef vectorIOField_H
 #define vectorIOField_H
 
-#include "vectorField.H"
-#include "IOField.H"
+#include "./vectorField.H"
+#include "./db/IOobjects/IOField/IOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

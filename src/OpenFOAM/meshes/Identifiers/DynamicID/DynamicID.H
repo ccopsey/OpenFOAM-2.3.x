@@ -36,8 +36,8 @@ Description
 #ifndef DynamicID_H
 #define DynamicID_H
 
-#include "keyType.H"
-#include "labelList.H"
+#include "./primitives/strings/keyType/keyType.H"
+#include "./primitives/ints/lists/labelList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

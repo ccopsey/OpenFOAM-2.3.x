@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cyclicPointPatchField.H"
-#include "Swap.H"
-#include "transformField.H"
-#include "pointFields.H"
+#include "./cyclicPointPatchField.H"
+#include "./primitives/Swap/Swap.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

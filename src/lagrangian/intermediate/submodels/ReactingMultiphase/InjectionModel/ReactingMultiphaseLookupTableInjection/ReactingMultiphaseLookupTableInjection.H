@@ -56,8 +56,8 @@ SourceFiles
 #ifndef ReactingMultiphaseLookupTableInjection_H
 #define ReactingMultiphaseLookupTableInjection_H
 
-#include "InjectionModel.H"
-#include "reactingMultiphaseParcelInjectionDataIOList.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
+#include "./reactingMultiphaseParcelInjectionDataIOList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -190,7 +190,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ReactingMultiphaseLookupTableInjection.C"
+#   include "./ReactingMultiphaseLookupTableInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

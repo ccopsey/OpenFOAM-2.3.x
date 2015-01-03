@@ -34,10 +34,10 @@ SourceFiles
 #ifndef pointFields_H
 #define pointFields_H
 
-#include "GeometricFields.H"
-#include "fieldTypes.H"
-#include "pointPatchFields.H"
-#include "pointMesh.H"
+#include "./fields/GeometricFields/GeometricField/GeometricFields.H"
+#include "./fields/Fields/fieldTypes.H"
+#include "./fields/pointPatchFields/pointPatchField/pointPatchFields.H"
+#include "./meshes/pointMesh/pointMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

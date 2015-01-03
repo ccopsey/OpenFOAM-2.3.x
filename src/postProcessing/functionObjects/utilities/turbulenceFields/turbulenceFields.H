@@ -83,10 +83,10 @@ SourceFiles
 #ifndef turbulenceFields_H
 #define turbulenceFields_H
 
-#include "HashSet.H"
-#include "IOobject.H"
-#include "NamedEnum.H"
-#include "volFieldsFwd.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./db/IOobject/IOobject.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -229,7 +229,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "turbulenceFieldsTemplates.C"
+    #include "./turbulenceFieldsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

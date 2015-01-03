@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "solidificationMeltingSource.H"
+#include "./solidificationMeltingSource.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

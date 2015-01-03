@@ -23,20 +23,20 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "autoRefineDriver.H"
-#include "meshRefinement.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "cellSet.H"
-#include "syncTools.H"
-#include "refinementParameters.H"
-#include "refinementSurfaces.H"
-#include "refinementFeatures.H"
-#include "shellSurfaces.H"
-#include "mapDistributePolyMesh.H"
-#include "unitConversion.H"
-#include "snapParameters.H"
-#include "localPointRegion.H"
+#include "./autoRefineDriver.H"
+#include "./autoHexMesh/meshRefinement/meshRefinement.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./refinementParameters/refinementParameters.H"
+#include "./autoHexMesh/refinementSurfaces/refinementSurfaces.H"
+#include "./autoHexMesh/refinementFeatures/refinementFeatures.H"
+#include "./autoHexMesh/shellSurfaces/shellSurfaces.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistributePolyMesh.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./snapParameters/snapParameters.H"
+#include "./regionSplit/localPointRegion.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

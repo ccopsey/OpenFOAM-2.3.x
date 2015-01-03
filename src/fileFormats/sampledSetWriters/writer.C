@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writer.H"
-#include "coordSet.H"
-#include "OFstream.H"
-#include "OSspecific.H"
+#include "./writer.H"
+#include "./coordSet/coordSet.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./include/OSspecific.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

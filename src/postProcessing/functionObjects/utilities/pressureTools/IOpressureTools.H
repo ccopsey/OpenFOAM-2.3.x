@@ -32,8 +32,8 @@ Description
 #ifndef IOpressureTools_H
 #define IOpressureTools_H
 
-#include "pressureTools.H"
-#include "IOOutputFilter.H"
+#include "./pressureTools.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

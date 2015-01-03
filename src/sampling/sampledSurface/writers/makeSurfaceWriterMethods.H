@@ -33,8 +33,8 @@ Description
 #ifndef makeSurfaceWriterMethods_H
 #define makeSurfaceWriterMethods_H
 
-#include "surfaceWriter.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./surfaceWriter.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 namespace Foam
 {

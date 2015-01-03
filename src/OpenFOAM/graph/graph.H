@@ -35,10 +35,10 @@ SourceFiles
 #ifndef graph_H
 #define graph_H
 
-#include "string.H"
-#include "point.H"
-#include "HashPtrTable.H"
-#include "curve.H"
+#include "./primitives/strings/string/string.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
+#include "./curve/curve.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

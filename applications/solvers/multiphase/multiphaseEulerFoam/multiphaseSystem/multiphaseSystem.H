@@ -43,13 +43,13 @@ SourceFiles
 #define multiphaseSystem_H
 
 #include "incompressible/transportModel/transportModel.H"
-#include "IOdictionary.H"
-#include "phaseModel.H"
-#include "PtrDictionary.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "dragModel.H"
-#include "HashPtrTable.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./phaseModel/phaseModel.H"
+#include "./containers/Dictionaries/PtrDictionary/PtrDictionary.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./dragModels/dragModel/dragModel.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

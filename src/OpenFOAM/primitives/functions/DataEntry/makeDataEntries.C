@@ -23,19 +23,19 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CompatibilityConstant.H"
-#include "Constant.H"
-#include "CSV.H"
-#include "DataEntry.H"
-#include "Table.H"
-#include "TableFile.H"
+#include "./CompatibilityConstant/CompatibilityConstant.H"
+#include "./Constant/Constant.H"
+#include "./CSV/CSV.H"
+#include "./DataEntry/DataEntry.H"
+#include "./Table/Table.H"
+#include "./TableFile/TableFile.H"
 
-#include "label.H"
-#include "scalar.H"
-#include "vector.H"
-#include "sphericalTensor.H"
-#include "symmTensor.H"
-#include "tensor.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./primitives/SphericalTensor/sphericalTensor/sphericalTensor.H"
+#include "./primitives/SymmTensor/symmTensor/symmTensor.H"
+#include "./primitives/Tensor/tensor/tensor.H"
 
 namespace Foam
 {

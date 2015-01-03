@@ -32,21 +32,21 @@ Description
 #ifndef thermoPhysicsTypes_H
 #define thermoPhysicsTypes_H
 
-#include "specie.H"
-#include "perfectGas.H"
-#include "incompressiblePerfectGas.H"
-#include "hConstThermo.H"
-#include "janafThermo.H"
+#include "./specie/specie.H"
+#include "./equationOfState/perfectGas/perfectGas.H"
+#include "./equationOfState/incompressiblePerfectGas/incompressiblePerfectGas.H"
+#include "./thermo/hConst/hConstThermo.H"
+#include "./thermo/janaf/janafThermo.H"
 
-#include "sensibleEnthalpy.H"
-#include "sensibleInternalEnergy.H"
-#include "thermo.H"
-#include "sutherlandTransport.H"
-#include "constTransport.H"
+#include "./thermo/sensibleEnthalpy/sensibleEnthalpy.H"
+#include "./thermo/sensibleInternalEnergy/sensibleInternalEnergy.H"
+#include "./thermo/thermo/thermo.H"
+#include "./transport/sutherland/sutherlandTransport.H"
+#include "./transport/const/constTransport.H"
 
-#include "icoPolynomial.H"
-#include "hPolynomialThermo.H"
-#include "polynomialTransport.H"
+#include "./equationOfState/icoPolynomial/icoPolynomial.H"
+#include "./thermo/hPolynomial/hPolynomialThermo.H"
+#include "./transport/polynomial/polynomialTransport.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

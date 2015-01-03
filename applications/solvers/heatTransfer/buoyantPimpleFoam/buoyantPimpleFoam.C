@@ -33,29 +33,29 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "rhoThermo.H"
-#include "turbulenceModel.H"
-#include "radiationModel.H"
-#include "fvIOoptionList.H"
-#include "pimpleControl.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./turbulenceModel.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readGravitationalAcceleration.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "createRadiationModel.H"
-    #include "initContinuityErrs.H"
-    #include "readTimeControls.H"
-    #include "compressibleCourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./include/createRadiationModel.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./cfdTools/compressible/compressibleCourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     pimpleControl pimple(mesh);
 
@@ -65,26 +65,26 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "compressibleCourantNo.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/compressible/compressibleCourantNo.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "rhoEqn.H"
+        #include "./cfdTools/compressible/rhoEqn.H"
 
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "UEqn.H"
-            #include "EEqn.H"
+            #include "./UEqn.H"
+            #include "./EEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
 
             if (pimple.turbCorr())

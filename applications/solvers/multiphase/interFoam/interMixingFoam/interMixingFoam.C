@@ -30,32 +30,32 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "CMULES.H"
-#include "subCycle.H"
-#include "immiscibleIncompressibleThreePhaseMixture.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
-#include "fvIOoptionList.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fvMatrices/solvers/MULES/CMULES.H"
+#include "./algorithms/subCycle/subCycle.H"
+#include "./immiscibleIncompressibleThreePhaseMixture/immiscibleIncompressibleThreePhaseMixture.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readGravitationalAcceleration.H"
-    #include "initContinuityErrs.H"
-    #include "createFields.H"
-    #include "readTimeControls.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./cfdTools/incompressible/CourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     pimpleControl pimple(mesh);
 
-    #include "createPrghCorrTypes.H"
+    #include "./cfdTools/general/include/createPrghCorrTypes.H"
     #include "correctPhi.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -64,10 +64,10 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "CourantNo.H"
-        #include "alphaCourantNo.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
+        #include "./alphaCourantNo.H"
+        #include "./setDeltaT.H"
 
         runTime++;
 
@@ -76,8 +76,8 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "alphaControls.H"
-            #include "alphaEqnsSubCycle.H"
+            #include "./cfdTools/general/include/alphaControls.H"
+            #include "./alphaEqnsSubCycle.H"
 
             mixture.correct();
 
@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        #include "continuityErrs.H"
+        #include "./cfdTools/incompressible/continuityErrs.H"
 
         runTime.write();
 

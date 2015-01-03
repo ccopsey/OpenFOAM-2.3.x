@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CECCellToCellStencil.H"
-#include "syncTools.H"
-#include "dummyTransform.H"
+#include "./CECCellToCellStencil.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./meshes/polyMesh/syncTools/dummyTransform.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

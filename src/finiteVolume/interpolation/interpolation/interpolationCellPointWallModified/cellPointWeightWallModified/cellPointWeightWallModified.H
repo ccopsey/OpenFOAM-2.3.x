@@ -35,10 +35,10 @@ SourceFiles
 #ifndef cellPointWeightWallModified_H
 #define cellPointWeightWallModified_H
 
-#include "cellPointWeight.H"
-#include "wallPolyPatch.H"
-#include "polyMesh.H"
-#include "polyBoundaryMesh.H"
+#include "./interpolation/interpolation/interpolationCellPoint/cellPointWeight/cellPointWeight.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

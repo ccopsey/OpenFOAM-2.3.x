@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "WallCollisionRecord.H"
+#include "./WallCollisionRecord.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 
@@ -103,7 +103,7 @@ void Foam::WallCollisionRecord<Type>::operator=
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "WallCollisionRecordIO.C"
+#include "./WallCollisionRecordIO.C"
 
 
 // ************************************************************************* //

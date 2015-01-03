@@ -35,7 +35,7 @@ SourceFiles
 #ifndef directAMI_H
 #define directAMI_H
 
-#include "AMIMethod.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIMethod/AMIMethod/AMIMethod.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -145,7 +145,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "directAMI.C"
+#   include "./directAMI.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

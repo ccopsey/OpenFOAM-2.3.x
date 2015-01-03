@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cpuTime.H"
+#include "./cpuTime.H"
 #include <unistd.h>
 
 // * * * * * * * * * * * * * * * Static Members  * * * * * * * * * * * * * * //

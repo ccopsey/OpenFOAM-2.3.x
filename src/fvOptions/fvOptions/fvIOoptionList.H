@@ -35,9 +35,9 @@ SourceFiles
 #ifndef IOoptionList_H
 #define IOoptionList_H
 
-#include "fvOptionList.H"
-#include "IOdictionary.H"
-#include "autoPtr.H"
+#include "./fvOptionList.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

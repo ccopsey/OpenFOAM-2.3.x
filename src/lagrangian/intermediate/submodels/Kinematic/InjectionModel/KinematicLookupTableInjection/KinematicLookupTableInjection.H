@@ -50,8 +50,8 @@ SourceFiles
 #ifndef KinematicLookupTableInjection_H
 #define KinematicLookupTableInjection_H
 
-#include "InjectionModel.H"
-#include "kinematicParcelInjectionDataIOList.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
+#include "./kinematicParcelInjectionDataIOList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -184,7 +184,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "KinematicLookupTableInjection.C"
+#   include "./KinematicLookupTableInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

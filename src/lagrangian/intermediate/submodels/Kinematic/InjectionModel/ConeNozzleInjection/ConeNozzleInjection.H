@@ -53,7 +53,7 @@ SourceFiles
 #ifndef ConeNozzleInjection_H
 #define ConeNozzleInjection_H
 
-#include "InjectionModel.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -264,7 +264,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ConeNozzleInjection.C"
+#   include "./ConeNozzleInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

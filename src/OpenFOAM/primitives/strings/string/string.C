@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "string.H"
-#include "stringOps.H"
+#include "./string.H"
+#include "./primitives/strings/stringOps/stringOps.H"
 
 
 /* * * * * * * * * * * * * * * Static Member Data  * * * * * * * * * * * * * */

@@ -26,10 +26,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "labelField.H"
+#include "./labelField.H"
 
 #define TEMPLATE
-#include "FieldFunctionsM.C"
+#include "./fields/Fields/Field/FieldFunctionsM.C"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -72,6 +72,6 @@ void labelField::replace(const direction, const labelUList& lf)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "undefFieldFunctionsM.H"
+#include "./fields/Fields/Field/undefFieldFunctionsM.H"
 
 // ************************************************************************* //

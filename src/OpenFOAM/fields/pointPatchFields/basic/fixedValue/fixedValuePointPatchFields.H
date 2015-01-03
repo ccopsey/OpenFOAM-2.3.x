@@ -26,8 +26,8 @@ License
 #ifndef fixedValuePointPatchFields_H
 #define fixedValuePointPatchFields_H
 
-#include "fixedValuePointPatchField.H"
-#include "fieldTypes.H"
+#include "./fixedValuePointPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

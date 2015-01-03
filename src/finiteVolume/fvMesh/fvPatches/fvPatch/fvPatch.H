@@ -36,16 +36,16 @@ SourceFiles
 #ifndef fvPatch_H
 #define fvPatch_H
 
-#include "polyPatch.H"
-#include "labelList.H"
-#include "SubList.H"
-#include "typeInfo.H"
-#include "tmp.H"
-#include "primitiveFields.H"
-#include "SubField.H"
-#include "fvPatchFieldsFwd.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./meshes/polyMesh/polyPatches/polyPatch/polyPatch.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./containers/Lists/SubList/SubList.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./memory/tmp/tmp.H"
+#include "./fields/Fields/primitiveFields.H"
+#include "./fields/Fields/Field/SubField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldsFwd.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -272,7 +272,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvPatchTemplates.C"
+#   include "./fvPatchTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

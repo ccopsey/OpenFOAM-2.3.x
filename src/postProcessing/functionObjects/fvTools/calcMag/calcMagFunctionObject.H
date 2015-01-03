@@ -36,8 +36,8 @@ SourceFiles
 #ifndef calcMagFunctionObject_H
 #define calcMagFunctionObject_H
 
-#include "calcMag.H"
-#include "OutputFilterFunctionObject.H"
+#include "./calcMag.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

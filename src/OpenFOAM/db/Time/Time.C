@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Time.H"
-#include "PstreamReduceOps.H"
-#include "argList.H"
+#include "./Time.H"
+#include "./db/IOstreams/Pstreams/PstreamReduceOps.H"
+#include "./global/argList/argList.H"
 
 #include <sstream>
 

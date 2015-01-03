@@ -35,7 +35,7 @@ SourceFiles
 #ifndef tmp_H
 #define tmp_H
 
-#include "refCount.H"
+#include "./memory/refCount/refCount.H"
 #include <cstddef>
 
 #if defined(__GNUC__) && !defined(__INTEL_COMPILER)
@@ -140,7 +140,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "tmpI.H"
+#include "./tmpI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

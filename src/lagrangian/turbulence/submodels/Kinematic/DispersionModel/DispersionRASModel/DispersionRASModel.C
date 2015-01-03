@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DispersionRASModel.H"
-#include "demandDrivenData.H"
+#include "./DispersionRASModel.H"
+#include "./include/demandDrivenData.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
 

@@ -32,8 +32,8 @@ Description
 #ifndef point2DFieldFwd_H
 #define point2DFieldFwd_H
 
-#include "point2D.H"
-#include "vector2DFieldFwd.H"
+#include "./point2D.H"
+#include "./fields/Fields/vector2DField/vector2DFieldFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

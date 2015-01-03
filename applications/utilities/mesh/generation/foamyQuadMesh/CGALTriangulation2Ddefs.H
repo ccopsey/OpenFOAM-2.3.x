@@ -41,10 +41,10 @@ Description
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "CGALTriangulation2DKernel.H"
+#include "./CGALTriangulation2DKernel.H"
 
-#include "indexedVertex.H"
-#include "indexedFace.H"
+#include "./indexedVertex.H"
+#include "./indexedFace.H"
 
 typedef CGAL::indexedVertex<K>                           Vb;
 typedef CGAL::indexedFace<K>                             Fb;

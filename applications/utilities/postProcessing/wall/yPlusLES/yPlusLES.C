@@ -30,22 +30,22 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
+#include "./cfdTools/general/include/fvCFD.H"
 #include "incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
-#include "LESModel.H"
-#include "nearWallDist.H"
-#include "wallDist.H"
-#include "wallFvPatch.H"
+#include "./LESModel.H"
+#include "./fvMesh/wallDist/nearWallDist.H"
+#include "./fvMesh/wallDist/wallDist.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     instantList timeDirs = timeSelector::select0(runTime, args);
-    #include "createMesh.H"
+    #include "./include/createMesh.H"
 
     forAll(timeDirs, timeI)
     {
@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
             mesh
         );
 
-        #include "createPhi.H"
+        #include "./cfdTools/incompressible/createPhi.H"
 
         singlePhaseTransportModel laminarTransport(U, phi);
 

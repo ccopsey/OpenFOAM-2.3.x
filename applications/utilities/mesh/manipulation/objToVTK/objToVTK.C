@@ -29,13 +29,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "OFstream.H"
+#include "./global/argList/argList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 #include <fstream>
 #include <sstream>
-#include "IStringStream.H"
-#include "point.H"
-#include "DynamicList.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
 
 
 using namespace Foam;

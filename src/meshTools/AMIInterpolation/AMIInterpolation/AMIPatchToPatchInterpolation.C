@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AMIPatchToPatchInterpolation.H"
-#include "AMIMethod.H"
-#include "directAMI.H"
-#include "mapNearestAMI.H"
-#include "faceAreaWeightAMI.H"
-#include "partialFaceAreaWeightAMI.H"
+#include "./AMIPatchToPatchInterpolation.H"
+#include "./AMIMethod/AMIMethod/AMIMethod.H"
+#include "./AMIMethod/directAMI/directAMI.H"
+#include "./AMIMethod/mapNearestAMI/mapNearestAMI.H"
+#include "./AMIMethod/faceAreaWeightAMI/faceAreaWeightAMI.H"
+#include "./AMIMethod/partialFaceAreaWeightAMI/partialFaceAreaWeightAMI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

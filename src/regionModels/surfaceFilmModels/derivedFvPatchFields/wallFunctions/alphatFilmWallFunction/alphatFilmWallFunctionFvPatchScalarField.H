@@ -69,7 +69,7 @@ SourceFiles
 #ifndef compressibleMutRoughWallFunctionFvPatchScalarField_H
 #define compressibleMutRoughWallFunctionFvPatchScalarField_H
 
-#include "fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

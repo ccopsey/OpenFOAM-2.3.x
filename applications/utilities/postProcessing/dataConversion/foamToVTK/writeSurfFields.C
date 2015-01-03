@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writeSurfFields.H"
-#include "OFstream.H"
-#include "floatScalar.H"
-#include "writeFuns.H"
-#include "emptyFvsPatchFields.H"
-#include "fvsPatchFields.H"
+#include "./writeSurfFields.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./primitives/Scalar/floatScalar/floatScalar.H"
+#include "./writeFuns.H"
+#include "./fields/fvsPatchFields/constraint/empty/emptyFvsPatchFields.H"
+#include "./fields/fvsPatchFields/fvsPatchField/fvsPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

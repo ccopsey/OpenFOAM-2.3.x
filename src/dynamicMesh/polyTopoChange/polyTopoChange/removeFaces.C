@@ -23,19 +23,19 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "removeFaces.H"
-#include "polyMesh.H"
-#include "polyTopoChange.H"
-#include "meshTools.H"
-#include "polyModifyFace.H"
-#include "polyRemoveFace.H"
-#include "polyRemoveCell.H"
-#include "polyRemovePoint.H"
-#include "syncTools.H"
-#include "OFstream.H"
-#include "indirectPrimitivePatch.H"
-#include "Time.H"
-#include "faceSet.H"
+#include "./removeFaces.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./polyTopoChange.H"
+#include "./meshTools/meshTools.H"
+#include "./modifyObject/polyModifyFace.H"
+#include "./removeObject/polyRemoveFace.H"
+#include "./removeObject/polyRemoveCell.H"
+#include "./removeObject/polyRemovePoint.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./db/Time/Time.H"
+#include "./sets/topoSets/faceSet.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

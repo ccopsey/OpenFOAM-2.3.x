@@ -60,8 +60,8 @@ while (pimple.correctNonOrthogonal())
 
 p = p_rgh + rho*gh;
 
-#include "rhoEqn.H"
-#include "compressibleContinuityErrs.H"
+#include "./rhoEqn.H"
+#include "./cfdTools/compressible/compressibleContinuityErrs.H"
 
 K = 0.5*magSqr(U);
 

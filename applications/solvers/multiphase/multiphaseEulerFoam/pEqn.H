@@ -285,7 +285,7 @@
 
     //p = max(p, pMin);
 
-    #include "continuityErrs.H"
+    #include "./cfdTools/incompressible/continuityErrs.H"
 
     // rho1 = rho10 + psi1*p;
     // rho2 = rho20 + psi2*p;

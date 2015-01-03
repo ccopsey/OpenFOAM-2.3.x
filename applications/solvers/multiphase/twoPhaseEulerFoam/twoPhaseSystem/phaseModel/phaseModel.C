@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "phaseModel.H"
-#include "twoPhaseSystem.H"
-#include "diameterModel.H"
-#include "fvMatrix.H"
+#include "./phaseModel.H"
+#include "./twoPhaseSystem.H"
+#include "./diameterModels/diameterModel/diameterModel.H"
+#include "./fvMatrices/fvMatrix/fvMatrix.H"
 #include "PhaseCompressibleTurbulenceModel.H"
-#include "dragModel.H"
-#include "heatTransferModel.H"
-#include "fixedValueFvPatchFields.H"
-#include "slipFvPatchFields.H"
-#include "partialSlipFvPatchFields.H"
-#include "surfaceInterpolate.H"
+#include "./dragModels/dragModel/dragModel.H"
+#include "./heatTransferModels/heatTransferModel/heatTransferModel.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/derived/slip/slipFvPatchFields.H"
+#include "./fields/fvPatchFields/derived/partialSlip/partialSlipFvPatchFields.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

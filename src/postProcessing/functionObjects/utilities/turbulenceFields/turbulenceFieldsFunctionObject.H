@@ -36,8 +36,8 @@ SourceFiles
 #ifndef turbulenceFieldsFunctionObject_H
 #define turbulenceFieldsFunctionObject_H
 
-#include "turbulenceFields.H"
-#include "OutputFilterFunctionObject.H"
+#include "./turbulenceFields.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

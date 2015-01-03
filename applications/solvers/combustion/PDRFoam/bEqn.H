@@ -54,13 +54,13 @@ if (ign.ignited())
     surfaceScalarField nf("nf", mesh.Sf() & nfVec);
     n /= mgb;
 
-    #include "StCorr.H"
+    #include "./include/StCorr.H"
 
     // Calculate turbulent flame speed flux
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     surfaceScalarField phiSt("phiSt", fvc::interpolate(rhou*StCorr*St)*nf);
 
-    #include "StCourantNo.H"
+    #include "./StCourantNo.H"
 
     Db = flameWrinkling->Db();
 
@@ -78,7 +78,7 @@ if (ign.ignited())
 
     // Add ignition cell contribution to b-equation
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    #include "ignite.H"
+    #include "./ignition/ignite.H"
 
     // Solve for b
     // ~~~~~~~~~~~

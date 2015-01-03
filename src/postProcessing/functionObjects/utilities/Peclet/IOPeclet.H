@@ -32,8 +32,8 @@ Description
 #ifndef IOPeclet_H
 #define IOPeclet_H
 
-#include "Peclet.H"
-#include "IOOutputFilter.H"
+#include "./Peclet.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

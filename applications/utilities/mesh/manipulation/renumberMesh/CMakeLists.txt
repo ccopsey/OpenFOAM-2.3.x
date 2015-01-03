@@ -33,14 +33,14 @@ set(LIBRARIES
   libscotchDecomp
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
-include(../../../../../src/meshTools/include.cmake)
-include(../../../../../src/dynamicMesh/include.cmake)
-include(../../../../../src/renumber/renumberMethods/include.cmake)
-include(../../../../../src/parallel/decompose/decompositionMethods/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
+include_directories(../../../../../src/meshTools)
+include_directories(../../../../../src/dynamicMesh)
+include_directories(../../../../../src/renumber/renumberMethods)
+include_directories(../../../../../src/parallel/decompose/decompositionMethods)
 
 add_executable(renumberMesh ${SOURCES})
 

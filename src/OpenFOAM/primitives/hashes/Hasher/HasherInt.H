@@ -35,7 +35,7 @@ SeeAlso
 #ifndef HasherInt_H
 #define HasherInt_H
 
-#include "Hasher.H"
+#include "./Hasher.H"
 
 #include <cstddef>
 #include <stdint.h>    // C++0x uses <cstdint>

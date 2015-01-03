@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dictionary.H"
-#include "IFstream.H"
-#include "inputModeEntry.H"
-#include "regExp.H"
+#include "./dictionary.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./functionEntries/inputModeEntry/inputModeEntry.H"
+#include "./regExp.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

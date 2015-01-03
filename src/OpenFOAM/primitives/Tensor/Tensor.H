@@ -38,8 +38,8 @@ SourceFiles
 #ifndef Tensor_H
 #define Tensor_H
 
-#include "Vector.H"
-#include "SphericalTensor.H"
+#include "./primitives/Vector/Vector.H"
+#include "./primitives/SphericalTensor/SphericalTensor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -191,7 +191,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 // Include inline implementations
-#include "TensorI.H"
+#include "./TensorI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -29,10 +29,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "writeFluentFields.H"
-#include "OFstream.H"
-#include "IOobjectList.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./writeFluentFields.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/IOobjectList/IOobjectList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -41,12 +41,12 @@ int main(int argc, char *argv[])
     argList::noParallel();
     timeSelector::addOptions(false);   // no constant
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
-#   include "createMesh.H"
+#   include "./include/createMesh.H"
 
     // make a directory called proInterface in the case
     mkDir(runTime.rootPath()/runTime.caseName()/"fluentInterface");

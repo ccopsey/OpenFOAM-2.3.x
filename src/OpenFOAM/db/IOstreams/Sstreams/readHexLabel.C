@@ -26,8 +26,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "readHexLabel.H"
-#include "ReadHex.H"
+#include "./readHexLabel.H"
+#include "./ReadHex.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

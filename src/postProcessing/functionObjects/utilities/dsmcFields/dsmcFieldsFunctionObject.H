@@ -36,8 +36,8 @@ SourceFiles
 #ifndef dsmcFieldsFunctionObject_H
 #define dsmcFieldsFunctionObject_H
 
-#include "dsmcFields.H"
-#include "OutputFilterFunctionObject.H"
+#include "./dsmcFields.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

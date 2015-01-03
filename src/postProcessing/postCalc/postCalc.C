@@ -29,8 +29,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "calc.H"
-#include "timeSelector.H"
+#include "./calc.H"
+#include "./db/Time/timeSelector.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -57,18 +57,18 @@ namespace Foam
 int main(int argc, char *argv[])
 {
     Foam::timeSelector::addOptions();
-#   include "addRegionOption.H"
+#   include "./include/addRegionOption.H"
     Foam::argList::addBoolOption
     (
         "noWrite",
         "suppress writing results"
     );
-    #include "addDictOption.H"
+    #include "./include/addDictOption.H"
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     Foam::instantList timeDirs = Foam::timeSelector::select0(runTime, args);
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     forAll(timeDirs, timeI)
     {

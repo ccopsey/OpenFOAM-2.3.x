@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PairCollision.H"
-#include "PairModel.H"
-#include "WallModel.H"
+#include "./PairCollision.H"
+#include "./PairModel/PairModel/PairModel.H"
+#include "./WallModel/WallModel/WallModel.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -35,9 +35,9 @@ SourceFiles
 #ifndef writeSurfFields_H
 #define writeSurfFields_H
 
-#include "vtkMesh.H"
-#include "surfaceMesh.H"
-#include "surfaceFieldsFwd.H"
+#include "./vtkMesh.H"
+#include "./surfaceMesh/surfaceMesh.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

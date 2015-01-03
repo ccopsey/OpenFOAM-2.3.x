@@ -32,8 +32,8 @@ Description
 #ifndef scalarIOField_H
 #define scalarIOField_H
 
-#include "scalarField.H"
-#include "IOField.H"
+#include "./scalarField.H"
+#include "./db/IOobjects/IOField/IOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

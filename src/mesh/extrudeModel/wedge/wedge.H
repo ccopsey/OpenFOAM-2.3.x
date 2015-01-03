@@ -40,7 +40,7 @@ Description
 #ifndef wedge_H
 #define wedge_H
 
-#include "extrudeModel.H"
+#include "./extrudeModel/extrudeModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -26,8 +26,8 @@ License
 #ifndef processorFvsPatchFields_H
 #define processorFvsPatchFields_H
 
-#include "processorFvsPatchField.H"
-#include "fieldTypes.H"
+#include "./processorFvsPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

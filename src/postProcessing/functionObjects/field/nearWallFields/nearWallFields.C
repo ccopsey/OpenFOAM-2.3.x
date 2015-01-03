@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "nearWallFields.H"
-#include "wordReList.H"
-#include "findCellParticle.H"
-#include "mappedPatchBase.H"
-#include "OBJstream.H"
+#include "./nearWallFields.H"
+#include "./primitives/strings/lists/wordReList.H"
+#include "./findCellParticle.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
+#include "./surfaceFormats/obj/OBJstream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

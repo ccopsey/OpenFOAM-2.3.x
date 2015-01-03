@@ -26,8 +26,8 @@ License
 #ifndef MeshedSurfaces_H
 #define MeshedSurfaces_H
 
-#include "MeshedSurface.H"
-#include "MeshedSurfacesFwd.H"
+#include "./MeshedSurface.H"
+#include "./MeshedSurfacesFwd.H"
 
 #endif
 

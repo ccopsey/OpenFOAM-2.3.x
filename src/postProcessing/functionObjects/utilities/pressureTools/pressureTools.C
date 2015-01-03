@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "pressureTools.H"
-#include "volFields.H"
-#include "dictionary.H"
+#include "./pressureTools.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

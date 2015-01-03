@@ -39,7 +39,7 @@ SourceFiles
 #ifndef wallPointData_H
 #define wallPointData_H
 
-#include "wallPoint.H"
+#include "./wallPoint.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -208,12 +208,12 @@ inline bool contiguous<wallPointData<tensor> >()
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "wallPointData.C"
+#   include "./wallPointData.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "wallPointDataI.H"
+#include "./wallPointDataI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

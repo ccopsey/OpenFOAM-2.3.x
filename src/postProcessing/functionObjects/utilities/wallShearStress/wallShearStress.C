@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wallShearStress.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./wallShearStress.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
-#include "wallPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

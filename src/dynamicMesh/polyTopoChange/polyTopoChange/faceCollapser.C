@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "faceCollapser.H"
-#include "polyMesh.H"
-#include "polyTopoChange.H"
-#include "polyModifyPoint.H"
-#include "polyModifyFace.H"
-#include "polyRemoveFace.H"
-#include "SortableList.H"
-#include "meshTools.H"
-#include "OFstream.H"
+#include "./faceCollapser.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./polyTopoChange.H"
+#include "./modifyObject/polyModifyPoint.H"
+#include "./modifyObject/polyModifyFace.H"
+#include "./removeObject/polyRemoveFace.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./meshTools/meshTools.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

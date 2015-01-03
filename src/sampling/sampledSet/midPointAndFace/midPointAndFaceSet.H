@@ -34,7 +34,7 @@ SourceFiles
 #ifndef midPointAndFaceSet_H
 #define midPointAndFaceSet_H
 
-#include "faceOnlySet.H"
+#include "./sampledSet/face/faceOnlySet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

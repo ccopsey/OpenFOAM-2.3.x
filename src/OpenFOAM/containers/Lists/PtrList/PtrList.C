@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "PtrList.H"
-#include "SLPtrList.H"
+#include "./PtrList.H"
+#include "./containers/LinkedLists/user/SLPtrList.H"
 
 // * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * * //
 
@@ -298,6 +298,6 @@ Foam::PtrList<T>& Foam::PtrList<T>::operator=(const PtrList<T>& a)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "PtrListIO.C"
+#include "./PtrListIO.C"
 
 // ************************************************************************* //

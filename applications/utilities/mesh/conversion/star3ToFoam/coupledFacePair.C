@@ -27,8 +27,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "coupledFacePair.H"
-#include "error.H"
+#include "./coupledFacePair.H"
+#include "./db/error/error.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

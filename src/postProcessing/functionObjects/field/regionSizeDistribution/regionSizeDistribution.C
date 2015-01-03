@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "regionSizeDistribution.H"
-#include "volFields.H"
-#include "regionSplit.H"
-#include "fvcVolumeIntegrate.H"
-#include "mathematicalConstants.H"
-#include "stringListOps.H"
+#include "./regionSizeDistribution.H"
+#include "./fields/volFields/volFields.H"
+#include "./regionSplit/regionSplit.H"
+#include "./finiteVolume/fvc/fvcVolumeIntegrate.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./primitives/strings/lists/stringListOps.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

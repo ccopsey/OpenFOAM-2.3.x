@@ -46,8 +46,8 @@ SourceFiles
 #ifndef mappedPatchFieldBase_H
 #define mappedPatchFieldBase_H
 
-#include "fixedValueFvPatchFields.H"
-#include "volFieldsFwd.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -159,7 +159,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "mappedPatchFieldBase.C"
+#   include "./mappedPatchFieldBase.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

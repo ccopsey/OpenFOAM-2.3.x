@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "motionSmootherAlgo.H"
-#include "polyMeshGeometry.H"
-#include "IOmanip.H"
+#include "./motionSmootherAlgo.H"
+#include "./polyMeshGeometry/polyMeshGeometry.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

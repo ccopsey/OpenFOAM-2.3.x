@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "solidification.H"
-#include "addToRunTimeSelectionTable.H"
-#include "thermoSingleLayer.H"
+#include "./solidification.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./thermoSingleLayer/thermoSingleLayer.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

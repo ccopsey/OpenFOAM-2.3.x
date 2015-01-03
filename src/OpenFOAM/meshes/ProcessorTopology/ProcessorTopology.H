@@ -41,8 +41,8 @@ SourceFiles
 #ifndef ProcessorTopology_H
 #define ProcessorTopology_H
 
-#include "labelList.H"
-#include "lduSchedule.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./matrices/lduMatrix/lduAddressing/lduSchedule/lduSchedule.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -115,7 +115,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ProcessorTopology.C"
+#   include "./ProcessorTopology.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

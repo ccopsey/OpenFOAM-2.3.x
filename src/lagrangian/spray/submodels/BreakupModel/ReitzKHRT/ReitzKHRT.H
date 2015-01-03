@@ -34,7 +34,7 @@ Description
 #ifndef ReitzKHRT_H
 #define ReitzKHRT_H
 
-#include "BreakupModel.H"
+#include "./submodels/BreakupModel/BreakupModel/BreakupModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -127,7 +127,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ReitzKHRT.C"
+#   include "./ReitzKHRT.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

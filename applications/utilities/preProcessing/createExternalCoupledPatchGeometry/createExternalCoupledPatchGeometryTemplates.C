@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "createExternalCoupledPatchGeometryTemplates.H"
-#include "externalCoupledMixedFvPatchField.H"
-#include "IOobjectList.H"
+#include "./createExternalCoupledPatchGeometryTemplates.H"
+#include "./fields/fvPatchFields/derived/externalCoupledMixed/externalCoupledMixedFvPatchField.H"
+#include "./db/IOobjectList/IOobjectList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

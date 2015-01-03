@@ -36,8 +36,8 @@ SourceFiles
 #ifndef shellSurfaces_H
 #define shellSurfaces_H
 
-#include "searchableSurface.H"
-#include "Tuple2.H"
+#include "./searchableSurface/searchableSurface.H"
+#include "./primitives/Tuple2/Tuple2.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

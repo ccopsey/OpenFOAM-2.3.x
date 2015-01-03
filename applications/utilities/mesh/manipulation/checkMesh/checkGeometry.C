@@ -1,12 +1,12 @@
-#include "checkGeometry.H"
-#include "polyMesh.H"
-#include "cellSet.H"
-#include "faceSet.H"
-#include "pointSet.H"
-#include "EdgeMap.H"
-#include "wedgePolyPatch.H"
-#include "unitConversion.H"
-#include "polyMeshTetDecomposition.H"
+#include "./checkGeometry.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./sets/topoSets/pointSet.H"
+#include "./meshes/meshShapes/edge/EdgeMap.H"
+#include "./meshes/polyMesh/polyPatches/constraint/wedge/wedgePolyPatch.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./meshes/polyMesh/polyMeshTetDecomposition/polyMeshTetDecomposition.H"
 
 
 // Find wedge with opposite orientation. Note: does not actually check that

@@ -63,8 +63,8 @@ else
     }
 }
 
-#include "rhoEqn.H"
-#include "continuityErrs.H"
+#include "./rhoEqn.H"
+#include "./cfdTools/incompressible/continuityErrs.H"
 
 U = HbyA - (invA & (betav*fvc::grad(p)));
 U.correctBoundaryConditions();

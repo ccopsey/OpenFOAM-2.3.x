@@ -29,10 +29,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "int.H"
-#include "IOstreams.H"
+#include "./int.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #include <sstream>
 

@@ -32,8 +32,8 @@ Description
 #ifndef curvedEdgeList_H
 #define curvedEdgeList_H
 
-#include "curvedEdge.H"
-#include "PtrList.H"
+#include "./curvedEdge.H"
+#include "./containers/Lists/PtrList/PtrList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

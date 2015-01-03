@@ -39,10 +39,10 @@ SourceFiles
 #ifndef TRIsurfaceFormat_H
 #define TRIsurfaceFormat_H
 
-#include "TRIsurfaceFormatCore.H"
-#include "MeshedSurface.H"
-#include "MeshedSurfaceProxy.H"
-#include "UnsortedMeshedSurface.H"
+#include "./TRIsurfaceFormatCore.H"
+#include "./MeshedSurface/MeshedSurface.H"
+#include "./MeshedSurfaceProxy/MeshedSurfaceProxy.H"
+#include "./UnsortedMeshedSurface/UnsortedMeshedSurface.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -130,7 +130,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "TRIsurfaceFormat.C"
+#   include "./TRIsurfaceFormat.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

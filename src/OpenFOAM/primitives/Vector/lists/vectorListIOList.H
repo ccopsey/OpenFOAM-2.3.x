@@ -32,8 +32,8 @@ Description
 #ifndef vectorListIOList_H
 #define vectorListIOList_H
 
-#include "vectorList.H"
-#include "CompactIOList.H"
+#include "./vectorList.H"
+#include "./db/IOobjects/CompactIOList/CompactIOList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

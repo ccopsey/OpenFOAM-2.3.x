@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "OFstream.H"
-#include "OSspecific.H"
-#include "gzstream.h"
+#include "./OFstream.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/gzstream/gzstream.h"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

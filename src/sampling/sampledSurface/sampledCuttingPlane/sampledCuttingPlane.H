@@ -35,12 +35,12 @@ SourceFiles
 #ifndef sampledCuttingPlane_H
 #define sampledCuttingPlane_H
 
-#include "sampledSurface.H"
-#include "isoSurface.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./sampledSurface/isoSurface/isoSurface.H"
 //#include "isoSurfaceCell.H"
-#include "plane.H"
-#include "ZoneIDs.H"
-#include "fvMeshSubset.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./meshes/Identifiers/zones/ZoneIDs.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -252,7 +252,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "sampledCuttingPlaneTemplates.C"
+#   include "./sampledCuttingPlaneTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

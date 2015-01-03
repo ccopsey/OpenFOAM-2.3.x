@@ -32,8 +32,8 @@ Description
 #ifndef IOscalarTransport_H
 #define IOscalarTransport_H
 
-#include "scalarTransport.H"
-#include "IOOutputFilter.H"
+#include "./scalarTransport.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef wallDist_H
 #define wallDist_H
 
-#include "patchDist.H"
+#include "./patchDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

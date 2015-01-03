@@ -42,10 +42,10 @@ SourceFiles
 #ifndef cuttingPlane_H
 #define cuttingPlane_H
 
-#include "plane.H"
-#include "pointField.H"
-#include "faceList.H"
-#include "MeshedSurface.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./meshes/meshShapes/face/faceList.H"
+#include "./MeshedSurface/MeshedSurface.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -188,7 +188,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "cuttingPlaneTemplates.C"
+#   include "./cuttingPlaneTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

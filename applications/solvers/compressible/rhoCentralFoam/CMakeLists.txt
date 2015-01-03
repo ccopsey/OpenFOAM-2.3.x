@@ -36,16 +36,16 @@ set(LIBRARIES
   libmeshTools
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/finiteVolume/include.cmake)
-include(BCs/include.cmake)
-include(../../../../src/thermophysicalModels/basic/include.cmake)
-include(../../../../src/thermophysicalModels/specie/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/finiteVolume)
+include_directories(BCs)
+include_directories(../../../../src/thermophysicalModels/basic)
+include_directories(../../../../src/thermophysicalModels/specie)
 include_directories(../../../../src/turbulenceModels/compressible/turbulenceModel)
-include(../../../../src/dynamicMesh/include.cmake)
-include(../../../../src/meshTools/include.cmake)
+include_directories(../../../../src/dynamicMesh)
+include_directories(../../../../src/meshTools)
 
 add_executable(rhoCentralFoam ${SOURCES})
 

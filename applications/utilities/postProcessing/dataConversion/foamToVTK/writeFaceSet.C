@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writeFaceSet.H"
-#include "OFstream.H"
-#include "writeFuns.H"
+#include "./writeFaceSet.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./writeFuns.H"
 
 // * * * * * * * * * * * * * * * Global Functions  * * * * * * * * * * * * * //
 

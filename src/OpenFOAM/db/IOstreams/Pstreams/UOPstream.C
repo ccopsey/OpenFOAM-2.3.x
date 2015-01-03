@@ -26,11 +26,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "UOPstream.H"
-#include "int.H"
-#include "token.H"
+#include "./UOPstream.H"
+#include "./primitives/ints/int/int.H"
+#include "./db/IOstreams/token/token.H"
 
 #include <cctype>
 

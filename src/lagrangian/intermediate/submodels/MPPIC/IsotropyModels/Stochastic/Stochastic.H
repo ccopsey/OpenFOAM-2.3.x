@@ -51,7 +51,7 @@ SourceFiles
 #ifndef Stochastic_H
 #define Stochastic_H
 
-#include "IsotropyModel.H"
+#include "./submodels/MPPIC/IsotropyModels/IsotropyModel/IsotropyModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -119,7 +119,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Stochastic.C"
+#   include "./Stochastic.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

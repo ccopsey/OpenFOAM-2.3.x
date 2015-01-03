@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldAverageItem.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "OFstream.H"
+#include "./fieldAverage/fieldAverageItem/fieldAverageItem.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

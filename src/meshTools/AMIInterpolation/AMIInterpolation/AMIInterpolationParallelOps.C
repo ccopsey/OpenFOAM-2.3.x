@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AMIInterpolation.H"
-#include "mergePoints.H"
-#include "mapDistribute.H"
+#include "./AMIInterpolation.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

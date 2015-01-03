@@ -35,9 +35,9 @@ SourceFiles
 #ifndef TableBase_H
 #define TableBase_H
 
-#include "DataEntry.H"
-#include "Tuple2.H"
-#include "dimensionSet.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./dimensionSet/dimensionSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -204,7 +204,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "TableBase.C"
+#   include "./TableBase.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

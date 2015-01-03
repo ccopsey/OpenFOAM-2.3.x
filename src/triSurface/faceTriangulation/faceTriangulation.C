@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "faceTriangulation.H"
-#include "plane.H"
+#include "./faceTriangulation.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

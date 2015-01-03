@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "blockMesh.H"
-#include "cellModeller.H"
+#include "./db/error/error.H"
+#include "./blockMesh.H"
+#include "./meshes/meshShapes/cellModeller/cellModeller.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

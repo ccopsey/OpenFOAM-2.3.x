@@ -37,9 +37,9 @@ SourceFiles
 #ifndef pyrolysisChemistryModel_H
 #define pyrolysisChemistryModel_H
 
-#include "volFieldsFwd.H"
-#include "DimensionedField.H"
-#include "solidChemistryModel.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
+#include "./solidChemistryModel/solidChemistryModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -238,12 +238,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "pyrolysisChemistryModelI.H"
+#   include "./pyrolysisChemistryModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "pyrolysisChemistryModel.C"
+#   include "./pyrolysisChemistryModel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

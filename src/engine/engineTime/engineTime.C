@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "engineTime.H"
-#include "unitConversion.H"
+#include "./engineTime.H"
+#include "./global/unitConversion/unitConversion.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

@@ -35,8 +35,8 @@ SourceFiles
 #ifndef wedgeFvsPatchField_H
 #define wedgeFvsPatchField_H
 
-#include "fvsPatchField.H"
-#include "wedgeFvPatch.H"
+#include "./fields/fvsPatchFields/fvsPatchField/fvsPatchField.H"
+#include "./fvMesh/fvPatches/constraint/wedge/wedgeFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -128,7 +128,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "wedgeFvsPatchField.C"
+#   include "./wedgeFvsPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

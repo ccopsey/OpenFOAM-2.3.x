@@ -32,8 +32,8 @@ Description
 #ifndef IOcalcFvcGrad_H
 #define IOcalcFvcGrad_H
 
-#include "calcFvcGrad.H"
-#include "IOOutputFilter.H"
+#include "./calcFvcGrad.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

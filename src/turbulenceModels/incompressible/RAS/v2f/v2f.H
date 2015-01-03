@@ -95,7 +95,7 @@ SourceFiles
 #ifndef v2f_H
 #define v2f_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

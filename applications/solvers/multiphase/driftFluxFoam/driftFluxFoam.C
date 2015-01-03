@@ -33,31 +33,31 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "CMULES.H"
-#include "subCycle.H"
-#include "incompressibleTwoPhaseInteractingMixture.H"
-#include "relativeVelocityModel.H"
-#include "turbulenceModel.H"
-#include "CompressibleTurbulenceModel.H"
-#include "pimpleControl.H"
-#include "fvIOoptionList.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
-#include "gaussLaplacianScheme.H"
-#include "uncorrectedSnGrad.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fvMatrices/solvers/MULES/CMULES.H"
+#include "./algorithms/subCycle/subCycle.H"
+#include "./incompressibleTwoPhaseInteractingMixture/incompressibleTwoPhaseInteractingMixture.H"
+#include "./relativeVelocityModels/relativeVelocityModel/relativeVelocityModel.H"
+#include "./turbulenceModel.H"
+#include "./CompressibleTurbulenceModel/CompressibleTurbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
+#include "./finiteVolume/laplacianSchemes/gaussLaplacianScheme/gaussLaplacianScheme.H"
+#include "./finiteVolume/snGradSchemes/uncorrectedSnGrad/uncorrectedSnGrad.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readGravitationalAcceleration.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "initContinuityErrs.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     pimpleControl pimple(mesh);
 
@@ -67,9 +67,9 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "CourantNo.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
@@ -78,20 +78,20 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "alphaControls.H"
+            #include "./cfdTools/general/include/alphaControls.H"
 
             UdmModel.correct();
 
-            #include "alphaEqnSubCycle.H"
+            #include "./alphaEqnSubCycle.H"
 
             mixture.correct();
 
-            #include "UEqn.H"
+            #include "./UEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
 
             if (pimple.turbCorr())

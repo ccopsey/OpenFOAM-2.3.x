@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "outletMappedUniformInletFvPatchField.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./outletMappedUniformInletFvPatchField.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

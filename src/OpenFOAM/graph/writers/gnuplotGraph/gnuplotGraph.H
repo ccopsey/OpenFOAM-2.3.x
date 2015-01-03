@@ -35,7 +35,7 @@ SourceFiles
 #ifndef gnuplotGraph_H
 #define gnuplotGraph_H
 
-#include "graph.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

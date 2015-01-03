@@ -28,8 +28,8 @@ License
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "NoSurfaceFilm.H"
-#include "ThermoSurfaceFilm.H"
+#include "./submodels/Kinematic/SurfaceFilmModel/NoSurfaceFilm/NoSurfaceFilm.H"
+#include "./submodels/Thermodynamic/SurfaceFilmModel/ThermoSurfaceFilm/ThermoSurfaceFilm.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

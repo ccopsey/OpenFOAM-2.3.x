@@ -31,33 +31,33 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "turbulenceModel.H"
-#include "basicReactingMultiphaseCloud.H"
-#include "rhoCombustionModel.H"
-#include "radiationModel.H"
-#include "IOporosityModelList.H"
-#include "fvIOoptionList.H"
-#include "SLGThermo.H"
-#include "simpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./turbulenceModel.H"
+#include "./clouds/derived/basicReactingMultiphaseCloud/basicReactingMultiphaseCloud.H"
+#include "./rhoCombustionModel/rhoCombustionModel/rhoCombustionModel.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./cfdTools/general/porosityModel/porosityModel/IOporosityModelList.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./SLGThermo/SLGThermo.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readGravitationalAcceleration.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
 
     simpleControl simple(mesh);
 
-    #include "createFields.H"
-    #include "createRadiationModel.H"
-    #include "createClouds.H"
-    #include "createFvOptions.H"
-    #include "initContinuityErrs.H"
+    #include "./createFields.H"
+    #include "./include/createRadiationModel.H"
+    #include "./createClouds.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -71,10 +71,10 @@ int main(int argc, char *argv[])
 
         // --- Pressure-velocity SIMPLE corrector loop
         {
-            #include "UEqn.H"
-            #include "YEqn.H"
-            #include "EEqn.H"
-            #include "pEqn.H"
+            #include "./UEqn.H"
+            #include "./YEqn.H"
+            #include "./EEqn.H"
+            #include "./pEqn.H"
         }
 
         turbulence->correct();

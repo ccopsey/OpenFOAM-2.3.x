@@ -36,18 +36,18 @@ SourceFiles
 #ifndef chemkinReader_H
 #define chemkinReader_H
 
-#include "chemistryReader.H"
-#include "fileName.H"
-#include "typeInfo.H"
-#include "Switch.H"
-#include "HashPtrTable.H"
-#include "ReactionList.H"
-#include "DynamicList.H"
-#include "labelList.H"
-#include "speciesTable.H"
-#include "atomicWeights.H"
+#include "./chemistryReaders/chemistryReader/chemistryReader.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
+#include "./reaction/_Reactions/ReactionList/ReactionList.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./speciesTable/speciesTable.H"
+#include "./atomicWeights/atomicWeights.H"
 
-#include "reactionTypes.H"
+#include "./include/reactionTypes.H"
 
 #include <FlexLexer.h>
 

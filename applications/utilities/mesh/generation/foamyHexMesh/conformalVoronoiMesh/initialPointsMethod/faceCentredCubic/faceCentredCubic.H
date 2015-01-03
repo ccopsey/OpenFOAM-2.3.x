@@ -36,7 +36,7 @@ SourceFiles
 #ifndef faceCentredCubic_H
 #define faceCentredCubic_H
 
-#include "initialPointsMethod.H"
+#include "./initialPointsMethod/initialPointsMethod/initialPointsMethod.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mappedFixedInternalValueFvPatchField.H"
-#include "UIndirectList.H"
+#include "./mappedFixedInternalValueFvPatchField.H"
+#include "./containers/Lists/UIndirectList/UIndirectList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

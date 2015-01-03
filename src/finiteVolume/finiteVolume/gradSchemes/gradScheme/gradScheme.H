@@ -35,11 +35,11 @@ SourceFiles
 #ifndef gradScheme_H
 #define gradScheme_H
 
-#include "tmp.H"
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
-#include "typeInfo.H"
-#include "runTimeSelectionTables.H"
+#include "./memory/tmp/tmp.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -205,7 +205,7 @@ makeFvGradTypeScheme(SS, vector)
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "gradScheme.C"
+#   include "./gradScheme.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

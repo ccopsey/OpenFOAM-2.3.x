@@ -50,7 +50,7 @@ Description
 #ifndef EulerCoordinateRotation_H
 #define EulerCoordinateRotation_H
 
-#include "coordinateRotation.H"
+#include "./coordinateRotation.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

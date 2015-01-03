@@ -68,7 +68,7 @@ Description
 
         if (isA<wallFvPatch>(curPatch))
         {
-            #include "checkPatchFieldTypes.H"
+            #include "./cfdTools/general/include/checkPatchFieldTypes.H"
 
             const scalarField& nuw = nuLam.boundaryField()[patchi];
             const scalarField& nutw = nut_.boundaryField()[patchi];

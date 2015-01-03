@@ -29,9 +29,9 @@ License
     #include "GLOBAL.h"
 //}
 
-#include "tecplotWriter.H"
+#include "./tecplotWriter.H"
 
-#include "fvc.H"
+#include "./finiteVolume/fvc/fvc.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

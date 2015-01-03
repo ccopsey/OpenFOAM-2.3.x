@@ -36,8 +36,8 @@ SourceFiles
 #ifndef Lambda2FunctionObject_H
 #define Lambda2FunctionObject_H
 
-#include "Lambda2.H"
-#include "OutputFilterFunctionObject.H"
+#include "./Lambda2.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

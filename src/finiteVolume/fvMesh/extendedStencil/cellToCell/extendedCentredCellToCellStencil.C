@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "extendedCentredCellToCellStencil.H"
-#include "mapDistribute.H"
-#include "cellToCellStencil.H"
+#include "./extendedCentredCellToCellStencil.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./globalIndexStencils/cellToCellStencil.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

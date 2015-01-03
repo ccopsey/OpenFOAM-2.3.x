@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "lagrangianWriter.H"
-#include "writeFuns.H"
-#include "Cloud.H"
-#include "passiveParticle.H"
+#include "./lagrangianWriter.H"
+#include "./writeFuns.H"
+#include "./Cloud/Cloud.H"
+#include "./passiveParticle/passiveParticle.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

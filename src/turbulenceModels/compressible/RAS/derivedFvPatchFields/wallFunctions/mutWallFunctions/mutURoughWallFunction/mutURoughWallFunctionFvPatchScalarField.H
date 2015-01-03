@@ -62,7 +62,7 @@ SourceFiles
 #ifndef compressibleMutURoughWallFunctionFvPatchScalarField_H
 #define compressibleMutURoughWallFunctionFvPatchScalarField_H
 
-#include "mutWallFunctionFvPatchScalarField.H"
+#include "./derivedFvPatchFields/wallFunctions/mutWallFunctions/mutWallFunction/mutWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

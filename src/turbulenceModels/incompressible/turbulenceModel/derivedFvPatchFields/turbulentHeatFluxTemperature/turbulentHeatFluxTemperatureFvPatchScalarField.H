@@ -66,9 +66,9 @@ SourceFiles
 #ifndef turbulentHeatFluxTemperatureFvPatchScalarFields_H
 #define turbulentHeatFluxTemperatureFvPatchScalarFields_H
 
-#include "fvPatchFields.H"
-#include "fixedGradientFvPatchFields.H"
-#include "NamedEnum.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedGradient/fixedGradientFvPatchFields.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

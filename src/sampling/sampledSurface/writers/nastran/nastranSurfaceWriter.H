@@ -49,9 +49,9 @@ SourceFiles
 #ifndef nastranSurfaceWriter_H
 #define nastranSurfaceWriter_H
 
-#include "surfaceWriter.H"
-#include "NamedEnum.H"
-#include "OFstream.H"
+#include "./sampledSurface/writers/surfaceWriter.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -265,7 +265,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "nastranSurfaceWriterTemplates.C"
+    #include "./nastranSurfaceWriterTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

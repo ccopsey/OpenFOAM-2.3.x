@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellMotionFvPatchField.H"
-#include "fvMesh.H"
-#include "volMesh.H"
-#include "pointFields.H"
+#include "./cellMotionFvPatchField.H"
+#include "./fvMesh/fvMesh.H"
+#include "./volMesh/volMesh.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

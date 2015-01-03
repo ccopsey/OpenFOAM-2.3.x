@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mapNearestMethod.H"
-#include "pointIndexHit.H"
-#include "indexedOctree.H"
-#include "treeDataCell.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./mapNearestMethod.H"
+#include "./meshes/primitiveShapes/objectHit/pointIndexHit.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./algorithms/indexedOctree/treeDataCell.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

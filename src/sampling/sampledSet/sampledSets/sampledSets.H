@@ -36,13 +36,13 @@ SourceFiles
 #ifndef sampledSets_H
 #define sampledSets_H
 
-#include "sampledSet.H"
-#include "volFieldsFwd.H"
-#include "meshSearch.H"
-#include "interpolation.H"
-#include "coordSet.H"
-#include "writer.H"
-#include "wordReList.H"
+#include "./sampledSet/sampledSet/sampledSet.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./meshSearch/meshSearch.H"
+#include "./interpolation/interpolation/interpolation/interpolation.H"
+#include "./coordSet/coordSet.H"
+#include "./sampledSetWriters/writer.H"
+#include "./primitives/strings/lists/wordReList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -318,7 +318,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "sampledSetsTemplates.C"
+#   include "./sampledSetsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

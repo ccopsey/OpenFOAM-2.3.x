@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "isoSurface.H"
-#include "fvMesh.H"
-#include "mergePoints.H"
-#include "addToRunTimeSelectionTable.H"
-#include "slicedVolFields.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "OFstream.H"
-#include "meshTools.H"
+#include "./isoSurface.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/volFields/slicedVolFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshTools/meshTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

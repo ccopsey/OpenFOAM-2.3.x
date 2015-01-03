@@ -29,33 +29,33 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "rhoThermo.H"
-#include "turbulenceModel.H"
-#include "fixedGradientFvPatchFields.H"
-#include "regionProperties.H"
-#include "solidThermo.H"
-#include "radiationModel.H"
-#include "fvIOoptionList.H"
-#include "coordinateSystem.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./turbulenceModel.H"
+#include "./fields/fvPatchFields/basic/fixedGradient/fixedGradientFvPatchFields.H"
+#include "./regionProperties/regionProperties.H"
+#include "./solidThermo/solidThermo.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./coordinateSystems/coordinateSystem.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     regionProperties rp(runTime);
 
-    #include "createFluidMeshes.H"
-    #include "createSolidMeshes.H"
+    #include "./fluid/createFluidMeshes.H"
+    #include "./createSolidMeshes.H"
 
-    #include "createFluidFields.H"
-    #include "createSolidFields.H"
+    #include "./fluid/createFluidFields.H"
+    #include "./createSolidFields.H"
 
-    #include "initContinuityErrs.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
 
     while (runTime.loop())
@@ -66,18 +66,18 @@ int main(int argc, char *argv[])
         {
             Info<< "\nSolving for fluid region "
                 << fluidRegions[i].name() << endl;
-            #include "setRegionFluidFields.H"
-            #include "readFluidMultiRegionSIMPLEControls.H"
-            #include "solveFluid.H"
+            #include "./fluid/setRegionFluidFields.H"
+            #include "./fluid/readFluidMultiRegionSIMPLEControls.H"
+            #include "./fluid/solveFluid.H"
         }
 
         forAll(solidRegions, i)
         {
             Info<< "\nSolving for solid region "
                 << solidRegions[i].name() << endl;
-            #include "setRegionSolidFields.H"
-            #include "readSolidMultiRegionSIMPLEControls.H"
-            #include "solveSolid.H"
+            #include "./setRegionSolidFields.H"
+            #include "./solid/readSolidMultiRegionSIMPLEControls.H"
+            #include "./solid/solveSolid.H"
         }
 
         runTime.write();

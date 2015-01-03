@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledPlane.H"
+#include "./sampledPlane.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

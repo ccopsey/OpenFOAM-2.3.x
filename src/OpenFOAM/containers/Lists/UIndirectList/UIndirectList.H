@@ -41,7 +41,7 @@ SourceFiles
 #ifndef UIndirectList_H
 #define UIndirectList_H
 
-#include "List.H"
+#include "./containers/Lists/List/List.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -162,10 +162,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "UIndirectListI.H"
+#include "./UIndirectListI.H"
 
 #ifdef NoRepository
-#   include "UIndirectListIO.C"
+#   include "./UIndirectListIO.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

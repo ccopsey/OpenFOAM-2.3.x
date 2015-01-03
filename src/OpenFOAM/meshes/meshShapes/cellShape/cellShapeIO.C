@@ -26,9 +26,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellShape.H"
-#include "token.H"
-#include "cellModeller.H"
+#include "./cellShape.H"
+#include "./db/IOstreams/token/token.H"
+#include "./meshes/meshShapes/cellModeller/cellModeller.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

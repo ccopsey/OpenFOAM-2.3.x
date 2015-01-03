@@ -56,11 +56,11 @@ SourceFiles
 #ifndef extendedEdgeMesh_H
 #define extendedEdgeMesh_H
 
-#include "edgeMesh.H"
-#include "indexedOctree.H"
-#include "treeDataEdge.H"
-#include "treeDataPoint.H"
-#include "PrimitivePatch.H"
+#include "./edgeMesh.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./indexedOctree/treeDataEdge.H"
+#include "./indexedOctree/treeDataPoint.H"
+#include "./meshes/primitiveMesh/_PrimitivePatch/PrimitivePatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -546,10 +546,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "extendedEdgeMeshI.H"
+#include "./extendedEdgeMeshI.H"
 
 #ifdef NoRepository
-#   include "extendedEdgeMeshTemplates.C"
+#   include "./extendedEdgeMeshTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

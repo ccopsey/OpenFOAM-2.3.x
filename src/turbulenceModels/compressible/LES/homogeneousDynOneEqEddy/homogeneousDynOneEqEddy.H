@@ -56,8 +56,8 @@ SourceFiles
 #ifndef compressibleHomogeneousDynOneEqEddy_H
 #define compressibleHomogeneousDynOneEqEddy_H
 
-#include "GenEddyVisc.H"
-#include "LESfilter.H"
+#include "./GenEddyVisc/GenEddyVisc.H"
+#include "./LES/LESfilters/LESfilter/LESfilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef fvMotionSolverCore_H
 #define fvMotionSolverCore_H
 
-#include "fvMesh.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -96,7 +96,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvMotionSolverCoreTemplates.C"
+#   include "./fvMotionSolverCoreTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

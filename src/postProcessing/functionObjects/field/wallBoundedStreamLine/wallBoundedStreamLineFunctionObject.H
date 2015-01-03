@@ -37,8 +37,8 @@ SourceFiles
 #ifndef wallBoundedStreamLineFunctionObject_H
 #define wallBoundedStreamLineFunctionObject_H
 
-#include "wallBoundedStreamLine.H"
-#include "OutputFilterFunctionObject.H"
+#include "./wallBoundedStreamLine.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

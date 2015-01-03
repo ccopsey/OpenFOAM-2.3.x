@@ -35,7 +35,7 @@ SourceFiles
 #ifndef radiationConstantScatter_H
 #define radiationConstantScatter_H
 
-#include "scatterModel.H"
+#include "./submodels/scatterModel/scatterModel/scatterModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IMULES.H"
-#include "gaussConvectionScheme.H"
-#include "surfaceInterpolate.H"
-#include "fvmDdt.H"
-#include "fvmSup.H"
-#include "fvcDiv.H"
+#include "./IMULES.H"
+#include "./finiteVolume/convectionSchemes/gaussConvectionScheme/gaussConvectionScheme.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
+#include "./finiteVolume/fvm/fvmDdt.H"
+#include "./finiteVolume/fvm/fvmSup.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

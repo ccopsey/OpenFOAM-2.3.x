@@ -36,8 +36,8 @@ SourceFiles
 #ifndef ignition_H
 #define ignition_H
 
-#include "ignitionSite.H"
-#include "Switch.H"
+#include "./ignitionSite.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

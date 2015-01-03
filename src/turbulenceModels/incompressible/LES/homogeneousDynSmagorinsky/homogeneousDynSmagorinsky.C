@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "homogeneousDynSmagorinsky.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./homogeneousDynSmagorinsky.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

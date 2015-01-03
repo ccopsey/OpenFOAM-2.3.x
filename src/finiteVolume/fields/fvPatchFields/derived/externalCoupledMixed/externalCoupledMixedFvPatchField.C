@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "externalCoupledMixedFvPatchField.H"
-#include "fvPatchFieldMapper.H"
-#include "volFields.H"
-#include "IFstream.H"
-#include "globalIndex.H"
+#include "./externalCoupledMixedFvPatchField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

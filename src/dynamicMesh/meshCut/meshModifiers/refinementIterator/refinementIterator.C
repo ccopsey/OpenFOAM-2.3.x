@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "refinementIterator.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "refineCell.H"
-#include "undoableMeshCutter.H"
-#include "polyTopoChange.H"
-#include "mapPolyMesh.H"
-#include "cellCuts.H"
-#include "OFstream.H"
-#include "meshTools.H"
+#include "./refinementIterator.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshCut/refineCell/refineCell.H"
+#include "./meshCut/meshModifiers/undoableMeshCutter/undoableMeshCutter.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./meshCut/cellCuts/cellCuts.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshTools/meshTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

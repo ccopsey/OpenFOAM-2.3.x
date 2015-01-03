@@ -44,17 +44,17 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
-#include "Time.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/Time/Time.H"
 
-#include "polyMesh.H"
-#include "globalMeshData.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
 
-#include "printMeshStats.H"
-#include "checkTopology.H"
-#include "checkGeometry.H"
-#include "checkMeshQuality.H"
+#include "./printMeshStats.H"
+#include "./checkTopology.H"
+#include "./checkGeometry.H"
+#include "./checkMeshQuality.H"
 
 using namespace Foam;
 
@@ -63,7 +63,7 @@ using namespace Foam;
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
-#   include "addRegionOption.H"
+#   include "./include/addRegionOption.H"
     argList::addBoolOption
     (
         "noTopology",
@@ -85,10 +85,10 @@ int main(int argc, char *argv[])
         "read user-defined mesh quality criterions from system/meshQualityDict"
     );
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
     instantList timeDirs = timeSelector::select0(runTime, args);
-#   include "createNamedPolyMesh.H"
+#   include "./include/createNamedPolyMesh.H"
 
     const bool noTopology  = args.optionFound("noTopology");
     const bool allGeometry = args.optionFound("allGeometry");

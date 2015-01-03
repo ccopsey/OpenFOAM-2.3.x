@@ -26,7 +26,7 @@ InClass
 
 \*---------------------------------------------------------------------------*/
 
-#include "barotropicCompressibilityModel.H"
+#include "./barotropicCompressibilityModel.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

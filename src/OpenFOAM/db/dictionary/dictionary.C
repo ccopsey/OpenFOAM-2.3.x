@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dictionary.H"
-#include "primitiveEntry.H"
-#include "dictionaryEntry.H"
-#include "regExp.H"
-#include "OSHA1stream.H"
-#include "DynamicList.H"
+#include "./dictionary.H"
+#include "./primitiveEntry/primitiveEntry.H"
+#include "./dictionaryEntry/dictionaryEntry.H"
+#include "./regExp.H"
+#include "./db/IOstreams/hashes/OSHA1stream.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
 
 /* * * * * * * * * * * * * * * Static Member Data  * * * * * * * * * * * * * */
 

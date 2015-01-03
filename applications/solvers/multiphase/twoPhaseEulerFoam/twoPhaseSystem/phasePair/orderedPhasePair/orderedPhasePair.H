@@ -34,7 +34,7 @@ SourceFiles
 #ifndef orderedPhasePair_H
 #define orderedPhasePair_H
 
-#include "phasePair.H"
+#include "./phasePair/phasePair/phasePair.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CompositionModel.H"
+#include "./CompositionModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -710,7 +710,7 @@ Foam::scalar Foam::CompositionModel<CloudType>::L
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "CompositionModelNew.C"
+#include "./CompositionModelNew.C"
 
 // ************************************************************************* //
 

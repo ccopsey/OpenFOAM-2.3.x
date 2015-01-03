@@ -35,7 +35,7 @@ SourceFiles
 #ifndef mapLagrangian_H
 #define mapLagrangian_H
 
-#include "meshToMesh.H"
+#include "./meshToMeshInterpolation/meshToMesh/meshToMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

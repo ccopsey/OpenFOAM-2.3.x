@@ -36,8 +36,8 @@ SourceFiles
 #ifndef regionSizeDistributionFunctionObject_H
 #define regionSizeDistributionFunctionObject_H
 
-#include "regionSizeDistribution.H"
-#include "OutputFilterFunctionObject.H"
+#include "./regionSizeDistribution.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

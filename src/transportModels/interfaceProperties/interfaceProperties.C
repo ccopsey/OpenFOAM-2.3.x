@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "interfaceProperties.H"
-#include "alphaContactAngleFvPatchScalarField.H"
-#include "mathematicalConstants.H"
-#include "surfaceInterpolate.H"
-#include "fvcDiv.H"
-#include "fvcGrad.H"
-#include "fvcSnGrad.H"
+#include "./interfaceProperties.H"
+#include "./alphaContactAngleFvPatchScalarField.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
+#include "./finiteVolume/fvc/fvcSnGrad.H"
 
 // * * * * * * * * * * * * * * * Static Member Data  * * * * * * * * * * * * //
 

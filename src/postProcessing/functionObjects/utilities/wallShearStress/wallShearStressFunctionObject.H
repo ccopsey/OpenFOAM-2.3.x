@@ -36,8 +36,8 @@ SourceFiles
 #ifndef wallShearStressFunctionObject_H
 #define wallShearStressFunctionObject_H
 
-#include "wallShearStress.H"
-#include "OutputFilterFunctionObject.H"
+#include "./wallShearStress.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

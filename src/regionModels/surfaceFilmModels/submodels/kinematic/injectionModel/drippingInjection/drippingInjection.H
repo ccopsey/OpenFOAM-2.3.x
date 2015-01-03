@@ -40,9 +40,9 @@ SourceFiles
 #ifndef drippingInjection_H
 #define drippingInjection_H
 
-#include "injectionModel.H"
-#include "distributionModel.H"
-#include "cachedRandom.H"
+#include "./submodels/kinematic/injectionModel/injectionModel/injectionModel.H"
+#include "./distributionModel/distributionModel.H"
+#include "./primitives/random/cachedRandom/cachedRandom.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

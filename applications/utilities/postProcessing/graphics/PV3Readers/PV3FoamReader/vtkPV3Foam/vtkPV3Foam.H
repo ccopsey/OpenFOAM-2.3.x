@@ -61,13 +61,13 @@ SourceFiles
 # define VTK_EXCLUDE_STRSTREAM_HEADERS
 #endif
 
-#include "className.H"
-#include "fileName.H"
-#include "stringList.H"
-#include "wordList.H"
-#include "primitivePatch.H"
-#include "PrimitivePatchInterpolation.H"
-#include "volPointInterpolation.H"
+#include "./db/typeInfo/className.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./primitives/strings/lists/stringList.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
+#include "./interpolations/primitivePatchInterpolation/_PrimitivePatchInterpolation.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
 
 #undef VTKPV3FOAM_DUALPORT
 
@@ -731,7 +731,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "vtkPV3FoamTemplates.C"
+#   include "./vtkPV3FoamTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

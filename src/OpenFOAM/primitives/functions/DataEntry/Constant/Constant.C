@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Constant.H"
+#include "./Constant.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -105,7 +105,7 @@ Foam::dimensioned<Type> Foam::Constant<Type>::dimIntegrate
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "ConstantIO.C"
+#include "./ConstantIO.C"
 
 
 // ************************************************************************* //

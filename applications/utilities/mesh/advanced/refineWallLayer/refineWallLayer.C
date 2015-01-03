@@ -32,15 +32,15 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyTopoChange.H"
-#include "polyTopoChanger.H"
-#include "mapPolyMesh.H"
-#include "polyMesh.H"
-#include "cellCuts.H"
-#include "cellSet.H"
-#include "meshCutter.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChanger/polyTopoChanger.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshCut/cellCuts/cellCuts.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./meshCut/meshModifiers/meshCutter/meshCutter.H"
 
 using namespace Foam;
 
@@ -48,7 +48,7 @@ using namespace Foam;
 
 int main(int argc, char *argv[])
 {
-    #include "addOverwriteOption.H"
+    #include "./include/addOverwriteOption.H"
     argList::noParallel();
     argList::validArgs.append("patchName");
     argList::validArgs.append("edgeWeight");
@@ -61,10 +61,10 @@ int main(int argc, char *argv[])
     );
 
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
     runTime.functionObjects().off();
-#   include "createPolyMesh.H"
+#   include "./include/createPolyMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     const word patchName = args[1];

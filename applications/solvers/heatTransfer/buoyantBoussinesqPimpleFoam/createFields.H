@@ -42,9 +42,9 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
-    #include "readTransportProperties.H"
+    #include "./readTransportProperties.H"
 
     Info<< "Creating turbulence model\n" << endl;
     autoPtr<incompressible::RASModel> turbulence

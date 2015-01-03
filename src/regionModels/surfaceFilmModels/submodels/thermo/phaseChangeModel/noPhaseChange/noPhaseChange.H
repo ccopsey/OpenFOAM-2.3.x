@@ -35,7 +35,7 @@ SourceFiles
 #ifndef noPhaseChange_H
 #define noPhaseChange_H
 
-#include "phaseChangeModel.H"
+#include "./submodels/thermo/phaseChangeModel/phaseChangeModel/phaseChangeModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

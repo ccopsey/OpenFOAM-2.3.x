@@ -54,7 +54,7 @@
         }
     }
 
-    #include "continuityErrs.H"
+    #include "./cfdTools/incompressible/continuityErrs.H"
 
     p = p_rgh + rhok*gh;
 

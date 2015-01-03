@@ -33,8 +33,8 @@ Description
 #ifndef ORourkeCollision_H
 #define ORourkeCollision_H
 
-#include "StochasticCollisionModel.H"
-#include "liquidMixtureProperties.H"
+#include "./submodels/Kinematic/StochasticCollision/StochasticCollisionModel/StochasticCollisionModel.H"
+#include "./liquidMixtureProperties/liquidMixtureProperties.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -129,7 +129,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ORourkeCollision.C"
+#   include "./ORourkeCollision.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "surfaceInterpolateFields.H"
-#include "volFields.H"
-#include "linear.H"
+#include "./surfaceInterpolateFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./interpolation/surfaceInterpolation/schemes/linear/linear.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

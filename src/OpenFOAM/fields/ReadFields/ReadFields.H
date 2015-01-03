@@ -35,8 +35,8 @@ SourceFiles
 #ifndef ReadFields_H
 #define ReadFields_H
 
-#include "PtrList.H"
-#include "wordList.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./primitives/strings/lists/wordList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -82,7 +82,7 @@ static void ReadFields
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ReadFields.C"
+#   include "./ReadFields.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

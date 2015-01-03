@@ -37,45 +37,45 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "dynamicFvMesh.H"
-#include "MULES.H"
-#include "subCycle.H"
-#include "interfaceProperties.H"
-#include "twoPhaseMixture.H"
-#include "twoPhaseMixtureThermo.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./fvMatrices/solvers/MULES/MULES.H"
+#include "./algorithms/subCycle/subCycle.H"
+#include "./interfaceProperties.H"
+#include "./twoPhaseMixture/twoPhaseMixture.H"
+#include "./twoPhaseMixtureThermo/twoPhaseMixtureThermo.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createDynamicFvMesh.H"
-    #include "readGravitationalAcceleration.H"
-    #include "initContinuityErrs.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createDynamicFvMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     pimpleControl pimple(mesh);
 
-    #include "createFields.H"
-    #include "createUf.H"
-    #include "readControls.H"
-    #include "createPrghCorrTypes.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./createFields.H"
+    #include "./cfdTools/incompressible/createUf.H"
+    #include "./readControls.H"
+    #include "./cfdTools/general/include/createPrghCorrTypes.H"
+    #include "./cfdTools/incompressible/CourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
     Info<< "\nStarting time loop\n" << endl;
 
     while (runTime.run())
     {
-        #include "readControls.H"
-        #include "CourantNo.H"
+        #include "./readControls.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
 
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
                 // Calculate absolute flux from the mapped surface velocity
                 phi = mesh.Sf() & Uf;
 
-                #include "correctPhi.H"
+                #include "./correctPhi.H"
 
                 // Make the fluxes relative to the mesh motion
                 fvc::makeRelative(phi, U);
@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
 
         if (mesh.changing() && checkMeshCourantNo)
         {
-            #include "meshCourantNo.H"
+            #include "./include/meshCourantNo.H"
         }
 
         turbulence->correct();
@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "alphaEqnsSubCycle.H"
+            #include "./alphaEqnsSubCycle.H"
 
             // correct interface on first PIMPLE corrector
             if (pimple.corr() == 1)
@@ -132,13 +132,13 @@ int main(int argc, char *argv[])
 
             solve(fvm::ddt(rho) + fvc::div(rhoPhi));
 
-            #include "UEqn.H"
-            #include "TEqn.H"
+            #include "./UEqn.H"
+            #include "./TEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())
             {
-                #include "pEqn.H"
+                #include "./pEqn.H"
             }
         }
 

@@ -33,8 +33,8 @@ Description
 #ifndef IOfieldValueDelta_H
 #define IOfieldValueDelta_H
 
-#include "fieldValueDelta.H"
-#include "IOOutputFilter.H"
+#include "./fieldValueDelta.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

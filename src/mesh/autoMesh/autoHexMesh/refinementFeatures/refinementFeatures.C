@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "refinementFeatures.H"
-#include "Time.H"
-#include "Tuple2.H"
-#include "DynamicField.H"
+#include "./refinementFeatures.H"
+#include "./db/Time/Time.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./fields/Fields/DynamicField/DynamicField.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

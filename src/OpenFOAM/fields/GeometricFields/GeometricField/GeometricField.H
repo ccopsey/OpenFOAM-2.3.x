@@ -39,12 +39,12 @@ SourceFiles
 #ifndef GeometricField_H
 #define GeometricField_H
 
-#include "regIOobject.H"
-#include "dimensionedTypes.H"
-#include "DimensionedField.H"
-#include "FieldField.H"
-#include "lduInterfaceFieldPtrsList.H"
-#include "LduInterfaceFieldPtrsList.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./dimensionedTypes/dimensionedTypes.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
+#include "./fields/FieldFields/FieldField/FieldField.H"
+#include "./matrices/lduMatrix/lduAddressing/lduInterfaceFields/lduInterfaceField/lduInterfaceFieldPtrsList.H"
+#include "./matrices/_LduMatrix/LduMatrix/LduInterfaceField/LduInterfaceFieldPtrsList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -595,13 +595,13 @@ Ostream& operator<<
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "GeometricFieldI.H"
+#include "./GeometricFieldI.H"
 
 #ifdef NoRepository
-#   include "GeometricField.C"
+#   include "./GeometricField.C"
 #endif
 
-#include "GeometricFieldFunctions.H"
+#include "./GeometricFieldFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

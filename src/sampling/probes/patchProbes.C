@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "patchProbes.H"
-#include "volFields.H"
-#include "IOmanip.H"
+#include "./patchProbes.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
 // For 'nearInfo' helper class only
-#include "mappedPatchBase.H"
-#include "treeBoundBox.H"
-#include "treeDataFace.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./indexedOctree/treeDataFace.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

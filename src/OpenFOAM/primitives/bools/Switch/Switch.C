@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Switch.H"
-#include "error.H"
-#include "dictionary.H"
+#include "./Switch.H"
+#include "./db/error/error.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

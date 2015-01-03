@@ -36,11 +36,11 @@ SourceFiles
 #ifndef wallBoundedStreamLineParticle_H
 #define wallBoundedStreamLineParticle_H
 
-#include "wallBoundedParticle.H"
-#include "autoPtr.H"
-#include "interpolation.H"
-#include "vectorList.H"
-#include "InfoProxy.H"
+#include "./wallBoundedParticle.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./interpolation/interpolation/interpolation/interpolation.H"
+#include "./primitives/Vector/lists/vectorList.H"
+#include "./db/IOstreams/IOstreams/InfoProxy.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

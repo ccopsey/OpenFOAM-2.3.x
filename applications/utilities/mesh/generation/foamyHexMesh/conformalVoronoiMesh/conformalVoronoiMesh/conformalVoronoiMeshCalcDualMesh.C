@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "conformalVoronoiMesh.H"
-#include "motionSmoother.H"
-#include "backgroundMeshDecomposition.H"
-#include "polyMeshGeometry.H"
-#include "indexedCellChecks.H"
-#include "OBJstream.H"
-#include "indexedCellOps.H"
-#include "ListOps.H"
-#include "DelaunayMeshTools.H"
+#include "./conformalVoronoiMesh.H"
+#include "./motionSmoother/motionSmoother.H"
+#include "./backgroundMeshDecomposition/backgroundMeshDecomposition.H"
+#include "./motionSmoother/polyMeshGeometry/polyMeshGeometry.H"
+#include "./indexedCell/indexedCellChecks.H"
+#include "./surfaceFormats/obj/OBJstream.H"
+#include "./indexedCell/indexedCellOps.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./DelaunayMeshTools/DelaunayMeshTools.H"
 
 // * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * * //
 

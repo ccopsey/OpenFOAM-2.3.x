@@ -36,8 +36,8 @@ SourceFiles
 #ifndef topoDistanceData_H
 #define topoDistanceData_H
 
-#include "point.H"
-#include "tensor.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./primitives/Tensor/tensor/tensor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -209,7 +209,7 @@ inline bool contiguous<topoDistanceData>()
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "topoDistanceDataI.H"
+#include "./topoDistanceDataI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vorticity.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "fvcCurl.H"
+#include "./vorticity.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./finiteVolume/fvc/fvcCurl.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

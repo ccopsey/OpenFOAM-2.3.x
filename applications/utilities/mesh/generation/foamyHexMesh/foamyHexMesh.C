@@ -29,12 +29,12 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "IOdictionary.H"
-#include "searchableSurfaces.H"
-#include "conformalVoronoiMesh.H"
-#include "vtkSetWriter.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./searchableSurface/searchableSurfaces.H"
+#include "./conformalVoronoiMesh/conformalVoronoiMesh/conformalVoronoiMesh.H"
+#include "./sampledSetWriters/vtk/vtkSetWriter.H"
 
 using namespace Foam;
 
@@ -54,8 +54,8 @@ int main(int argc, char *argv[])
         "conform to the initial points without any point motion"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     runTime.functionObjects().off();
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cyclicACMIFvPatchField.H"
-#include "transformField.H"
+#include "./cyclicACMIFvPatchField.H"
+#include "./fields/Fields/transformField/transformField.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

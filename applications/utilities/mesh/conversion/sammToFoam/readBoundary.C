@@ -26,13 +26,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "sammMesh.H"
-#include "Time.H"
-#include "wallPolyPatch.H"
-#include "oldCyclicPolyPatch.H"
-#include "symmetryPolyPatch.H"
-#include "preservePatchTypes.H"
-#include "IFstream.H"
+#include "./sammMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/oldCyclic/oldCyclicPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/symmetry/symmetryPolyPatch.H"
+#include "./meshes/preservePatchTypes/preservePatchTypes.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

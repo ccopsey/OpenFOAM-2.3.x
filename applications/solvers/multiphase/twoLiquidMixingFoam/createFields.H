@@ -26,7 +26,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     Info<< "Reading transportProperties\n" << endl;
     incompressibleTwoPhaseMixture mixture(U, phi);

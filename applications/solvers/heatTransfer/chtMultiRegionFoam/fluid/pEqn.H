@@ -94,10 +94,10 @@
     }
 
     // Solve continuity
-    #include "rhoEqn.H"
+    #include "./cfdTools/compressible/rhoEqn.H"
 
     // Update continuity errors
-    #include "compressibleContinuityErrors.H"
+    #include "./compressibleContinuityErrors.H"
 
     // For closed-volume cases adjust the pressure and density levels
     // to obey overall mass continuity

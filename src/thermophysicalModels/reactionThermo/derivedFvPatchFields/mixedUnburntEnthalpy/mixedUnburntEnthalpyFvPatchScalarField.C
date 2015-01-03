@@ -23,11 +23,11 @@
 
  \*---------------------------------------------------------------------------*/
 
- #include "mixedUnburntEnthalpyFvPatchScalarField.H"
- #include "addToRunTimeSelectionTable.H"
- #include "fvPatchFieldMapper.H"
- #include "volFields.H"
- #include "psiuReactionThermo.H"
+ #include "./mixedUnburntEnthalpyFvPatchScalarField.H"
+ #include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+ #include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+ #include "./fields/volFields/volFields.H"
+ #include "./psiuReactionThermo/psiuReactionThermo.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

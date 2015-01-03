@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IATEsource.H"
-#include "twoPhaseSystem.H"
-#include "fvMatrix.H"
+#include "./IATEsource.H"
+#include "./twoPhaseSystem.H"
+#include "./fvMatrices/fvMatrix/fvMatrix.H"
 #include "PhaseCompressibleTurbulenceModel.H"
-#include "uniformDimensionedFields.H"
+#include "./fields/UniformDimensionedFields/uniformDimensionedFields.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

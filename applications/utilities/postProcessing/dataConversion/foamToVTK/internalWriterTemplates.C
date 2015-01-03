@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "internalWriter.H"
-#include "writeFuns.H"
+#include "./internalWriter.H"
+#include "./writeFuns.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

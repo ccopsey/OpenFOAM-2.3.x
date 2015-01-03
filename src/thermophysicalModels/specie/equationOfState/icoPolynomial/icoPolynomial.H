@@ -37,8 +37,8 @@ SourceFiles
 #ifndef icoPolynomial_H
 #define icoPolynomial_H
 
-#include "autoPtr.H"
-#include "Polynomial.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./primitives/functions/Polynomial/Polynomial.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -234,12 +234,12 @@ defineTemplateTypeNameAndDebugWithName                                       \
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "icoPolynomialI.H"
+#include "./icoPolynomialI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "icoPolynomial.C"
+#   include "./icoPolynomial.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

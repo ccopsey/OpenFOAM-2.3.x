@@ -38,8 +38,8 @@ SourceFiles
 #ifndef data_H
 #define data_H
 
-#include "IOdictionary.H"
-#include "solverPerformance.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./matrices/_LduMatrix/LduMatrix/solverPerformance.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

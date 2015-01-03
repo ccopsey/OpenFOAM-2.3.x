@@ -23,32 +23,32 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rhoThermo.H"
-#include "makeThermo.H"
+#include "./rhoThermo.H"
+#include "./fluidThermo/makeThermo.H"
 
-#include "specie.H"
-#include "perfectGas.H"
-#include "incompressiblePerfectGas.H"
-#include "rhoConst.H"
-#include "perfectFluid.H"
-#include "PengRobinsonGas.H"
-#include "adiabaticPerfectFluid.H"
+#include "./specie/specie.H"
+#include "./equationOfState/perfectGas/perfectGas.H"
+#include "./equationOfState/incompressiblePerfectGas/incompressiblePerfectGas.H"
+#include "./equationOfState/rhoConst/rhoConst.H"
+#include "./equationOfState/perfectFluid/perfectFluid.H"
+#include "./equationOfState/PengRobinsonGas/PengRobinsonGas.H"
+#include "./equationOfState/adiabaticPerfectFluid/adiabaticPerfectFluid.H"
 
-#include "hConstThermo.H"
-#include "janafThermo.H"
-#include "sensibleEnthalpy.H"
-#include "sensibleInternalEnergy.H"
-#include "thermo.H"
+#include "./thermo/hConst/hConstThermo.H"
+#include "./thermo/janaf/janafThermo.H"
+#include "./thermo/sensibleEnthalpy/sensibleEnthalpy.H"
+#include "./thermo/sensibleInternalEnergy/sensibleInternalEnergy.H"
+#include "./thermo/thermo/thermo.H"
 
-#include "constTransport.H"
-#include "sutherlandTransport.H"
+#include "./transport/const/constTransport.H"
+#include "./transport/sutherland/sutherlandTransport.H"
 
-#include "icoPolynomial.H"
-#include "hPolynomialThermo.H"
-#include "polynomialTransport.H"
+#include "./equationOfState/icoPolynomial/icoPolynomial.H"
+#include "./thermo/hPolynomial/hPolynomialThermo.H"
+#include "./transport/polynomial/polynomialTransport.H"
 
-#include "heRhoThermo.H"
-#include "pureMixture.H"
+#include "./heRhoThermo.H"
+#include "./mixtures/pureMixture/pureMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

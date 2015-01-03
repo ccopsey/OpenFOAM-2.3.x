@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellCuts.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "ListOps.H"
-#include "cellLooper.H"
-#include "refineCell.H"
-#include "meshTools.H"
-#include "geomCellLooper.H"
-#include "OFstream.H"
-#include "plane.H"
+#include "./cellCuts.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./meshCut/cellLooper/cellLooper.H"
+#include "./meshCut/refineCell/refineCell.H"
+#include "./meshTools/meshTools.H"
+#include "./meshCut/cellLooper/geomCellLooper.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "primitiveEntry.H"
-#include "dictionaryEntry.H"
-#include "functionEntry.H"
-#include "includeEntry.H"
-#include "inputModeEntry.H"
-#include "stringOps.H"
+#include "./db/dictionary/primitiveEntry/primitiveEntry.H"
+#include "./db/dictionary/dictionaryEntry/dictionaryEntry.H"
+#include "./db/dictionary/functionEntries/functionEntry/functionEntry.H"
+#include "./db/dictionary/functionEntries/includeEntry/includeEntry.H"
+#include "./db/dictionary/functionEntries/inputModeEntry/inputModeEntry.H"
+#include "./primitives/strings/stringOps/stringOps.H"
 
-#include "IOstreams.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

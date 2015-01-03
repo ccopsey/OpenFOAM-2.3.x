@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ListOps.H"
-#include "SubList.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./containers/Lists/SubList/SubList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

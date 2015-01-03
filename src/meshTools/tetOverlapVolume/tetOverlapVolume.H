@@ -35,9 +35,9 @@ SourceFiles
 #ifndef tetOverlapVolume_H
 #define tetOverlapVolume_H
 
-#include "FixedList.H"
-#include "labelList.H"
-#include "treeBoundBox.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
 
 namespace Foam
 {

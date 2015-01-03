@@ -35,7 +35,7 @@ SourceFiles
 #ifndef removeInjection_H
 #define removeInjection_H
 
-#include "injectionModel.H"
+#include "./submodels/kinematic/injectionModel/injectionModel/injectionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

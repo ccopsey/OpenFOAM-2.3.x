@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcGrad.H"
-#include "fvcSurfaceIntegrate.H"
-#include "fvMesh.H"
-#include "gaussGrad.H"
+#include "./fvcGrad.H"
+#include "./fvcSurfaceIntegrate.H"
+#include "./fvMesh/fvMesh.H"
+#include "./finiteVolume/gradSchemes/gaussGrad/gaussGrad.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

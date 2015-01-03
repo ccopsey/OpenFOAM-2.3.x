@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "NonlinearKEShih.H"
-#include "addToRunTimeSelectionTable.H"
-#include "wallFvPatch.H"
-#include "nutkWallFunctionFvPatchScalarField.H"
+#include "./NonlinearKEShih.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./derivedFvPatchFields/wallFunctions/nutWallFunctions/nutkWallFunction/nutkWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -227,7 +227,7 @@ NonlinearKEShih::NonlinearKEShih
     bound(k_, kMin_);
     // already bounded: bound(epsilon_, epsilonMin_);
 
-    #include "wallNonlinearViscosityI.H"
+    #include "./include/wallNonlinearViscosityI.H"
 
     printCoeffs();
 }
@@ -352,7 +352,7 @@ void NonlinearKEShih::correct()
         Cmu_*sqr(k_)/epsilon_*S2 - (nonlinearStress_ && gradU)
     );
 
-    #include "nonLinearWallFunctionsI.H"
+    #include "./include/nonLinearWallFunctionsI.H"
 
     // Dissipation equation
     tmp<fvScalarMatrix> epsEqn
@@ -367,7 +367,7 @@ void NonlinearKEShih::correct()
 
     epsEqn().relax();
 
-    #include "wallDissipationI.H"
+    #include "./include/wallDissipationI.H"
 
     solve(epsEqn);
     bound(epsilon_, epsilonMin_);
@@ -399,7 +399,7 @@ void NonlinearKEShih::correct()
 
     nut_ = Cmu_*sqr(k_)/epsilon_;
 
-    #include "wallNonlinearViscosityI.H"
+    #include "./include/wallNonlinearViscosityI.H"
 
     nonlinearStress_ = symm
     (

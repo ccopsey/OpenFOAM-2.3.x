@@ -36,8 +36,8 @@ SourceFiles
 #ifndef processorLduInterface_H
 #define processorLduInterface_H
 
-#include "lduInterface.H"
-#include "primitiveFieldsFwd.H"
+#include "./lduInterface.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -159,7 +159,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "processorLduInterfaceTemplates.C"
+#   include "./processorLduInterfaceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -38,11 +38,11 @@ set(LIBRARIES
   libmultiphaseSystem
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
-include(../multiphaseSystem/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
+include_directories(../multiphaseSystem)
 
 add_library(libcompressibleMultiphaseEulerianInterfacialModels ${SOURCES})
 set_target_properties(libcompressibleMultiphaseEulerianInterfacialModels PROPERTIES PREFIX "")

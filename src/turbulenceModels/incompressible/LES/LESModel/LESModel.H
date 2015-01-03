@@ -52,13 +52,13 @@ SourceFiles
 
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 #include "incompressible/LES/incompressibleLESdelta/incompressibleLESdelta.H"
-#include "fvm.H"
-#include "fvc.H"
-#include "fvMatrices.H"
+#include "./finiteVolume/fvm/fvm.H"
+#include "./finiteVolume/fvc/fvc.H"
+#include "./fvMatrices/fvMatrices.H"
 #include "incompressible/transportModel/transportModel.H"
-#include "bound.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./cfdTools/general/bound/bound.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

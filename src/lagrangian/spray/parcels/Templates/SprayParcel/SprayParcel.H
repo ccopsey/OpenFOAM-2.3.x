@@ -32,8 +32,8 @@ Description
 #ifndef SprayParcel_H
 #define SprayParcel_H
 
-#include "particle.H"
-#include "demandDrivenEntry.H"
+#include "./particle/particle.H"
+#include "./primitives/demandDrivenEntry/demandDrivenEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -486,12 +486,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SprayParcelI.H"
+#include "./SprayParcelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "SprayParcel.C"
+    #include "./SprayParcel.C"
 #endif
 
 

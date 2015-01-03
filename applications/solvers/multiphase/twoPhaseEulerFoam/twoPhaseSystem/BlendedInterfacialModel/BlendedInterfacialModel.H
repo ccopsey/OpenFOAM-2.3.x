@@ -34,11 +34,11 @@ SourceFiles
 #ifndef BlendedInterfacialModel_H
 #define BlendedInterfacialModel_H
 
-#include "blendingMethod.H"
-#include "phasePair.H"
-#include "orderedPhasePair.H"
+#include "./blendingMethods/blendingMethod/blendingMethod.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./phasePair/orderedPhasePair/orderedPhasePair.H"
 
-#include "geometricZeroField.H"
+#include "./fields/GeometricFields/geometricZeroField/geometricZeroField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -134,7 +134,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "BlendedInterfacialModel.C"
+#   include "./BlendedInterfacialModel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

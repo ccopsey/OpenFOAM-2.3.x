@@ -50,12 +50,12 @@ SourceFiles
 #ifndef pressureGradientExplicitSource_H
 #define pressureGradientExplicitSource_H
 
-#include "autoPtr.H"
-#include "topoSetSource.H"
-#include "cellSet.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "fvOption.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./sets/topoSetSource/topoSetSource.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fvOptions/fvOption.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

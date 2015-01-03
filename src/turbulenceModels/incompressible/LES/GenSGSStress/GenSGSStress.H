@@ -43,7 +43,7 @@ SourceFiles
 #ifndef GenSGSStress_H
 #define GenSGSStress_H
 
-#include "LESModel.H"
+#include "./LESModel/LESModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

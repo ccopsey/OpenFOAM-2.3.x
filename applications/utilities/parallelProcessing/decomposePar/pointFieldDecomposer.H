@@ -36,9 +36,9 @@ SourceFiles
 #ifndef pointFieldDecomposer_H
 #define pointFieldDecomposer_H
 
-#include "pointMesh.H"
-#include "pointPatchFieldMapperPatchRef.H"
-#include "pointFields.H"
+#include "./meshes/pointMesh/pointMesh.H"
+#include "./fields/pointPatchFields/pointPatchField/pointPatchFieldMapperPatchRef.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -172,7 +172,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "pointFieldDecomposerDecomposeFields.C"
+#   include "./pointFieldDecomposerDecomposeFields.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

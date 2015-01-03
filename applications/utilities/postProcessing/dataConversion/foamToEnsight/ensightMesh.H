@@ -34,15 +34,15 @@ SourceFiles
 #ifndef ensightMesh_H
 #define ensightMesh_H
 
-#include "cellSets.H"
-#include "faceSets.H"
-#include "HashTable.H"
-#include "HashSet.H"
-#include "PackedBoolList.H"
-#include "wordReList.H"
-#include "scalarField.H"
-#include "cellShapeList.H"
-#include "cellList.H"
+#include "./cellSets.H"
+#include "./faceSets.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./primitives/strings/lists/wordReList.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./meshes/meshShapes/cellShape/cellShapeList.H"
+#include "./meshes/meshShapes/cell/cellList.H"
 
 #include <fstream>
 

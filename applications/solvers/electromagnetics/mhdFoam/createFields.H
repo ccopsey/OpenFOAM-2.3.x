@@ -61,7 +61,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     Info<< "Reading field pB\n" << endl;
     volScalarField pB
@@ -93,7 +93,7 @@
     );
 
 
-    #include "createPhiB.H"
+    #include "./createPhiB.H"
 
     dimensionedScalar DB = 1.0/(mu*sigma);
     DB.name() = "DB";

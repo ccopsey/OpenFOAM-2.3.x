@@ -35,9 +35,9 @@ SourceFiles
 #ifndef objectRegistry_H
 #define objectRegistry_H
 
-#include "HashTable.H"
-#include "regIOobject.H"
-#include "wordReList.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./primitives/strings/lists/wordReList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -239,7 +239,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "objectRegistryTemplates.C"
+#   include "./objectRegistryTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

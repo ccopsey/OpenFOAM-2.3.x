@@ -39,11 +39,11 @@ SourceFiles
 #ifndef solidChemistryModel_H
 #define solidChemistryModel_H
 
-#include "Reaction.H"
-#include "ODESystem.H"
-#include "volFieldsFwd.H"
-#include "DimensionedField.H"
-#include "simpleMatrix.H"
+#include "./reaction/_Reactions/Reaction/Reaction.H"
+#include "./ODESystem/ODESystem.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
+#include "./matrices/simpleMatrix/simpleMatrix.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -242,12 +242,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "solidChemistryModelI.H"
+#   include "./solidChemistryModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "solidChemistryModel.C"
+#   include "./solidChemistryModel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

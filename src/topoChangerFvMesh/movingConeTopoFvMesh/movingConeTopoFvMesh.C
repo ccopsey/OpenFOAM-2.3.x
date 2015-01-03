@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "movingConeTopoFvMesh.H"
-#include "Time.H"
-#include "mapPolyMesh.H"
-#include "layerAdditionRemoval.H"
-#include "addToRunTimeSelectionTable.H"
-#include "meshTools.H"
-#include "OFstream.H"
+#include "./movingConeTopoFvMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./layerAdditionRemoval/layerAdditionRemoval.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshTools/meshTools.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

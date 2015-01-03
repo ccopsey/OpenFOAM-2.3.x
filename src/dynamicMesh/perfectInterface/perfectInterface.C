@@ -27,17 +27,17 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "perfectInterface.H"
-#include "polyTopoChanger.H"
-#include "polyMesh.H"
-#include "polyTopoChange.H"
-#include "addToRunTimeSelectionTable.H"
-#include "mapPolyMesh.H"
-#include "matchPoints.H"
-#include "polyModifyFace.H"
-#include "polyRemovePoint.H"
-#include "polyRemoveFace.H"
-#include "indirectPrimitivePatch.H"
+#include "./perfectInterface.H"
+#include "./polyTopoChange/polyTopoChanger/polyTopoChanger.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./meshes/meshTools/matchPoints.H"
+#include "./polyTopoChange/polyTopoChange/modifyObject/polyModifyFace.H"
+#include "./polyTopoChange/polyTopoChange/removeObject/polyRemovePoint.H"
+#include "./polyTopoChange/polyTopoChange/removeObject/polyRemoveFace.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

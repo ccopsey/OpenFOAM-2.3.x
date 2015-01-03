@@ -42,12 +42,12 @@ SourceFiles
 #ifndef primitiveEntry_H
 #define primitiveEntry_H
 
-#include "IStringStream.H"
-#include "OStringStream.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
+#include "./db/IOstreams/StringStreams/OStringStream.H"
 
-#include "entry.H"
-#include "ITstream.H"
-#include "InfoProxy.H"
+#include "./db/dictionary/entry/entry.H"
+#include "./db/IOstreams/Tstreams/ITstream.H"
+#include "./db/IOstreams/IOstreams/InfoProxy.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -191,7 +191,7 @@ Ostream& operator<<(Ostream&, const InfoProxy<primitiveEntry>&);
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "primitiveEntryTemplates.C"
+#   include "./primitiveEntryTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

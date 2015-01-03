@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "directAMI.H"
+#include "./directAMI.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

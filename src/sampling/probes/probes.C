@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "probes.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "IOmanip.H"
-#include "mapPolyMesh.H"
+#include "./probes.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

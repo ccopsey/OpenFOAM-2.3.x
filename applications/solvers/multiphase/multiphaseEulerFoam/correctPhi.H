@@ -1,5 +1,5 @@
 {
-    #include "continuityErrs.H"
+    #include "./cfdTools/incompressible/continuityErrs.H"
 
     volScalarField pcorr
     (
@@ -34,5 +34,5 @@
         }
     }
 
-    #include "continuityErrs.H"
+    #include "./cfdTools/incompressible/continuityErrs.H"
 }

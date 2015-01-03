@@ -39,15 +39,15 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "OFstream.H"
-#include "meshTools.H"
-#include "cellSet.H"
-#include "faceSet.H"
-#include "SubField.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshTools/meshTools.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./fields/Fields/Field/SubField.H"
 
 using namespace Foam;
 
@@ -420,10 +420,10 @@ int main(int argc, char *argv[])
         "name",
         "write points for specified faceSet"
     );
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
 
     const bool patchFaces = args.optionFound("patchFaces");
@@ -442,7 +442,7 @@ int main(int argc, char *argv[])
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
-    #include "createNamedPolyMesh.H"
+    #include "./include/createNamedPolyMesh.H"
 
     forAll(timeDirs, timeI)
     {

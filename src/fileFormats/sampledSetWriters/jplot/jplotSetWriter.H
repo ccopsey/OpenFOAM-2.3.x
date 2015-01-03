@@ -32,8 +32,8 @@ SourceFiles
 #ifndef jplotSetWriter_H
 #define jplotSetWriter_H
 
-#include "writer.H"
-#include "vector.H"
+#include "./sampledSetWriters/writer.H"
+#include "./primitives/Vector/vector/vector.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -118,7 +118,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "jplotSetWriter.C"
+#   include "./jplotSetWriter.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

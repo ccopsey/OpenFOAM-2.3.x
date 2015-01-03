@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "edgeFaceCirculator.H"
-#include "primitiveMesh.H"
+#include "./edgeFaceCirculator.H"
+#include "./meshes/primitiveMesh/primitiveMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -58,7 +58,7 @@ Description
 #ifndef PilchErdman_H
 #define PilchErdman_H
 
-#include "BreakupModel.H"
+#include "./submodels/BreakupModel/BreakupModel/BreakupModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -146,7 +146,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PilchErdman.C"
+#   include "./PilchErdman.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

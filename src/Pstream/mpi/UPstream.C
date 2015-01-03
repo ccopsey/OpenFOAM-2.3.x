@@ -25,12 +25,12 @@ License
 
 #include "mpi.h"
 
-#include "UPstream.H"
-#include "PstreamReduceOps.H"
-#include "OSspecific.H"
-#include "PstreamGlobals.H"
-#include "SubList.H"
-#include "allReduce.H"
+#include "./db/IOstreams/Pstreams/UPstream.H"
+#include "./db/IOstreams/Pstreams/PstreamReduceOps.H"
+#include "./include/OSspecific.H"
+#include "./PstreamGlobals.H"
+#include "./containers/Lists/SubList/SubList.H"
+#include "./allReduce.H"
 
 #include <cstring>
 #include <cstdlib>

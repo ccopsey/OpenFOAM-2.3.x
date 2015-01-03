@@ -28,7 +28,7 @@
     );
 
 
-#   include "createPhi.H"
+#   include "./cfdTools/incompressible/createPhi.H"
 
 
     singlePhaseTransportModel fluid(U, phi);

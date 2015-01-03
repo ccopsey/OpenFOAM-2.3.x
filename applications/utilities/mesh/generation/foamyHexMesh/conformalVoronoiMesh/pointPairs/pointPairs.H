@@ -39,8 +39,8 @@ Description
 #ifndef pointPairs_H
 #define pointPairs_H
 
-#include "labelPair.H"
-#include "HashSet.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -153,7 +153,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "pointPairs.C"
+#   include "./pointPairs.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

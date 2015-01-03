@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rhoConst.H"
+#include "./rhoConst.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

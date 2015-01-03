@@ -35,7 +35,7 @@ SourceFiles
 #ifndef longLong_H
 #define longLong_H
 
-#include "word.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

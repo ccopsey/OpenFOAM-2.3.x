@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cloudInfo.H"
-#include "dictionary.H"
-#include "kinematicCloud.H"
+#include "./cloudInfo.H"
+#include "./db/dictionary/dictionary.H"
+#include "./clouds/baseClasses/kinematicCloud/kinematicCloud.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

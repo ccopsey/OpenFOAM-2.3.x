@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMesh.H"
-#include "fvcDiv.H"
+#include "./fvMesh/fvMesh.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

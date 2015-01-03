@@ -42,11 +42,11 @@ SourceFiles
 #ifndef StaticHashTable_H
 #define StaticHashTable_H
 
-#include "label.H"
-#include "uLabel.H"
-#include "word.H"
-#include "Xfer.H"
-#include "className.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/ints/uLabel/uLabel.H"
+#include "./primitives/strings/word/word.H"
+#include "./memory/Xfer/Xfer.H"
+#include "./db/typeInfo/className.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -399,13 +399,13 @@ private:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "StaticHashTableI.H"
+#   include "./StaticHashTableI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifndef NoStaticHashTableC
 #ifdef NoRepository
-#   include "StaticHashTable.C"
+#   include "./StaticHashTable.C"
 #endif
 #endif
 

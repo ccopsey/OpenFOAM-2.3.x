@@ -35,9 +35,9 @@ SourceFiles
 #ifndef wallDistReflection_H
 #define wallDistReflection_H
 
-#include "reflectionVectors.H"
-#include "wallDistData.H"
-#include "wallPointData.H"
+#include "./reflectionVectors.H"
+#include "./wallDistData.H"
+#include "./cellDist/wallPoint/wallPointData.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

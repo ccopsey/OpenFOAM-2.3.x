@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "liftModel.H"
-#include "phasePair.H"
-#include "fvc.H"
+#include "./liftModel.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./finiteVolume/fvc/fvc.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

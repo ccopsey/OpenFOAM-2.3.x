@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "csvTableReader.H"
-#include "IFstream.H"
-#include "DynamicList.H"
+#include "./csvTableReader.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef reactingCloud_H
 #define reactingCloud_H
 
-#include "typeInfo.H"
+#include "./db/typeInfo/typeInfo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

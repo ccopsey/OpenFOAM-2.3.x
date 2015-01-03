@@ -45,10 +45,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "singlePhaseTransportModel.H"
-#include "RASModel.H"
-#include "simpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
+#include "./RASModel.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
 
 template<class Type>
 void zeroCells
@@ -68,13 +68,13 @@ void zeroCells
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "initContinuityErrs.H"
-    #include "initAdjointContinuityErrs.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./initAdjointContinuityErrs.H"
 
     simpleControl simple(mesh);
 
@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
                 }
             }
 
-            #include "continuityErrs.H"
+            #include "./cfdTools/incompressible/continuityErrs.H"
 
             // Explicitly relax pressure for momentum corrector
             p.relax();
@@ -206,7 +206,7 @@ int main(int argc, char *argv[])
                 }
             }
 
-            #include "adjointContinuityErrs.H"
+            #include "./adjointContinuityErrs.H"
 
             // Explicitly relax pressure for adjoint momentum corrector
             pa.relax();

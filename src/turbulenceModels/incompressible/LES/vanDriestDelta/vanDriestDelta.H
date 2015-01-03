@@ -35,7 +35,7 @@ SourceFiles
 #ifndef vanDriestDelta_H
 #define vanDriestDelta_H
 
-#include "incompressibleLESdelta.H"
+#include "./incompressibleLESdelta/incompressibleLESdelta.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

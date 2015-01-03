@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "singleCellFvMesh.H"
-#include "syncTools.H"
-#include "uindirectPrimitivePatch.H"
+#include "./singleCellFvMesh.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./meshes/primitiveMesh/primitivePatch/uindirectPrimitivePatch.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

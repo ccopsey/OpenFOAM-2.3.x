@@ -35,7 +35,7 @@ SourceFiles
 #ifndef lineEdge_H
 #define lineEdge_H
 
-#include "curvedEdge.H"
+#include "./curvedEdge.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

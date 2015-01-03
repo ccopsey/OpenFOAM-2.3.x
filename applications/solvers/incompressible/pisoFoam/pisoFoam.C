@@ -31,20 +31,20 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "singlePhaseTransportModel.H"
-#include "turbulenceModel.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
+#include "./turbulenceModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "initContinuityErrs.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -54,8 +54,8 @@ int main(int argc, char *argv[])
     {
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "readPISOControls.H"
-        #include "CourantNo.H"
+        #include "./cfdTools/general/include/readPISOControls.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
 
         // Pressure-velocity PISO corrector
         {
@@ -123,7 +123,7 @@ int main(int argc, char *argv[])
                     }
                 }
 
-                #include "continuityErrs.H"
+                #include "./cfdTools/incompressible/continuityErrs.H"
 
                 U = HbyA - rAU*fvc::grad(p);
                 U.correctBoundaryConditions();

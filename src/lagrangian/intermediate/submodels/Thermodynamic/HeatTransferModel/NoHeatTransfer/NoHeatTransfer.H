@@ -32,7 +32,7 @@ Description
 #ifndef NoHeatTransfer_H
 #define NoHeatTransfer_H
 
-#include "HeatTransferModel.H"
+#include "./submodels/Thermodynamic/HeatTransferModel/HeatTransferModel/HeatTransferModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -96,7 +96,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoHeatTransfer.C"
+#   include "./NoHeatTransfer.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

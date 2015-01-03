@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cyclicACMIPolyPatch.H"
-#include "SubField.H"
-#include "Time.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./cyclicACMIPolyPatch.H"
+#include "./fields/Fields/Field/SubField.H"
+#include "./db/Time/Time.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

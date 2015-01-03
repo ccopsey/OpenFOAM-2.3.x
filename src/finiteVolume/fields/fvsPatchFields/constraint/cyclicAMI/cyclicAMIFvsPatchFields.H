@@ -26,8 +26,8 @@ License
 #ifndef cyclicAMIFvsPatchFields_H
 #define cyclicAMIFvsPatchFields_H
 
-#include "cyclicAMIFvsPatchField.H"
-#include "fieldTypes.H"
+#include "./cyclicAMIFvsPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

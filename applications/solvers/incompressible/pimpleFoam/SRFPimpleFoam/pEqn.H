@@ -35,7 +35,7 @@ while (pimple.correctNonOrthogonal())
     }
 }
 
-#include "continuityErrs.H"
+#include "./cfdTools/incompressible/continuityErrs.H"
 
 p.relax();
 

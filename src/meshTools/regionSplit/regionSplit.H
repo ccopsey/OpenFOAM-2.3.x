@@ -98,10 +98,10 @@ SourceFiles
 #ifndef regionSplit_H
 #define regionSplit_H
 
-#include "globalIndex.H"
-#include "labelPair.H"
-#include "boolList.H"
-#include "MeshObject.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./meshes/MeshObject/MeshObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

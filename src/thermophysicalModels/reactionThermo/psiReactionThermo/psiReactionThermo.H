@@ -35,10 +35,10 @@ SourceFiles
 #ifndef psiReactionThermo_H
 #define psiReactionThermo_H
 
-#include "psiThermo.H"
-#include "basicMultiComponentMixture.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./psiThermo/psiThermo.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

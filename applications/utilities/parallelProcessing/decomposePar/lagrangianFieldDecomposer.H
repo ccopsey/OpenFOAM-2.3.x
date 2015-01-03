@@ -36,10 +36,10 @@ SourceFiles
 #ifndef lagrangianFieldDecomposer_H
 #define lagrangianFieldDecomposer_H
 
-#include "Cloud.H"
-#include "CompactIOField.H"
-#include "indexedParticle.H"
-#include "passiveParticle.H"
+#include "./Cloud/Cloud.H"
+#include "./db/IOobjects/CompactIOField/CompactIOField.H"
+#include "./indexedParticle/indexedParticle.H"
+#include "./passiveParticle/passiveParticle.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -156,7 +156,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "lagrangianFieldDecomposerDecomposeFields.C"
+#   include "./lagrangianFieldDecomposerDecomposeFields.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

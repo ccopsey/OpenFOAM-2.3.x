@@ -35,8 +35,8 @@ SourceFiles
 #ifndef enginePiston_H
 #define enginePiston_H
 
-#include "polyPatchID.H"
-#include "coordinateSystem.H"
+#include "./meshes/Identifiers/patch/polyPatchID.H"
+#include "./coordinateSystems/coordinateSystem.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

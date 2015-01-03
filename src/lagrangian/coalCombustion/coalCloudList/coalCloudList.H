@@ -26,9 +26,9 @@ License
 #ifndef coalCloudList_H
 #define coalCloudList_H
 
-#include "coalCloud.H"
-#include "volFieldsFwd.H"
-#include "fvMatricesFwd.H"
+#include "./coalCloud/coalCloud.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fvMatrices/fvMatricesFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -117,7 +117,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "coalCloudListI.H"
+#include "./coalCloudListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

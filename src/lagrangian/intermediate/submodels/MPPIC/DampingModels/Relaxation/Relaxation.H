@@ -47,7 +47,7 @@ SourceFiles
 #ifndef Relaxation_H
 #define Relaxation_H
 
-#include "DampingModel.H"
+#include "./submodels/MPPIC/DampingModels/DampingModel/DampingModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -125,7 +125,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Relaxation.C"
+#   include "./Relaxation.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

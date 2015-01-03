@@ -32,8 +32,8 @@ Description
 #ifndef CocoParserErrors_H
 #define CocoParserErrors_H
 
-#include "error.H"
-#include "wchar.H"
+#include "./error.H"
+#include "./primitives/chars/wchar/wchar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

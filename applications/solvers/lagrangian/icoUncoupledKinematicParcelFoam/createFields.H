@@ -45,7 +45,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     singlePhaseTransportModel laminarTransport(U, phi);
 
@@ -116,4 +116,4 @@
         HdotGradHPtr.reset(new volVectorField(HdotGradHheader, mesh));
     }
 
-    #include "createNonInertialFrameFields.H"
+    #include "./createNonInertialFrameFields.H"

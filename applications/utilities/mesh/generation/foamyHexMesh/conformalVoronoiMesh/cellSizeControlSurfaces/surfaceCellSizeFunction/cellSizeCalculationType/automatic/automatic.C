@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "automatic.H"
-#include "addToRunTimeSelectionTable.H"
-#include "triSurfaceMesh.H"
-#include "vtkSurfaceWriter.H"
-#include "primitivePatchInterpolation.H"
-#include "Time.H"
+#include "./automatic.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./sampledSurface/writers/vtk/vtkSurfaceWriter.H"
+#include "./interpolations/primitivePatchInterpolation/primitivePatchInterpolation.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

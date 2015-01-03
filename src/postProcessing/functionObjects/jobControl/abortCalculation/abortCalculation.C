@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "abortCalculation.H"
-#include "dictionary.H"
-#include "error.H"
-#include "Time.H"
-#include "OSspecific.H"
-#include "PstreamReduceOps.H"
+#include "./abortCalculation.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/error/error.H"
+#include "./db/Time/Time.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/Pstreams/PstreamReduceOps.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

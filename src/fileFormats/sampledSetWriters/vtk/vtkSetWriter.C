@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkSetWriter.H"
-#include "coordSet.H"
-#include "fileName.H"
-#include "OFstream.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./vtkSetWriter.H"
+#include "./coordSet/coordSet.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

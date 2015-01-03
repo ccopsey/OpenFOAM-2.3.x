@@ -73,8 +73,8 @@ SourceFiles
 #ifndef rotatingTotalPressureFvPatchScalarField_H
 #define rotatingTotalPressureFvPatchScalarField_H
 
-#include "totalPressureFvPatchScalarField.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/derived/totalPressure/totalPressureFvPatchScalarField.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

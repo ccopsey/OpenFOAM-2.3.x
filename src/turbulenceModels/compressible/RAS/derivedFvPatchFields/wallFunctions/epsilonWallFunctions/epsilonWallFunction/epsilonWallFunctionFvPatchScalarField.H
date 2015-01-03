@@ -71,7 +71,7 @@ SourceFiles
 #ifndef compressibleEpsilonWallFunctionFvPatchScalarField_H
 #define compressibleEpsilonWallFunctionFvPatchScalarField_H
 
-#include "fixedValueFvPatchField.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

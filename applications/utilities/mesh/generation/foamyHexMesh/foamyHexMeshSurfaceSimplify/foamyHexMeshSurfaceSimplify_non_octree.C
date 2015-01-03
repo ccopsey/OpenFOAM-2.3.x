@@ -31,11 +31,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "searchableSurfaces.H"
-#include "conformationSurfaces.H"
-#include "triSurfaceMesh.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./searchableSurface/searchableSurfaces.H"
+#include "./conformationSurfaces/conformationSurfaces.H"
+#include "./searchableSurface/triSurfaceMesh.H"
 
 #include "MarchingCubes.h"
 
@@ -56,8 +56,8 @@ int main(int argc, char *argv[])
     argList::validArgs.append("(nx ny nz)");
     argList::validArgs.append("outputName");
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
 
     const Vector<label> n(IStringStream(args.args()[1])());

@@ -38,8 +38,8 @@ SourceFiles
 #ifndef basicSymmetryFvPatchField_H
 #define basicSymmetryFvPatchField_H
 
-#include "transformFvPatchField.H"
-#include "symmetryFvPatch.H"
+#include "./fields/fvPatchFields/basic/transform/transformFvPatchField.H"
+#include "./fvMesh/fvPatches/constraint/symmetry/symmetryFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -157,7 +157,7 @@ void basicSymmetryFvPatchField<scalar>::evaluate
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "basicSymmetryFvPatchField.C"
+#   include "./basicSymmetryFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

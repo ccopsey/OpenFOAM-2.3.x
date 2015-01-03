@@ -44,22 +44,22 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "syncTools.H"
-#include "faceSet.H"
-#include "pointSet.H"
-#include "meshTools.H"
-#include "polyTopoChange.H"
-#include "polyRemoveFace.H"
-#include "polyModifyFace.H"
-#include "indirectPrimitivePatch.H"
-#include "processorPolyPatch.H"
-#include "localPointRegion.H"
-#include "duplicatePoints.H"
-#include "ReadFields.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./sets/topoSets/pointSet.H"
+#include "./meshTools/meshTools.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChange/removeObject/polyRemoveFace.H"
+#include "./polyTopoChange/polyTopoChange/modifyObject/polyModifyFace.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./regionSplit/localPointRegion.H"
+#include "./polyTopoChange/polyTopoChange/duplicatePoints.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 using namespace Foam;
 
@@ -227,8 +227,8 @@ int main(int argc, char *argv[])
         "Merge them or duplicate the points."
     );
 
-    #include "addOverwriteOption.H"
-    #include "addRegionOption.H"
+    #include "./include/addOverwriteOption.H"
+    #include "./include/addRegionOption.H"
     argList::addBoolOption
     (
         "detectOnly",
@@ -240,10 +240,10 @@ int main(int argc, char *argv[])
         "topologically split duplicate surfaces"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     const word oldInstance = mesh.pointsInstance();
 

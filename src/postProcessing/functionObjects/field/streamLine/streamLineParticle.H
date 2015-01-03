@@ -36,10 +36,10 @@ SourceFiles
 #ifndef streamLineParticle_H
 #define streamLineParticle_H
 
-#include "particle.H"
-#include "autoPtr.H"
-#include "interpolation.H"
-#include "vectorList.H"
+#include "./particle/particle.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./interpolation/interpolation/interpolation/interpolation.H"
+#include "./primitives/Vector/lists/vectorList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

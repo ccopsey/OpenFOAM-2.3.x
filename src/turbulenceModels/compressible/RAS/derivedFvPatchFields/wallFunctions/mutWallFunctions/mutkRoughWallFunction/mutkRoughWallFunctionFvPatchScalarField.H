@@ -66,7 +66,7 @@ SourceFiles
 #ifndef compressibleMutkRoughWallFunctionFvPatchScalarField_H
 #define compressibleMutkRoughWallFunctionFvPatchScalarField_H
 
-#include "mutkWallFunctionFvPatchScalarField.H"
+#include "./derivedFvPatchFields/wallFunctions/mutWallFunctions/mutkWallFunction/mutkWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

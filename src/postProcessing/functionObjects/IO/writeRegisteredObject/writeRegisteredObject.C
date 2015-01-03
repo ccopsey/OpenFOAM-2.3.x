@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writeRegisteredObject.H"
-#include "dictionary.H"
-#include "Time.H"
+#include "./writeRegisteredObject.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

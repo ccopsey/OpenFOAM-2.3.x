@@ -35,28 +35,28 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "psiThermo.H"
-#include "turbulenceModel.H"
-#include "fvIOoptionList.H"
-#include "fvcSmooth.H"
-#include "pimpleControl.H"
-#include "bound.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./psiThermo/psiThermo.H"
+#include "./turbulenceModel.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./finiteVolume/fvc/fvcSmooth/fvcSmooth.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./cfdTools/general/bound/bound.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     pimpleControl pimple(mesh);
 
-    #include "setInitialrDeltaT.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "initContinuityErrs.H"
+    #include "./setInitialrDeltaT.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -64,19 +64,19 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "compressibleCourantNo.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/compressible/compressibleCourantNo.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "setrDeltaT.H"
+        #include "./setrDeltaT.H"
 
         if (pimple.nCorrPIMPLE() <= 1)
         {
-            #include "rhoEqn.H"
+            #include "./cfdTools/compressible/rhoEqn.H"
         }
 
         // --- Pressure-velocity PIMPLE corrector loop
@@ -84,8 +84,8 @@ int main(int argc, char *argv[])
         {
             turbulence->correct();
 
-            #include "UEqn.H"
-            #include "EEqn.H"
+            #include "./UEqn.H"
+            #include "./EEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())

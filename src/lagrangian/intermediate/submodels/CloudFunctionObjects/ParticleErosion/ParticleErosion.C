@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ParticleErosion.H"
+#include "./ParticleErosion.H"
 
 // * * * * * * * * * * * * * Protectd Member Functions * * * * * * * * * * * //
 

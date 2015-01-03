@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "VoidFraction.H"
+#include "./VoidFraction.H"
 
 // * * * * * * * * * * * * * Protectd Member Functions * * * * * * * * * * * //
 

@@ -29,25 +29,25 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "globalMeshData.H"
-#include "IStringStream.H"
-#include "cellSet.H"
-#include "faceSet.H"
-#include "pointSet.H"
-#include "topoSetSource.H"
-#include "OFstream.H"
-#include "IFstream.H"
-#include "demandDrivenData.H"
-#include "writePatch.H"
-#include "writePointSet.H"
-#include "IOobjectList.H"
-#include "cellZoneSet.H"
-#include "faceZoneSet.H"
-#include "pointZoneSet.H"
-#include "timeSelector.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./sets/topoSets/pointSet.H"
+#include "./sets/topoSetSource/topoSetSource.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./include/demandDrivenData.H"
+#include "./writePatch.H"
+#include "./writePointSet.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./sets/topoSets/cellZoneSet.H"
+#include "./sets/topoSets/faceZoneSet.H"
+#include "./sets/topoSets/pointZoneSet.H"
+#include "./db/Time/timeSelector.H"
 
 #include <stdio.h>
 
@@ -813,7 +813,7 @@ commandStatus parseAction(const word& actionName)
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions(true, false);
-#   include "addRegionOption.H"
+#   include "./include/addRegionOption.H"
     argList::addBoolOption("noVTK", "do not write VTK files");
     argList::addBoolOption("loop", "execute batch commands for all timesteps");
     argList::addOption
@@ -828,8 +828,8 @@ int main(int argc, char *argv[])
         "do not synchronise selection across coupled patches"
     );
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
     instantList timeDirs = timeSelector::select0(runTime, args);
 
     const bool writeVTK = !args.optionFound("noVTK");
@@ -845,7 +845,7 @@ int main(int argc, char *argv[])
     }
 
 
-#   include "createNamedPolyMesh.H"
+#   include "./include/createNamedPolyMesh.H"
 
     // Print some mesh info
     printMesh(runTime, mesh);

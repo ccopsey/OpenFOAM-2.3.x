@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldAverageItem.H"
-#include "IOstreams.H"
-#include "dictionaryEntry.H"
+#include "./fieldAverageItem.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./db/dictionary/dictionaryEntry/dictionaryEntry.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

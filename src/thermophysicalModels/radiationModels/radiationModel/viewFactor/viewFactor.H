@@ -45,13 +45,13 @@ SourceFiles
 #ifndef radiationModelviewFactor_H
 #define radiationModelviewFactor_H
 
-#include "radiationModel.H"
-#include "singleCellFvMesh.H"
-#include "scalarMatrices.H"
-#include "globalIndex.H"
-#include "scalarListIOList.H"
-#include "mapDistribute.H"
-#include "volFields.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./fvMesh/singleCellFvMesh/singleCellFvMesh.H"
+#include "./matrices/scalarMatrices/scalarMatrices.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./primitives/Scalar/lists/scalarListIOList.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -174,7 +174,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "viewFactorI.H"
+#include "./viewFactorI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

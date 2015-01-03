@@ -43,7 +43,7 @@ SourceFiles
 #ifndef TomiyamaLift_H
 #define TomiyamaLift_H
 
-#include "liftModel.H"
+#include "./liftModels/liftModel/liftModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

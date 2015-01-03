@@ -34,9 +34,9 @@ SourceFiles
 #ifndef arraySet_H
 #define arraySet_H
 
-#include "sampledSet.H"
-#include "DynamicList.H"
-#include "coordinateSystem.H"
+#include "./sampledSet/sampledSet/sampledSet.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./coordinateSystems/coordinateSystem.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

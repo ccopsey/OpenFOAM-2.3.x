@@ -36,8 +36,8 @@ SourceFiles
 #ifndef interpolateXY_H
 #define interpolateXY_H
 
-#include "scalar.H"
-#include "primitiveFieldsFwd.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -71,7 +71,7 @@ Type interpolateXY
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "interpolateXY.C"
+#   include "./interpolateXY.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

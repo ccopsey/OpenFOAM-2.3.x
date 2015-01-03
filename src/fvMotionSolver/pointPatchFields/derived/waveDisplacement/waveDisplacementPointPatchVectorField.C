@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "waveDisplacementPointPatchVectorField.H"
-#include "pointPatchFields.H"
-#include "addToRunTimeSelectionTable.H"
-#include "Time.H"
-#include "polyMesh.H"
+#include "./waveDisplacementPointPatchVectorField.H"
+#include "./fields/pointPatchFields/pointPatchField/pointPatchFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

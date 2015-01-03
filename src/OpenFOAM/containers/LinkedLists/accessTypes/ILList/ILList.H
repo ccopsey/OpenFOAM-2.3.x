@@ -36,7 +36,7 @@ SourceFiles
 #ifndef ILList_H
 #define ILList_H
 
-#include "UILList.H"
+#include "./containers/LinkedLists/accessTypes/UILList/UILList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -165,7 +165,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ILList.C"
+#   include "./ILList.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

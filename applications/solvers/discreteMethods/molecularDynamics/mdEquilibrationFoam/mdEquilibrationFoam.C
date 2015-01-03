@@ -29,14 +29,14 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "md.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./mdTools/md.H"
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -58,9 +58,9 @@ int main(int argc, char *argv[])
 
     moleculeCloud molecules(mesh, pot);
 
-    #include "temperatureAndPressureVariables.H"
+    #include "./mdTools/temperatureAndPressureVariables.H"
 
-    #include "readmdEquilibrationDict.H"
+    #include "./readmdEquilibrationDict.H"
 
     label nAveragingSteps = 0;
 
@@ -74,11 +74,11 @@ int main(int argc, char *argv[])
 
         molecules.evolve();
 
-        #include "meanMomentumEnergyAndNMols.H"
+        #include "./mdTools/meanMomentumEnergyAndNMols.H"
 
-        #include "temperatureAndPressure.H"
+        #include "./mdTools/temperatureAndPressure.H"
 
-        #include "temperatureEquilibration.H"
+        #include "./mdTools/temperatureEquilibration.H"
 
         runTime.write();
 

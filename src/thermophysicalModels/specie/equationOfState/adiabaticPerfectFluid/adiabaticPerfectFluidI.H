@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "adiabaticPerfectFluid.H"
+#include "./adiabaticPerfectFluid.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

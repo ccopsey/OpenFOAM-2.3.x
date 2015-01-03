@@ -66,7 +66,7 @@ SourceFiles
 #ifndef epsilonLowReWallFunctionFvPatchScalarField_H
 #define epsilonLowReWallFunctionFvPatchScalarField_H
 
-#include "epsilonWallFunctionFvPatchScalarField.H"
+#include "./derivedFvPatchFields/wallFunctions/epsilonWallFunctions/epsilonWallFunction/epsilonWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,11 +35,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "volFields.H"
-#include "pointFields.H"
-#include "IOobjectList.H"
-#include "patchSummaryTemplates.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./patchSummaryTemplates.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -47,21 +47,21 @@ int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
 
-#   include "addRegionOption.H"
+#   include "./include/addRegionOption.H"
     argList::addBoolOption
     (
         "expand",
         "Do not combine patches"
     );
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
     const bool expand = args.optionFound("expand");
 
 
-#   include "createNamedMesh.H"
+#   include "./include/createNamedMesh.H"
     const polyBoundaryMesh& bm = mesh.boundaryMesh();
 
 

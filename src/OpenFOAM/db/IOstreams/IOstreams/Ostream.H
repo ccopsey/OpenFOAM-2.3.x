@@ -36,8 +36,8 @@ SourceFiles
 #ifndef Ostream_H
 #define Ostream_H
 
-#include "IOstream.H"
-#include "keyType.H"
+#include "./IOstream.H"
+#include "./primitives/strings/keyType/keyType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

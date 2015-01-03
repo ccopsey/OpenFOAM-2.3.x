@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "faceSource.H"
-#include "surfaceFields.H"
-#include "volFields.H"
-#include "sampledSurface.H"
-#include "interpolationCellPoint.H"
+#include "./faceSource.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./interpolation/interpolation/interpolationCellPoint/interpolationCellPoint.H"
 
 // * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * * //
 

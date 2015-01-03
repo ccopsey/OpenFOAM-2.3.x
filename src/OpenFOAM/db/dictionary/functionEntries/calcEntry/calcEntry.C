@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "calcEntry.H"
-#include "addToMemberFunctionSelectionTable.H"
-#include "dictionary.H"
-#include "dynamicCode.H"
-#include "codeStream.H"
+#include "./calcEntry.H"
+#include "./db/runTimeSelection/memberFunctions/addToMemberFunctionSelectionTable.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/dynamicLibrary/dynamicCode/dynamicCode.H"
+#include "./db/dictionary/functionEntries/codeStream/codeStream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

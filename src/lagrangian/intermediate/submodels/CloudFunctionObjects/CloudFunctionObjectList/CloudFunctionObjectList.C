@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CloudFunctionObjectList.H"
-#include "entry.H"
+#include "./CloudFunctionObjectList.H"
+#include "./db/dictionary/entry/entry.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -35,8 +35,8 @@ SourceFiles
 #ifndef combustionModel_H
 #define combustionModel_H
 
-#include "IOdictionary.H"
-#include "turbulenceModel.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./turbulenceModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -158,7 +158,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "combustionModelI.H"
+#include "./combustionModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

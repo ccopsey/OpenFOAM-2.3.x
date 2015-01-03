@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "surfaceOffsetLinearDistance.H"
-#include "addToRunTimeSelectionTable.H"
-#include "volumeType.H"
+#include "./surfaceOffsetLinearDistance.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./algorithms/indexedOctree/volumeType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

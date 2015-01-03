@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sixDoFRigidBodyMotion.H"
-#include "septernion.H"
+#include "./sixDoFRigidBodyMotion.H"
+#include "./primitives/septernion/septernion.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

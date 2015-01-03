@@ -40,8 +40,8 @@ SourceFiles
 #ifndef genericFvPatchField_H
 #define genericFvPatchField_H
 
-#include "calculatedFvPatchField.H"
-#include "HashPtrTable.H"
+#include "./fields/fvPatchFields/basic/calculated/calculatedFvPatchField.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -191,7 +191,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "genericFvPatchField.C"
+#   include "./genericFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

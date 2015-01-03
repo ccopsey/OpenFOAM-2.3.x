@@ -32,8 +32,8 @@ Description
 #ifndef IOwallShearStress_H
 #define IOwallShearStress_H
 
-#include "wallShearStress.H"
-#include "IOOutputFilter.H"
+#include "./wallShearStress.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

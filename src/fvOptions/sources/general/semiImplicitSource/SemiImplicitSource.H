@@ -68,8 +68,8 @@ SourceFiles
 #ifndef SemiImplicitSource_H
 #define SemiImplicitSource_H
 
-#include "Tuple2.H"
-#include "fvOption.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./fvOptions/fvOption.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -218,13 +218,13 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "SemiImplicitSource.C"
-#   include "SemiImplicitSourceIO.C"
+#   include "./_SemiImplicitSource.C"
+#   include "./SemiImplicitSourceIO.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SemiImplicitSourceI.H"
+#include "./SemiImplicitSourceI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

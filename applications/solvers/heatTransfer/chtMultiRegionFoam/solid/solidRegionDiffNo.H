@@ -30,7 +30,7 @@ Description
 #ifndef solidRegionDiff_H
 #define solidRegionDiff_H
 
-#include "fvMesh.H"
+#include "./fvMesh/fvMesh.H"
 
 namespace Foam
 {

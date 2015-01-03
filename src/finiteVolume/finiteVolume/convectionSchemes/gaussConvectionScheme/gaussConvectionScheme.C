@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "gaussConvectionScheme.H"
-#include "fvcSurfaceIntegrate.H"
-#include "fvMatrices.H"
+#include "./gaussConvectionScheme.H"
+#include "./finiteVolume/fvc/fvcSurfaceIntegrate.H"
+#include "./fvMatrices/fvMatrices.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

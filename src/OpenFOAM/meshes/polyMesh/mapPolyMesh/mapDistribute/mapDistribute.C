@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mapDistribute.H"
-#include "commSchedule.H"
-#include "HashSet.H"
-#include "globalIndex.H"
-#include "globalIndexAndTransform.H"
-#include "transformField.H"
-#include "ListOps.H"
+#include "./mapDistribute.H"
+#include "./meshes/ProcessorTopology/commSchedule.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./primitives/globalIndexAndTransform/globalIndexAndTransform.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./containers/Lists/ListOps/ListOps.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

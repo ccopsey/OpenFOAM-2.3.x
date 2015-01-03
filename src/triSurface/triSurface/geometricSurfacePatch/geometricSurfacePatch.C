@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "geometricSurfacePatch.H"
-#include "dictionary.H"
+#include "./geometricSurfacePatch.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

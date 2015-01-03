@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "csvSetWriter.H"
-#include "coordSet.H"
-#include "fileName.H"
-#include "OFstream.H"
+#include "./csvSetWriter.H"
+#include "./coordSet/coordSet.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

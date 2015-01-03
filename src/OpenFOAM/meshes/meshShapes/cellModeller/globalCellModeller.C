@@ -26,9 +26,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellModeller.H"
-#include "OSspecific.H"
-#include "IFstream.H"
+#include "./cellModeller.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 
 // * * * * * * * * * * * * * * * Static data * * * * * * * * * * * * * * * * //
 

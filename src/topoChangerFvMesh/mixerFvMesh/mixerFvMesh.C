@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mixerFvMesh.H"
-#include "Time.H"
-#include "regionSplit.H"
-#include "slidingInterface.H"
-#include "addToRunTimeSelectionTable.H"
-#include "mapPolyMesh.H"
+#include "./mixerFvMesh.H"
+#include "./db/Time/Time.H"
+#include "./regionSplit/regionSplit.H"
+#include "./slidingInterface/slidingInterface.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

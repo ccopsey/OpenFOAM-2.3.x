@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "yPlusRAS.H"
-#include "volFields.H"
+#include "./yPlusRAS.H"
+#include "./fields/volFields/volFields.H"
 
 #include "incompressible/RAS/RASModel/RASModel.H"
 #include "nutWallFunction/nutWallFunctionFvPatchScalarField.H"
 #include "compressible/RAS/RASModel/RASModel.H"
 #include "mutWallFunction/mutWallFunctionFvPatchScalarField.H"
-#include "wallDist.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

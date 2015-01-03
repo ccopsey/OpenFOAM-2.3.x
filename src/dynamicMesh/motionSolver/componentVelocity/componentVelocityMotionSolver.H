@@ -38,8 +38,8 @@ SourceFiles
 #ifndef componentVelocityMotionSolver_H
 #define componentVelocityMotionSolver_H
 
-#include "motionSolver.H"
-#include "pointFields.H"
+#include "./motionSolver/motionSolver/motionSolver.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

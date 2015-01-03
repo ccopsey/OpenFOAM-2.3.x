@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Peclet.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "surfaceFields.H"
+#include "./Peclet.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
-#include "surfaceInterpolate.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

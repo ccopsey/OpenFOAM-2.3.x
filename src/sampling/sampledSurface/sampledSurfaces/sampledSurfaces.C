@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledSurfaces.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "IOmanip.H"
-#include "volPointInterpolation.H"
-#include "PatchTools.H"
+#include "./sampledSurfaces.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
+#include "./meshes/primitiveMesh/PatchTools/PatchTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

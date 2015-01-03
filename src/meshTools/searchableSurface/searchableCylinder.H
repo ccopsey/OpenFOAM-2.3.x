@@ -35,8 +35,8 @@ SourceFiles
 #ifndef searchableCylinder_H
 #define searchableCylinder_H
 
-#include "treeBoundBox.H"
-#include "searchableSurface.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./searchableSurface.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -32,8 +32,8 @@ Description
 #ifndef IOpartialWrite_H
 #define IOpartialWrite_H
 
-#include "partialWrite.H"
-#include "IOOutputFilter.H"
+#include "./partialWrite.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

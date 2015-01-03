@@ -37,7 +37,7 @@ SourceFiles
 #define noSoot_H
 
 
-#include "sootModel.H"
+#include "./submodels/sootModel/sootModel/sootModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

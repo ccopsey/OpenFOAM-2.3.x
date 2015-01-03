@@ -26,13 +26,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "debug.H"
-#include "dictionary.H"
-#include "IFstream.H"
-#include "OSspecific.H"
-#include "Ostream.H"
-#include "demandDrivenData.H"
-#include "simpleObjectRegistry.H"
+#include "./debug.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/IOstreams/Ostream.H"
+#include "./include/demandDrivenData.H"
+#include "./simpleObjectRegistry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

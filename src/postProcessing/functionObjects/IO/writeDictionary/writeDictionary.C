@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writeDictionary.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "HashSet.H"
+#include "./writeDictionary.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

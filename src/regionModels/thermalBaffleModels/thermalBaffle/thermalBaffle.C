@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "thermalBaffle.H"
+#include "./thermalBaffle.H"
 
-#include "fvm.H"
-#include "fvcDiv.H"
-#include "addToRunTimeSelectionTable.H"
-#include "zeroGradientFvPatchFields.H"
-#include "fvMatrices.H"
-#include "absorptionEmissionModel.H"
+#include "./finiteVolume/fvm/fvm.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./submodels/absorptionEmissionModel/absorptionEmissionModel/absorptionEmissionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

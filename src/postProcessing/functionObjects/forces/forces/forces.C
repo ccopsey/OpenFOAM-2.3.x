@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "forces.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "wordReList.H"
-#include "fvcGrad.H"
-#include "porosityModel.H"
-#include "fluidThermo.H"
+#include "./forces.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./primitives/strings/lists/wordReList.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
+#include "./cfdTools/general/porosityModel/porosityModel/porosityModel.H"
+#include "./fluidThermo/fluidThermo.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
 #include "incompressible/transportModel/transportModel.H"

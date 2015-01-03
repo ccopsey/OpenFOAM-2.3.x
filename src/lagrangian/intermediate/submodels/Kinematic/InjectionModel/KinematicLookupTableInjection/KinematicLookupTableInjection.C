@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "KinematicLookupTableInjection.H"
-#include "scalarIOList.H"
+#include "./KinematicLookupTableInjection.H"
+#include "./primitives/Scalar/lists/scalarIOList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

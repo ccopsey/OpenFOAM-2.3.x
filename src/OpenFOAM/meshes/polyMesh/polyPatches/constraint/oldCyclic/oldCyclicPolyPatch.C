@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "oldCyclicPolyPatch.H"
-#include "addToRunTimeSelectionTable.H"
-#include "polyBoundaryMesh.H"
-#include "polyMesh.H"
-#include "demandDrivenData.H"
-#include "OFstream.H"
-#include "patchZones.H"
-#include "matchPoints.H"
-#include "Time.H"
-#include "transformList.H"
-#include "cyclicPolyPatch.H"
+#include "./oldCyclicPolyPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./include/demandDrivenData.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/primitiveMesh/primitivePatch/patchZones.H"
+#include "./meshes/meshTools/matchPoints.H"
+#include "./db/Time/Time.H"
+#include "./fields/Fields/transformList/transformList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

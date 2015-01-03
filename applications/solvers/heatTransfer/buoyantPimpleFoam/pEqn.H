@@ -83,6 +83,6 @@
         dpdt = fvc::ddt(p);
     }
 
-    #include "rhoEqn.H"
-    #include "compressibleContinuityErrs.H"
+    #include "./cfdTools/compressible/rhoEqn.H"
+    #include "./cfdTools/compressible/compressibleContinuityErrs.H"
 }

@@ -50,14 +50,14 @@ SourceFiles
 #ifndef dictionary_H
 #define dictionary_H
 
-#include "entry.H"
-#include "IDLList.H"
-#include "DLList.H"
-#include "fileName.H"
-#include "ITstream.H"
-#include "HashTable.H"
-#include "wordList.H"
-#include "className.H"
+#include "./entry/entry.H"
+#include "./containers/LinkedLists/user/IDLList.H"
+#include "./containers/LinkedLists/user/DLList.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./db/IOstreams/Tstreams/ITstream.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./db/typeInfo/className.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -550,7 +550,7 @@ dictionary operator|(const dictionary& dict1, const dictionary& dict2);
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "dictionaryTemplates.C"
+#   include "./dictionaryTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

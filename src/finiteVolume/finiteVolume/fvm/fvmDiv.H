@@ -35,10 +35,10 @@ SourceFiles
 #ifndef fvmDiv_H
 #define fvmDiv_H
 
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
-#include "surfaceInterpolationScheme.H"
-#include "fvMatrix.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolationScheme/surfaceInterpolationScheme.H"
+#include "./fvMatrices/fvMatrix/fvMatrix.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -91,7 +91,7 @@ namespace fvm
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvmDiv.C"
+#   include "./fvmDiv.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "patchInjectionBase.H"
-#include "polyMesh.H"
-#include "SubField.H"
-#include "cachedRandom.H"
-#include "triPointRef.H"
+#include "./patchInjectionBase.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./fields/Fields/Field/SubField.H"
+#include "./primitives/random/cachedRandom/cachedRandom.H"
+#include "./meshes/primitiveShapes/triangle/triPointRef.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -37,9 +37,9 @@ SourceFiles
 #ifndef solidParticleCloud_H
 #define solidParticleCloud_H
 
-#include "Cloud.H"
-#include "solidParticle.H"
-#include "IOdictionary.H"
+#include "./Cloud/Cloud.H"
+#include "./solidParticle.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -117,7 +117,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "solidParticleCloudI.H"
+#include "./solidParticleCloudI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

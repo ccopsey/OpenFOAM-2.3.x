@@ -36,13 +36,13 @@ SourceFiles
 #ifndef patchWriter_H
 #define patchWriter_H
 
-#include "pointMesh.H"
-#include "OFstream.H"
-#include "volFields.H"
-#include "pointFields.H"
-#include "vtkMesh.H"
-#include "indirectPrimitivePatch.H"
-#include "PrimitivePatchInterpolation.H"
+#include "./meshes/pointMesh/pointMesh.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./vtkMesh.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./interpolations/primitivePatchInterpolation/_PrimitivePatchInterpolation.H"
 
 using namespace Foam;
 
@@ -141,7 +141,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "patchWriterTemplates.C"
+#   include "./patchWriterTemplates.C"
 #endif
 
 

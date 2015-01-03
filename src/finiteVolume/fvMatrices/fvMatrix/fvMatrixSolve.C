@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LduMatrix.H"
-#include "diagTensorField.H"
+#include "./matrices/_LduMatrix/LduMatrix/LduMatrix.H"
+#include "./fields/Fields/diagTensorField/diagTensorField.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

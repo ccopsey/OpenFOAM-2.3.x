@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "OFSsurfaceFormatCore.H"
-#include "clock.H"
+#include "./OFSsurfaceFormatCore.H"
+#include "./global/clock/clock.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

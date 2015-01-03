@@ -48,7 +48,7 @@ SourceFiles
 #ifndef error_H
 #define error_H
 
-#include "messageStream.H"
+#include "./messageStream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -353,7 +353,7 @@ extern IOerror FatalIOError;
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "errorManip.H"
+#include "./errorManip.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

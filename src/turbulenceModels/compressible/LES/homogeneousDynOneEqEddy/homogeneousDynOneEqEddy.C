@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "homogeneousDynOneEqEddy.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./homogeneousDynOneEqEddy.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

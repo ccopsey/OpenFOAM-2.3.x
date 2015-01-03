@@ -32,12 +32,12 @@ Description
 #ifndef coalCloud_H
 #define coalCloud_H
 
-#include "Cloud.H"
-#include "KinematicCloud.H"
-#include "ThermoCloud.H"
-#include "ReactingCloud.H"
-#include "ReactingMultiphaseCloud.H"
-#include "coalParcel.H"
+#include "./Cloud/Cloud.H"
+#include "./clouds/Templates/KinematicCloud/KinematicCloud.H"
+#include "./clouds/Templates/ThermoCloud/ThermoCloud.H"
+#include "./clouds/Templates/ReactingCloud/ReactingCloud.H"
+#include "./clouds/Templates/ReactingMultiphaseCloud/ReactingMultiphaseCloud.H"
+#include "./coalParcel/coalParcel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

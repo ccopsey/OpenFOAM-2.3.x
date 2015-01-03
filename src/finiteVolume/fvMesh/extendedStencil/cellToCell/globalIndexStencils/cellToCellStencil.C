@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellToCellStencil.H"
-#include "syncTools.H"
-#include "SortableList.H"
-#include "emptyPolyPatch.H"
+#include "./cellToCellStencil.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

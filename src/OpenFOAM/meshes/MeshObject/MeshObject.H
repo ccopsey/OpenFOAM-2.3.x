@@ -63,8 +63,8 @@ SourceFiles
 #ifndef MeshObject_H
 #define MeshObject_H
 
-#include "regIOobject.H"
-#include "objectRegistry.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./db/objectRegistry/objectRegistry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -278,7 +278,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "MeshObject.C"
+#   include "./_MeshObject.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

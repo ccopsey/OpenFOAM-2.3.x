@@ -25,8 +25,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "AverageIOField.H"
-#include "fieldTypes.H"
+#include "./AverageIOField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 namespace Foam
 {

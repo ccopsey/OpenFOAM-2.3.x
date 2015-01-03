@@ -33,14 +33,14 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyTopoChange.H"
-#include "faceSet.H"
-#include "removeFaces.H"
-#include "ReadFields.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./polyTopoChange/polyTopoChange/removeFaces.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 using namespace Foam;
 
@@ -49,13 +49,13 @@ using namespace Foam;
 
 int main(int argc, char *argv[])
 {
-#   include "addOverwriteOption.H"
+#   include "./include/addOverwriteOption.H"
     argList::validArgs.append("faceSet");
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
     runTime.functionObjects().off();
-#   include "createMesh.H"
+#   include "./include/createMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     const word setName = args[1];

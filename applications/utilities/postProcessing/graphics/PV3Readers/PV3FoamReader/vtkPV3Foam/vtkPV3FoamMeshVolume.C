@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV3Foam.H"
-#include "vtkPV3FoamReader.h"
+#include "./vtkPV3Foam.H"
+#include "./PV3Readers/PV3FoamReader/PV3FoamReader/vtkPV3FoamReader.h"
 
 // OpenFOAM includes
-#include "fvMesh.H"
-#include "cellModeller.H"
-#include "vtkOpenFOAMPoints.H"
-#include "Swap.H"
-#include "longLong.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/meshShapes/cellModeller/cellModeller.H"
+#include "./vtkOpenFOAMPoints.H"
+#include "./primitives/Swap/Swap.H"
+#include "./primitives/ints/longLong/longLong.H"
 
 // VTK includes
 #include "vtkCellArray.h"

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "polyLine.H"
+#include "./db/error/error.H"
+#include "./polyLine.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

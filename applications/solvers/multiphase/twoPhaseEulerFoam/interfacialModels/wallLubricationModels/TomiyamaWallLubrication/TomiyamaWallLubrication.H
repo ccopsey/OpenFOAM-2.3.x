@@ -51,7 +51,7 @@ SourceFiles
 #ifndef TomiyamaWallLubrication_H
 #define TomiyamaWallLubrication_H
 
-#include "wallLubricationModel.H"
+#include "./wallLubricationModels/wallLubricationModel/wallLubricationModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

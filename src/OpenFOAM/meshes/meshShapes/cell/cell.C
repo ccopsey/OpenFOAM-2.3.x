@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cell.H"
-#include "pyramidPointFaceRef.H"
+#include "./cell.H"
+#include "./pyramidPointFaceRef.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

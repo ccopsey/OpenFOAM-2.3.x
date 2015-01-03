@@ -32,8 +32,8 @@ Description
 #ifndef pointIOField_H
 #define pointIOField_H
 
-#include "pointField.H"
-#include "vectorIOField.H"
+#include "./pointField.H"
+#include "./fields/Fields/vectorField/vectorIOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

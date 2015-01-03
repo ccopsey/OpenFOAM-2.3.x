@@ -46,21 +46,21 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "Time.H"
-#include "IOdictionary.H"
-#include "IOPtrList.H"
+#include "./db/Time/Time.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./db/IOobjects/IOPtrList/IOPtrList.H"
 
-#include "blockMesh.H"
-#include "attachPolyTopoChanger.H"
-#include "emptyPolyPatch.H"
-#include "cellSet.H"
+#include "./blockMesh/blockMesh.H"
+#include "./polyTopoChange/attachPolyTopoChanger/attachPolyTopoChanger.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./sets/topoSets/cellSet.H"
 
-#include "argList.H"
-#include "OSspecific.H"
-#include "OFstream.H"
+#include "./global/argList/argList.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
-#include "Pair.H"
-#include "slidingInterface.H"
+#include "./primitives/Pair/Pair.H"
+#include "./slidingInterface/slidingInterface.H"
 
 using namespace Foam;
 
@@ -81,9 +81,9 @@ int main(int argc, char *argv[])
         "specify alternative dictionary for the blockMesh description"
     );
 
-#   include "addRegionOption.H"
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/addRegionOption.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     const word dictName("blockMeshDict");
 
@@ -222,7 +222,7 @@ int main(int argc, char *argv[])
             meshDict.lookup("mergePatchPairs")
         );
 
-#       include "mergePatchPairs.H"
+#       include "./mergePatchPairs.H"
     }
     else
     {

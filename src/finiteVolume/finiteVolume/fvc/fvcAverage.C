@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcAverage.H"
-#include "fvcSurfaceIntegrate.H"
-#include "fvMesh.H"
-#include "linear.H"
+#include "./fvcAverage.H"
+#include "./fvcSurfaceIntegrate.H"
+#include "./fvMesh/fvMesh.H"
+#include "./interpolation/surfaceInterpolation/schemes/linear/linear.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

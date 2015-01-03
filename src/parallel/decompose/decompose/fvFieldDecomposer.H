@@ -36,9 +36,9 @@ SourceFiles
 #ifndef fvFieldDecomposer_H
 #define fvFieldDecomposer_H
 
-#include "fvMesh.H"
-#include "fvPatchFieldMapper.H"
-#include "surfaceFields.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -283,7 +283,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvFieldDecomposerDecomposeFields.C"
+#   include "./fvFieldDecomposerDecomposeFields.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

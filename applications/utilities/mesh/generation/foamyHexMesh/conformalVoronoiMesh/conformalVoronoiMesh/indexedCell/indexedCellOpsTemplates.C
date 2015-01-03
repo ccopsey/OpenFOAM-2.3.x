@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "indexedCellOps.H"
-#include "Pstream.H"
+#include "./indexedCellOps.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
 
 // * * * * * * * * * * * * * * * Global Functions  * * * * * * * * * * * * * //
 

@@ -39,11 +39,11 @@ SourceFiles
 #ifndef polyMeshTetDecomposition_H
 #define polyMeshTetDecomposition_H
 
-#include "polyMesh.H"
-#include "coupledPolyPatch.H"
-#include "syncTools.H"
-#include "tetrahedron.H"
-#include "tetIndices.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/polyPatches/basic/coupled/coupledPolyPatch.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetrahedron.H"
+#include "./tetIndices.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

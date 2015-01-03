@@ -35,7 +35,7 @@ See Also
 #ifndef PtrMap_H
 #define PtrMap_H
 
-#include "HashPtrTable.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

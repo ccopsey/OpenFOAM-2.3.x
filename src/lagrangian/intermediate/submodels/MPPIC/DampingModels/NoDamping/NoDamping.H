@@ -34,7 +34,7 @@ SourceFiles
 #ifndef NoDamping_H
 #define NoDamping_H
 
-#include "DampingModel.H"
+#include "./submodels/MPPIC/DampingModels/DampingModel/DampingModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoDamping.C"
+#   include "./NoDamping.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

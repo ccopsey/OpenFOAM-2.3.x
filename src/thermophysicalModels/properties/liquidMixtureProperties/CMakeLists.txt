@@ -26,13 +26,13 @@ set(LIBRARIES
   libthermophysicalFunctions
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/thermophysicalModels/basic/include.cmake)
-include(../../../../src/thermophysicalModels/specie/include.cmake)
-include(../../../../src/thermophysicalModels/properties/liquidProperties/include.cmake)
-include(../../../../src/thermophysicalModels/thermophysicalFunctions/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/thermophysicalModels/basic)
+include_directories(../../../../src/thermophysicalModels/specie)
+include_directories(../../../../src/thermophysicalModels/properties/liquidProperties)
+include_directories(../../../../src/thermophysicalModels/thermophysicalFunctions)
 
 add_library(libliquidMixtureProperties ${SOURCES})
 set_target_properties(libliquidMixtureProperties PROPERTIES PREFIX "")

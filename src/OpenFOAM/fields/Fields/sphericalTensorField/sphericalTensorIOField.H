@@ -32,8 +32,8 @@ Description
 #ifndef sphericalTensorIOField_H
 #define sphericalTensorIOField_H
 
-#include "sphericalTensorField.H"
-#include "IOField.H"
+#include "./sphericalTensorField.H"
+#include "./db/IOobjects/IOField/IOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

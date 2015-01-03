@@ -32,26 +32,26 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "barotropicCompressibilityModel.H"
-#include "incompressibleTwoPhaseMixture.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./barotropicCompressibilityModel/barotropicCompressibilityModel.H"
+#include "./incompressible/incompressibleTwoPhaseMixture/incompressibleTwoPhaseMixture.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readThermodynamicProperties.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./readThermodynamicProperties.H"
     #include "readControls.H"
-    #include "createFields.H"
-    #include "initContinuityErrs.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./CourantNo.H"
+    #include "./setInitialDeltaT.H"
 
     pimpleControl pimple(mesh);
 
@@ -62,8 +62,8 @@ int main(int argc, char *argv[])
     while (runTime.run())
     {
         #include "readControls.H"
-        #include "CourantNo.H"
-        #include "setDeltaT.H"
+        #include "./CourantNo.H"
+        #include "./setDeltaT.H"
 
         runTime++;
         Info<< "Time = " << runTime.timeName() << nl << endl;
@@ -71,9 +71,9 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "rhoEqn.H"
-            #include "alphavPsi.H"
-            #include "UEqn.H"
+            #include "./rhoEqn.H"
+            #include "./alphavPsi.H"
+            #include "./UEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())

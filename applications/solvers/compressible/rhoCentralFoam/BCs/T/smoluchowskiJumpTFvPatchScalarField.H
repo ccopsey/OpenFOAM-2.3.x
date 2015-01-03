@@ -35,7 +35,7 @@ SourceFiles
 #ifndef smoluchowskiJumpTFvPatchScalarFields_H
 #define smoluchowskiJumpTFvPatchScalarFields_H
 
-#include "mixedFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

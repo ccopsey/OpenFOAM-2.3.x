@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "IStringStream.H"
-#include "OStringStream.H"
-#include "OSspecific.H"
-#include "IFstream.H"
-#include "ReadHex.H"
+#include "./db/error/error.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
+#include "./db/IOstreams/StringStreams/OStringStream.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/IOstreams/Sstreams/ReadHex.H"
 
 #include <cxxabi.h>
 #include <execinfo.h>

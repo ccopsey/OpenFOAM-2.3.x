@@ -51,7 +51,7 @@ SourceFiles
 #ifndef calculatedFvPatchField_H
 #define calculatedFvPatchField_H
 
-#include "fvPatchField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -186,7 +186,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "calculatedFvPatchField.C"
+#   include "./calculatedFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -88,13 +88,13 @@ SourceFiles
 #ifndef rotorDiskSource_H
 #define rotorDiskSource_H
 
-#include "fvOption.H"
-#include "cylindricalCS.H"
-#include "localAxesRotation.H"
-#include "NamedEnum.H"
-#include "bladeModel.H"
-#include "profileModelList.H"
-#include "volFieldsFwd.H"
+#include "./fvOptions/fvOption.H"
+#include "./coordinateSystems/cylindricalCS.H"
+#include "./coordinateSystems/coordinateRotation/localAxesRotation.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./bladeModel/bladeModel.H"
+#include "./profileModel/profileModelList.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -322,12 +322,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "rotorDiskSourceI.H"
+#include "./rotorDiskSourceI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "rotorDiskSourceTemplates.C"
+    #include "./rotorDiskSourceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

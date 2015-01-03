@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "polyMeshGeometry.H"
-#include "polyMeshTetDecomposition.H"
-#include "pyramidPointFaceRef.H"
-#include "tetrahedron.H"
-#include "syncTools.H"
-#include "unitConversion.H"
-#include "primitiveMeshTools.H"
+#include "./polyMeshGeometry.H"
+#include "./meshes/polyMesh/polyMeshTetDecomposition/polyMeshTetDecomposition.H"
+#include "./meshes/meshShapes/cell/pyramidPointFaceRef.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetrahedron.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./meshes/primitiveMesh/primitiveMeshCheck/primitiveMeshTools.H"
 
 namespace Foam
 {

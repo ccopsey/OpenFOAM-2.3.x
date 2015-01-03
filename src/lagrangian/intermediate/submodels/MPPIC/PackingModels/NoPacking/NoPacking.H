@@ -34,7 +34,7 @@ SourceFiles
 #ifndef NoPacking_H
 #define NoPacking_H
 
-#include "PackingModel.H"
+#include "./submodels/MPPIC/PackingModels/PackingModel/PackingModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoPacking.C"
+#   include "./NoPacking.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

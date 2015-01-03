@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "jplotSetWriter.H"
-#include "clock.H"
-#include "coordSet.H"
-#include "fileName.H"
-#include "OFstream.H"
+#include "./jplotSetWriter.H"
+#include "./global/clock/clock.H"
+#include "./coordSet/coordSet.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //

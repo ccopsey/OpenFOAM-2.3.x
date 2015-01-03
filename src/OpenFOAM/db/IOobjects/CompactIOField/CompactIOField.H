@@ -39,8 +39,8 @@ SourceFiles
 #ifndef CompactIOField_H
 #define CompactIOField_H
 
-#include "IOField.H"
-#include "regIOobject.H"
+#include "./db/IOobjects/IOField/IOField.H"
+#include "./db/regIOobject/regIOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -130,7 +130,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "CompactIOField.C"
+#   include "./CompactIOField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

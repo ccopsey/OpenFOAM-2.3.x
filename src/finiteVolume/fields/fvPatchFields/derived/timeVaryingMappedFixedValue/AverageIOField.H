@@ -35,8 +35,8 @@ SourceFiles
 #ifndef AverageIOField_H
 #define AverageIOField_H
 
-#include "regIOobject.H"
-#include "Field.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./fields/Fields/Field/Field.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -111,7 +111,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "AverageIOField.C"
+#   include "./AverageIOField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

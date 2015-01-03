@@ -47,7 +47,7 @@ SourceFiles
 #ifndef slicedFvPatchField_H
 #define slicedFvPatchField_H
 
-#include "fvPatchField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -239,7 +239,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "slicedFvPatchField.C"
+#   include "./slicedFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

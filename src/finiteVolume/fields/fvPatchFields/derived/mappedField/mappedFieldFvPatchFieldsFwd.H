@@ -26,7 +26,7 @@ License
 #ifndef mappedFieldFvPatchFieldsFwd_H
 #define mappedFieldFvPatchFieldsFwd_H
 
-#include "fieldTypes.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

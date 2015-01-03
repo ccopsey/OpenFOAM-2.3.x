@@ -37,10 +37,10 @@ SourceFiles
 #ifndef rhoChemistryModel_H
 #define rhoChemistryModel_H
 
-#include "basicChemistryModel.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
-#include "rhoReactionThermo.H"
+#include "./chemistryModel/basicChemistryModel/basicChemistryModel.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./rhoReactionThermo/rhoReactionThermo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -124,7 +124,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "rhoChemistryModelI.H"
+#include "./rhoChemistryModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

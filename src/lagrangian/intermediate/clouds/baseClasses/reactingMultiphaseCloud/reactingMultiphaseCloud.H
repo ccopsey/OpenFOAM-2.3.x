@@ -35,7 +35,7 @@ SourceFiles
 #ifndef reactingMultiphaseCloud_H
 #define reactingMultiphaseCloud_H
 
-#include "typeInfo.H"
+#include "./db/typeInfo/typeInfo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

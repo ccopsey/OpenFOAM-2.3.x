@@ -117,22 +117,22 @@ SourceFiles
 #define CGAL_INEXACT
 #define CGAL_HIERARCHY
 
-#include "CGALTriangulation2Ddefs.H"
+#include "./CGALTriangulation2Ddefs.H"
 
-#include "Time.H"
-#include "point2DFieldFwd.H"
-#include "dictionary.H"
-#include "Switch.H"
-#include "PackedBoolList.H"
-#include "EdgeMap.H"
-#include "cv2DControls.H"
-#include "tolerances.H"
-#include "meshTools.H"
-#include "triSurface.H"
-#include "searchableSurfaces.H"
-#include "conformationSurfaces.H"
-#include "relaxationModel.H"
-#include "cellSizeAndAlignmentControls.H"
+#include "./db/Time/Time.H"
+#include "./meshes/primitiveShapes/point2D/point2DFieldFwd.H"
+#include "./db/dictionary/dictionary.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./meshes/meshShapes/edge/EdgeMap.H"
+#include "./conformalVoronoi2DMesh/cv2DControls/cv2DControls.H"
+#include "./matrices/tolerances/tolerances.H"
+#include "./meshTools/meshTools.H"
+#include "./triSurface/triSurface.H"
+#include "./searchableSurface/searchableSurfaces.H"
+#include "./conformationSurfaces/conformationSurfaces.H"
+#include "./relaxationModel/relaxationModel/relaxationModel.H"
+#include "./cellShapeControl/cellSizeAndAlignmentControl/cellSizeAndAlignmentControls.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -465,7 +465,7 @@ inline bool outsideTriangle(const CV2D::Face_handle fc);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "CV2DI.H"
+#include "./CV2DI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef VirtualMassForce_H
 #define VirtualMassForce_H
 
-#include "PressureGradientForce.H"
+#include "./submodels/Kinematic/ParticleForces/PressureGradient/PressureGradientForce.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -124,7 +124,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "VirtualMassForce.C"
+    #include "./VirtualMassForce.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

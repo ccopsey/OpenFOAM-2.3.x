@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PatchInjection.H"
-#include "TimeDataEntry.H"
-#include "distributionModel.H"
+#include "./PatchInjection.H"
+#include "./primitives/functions/TimeDataEntry/TimeDataEntry/TimeDataEntry.H"
+#include "./distributionModel/distributionModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

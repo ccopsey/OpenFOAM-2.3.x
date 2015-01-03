@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "MULES.H"
-#include "upwind.H"
-#include "fvcSurfaceIntegrate.H"
-#include "slicedSurfaceFields.H"
-#include "wedgeFvPatch.H"
-#include "syncTools.H"
+#include "./MULES.H"
+#include "./interpolation/surfaceInterpolation/limitedSchemes/upwind/upwind.H"
+#include "./finiteVolume/fvc/fvcSurfaceIntegrate.H"
+#include "./fields/surfaceFields/slicedSurfaceFields.H"
+#include "./fvMesh/fvPatches/constraint/wedge/wedgeFvPatch.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -26,7 +26,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
 
     Info<< "Creating phaseChangeTwoPhaseMixture\n" << endl;

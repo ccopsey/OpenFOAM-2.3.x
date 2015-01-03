@@ -35,7 +35,7 @@ SourceFiles
 #ifndef mapNearestAMI_H
 #define mapNearestAMI_H
 
-#include "AMIMethod.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIMethod/AMIMethod/AMIMethod.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -149,7 +149,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "mapNearestAMI.C"
+#   include "./mapNearestAMI.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

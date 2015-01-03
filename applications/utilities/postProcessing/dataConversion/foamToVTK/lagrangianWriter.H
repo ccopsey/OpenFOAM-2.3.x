@@ -36,11 +36,11 @@ SourceFiles
 #ifndef lagrangianWriter_H
 #define lagrangianWriter_H
 
-#include "OFstream.H"
-#include "Cloud.H"
-#include "volFields.H"
-#include "pointFields.H"
-#include "vtkMesh.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./Cloud/Cloud.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./vtkMesh.H"
 
 using namespace Foam;
 
@@ -107,7 +107,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "lagrangianWriterTemplates.C"
+#   include "./lagrangianWriterTemplates.C"
 #endif
 
 

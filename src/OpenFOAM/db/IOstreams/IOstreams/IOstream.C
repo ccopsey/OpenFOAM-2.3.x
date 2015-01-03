@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IOstream.H"
-#include "error.H"
-#include "Switch.H"
+#include "./IOstream.H"
+#include "./db/error/error.H"
+#include "./primitives/bools/Switch/Switch.H"
 #include <sstream>
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

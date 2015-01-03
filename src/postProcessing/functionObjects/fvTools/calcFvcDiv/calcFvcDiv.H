@@ -41,11 +41,11 @@ SourceFiles
 #ifndef calcFvcDiv_H
 #define calcFvcDiv_H
 
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
-#include "pointFieldFwd.H"
-#include "OFstream.H"
-#include "Switch.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -171,7 +171,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "calcFvcDivTemplates.C"
+    #include "./calcFvcDivTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

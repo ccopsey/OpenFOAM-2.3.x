@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "leastSquaresVectors.H"
-#include "volFields.H"
+#include "./leastSquaresVectors.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

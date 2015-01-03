@@ -28,10 +28,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "longLong.H"
-#include "IOstreams.H"
+#include "./longLong.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #include <sstream>
 

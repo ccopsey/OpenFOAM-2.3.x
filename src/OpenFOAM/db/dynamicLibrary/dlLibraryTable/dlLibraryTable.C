@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dlLibraryTable.H"
-#include "OSspecific.H"
-#include "long.H"
+#include "./dlLibraryTable.H"
+#include "./include/OSspecific.H"
+#include "./primitives/ints/long/long.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

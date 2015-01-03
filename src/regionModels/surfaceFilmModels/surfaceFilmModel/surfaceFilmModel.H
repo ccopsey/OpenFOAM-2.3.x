@@ -37,14 +37,14 @@ SourceFiles
 #ifndef surfaceFilmModel_H
 #define surfaceFilmModel_H
 
-#include "singleLayerRegion.H"
+#include "./singleLayerRegion/singleLayerRegion.H"
 
-#include "dimensionedVector.H"
-#include "runTimeSelectionTables.H"
-#include "volFieldsFwd.H"
-#include "DimensionedField.H"
-#include "labelList.H"
-#include "NamedEnum.H"
+#include "./dimensionedTypes/dimensionedVector/dimensionedVector.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -240,7 +240,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "surfaceFilmModelI.H"
+#include "./surfaceFilmModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

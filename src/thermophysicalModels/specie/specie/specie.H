@@ -36,9 +36,9 @@ SourceFiles
 #ifndef specie_H
 #define specie_H
 
-#include "word.H"
-#include "scalar.H"
-#include "dictionary.H"
+#include "./primitives/strings/word/word.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -168,7 +168,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "specieI.H"
+#include "./specieI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

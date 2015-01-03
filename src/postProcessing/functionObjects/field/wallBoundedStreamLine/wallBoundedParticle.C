@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wallBoundedParticle.H"
-#include "vectorFieldIOField.H"
+#include "./wallBoundedParticle.H"
+#include "./fields/Fields/vectorField/vectorFieldIOField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

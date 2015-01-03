@@ -26,13 +26,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4Foam.H"
-#include "vtkPV4FoamReader.h"
+#include "./vtkPV4Foam.H"
+#include "./PV4Readers/PV4FoamReader/PV4FoamReader/vtkPV4FoamReader.h"
 
 // OpenFOAM includes
-#include "fvMesh.H"
-#include "Time.H"
-#include "IFstream.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 #include "memInfo.H"
 
 // VTK includes

@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "KinematicParcel.H"
-#include "forceSuSp.H"
-#include "IntegrationScheme.H"
-#include "meshTools.H"
+#include "./KinematicParcel.H"
+#include "./submodels/Kinematic/ParticleForces/forceSuSp/forceSuSp.H"
+#include "./IntegrationScheme/IntegrationScheme/IntegrationScheme.H"
+#include "./meshTools/meshTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 
@@ -500,6 +500,6 @@ Foam::scalar Foam::KinematicParcel<ParcelType>::wallImpactDistance
 
 // * * * * * * * * * * * * * * IOStream operators  * * * * * * * * * * * * * //
 
-#include "KinematicParcelIO.C"
+#include "./KinematicParcelIO.C"
 
 // ************************************************************************* //

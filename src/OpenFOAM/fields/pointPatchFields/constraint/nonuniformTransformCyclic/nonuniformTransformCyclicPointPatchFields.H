@@ -26,8 +26,8 @@ License
 #ifndef nonuniformTransformCyclicPointPatchFields_H
 #define nonuniformTransformCyclicPointPatchFields_H
 
-#include "nonuniformTransformCyclicPointPatchField.H"
-#include "fieldTypes.H"
+#include "./nonuniformTransformCyclicPointPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

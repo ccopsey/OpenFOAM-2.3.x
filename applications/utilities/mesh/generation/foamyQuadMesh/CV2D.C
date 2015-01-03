@@ -23,12 +23,12 @@ License
 
 \*----------------------------------------------------------------------------*/
 
-#include "CV2D.H"
-#include "Random.H"
-#include "transform.H"
-#include "IFstream.H"
-#include "uint.H"
-#include "ulong.H"
+#include "./CV2D.H"
+#include "./primitives/random/Random/Random.H"
+#include "./primitives/transform/transform.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./primitives/ints/uint/uint.H"
+#include "./primitives/ints/ulong/ulong.H"
 
 namespace Foam
 {

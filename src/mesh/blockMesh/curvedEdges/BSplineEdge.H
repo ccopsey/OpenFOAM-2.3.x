@@ -35,8 +35,8 @@ SourceFiles
 #ifndef BSplineEdge_H
 #define BSplineEdge_H
 
-#include "curvedEdge.H"
-#include "BSpline.H"
+#include "./curvedEdge.H"
+#include "./BSpline.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

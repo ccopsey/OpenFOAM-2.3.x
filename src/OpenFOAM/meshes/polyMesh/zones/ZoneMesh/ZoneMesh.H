@@ -35,11 +35,11 @@ SourceFiles
 #ifndef ZoneMesh_H
 #define ZoneMesh_H
 
-#include "List.H"
-#include "regIOobject.H"
-#include "pointField.H"
-#include "Map.H"
-#include "PackedBoolList.H"
+#include "./containers/Lists/List/List.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -204,7 +204,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ZoneMesh.C"
+#   include "./ZoneMesh.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

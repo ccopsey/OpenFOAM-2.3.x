@@ -39,11 +39,11 @@ SourceFiles
 #ifndef tetCell_H
 #define tetCell_H
 
-#include "FixedList.H"
-#include "triFace.H"
-#include "edge.H"
-#include "pointField.H"
-#include "tetrahedron.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./meshes/meshShapes/triFace/triFace.H"
+#include "./meshes/meshShapes/edge/edge.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetrahedron.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -128,7 +128,7 @@ inline bool contiguous<tetCell>() {return true;}
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "tetCellI.H"
+#include "./tetCellI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

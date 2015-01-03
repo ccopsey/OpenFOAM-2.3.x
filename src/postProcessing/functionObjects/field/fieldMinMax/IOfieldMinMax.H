@@ -32,8 +32,8 @@ Description
 #ifndef IOfieldMinMax_H
 #define IOfieldMinMax_H
 
-#include "fieldMinMax.H"
-#include "IOOutputFilter.H"
+#include "./fieldMinMax.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

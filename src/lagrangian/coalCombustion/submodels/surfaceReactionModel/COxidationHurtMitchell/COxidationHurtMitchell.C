@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "COxidationHurtMitchell.H"
-#include "mathematicalConstants.H"
+#include "./COxidationHurtMitchell.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

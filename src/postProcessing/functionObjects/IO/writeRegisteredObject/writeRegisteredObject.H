@@ -74,8 +74,8 @@ SourceFiles
 #ifndef writeRegisteredObject_H
 #define writeRegisteredObject_H
 
-#include "wordReList.H"
-#include "runTimeSelectionTables.H"
+#include "./primitives/strings/lists/wordReList.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

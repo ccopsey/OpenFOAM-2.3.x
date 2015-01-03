@@ -32,10 +32,10 @@ Description
 #ifndef basicKinematicMPPICCloud_H
 #define basicKinematicMPPICCloud_H
 
-#include "Cloud.H"
-#include "KinematicCloud.H"
-#include "MPPICCloud.H"
-#include "basicKinematicMPPICParcel.H"
+#include "./Cloud/Cloud.H"
+#include "./clouds/Templates/KinematicCloud/KinematicCloud.H"
+#include "./clouds/Templates/MPPICCloud/MPPICCloud.H"
+#include "./parcels/derived/basicKinematicMPPICParcel/basicKinematicMPPICParcel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

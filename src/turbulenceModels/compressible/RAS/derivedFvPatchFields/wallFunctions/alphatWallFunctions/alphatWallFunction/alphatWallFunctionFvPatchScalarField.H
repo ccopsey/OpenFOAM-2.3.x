@@ -76,7 +76,7 @@ SourceFiles
 #ifndef compressibleAlphatWallFunctionFvPatchScalarField_H
 #define compressibleAlphatWallFunctionFvPatchScalarField_H
 
-#include "fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -34,7 +34,7 @@ Description
 
 #define MPPIC
 
-#include "DPMFoam.C"
+#include "./DPMFoam.C"
 
 
 // ************************************************************************* //

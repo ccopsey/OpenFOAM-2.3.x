@@ -29,19 +29,19 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "topoSetSource.H"
-#include "cellSet.H"
-#include "faceSet.H"
-#include "pointSet.H"
-#include "globalMeshData.H"
-#include "timeSelector.H"
-#include "IOobjectList.H"
-#include "cellZoneSet.H"
-#include "faceZoneSet.H"
-#include "pointZoneSet.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./sets/topoSetSource/topoSetSource.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./sets/topoSets/pointSet.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./sets/topoSets/cellZoneSet.H"
+#include "./sets/topoSets/faceZoneSet.H"
+#include "./sets/topoSets/pointZoneSet.H"
 
 using namespace Foam;
 
@@ -195,25 +195,25 @@ polyMesh::readUpdateState meshReadUpdate(polyMesh& mesh)
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions(true, false);
-    #include "addDictOption.H"
-    #include "addRegionOption.H"
+    #include "./include/addDictOption.H"
+    #include "./include/addRegionOption.H"
     argList::addBoolOption
     (
         "noSync",
         "do not synchronise selection across coupled patches"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::selectIfPresent(runTime, args);
 
-    #include "createNamedPolyMesh.H"
+    #include "./include/createNamedPolyMesh.H"
 
     const bool noSync = args.optionFound("noSync");
 
     const word dictName("topoSetDict");
-    #include "setSystemMeshDictionaryIO.H"
+    #include "./include/setSystemMeshDictionaryIO.H"
 
     Info<< "Reading " << dictName << "\n" << endl;
 

@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "surfaceWriter.H"
+#include "./surfaceWriter.H"
 
-#include "MeshedSurfaceProxy.H"
-#include "proxySurfaceWriter.H"
+#include "./MeshedSurfaceProxy/MeshedSurfaceProxy.H"
+#include "./proxy/proxySurfaceWriter.H"
 
-#include "HashTable.H"
-#include "word.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./primitives/strings/word/word.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

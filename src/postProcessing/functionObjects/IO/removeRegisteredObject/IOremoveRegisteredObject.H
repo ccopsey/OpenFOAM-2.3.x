@@ -32,8 +32,8 @@ Description
 #ifndef IOremoveRegisteredObject_H
 #define IOremoveRegisteredObject_H
 
-#include "removeRegisteredObject.H"
-#include "IOOutputFilter.H"
+#include "./removeRegisteredObject.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PlessisMasliyahDragForce.H"
-#include "volFields.H"
+#include "./PlessisMasliyahDragForce.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

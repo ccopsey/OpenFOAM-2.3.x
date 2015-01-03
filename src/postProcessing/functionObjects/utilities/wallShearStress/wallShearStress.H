@@ -73,10 +73,10 @@ SourceFiles
 #ifndef wallShearStress_H
 #define wallShearStress_H
 
-#include "functionObjectFile.H"
-#include "volFieldsFwd.H"
-#include "Switch.H"
-#include "OFstream.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

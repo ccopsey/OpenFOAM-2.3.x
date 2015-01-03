@@ -27,12 +27,12 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
-#include "Time.H"
-#include "fvMesh.H"
-#include "vectorIOField.H"
-#include "volFields.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/Time/Time.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/Fields/vectorField/vectorIOField.H"
+#include "./fields/volFields/volFields.H"
 
 using namespace Foam;
 
@@ -42,14 +42,14 @@ using namespace Foam;
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
-#   include "addRegionOption.H"
+#   include "./include/addRegionOption.H"
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
-#   include "createNamedMesh.H"
+#   include "./include/createNamedMesh.H"
 
     forAll(timeDirs, timeI)
     {

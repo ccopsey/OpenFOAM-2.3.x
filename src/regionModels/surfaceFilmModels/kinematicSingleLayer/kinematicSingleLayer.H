@@ -35,15 +35,15 @@ SourceFiles
 #ifndef kinematicSingleLayer_H
 #define kinematicSingleLayer_H
 
-#include "surfaceFilmModel.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "fvMatrices.H"
+#include "./surfaceFilmModel/surfaceFilmModel.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fvMatrices/fvMatrices.H"
 
-#include "injectionModelList.H"
-#include "forceList.H"
-#include "filmTurbulenceModel.H"
+#include "./submodels/kinematic/injectionModel/injectionModelList/injectionModelList.H"
+#include "./submodels/kinematic/force/forceList/forceList.H"
+#include "./submodels/kinematic/filmTurbulenceModel/filmTurbulenceModel/filmTurbulenceModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -538,12 +538,12 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "kinematicSingleLayerTemplates.C"
+#   include "./kinematicSingleLayerTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "kinematicSingleLayerI.H"
+#include "./kinematicSingleLayerI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

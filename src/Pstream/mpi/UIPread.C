@@ -28,9 +28,9 @@ Description
 
 #include "mpi.h"
 
-#include "UIPstream.H"
-#include "PstreamGlobals.H"
-#include "IOstreams.H"
+#include "./db/IOstreams/Pstreams/UIPstream.H"
+#include "./PstreamGlobals.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * * * * Constructor * * * * * * * * * * * * * * * //
 

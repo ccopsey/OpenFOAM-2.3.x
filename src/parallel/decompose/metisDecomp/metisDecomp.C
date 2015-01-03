@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "metisDecomp.H"
-#include "addToRunTimeSelectionTable.H"
-#include "floatScalar.H"
-#include "Time.H"
+#include "./metisDecomp.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./primitives/Scalar/floatScalar/floatScalar.H"
+#include "./db/Time/Time.H"
 
 extern "C"
 {

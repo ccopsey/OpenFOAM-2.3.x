@@ -43,14 +43,14 @@ SourceFiles
 #ifndef meshRefinement_H
 #define meshRefinement_H
 
-#include "hexRef8.H"
-#include "mapPolyMesh.H"
-#include "autoPtr.H"
-#include "labelPair.H"
-#include "indirectPrimitivePatch.H"
-#include "pointFieldsFwd.H"
-#include "Tuple2.H"
-#include "pointIndexHit.H"
+#include "./polyTopoChange/polyTopoChange/hexRef8.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./fields/GeometricFields/pointFields/pointFieldsFwd.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./meshes/primitiveShapes/objectHit/pointIndexHit.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -1142,7 +1142,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "meshRefinementTemplates.C"
+#   include "./meshRefinementTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

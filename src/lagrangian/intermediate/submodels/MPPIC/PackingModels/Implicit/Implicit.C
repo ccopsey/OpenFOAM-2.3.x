@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Implicit.H"
-#include "fixedValueFvsPatchField.H"
-#include "fvmDdt.H"
-#include "fvmDiv.H"
-#include "fvmLaplacian.H"
-#include "fvcReconstruct.H"
-#include "volPointInterpolation.H"                                              
+#include "./Implicit.H"
+#include "./fields/fvsPatchFields/basic/fixedValue/fixedValueFvsPatchField.H"
+#include "./finiteVolume/fvm/fvmDdt.H"
+#include "./finiteVolume/fvm/fvmDiv.H"
+#include "./finiteVolume/fvm/fvmLaplacian.H"
+#include "./finiteVolume/fvc/fvcReconstruct.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"                                              
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

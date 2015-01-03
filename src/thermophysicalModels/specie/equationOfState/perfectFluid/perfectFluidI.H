@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "perfectFluid.H"
+#include "./perfectFluid.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

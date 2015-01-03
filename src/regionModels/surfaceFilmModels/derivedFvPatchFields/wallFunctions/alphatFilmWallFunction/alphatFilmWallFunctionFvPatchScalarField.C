@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "alphatFilmWallFunctionFvPatchScalarField.H"
-#include "RASModel.H"
-#include "surfaceFilmModel.H"
-#include "fvPatchFieldMapper.H"
-#include "volFields.H"
-#include "addToRunTimeSelectionTable.H"
-#include "mappedWallPolyPatch.H"
-#include "mapDistribute.H"
+#include "./alphatFilmWallFunctionFvPatchScalarField.H"
+#include "./RASModel/RASModel.H"
+#include "./surfaceFilmModel/surfaceFilmModel.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./mappedPatches/mappedPolyPatch/mappedWallPolyPatch.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

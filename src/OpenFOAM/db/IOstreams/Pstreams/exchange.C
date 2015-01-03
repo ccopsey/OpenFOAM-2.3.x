@@ -26,10 +26,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "Pstream.H"
-#include "contiguous.H"
-#include "PstreamCombineReduceOps.H"
-#include "UPstream.H"
+#include "./Pstream.H"
+#include "./primitives/contiguous/contiguous.H"
+#include "./PstreamCombineReduceOps.H"
+#include "./UPstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

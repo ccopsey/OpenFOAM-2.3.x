@@ -35,7 +35,7 @@ SourceFiles
 #ifndef cellPointWeight_H
 #define cellPointWeight_H
 
-#include "vector.H"
+#include "./primitives/Vector/vector/vector.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

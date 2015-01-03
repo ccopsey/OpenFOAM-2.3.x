@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CodedSource.H"
-#include "stringOps.H"
+#include "./CodedSource.H"
+#include "./primitives/strings/stringOps/stringOps.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

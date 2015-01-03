@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "NonInertialFrameForce.H"
-#include "uniformDimensionedFields.H"
+#include "./NonInertialFrameForce.H"
+#include "./fields/UniformDimensionedFields/uniformDimensionedFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

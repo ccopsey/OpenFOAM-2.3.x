@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "setUpdater.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "mapPolyMesh.H"
-#include "IOobjectList.H"
+#include "./setUpdater.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./db/IOobjectList/IOobjectList.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

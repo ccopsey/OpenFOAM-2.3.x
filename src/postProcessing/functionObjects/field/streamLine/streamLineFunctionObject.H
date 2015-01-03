@@ -36,8 +36,8 @@ SourceFiles
 #ifndef streamLineFunctionObject_H
 #define streamLineFunctionObject_H
 
-#include "streamLine.H"
-#include "OutputFilterFunctionObject.H"
+#include "./streamLine.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

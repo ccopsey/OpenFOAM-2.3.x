@@ -49,9 +49,9 @@ SourceFiles
 #ifndef greyMeanSolidAbsorptionEmission_H
 #define greyMeanSolidAbsorptionEmission_H
 
-#include "absorptionEmissionModel.H"
-#include "solidThermo.H"
-#include "basicMultiComponentMixture.H"
+#include "./submodels/absorptionEmissionModel/absorptionEmissionModel/absorptionEmissionModel.H"
+#include "./solidThermo/solidThermo.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

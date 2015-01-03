@@ -36,12 +36,12 @@ SourceFiles
 #ifndef basicChemistryModel_H
 #define basicChemistryModel_H
 
-#include "IOdictionary.H"
-#include "Switch.H"
-#include "scalarField.H"
-#include "volFieldsFwd.H"
-#include "volMesh.H"
-#include "DimensionedField.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./volMesh/volMesh.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -184,10 +184,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "basicChemistryModelI.H"
+#include "./basicChemistryModelI.H"
 
 #ifdef NoRepository
-#   include "basicChemistryModelTemplates.C"
+#   include "./basicChemistryModelTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

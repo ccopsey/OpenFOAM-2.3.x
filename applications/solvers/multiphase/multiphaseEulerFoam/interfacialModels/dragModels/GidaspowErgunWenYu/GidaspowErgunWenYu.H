@@ -36,7 +36,7 @@ SourceFiles
 #ifndef GidaspowErgunWenYu_H
 #define GidaspowErgunWenYu_H
 
-#include "dragModel.H"
+#include "./dragModels/dragModel/dragModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

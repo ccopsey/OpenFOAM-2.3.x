@@ -35,8 +35,8 @@ SourceFiles
 #ifndef IOMap_H
 #define IOMap_H
 
-#include "Map.H"
-#include "regIOobject.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./db/regIOobject/regIOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "IOMap.C"
+#   include "./IOMap.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

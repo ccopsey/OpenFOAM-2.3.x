@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "GAMGSolver.H"
+#include "./GAMGSolver.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

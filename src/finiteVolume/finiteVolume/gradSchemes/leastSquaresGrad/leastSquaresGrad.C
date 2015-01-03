@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "leastSquaresGrad.H"
-#include "leastSquaresVectors.H"
-#include "gaussGrad.H"
-#include "fvMesh.H"
-#include "volMesh.H"
-#include "surfaceMesh.H"
-#include "GeometricField.H"
-#include "zeroGradientFvPatchField.H"
+#include "./leastSquaresGrad.H"
+#include "./leastSquaresVectors.H"
+#include "./finiteVolume/gradSchemes/gaussGrad/gaussGrad.H"
+#include "./fvMesh/fvMesh.H"
+#include "./volMesh/volMesh.H"
+#include "./surfaceMesh/surfaceMesh.H"
+#include "./fields/GeometricFields/GeometricField/GeometricField.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

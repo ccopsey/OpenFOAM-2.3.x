@@ -29,13 +29,13 @@ set(LIBRARIES
   libsampling
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/finiteVolume/include.cmake)
-include(../../../../src/fvOptions/include.cmake)
-include(../../../../src/meshTools/include.cmake)
-include(../../../../src/sampling/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/finiteVolume)
+include_directories(../../../../src/fvOptions)
+include_directories(../../../../src/meshTools)
+include_directories(../../../../src/sampling)
 
 add_executable(scalarTransportFoam ${SOURCES})
 

@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "searchableSurfaces.H"
-#include "searchableSurfacesQueries.H"
-#include "ListOps.H"
-#include "Time.H"
+#include "./searchableSurfaces.H"
+#include "./searchableSurfacesQueries.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./db/Time/Time.H"
 //#include "vtkSetWriter.H"
-#include "DynamicField.H"
+#include "./fields/Fields/DynamicField/DynamicField.H"
 //#include "OBJstream.H"
-#include "PatchTools.H"
-#include "triSurfaceMesh.H"
+#include "./meshes/primitiveMesh/PatchTools/PatchTools.H"
+#include "./triSurfaceMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

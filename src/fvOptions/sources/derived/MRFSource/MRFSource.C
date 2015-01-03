@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "MRFSource.H"
-#include "fvMesh.H"
-#include "fvMatrices.H"
-#include "MRFZone.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./MRFSource.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./cfdTools/general/MRF/MRFZone.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

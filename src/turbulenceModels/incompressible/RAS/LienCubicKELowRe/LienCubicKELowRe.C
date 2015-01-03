@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LienCubicKELowRe.H"
-#include "wallFvPatch.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./LienCubicKELowRe.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibility/wallFunctions/backwardsCompatibilityWallFunctions.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -467,8 +467,8 @@ void LienCubicKELowRe::correct()
 
     epsEqn().relax();
 
-    #include "LienCubicKELowReSetWallDissipation.H"
-    #include "wallDissipationI.H"
+    #include "./LienCubicKELowReSetWallDissipation.H"
+    #include "./include/wallDissipationI.H"
 
     solve(epsEqn);
     bound(epsilon_, epsilonMin_);

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef rawGraph_H
 #define rawGraph_H
 
-#include "graph.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -65,10 +65,10 @@ SourceFiles
 #ifndef partialWrite_H
 #define partialWrite_H
 
-#include "HashSet.H"
-#include "runTimeSelectionTables.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -213,7 +213,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "partialWriteTemplates.C"
+#   include "./partialWriteTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

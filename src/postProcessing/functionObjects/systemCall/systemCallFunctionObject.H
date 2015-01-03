@@ -36,8 +36,8 @@ SourceFiles
 #ifndef systemCallFunctionObject_H
 #define systemCallFunctionObject_H
 
-#include "systemCall.H"
-#include "OutputFilterFunctionObject.H"
+#include "./systemCall.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

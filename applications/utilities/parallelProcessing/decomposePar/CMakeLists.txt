@@ -40,15 +40,15 @@ set(LIBRARIES
   libregionModels
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/finiteVolume/include.cmake)
-include(../../../../src/parallel/decompose/decompose/include.cmake)
-include(../../../../src/parallel/decompose/decompositionMethods/include.cmake)
-include(../../../../src/lagrangian/basic/include.cmake)
-include(../../../../src/meshTools/include.cmake)
-include(../../../../src/regionModels/regionModel/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/finiteVolume)
+include_directories(../../../../src/parallel/decompose/decompose)
+include_directories(../../../../src/parallel/decompose/decompositionMethods)
+include_directories(../../../../src/lagrangian/basic)
+include_directories(../../../../src/meshTools)
+include_directories(../../../../src/regionModels/regionModel)
 
 add_executable(decomposePar ${SOURCES})
 

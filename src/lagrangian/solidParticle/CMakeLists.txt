@@ -29,12 +29,12 @@ set(LIBRARIES
   libfiniteVolume
 )
 
-include(include.cmake)
-include(../../../src/OpenFOAM/include.cmake)
-include(../../../src/OSspecific/POSIX/include.cmake)
-include(../../../src/finiteVolume/include.cmake)
-include(../../../src/meshTools/include.cmake)
-include(../../../src/lagrangian/basic/include.cmake)
+include_directories(.)
+include_directories(../../../src/OpenFOAM)
+include_directories(../../../src/OSspecific/POSIX)
+include_directories(../../../src/finiteVolume)
+include_directories(../../../src/meshTools)
+include_directories(../../../src/lagrangian/basic)
 
 add_library(libsolidParticle ${SOURCES})
 set_target_properties(libsolidParticle PROPERTIES PREFIX "")

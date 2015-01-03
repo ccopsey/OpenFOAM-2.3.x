@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvPatch.H"
-#include "HashTable.H"
-#include "cyclicAMIPolyPatch.H"
+#include "./fvPatch.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./AMIInterpolation/patches/cyclicAMI/cyclicAMIPolyPatch/cyclicAMIPolyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

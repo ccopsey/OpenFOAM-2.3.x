@@ -29,9 +29,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "mergePolyMesh.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./mergePolyMesh.H"
 
 using namespace Foam;
 
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
     );
 
     argList::noParallel();
-    #include "addOverwriteOption.H"
+    #include "./include/addOverwriteOption.H"
 
     argList::validArgs.append("masterCase");
     argList::addOption
@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
     Info<< "Master:      " << masterCase << "  region " << masterRegion << nl
         << "mesh to add: " << addCase    << "  region " << addRegion << endl;
 
-    #include "createTimes.H"
+    #include "./createTimes.H"
 
     Info<< "Reading master mesh for time = " << runTimeMaster.timeName() << nl;
 

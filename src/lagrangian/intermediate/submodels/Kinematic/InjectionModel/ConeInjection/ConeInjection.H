@@ -42,10 +42,10 @@ SourceFiles
 #ifndef ConeInjection_H
 #define ConeInjection_H
 
-#include "InjectionModel.H"
-#include "distributionModel.H"
-#include "vectorList.H"
-#include "TimeDataEntry.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
+#include "./distributionModel/distributionModel.H"
+#include "./primitives/Vector/lists/vectorList.H"
+#include "./primitives/functions/TimeDataEntry/TimeDataEntry/TimeDataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -197,7 +197,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ConeInjection.C"
+#   include "./ConeInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

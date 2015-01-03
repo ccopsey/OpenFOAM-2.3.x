@@ -35,7 +35,7 @@ SourceFiles
 #ifndef inhomogeneousMixture_H
 #define inhomogeneousMixture_H
 
-#include "basicMultiComponentMixture.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -169,7 +169,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 #ifdef NoRepository
-#   include "inhomogeneousMixture.C"
+#   include "./inhomogeneousMixture.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

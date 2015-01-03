@@ -37,7 +37,7 @@ SourceFiles
 #ifndef SquareMatrix_H
 #define SquareMatrix_H
 
-#include "Matrix.H"
+#include "./matrices/Matrix/Matrix.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -102,12 +102,12 @@ scalar det(SquareMatrix<Type>&);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "SquareMatrixI.H"
+#   include "./SquareMatrixI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "SquareMatrix.C"
+#   include "./SquareMatrix.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

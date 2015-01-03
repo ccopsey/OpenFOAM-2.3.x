@@ -35,15 +35,15 @@ SourceFiles
 #ifndef tableReader_H
 #define tableReader_H
 
-#include "fileName.H"
-#include "wordList.H"
-#include "vector.H"
-#include "tensor.H"
-#include "typeInfo.H"
-#include "runTimeSelectionTables.H"
-#include "autoPtr.H"
-#include "dictionary.H"
-#include "Tuple2.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./primitives/Tensor/tensor/tensor.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/dictionary/dictionary.H"
+#include "./primitives/Tuple2/Tuple2.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -122,7 +122,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "tableReader.C"
+#   include "./tableReader.C"
 #endif
 
 

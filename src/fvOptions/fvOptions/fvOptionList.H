@@ -35,10 +35,10 @@ SourceFile
 #ifndef optionList_H
 #define optionList_H
 
-#include "PtrList.H"
-#include "GeometricField.H"
-#include "fvPatchField.H"
-#include "fvOption.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./fields/GeometricFields/GeometricField/GeometricField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchField.H"
+#include "./fvOption.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -228,7 +228,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "fvOptionListTemplates.C"
+    #include "./fvOptionListTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

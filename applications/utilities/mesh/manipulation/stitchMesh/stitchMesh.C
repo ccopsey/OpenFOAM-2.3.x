@@ -60,14 +60,14 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "polyTopoChanger.H"
-#include "mapPolyMesh.H"
-#include "ListOps.H"
-#include "slidingInterface.H"
-#include "perfectInterface.H"
-#include "IOobjectList.H"
-#include "ReadFields.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./polyTopoChange/polyTopoChanger/polyTopoChanger.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./slidingInterface/slidingInterface.H"
+#include "./perfectInterface/perfectInterface.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./fields/ReadFields/ReadFields.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -203,8 +203,8 @@ int main(int argc, char *argv[])
     );
 
     argList::noParallel();
-    #include "addOverwriteOption.H"
-    #include "addRegionOption.H"
+    #include "./include/addOverwriteOption.H"
+    #include "./include/addRegionOption.H"
 
     argList::validArgs.append("masterPatch");
     argList::validArgs.append("slavePatch");
@@ -226,10 +226,10 @@ int main(int argc, char *argv[])
         "dictionary file with tolerances"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     const word oldInstance = mesh.pointsInstance();
 

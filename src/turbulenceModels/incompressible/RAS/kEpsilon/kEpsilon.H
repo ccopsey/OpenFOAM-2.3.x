@@ -49,7 +49,7 @@ SourceFiles
 #ifndef kEpsilon_H
 #define kEpsilon_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SurfaceFilmModel.H"
-#include "surfaceFilmModel.H"
-#include "mathematicalConstants.H"
+#include "./SurfaceFilmModel.H"
+#include "./surfaceFilmModel/surfaceFilmModel.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant;
 
@@ -303,6 +303,6 @@ void Foam::SurfaceFilmModel<CloudType>::info(Ostream& os)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SurfaceFilmModelNew.C"
+#include "./SurfaceFilmModelNew.C"
 
 // ************************************************************************* //

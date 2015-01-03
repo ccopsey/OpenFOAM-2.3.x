@@ -38,7 +38,7 @@ SourceFiles
 #ifndef keyType_H
 #define keyType_H
 
-#include "word.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -141,7 +141,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "keyTypeI.H"
+#include "./keyTypeI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -26,10 +26,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvSurfaceMapper.H"
-#include "fvMesh.H"
-#include "mapPolyMesh.H"
-#include "faceMapper.H"
+#include "./fvSurfaceMapper.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./meshes/polyMesh/mapPolyMesh/faceMapper/faceMapper.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

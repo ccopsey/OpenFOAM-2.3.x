@@ -35,7 +35,7 @@ SourceFiles
 #ifndef compressibleLaminar_H
 #define compressibleLaminar_H
 
-#include "turbulenceModel.H"
+#include "./turbulenceModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

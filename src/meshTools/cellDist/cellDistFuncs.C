@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellDistFuncs.H"
-#include "polyMesh.H"
-#include "wallPolyPatch.H"
-#include "polyBoundaryMesh.H"
+#include "./cellDistFuncs.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

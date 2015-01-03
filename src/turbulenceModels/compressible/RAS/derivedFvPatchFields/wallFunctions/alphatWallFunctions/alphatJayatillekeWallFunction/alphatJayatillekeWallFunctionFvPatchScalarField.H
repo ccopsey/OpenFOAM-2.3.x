@@ -64,7 +64,7 @@ SourceFiles
 #ifndef alphatJayatillekeWallFunctionFvPatchScalarField_H
 #define alphatJayatillekeWallFunctionFvPatchScalarField_H
 
-#include "fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

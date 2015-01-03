@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "GAMGSolver.H"
-#include "GAMGInterfaceField.H"
-#include "processorLduInterfaceField.H"
-#include "processorGAMGInterfaceField.H"
+#include "./GAMGSolver.H"
+#include "./interfaceFields/GAMGInterfaceField/GAMGInterfaceField.H"
+#include "./matrices/lduMatrix/lduAddressing/lduInterfaceFields/processorLduInterfaceField/processorLduInterfaceField.H"
+#include "./interfaceFields/processorGAMGInterfaceField/processorGAMGInterfaceField.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

@@ -39,7 +39,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     // Mass flux (corrected by rhoEqn.H)
     surfaceScalarField rhoPhi

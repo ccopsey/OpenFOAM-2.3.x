@@ -45,7 +45,7 @@ SourceFiles
 #ifndef abortCalculation_H
 #define abortCalculation_H
 
-#include "NamedEnum.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

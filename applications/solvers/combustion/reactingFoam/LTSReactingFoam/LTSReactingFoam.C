@@ -30,31 +30,31 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "turbulenceModel.H"
-#include "psiCombustionModel.H"
-#include "multivariateScheme.H"
-#include "pimpleControl.H"
-#include "fvIOoptionList.H"
-#include "fvcSmooth.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./turbulenceModel.H"
+#include "./psiCombustionModel/psiCombustionModel/psiCombustionModel.H"
+#include "./interpolation/surfaceInterpolation/multivariateSchemes/multivariateScheme/multivariateScheme.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./finiteVolume/fvc/fvcSmooth/fvcSmooth.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
 
     pimpleControl pimple(mesh);
 
-    #include "readGravitationalAcceleration.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
     #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "initContinuityErrs.H"
-    #include "readTimeControls.H"
-    #include "compressibleCourantNo.H"
-    #include "setInitialrDeltaT.H"
+    #include "./include/createFvOptions.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./readTimeControls.H"
+    #include "./cfdTools/compressible/compressibleCourantNo.H"
+    #include "./setInitialrDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -62,22 +62,22 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
+        #include "./readTimeControls.H"
 
         runTime++;
 
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "setrDeltaT.H"
+        #include "./setrDeltaT.H"
 
-        #include "rhoEqn.H"
+        #include "./cfdTools/compressible/rhoEqn.H"
 
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
             #include "UEqn.H"
-            #include "YEqn.H"
-            #include "EEqn.H"
+            #include "./YEqn.H"
+            #include "./EEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())

@@ -43,8 +43,8 @@ SourceFiles
 #ifndef DynamicList_H
 #define DynamicList_H
 
-#include "List.H"
-#include "StaticAssert.H"
+#include "./containers/Lists/List/List.H"
+#include "./db/error/StaticAssert.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -249,12 +249,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DynamicListI.H"
+#include "./DynamicListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DynamicList.C"
+#   include "./DynamicList.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

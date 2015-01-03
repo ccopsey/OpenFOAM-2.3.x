@@ -34,13 +34,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "Time.H"
-#include "ReadFields.H"
-#include "singleCellFvMesh.H"
-#include "timeSelector.H"
+#include "./global/argList/argList.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/Time/Time.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./fvMesh/singleCellFvMesh/singleCellFvMesh.H"
+#include "./db/Time/timeSelector.H"
 
 using namespace Foam;
 
@@ -73,12 +73,12 @@ int main(int argc, char *argv[])
     // constant, not false
     timeSelector::addOptions(true, false);
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
-#   include "createNamedMesh.H"
+#   include "./include/createNamedMesh.H"
 
     if (regionName == singleCellName)
     {

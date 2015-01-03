@@ -39,11 +39,11 @@ SourceFiles
 #ifndef functionObjectFile_H
 #define functionObjectFile_H
 
-#include "objectRegistry.H"
-#include "OFstream.H"
-#include "PtrList.H"
-#include "HashSet.H"
-#include "IOmanip.H"
+#include "./db/objectRegistry/objectRegistry.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -202,7 +202,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "functionObjectFileTemplates.C"
+    #include "./functionObjectFileTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

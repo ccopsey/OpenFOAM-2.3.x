@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "processorLduInterfaceField.H"
-#include "diagTensorField.H"
+#include "./processorLduInterfaceField.H"
+#include "./fields/Fields/diagTensorField/diagTensorField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

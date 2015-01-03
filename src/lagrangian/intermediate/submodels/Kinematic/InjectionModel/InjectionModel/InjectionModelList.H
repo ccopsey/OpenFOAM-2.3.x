@@ -35,8 +35,8 @@ SourceFiles
 #ifndef InjectionModelList_H
 #define InjectionModelList_H
 
-#include "PtrList.H"
-#include "InjectionModel.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./InjectionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -128,7 +128,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "InjectionModelList.C"
+#   include "./InjectionModelList.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

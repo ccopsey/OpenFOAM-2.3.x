@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ptscotchDecomp.H"
-#include "addToRunTimeSelectionTable.H"
-#include "Time.H"
+#include "./ptscotchDecomp.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./db/Time/Time.H"
 
 static const char* notImplementedMessage =
 "You are trying to use ptscotch but do not have the "

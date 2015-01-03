@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ConeNozzleInjection.H"
-#include "TimeDataEntry.H"
-#include "mathematicalConstants.H"
-#include "distributionModel.H"
+#include "./ConeNozzleInjection.H"
+#include "./primitives/functions/TimeDataEntry/TimeDataEntry/TimeDataEntry.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./distributionModel/distributionModel.H"
 
 using namespace Foam::constant;
 

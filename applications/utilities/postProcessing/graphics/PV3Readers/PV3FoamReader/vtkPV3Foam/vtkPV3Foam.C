@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV3Foam.H"
-#include "vtkPV3FoamReader.h"
+#include "./vtkPV3Foam.H"
+#include "./PV3Readers/PV3FoamReader/PV3FoamReader/vtkPV3FoamReader.h"
 
 // OpenFOAM includes
-#include "fvMesh.H"
-#include "Time.H"
-#include "patchZones.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/primitiveMesh/primitivePatch/patchZones.H"
 
 // VTK includes
 #include "vtkDataArraySelection.h"
@@ -48,8 +48,8 @@ defineTypeNameAndDebug(vtkPV3Foam, 0);
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 
-#include "vtkPV3FoamAddToSelection.H"
-#include "vtkPV3FoamUpdateInfoFields.H"
+#include "./vtkPV3FoamAddToSelection.H"
+#include "./vtkPV3FoamUpdateInfoFields.H"
 
 void Foam::vtkPV3Foam::resetCounters()
 {

@@ -133,9 +133,9 @@ SourceFiles
 #ifndef faceCoupleInfo_H
 #define faceCoupleInfo_H
 
-#include "pointField.H"
-#include "indirectPrimitivePatch.H"
-#include "primitiveFacePatch.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitiveFacePatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -503,7 +503,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "faceCoupleInfoTemplates.C"
+#   include "./faceCoupleInfoTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

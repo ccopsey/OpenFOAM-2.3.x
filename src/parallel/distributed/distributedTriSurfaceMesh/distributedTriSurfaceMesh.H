@@ -48,10 +48,10 @@ SourceFiles
 #ifndef distributedTriSurfaceMesh_H
 #define distributedTriSurfaceMesh_H
 
-#include "triSurfaceMesh.H"
-#include "IOdictionary.H"
-#include "Pair.H"
-#include "globalIndex.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./primitives/Pair/Pair.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -467,7 +467,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "distributedTriSurfaceMeshTemplates.C"
+#   include "./distributedTriSurfaceMeshTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

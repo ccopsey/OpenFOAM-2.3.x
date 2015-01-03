@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "FSD.H"
-#include "addToRunTimeSelectionTable.H"
-#include "LESModel.H"
+#include "./FSD.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./LESModel/LESModel.H"
 
 namespace Foam
 {

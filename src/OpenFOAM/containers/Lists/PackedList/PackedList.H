@@ -101,9 +101,9 @@ SourceFiles
 #ifndef PackedList_H
 #define PackedList_H
 
-#include "labelList.H"
-#include "UIndirectList.H"
-#include "StaticAssert.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./containers/Lists/UIndirectList/UIndirectList.H"
+#include "./db/error/StaticAssert.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -634,12 +634,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "PackedListI.H"
+#include "./PackedListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PackedList.C"
+#   include "./PackedList.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

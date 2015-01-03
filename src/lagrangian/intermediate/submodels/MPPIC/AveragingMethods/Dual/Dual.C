@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Dual.H"
-#include "coupledPointPatchField.H"
+#include "./Dual.H"
+#include "./fields/pointPatchFields/basic/coupled/coupledPointPatchField.H"
 
 // * * * * * * * * * * * * * Static Member Functions * * * * * * * * * * * * //
 

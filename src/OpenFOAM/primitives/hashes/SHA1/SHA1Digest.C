@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SHA1Digest.H"
-#include "IOstreams.H"
+#include "./SHA1Digest.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #include <cstring>
 

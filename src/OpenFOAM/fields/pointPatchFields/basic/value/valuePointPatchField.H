@@ -35,7 +35,7 @@ SourceFiles
 #ifndef valuePointPatchField_H
 #define valuePointPatchField_H
 
-#include "pointPatchField.H"
+#include "./fields/pointPatchFields/pointPatchField/pointPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -226,7 +226,7 @@ tmp<Field<Type> > operator+
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#    include "valuePointPatchField.C"
+#    include "./valuePointPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ensightField.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "OFstream.H"
-#include "IOmanip.H"
-#include "itoa.H"
-#include "volPointInterpolation.H"
-#include "ensightBinaryStream.H"
-#include "ensightAsciiStream.H"
-#include "globalIndex.H"
-#include "ensightPTraits.H"
+#include "./ensightField.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
+#include "./itoa.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
+#include "./ensightBinaryStream.H"
+#include "./ensightAsciiStream.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./sampledSurface/writers/ensight/ensightPTraits.H"
 
 using namespace Foam;
 

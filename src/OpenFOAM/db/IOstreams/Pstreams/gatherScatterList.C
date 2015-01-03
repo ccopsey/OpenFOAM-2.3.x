@@ -33,9 +33,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "IPstream.H"
-#include "OPstream.H"
-#include "contiguous.H"
+#include "./IPstream.H"
+#include "./OPstream.H"
+#include "./primitives/contiguous/contiguous.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

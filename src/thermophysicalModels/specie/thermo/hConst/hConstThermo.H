@@ -216,10 +216,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "hConstThermoI.H"
+#include "./hConstThermoI.H"
 
 #ifdef NoRepository
-#   include "hConstThermo.C"
+#   include "./hConstThermo.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

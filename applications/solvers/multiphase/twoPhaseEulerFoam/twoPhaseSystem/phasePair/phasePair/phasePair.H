@@ -34,8 +34,8 @@ SourceFiles
 #ifndef phasePair_H
 #define phasePair_H
 
-#include "phaseModel.H"
-#include "phasePairKey.H"
+#include "./phaseModel/phaseModel.H"
+#include "./phasePair/phasePairKey/phasePairKey.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -170,7 +170,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "phasePairI.H"
+#include "./phasePairI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

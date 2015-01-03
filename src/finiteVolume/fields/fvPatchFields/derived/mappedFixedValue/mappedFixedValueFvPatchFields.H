@@ -26,8 +26,8 @@ License
 #ifndef mappedFixedValueFvPatchFields_H
 #define mappedFixedValueFvPatchFields_H
 
-#include "mappedFixedValueFvPatchField.H"
-#include "fieldTypes.H"
+#include "./mappedFixedValueFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

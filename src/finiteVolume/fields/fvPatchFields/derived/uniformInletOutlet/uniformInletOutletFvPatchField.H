@@ -68,8 +68,8 @@ SourceFiles
 #ifndef uniformInletOutletFvPatchField_H
 #define uniformInletOutletFvPatchField_H
 
-#include "mixedFvPatchField.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchField.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -204,7 +204,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "uniformInletOutletFvPatchField.C"
+#   include "./uniformInletOutletFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

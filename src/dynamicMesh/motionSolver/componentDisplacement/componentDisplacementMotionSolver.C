@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "componentDisplacementMotionSolver.H"
-#include "mapPolyMesh.H"
+#include "./componentDisplacementMotionSolver.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

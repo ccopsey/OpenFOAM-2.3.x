@@ -43,11 +43,11 @@ SourceFiles
 #ifndef pointMVCWeight_H
 #define pointMVCWeight_H
 
-#include "scalarField.H"
-#include "vectorField.H"
-#include "Map.H"
-#include "DynamicList.H"
-#include "point.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./fields/Fields/vectorField/vectorField.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./meshes/primitiveShapes/point/point.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -153,7 +153,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "pointMVCWeightI.H"
+#include "./pointMVCWeightI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

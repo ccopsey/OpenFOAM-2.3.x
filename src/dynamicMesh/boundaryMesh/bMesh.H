@@ -33,10 +33,10 @@ Description
 #ifndef bMesh_H
 #define bMesh_H
 
-#include "PrimitivePatch.H"
-#include "face.H"
-#include "List.H"
-#include "pointField.H"
+#include "./meshes/primitiveMesh/_PrimitivePatch/PrimitivePatch.H"
+#include "./meshes/meshShapes/face/face.H"
+#include "./containers/Lists/List/List.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

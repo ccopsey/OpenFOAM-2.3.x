@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AC3DsurfaceFormatCore.H"
-#include "IStringStream.H"
+#include "./AC3DsurfaceFormatCore.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

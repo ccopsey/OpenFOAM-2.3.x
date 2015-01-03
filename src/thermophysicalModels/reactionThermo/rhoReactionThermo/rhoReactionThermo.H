@@ -35,10 +35,10 @@ SourceFiles
 #ifndef rhoReactionThermo_H
 #define rhoReactionThermo_H
 
-#include "rhoThermo.H"
-#include "basicMultiComponentMixture.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

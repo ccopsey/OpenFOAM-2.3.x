@@ -35,20 +35,20 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "Switch.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
 
-#   include "setRootCase.H"
+#   include "./include/setRootCase.H"
 
-#   include "createTime.H"
-#   include "createMesh.H"
-#   include "readMechanicalProperties.H"
-#   include "createFields.H"
+#   include "./include/createTime.H"
+#   include "./include/createMesh.H"
+#   include "./readMechanicalProperties.H"
+#   include "./createFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
     {
         Info<< "Iteration: " << runTime.value() << nl << endl;
 
-#       include "readSteadyStressFoamControls.H"
+#       include "./readSteadyStressFoamControls.H"
 
         solve
         (
@@ -78,8 +78,8 @@ int main(int argc, char *argv[])
             sigmaD += accFac*(mu*twoSymm(gradDcorr) + (lambda*I)*tr(gradDcorr));
         }
 
-#       include "calculateStress.H"
-#       include "kineticEnergyLimiter.H"
+#       include "./calculateStress.H"
+#       include "./kineticEnergyLimiter.H"
 
         Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
             << "  ClockTime = " << runTime.elapsedClockTime() << " s"

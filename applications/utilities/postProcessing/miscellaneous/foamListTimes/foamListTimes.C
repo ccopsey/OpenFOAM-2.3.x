@@ -36,9 +36,9 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
-#include "Time.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/Time/Time.H"
 
 using namespace Foam;
 
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
         "processor",
         "list times from processor0/ directory"
     );
-#   include "setRootCase.H"
+#   include "./include/setRootCase.H"
 
     label nProcs = 0;
 

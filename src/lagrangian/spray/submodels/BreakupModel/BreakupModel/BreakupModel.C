@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "BreakupModel.H"
+#include "./BreakupModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -157,7 +157,7 @@ bool Foam::BreakupModel<CloudType>::update
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "BreakupModelNew.C"
+#include "./BreakupModelNew.C"
 
 // ************************************************************************* //
 

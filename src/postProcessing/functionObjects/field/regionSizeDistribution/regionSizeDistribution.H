@@ -106,13 +106,13 @@ SourceFiles
 #ifndef regionSizeDistribution_H
 #define regionSizeDistribution_H
 
-#include "functionObjectFile.H"
-#include "pointFieldFwd.H"
-#include "writer.H"
-#include "Map.H"
-#include "volFieldsFwd.H"
-#include "wordReList.H"
-#include "coordinateSystem.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
+#include "./sampledSetWriters/writer.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./primitives/strings/lists/wordReList.H"
+#include "./coordinateSystems/coordinateSystem.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -301,7 +301,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "regionSizeDistributionTemplates.C"
+#   include "./regionSizeDistributionTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

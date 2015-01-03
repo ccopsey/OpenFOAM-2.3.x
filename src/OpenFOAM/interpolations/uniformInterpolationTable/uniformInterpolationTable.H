@@ -53,10 +53,10 @@ SourceFiles
 #ifndef uniformInterpolationTable_H
 #define uniformInterpolationTable_H
 
-#include "List.H"
-#include "Switch.H"
-#include "IOobject.H"
-#include "objectRegistry.H"
+#include "./containers/Lists/List/List.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./db/IOobject/IOobject.H"
+#include "./db/objectRegistry/objectRegistry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -191,7 +191,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "uniformInterpolationTableI.H"
+#include "./uniformInterpolationTableI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -200,7 +200,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "uniformInterpolationTable.C"
+    #include "./uniformInterpolationTable.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

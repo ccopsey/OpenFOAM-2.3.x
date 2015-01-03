@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "globalIndexAndTransform.H"
-#include "cyclicPolyPatch.H"
+#include "./globalIndexAndTransform.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
 
 // * * * * * * * * * * * * Private Static Data Members * * * * * * * * * * * //
 

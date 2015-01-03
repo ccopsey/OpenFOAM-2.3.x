@@ -37,9 +37,9 @@ Description
 #ifndef geometricZeroField_H
 #define geometricZeroField_H
 
-#include "zeroFieldField.H"
-#include "dimensionSet.H"
-#include "scalar.H"
+#include "./fields/FieldFields/zeroFieldField/zeroFieldField.H"
+#include "./dimensionSet/dimensionSet.H"
+#include "./primitives/Scalar/scalar/scalar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -84,7 +84,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "geometricZeroFieldI.H"
+#   include "./geometricZeroFieldI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

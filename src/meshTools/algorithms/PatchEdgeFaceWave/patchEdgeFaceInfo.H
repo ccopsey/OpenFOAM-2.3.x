@@ -35,12 +35,12 @@ SourceFiles
 #ifndef patchEdgeFaceInfo_H
 #define patchEdgeFaceInfo_H
 
-#include "point.H"
-#include "label.H"
-#include "scalar.H"
-#include "tensor.H"
-#include "pTraits.H"
-#include "primitivePatch.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/Tensor/tensor/tensor.H"
+#include "./primitives/pTraits/pTraits.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -203,7 +203,7 @@ inline bool contiguous<patchEdgeFaceInfo>()
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "patchEdgeFaceInfoI.H"
+#include "./patchEdgeFaceInfoI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

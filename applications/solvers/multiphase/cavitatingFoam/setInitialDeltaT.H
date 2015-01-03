@@ -32,7 +32,7 @@ Description
 
 if (adjustTimeStep)
 {
-#   include "CourantNo.H"
+#   include "./CourantNo.H"
 
     if (CoNum > SMALL)
     {

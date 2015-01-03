@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "nonUniformField.H"
-#include "triSurfaceMesh.H"
-#include "searchableSurface.H"
-#include "addToRunTimeSelectionTable.H"
-#include "Time.H"
+#include "./nonUniformField.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./searchableSurface/searchableSurface.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

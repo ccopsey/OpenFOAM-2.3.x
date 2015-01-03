@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dynamicCode.H"
-#include "dynamicCodeContext.H"
-#include "stringOps.H"
-#include "IFstream.H"
-#include "OFstream.H"
-#include "OSspecific.H"
-#include "dictionary.H"
+#include "./dynamicCode.H"
+#include "./dynamicCodeContext.H"
+#include "./primitives/strings/stringOps/stringOps.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./include/OSspecific.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

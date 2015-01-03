@@ -53,26 +53,26 @@ SourceFiles
 #ifndef backgroundMeshDecomposition_H
 #define backgroundMeshDecomposition_H
 
-#include "fvMesh.H"
-#include "hexRef8.H"
-#include "cellSet.H"
-#include "meshTools.H"
-#include "polyTopoChange.H"
-#include "mapPolyMesh.H"
-#include "decompositionMethod.H"
-#include "fvMeshDistribute.H"
-#include "removeCells.H"
-#include "mapDistributePolyMesh.H"
-#include "globalIndex.H"
-#include "treeBoundBox.H"
-#include "primitivePatch.H"
-#include "face.H"
-#include "labelList.H"
-#include "pointField.H"
-#include "indexedOctree.H"
-#include "treeDataPrimitivePatch.H"
-#include "volumeType.H"
-#include "CGALTriangulation3Ddefs.H"
+#include "./fvMesh/fvMesh.H"
+#include "./polyTopoChange/polyTopoChange/hexRef8.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./meshTools/meshTools.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./decompositionMethod/decompositionMethod.H"
+#include "./fvMeshDistribute/fvMeshDistribute.H"
+#include "./polyTopoChange/polyTopoChange/removeCells.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistributePolyMesh.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
+#include "./meshes/meshShapes/face/face.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./indexedOctree/treeDataPrimitivePatch.H"
+#include "./algorithms/indexedOctree/volumeType.H"
+#include "./conformalVoronoiMesh/CGALTriangulation3Ddefs.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -335,10 +335,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "backgroundMeshDecompositionI.H"
+#include "./backgroundMeshDecompositionI.H"
 
 #ifdef NoRepository
-#   include "backgroundMeshDecompositionTemplates.C"
+#   include "./backgroundMeshDecompositionTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

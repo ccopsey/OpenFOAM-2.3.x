@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "stringOps.H"
-#include "typeInfo.H"
-#include "OSspecific.H"
-#include "OStringStream.H"
+#include "./stringOps.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/StringStreams/OStringStream.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

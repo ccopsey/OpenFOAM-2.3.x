@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvOption.H"
-#include "fvMesh.H"
-#include "fvMatrices.H"
-#include "volFields.H"
-#include "fvsPatchFields.H"
-#include "ListOps.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./fvOption.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/fvsPatchFields/fvsPatchField/fvsPatchFields.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

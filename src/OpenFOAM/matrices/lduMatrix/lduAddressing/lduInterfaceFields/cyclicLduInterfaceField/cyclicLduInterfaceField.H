@@ -35,8 +35,8 @@ SourceFiles
 #ifndef cyclicLduInterfaceField_H
 #define cyclicLduInterfaceField_H
 
-#include "primitiveFieldsFwd.H"
-#include "typeInfo.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
+#include "./db/typeInfo/typeInfo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -103,7 +103,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "tensorField.H"
+#include "./fields/Fields/tensorField/tensorField.H"
 
 template<class Type>
 void Foam::cyclicLduInterfaceField::transformCoupleField

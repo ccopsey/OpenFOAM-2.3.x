@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "processorCyclicPointPatchField.H"
-#include "transformField.H"
-#include "processorPolyPatch.H"
+#include "./processorCyclicPointPatchField.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors * * * * * * * * * * * * * * //

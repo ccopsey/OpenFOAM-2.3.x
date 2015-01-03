@@ -35,8 +35,8 @@ SourceFiles
 #ifndef coordSet_H
 #define coordSet_H
 
-#include "pointField.H"
-#include "word.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

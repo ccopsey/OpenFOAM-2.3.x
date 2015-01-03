@@ -42,9 +42,9 @@ SourceFiles
 #ifndef OutputFilterFunctionObject_H
 #define OutputFilterFunctionObject_H
 
-#include "functionObject.H"
-#include "dictionary.H"
-#include "outputFilterOutputControl.H"
+#include "./db/functionObjects/functionObject/functionObject.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/functionObjects/outputFilterOutputControl/outputFilterOutputControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -232,7 +232,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "OutputFilterFunctionObject.C"
+#   include "./OutputFilterFunctionObject.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

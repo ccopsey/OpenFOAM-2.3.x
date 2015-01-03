@@ -36,8 +36,8 @@ SourceFiles
 #ifndef writePointSet_H
 #define writePointSet_H
 
-#include "vtkMesh.H"
-#include "pointSet.H"
+#include "./vtkMesh.H"
+#include "./sets/topoSets/pointSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

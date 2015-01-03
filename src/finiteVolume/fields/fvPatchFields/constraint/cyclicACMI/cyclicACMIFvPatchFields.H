@@ -26,8 +26,8 @@ License
 #ifndef cyclicACMIFvPatchFields_H
 #define cyclicACMIFvPatchFields_H
 
-#include "cyclicACMIFvPatchField.H"
-#include "fieldTypes.H"
+#include "./cyclicACMIFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

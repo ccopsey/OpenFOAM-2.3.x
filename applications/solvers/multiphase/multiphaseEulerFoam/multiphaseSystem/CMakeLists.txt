@@ -33,15 +33,15 @@ set(LIBRARIES
   libfiniteVolume
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
-include(../interfacialModels/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
+include_directories(../interfacialModels)
 include_directories(alphaContactAngle)
 include_directories(../../../../../src/transportModels)
-include(../../../../../src/transportModels/incompressible/include.cmake)
-include(../../../../../src/transportModels/interfaceProperties/include.cmake)
+include_directories(../../../../../src/transportModels/incompressible)
+include_directories(../../../../../src/transportModels/interfaceProperties)
 
 add_library(libmultiphaseSystem ${SOURCES})
 set_target_properties(libmultiphaseSystem PROPERTIES PREFIX "")

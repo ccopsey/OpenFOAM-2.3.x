@@ -62,9 +62,9 @@ SourceFiles
 #ifndef general_H
 #define general_H
 
-#include "tabulatedWallFunction.H"
-#include "NamedEnum.H"
-#include "Switch.H"
+#include "./tabulatedWallFunction/tabulatedWallFunction.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

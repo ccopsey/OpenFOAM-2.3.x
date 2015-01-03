@@ -36,7 +36,7 @@ SourceFiles
 #ifndef rhoConst_H
 #define rhoConst_H
 
-#include "autoPtr.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -208,10 +208,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "rhoConstI.H"
+#include "./rhoConstI.H"
 
 #ifdef NoRepository
-#   include "rhoConst.C"
+#   include "./rhoConst.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

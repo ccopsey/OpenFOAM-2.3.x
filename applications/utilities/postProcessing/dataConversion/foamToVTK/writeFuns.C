@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writeFuns.H"
-#include "vtkTopo.H"
+#include "./writeFuns.H"
+#include "./vtkTopo.H"
 
 #if defined(__mips) && !defined(__SICORTEX__)
 #include <standards.h>

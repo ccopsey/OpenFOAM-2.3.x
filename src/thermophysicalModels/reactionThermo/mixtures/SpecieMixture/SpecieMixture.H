@@ -35,7 +35,7 @@ SourceFiles
 #ifndef SpecieMixture_H
 #define SpecieMixture_H
 
-#include "scalar.H"
+#include "./primitives/Scalar/scalar/scalar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -194,7 +194,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 #ifdef NoRepository
-#   include "SpecieMixture.C"
+#   include "./SpecieMixture.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

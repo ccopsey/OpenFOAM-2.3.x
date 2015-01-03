@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CorrectionLimitingMethod.H"
+#include "./CorrectionLimitingMethod.H"
 
 namespace Foam
 {

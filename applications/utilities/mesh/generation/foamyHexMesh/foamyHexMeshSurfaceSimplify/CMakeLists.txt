@@ -42,15 +42,15 @@ set(LIBRARIES
   libdynamicMesh
 )
 
-include(include.cmake)
-include(../../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../../src/OSspecific/POSIX/include.cmake)
-include(../conformalVoronoiMesh/include.cmake)
-include(../../../../../../src/edgeMesh/include.cmake)
-include(../../../../../../src/mesh/autoMesh/include.cmake)
-include(../../../../../../src/fileFormats/include.cmake)
-include(../../../../../../src/triSurface/include.cmake)
-include(../../../../../../src/meshTools/include.cmake)
+include_directories(.)
+include_directories(../../../../../../src/OpenFOAM)
+include_directories(../../../../../../src/OSspecific/POSIX)
+include_directories(../conformalVoronoiMesh)
+include_directories(../../../../../../src/edgeMesh)
+include_directories(../../../../../../src/mesh/autoMesh)
+include_directories(../../../../../../src/fileFormats)
+include_directories(../../../../../../src/triSurface)
+include_directories(../../../../../../src/meshTools)
 
 add_executable(foamyHexMeshSurfaceSimplify ${SOURCES})
 

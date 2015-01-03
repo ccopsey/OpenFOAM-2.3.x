@@ -36,7 +36,7 @@ SourceFiles
 #ifndef magGrad_H
 #define magGrad_H
 
-#include "calcType.H"
+#include "./calcType/calcType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -127,7 +127,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeMagGradField.C"
+#   include "./writeMagGradField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

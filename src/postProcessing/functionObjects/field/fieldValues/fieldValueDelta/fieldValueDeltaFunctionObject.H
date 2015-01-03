@@ -36,8 +36,8 @@ SourceFiles
 #ifndef fieldValueDeltaFunctionObject_H
 #define fieldValueDeltaFunctionObject_H
 
-#include "fieldValueDelta.H"
-#include "OutputFilterFunctionObject.H"
+#include "./fieldValueDelta.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

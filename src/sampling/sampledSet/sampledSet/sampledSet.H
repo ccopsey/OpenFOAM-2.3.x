@@ -44,10 +44,10 @@ SourceFiles
 #ifndef sampledSet_H
 #define sampledSet_H
 
-#include "coordSet.H"
-#include "typeInfo.H"
-#include "runTimeSelectionTables.H"
-#include "autoPtr.H"
+#include "./coordSet/coordSet.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

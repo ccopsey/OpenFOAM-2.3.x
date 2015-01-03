@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "searchableBox.H"
-#include "addToRunTimeSelectionTable.H"
-#include "SortableList.H"
+#include "./searchableBox.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./containers/Lists/SortableList/SortableList.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

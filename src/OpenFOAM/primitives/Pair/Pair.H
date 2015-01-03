@@ -36,8 +36,8 @@ SeeAlso
 #ifndef Pair_H
 #define Pair_H
 
-#include "FixedList.H"
-#include "Istream.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./db/IOstreams/IOstreams/Istream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

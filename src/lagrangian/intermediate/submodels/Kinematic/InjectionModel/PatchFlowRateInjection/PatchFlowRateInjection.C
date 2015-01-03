@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PatchFlowRateInjection.H"
-#include "TimeDataEntry.H"
-#include "distributionModel.H"
-#include "mathematicalConstants.H"
-#include "surfaceFields.H"
+#include "./PatchFlowRateInjection.H"
+#include "./primitives/functions/TimeDataEntry/TimeDataEntry/TimeDataEntry.H"
+#include "./distributionModel/distributionModel.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

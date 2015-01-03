@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Wellek.H"
-#include "orderedPhasePair.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./Wellek.H"
+#include "./phasePair/orderedPhasePair/orderedPhasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

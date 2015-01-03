@@ -32,8 +32,8 @@ Description
 #ifndef IOwriteRegisteredObject_H
 #define IOwriteRegisteredObject_H
 
-#include "writeRegisteredObject.H"
-#include "IOOutputFilter.H"
+#include "./writeRegisteredObject.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

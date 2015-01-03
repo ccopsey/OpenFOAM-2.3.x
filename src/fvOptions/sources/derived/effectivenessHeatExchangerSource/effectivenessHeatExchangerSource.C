@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "effectivenessHeatExchangerSource.H"
-#include "fvMesh.H"
-#include "fvMatrix.H"
-#include "addToRunTimeSelectionTable.H"
-#include "basicThermo.H"
-#include "coupledPolyPatch.H"
-#include "surfaceInterpolate.H"
+#include "./effectivenessHeatExchangerSource.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fvMatrices/fvMatrix/fvMatrix.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./basicThermo/basicThermo.H"
+#include "./meshes/polyMesh/polyPatches/basic/coupled/coupledPolyPatch.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "molecule.H"
-#include "IOstreams.H"
-#include "moleculeCloud.H"
+#include "./molecule.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./moleculeCloud/moleculeCloud.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

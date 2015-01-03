@@ -26,7 +26,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
 
     label pRefCell = 0;
@@ -62,7 +62,7 @@
         mesh
     );
 
-    #include "createPhia.H"
+    #include "./createPhia.H"
 
 
     label paRefCell = 0;

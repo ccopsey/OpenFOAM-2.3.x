@@ -34,8 +34,8 @@ SourceFiles
 #ifndef ensightAsciiStream_H
 #define ensightAsciiStream_H
 
-#include "ensightStream.H"
-#include "OFstream.H"
+#include "./ensightStream.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

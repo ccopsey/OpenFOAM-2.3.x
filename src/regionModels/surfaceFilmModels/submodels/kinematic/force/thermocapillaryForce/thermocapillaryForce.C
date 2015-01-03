@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "thermocapillaryForce.H"
-#include "addToRunTimeSelectionTable.H"
-#include "fvcGrad.H"
+#include "./thermocapillaryForce.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

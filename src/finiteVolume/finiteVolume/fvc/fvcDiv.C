@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcDiv.H"
-#include "fvMesh.H"
-#include "fvcSurfaceIntegrate.H"
-#include "divScheme.H"
-#include "convectionScheme.H"
+#include "./fvcDiv.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fvcSurfaceIntegrate.H"
+#include "./finiteVolume/divSchemes/divScheme/divScheme.H"
+#include "./finiteVolume/convectionSchemes/convectionScheme/convectionScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

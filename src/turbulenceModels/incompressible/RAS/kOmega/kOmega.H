@@ -62,7 +62,7 @@ SourceFiles
 #ifndef kOmega_H
 #define kOmega_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

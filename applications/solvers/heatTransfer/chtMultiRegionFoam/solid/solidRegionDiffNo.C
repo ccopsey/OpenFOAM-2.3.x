@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "solidRegionDiffNo.H"
-#include "fvc.H"
+#include "./solidRegionDiffNo.H"
+#include "./finiteVolume/fvc/fvc.H"
 
 Foam::scalar Foam::solidRegionDiffNo
 (

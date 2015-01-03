@@ -36,7 +36,7 @@ SourceFiles
 #ifndef div_H
 #define div_H
 
-#include "calcType.H"
+#include "./calcType/calcType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -127,7 +127,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeDivField.C"
+#   include "./writeDivField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

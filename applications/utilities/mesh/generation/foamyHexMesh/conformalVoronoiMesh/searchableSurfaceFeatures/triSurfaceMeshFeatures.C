@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "triSurfaceMeshFeatures.H"
-#include "addToRunTimeSelectionTable.H"
-#include "triSurfaceMesh.H"
-#include "surfaceFeatures.H"
+#include "./triSurfaceMeshFeatures.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./triSurface/surfaceFeatures/surfaceFeatures.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

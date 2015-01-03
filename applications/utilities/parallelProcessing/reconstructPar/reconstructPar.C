@@ -30,20 +30,20 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
 
-#include "fvCFD.H"
-#include "IOobjectList.H"
-#include "processorMeshes.H"
-#include "regionProperties.H"
-#include "fvFieldReconstructor.H"
-#include "pointFieldReconstructor.H"
-#include "reconstructLagrangian.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./processorMeshes.H"
+#include "./regionProperties/regionProperties.H"
+#include "./fvFieldReconstructor.H"
+#include "./pointFieldReconstructor.H"
+#include "./reconstructLagrangian.H"
 
-#include "cellSet.H"
-#include "faceSet.H"
-#include "pointSet.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./sets/topoSets/pointSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     // enable -zeroTime to prevent accidentally trashing the initial fields
     timeSelector::addOptions(true, true);
     argList::noParallel();
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
     argList::addBoolOption
     (
         "allRegions",
@@ -113,8 +113,8 @@ int main(int argc, char *argv[])
         "only reconstruct new times (i.e. that do not exist already)"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     HashSet<word> selectedFields;
     if (args.optionFound("fields"))
@@ -310,7 +310,7 @@ int main(int argc, char *argv[])
 
         // check face addressing for meshes that have been decomposed
         // with a very old foam version
-        #include "checkFaceAddressingComp.H"
+        #include "./checkFaceAddressingComp.H"
 
         // Loop over all times
         forAll(timeDirs, timeI)

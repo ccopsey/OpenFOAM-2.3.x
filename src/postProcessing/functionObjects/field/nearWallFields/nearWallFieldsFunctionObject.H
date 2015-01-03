@@ -36,8 +36,8 @@ SourceFiles
 #ifndef nearWallFieldsFunctionObject_H
 #define nearWallFieldsFunctionObject_H
 
-#include "nearWallFields.H"
-#include "OutputFilterFunctionObject.H"
+#include "./nearWallFields.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -32,7 +32,7 @@ Description
 #ifndef directFvPatchFieldMapper_H
 #define directFvPatchFieldMapper_H
 
-#include "fvPatchFieldMapper.H"
+#include "./fvPatchFieldMapper.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

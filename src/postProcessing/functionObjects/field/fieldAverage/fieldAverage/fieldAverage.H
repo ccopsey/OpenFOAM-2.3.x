@@ -117,8 +117,8 @@ SourceFiles
 #ifndef fieldAverage_H
 #define fieldAverage_H
 
-#include "volFieldsFwd.H"
-#include "Switch.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -325,7 +325,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fieldAverageTemplates.C"
+#   include "./fieldAverageTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

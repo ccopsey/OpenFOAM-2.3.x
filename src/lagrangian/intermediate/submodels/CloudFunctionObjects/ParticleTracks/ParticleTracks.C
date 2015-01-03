@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ParticleTracks.H"
-#include "Pstream.H"
-#include "ListListOps.H"
-#include "IOPtrList.H"
+#include "./ParticleTracks.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./containers/Lists/ListListOps/ListListOps.H"
+#include "./db/IOobjects/IOPtrList/IOPtrList.H"
 
 // * * * * * * * * * * * * * protected Member Functions  * * * * * * * * * * //
 

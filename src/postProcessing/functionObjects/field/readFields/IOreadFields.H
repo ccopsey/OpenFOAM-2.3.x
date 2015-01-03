@@ -32,8 +32,8 @@ Description
 #ifndef IOreadFields_H
 #define IOreadFields_H
 
-#include "readFields.H"
-#include "IOOutputFilter.H"
+#include "./readFields.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

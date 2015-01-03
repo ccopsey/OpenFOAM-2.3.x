@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writePatch.H"
-#include "OFstream.H"
-#include "writeFuns.H"
-#include "primitiveFacePatch.H"
+#include "./writePatch.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./writeFuns.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitiveFacePatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

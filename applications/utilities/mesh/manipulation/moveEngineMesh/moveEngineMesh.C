@@ -29,18 +29,18 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "engineTime.H"
-#include "engineMesh.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./engineTime/engineTime.H"
+#include "./engineMesh/engineMesh/engineMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-#   include "setRootCase.H"
+#   include "./include/setRootCase.H"
 
-#   include "createEngineTime.H"
-#   include "createEngineMesh.H"
+#   include "./include/createEngineTime.H"
+#   include "./include/createEngineMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

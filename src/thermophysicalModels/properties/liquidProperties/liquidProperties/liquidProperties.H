@@ -35,12 +35,12 @@ SourceFiles
 #ifndef liquidProperties_H
 #define liquidProperties_H
 
-#include "scalar.H"
-#include "IOstreams.H"
-#include "typeInfo.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
-#include "dictionary.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -276,7 +276,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "liquidPropertiesI.H"
+#include "./liquidPropertiesI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

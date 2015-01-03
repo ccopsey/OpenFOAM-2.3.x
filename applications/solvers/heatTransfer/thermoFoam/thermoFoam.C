@@ -29,27 +29,27 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "rhoThermo.H"
-#include "turbulenceModel.H"
-#include "RASModel.H"
-#include "LESModel.H"
-#include "radiationModel.H"
-#include "fvIOoptionList.H"
-#include "simpleControl.H"
-#include "pimpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./turbulenceModel.H"
+#include "./RASModel/RASModel.H"
+#include "./LESModel/LESModel.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "createFvOptions.H"
-    #include "createRadiationModel.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./include/createFvOptions.H"
+    #include "./include/createRadiationModel.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
             while (simple.correctNonOrthogonal())
             {
-                #include "EEqn.H"
+                #include "./EEqn.H"
             }
 
             Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 
             while (pimple.correctNonOrthogonal())
             {
-                #include "EEqn.H"
+                #include "./EEqn.H"
             }
 
             Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"

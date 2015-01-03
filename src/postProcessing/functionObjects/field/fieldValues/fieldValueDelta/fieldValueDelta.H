@@ -76,9 +76,9 @@ SourceFiles
 #ifndef fieldValueDelta_H
 #define fieldValueDelta_H
 
-#include "functionObjectFile.H"
-#include "fieldValue.H"
-#include "autoPtr.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./fieldValues/fieldValue/fieldValue.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -211,7 +211,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "fieldValueDeltaTemplates.C"
+    #include "./fieldValueDeltaTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "omegaWallFunctionFvPatchScalarField.H"
+#include "./omegaWallFunctionFvPatchScalarField.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
-#include "fvPatchFieldMapper.H"
-#include "fvMatrix.H"
-#include "volFields.H"
-#include "wallFvPatch.H"
-#include "mutWallFunctionFvPatchScalarField.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fvMatrices/fvMatrix/fvMatrix.H"
+#include "./fields/volFields/volFields.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./derivedFvPatchFields/wallFunctions/mutWallFunctions/mutWallFunction/mutWallFunctionFvPatchScalarField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -34,20 +34,20 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "undoableMeshCutter.H"
-#include "hexCellLooper.H"
-#include "cellSet.H"
-#include "twoDPointCorrector.H"
-#include "directions.H"
-#include "OFstream.H"
-#include "multiDirRefinement.H"
-#include "labelIOList.H"
-#include "wedgePolyPatch.H"
-#include "plane.H"
-#include "SubField.H"
+#include "./global/argList/argList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshCut/meshModifiers/undoableMeshCutter/undoableMeshCutter.H"
+#include "./meshCut/cellLooper/hexCellLooper.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./twoDPointCorrector/twoDPointCorrector.H"
+#include "./meshCut/directions/directions.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshCut/meshModifiers/multiDirRefinement/multiDirRefinement.H"
+#include "./primitives/ints/lists/labelIOList.H"
+#include "./meshes/polyMesh/polyPatches/constraint/wedge/wedgePolyPatch.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./fields/Fields/Field/SubField.H"
 
 using namespace Foam;
 
@@ -298,13 +298,13 @@ int main(int argc, char *argv[])
         "refine cells in multiple directions"
     );
 
-    #include "addOverwriteOption.H"
-    #include "addRegionOption.H"
-    #include "addDictOption.H"
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/addOverwriteOption.H"
+    #include "./include/addRegionOption.H"
+    #include "./include/addDictOption.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
-    #include "createNamedPolyMesh.H"
+    #include "./include/createNamedPolyMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     printEdgeStats(mesh);
@@ -325,7 +325,7 @@ int main(int argc, char *argv[])
     if (readDict)
     {
         const word dictName("refineMeshDict");
-        #include "setSystemMeshDictionaryIO.H"
+        #include "./include/setSystemMeshDictionaryIO.H"
 
         Info<< "Refining according to " << dictName << nl << endl;
 

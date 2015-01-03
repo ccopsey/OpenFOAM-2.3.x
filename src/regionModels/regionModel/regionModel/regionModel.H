@@ -36,12 +36,12 @@ SourceFiles
 #ifndef regionModel_H
 #define regionModel_H
 
-#include "IOdictionary.H"
-#include "Switch.H"
-#include "labelList.H"
-#include "volFields.H"
-#include "mappedPatchBase.H"
-#include "regionModelFunctionObjectList.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./fields/volFields/volFields.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
+#include "./regionModelFunctionObject/regionModelFunctionObject/regionModelFunctionObjectList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -354,12 +354,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "regionModelI.H"
+#include "./regionModelI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "regionModelTemplates.C"
+    #include "./regionModelTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

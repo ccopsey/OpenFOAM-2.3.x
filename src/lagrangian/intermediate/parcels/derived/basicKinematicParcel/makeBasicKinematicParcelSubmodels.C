@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "basicKinematicCloud.H"
+#include "./clouds/derived/basicKinematicCloud/basicKinematicCloud.H"
 
-#include "makeParcelCloudFunctionObjects.H"
+#include "./parcels/include/makeParcelCloudFunctionObjects.H"
 
 // Kinematic
-#include "makeParcelForces.H"
-#include "makeParcelDispersionModels.H"
-#include "makeParcelInjectionModels.H"
-#include "makeParcelPatchInteractionModels.H"
-#include "makeParcelStochasticCollisionModels.H"
-#include "makeParcelSurfaceFilmModels.H"
+#include "./parcels/include/makeParcelForces.H"
+#include "./parcels/include/makeParcelDispersionModels.H"
+#include "./parcels/include/makeParcelInjectionModels.H"
+#include "./parcels/include/makeParcelPatchInteractionModels.H"
+#include "./parcels/include/makeParcelStochasticCollisionModels.H"
+#include "./parcels/include/makeParcelSurfaceFilmModels.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

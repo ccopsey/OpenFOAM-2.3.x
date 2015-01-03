@@ -34,8 +34,8 @@ SourceFiles
 #ifndef timeVaryingUniformFixedValuePointPatchFields_H
 #define timeVaryingUniformFixedValuePointPatchFields_H
 
-#include "timeVaryingUniformFixedValuePointPatchField.H"
-#include "fieldTypes.H"
+#include "./timeVaryingUniformFixedValuePointPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

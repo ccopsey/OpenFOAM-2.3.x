@@ -36,8 +36,8 @@ SourceFiles
 #ifndef fieldCoordinateSystemTransformFunctionObject_H
 #define fieldCoordinateSystemTransformFunctionObject_H
 
-#include "fieldCoordinateSystemTransform.H"
-#include "OutputFilterFunctionObject.H"
+#include "./fieldCoordinateSystemTransform.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

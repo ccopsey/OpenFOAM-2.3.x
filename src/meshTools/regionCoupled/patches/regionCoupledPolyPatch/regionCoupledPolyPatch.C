@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "regionCoupledPolyPatch.H"
-#include "polyMesh.H"
-#include "Time.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./regionCoupledPolyPatch.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

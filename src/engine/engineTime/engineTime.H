@@ -53,9 +53,9 @@ SourceFiles
 #ifndef engineTime_H
 #define engineTime_H
 
-#include "Time.H"
-#include "dictionary.H"
-#include "dimensionedScalar.H"
+#include "./db/Time/Time.H"
+#include "./db/dictionary/dictionary.H"
+#include "./dimensionedTypes/dimensionedScalar/dimensionedScalar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

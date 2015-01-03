@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writeFuns.H"
-#include "interpolatePointToCell.H"
+#include "./writeFuns.H"
+#include "./interpolations/interpolatePointToCell/interpolatePointToCell.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

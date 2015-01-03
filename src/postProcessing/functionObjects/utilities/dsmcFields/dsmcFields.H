@@ -44,7 +44,7 @@ SourceFiles
 #ifndef dsmcFields_H
 #define dsmcFields_H
 
-#include "typeInfo.H"
+#include "./db/typeInfo/typeInfo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

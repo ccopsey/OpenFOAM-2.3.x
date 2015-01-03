@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CourantNo.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "dictionary.H"
-#include "zeroGradientFvPatchFields.H"
-#include "fvcSurfaceIntegrate.H"
+#include "./CourantNo.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./finiteVolume/fvc/fvcSurfaceIntegrate.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

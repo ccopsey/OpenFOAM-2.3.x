@@ -35,8 +35,8 @@ SourceFiles
 #ifndef cyclicLduInterface_H
 #define cyclicLduInterface_H
 
-#include "lduInterface.H"
-#include "primitiveFieldsFwd.H"
+#include "./lduInterface.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

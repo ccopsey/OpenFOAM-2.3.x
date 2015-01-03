@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4blockMesh.H"
-#include "vtkPV4blockMeshReader.h"
+#include "./vtkPV4blockMesh.H"
+#include "./PV4Readers/PV4blockMeshReader/PV4blockMeshReader/vtkPV4blockMeshReader.h"
 
 // OpenFOAM includes
 #include "blockMesh.H"
-#include "Time.H"
-#include "patchZones.H"
-#include "OStringStream.H"
+#include "./db/Time/Time.H"
+#include "./meshes/primitiveMesh/primitivePatch/patchZones.H"
+#include "./db/IOstreams/StringStreams/OStringStream.H"
 
 // VTK includes
 #include "vtkDataArraySelection.h"

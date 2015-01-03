@@ -65,14 +65,14 @@ SourceFiles
 
 \*---------------------------------------------------------------------------*/
 
-#include "Pstream.H"
+#include "./Pstream.H"
 
 #ifndef PstreamBuffers_H
 #define PstreamBuffers_H
 
-#include "DynamicList.H"
-#include "UPstream.H"
-#include "IOstream.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./UPstream.H"
+#include "./db/IOstreams/IOstreams/IOstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

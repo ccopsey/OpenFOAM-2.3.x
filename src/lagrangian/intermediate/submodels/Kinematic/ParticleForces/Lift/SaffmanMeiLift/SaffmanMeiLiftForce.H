@@ -35,7 +35,7 @@ SourceFiles
 #ifndef SaffmanMeiLiftForce_H
 #define SaffmanMeiLiftForce_H
 
-#include "LiftForce.H"
+#include "./submodels/Kinematic/ParticleForces/Lift/LiftForce/LiftForce.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -107,7 +107,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "SaffmanMeiLiftForce.C"
+    #include "./SaffmanMeiLiftForce.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "singlePhaseTransportModel.H"
-#include "viscosityModel.H"
-#include "volFields.H"
+#include "./singlePhaseTransportModel.H"
+#include "./viscosityModels/viscosityModel/viscosityModel.H"
+#include "./fields/volFields/volFields.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

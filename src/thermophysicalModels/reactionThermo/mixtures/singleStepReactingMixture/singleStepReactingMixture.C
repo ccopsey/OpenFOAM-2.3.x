@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "singleStepReactingMixture.H"
-#include "fvMesh.H"
+#include "./singleStepReactingMixture.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * * //
 

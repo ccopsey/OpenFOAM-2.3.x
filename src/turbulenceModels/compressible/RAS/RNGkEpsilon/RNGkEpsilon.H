@@ -54,7 +54,7 @@ SourceFiles
 #ifndef compressibleRNGkEpsilon_H
 #define compressibleRNGkEpsilon_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

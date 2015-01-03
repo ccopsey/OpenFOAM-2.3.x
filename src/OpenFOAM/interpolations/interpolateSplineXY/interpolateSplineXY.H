@@ -38,8 +38,8 @@ SourceFiles
 #ifndef interpolateSplineXY_H
 #define interpolateSplineXY_H
 
-#include "scalar.H"
-#include "primitiveFieldsFwd.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -73,7 +73,7 @@ Type interpolateSplineXY
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "interpolateSplineXY.C"
+#   include "./interpolateSplineXY.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "extendedCellToCellStencil.H"
-#include "extendedCellToFaceStencil.H"
+#include "./extendedCellToCellStencil.H"
+#include "./fvMesh/extendedStencil/cellToFace/extendedCellToFaceStencil.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

@@ -31,18 +31,18 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "CV2D.H"
-#include "argList.H"
+#include "./CV2D.H"
+#include "./global/argList/argList.H"
 
-#include "MeshedSurfaces.H"
-#include "shortEdgeFilter2D.H"
-#include "extrude2DMesh.H"
-#include "polyMesh.H"
-#include "patchToPoly2DMesh.H"
-#include "extrudeModel.H"
-#include "polyTopoChange.H"
-#include "edgeCollapser.H"
-#include "globalIndex.H"
+#include "./MeshedSurface/MeshedSurfaces.H"
+#include "./shortEdgeFilter2D.H"
+#include "./extrude2DMesh/extrude2DMesh.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./patchToPoly2DMesh/patchToPoly2DMesh.H"
+#include "./extrudeModel/extrudeModel.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyTopoChange/polyTopoChange/edgeCollapser.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
 
 using namespace Foam;
 
@@ -58,10 +58,10 @@ int main(int argc, char *argv[])
         "filename"
     );
 
-    #include "addOverwriteOption.H"
+    #include "./include/addOverwriteOption.H"
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     // Read control dictionary
     // ~~~~~~~~~~~~~~~~~~~~~~~

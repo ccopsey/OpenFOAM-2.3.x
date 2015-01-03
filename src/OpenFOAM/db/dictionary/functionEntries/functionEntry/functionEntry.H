@@ -46,8 +46,8 @@ SourceFiles
 #ifndef functionEntry_H
 #define functionEntry_H
 
-#include "word.H"
-#include "memberFunctionSelectionTables.H"
+#include "./primitives/strings/word/word.H"
+#include "./db/runTimeSelection/memberFunctions/memberFunctionSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

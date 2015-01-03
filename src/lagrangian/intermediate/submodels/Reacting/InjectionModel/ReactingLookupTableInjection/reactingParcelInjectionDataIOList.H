@@ -34,8 +34,8 @@ SourceFiles
 #ifndef reactingParcelInjectionDataIOList_H
 #define reactingParcelInjectionDataIOList_H
 
-#include "IOList.H"
-#include "reactingParcelInjectionData.H"
+#include "./db/IOobjects/IOList/IOList.H"
+#include "./reactingParcelInjectionData.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -41,7 +41,7 @@ SourceFiles
 #ifndef BICCG_H
 #define BICCG_H
 
-#include "PBiCG.H"
+#include "./matrices/lduMatrix/solvers/PBiCG/PBiCG.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

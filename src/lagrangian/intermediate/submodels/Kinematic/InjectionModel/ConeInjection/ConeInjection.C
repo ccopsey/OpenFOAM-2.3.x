@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ConeInjection.H"
-#include "TimeDataEntry.H"
-#include "mathematicalConstants.H"
-#include "unitConversion.H"
+#include "./ConeInjection.H"
+#include "./primitives/functions/TimeDataEntry/TimeDataEntry/TimeDataEntry.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./global/unitConversion/unitConversion.H"
 
 using namespace Foam::constant::mathematical;
 

@@ -54,7 +54,7 @@ Description
 #ifndef NSRDSfunc2_H
 #define NSRDSfunc2_H
 
-#include "thermophysicalFunction.H"
+#include "./thermophysicalFunction/thermophysicalFunction.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

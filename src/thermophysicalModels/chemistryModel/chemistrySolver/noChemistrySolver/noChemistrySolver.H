@@ -36,7 +36,7 @@ SourceFiles
 #ifndef noChemistySolver_H
 #define noChemistySolver_H
 
-#include "chemistrySolver.H"
+#include "./chemistrySolver/chemistrySolver/chemistrySolver.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -90,7 +90,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "noChemistrySolver.C"
+#   include "./noChemistrySolver.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

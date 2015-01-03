@@ -32,8 +32,8 @@ Description
 #ifndef PlessisMasliyahDragForce_H
 #define PlessisMasliyahDragForce_H
 
-#include "ParticleForce.H"
-#include "volFieldsFwd.H"
+#include "./submodels/Kinematic/ParticleForces/ParticleForce/ParticleForce.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -117,7 +117,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PlessisMasliyahDragForce.C"
+#   include "./PlessisMasliyahDragForce.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

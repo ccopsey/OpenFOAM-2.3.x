@@ -63,8 +63,8 @@ SourceFiles
 #ifndef uniformFixedGradientFvPatchField_H
 #define uniformFixedGradientFvPatchField_H
 
-#include "fixedGradientFvPatchFields.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/basic/fixedGradient/fixedGradientFvPatchFields.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -183,7 +183,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "uniformFixedGradientFvPatchField.C"
+#   include "./uniformFixedGradientFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

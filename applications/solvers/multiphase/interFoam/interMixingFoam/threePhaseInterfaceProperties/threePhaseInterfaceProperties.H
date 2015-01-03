@@ -37,8 +37,8 @@ SourceFiles
 #ifndef threePhaseInterfaceProperties_H
 #define threePhaseInterfaceProperties_H
 
-#include "incompressibleThreePhaseMixture.H"
-#include "surfaceFields.H"
+#include "./incompressibleThreePhaseMixture/incompressibleThreePhaseMixture.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

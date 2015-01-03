@@ -34,9 +34,9 @@ Source files:
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
+#include "./cfdTools/general/include/fvCFD.H"
 #include "incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
-#include "RASModel.H"
+#include "./RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -44,13 +44,13 @@ int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
-    #include "createMesh.H"
-    #include "createFields.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
 
     forAll(timeDirs, timeI)
     {

@@ -32,8 +32,8 @@ Description
 #ifndef IOyPlusRAS_H
 #define IOyPlusRAS_H
 
-#include "yPlusRAS.H"
-#include "IOOutputFilter.H"
+#include "./yPlusRAS.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

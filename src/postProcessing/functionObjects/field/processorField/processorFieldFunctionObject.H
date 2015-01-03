@@ -36,8 +36,8 @@ SourceFiles
 #ifndef processorFieldFunctionObject_H
 #define processorFieldFunctionObject_H
 
-#include "processorField.H"
-#include "OutputFilterFunctionObject.H"
+#include "./processorField.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

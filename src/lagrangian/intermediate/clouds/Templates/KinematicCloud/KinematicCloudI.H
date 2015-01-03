@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvmSup.H"
-#include "SortableList.H"
+#include "./finiteVolume/fvm/fvmSup.H"
+#include "./containers/Lists/SortableList/SortableList.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

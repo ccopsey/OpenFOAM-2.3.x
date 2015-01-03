@@ -35,33 +35,33 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "MULES.H"
-#include "subCycle.H"
-#include "rhoThermo.H"
-#include "interfaceProperties.H"
-#include "twoPhaseMixture.H"
-#include "twoPhaseMixtureThermo.H"
-#include "turbulenceModel.H"
-#include "pimpleControl.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fvMatrices/solvers/MULES/MULES.H"
+#include "./algorithms/subCycle/subCycle.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./interfaceProperties.H"
+#include "./twoPhaseMixture/twoPhaseMixture.H"
+#include "./twoPhaseMixtureThermo/twoPhaseMixtureThermo.H"
+#include "./turbulenceModel.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readGravitationalAcceleration.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
 
     pimpleControl pimple(mesh);
 
-    #include "readTimeControls.H"
-    #include "initContinuityErrs.H"
-    #include "createFields.H"
-    #include "CourantNo.H"
-    #include "setInitialDeltaT.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
+    #include "./createFields.H"
+    #include "./cfdTools/incompressible/CourantNo.H"
+    #include "./cfdTools/general/include/setInitialDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -69,9 +69,9 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "CourantNo.H"
-        #include "setDeltaT.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "alphaEqnsSubCycle.H"
+            #include "./alphaEqnsSubCycle.H"
 
             // correct interface on first PIMPLE corrector
             if (pimple.corr() == 1)
@@ -90,8 +90,8 @@ int main(int argc, char *argv[])
 
             solve(fvm::ddt(rho) + fvc::div(rhoPhi));
 
-            #include "UEqn.H"
-            #include "TEqn.H"
+            #include "./UEqn.H"
+            #include "./TEqn.H"
 
             // --- Pressure corrector loop
             while (pimple.correct())

@@ -244,12 +244,12 @@ set(SOURCES
   matrices/lduMatrix/solvers/GAMG/GAMGProcAgglomerations/procFacesGAMGProcAgglomeration/procFacesGAMGProcAgglomeration.C
   meshes/lduMesh/lduMesh.C
   meshes/lduMesh/lduPrimitiveMesh.C
-  matrices/LduMatrix/LduMatrix/lduMatrices.C
-  matrices/LduMatrix/LduMatrix/solverPerformance.C
-  matrices/LduMatrix/LduMatrix/LduInterfaceField/LduInterfaceFields.C
-  matrices/LduMatrix/Smoothers/lduSmoothers.C
-  matrices/LduMatrix/Preconditioners/lduPreconditioners.C
-  matrices/LduMatrix/Solvers/lduSolvers.C
+  matrices/_LduMatrix/LduMatrix/lduMatrices.C
+  matrices/_LduMatrix/LduMatrix/solverPerformance.C
+  matrices/_LduMatrix/LduMatrix/LduInterfaceField/LduInterfaceFields.C
+  matrices/_LduMatrix/Smoothers/lduSmoothers.C
+  matrices/_LduMatrix/Preconditioners/lduPreconditioners.C
+  matrices/_LduMatrix/Solvers/lduSolvers.C
   meshes/primitiveShapes/line/line.C
   meshes/primitiveShapes/plane/plane.C
   meshes/primitiveShapes/triangle/intersection.C
@@ -351,7 +351,7 @@ set(SOURCES
   meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistributePolyMesh.C
   meshes/polyMesh/mapPolyMesh/mapDistribute/IOmapDistribute.C
   meshes/polyMesh/mapPolyMesh/mapAddedPolyMesh.C
-  meshes/primitiveMesh/PrimitivePatch/PrimitivePatchName.C
+  meshes/primitiveMesh/_PrimitivePatch/PrimitivePatchName.C
   meshes/pointMesh/pointMesh.C
   meshes/pointMesh/pointMeshMapper/pointMapper.C
   meshes/pointMesh/pointMeshMapper/pointPatchMapper.C
@@ -462,8 +462,8 @@ set(LIBRARIES
   z
 )
 
-include(include.cmake)
-include(../../src/OSspecific/POSIX/include.cmake)
+include_directories(.)
+include_directories(../../src/OSspecific/POSIX)
 include_directories(${ZLIB_INCLUDE_DIR})
 
 add_library(libOpenFOAM ${SOURCES})

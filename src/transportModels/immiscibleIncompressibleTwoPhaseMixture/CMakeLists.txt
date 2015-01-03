@@ -29,14 +29,14 @@ set(LIBRARIES
   libfiniteVolume
 )
 
-include(include.cmake)
-include(../../../src/OpenFOAM/include.cmake)
-include(../../../src/OSspecific/POSIX/include.cmake)
+include_directories(.)
+include_directories(../../../src/OpenFOAM)
+include_directories(../../../src/OSspecific/POSIX)
 include_directories(..)
-include(../../../src/finiteVolume/include.cmake)
-include(../incompressible/include.cmake)
-include(../interfaceProperties/include.cmake)
-include(../twoPhaseMixture/include.cmake)
+include_directories(../../../src/finiteVolume)
+include_directories(../incompressible)
+include_directories(../interfaceProperties)
+include_directories(../twoPhaseMixture)
 
 add_library(libimmiscibleIncompressibleTwoPhaseMixture ${SOURCES})
 set_target_properties(libimmiscibleIncompressibleTwoPhaseMixture PROPERTIES PREFIX "")

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "COxidationKineticDiffusionLimitedRate.H"
-#include "mathematicalConstants.H"
+#include "./COxidationKineticDiffusionLimitedRate.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

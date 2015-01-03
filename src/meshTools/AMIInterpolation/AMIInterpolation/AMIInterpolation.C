@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AMIInterpolation.H"
-#include "AMIMethod.H"
-#include "meshTools.H"
-#include "mapDistribute.H"
+#include "./AMIInterpolation.H"
+#include "./AMIMethod/AMIMethod/AMIMethod.H"
+#include "./meshTools/meshTools.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

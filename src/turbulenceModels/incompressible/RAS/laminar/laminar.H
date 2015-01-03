@@ -38,7 +38,7 @@ SourceFiles
 #ifndef rasLaminar_H
 #define rasLaminar_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

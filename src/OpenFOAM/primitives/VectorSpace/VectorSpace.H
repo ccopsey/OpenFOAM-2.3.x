@@ -39,9 +39,9 @@ SourceFiles
 #ifndef VectorSpace_H
 #define VectorSpace_H
 
-#include "direction.H"
-#include "scalar.H"
-#include "word.H"
+#include "./primitives/direction/direction.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -165,10 +165,10 @@ word name(const VectorSpace<Form, Cmpt, nCmpt>&);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "VectorSpaceI.H"
+#include "./VectorSpaceI.H"
 
 #ifdef NoRepository
-#   include "VectorSpace.C"
+#   include "./VectorSpace.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

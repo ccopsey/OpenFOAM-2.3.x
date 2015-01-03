@@ -36,8 +36,8 @@ SourceFiles
 #ifndef yPlusRASFunctionObject_H
 #define yPlusRASFunctionObject_H
 
-#include "yPlusRAS.H"
-#include "OutputFilterFunctionObject.H"
+#include "./yPlusRAS.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

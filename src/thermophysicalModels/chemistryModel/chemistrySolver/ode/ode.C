@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ode.H"
-#include "chemistryModel.H"
+#include "./ode.H"
+#include "./chemistryModel/chemistryModel/chemistryModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

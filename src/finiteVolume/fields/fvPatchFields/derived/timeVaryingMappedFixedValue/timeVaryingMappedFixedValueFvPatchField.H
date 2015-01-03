@@ -74,11 +74,11 @@ SourceFiles
 #ifndef timeVaryingMappedFixedValueFvPatchField_H
 #define timeVaryingMappedFixedValueFvPatchField_H
 
-#include "fixedValueFvPatchFields.H"
-#include "FixedList.H"
-#include "instantList.H"
-#include "pointToPointPlanarInterpolation.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./db/Time/instant/instantList.H"
+#include "./triSurface/triSurfaceTools/pointToPointPlanarInterpolation.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -255,7 +255,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "timeVaryingMappedFixedValueFvPatchField.C"
+#   include "./timeVaryingMappedFixedValueFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Gosman.H"
-#include "phasePair.H"
-#include "fvc.H"
+#include "./Gosman.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./finiteVolume/fvc/fvc.H"
 #include "PhaseCompressibleTurbulenceModel.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "dragModel.H"
+#include "./dragModels/dragModel/dragModel.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

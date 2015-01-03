@@ -34,9 +34,9 @@ SourceFiles
 #ifndef cellAspectRatioControl_H
 #define cellAspectRatioControl_H
 
-#include "dictionary.H"
-#include "vector.H"
-#include "scalar.H"
+#include "./db/dictionary/dictionary.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./primitives/Scalar/scalar/scalar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

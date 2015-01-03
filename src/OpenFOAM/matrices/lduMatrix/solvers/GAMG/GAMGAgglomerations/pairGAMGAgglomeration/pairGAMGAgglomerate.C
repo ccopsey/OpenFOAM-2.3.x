@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "pairGAMGAgglomeration.H"
-#include "lduAddressing.H"
+#include "./pairGAMGAgglomeration.H"
+#include "./matrices/lduMatrix/lduAddressing/lduAddressing.H"
 
 // * * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * //
 

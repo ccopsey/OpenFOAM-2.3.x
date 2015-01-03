@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "faceSource.H"
-#include "fvMesh.H"
-#include "cyclicPolyPatch.H"
-#include "emptyPolyPatch.H"
-#include "coupledPolyPatch.H"
-#include "sampledSurface.H"
-#include "mergePoints.H"
-#include "indirectPrimitivePatch.H"
-#include "PatchTools.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./faceSource.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/basic/coupled/coupledPolyPatch.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./meshes/primitiveMesh/primitivePatch/indirectPrimitivePatch.H"
+#include "./meshes/primitiveMesh/PatchTools/PatchTools.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

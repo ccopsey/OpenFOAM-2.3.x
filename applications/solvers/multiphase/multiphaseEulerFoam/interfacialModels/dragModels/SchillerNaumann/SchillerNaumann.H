@@ -34,7 +34,7 @@ SourceFiles
 #ifndef SchillerNaumann_H
 #define SchillerNaumann_H
 
-#include "dragModel.H"
+#include "./dragModels/dragModel/dragModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

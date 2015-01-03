@@ -26,8 +26,8 @@ License
 #ifndef emptyPointPatchFields_H
 #define emptyPointPatchFields_H
 
-#include "emptyPointPatchField.H"
-#include "fieldTypes.H"
+#include "./emptyPointPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

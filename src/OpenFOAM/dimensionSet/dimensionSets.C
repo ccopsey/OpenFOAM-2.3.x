@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dimensionSet.H"
-#include "dimensionedScalar.H"
-#include "simpleRegIOobject.H"
-#include "demandDrivenData.H"
+#include "./dimensionSet.H"
+#include "./dimensionedTypes/dimensionedScalar/dimensionedScalar.H"
+#include "./global/debug/simpleRegIOobject.H"
+#include "./include/demandDrivenData.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -32,8 +32,8 @@ Description
 #ifndef scalarListIOList_H
 #define scalarListIOList_H
 
-#include "scalarList.H"
-#include "CompactIOList.H"
+#include "./scalarList.H"
+#include "./db/IOobjects/CompactIOList/CompactIOList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

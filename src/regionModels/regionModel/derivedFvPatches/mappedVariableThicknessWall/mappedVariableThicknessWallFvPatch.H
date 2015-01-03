@@ -40,8 +40,8 @@ SourceFiles
 #ifndef mappedWallFvPatch_H
 #define mappedWallFvPatch_H
 
-#include "wallFvPatch.H"
-#include "mappedVariableThicknessWallPolyPatch.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./mappedPatches/mappedPolyPatch/mappedVariableThicknessWallPolyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

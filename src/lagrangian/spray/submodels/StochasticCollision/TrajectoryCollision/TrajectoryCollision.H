@@ -33,7 +33,7 @@ Description
 #ifndef TrajectoryCollision_H
 #define TrajectoryCollision_H
 
-#include "ORourkeCollision.H"
+#include "./submodels/StochasticCollision/ORourkeCollision/ORourkeCollision.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -114,7 +114,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "TrajectoryCollision.C"
+#   include "./TrajectoryCollision.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

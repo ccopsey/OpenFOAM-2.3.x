@@ -30,11 +30,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "calc.H"
-#include "fvc.H"
-#include "dsmcCloud.H"
-#include "dsmcFields.H"
-#include "IOobjectList.H"
+#include "./calc.H"
+#include "./finiteVolume/fvc/fvc.H"
+#include "./clouds/derived/dsmcCloud/dsmcCloud.H"
+#include "./dsmcFields/dsmcFields.H"
+#include "./db/IOobjectList/IOobjectList.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

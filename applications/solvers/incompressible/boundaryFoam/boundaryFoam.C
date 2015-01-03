@@ -35,22 +35,22 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "singlePhaseTransportModel.H"
-#include "RASModel.H"
-#include "wallFvPatch.H"
-#include "makeGraph.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
+#include "./RASModel.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./graphField/makeGraph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "interrogateWallPatches.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./interrogateWallPatches.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -86,11 +86,11 @@ int main(int argc, char *argv[])
             << ", pressure gradient = " << (flowDirection & gradP.value())
             << endl;
 
-        #include "evaluateNearWall.H"
+        #include "./evaluateNearWall.H"
 
         if (runTime.outputTime())
         {
-            #include "makeGraphs.H"
+            #include "./makeGraphs.H"
         }
 
         Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"

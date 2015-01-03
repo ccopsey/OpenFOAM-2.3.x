@@ -56,17 +56,17 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "ReadFields.H"
-#include "pointFields.H"
-#include "transformField.H"
-#include "transformGeometricField.H"
-#include "IStringStream.H"
-#include "mathematicalConstants.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./fields/GeometricFields/transformGeometricField/transformGeometricField.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam;
 using namespace Foam::constant::mathematical;
@@ -94,7 +94,7 @@ void readAndRotateFields
 
 void rotateFields(const argList& args, const Time& runTime, const tensor& T)
 {
-#   include "createNamedMesh.H"
+#   include "./include/createNamedMesh.H"
 
     // Read objects in time directory
     IOobjectList objects(mesh, runTime.timeName());
@@ -178,9 +178,9 @@ int main(int argc, char *argv[])
         "uniform [mm] to [m] scaling"
     );
 
-#   include "addRegionOption.H"
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/addRegionOption.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     word regionName = polyMesh::defaultRegion;
     fileName meshDir;

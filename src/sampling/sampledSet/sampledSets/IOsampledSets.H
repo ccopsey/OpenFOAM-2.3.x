@@ -32,8 +32,8 @@ Description
 #ifndef IOsampledSets_H
 #define IOsampledSets_H
 
-#include "sampledSets.H"
-#include "IOOutputFilter.H"
+#include "./sampledSets.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

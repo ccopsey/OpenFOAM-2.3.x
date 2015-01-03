@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "pressureGradientExplicitSource.H"
+#include "./pressureGradientExplicitSource.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

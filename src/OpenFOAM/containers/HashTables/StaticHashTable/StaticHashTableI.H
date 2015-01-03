@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "IOstreams.H"
+#include "./db/error/error.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * Private Member Classes * * * * * * * * * * * * //
 

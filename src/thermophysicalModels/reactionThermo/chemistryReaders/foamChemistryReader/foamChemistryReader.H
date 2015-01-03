@@ -35,13 +35,13 @@ SourceFiles
 #ifndef foamChemistryReader_H
 #define foamChemistryReader_H
 
-#include "chemistryReader.H"
-#include "fileName.H"
-#include "typeInfo.H"
-#include "HashPtrTable.H"
-#include "labelList.H"
-#include "speciesTable.H"
-#include "atomicWeights.H"
+#include "./chemistryReaders/chemistryReader/chemistryReader.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./speciesTable/speciesTable.H"
+#include "./atomicWeights/atomicWeights.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -144,7 +144,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "foamChemistryReader.C"
+#   include "./foamChemistryReader.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -34,7 +34,7 @@ SourceFiles
 #ifndef surfaceOffsetLinearDistance_H
 #define surfaceOffsetLinearDistance_H
 
-#include "cellSizeFunction.H"
+#include "./cellSizeControlSurfaces/cellSizeFunction/cellSizeFunction/cellSizeFunction.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

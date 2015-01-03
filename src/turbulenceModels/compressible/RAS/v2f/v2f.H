@@ -95,7 +95,7 @@ SourceFiles
 #ifndef compressiblev2f_H
 #define compressiblev2f_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

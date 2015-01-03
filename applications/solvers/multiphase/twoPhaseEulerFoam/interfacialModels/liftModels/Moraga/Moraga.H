@@ -51,7 +51,7 @@ SourceFiles
 #ifndef Moraga_H
 #define Moraga_H
 
-#include "liftModel.H"
+#include "./liftModels/liftModel/liftModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

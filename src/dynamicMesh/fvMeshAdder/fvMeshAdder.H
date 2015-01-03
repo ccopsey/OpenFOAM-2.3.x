@@ -37,11 +37,11 @@ SourceFiles
 #ifndef fvMeshAdder_H
 #define fvMeshAdder_H
 
-#include "polyMeshAdder.H"
-#include "volFieldsFwd.H"
-#include "fvPatchFieldsFwd.H"
-#include "fvsPatchFieldsFwd.H"
-#include "fvPatchFieldMapper.H"
+#include "./polyMeshAdder/polyMeshAdder.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldsFwd.H"
+#include "./fields/fvsPatchFields/fvsPatchField/fvsPatchFieldsFwd.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -141,7 +141,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvMeshAdderTemplates.C"
+#   include "./fvMeshAdderTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

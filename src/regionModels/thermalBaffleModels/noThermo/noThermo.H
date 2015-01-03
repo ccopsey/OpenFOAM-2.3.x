@@ -35,8 +35,8 @@ SourceFiles
 #ifndef noThermo_H
 #define noThermo_H
 
-#include "thermalBaffleModel.H"
-#include "volFieldsFwd.H"
+#include "./thermalBaffleModel/thermalBaffleModel.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

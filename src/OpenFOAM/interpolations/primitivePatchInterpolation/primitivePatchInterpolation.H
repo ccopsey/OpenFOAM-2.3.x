@@ -32,11 +32,11 @@ Description
 #ifndef primitivePatchInterpolation_H
 #define primitivePatchInterpolation_H
 
-#include "PrimitivePatchInterpolation.H"
-#include "PrimitivePatch.H"
-#include "face.H"
-#include "SubList.H"
-#include "pointField.H"
+#include "./_PrimitivePatchInterpolation.H"
+#include "./meshes/primitiveMesh/_PrimitivePatch/PrimitivePatch.H"
+#include "./meshes/meshShapes/face/face.H"
+#include "./containers/Lists/SubList/SubList.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

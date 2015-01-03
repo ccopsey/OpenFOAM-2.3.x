@@ -36,9 +36,9 @@ SourceFiles
 #ifndef gaussGrad_H
 #define gaussGrad_H
 
-#include "gradScheme.H"
-#include "surfaceInterpolationScheme.H"
-#include "linear.H"
+#include "./finiteVolume/gradSchemes/gradScheme/gradScheme.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolationScheme/surfaceInterpolationScheme.H"
+#include "./interpolation/surfaceInterpolation/schemes/linear/linear.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -162,7 +162,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "gaussGrad.C"
+#   include "./gaussGrad.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

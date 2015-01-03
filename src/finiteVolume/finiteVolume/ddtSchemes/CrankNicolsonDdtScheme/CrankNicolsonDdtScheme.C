@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CrankNicolsonDdtScheme.H"
-#include "surfaceInterpolate.H"
-#include "fvcDiv.H"
-#include "fvMatrices.H"
+#include "./CrankNicolsonDdtScheme.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./fvMatrices/fvMatrices.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

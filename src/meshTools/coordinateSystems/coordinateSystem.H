@@ -64,15 +64,15 @@ SourceFiles
 #ifndef coordinateSystem_H
 #define coordinateSystem_H
 
-#include "vector.H"
-#include "point.H"
-#include "tensor.H"
-#include "vectorField.H"
-#include "pointField.H"
-#include "tmp.H"
-#include "coordinateRotation.H"
-#include "objectRegistry.H"
-#include "autoPtr.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./primitives/Tensor/tensor/tensor.H"
+#include "./fields/Fields/vectorField/vectorField.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./memory/tmp/tmp.H"
+#include "./coordinateRotation/coordinateRotation.H"
+#include "./db/objectRegistry/objectRegistry.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

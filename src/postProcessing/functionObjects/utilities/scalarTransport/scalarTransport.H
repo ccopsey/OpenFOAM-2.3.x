@@ -48,11 +48,11 @@ SourceFiles
 #ifndef scalarTransport_H
 #define scalarTransport_H
 
-#include "volFields.H"
-#include "surfaceFieldsFwd.H"
-#include "pointFieldFwd.H"
-#include "fvMatricesFwd.H"
-#include "fvOptionList.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
+#include "./fvMatrices/fvMatricesFwd.H"
+#include "./fvOptions/fvOptionList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

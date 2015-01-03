@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ThermoLookupTableInjection.H"
-#include "scalarIOList.H"
+#include "./ThermoLookupTableInjection.H"
+#include "./primitives/Scalar/lists/scalarIOList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

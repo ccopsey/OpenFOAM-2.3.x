@@ -28,11 +28,11 @@ set(LIBRARIES
   libspecie
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/thermophysicalModels/specie/include.cmake)
-include(../../../../src/thermophysicalModels/reactionThermo/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/thermophysicalModels/specie)
+include_directories(../../../../src/thermophysicalModels/reactionThermo)
 include_directories(${FLEX_INCLUDE_DIR})
 
 add_executable(chemkinToFoam ${SOURCES})

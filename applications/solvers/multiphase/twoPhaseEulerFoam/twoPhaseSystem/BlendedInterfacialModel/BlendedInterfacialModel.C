@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "BlendedInterfacialModel.H"
-#include "fixedValueFvsPatchFields.H"
+#include "./BlendedInterfacialModel.H"
+#include "./fields/fvsPatchFields/basic/fixedValue/fixedValueFvsPatchFields.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

@@ -36,11 +36,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMeshSubset.H"
-#include "argList.H"
-#include "cellSet.H"
-#include "IOobjectList.H"
-#include "volFields.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
+#include "./global/argList/argList.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./fields/volFields/volFields.H"
 
 using namespace Foam;
 
@@ -158,8 +158,8 @@ int main(int argc, char *argv[])
         "select a mesh subset based on a cellSet"
     );
 
-    #include "addOverwriteOption.H"
-    #include "addRegionOption.H"
+    #include "./include/addOverwriteOption.H"
+    #include "./include/addRegionOption.H"
     argList::validArgs.append("cellSet");
     argList::addOption
     (
@@ -174,14 +174,14 @@ int main(int argc, char *argv[])
         "time",
         "specify a time for the resulting mesh"
     );
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
 
     Foam::word meshRegionName = polyMesh::defaultRegion;
     args.optionReadIfPresent("region", meshRegionName);
 
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
 
     const word setName = args[1];

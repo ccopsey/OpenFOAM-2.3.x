@@ -35,8 +35,8 @@ SourceFiles
 #ifndef regionCoupledWallPolyPatch_H
 #define regionCoupledWallPolyPatch_H
 
-#include "wallPolyPatch.H"
-#include "regionCoupledBase.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
+#include "./regionCoupledBase.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

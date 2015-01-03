@@ -32,7 +32,7 @@ Description
 #ifndef Euler_H
 #define Euler_H
 
-#include "IntegrationScheme.H"
+#include "./IntegrationScheme/IntegrationScheme/IntegrationScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -93,7 +93,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Euler.C"
+#   include "./Euler.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

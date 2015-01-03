@@ -35,9 +35,9 @@ SourceFiles
 #ifndef cyclicACMIPointPatchField_H
 #define cyclicACMIPointPatchField_H
 
-#include "coupledPointPatchField.H"
-#include "cyclicACMIPointPatch.H"
-#include "PrimitivePatchInterpolation.H"
+#include "./fields/pointPatchFields/basic/coupled/coupledPointPatchField.H"
+#include "./AMIInterpolation/patches/cyclicACMI/cyclicACMIPointPatch/cyclicACMIPointPatch.H"
+#include "./interpolations/primitivePatchInterpolation/_PrimitivePatchInterpolation.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -231,7 +231,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#    include "cyclicACMIPointPatchField.C"
+#    include "./cyclicACMIPointPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

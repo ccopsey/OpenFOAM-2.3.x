@@ -26,13 +26,13 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "polyMesh.H"
-#include "mapPolyMesh.H"
-#include "Time.H"
-#include "globalMeshData.H"
-#include "pointMesh.H"
-#include "indexedOctree.H"
-#include "treeDataCell.H"
+#include "./polyMesh.H"
+#include "./mapPolyMesh/mapPolyMesh.H"
+#include "./db/Time/Time.H"
+#include "./globalMeshData/globalMeshData.H"
+#include "./meshes/pointMesh/pointMesh.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./algorithms/indexedOctree/treeDataCell.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

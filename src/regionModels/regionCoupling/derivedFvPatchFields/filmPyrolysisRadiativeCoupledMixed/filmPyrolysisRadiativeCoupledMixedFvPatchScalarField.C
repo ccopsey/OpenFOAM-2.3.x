@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "filmPyrolysisRadiativeCoupledMixedFvPatchScalarField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "mappedPatchBase.H"
+#include "./filmPyrolysisRadiativeCoupledMixedFvPatchScalarField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./mappedPatches/mappedPolyPatch/mappedPatchBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

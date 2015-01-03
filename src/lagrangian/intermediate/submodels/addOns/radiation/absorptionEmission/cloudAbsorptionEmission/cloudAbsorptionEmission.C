@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cloudAbsorptionEmission.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./cloudAbsorptionEmission.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
-#include "thermoCloud.H"
+#include "./clouds/baseClasses/thermoCloud/thermoCloud.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

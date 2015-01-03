@@ -33,10 +33,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "OPstream.H"
-#include "IPstream.H"
-#include "IOstreams.H"
-#include "contiguous.H"
+#include "./OPstream.H"
+#include "./IPstream.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./primitives/contiguous/contiguous.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -37,7 +37,7 @@ SourceFiles
 #ifndef mixedFixedValueSlipFvPatchField_H
 #define mixedFixedValueSlipFvPatchField_H
 
-#include "transformFvPatchField.H"
+#include "./fields/fvPatchFields/basic/transform/transformFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -217,7 +217,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "mixedFixedValueSlipFvPatchField.C"
+#   include "./mixedFixedValueSlipFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

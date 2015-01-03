@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "incompressibleTwoPhaseInteractingMixture.H"
-#include "addToRunTimeSelectionTable.H"
-#include "surfaceFields.H"
-#include "fvc.H"
+#include "./incompressibleTwoPhaseInteractingMixture.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./finiteVolume/fvc/fvc.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

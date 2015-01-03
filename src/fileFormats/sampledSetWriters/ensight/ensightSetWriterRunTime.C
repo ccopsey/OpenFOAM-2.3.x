@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ensightSetWriter.H"
-#include "writers.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./ensightSetWriter.H"
+#include "./sampledSetWriters/writers.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

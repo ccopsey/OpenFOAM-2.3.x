@@ -36,9 +36,9 @@ SourceFiles
 #ifndef probesFunctionObject_H
 #define probesFunctionObject_H
 
-#include "probes.H"
-#include "patchProbes.H"
-#include "OutputFilterFunctionObject.H"
+#include "./probes/probes.H"
+#include "./probes/patchProbes.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

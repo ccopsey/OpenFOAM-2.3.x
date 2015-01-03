@@ -32,12 +32,12 @@ SourceFiles
 
 \*---------------------------------------------------------------------------*/
 
-#include "Pstream.H"
+#include "./Pstream.H"
 
 #ifndef IPstream_H
 #define IPstream_H
 
-#include "UIPstream.H"
+#include "./UIPstream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,9 +35,9 @@ SourceFiles
 #ifndef chemistrySolver_H
 #define chemistrySolver_H
 
-#include "chemistryModel.H"
-#include "IOdictionary.H"
-#include "scalarField.H"
+#include "./chemistryModel/chemistryModel/chemistryModel.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./fields/Fields/scalarField/scalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -87,7 +87,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "chemistrySolver.C"
+#   include "./chemistrySolver.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

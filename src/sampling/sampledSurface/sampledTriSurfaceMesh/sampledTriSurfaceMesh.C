@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledTriSurfaceMesh.H"
-#include "meshSearch.H"
-#include "Tuple2.H"
-#include "globalIndex.H"
-#include "treeDataCell.H"
-#include "treeDataFace.H"
-#include "meshTools.H"
+#include "./sampledTriSurfaceMesh.H"
+#include "./meshSearch/meshSearch.H"
+#include "./primitives/Tuple2/Tuple2.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./algorithms/indexedOctree/treeDataCell.H"
+#include "./indexedOctree/treeDataFace.H"
+#include "./meshTools/meshTools.H"
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

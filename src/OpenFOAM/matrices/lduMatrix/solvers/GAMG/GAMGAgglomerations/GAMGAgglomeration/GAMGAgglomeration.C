@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "GAMGAgglomeration.H"
-#include "lduMesh.H"
-#include "lduMatrix.H"
-#include "Time.H"
-#include "GAMGInterface.H"
-#include "GAMGProcAgglomeration.H"
-#include "IOmanip.H"
+#include "./GAMGAgglomeration.H"
+#include "./meshes/lduMesh/lduMesh.H"
+#include "./matrices/lduMatrix/lduMatrix/lduMatrix.H"
+#include "./db/Time/Time.H"
+#include "./matrices/lduMatrix/solvers/GAMG/interfaces/GAMGInterface/GAMGInterface.H"
+#include "./matrices/lduMatrix/solvers/GAMG/GAMGProcAgglomerations/GAMGProcAgglomeration/GAMGProcAgglomeration.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

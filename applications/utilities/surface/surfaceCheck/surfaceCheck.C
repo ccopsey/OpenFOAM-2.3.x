@@ -29,15 +29,15 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "triangle.H"
-#include "triSurface.H"
-#include "triSurfaceSearch.H"
-#include "argList.H"
-#include "OFstream.H"
-#include "OBJstream.H"
-#include "SortableList.H"
-#include "PatchTools.H"
-#include "vtkSurfaceWriter.H"
+#include "./meshes/primitiveShapes/triangle/triangle.H"
+#include "./triSurface/triSurface.H"
+#include "./triSurface/triSurfaceSearch/triSurfaceSearch.H"
+#include "./global/argList/argList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./surfaceFormats/obj/OBJstream.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./meshes/primitiveMesh/PatchTools/PatchTools.H"
+#include "./sampledSurface/writers/vtk/vtkSurfaceWriter.H"
 
 using namespace Foam;
 

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "UPtrList.H"
+#include "./UPtrList.H"
 
 // * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * * //
 
@@ -149,6 +149,6 @@ void Foam::UPtrList<T>::reorder(const labelUList& oldToNew)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "UPtrListIO.C"
+#include "./UPtrListIO.C"
 
 // ************************************************************************* //

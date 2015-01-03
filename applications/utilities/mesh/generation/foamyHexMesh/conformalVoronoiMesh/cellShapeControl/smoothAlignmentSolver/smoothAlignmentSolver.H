@@ -36,8 +36,8 @@ SourceFiles
 #ifndef smoothAlignmentSolver_H
 #define smoothAlignmentSolver_H
 
-#include "cellShapeControlMesh.H"
-#include "triadField.H"
+#include "./cellShapeControl/cellShapeControlMesh/cellShapeControlMesh.H"
+#include "./fields/Fields/triadField/triadField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

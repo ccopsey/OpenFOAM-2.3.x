@@ -55,7 +55,7 @@ bool readBool(Istream&);
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "pTraits.H"
+#include "./primitives/pTraits/pTraits.H"
 
 namespace Foam
 {

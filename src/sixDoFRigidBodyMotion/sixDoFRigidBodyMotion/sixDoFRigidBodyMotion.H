@@ -55,11 +55,11 @@ SourceFiles
 #ifndef sixDoFRigidBodyMotion_H
 #define sixDoFRigidBodyMotion_H
 
-#include "sixDoFRigidBodyMotionState.H"
-#include "pointField.H"
-#include "sixDoFRigidBodyMotionRestraint.H"
-#include "sixDoFRigidBodyMotionConstraint.H"
-#include "Tuple2.H"
+#include "./sixDoFRigidBodyMotionState.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./restraints/sixDoFRigidBodyMotionRestraint/sixDoFRigidBodyMotionRestraint.H"
+#include "./constraints/sixDoFRigidBodyMotionConstraint/sixDoFRigidBodyMotionConstraint.H"
+#include "./primitives/Tuple2/Tuple2.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -353,7 +353,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "sixDoFRigidBodyMotionI.H"
+#include "./sixDoFRigidBodyMotionI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -32,11 +32,11 @@ Description
 #ifndef makeSolidReactionThermo_H
 #define makeSolidReactionThermo_H
 
-#include "solidReaction.H"
-#include "IrreversibleReaction.H"
-#include "Reaction.H"
+#include "./reaction/_Reactions/solidReaction/solidReaction.H"
+#include "./reaction/_Reactions/IrreversibleReaction/IrreversibleReaction.H"
+#include "./reaction/_Reactions/Reaction/Reaction.H"
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

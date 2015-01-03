@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "curvatureSeparation.H"
-#include "addToRunTimeSelectionTable.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "volFields.H"
-#include "kinematicSingleLayer.H"
-#include "surfaceInterpolate.H"
-#include "fvcDiv.H"
-#include "fvcGrad.H"
-#include "stringListOps.H"
-#include "cyclicPolyPatch.H"
+#include "./curvatureSeparation.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./kinematicSingleLayer/kinematicSingleLayer.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolation/surfaceInterpolate.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
+#include "./primitives/strings/lists/stringListOps.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

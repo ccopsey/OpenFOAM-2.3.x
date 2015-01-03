@@ -36,8 +36,8 @@ Description
 #ifndef oneField_H
 #define oneField_H
 
-#include "one.H"
-#include "scalar.H"
+#include "./primitives/one/one.H"
+#include "./primitives/Scalar/scalar/scalar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -76,7 +76,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "oneFieldI.H"
+#   include "./oneFieldI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

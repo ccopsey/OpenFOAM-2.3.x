@@ -34,7 +34,7 @@ SourceFiles
 #ifndef HrenyaSinclair_H
 #define HrenyaSinclair_H
 
-#include "viscosityModel.H"
+#include "./kineticTheoryModels/viscosityModel/viscosityModel/viscosityModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

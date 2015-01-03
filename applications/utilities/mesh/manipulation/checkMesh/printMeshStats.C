@@ -1,14 +1,14 @@
-#include "printMeshStats.H"
-#include "polyMesh.H"
-#include "globalMeshData.H"
+#include "./printMeshStats.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/globalMeshData/globalMeshData.H"
 
-#include "hexMatcher.H"
-#include "wedgeMatcher.H"
-#include "prismMatcher.H"
-#include "pyrMatcher.H"
-#include "tetWedgeMatcher.H"
-#include "tetMatcher.H"
-#include "IOmanip.H"
+#include "./meshes/meshShapes/cellMatcher/hexMatcher.H"
+#include "./meshes/meshShapes/cellMatcher/wedgeMatcher.H"
+#include "./meshes/meshShapes/cellMatcher/prismMatcher.H"
+#include "./meshes/meshShapes/cellMatcher/pyrMatcher.H"
+#include "./meshes/meshShapes/cellMatcher/tetWedgeMatcher.H"
+#include "./meshes/meshShapes/cellMatcher/tetMatcher.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
 
 
 void Foam::printMeshStats(const polyMesh& mesh, const bool allTopology)

@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CloudFunctionObject.H"
+#include "./CloudFunctionObject.H"
 
 // * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * * * //
 
@@ -166,6 +166,6 @@ Foam::fileName Foam::CloudFunctionObject<CloudType>::outputTimeDir() const
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "CloudFunctionObjectNew.C"
+#include "./CloudFunctionObjectNew.C"
 
 // ************************************************************************* //

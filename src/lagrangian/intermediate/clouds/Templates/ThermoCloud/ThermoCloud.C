@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ThermoCloud.H"
-#include "ThermoParcel.H"
+#include "./ThermoCloud.H"
+#include "./parcels/Templates/ThermoParcel/ThermoParcel.H"
 
-#include "HeatTransferModel.H"
+#include "./submodels/Thermodynamic/HeatTransferModel/HeatTransferModel/HeatTransferModel.H"
 
 // * * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * //
 

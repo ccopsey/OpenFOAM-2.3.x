@@ -73,7 +73,7 @@ SourceFiles
 #ifndef nutkAtmRoughWallFunctionFvPatchScalarField_H
 #define nutkAtmRoughWallFunctionFvPatchScalarField_H
 
-#include "nutkWallFunctionFvPatchScalarField.H"
+#include "./derivedFvPatchFields/wallFunctions/nutWallFunctions/nutkWallFunction/nutkWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

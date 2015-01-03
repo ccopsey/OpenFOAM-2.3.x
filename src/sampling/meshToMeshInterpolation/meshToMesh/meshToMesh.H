@@ -42,12 +42,12 @@ SourceFiles
 #ifndef meshToMesh_H
 #define meshToMesh_H
 
-#include "polyMesh.H"
-#include "boundBox.H"
-#include "mapDistribute.H"
-#include "volFieldsFwd.H"
-#include "NamedEnum.H"
-#include "AMIPatchToPatchInterpolation.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/boundBox/boundBox.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIPatchToPatchInterpolation.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -528,12 +528,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "meshToMeshI.H"
+#include "./meshToMeshI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "meshToMeshTemplates.C"
+    #include "./meshToMeshTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

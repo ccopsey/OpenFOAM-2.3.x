@@ -32,8 +32,8 @@ Description
 #ifndef IOtimeActivatedFileUpdate_H
 #define IOtimeActivatedFileUpdate_H
 
-#include "timeActivatedFileUpdate.H"
-#include "IOOutputFilter.H"
+#include "./timeActivatedFileUpdate.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

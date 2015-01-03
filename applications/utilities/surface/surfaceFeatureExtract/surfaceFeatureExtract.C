@@ -35,27 +35,27 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "triSurface.H"
-#include "surfaceFeatures.H"
-#include "featureEdgeMesh.H"
-#include "extendedFeatureEdgeMesh.H"
-#include "treeBoundBox.H"
-#include "meshTools.H"
-#include "OFstream.H"
-#include "triSurfaceMesh.H"
-#include "vtkSurfaceWriter.H"
-#include "triSurfaceFields.H"
-#include "indexedOctree.H"
-#include "treeDataEdge.H"
-#include "unitConversion.H"
-#include "plane.H"
-#include "tensor2D.H"
-#include "symmTensor2D.H"
-#include "point.H"
-#include "triadField.H"
-#include "transform.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./triSurface/triSurface.H"
+#include "./triSurface/surfaceFeatures/surfaceFeatures.H"
+#include "./featureEdgeMesh/featureEdgeMesh.H"
+#include "./extendedEdgeMesh/extendedFeatureEdgeMesh/extendedFeatureEdgeMesh.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./meshTools/meshTools.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./searchableSurface/triSurfaceMesh.H"
+#include "./sampledSurface/writers/vtk/vtkSurfaceWriter.H"
+#include "./triSurfaceFields/triSurfaceFields.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./indexedOctree/treeDataEdge.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./primitives/Tensor2D/tensor2D/tensor2D.H"
+#include "./primitives/SymmTensor2D/symmTensor2D/symmTensor2D.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./fields/Fields/triadField/triadField.H"
+#include "./primitives/transform/transform.H"
 
 using namespace Foam;
 
@@ -938,13 +938,13 @@ int main(int argc, char *argv[])
     );
     argList::noParallel();
 
-#   include "addDictOption.H"
+#   include "./include/addDictOption.H"
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     const word dictName("surfaceFeatureExtractDict");
-#   include "setSystemRunTimeDictionaryIO.H"
+#   include "./include/setSystemRunTimeDictionaryIO.H"
 
     Info<< "Reading " << dictName << nl << endl;
 

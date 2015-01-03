@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "KinematicCloud.H"
-#include "IntegrationScheme.H"
-#include "interpolation.H"
-#include "subCycleTime.H"
+#include "./KinematicCloud.H"
+#include "./IntegrationScheme/IntegrationScheme/IntegrationScheme.H"
+#include "./interpolation/interpolation/interpolation/interpolation.H"
+#include "./db/Time/subCycleTime.H"
 
-#include "InjectionModelList.H"
-#include "DispersionModel.H"
-#include "PatchInteractionModel.H"
-#include "StochasticCollisionModel.H"
-#include "SurfaceFilmModel.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModelList.H"
+#include "./submodels/Kinematic/DispersionModel/DispersionModel/DispersionModel.H"
+#include "./submodels/Kinematic/PatchInteractionModel/PatchInteractionModel/PatchInteractionModel.H"
+#include "./submodels/Kinematic/StochasticCollision/StochasticCollisionModel/StochasticCollisionModel.H"
+#include "./submodels/Kinematic/SurfaceFilmModel/SurfaceFilmModel/SurfaceFilmModel.H"
 
 // * * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * //
 

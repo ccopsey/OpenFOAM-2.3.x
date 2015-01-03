@@ -35,7 +35,7 @@ SourceFiles
 #ifndef incompressibleLESdelta_H
 #define incompressibleLESdelta_H
 
-#include "LESdelta.H"
+#include "./LES/LESdeltas/LESdelta/LESdelta.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

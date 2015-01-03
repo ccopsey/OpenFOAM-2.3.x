@@ -96,8 +96,8 @@ SourceFiles
 #ifndef kOmegaSST_H
 #define kOmegaSST_H
 
-#include "RASModel.H"
-#include "wallDist.H"
+#include "./RASModel/RASModel.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

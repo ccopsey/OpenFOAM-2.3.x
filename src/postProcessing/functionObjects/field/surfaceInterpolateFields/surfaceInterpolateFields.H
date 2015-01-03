@@ -70,9 +70,9 @@ SourceFiles
 #ifndef surfaceInterpolateFields_H
 #define surfaceInterpolateFields_H
 
-#include "OFstream.H"
-#include "surfaceFields.H"
-#include "Tuple2.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./primitives/Tuple2/Tuple2.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -192,7 +192,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "surfaceInterpolateFieldsTemplates.C"
+#   include "./surfaceInterpolateFieldsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -36,18 +36,18 @@ Description
    ------ local definitions
  \* ------------------------------------------------------------------------ */
 
-#include "cyclicPolyPatch.H"
-#include "argList.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "polyTopoChange.H"
-#include "polyMeshZipUpCells.H"
-#include "wallPolyPatch.H"
-#include "symmetryPolyPatch.H"
-#include "oldCyclicPolyPatch.H"
-#include "Swap.H"
-#include "IFstream.H"
-#include "readHexLabel.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./polyMeshZipUpCells/polyMeshZipUpCells.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/symmetry/symmetryPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/oldCyclic/oldCyclicPolyPatch.H"
+#include "./primitives/Swap/Swap.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/IOstreams/Sstreams/readHexLabel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -814,7 +814,7 @@ int main(int argc, char *argv[])
     }
 
 
-#   include "createTime.H"
+#   include "./include/createTime.H"
 
     const fileName fluentFile = args[1];
     IFstream fluentStream(fluentFile);

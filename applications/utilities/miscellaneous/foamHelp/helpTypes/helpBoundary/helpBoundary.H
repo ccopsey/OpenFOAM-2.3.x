@@ -53,8 +53,8 @@ SourceFiles
 #ifndef helpBoundary_H
 #define helpBoundary_H
 
-#include "helpType.H"
-#include "IOobject.H"
+#include "./helpType/helpType.H"
+#include "./db/IOobject/IOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -116,7 +116,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "helpBoundaryTemplates.C"
+    #include "./helpBoundaryTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

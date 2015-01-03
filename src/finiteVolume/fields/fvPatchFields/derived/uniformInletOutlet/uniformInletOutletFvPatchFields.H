@@ -26,8 +26,8 @@ License
 #ifndef uniformInletOutletFvPatchFields_H
 #define uniformInletOutletFvPatchFields_H
 
-#include "uniformInletOutletFvPatchField.H"
-#include "fieldTypes.H"
+#include "./uniformInletOutletFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

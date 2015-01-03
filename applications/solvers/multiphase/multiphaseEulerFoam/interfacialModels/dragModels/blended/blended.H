@@ -36,7 +36,7 @@ SourceFiles
 #ifndef blended_H
 #define blended_H
 
-#include "dragModel.H"
+#include "./dragModels/dragModel/dragModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

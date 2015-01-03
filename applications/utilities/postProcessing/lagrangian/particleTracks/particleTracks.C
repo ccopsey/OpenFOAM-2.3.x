@@ -30,15 +30,15 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Cloud.H"
-#include "IOdictionary.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "timeSelector.H"
-#include "OFstream.H"
-#include "passiveParticleCloud.H"
-#include "writer.H"
+#include "./global/argList/argList.H"
+#include "./Cloud/Cloud.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./passiveParticle/passiveParticleCloud.H"
+#include "./sampledSetWriters/writer.H"
 
 using namespace Foam;
 
@@ -47,14 +47,14 @@ using namespace Foam;
 int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
 
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
+    #include "./include/createTime.H"
     instantList timeDirs = timeSelector::select0(runTime, args);
-    #include "createNamedMesh.H"
-    #include "createFields.H"
+    #include "./include/createNamedMesh.H"
+    #include "./createFields.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

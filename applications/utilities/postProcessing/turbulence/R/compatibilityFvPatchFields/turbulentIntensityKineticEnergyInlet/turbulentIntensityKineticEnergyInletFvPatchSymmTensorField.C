@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "turbulentIntensityKineticEnergyInletFvPatchSymmTensorField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "volFields.H"
+#include "./turbulentIntensityKineticEnergyInletFvPatchSymmTensorField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

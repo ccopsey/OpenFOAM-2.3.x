@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4Foam.H"
-#include "vtkPV4FoamReader.h"
+#include "./vtkPV4Foam.H"
+#include "./PV4Readers/PV4FoamReader/PV4FoamReader/vtkPV4FoamReader.h"
 
 // OpenFOAM includes
-#include "fvMesh.H"
-#include "Time.H"
-#include "patchZones.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/primitiveMesh/primitivePatch/patchZones.H"
 
 // VTK includes
 #include "vtkDataArraySelection.h"
@@ -48,8 +48,8 @@ defineTypeNameAndDebug(vtkPV4Foam, 0);
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 
-#include "vtkPV4FoamAddToSelection.H"
-#include "vtkPV4FoamUpdateInfoFields.H"
+#include "./vtkPV4FoamAddToSelection.H"
+#include "./vtkPV4FoamUpdateInfoFields.H"
 
 void Foam::vtkPV4Foam::resetCounters()
 {

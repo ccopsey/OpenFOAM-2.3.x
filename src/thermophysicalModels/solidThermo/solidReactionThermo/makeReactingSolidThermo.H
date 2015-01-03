@@ -32,8 +32,8 @@ Description
 #ifndef makeReactingSolidThermo_H
 #define makeReactingSolidThermo_H
 
-#include "addToRunTimeSelectionTable.H"
-#include "SpecieMixture.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./mixtures/SpecieMixture/SpecieMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 #define makeSolidReactionMixtureThermo(BaseThermo,Cthermo,Mixture,ThermoPhys) \

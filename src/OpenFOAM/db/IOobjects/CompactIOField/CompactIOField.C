@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CompactIOField.H"
-#include "labelList.H"
+#include "./CompactIOField.H"
+#include "./primitives/ints/lists/labelList.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

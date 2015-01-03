@@ -35,7 +35,7 @@ SourceFiles
 #ifndef meshToMeshMethod_H
 #define meshToMeshMethod_H
 
-#include "polyMesh.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -187,7 +187,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "meshToMeshMethodI.H"
+#include "./meshToMeshMethodI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

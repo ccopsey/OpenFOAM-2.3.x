@@ -32,23 +32,23 @@ Description
 #ifndef makeReaction_H
 #define makeReaction_H
 
-#include "Reaction.H"
+#include "./reaction/_Reactions/Reaction/Reaction.H"
 
-#include "IrreversibleReaction.H"
-#include "ReversibleReaction.H"
-#include "NonEquilibriumReversibleReaction.H"
+#include "./reaction/_Reactions/IrreversibleReaction/IrreversibleReaction.H"
+#include "./reaction/_Reactions/ReversibleReaction/ReversibleReaction.H"
+#include "./reaction/_Reactions/NonEquilibriumReversibleReaction/NonEquilibriumReversibleReaction.H"
 
-#include "thermo.H"
+#include "./thermo/thermo/thermo.H"
 
-#include "sutherlandTransport.H"
-#include "janafThermo.H"
-#include "perfectGas.H"
+#include "./transport/sutherland/sutherlandTransport.H"
+#include "./thermo/janaf/janafThermo.H"
+#include "./equationOfState/perfectGas/perfectGas.H"
 
-#include "polynomialTransport.H"
-#include "hPolynomialThermo.H"
-#include "icoPolynomial.H"
+#include "./transport/polynomial/polynomialTransport.H"
+#include "./thermo/hPolynomial/hPolynomialThermo.H"
+#include "./equationOfState/icoPolynomial/icoPolynomial.H"
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

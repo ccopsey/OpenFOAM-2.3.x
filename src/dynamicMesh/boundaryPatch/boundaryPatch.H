@@ -36,8 +36,8 @@ SourceFiles
 #ifndef boundaryPatch_H
 #define boundaryPatch_H
 
-#include "patchIdentifier.H"
-#include "autoPtr.H"
+#include "./meshes/Identifiers/patch/patchIdentifier.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

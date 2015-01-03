@@ -56,7 +56,7 @@ Description
         //- Optional:
         codeInclude
         #{
-            #include "fvCFD.H"
+            #include "./cfdTools/general/include/fvCFD.H"
         #};
 
         //- Optional:
@@ -92,7 +92,7 @@ SourceFiles
 #ifndef codeStream_H
 #define codeStream_H
 
-#include "functionEntry.H"
+#include "./db/dictionary/functionEntries/functionEntry/functionEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

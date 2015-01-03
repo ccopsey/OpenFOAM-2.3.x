@@ -63,12 +63,12 @@ SourceFiles
 #ifndef isoSurface_H
 #define isoSurface_H
 
-#include "triSurface.H"
-#include "labelPair.H"
-#include "pointIndexHit.H"
-#include "PackedBoolList.H"
-#include "volFields.H"
-#include "slicedVolFields.H"
+#include "./triSurface/triSurface.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./meshes/primitiveShapes/objectHit/pointIndexHit.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/volFields/slicedVolFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -444,7 +444,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "isoSurfaceTemplates.C"
+#   include "./isoSurfaceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

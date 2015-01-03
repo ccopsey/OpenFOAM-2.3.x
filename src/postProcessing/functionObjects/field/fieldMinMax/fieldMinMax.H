@@ -76,13 +76,13 @@ SourceFiles
 #ifndef fieldMinMax_H
 #define fieldMinMax_H
 
-#include "functionObjectFile.H"
-#include "primitiveFieldsFwd.H"
-#include "volFieldsFwd.H"
-#include "HashSet.H"
-#include "OFstream.H"
-#include "Switch.H"
-#include "NamedEnum.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -234,7 +234,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fieldMinMaxTemplates.C"
+#   include "./fieldMinMaxTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

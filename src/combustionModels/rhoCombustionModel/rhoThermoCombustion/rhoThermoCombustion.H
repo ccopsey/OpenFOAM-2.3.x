@@ -35,9 +35,9 @@ SourceFiles
 #ifndef rhoThermoCombustion_H
 #define rhoThermoCombustion_H
 
-#include "autoPtr.H"
-#include "rhoCombustionModel.H"
-#include "rhoChemistryModel.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./rhoCombustionModel/rhoCombustionModel/rhoCombustionModel.H"
+#include "./chemistryModel/rhoChemistryModel/rhoChemistryModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

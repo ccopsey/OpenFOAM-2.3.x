@@ -36,8 +36,8 @@ SourceFiles
 #ifndef extendedFeatureEdgeMesh_H
 #define extendedFeatureEdgeMesh_H
 
-#include "extendedEdgeMesh.H"
-#include "regIOobject.H"
+#include "./extendedEdgeMesh/extendedEdgeMesh.H"
+#include "./db/regIOobject/regIOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

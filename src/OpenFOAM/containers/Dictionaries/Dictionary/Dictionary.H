@@ -39,8 +39,8 @@ SourceFiles
 #ifndef Dictionary_H
 #define Dictionary_H
 
-#include "DictionaryBase.H"
-#include "IDLList.H"
+#include "./containers/Dictionaries/DictionaryBase/DictionaryBase.H"
+#include "./containers/LinkedLists/user/IDLList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -83,7 +83,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Dictionary.C"
+#   include "./Dictionary.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

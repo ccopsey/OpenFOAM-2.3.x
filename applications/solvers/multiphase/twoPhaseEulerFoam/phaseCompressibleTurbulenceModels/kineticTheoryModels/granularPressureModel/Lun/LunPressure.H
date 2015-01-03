@@ -34,7 +34,7 @@ SourceFiles
 #ifndef Lun_H
 #define Lun_H
 
-#include "granularPressureModel.H"
+#include "./kineticTheoryModels/granularPressureModel/granularPressureModel/granularPressureModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

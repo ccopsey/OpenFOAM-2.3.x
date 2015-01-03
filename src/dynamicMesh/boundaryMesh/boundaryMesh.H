@@ -36,12 +36,12 @@ SourceFiles
 #ifndef boundaryMesh_H
 #define boundaryMesh_H
 
-#include "bMesh.H"
-#include "boundaryPatch.H"
-#include "PrimitivePatch.H"
-#include "PtrList.H"
-#include "polyPatchList.H"
-#include "className.H"
+#include "./bMesh.H"
+#include "./boundaryPatch/boundaryPatch.H"
+#include "./meshes/primitiveMesh/_PrimitivePatch/PrimitivePatch.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./meshes/polyMesh/polyPatches/polyPatch/polyPatchList.H"
+#include "./db/typeInfo/className.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

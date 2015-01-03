@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DelaunayMesh.H"
-#include "labelPair.H"
-#include "PrintTable.H"
-#include "pointIOField.H"
-#include "scalarIOField.H"
-#include "labelIOField.H"
-#include "pointConversion.H"
+#include "./DelaunayMesh.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./PrintTable/PrintTable.H"
+#include "./meshes/primitiveShapes/point/pointIOField.H"
+#include "./fields/Fields/scalarField/scalarIOField.H"
+#include "./fields/Fields/labelField/labelIOField.H"
+#include "./conformalVoronoiMesh/pointConversion.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -361,6 +361,6 @@ Foam::Map<Foam::label> Foam::DelaunayMesh<Triangulation>::rangeInsertWithInfo
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DelaunayMeshIO.C"
+#include "./DelaunayMeshIO.C"
 
 // ************************************************************************* //

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "blockDescriptor.H"
+#include "./db/error/error.H"
+#include "./blockDescriptor.H"
 
-#include "lineEdge.H"
-#include "lineDivide.H"
+#include "./curvedEdges/lineEdge.H"
+#include "./curvedEdges/lineDivide.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

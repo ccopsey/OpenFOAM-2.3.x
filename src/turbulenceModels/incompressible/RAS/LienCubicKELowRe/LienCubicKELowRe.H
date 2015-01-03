@@ -53,8 +53,8 @@ SourceFiles
 #ifndef LienCubicKELowRe_H
 #define LienCubicKELowRe_H
 
-#include "RASModel.H"
-#include "wallDist.H"
+#include "./RASModel/RASModel.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

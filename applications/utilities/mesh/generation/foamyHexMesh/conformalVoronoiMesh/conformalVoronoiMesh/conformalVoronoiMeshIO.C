@@ -23,21 +23,21 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "conformalVoronoiMesh.H"
-#include "IOstreams.H"
-#include "OFstream.H"
-#include "pointMesh.H"
-#include "pointFields.H"
-#include "ListOps.H"
-#include "polyMeshFilter.H"
-#include "polyTopoChange.H"
-#include "PrintTable.H"
-#include "pointMesh.H"
-#include "indexedVertexOps.H"
-#include "DelaunayMeshTools.H"
-#include "syncTools.H"
-#include "faceSet.H"
-#include "OBJstream.H"
+#include "./conformalVoronoiMesh.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/pointMesh/pointMesh.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./polyMeshFilter/polyMeshFilter.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./PrintTable/PrintTable.H"
+#include "./meshes/pointMesh/pointMesh.H"
+#include "./indexedVertex/indexedVertexOps.H"
+#include "./DelaunayMeshTools/DelaunayMeshTools.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./surfaceFormats/obj/OBJstream.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

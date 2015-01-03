@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LiquidEvaporationBoil.H"
-#include "specie.H"
-#include "mathematicalConstants.H"
+#include "./LiquidEvaporationBoil.H"
+#include "./specie/specie.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant::mathematical;
 

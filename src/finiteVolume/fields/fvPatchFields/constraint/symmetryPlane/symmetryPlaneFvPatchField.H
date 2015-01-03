@@ -51,8 +51,8 @@ SourceFiles
 #ifndef symmetryPlaneFvPatchField_H
 #define symmetryPlaneFvPatchField_H
 
-#include "basicSymmetryFvPatchField.H"
-#include "symmetryPlaneFvPatch.H"
+#include "./fields/fvPatchFields/basic/basicSymmetry/basicSymmetryFvPatchField.H"
+#include "./fvMesh/fvPatches/constraint/symmetryPlane/symmetryPlaneFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -179,7 +179,7 @@ void symmetryPlaneFvPatchField<scalar>::evaluate
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "symmetryPlaneFvPatchField.C"
+#   include "./symmetryPlaneFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

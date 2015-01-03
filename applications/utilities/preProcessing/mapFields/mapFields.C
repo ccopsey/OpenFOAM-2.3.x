@@ -30,10 +30,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "meshToMesh.H"
-#include "processorPolyPatch.H"
-#include "MapMeshes.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./meshToMeshInterpolation/meshToMesh/meshToMesh.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./MapMeshes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -298,7 +298,7 @@ int main(int argc, char *argv[])
 
     const bool noLagrangian = args.optionFound("noLagrangian");
 
-    #include "createTimes.H"
+    #include "./createTimes.H"
 
     HashTable<word> patchMap;
     wordList cuttingPatches;
@@ -322,7 +322,7 @@ int main(int argc, char *argv[])
         mapFieldsDict.lookup("cuttingPatches") >>  cuttingPatches;
     }
 
-    #include "setTimeIndex.H"
+    #include "./setTimeIndex.H"
 
     Info<< "\nCreate meshes\n" << endl;
 

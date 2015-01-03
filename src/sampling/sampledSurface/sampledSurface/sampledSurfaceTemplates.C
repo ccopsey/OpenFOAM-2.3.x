@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledSurface.H"
+#include "./sampledSurface.H"
 
 template<class Type>
 bool Foam::sampledSurface::checkFieldSize(const Field<Type>& field) const

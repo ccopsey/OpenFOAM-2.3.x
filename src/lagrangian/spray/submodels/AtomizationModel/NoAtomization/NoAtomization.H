@@ -32,7 +32,7 @@ Description
 #ifndef NoAtomization_H
 #define NoAtomization_H
 
-#include "AtomizationModel.H"
+#include "./submodels/AtomizationModel/AtomizationModel/AtomizationModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -114,7 +114,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoAtomization.C"
+#   include "./NoAtomization.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

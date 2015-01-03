@@ -32,7 +32,7 @@ Description
 #ifndef DispersionRASModel_H
 #define DispersionRASModel_H
 
-#include "DispersionModel.H"
+#include "./submodels/Kinematic/DispersionModel/DispersionModel/DispersionModel.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -125,7 +125,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DispersionRASModel.C"
+#   include "./DispersionRASModel.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

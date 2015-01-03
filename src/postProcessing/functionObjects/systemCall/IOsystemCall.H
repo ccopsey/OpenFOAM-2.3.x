@@ -32,8 +32,8 @@ Description
 #ifndef IOsystemCall_H
 #define IOsystemCall_H
 
-#include "systemCall.H"
-#include "IOOutputFilter.H"
+#include "./systemCall.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

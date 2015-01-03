@@ -77,10 +77,10 @@ SourceFiles
 #ifndef fieldCoordinateSystemTransform_H
 #define fieldCoordinateSystemTransform_H
 
-#include "OFstream.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "coordinateSystem.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./coordinateSystems/coordinateSystem.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -196,7 +196,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fieldCoordinateSystemTransformTemplates.C"
+#   include "./fieldCoordinateSystemTransformTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

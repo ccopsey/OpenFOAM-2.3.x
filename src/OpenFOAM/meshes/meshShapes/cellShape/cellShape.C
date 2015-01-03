@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellShape.H"
-#include "degenerateMatcher.H"
+#include "./cellShape.H"
+#include "./meshes/meshShapes/cellMatcher/degenerateMatcher.H"
 
 // * * * * * * * * * * * * * * * Member Functions  * * * * * * * * * * * * * //
 

@@ -39,11 +39,11 @@ SourceFiles
 #ifndef DelaunayMeshTools_H
 #define DelaunayMeshTools_H
 
-#include "fileName.H"
-#include "List.H"
-#include "point.H"
-#include "CGALTriangulation3Ddefs.H"
-#include "indexedVertexEnum.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./containers/Lists/List/List.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./conformalVoronoiMesh/CGALTriangulation3Ddefs.H"
+#include "./conformalVoronoiMesh/indexedVertex/indexedVertexEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -142,7 +142,7 @@ namespace DelaunayMeshTools
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DelaunayMeshToolsTemplates.C"
+#   include "./DelaunayMeshToolsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

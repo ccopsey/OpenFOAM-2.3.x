@@ -26,7 +26,7 @@ License
 #ifndef cyclicACMIFvsPatchFieldsFwd_H
 #define cyclicACMIFvsPatchFieldsFwd_H
 
-#include "fieldTypes.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

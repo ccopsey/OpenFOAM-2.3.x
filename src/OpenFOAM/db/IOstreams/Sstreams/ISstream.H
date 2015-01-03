@@ -36,8 +36,8 @@ SourceFiles
 #ifndef ISstream_H
 #define ISstream_H
 
-#include "Istream.H"
-#include "fileName.H"
+#include "./db/IOstreams/IOstreams/Istream.H"
+#include "./primitives/strings/fileName/fileName.H"
 #include <iostream>
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -201,7 +201,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "ISstreamI.H"
+#include "./ISstreamI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

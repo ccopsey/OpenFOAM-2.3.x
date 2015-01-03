@@ -32,18 +32,18 @@ Description
 #ifndef solidThermoPhysicsTypes_H
 #define solidThermoPhysicsTypes_H
 
-#include "specie.H"
-#include "rhoConst.H"
-#include "hConstThermo.H"
-#include "hPolynomialThermo.H"
-#include "hExponentialThermo.H"
-#include "constIsoSolidTransport.H"
-#include "constAnIsoSolidTransport.H"
-#include "exponentialSolidTransport.H"
-#include "polynomialSolidTransport.H"
+#include "./specie/specie.H"
+#include "./equationOfState/rhoConst/rhoConst.H"
+#include "./thermo/hConst/hConstThermo.H"
+#include "./thermo/hPolynomial/hPolynomialThermo.H"
+#include "./thermo/hExponential/hExponentialThermo.H"
+#include "./transport/const/constIsoSolidTransport.H"
+#include "./transport/const/constAnIsoSolidTransport.H"
+#include "./transport/exponential/exponentialSolidTransport.H"
+#include "./transport/polynomial/polynomialSolidTransport.H"
 
-#include "sensibleEnthalpy.H"
-#include "thermo.H"
+#include "./thermo/sensibleEnthalpy/sensibleEnthalpy.H"
+#include "./thermo/thermo/thermo.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

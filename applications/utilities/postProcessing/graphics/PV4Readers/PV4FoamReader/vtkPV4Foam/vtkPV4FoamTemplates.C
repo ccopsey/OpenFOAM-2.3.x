@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4Foam.H"
+#include "./vtkPV4Foam.H"
 
 // OpenFOAM includes
-#include "polyPatch.H"
-#include "primitivePatch.H"
-#include "vtkOpenFOAMPoints.H"
+#include "./meshes/polyMesh/polyPatches/polyPatch/polyPatch.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
+#include "./vtkOpenFOAMPoints.H"
 
 // VTK includes
 #include "vtkCellArray.h"

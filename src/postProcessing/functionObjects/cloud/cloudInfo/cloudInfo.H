@@ -72,11 +72,11 @@ SourceFiles
 #ifndef cloudInfo_H
 #define cloudInfo_H
 
-#include "functionObjectFile.H"
-#include "PtrList.H"
-#include "pointFieldFwd.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -43,8 +43,8 @@ SourceFiles
 #ifndef Istream_H
 #define Istream_H
 
-#include "IOstream.H"
-#include "token.H"
+#include "./IOstream.H"
+#include "./db/IOstreams/token/token.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -181,7 +181,7 @@ inline Istream& operator>>(Istream& is, IOstreamManip f)
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "HashTable.C"
+#   include "./containers/HashTables/HashTable/HashTable.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -33,17 +33,17 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
+#include "./cfdTools/general/include/fvCFD.H"
 
 #include "incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
 #include "incompressible/RAS/RASModel/RASModel.H"
 #include "nutWallFunction/nutWallFunctionFvPatchScalarField.H"
 
-#include "fluidThermo.H"
+#include "./fluidThermo/fluidThermo.H"
 #include "compressible/RAS/RASModel/RASModel.H"
 #include "mutWallFunction/mutWallFunctionFvPatchScalarField.H"
 
-#include "wallDist.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -58,7 +58,7 @@ void calcIncompressibleYPlus
     typedef incompressible::nutWallFunctionFvPatchScalarField
         wallFunctionPatchField;
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     singlePhaseTransportModel laminarTransport(U, phi);
 
@@ -128,7 +128,7 @@ void calcCompressibleYPlus
     Info<< "Reading field rho\n" << endl;
     volScalarField rho(rhoHeader, mesh);
 
-    #include "compressibleCreatePhi.H"
+    #include "./cfdTools/compressible/compressibleCreatePhi.H"
 
     autoPtr<fluidThermo> pThermo
     (
@@ -183,7 +183,7 @@ int main(int argc, char *argv[])
 {
     timeSelector::addOptions();
 
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
 
     argList::addBoolOption
     (
@@ -191,10 +191,10 @@ int main(int argc, char *argv[])
         "calculate compressible y+"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     instantList timeDirs = timeSelector::select0(runTime, args);
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     const bool compressible = args.optionFound("compressible");
 

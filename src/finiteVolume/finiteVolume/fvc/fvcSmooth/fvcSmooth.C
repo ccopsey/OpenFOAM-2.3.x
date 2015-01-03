@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcSmooth.H"
-#include "volFields.H"
-#include "FaceCellWave.H"
-#include "smoothData.H"
-#include "sweepData.H"
+#include "./fvcSmooth.H"
+#include "./fields/volFields/volFields.H"
+#include "./algorithms/MeshWave/FaceCellWave.H"
+#include "./smoothData.H"
+#include "./sweepData.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

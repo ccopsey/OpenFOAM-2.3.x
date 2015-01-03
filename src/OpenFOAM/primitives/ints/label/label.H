@@ -47,8 +47,8 @@ Description
 #    define FOAM_LABEL_MAX 2000000000
 #endif
 
-#include "pTraits.H"
-#include "direction.H"
+#include "./primitives/pTraits/pTraits.H"
+#include "./primitives/direction/direction.H"
 
 
 #if INT_MAX > FOAM_LABEL_MAX
@@ -58,7 +58,7 @@ Description
 # undef  FOAM_LABEL_MAX
 # define FOAM_LABEL_MAX INT_MAX
 
-# include "int.H"
+# include "./primitives/ints/int/int.H"
 
 namespace Foam
 {
@@ -86,8 +86,8 @@ namespace Foam
 # undef  FOAM_LABEL_MAX
 # define FOAM_LABEL_MAX LONG_MAX
 
-# include "int.H"
-# include "long.H"
+# include "./primitives/ints/int/int.H"
+# include "./primitives/ints/long/long.H"
 
 namespace Foam
 {
@@ -116,9 +116,9 @@ namespace Foam
 # undef  FOAM_LABEL_MAX
 # define FOAM_LABEL_MAX LLONG_MAX
 
-# include "int.H"
-# include "long.H"
-# include "longLong.H"
+# include "./primitives/ints/int/int.H"
+# include "./primitives/ints/long/long.H"
+# include "./primitives/ints/longLong/longLong.H"
 
 namespace Foam
 {
@@ -144,8 +144,8 @@ namespace Foam
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-//#include "pTraits.H"
-//#include "direction.H"
+//#include "./primitives/pTraits/pTraits.H"
+//#include "./primitives/direction/direction.H"
 
 namespace Foam
 {

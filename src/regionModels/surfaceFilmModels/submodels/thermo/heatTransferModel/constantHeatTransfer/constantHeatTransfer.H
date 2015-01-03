@@ -35,8 +35,8 @@ SourceFiles
 #ifndef constantHeatTransfer_H
 #define constantHeatTransfer_H
 
-#include "heatTransferModel.H"
-#include "volFieldsFwd.H"
+#include "./submodels/thermo/heatTransferModel/heatTransferModel/heatTransferModel.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

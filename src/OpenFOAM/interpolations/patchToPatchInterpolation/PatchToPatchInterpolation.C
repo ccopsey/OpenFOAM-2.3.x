@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PatchToPatchInterpolation.H"
-#include "demandDrivenData.H"
+#include "./_PatchToPatchInterpolation.H"
+#include "./include/demandDrivenData.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -182,7 +182,7 @@ bool PatchToPatchInterpolation<FromPatch, ToPatch>::movePoints()
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "CalcPatchToPatchWeights.C"
-#   include "PatchToPatchInterpolate.C"
+#   include "./CalcPatchToPatchWeights.C"
+#   include "./PatchToPatchInterpolate.C"
 
 // ************************************************************************* //

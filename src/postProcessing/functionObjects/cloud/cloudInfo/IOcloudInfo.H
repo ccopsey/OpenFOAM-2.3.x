@@ -32,8 +32,8 @@ Description
 #ifndef IOcloudInfo_H
 #define IOcloudInfo_H
 
-#include "cloudInfo.H"
-#include "IOOutputFilter.H"
+#include "./cloudInfo.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

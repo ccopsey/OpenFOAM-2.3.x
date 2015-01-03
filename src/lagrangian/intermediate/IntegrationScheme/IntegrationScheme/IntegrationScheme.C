@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IntegrationScheme.H"
+#include "./IntegrationScheme.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -88,6 +88,6 @@ Foam::IntegrationScheme<Type>::integrate
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "IntegrationSchemeNew.C"
+#include "./IntegrationSchemeNew.C"
 
 // ************************************************************************* //

@@ -26,7 +26,7 @@ volVectorField U
     mesh
 );
 
-#include "createPhi.H"
+#include "./cfdTools/incompressible/createPhi.H"
 
 
 label pRefCell = 0;

@@ -46,13 +46,13 @@ SourceFiles
 #ifndef fvOption_H
 #define fvOption_H
 
-#include "fvMatricesFwd.H"
-#include "volFieldsFwd.H"
-#include "cellSet.H"
-#include "autoPtr.H"
-#include "meshToMesh.H"
+#include "./fvMatrices/fvMatricesFwd.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./meshToMeshInterpolation/meshToMesh/meshToMesh.H"
 
-#include "runTimeSelectionTables.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -565,7 +565,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "fvOptionI.H"
+#include "./fvOptionI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

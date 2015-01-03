@@ -47,7 +47,7 @@ SourceFiles
 #ifndef addSubtract_H
 #define addSubtract_H
 
-#include "calcType.H"
+#include "./calcType/calcType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -206,8 +206,8 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeAddSubtractField.C"
-#   include "writeAddSubtractValue.C"
+#   include "./writeAddSubtractField.C"
+#   include "./writeAddSubtractValue.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

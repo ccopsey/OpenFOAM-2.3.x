@@ -33,15 +33,15 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "psiReactionThermo.H"
-#include "turbulenceModel.H"
-#include "psiChemistryModel.H"
-#include "chemistrySolver.H"
-#include "OFstream.H"
-#include "thermoPhysicsTypes.H"
-#include "basicMultiComponentMixture.H"
-#include "cellModeller.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./psiReactionThermo/psiReactionThermo.H"
+#include "./turbulenceModel.H"
+#include "./chemistryModel/psiChemistryModel/psiChemistryModel.H"
+#include "./chemistrySolver/chemistrySolver/chemistrySolver.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./include/thermoPhysicsTypes.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
+#include "./meshes/meshShapes/cellModeller/cellModeller.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -49,11 +49,11 @@ int main(int argc, char *argv[])
 {
     argList::noParallel();
 
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createSingleCellMesh.H"
-    #include "createFields.H"
-    #include "readInitialConditions.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./createSingleCellMesh.H"
+    #include "./createFields.H"
+    #include "./readInitialConditions.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -61,19 +61,19 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-        #include "readControls.H"
+        #include "./readControls.H"
 
-        #include "setDeltaT.H"
+        #include "./setDeltaT.H"
 
         runTime++;
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "solveChemistry.H"
-        #include "YEqn.H"
-        #include "hEqn.H"
-        #include "pEqn.H"
+        #include "./solveChemistry.H"
+        #include "./YEqn.H"
+        #include "./hEqn.H"
+        #include "./pEqn.H"
 
-        #include "output.H"
+        #include "./output.H"
 
         Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
             << "  ClockTime = " << runTime.elapsedClockTime() << " s"

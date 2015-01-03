@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "indexedVertexEnum.H"
-#include "Pstream.H"
+#include "./indexedVertexEnum.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

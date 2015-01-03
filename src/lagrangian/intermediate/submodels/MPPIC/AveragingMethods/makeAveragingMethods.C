@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "Field.H"
-#include "fvcGrad.H"
-#include "polyMeshTetDecomposition.H"
+#include "./fields/Fields/Field/Field.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
+#include "./meshes/polyMesh/polyMeshTetDecomposition/polyMeshTetDecomposition.H"
 
-#include "Basic.H"
-#include "Dual.H"
-#include "Moment.H"
+#include "./Basic/Basic.H"
+#include "./Dual/Dual.H"
+#include "./Moment/Moment.H"
 
 namespace Foam
 {

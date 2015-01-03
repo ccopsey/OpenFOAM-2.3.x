@@ -23,21 +23,21 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "globalMeshData.H"
-#include "Time.H"
-#include "Pstream.H"
-#include "PstreamCombineReduceOps.H"
-#include "processorPolyPatch.H"
-#include "demandDrivenData.H"
-#include "globalPoints.H"
-#include "polyMesh.H"
-#include "mapDistribute.H"
-#include "labelIOList.H"
-#include "PackedList.H"
-#include "mergePoints.H"
-#include "matchPoints.H"
-#include "OFstream.H"
-#include "globalIndexAndTransform.H"
+#include "./globalMeshData.H"
+#include "./db/Time/Time.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./db/IOstreams/Pstreams/PstreamCombineReduceOps.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
+#include "./include/demandDrivenData.H"
+#include "./globalPoints.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
+#include "./primitives/ints/lists/labelIOList.H"
+#include "./containers/Lists/PackedList/PackedList.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./meshes/meshTools/matchPoints.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./primitives/globalIndexAndTransform/globalIndexAndTransform.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

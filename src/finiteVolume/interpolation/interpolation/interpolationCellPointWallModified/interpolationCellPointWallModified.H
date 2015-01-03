@@ -33,8 +33,8 @@ Description
 #ifndef interpolationCellPointWallModified_H
 #define interpolationCellPointWallModified_H
 
-#include "interpolationCellPoint.H"
-#include "cellPointWeightWallModified.H"
+#include "./interpolation/interpolation/interpolationCellPoint/interpolationCellPoint.H"
+#include "./cellPointWeightWallModified/cellPointWeightWallModified.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -95,12 +95,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "interpolationCellPointWallModifiedI.H"
+#include "./interpolationCellPointWallModifiedI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "interpolationCellPointWallModified.C"
+#   include "./interpolationCellPointWallModified.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

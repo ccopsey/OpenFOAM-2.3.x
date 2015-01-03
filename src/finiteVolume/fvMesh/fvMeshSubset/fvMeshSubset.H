@@ -54,11 +54,11 @@ SourceFiles
 #ifndef fvMeshSubset_H
 #define fvMeshSubset_H
 
-#include "fvMesh.H"
-#include "pointMesh.H"
-#include "GeometricField.H"
-#include "HashSet.H"
-#include "surfaceMesh.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/pointMesh/pointMesh.H"
+#include "./fields/GeometricFields/GeometricField/GeometricField.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./surfaceMesh/surfaceMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -269,7 +269,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvMeshSubsetInterpolate.C"
+#   include "./fvMeshSubsetInterpolate.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

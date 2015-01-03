@@ -32,8 +32,8 @@ Description
 #ifndef IOwriteDictionary_H
 #define IOwriteDictionary_H
 
-#include "writeDictionary.H"
-#include "IOOutputFilter.H"
+#include "./writeDictionary.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

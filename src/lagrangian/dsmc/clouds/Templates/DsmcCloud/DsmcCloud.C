@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DsmcCloud.H"
-#include "BinaryCollisionModel.H"
-#include "WallInteractionModel.H"
-#include "InflowBoundaryModel.H"
-#include "constants.H"
-#include "zeroGradientFvPatchFields.H"
-#include "polyMeshTetDecomposition.H"
+#include "./DsmcCloud.H"
+#include "./submodels/BinaryCollisionModel/BinaryCollisionModel/BinaryCollisionModel.H"
+#include "./submodels/WallInteractionModel/WallInteractionModel/WallInteractionModel.H"
+#include "./submodels/InflowBoundaryModel/InflowBoundaryModel/InflowBoundaryModel.H"
+#include "./global/constants/constants.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./meshes/polyMesh/polyMeshTetDecomposition/polyMeshTetDecomposition.H"
 
 using namespace Foam::constant;
 

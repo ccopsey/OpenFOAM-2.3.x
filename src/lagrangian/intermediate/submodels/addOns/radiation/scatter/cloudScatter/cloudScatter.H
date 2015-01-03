@@ -35,7 +35,7 @@ SourceFiles
 #ifndef radiationCloudScatter_H
 #define radiationCloudScatter_H
 
-#include "scatterModel.H"
+#include "./submodels/scatterModel/scatterModel/scatterModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

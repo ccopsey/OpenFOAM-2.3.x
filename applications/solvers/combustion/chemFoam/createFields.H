@@ -21,7 +21,7 @@
     scalar p0 = readScalar(initialConditions.lookup("p"));
     scalar T0 = readScalar(initialConditions.lookup("T"));
 
-    #include "createBaseFields.H"
+    #include "./createBaseFields.H"
 
     Info<< nl << "Reading thermophysicalProperties" << endl;
     autoPtr<psiChemistryModel> pChemistry(psiChemistryModel::New(mesh));
@@ -84,7 +84,7 @@
         p.boundaryField().types()
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
     Info << "Creating turbulence model.\n" << endl;
     autoPtr<compressible::turbulenceModel> turbulence

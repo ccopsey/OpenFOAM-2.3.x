@@ -38,8 +38,8 @@ SourceFiles
 #ifndef constantRadiation_H
 #define constantRadiation_H
 
-#include "filmRadiationModel.H"
-#include "volFieldsFwd.H"
+#include "./submodels/thermo/filmRadiationModel/filmRadiationModel/filmRadiationModel.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

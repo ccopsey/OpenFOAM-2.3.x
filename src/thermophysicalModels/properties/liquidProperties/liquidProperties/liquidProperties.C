@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "liquidProperties.H"
-#include "HashTable.H"
-#include "Switch.H"
+#include "./liquidProperties.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

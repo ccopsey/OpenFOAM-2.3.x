@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "turbulenceFields.H"
-#include "dictionary.H"
+#include "./turbulenceFields.H"
+#include "./db/dictionary/dictionary.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 

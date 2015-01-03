@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "timeActivatedFileUpdate.H"
-#include "objectRegistry.H"
-#include "Time.H"
-#include "dictionary.H"
+#include "./timeActivatedFileUpdate.H"
+#include "./db/objectRegistry/objectRegistry.H"
+#include "./db/Time/Time.H"
+#include "./db/dictionary/dictionary.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

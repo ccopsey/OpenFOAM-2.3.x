@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "scalarTransport.H"
-#include "surfaceFields.H"
-#include "dictionary.H"
-#include "fixedValueFvPatchFields.H"
-#include "zeroGradientFvPatchFields.H"
-#include "fvScalarMatrix.H"
-#include "fvmDdt.H"
-#include "fvmDiv.H"
-#include "fvcDiv.H"
-#include "fvmLaplacian.H"
-#include "fvmSup.H"
+#include "./scalarTransport.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./fvMatrices/fvScalarMatrix/fvScalarMatrix.H"
+#include "./finiteVolume/fvm/fvmDdt.H"
+#include "./finiteVolume/fvm/fvmDiv.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./finiteVolume/fvm/fvmLaplacian.H"
+#include "./finiteVolume/fvm/fvmSup.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
 

@@ -9,12 +9,12 @@
 
 /*======================================================================*/
 
-#include "calcEk.H"
-#include "fft.H"
-#include "Kmesh.H"
-#include "kShellIntegration.H"
-#include "volFields.H"
-#include "graph.H"
+#include "./calcEk.H"
+#include "./fft.H"
+#include "./Kmesh/Kmesh.H"
+#include "./kShellIntegration.H"
+#include "./fields/volFields/volFields.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

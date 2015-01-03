@@ -32,7 +32,7 @@ volVectorField U
     mesh
 );
 
-#include "rhoBoundaryTypes.H"
+#include "./rhoBoundaryTypes.H"
 volScalarField rho
 (
     IOobject

@@ -36,7 +36,7 @@ SourceFiles
 #ifndef xmgrGraph_H
 #define xmgrGraph_H
 
-#include "graph.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

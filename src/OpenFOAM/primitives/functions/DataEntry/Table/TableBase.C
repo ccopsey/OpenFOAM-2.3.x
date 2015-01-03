@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "TableBase.H"
-#include "Time.H"
-#include "interpolationWeights.H"
+#include "./TableBase.H"
+#include "./db/Time/Time.H"
+#include "./interpolations/interpolationWeights/interpolationWeights/interpolationWeights.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 
@@ -446,6 +446,6 @@ Foam::tmp<Foam::Field<Type> > Foam::TableBase<Type>::y() const
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "TableBaseIO.C"
+#include "./TableBaseIO.C"
 
 // ************************************************************************* //

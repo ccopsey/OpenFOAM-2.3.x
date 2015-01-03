@@ -109,8 +109,8 @@ SourceFiles
 #ifndef pressureTools_H
 #define pressureTools_H
 
-#include "volFieldsFwd.H"
-#include "dimensionedScalar.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./dimensionedTypes/dimensionedScalar/dimensionedScalar.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

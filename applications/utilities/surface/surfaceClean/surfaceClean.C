@@ -32,12 +32,12 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "triSurface.H"
-#include "argList.H"
-#include "OFstream.H"
+#include "./triSurface/triSurface.H"
+#include "./global/argList/argList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
-#include "collapseBase.H"
-#include "collapseEdge.H"
+#include "./collapseBase.H"
+#include "./collapseEdge.H"
 
 using namespace Foam;
 

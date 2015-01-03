@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "BinaryCollisionModel.H"
+#include "./BinaryCollisionModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -93,6 +93,6 @@ Foam::BinaryCollisionModel<CloudType>::coeffDict() const
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "BinaryCollisionModelNew.C"
+#include "./BinaryCollisionModelNew.C"
 
 // ************************************************************************* //

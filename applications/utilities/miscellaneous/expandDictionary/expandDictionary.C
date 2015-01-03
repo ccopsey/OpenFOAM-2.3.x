@@ -50,11 +50,11 @@ Note
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "IFstream.H"
-#include "IOobject.H"
-#include "dictionary.H"
-#include "includeEntry.H"
+#include "./global/argList/argList.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/IOobject/IOobject.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/dictionary/functionEntries/includeEntry/includeEntry.H"
 
 using namespace Foam;
 

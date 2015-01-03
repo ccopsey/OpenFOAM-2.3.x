@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cyclicAMILduInterfaceField.H"
-#include "diagTensorField.H"
+#include "./cyclicAMILduInterfaceField.H"
+#include "./fields/Fields/diagTensorField/diagTensorField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

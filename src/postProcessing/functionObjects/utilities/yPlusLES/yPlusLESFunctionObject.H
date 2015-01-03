@@ -36,8 +36,8 @@ SourceFiles
 #ifndef yPlusLESFunctionObject_H
 #define yPlusLESFunctionObject_H
 
-#include "yPlusLES.H"
-#include "OutputFilterFunctionObject.H"
+#include "./yPlusLES.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -43,8 +43,8 @@ SourceFiles
 #ifndef energyJumpFvPatchScalarField_H
 #define energyJumpFvPatchScalarField_H
 
-#include "fixedJumpFvPatchField.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/derived/fixedJump/fixedJumpFvPatchField.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

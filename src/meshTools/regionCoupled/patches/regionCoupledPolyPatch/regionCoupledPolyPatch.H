@@ -35,9 +35,9 @@ SourceFiles
 #ifndef regionCoupledPolyPatch_H
 #define regionCoupledPolyPatch_H
 
-#include "regionCoupledBase.H"
-#include "polyBoundaryMesh.H"
-#include "polyPatch.H"
+#include "./regionCoupledBase.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.H"
+#include "./meshes/polyMesh/polyPatches/polyPatch/polyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

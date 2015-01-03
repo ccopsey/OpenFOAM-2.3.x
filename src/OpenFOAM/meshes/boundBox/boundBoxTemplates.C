@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "boundBox.H"
-#include "FixedList.H"
-#include "PstreamReduceOps.H"
+#include "./boundBox.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./db/IOstreams/Pstreams/PstreamReduceOps.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

@@ -1,9 +1,9 @@
 #ifndef curveTools_H
 #define curveTools_H
 
-#include "scalar.H"
-#include "vector.H"
-#include "curve.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./curve.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -13,8 +13,8 @@ namespace Foam
 #define curveSmall 1.0e-8
 #define curveGreat 1.0e8
 
-#include "char.H"
-#include "List.H"
+#include "./primitives/chars/char/char.H"
+#include "./containers/Lists/List/List.H"
 
 typedef List<char> charList;
 typedef List<charList> charListList;

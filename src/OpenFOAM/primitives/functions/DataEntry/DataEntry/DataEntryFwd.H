@@ -26,11 +26,11 @@ License
 #ifndef DataEntryFws_H
 #define DataEntryFws_H
 
-#include "DataEntry.H"
-#include "vector.H"
-#include "symmTensor.H"
-#include "sphericalTensor.H"
-#include "tensor.H"
+#include "./DataEntry.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./primitives/SymmTensor/symmTensor/symmTensor.H"
+#include "./primitives/SphericalTensor/sphericalTensor/sphericalTensor.H"
+#include "./primitives/Tensor/tensor/tensor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

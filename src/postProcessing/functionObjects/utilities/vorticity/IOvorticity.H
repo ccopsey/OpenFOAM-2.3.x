@@ -32,8 +32,8 @@ Description
 #ifndef IOvorticity_H
 #define IOvorticity_H
 
-#include "vorticity.H"
-#include "IOOutputFilter.H"
+#include "./vorticity.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

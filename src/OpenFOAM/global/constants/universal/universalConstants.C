@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "universalConstants.H"
-#include "mathematicalConstants.H"
+#include "./universalConstants.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
-#include "dimensionedConstants.H"
+#include "./global/constants/dimensionedConstants.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

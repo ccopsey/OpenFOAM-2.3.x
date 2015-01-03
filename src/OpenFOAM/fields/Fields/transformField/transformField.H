@@ -35,11 +35,11 @@ SourceFiles
 #ifndef transformField_H
 #define transformField_H
 
-#include "transform.H"
-#include "quaternion.H"
-#include "septernion.H"
-#include "vectorField.H"
-#include "tensorField.H"
+#include "./primitives/transform/transform.H"
+#include "./primitives/quaternion/quaternion.H"
+#include "./primitives/septernion/septernion.H"
+#include "./fields/Fields/vectorField/vectorField.H"
+#include "./fields/Fields/tensorField/tensorField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -134,7 +134,7 @@ tmp<vectorField> transform(const septernion&, const tmp<vectorField>&);
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "transformFieldTemplates.C"
+#   include "./transformFieldTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

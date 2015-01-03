@@ -53,8 +53,8 @@ SourceFiles
 #ifndef ReactingLookupTableInjection_H
 #define ReactingLookupTableInjection_H
 
-#include "InjectionModel.H"
-#include "reactingParcelInjectionDataIOList.H"
+#include "./submodels/Kinematic/InjectionModel/InjectionModel/InjectionModel.H"
+#include "./reactingParcelInjectionDataIOList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -188,7 +188,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ReactingLookupTableInjection.C"
+#   include "./ReactingLookupTableInjection.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

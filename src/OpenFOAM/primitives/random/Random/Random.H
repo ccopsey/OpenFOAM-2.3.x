@@ -35,8 +35,8 @@ SourceFiles
 #ifndef Random_H
 #define Random_H
 
-#include "vector.H"
-#include "tensor.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./primitives/Tensor/tensor/tensor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

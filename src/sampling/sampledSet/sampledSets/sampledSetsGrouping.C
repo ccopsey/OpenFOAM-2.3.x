@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledSets.H"
-#include "volFields.H"
-#include "IOobjectList.H"
-#include "stringListOps.H"
+#include "./sampledSets.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./primitives/strings/lists/stringListOps.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

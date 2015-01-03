@@ -35,12 +35,12 @@ Description
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "ISstream.H"
-#include "prefixOSstream.H"
-#include "token.H"
-#include "char.H"
-#include "int.H"
-#include "uint.H"
+#include "./Sstreams/ISstream.H"
+#include "./Sstreams/prefixOSstream.H"
+#include "./token/token.H"
+#include "./primitives/chars/char/char.H"
+#include "./primitives/ints/int/int.H"
+#include "./primitives/ints/uint/uint.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // Global predefined streams for standard input, output

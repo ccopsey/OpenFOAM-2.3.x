@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "valuePointPatchField.H"
-#include "pointPatchFieldMapper.H"
+#include "./valuePointPatchField.H"
+#include "./fields/pointPatchFields/pointPatchField/pointPatchFieldMapper.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

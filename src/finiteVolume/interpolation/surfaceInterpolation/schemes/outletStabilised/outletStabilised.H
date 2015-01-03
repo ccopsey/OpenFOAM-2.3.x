@@ -40,12 +40,12 @@ SourceFiles
 #ifndef outletStabilised_H
 #define outletStabilised_H
 
-#include "surfaceInterpolationScheme.H"
-#include "skewCorrectionVectors.H"
-#include "linear.H"
-#include "gaussGrad.H"
-#include "mixedFvPatchField.H"
-#include "directionMixedFvPatchField.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolationScheme/surfaceInterpolationScheme.H"
+#include "./interpolation/surfaceInterpolation/schemes/skewCorrected/skewCorrectionVectors.H"
+#include "./interpolation/surfaceInterpolation/schemes/linear/linear.H"
+#include "./finiteVolume/gradSchemes/gaussGrad/gaussGrad.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchField.H"
+#include "./fields/fvPatchFields/basic/directionMixed/directionMixedFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

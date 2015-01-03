@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dragModel.H"
-#include "phasePair.H"
-#include "swarmCorrection.H"
+#include "./dragModel.H"
+#include "./phasePair/phasePair/phasePair.H"
+#include "./swarmCorrections/swarmCorrection/swarmCorrection.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

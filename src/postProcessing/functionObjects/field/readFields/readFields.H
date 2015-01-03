@@ -66,10 +66,10 @@ SourceFiles
 #ifndef readFields_H
 #define readFields_H
 
-#include "OFstream.H"
-#include "pointFieldFwd.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/primitiveShapes/point/pointFieldFwd.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -196,7 +196,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "readFieldsTemplates.C"
+#   include "./readFieldsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

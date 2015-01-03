@@ -35,10 +35,10 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "IOdictionary.H"
-#include "solution.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./matrices/solution/solution.H"
 
 using namespace Foam;
 
@@ -58,8 +58,8 @@ int main(int argc, char *argv[])
         "suppress writing the updated system/fvSolution file"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     IOdictionary solutionDict
     (

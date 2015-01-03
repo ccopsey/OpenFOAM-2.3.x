@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rotorDiskSource.H"
-#include "addToRunTimeSelectionTable.H"
-#include "trimModel.H"
-#include "fvMatrices.H"
-#include "geometricOneField.H"
-#include "syncTools.H"
+#include "./rotorDiskSource.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./trimModel/trimModel/trimModel.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./fields/GeometricFields/geometricOneField/geometricOneField.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
 
 using namespace Foam::constant;
 

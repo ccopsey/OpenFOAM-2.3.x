@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "BiIndirectList.H"
-#include "removePoints.H"
-#include "PstreamReduceOps.H"
-#include "polyMesh.H"
-#include "polyTopoChange.H"
-#include "polyRemovePoint.H"
-#include "polyAddPoint.H"
-#include "polyModifyFace.H"
-#include "syncTools.H"
-#include "faceSet.H"
-#include "dummyTransform.H"
+#include "./containers/Lists/BiIndirectList/BiIndirectList.H"
+#include "./removePoints.H"
+#include "./db/IOstreams/Pstreams/PstreamReduceOps.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./polyTopoChange.H"
+#include "./removeObject/polyRemovePoint.H"
+#include "./addObject/polyAddPoint.H"
+#include "./modifyObject/polyModifyFace.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./sets/topoSets/faceSet.H"
+#include "./meshes/polyMesh/syncTools/dummyTransform.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -36,8 +36,8 @@ SourceFiles
 #ifndef forceCoeffsFunctionObject_H
 #define forceCoeffsFunctionObject_H
 
-#include "forceCoeffs.H"
-#include "OutputFilterFunctionObject.H"
+#include "./forceCoeffs.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

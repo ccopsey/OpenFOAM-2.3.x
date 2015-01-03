@@ -46,7 +46,7 @@ Description
 #ifndef BlobsSheetAtomization_H
 #define BlobsSheetAtomization_H
 
-#include "AtomizationModel.H"
+#include "./submodels/AtomizationModel/AtomizationModel/AtomizationModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -131,7 +131,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "BlobsSheetAtomization.C"
+#   include "./BlobsSheetAtomization.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

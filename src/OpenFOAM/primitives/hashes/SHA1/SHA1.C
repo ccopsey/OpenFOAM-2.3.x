@@ -33,8 +33,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "SHA1.H"
-#include "IOstreams.H"
+#include "./SHA1.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #include <cstring>
 

@@ -35,13 +35,13 @@ SourceFiles
 #ifndef AMIMethod_H
 #define AMIMethod_H
 
-#include "className.H"
-#include "DynamicList.H"
-#include "faceAreaIntersect.H"
-#include "indexedOctree.H"
-#include "treeDataPrimitivePatch.H"
-#include "treeBoundBoxList.H"
-#include "runTimeSelectionTables.H"
+#include "./db/typeInfo/className.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./AMIInterpolation/faceAreaIntersect/faceAreaIntersect.H"
+#include "./algorithms/indexedOctree/indexedOctree.H"
+#include "./indexedOctree/treeDataPrimitivePatch.H"
+#include "./meshes/treeBoundBox/treeBoundBoxList.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -270,13 +270,13 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "AMIMethodI.H"
+#include "./AMIMethodI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "AMIMethod.C"
-#   include "AMIMethodNew.C"
+#   include "./AMIMethod.C"
+#   include "./AMIMethodNew.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

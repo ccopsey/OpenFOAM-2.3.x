@@ -31,10 +31,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "makeGraph.H"
-#include "volFields.H"
-#include "fvMesh.H"
-#include "graph.H"
+#include "./makeGraph.H"
+#include "./fields/volFields/volFields.H"
+#include "./fvMesh/fvMesh.H"
+#include "./graph/graph.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

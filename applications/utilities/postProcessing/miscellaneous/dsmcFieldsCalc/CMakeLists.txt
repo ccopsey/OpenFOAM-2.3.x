@@ -31,15 +31,15 @@ set(LIBRARIES
   libdsmc
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
 include_directories(../../../../../src/postProcessing/postCalc)
-include(../../../../../src/lagrangian/basic/include.cmake)
-include(../../../../../src/postProcessing/functionObjects/utilities/include.cmake)
-include(../../../../../src/lagrangian/dsmc/include.cmake)
-include(../../../../../src/meshTools/include.cmake)
+include_directories(../../../../../src/lagrangian/basic)
+include_directories(../../../../../src/postProcessing/functionObjects/utilities)
+include_directories(../../../../../src/lagrangian/dsmc)
+include_directories(../../../../../src/meshTools)
 
 add_executable(dsmcFieldsCalc ${SOURCES})
 

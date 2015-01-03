@@ -26,7 +26,7 @@ License
 #ifndef nonuniformTransformCyclicFvsPatchFieldsFwd_H
 #define nonuniformTransformCyclicFvsPatchFieldsFwd_H
 
-#include "fieldTypes.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -41,10 +41,10 @@ SourceFiles
 #ifndef XiEqModel_H
 #define XiEqModel_H
 
-#include "IOdictionary.H"
-#include "psiuReactionThermo.H"
-#include "RASModel.H"
-#include "runTimeSelectionTables.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./psiuReactionThermo/psiuReactionThermo.H"
+#include "./RASModel/RASModel.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

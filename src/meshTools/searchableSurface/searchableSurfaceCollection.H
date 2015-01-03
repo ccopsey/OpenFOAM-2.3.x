@@ -36,11 +36,11 @@ SourceFiles
 #ifndef searchableSurfaceCollection_H
 #define searchableSurfaceCollection_H
 
-#include "searchableSurface.H"
-#include "treeBoundBox.H"
-#include "coordinateSystem.H"
-#include "UPtrList.H"
-#include "Switch.H"
+#include "./searchableSurface.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
+#include "./coordinateSystems/coordinateSystem.H"
+#include "./containers/Lists/UPtrList/UPtrList.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

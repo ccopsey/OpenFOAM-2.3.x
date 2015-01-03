@@ -32,8 +32,8 @@ Description
 #ifndef IOdsmcFields_H
 #define IOdsmcFields_H
 
-#include "dsmcFields.H"
-#include "IOOutputFilter.H"
+#include "./dsmcFields.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

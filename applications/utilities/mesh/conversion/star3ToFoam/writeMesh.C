@@ -26,9 +26,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "starMesh.H"
-#include "Time.H"
-#include "polyMesh.H"
+#include "./starMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

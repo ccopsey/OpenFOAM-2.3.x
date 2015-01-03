@@ -39,7 +39,7 @@ SourceFiles
 #ifndef DiagTensor_H
 #define DiagTensor_H
 
-#include "Tensor.H"
+#include "./primitives/Tensor/Tensor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -117,7 +117,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 // Include inline implementations
-#include "DiagTensorI.H"
+#include "./DiagTensorI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

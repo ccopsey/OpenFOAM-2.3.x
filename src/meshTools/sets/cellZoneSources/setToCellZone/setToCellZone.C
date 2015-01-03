@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "setToCellZone.H"
-#include "polyMesh.H"
-#include "cellZoneSet.H"
+#include "./setToCellZone.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./sets/topoSets/cellZoneSet.H"
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

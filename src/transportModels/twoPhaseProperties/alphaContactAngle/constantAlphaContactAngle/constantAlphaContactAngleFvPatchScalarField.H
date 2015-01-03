@@ -36,7 +36,7 @@ SourceFiles
 #ifndef constantAlphaContactAngleFvPatchScalarField_H
 #define constantAlphaContactAngleFvPatchScalarField_H
 
-#include "alphaContactAngleFvPatchScalarField.H"
+#include "./alphaContactAngle/alphaContactAngle/alphaContactAngleFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

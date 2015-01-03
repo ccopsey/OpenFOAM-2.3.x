@@ -25,11 +25,11 @@ License
 
 #include <sys/types.h>
 
-#include "regExp.H"
-#include "label.H"
-#include "string.H"
-#include "List.H"
-#include "IOstreams.H"
+#include "./regExp.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/strings/string/string.H"
+#include "./containers/Lists/List/List.H"
+#include "./db/IOstreams/IOstreams.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

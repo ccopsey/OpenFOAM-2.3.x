@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ParamagneticForce.H"
-#include "demandDrivenData.H"
-#include "electromagneticConstants.H"
+#include "./ParamagneticForce.H"
+#include "./include/demandDrivenData.H"
+#include "./global/constants/electromagnetic/electromagneticConstants.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

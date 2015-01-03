@@ -40,7 +40,7 @@ SourceFiles
 #ifndef cellLimitedGrad_H
 #define cellLimitedGrad_H
 
-#include "gradScheme.H"
+#include "./finiteVolume/gradSchemes/gradScheme/gradScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

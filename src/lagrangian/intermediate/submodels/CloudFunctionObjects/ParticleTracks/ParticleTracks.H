@@ -35,7 +35,7 @@ SourceFiles
 #ifndef ParticleTracks_H
 #define ParticleTracks_H
 
-#include "CloudFunctionObject.H"
+#include "./submodels/CloudFunctionObjects/CloudFunctionObject/CloudFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -160,12 +160,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "ParticleTracksI.H"
+#include "./ParticleTracksI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ParticleTracks.C"
+#   include "./ParticleTracks.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

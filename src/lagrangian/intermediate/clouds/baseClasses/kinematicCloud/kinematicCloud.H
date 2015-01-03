@@ -35,8 +35,8 @@ SourceFiles
 #ifndef kinematicCloud_H
 #define kinematicCloud_H
 
-#include "typeInfo.H"
-#include "volFieldsFwd.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

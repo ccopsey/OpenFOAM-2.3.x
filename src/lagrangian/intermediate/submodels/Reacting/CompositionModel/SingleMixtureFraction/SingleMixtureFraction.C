@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SingleMixtureFraction.H"
+#include "./SingleMixtureFraction.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "surfaceMeshWriter.H"
-#include "writeFuns.H"
+#include "./surfaceMeshWriter.H"
+#include "./writeFuns.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

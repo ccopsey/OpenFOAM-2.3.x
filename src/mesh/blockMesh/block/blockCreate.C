@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "block.H"
+#include "./db/error/error.H"
+#include "./block.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

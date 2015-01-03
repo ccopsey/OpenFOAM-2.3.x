@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "greyMeanAbsorptionEmission.H"
-#include "addToRunTimeSelectionTable.H"
-#include "unitConversion.H"
-#include "zeroGradientFvPatchFields.H"
-#include "basicMultiComponentMixture.H"
+#include "./greyMeanAbsorptionEmission.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

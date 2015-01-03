@@ -36,8 +36,8 @@ SourceFiles
 #ifndef readFieldsFunctionObject_H
 #define readFieldsFunctionObject_H
 
-#include "readFields.H"
-#include "OutputFilterFunctionObject.H"
+#include "./readFields.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

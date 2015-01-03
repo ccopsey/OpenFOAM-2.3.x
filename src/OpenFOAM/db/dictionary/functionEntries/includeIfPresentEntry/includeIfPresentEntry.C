@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "includeIfPresentEntry.H"
-#include "dictionary.H"
-#include "IFstream.H"
-#include "addToMemberFunctionSelectionTable.H"
+#include "./includeIfPresentEntry.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/runTimeSelection/memberFunctions/addToMemberFunctionSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

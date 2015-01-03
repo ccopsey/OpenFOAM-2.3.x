@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ILList.H"
+#include "./ILList.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -151,7 +151,7 @@ void Foam::ILList<LListBase, T>::operator=(const ILList<LListBase, T>& lst)
 
 // * * * * * * * * * * * * * * * Friend Operators  * * * * * * * * * * * * * //
 
-#include "ILListIO.C"
+#include "./ILListIO.C"
 
 
 // ************************************************************************* //

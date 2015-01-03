@@ -39,8 +39,8 @@ SourceFiles
 #ifndef hPolynomialThermo_H
 #define hPolynomialThermo_H
 
-#include "scalar.H"
-#include "Polynomial.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/functions/Polynomial/Polynomial.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -236,10 +236,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "hPolynomialThermoI.H"
+#include "./hPolynomialThermoI.H"
 
 #ifdef NoRepository
-#   include "hPolynomialThermo.C"
+#   include "./hPolynomialThermo.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

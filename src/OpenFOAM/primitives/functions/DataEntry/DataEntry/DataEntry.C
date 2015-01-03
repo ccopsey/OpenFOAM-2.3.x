@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DataEntry.H"
-#include "Time.H"
+#include "./DataEntry.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * * * Constructor * * * * * * * * * * * * * * * //
 
@@ -213,7 +213,7 @@ Foam::DataEntry<Type>::dimIntegrate
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "DataEntryIO.C"
+#include "./DataEntryIO.C"
 
 
 // ************************************************************************* //

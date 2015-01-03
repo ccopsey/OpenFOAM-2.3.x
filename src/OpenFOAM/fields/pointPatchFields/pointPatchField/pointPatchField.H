@@ -42,9 +42,9 @@ SourceFiles
 #ifndef pointPatchField_H
 #define pointPatchField_H
 
-#include "pointPatch.H"
-#include "DimensionedField.H"
-#include "autoPtr.H"
+#include "./meshes/pointMesh/pointPatches/pointPatch/pointPatch.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -519,11 +519,11 @@ const pointPatchField<Type>& operator+
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "pointPatchFieldFunctions.H"
+#include "./pointPatchFieldFunctions.H"
 
 #ifdef NoRepository
-#   include "pointPatchField.C"
-#   include "calculatedPointPatchField.H"
+#   include "./pointPatchField.C"
+#   include "./fields/pointPatchFields/basic/calculated/calculatedPointPatchField.H"
 #endif
 
 

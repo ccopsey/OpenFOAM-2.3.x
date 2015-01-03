@@ -36,7 +36,7 @@ Description
 #ifndef COxidationIntrinsicRate_H
 #define COxidationIntrinsicRate_H
 
-#include "SurfaceReactionModel.H"
+#include "./submodels/ReactingMultiphase/SurfaceReactionModel/SurfaceReactionModel/SurfaceReactionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -176,7 +176,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "COxidationIntrinsicRate.C"
+    #include "./COxidationIntrinsicRate.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

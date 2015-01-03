@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fileControl.H"
-#include "addToRunTimeSelectionTable.H"
-#include "tetrahedron.H"
-#include "scalarList.H"
-#include "vectorTools.H"
-#include "pointIOField.H"
-#include "scalarIOField.H"
-#include "triadIOField.H"
+#include "./fileControl.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshes/primitiveShapes/tetrahedron/tetrahedron.H"
+#include "./primitives/Scalar/lists/scalarList.H"
+#include "./vectorTools.H"
+#include "./meshes/primitiveShapes/point/pointIOField.H"
+#include "./fields/Fields/scalarField/scalarIOField.H"
+#include "./fields/Fields/triadField/triadIOField.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

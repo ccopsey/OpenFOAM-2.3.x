@@ -36,9 +36,9 @@ SourceFiles
 #ifndef PstreamGlobals_H
 #define PstreamGlobals_H
 
-#include "FixedList.H"
-#include "labelList.H"
-#include "DynamicList.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

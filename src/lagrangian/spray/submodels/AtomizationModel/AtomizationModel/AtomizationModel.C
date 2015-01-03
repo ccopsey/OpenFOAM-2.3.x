@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AtomizationModel.H"
+#include "./AtomizationModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -147,7 +147,7 @@ void Foam::AtomizationModel<CloudType>::update
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "AtomizationModelNew.C"
+#include "./AtomizationModelNew.C"
 
 // ************************************************************************* //
 

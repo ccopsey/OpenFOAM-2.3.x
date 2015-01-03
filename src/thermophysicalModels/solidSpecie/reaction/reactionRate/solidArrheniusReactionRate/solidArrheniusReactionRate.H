@@ -35,8 +35,8 @@ SourceFiles
 #ifndef solidArrheniusReactionRate_H
 #define solidArrheniusReactionRate_H
 
-#include "scalarField.H"
-#include "typeInfo.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./db/typeInfo/typeInfo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -124,7 +124,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "solidArrheniusReactionRateI.H"
+#include "./solidArrheniusReactionRateI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

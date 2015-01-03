@@ -30,27 +30,27 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "psiThermo.H"
-#include "turbulenceModel.H"
-#include "zeroGradientFvPatchFields.H"
-#include "fixedRhoFvPatchScalarField.H"
-#include "motionSolver.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./psiThermo/psiThermo.H"
+#include "./turbulenceModel.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./BCs/rho/fixedRhoFvPatchScalarField.H"
+#include "./motionSolver/motionSolver/motionSolver.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "readTimeControls.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-    #include "readFluxScheme.H"
+    #include "./readFluxScheme.H"
 
     dimensionedScalar v_zero("v_zero", dimVolume/dimTime, 0.0);
 
@@ -154,9 +154,9 @@ int main(int argc, char *argv[])
         // estimated by the central scheme
         amaxSf = max(mag(aphiv_pos), mag(aphiv_neg));
 
-        #include "compressibleCourantNo.H"
-        #include "readTimeControls.H"
-        #include "setDeltaT.H"
+        #include "./compressibleCourantNo.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./cfdTools/general/include/setDeltaT.H"
 
         runTime++;
 

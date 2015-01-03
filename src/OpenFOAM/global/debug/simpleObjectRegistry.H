@@ -35,8 +35,8 @@ SourceFiles
 #define simpleObjectRegistry_H
 
 //#include "UPtrDictionary.H"
-#include "Dictionary.H"
-#include "simpleRegIOobject.H"
+#include "./containers/Dictionaries/Dictionary/Dictionary.H"
+#include "./simpleRegIOobject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

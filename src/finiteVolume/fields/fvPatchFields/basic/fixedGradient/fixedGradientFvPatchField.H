@@ -67,7 +67,7 @@ SourceFiles
 #ifndef fixedGradientFvPatchField_H
 #define fixedGradientFvPatchField_H
 
-#include "fvPatchField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -237,7 +237,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fixedGradientFvPatchField.C"
+#   include "./fixedGradientFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

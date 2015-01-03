@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "setToFaceZone.H"
-#include "polyMesh.H"
-#include "faceZoneSet.H"
+#include "./setToFaceZone.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./sets/topoSets/faceZoneSet.H"
 
-#include "addToRunTimeSelectionTable.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

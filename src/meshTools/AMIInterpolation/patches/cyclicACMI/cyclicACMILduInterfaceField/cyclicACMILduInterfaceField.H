@@ -35,7 +35,7 @@ SourceFiles
 #ifndef cyclicACMILduInterfaceField_H
 #define cyclicACMILduInterfaceField_H
 
-#include "cyclicAMILduInterfaceField.H"
+#include "./AMIInterpolation/patches/cyclicAMI/cyclicAMILduInterfaceField/cyclicAMILduInterfaceField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -89,7 +89,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "tensorField.H"
+#include "./fields/Fields/tensorField/tensorField.H"
 
 template<class Type>
 void Foam::cyclicACMILduInterfaceField::transformCoupleField

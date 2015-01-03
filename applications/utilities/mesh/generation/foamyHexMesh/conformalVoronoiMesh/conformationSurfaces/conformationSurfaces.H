@@ -35,12 +35,12 @@ SourceFiles
 #ifndef conformationSurfaces_H
 #define conformationSurfaces_H
 
-#include "searchableSurfaces.H"
-#include "searchableSurfacesQueries.H"
-#include "extendedFeatureEdgeMesh.H"
-#include "boolList.H"
-#include "volumeType.H"
-#include "surfaceZonesInfo.H"
+#include "./searchableSurface/searchableSurfaces.H"
+#include "./searchableSurface/searchableSurfacesQueries.H"
+#include "./extendedEdgeMesh/extendedFeatureEdgeMesh/extendedFeatureEdgeMesh.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./algorithms/indexedOctree/volumeType.H"
+#include "./autoHexMesh/refinementSurfaces/surfaceZonesInfo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -383,7 +383,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "conformationSurfacesI.H"
+#include "./conformationSurfacesI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

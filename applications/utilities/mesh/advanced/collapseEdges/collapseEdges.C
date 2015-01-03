@@ -46,13 +46,13 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "Time.H"
-#include "timeSelector.H"
-#include "polyTopoChange.H"
-#include "fvMesh.H"
-#include "polyMeshFilter.H"
-#include "faceSet.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/Time.H"
+#include "./db/Time/timeSelector.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./fvMesh/fvMesh.H"
+#include "./polyMeshFilter/polyMeshFilter.H"
+#include "./sets/topoSets/faceSet.H"
 
 using namespace Foam;
 
@@ -80,14 +80,14 @@ int main(int argc, char *argv[])
         "Collapse faces that are in the supplied face set"
     );
 
-#   include "addOverwriteOption.H"
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/addOverwriteOption.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     runTime.functionObjects().off();
     instantList timeDirs = timeSelector::selectIfPresent(runTime, args);
 
-#   include "createMesh.H"
+#   include "./include/createMesh.H"
 
     const word oldInstance = mesh.pointsInstance();
 

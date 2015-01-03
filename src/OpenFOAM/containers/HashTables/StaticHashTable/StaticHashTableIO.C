@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "StaticHashTable.H"
-#include "Istream.H"
-#include "Ostream.H"
+#include "./StaticHashTable.H"
+#include "./db/IOstreams/IOstreams/Istream.H"
+#include "./db/IOstreams/IOstreams/Ostream.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

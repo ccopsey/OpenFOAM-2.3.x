@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PatchInteractionModel.H"
-#include "fvMesh.H"
-#include "Time.H"
-#include "volFields.H"
+#include "./PatchInteractionModel.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 
@@ -163,6 +163,6 @@ void Foam::PatchInteractionModel<CloudType>::info(Ostream& os)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "PatchInteractionModelNew.C"
+#include "./PatchInteractionModelNew.C"
 
 // ************************************************************************* //

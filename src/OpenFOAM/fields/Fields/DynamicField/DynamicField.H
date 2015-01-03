@@ -36,8 +36,8 @@ SourceFiles
 #ifndef DynamicField_H
 #define DynamicField_H
 
-#include "Field.H"
-#include "StaticAssert.H"
+#include "./fields/Fields/Field/Field.H"
+#include "./db/error/StaticAssert.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -244,12 +244,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DynamicFieldI.H"
+#include "./DynamicFieldI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DynamicField.C"
+#   include "./DynamicField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

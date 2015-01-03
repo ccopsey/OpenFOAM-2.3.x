@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "volPointInterpolation.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "pointFields.H"
-#include "demandDrivenData.H"
-#include "pointConstraints.H"
-#include "surfaceFields.H"
+#include "./volPointInterpolation.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./include/demandDrivenData.H"
+#include "./pointConstraints.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

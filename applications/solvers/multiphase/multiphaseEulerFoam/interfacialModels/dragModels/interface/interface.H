@@ -35,7 +35,7 @@ SourceFiles
 #ifndef interface_H
 #define interface_H
 
-#include "dragModel.H"
+#include "./dragModels/dragModel/dragModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

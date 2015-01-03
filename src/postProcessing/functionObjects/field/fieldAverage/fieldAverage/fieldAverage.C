@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldAverage.H"
-#include "volFields.H"
-#include "Time.H"
+#include "./fieldAverage.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/Time/Time.H"
 
-#include "fieldAverageItem.H"
+#include "./fieldAverage/fieldAverageItem/fieldAverageItem.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

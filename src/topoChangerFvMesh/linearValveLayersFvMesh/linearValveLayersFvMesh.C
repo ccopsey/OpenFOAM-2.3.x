@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "linearValveLayersFvMesh.H"
-#include "Time.H"
-#include "slidingInterface.H"
-#include "layerAdditionRemoval.H"
-#include "pointField.H"
-#include "mapPolyMesh.H"
-#include "polyTopoChange.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./linearValveLayersFvMesh.H"
+#include "./db/Time/Time.H"
+#include "./slidingInterface/slidingInterface.H"
+#include "./layerAdditionRemoval/layerAdditionRemoval.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

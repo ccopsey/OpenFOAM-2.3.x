@@ -32,7 +32,7 @@ Description
 #ifndef Analytical_H
 #define Analytical_H
 
-#include "IntegrationScheme.H"
+#include "./IntegrationScheme/IntegrationScheme/IntegrationScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -96,7 +96,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "Analytical.C"
+#   include "./Analytical.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

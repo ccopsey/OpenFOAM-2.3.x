@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "makeCombustionTypes.H"
+#include "./combustionModel/makeCombustionTypes.H"
 
-#include "thermoPhysicsTypes.H"
-#include "psiCombustionModel.H"
-#include "psiThermoCombustion.H"
-#include "rhoCombustionModel.H"
-#include "rhoThermoCombustion.H"
-#include "FSD.H"
+#include "./include/thermoPhysicsTypes.H"
+#include "./psiCombustionModel/psiCombustionModel/psiCombustionModel.H"
+#include "./psiCombustionModel/psiThermoCombustion/psiThermoCombustion.H"
+#include "./rhoCombustionModel/rhoCombustionModel/rhoCombustionModel.H"
+#include "./rhoCombustionModel/rhoThermoCombustion/rhoThermoCombustion.H"
+#include "./FSD.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

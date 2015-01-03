@@ -97,8 +97,8 @@
     // Second part of thermodynamic density update
     thermo.rho() += psi*p;
 
-    #include "rhoEqn.H"
-    #include "compressibleContinuityErrs.H"
+    #include "./cfdTools/compressible/rhoEqn.H"
+    #include "./cfdTools/compressible/compressibleContinuityErrs.H"
 
     U = HbyA - rAU*fvc::grad(p);
     U.correctBoundaryConditions();

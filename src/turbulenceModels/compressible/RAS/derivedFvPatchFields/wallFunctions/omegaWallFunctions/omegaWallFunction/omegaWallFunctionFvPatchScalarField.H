@@ -76,7 +76,7 @@ SourceFiles
 #ifndef compressibleOmegaWallFunctionFvPatchScalarField_H
 #define compressibleOmegaWallFunctionFvPatchScalarField_H
 
-#include "fixedValueFvPatchField.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

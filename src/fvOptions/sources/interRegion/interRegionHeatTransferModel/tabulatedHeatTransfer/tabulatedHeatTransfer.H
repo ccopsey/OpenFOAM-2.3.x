@@ -34,9 +34,9 @@ Description
 #ifndef tabulatedHeatTransfer_H
 #define tabulatedHeatTransfer_H
 
-#include "interRegionHeatTransferModel.H"
-#include "autoPtr.H"
-#include "interpolation2DTable.H"
+#include "./sources/interRegion/interRegionHeatTransferModel/interRegionHeatTransferModel/interRegionHeatTransferModel.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./interpolations/interpolation2DTable/interpolation2DTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

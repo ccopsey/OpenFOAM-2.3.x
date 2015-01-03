@@ -47,7 +47,7 @@ Description
 #ifndef LISAAtomization_H
 #define LISAAtomization_H
 
-#include "AtomizationModel.H"
+#include "./submodels/AtomizationModel/AtomizationModel/AtomizationModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -151,7 +151,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "LISAAtomization.C"
+#   include "./LISAAtomization.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

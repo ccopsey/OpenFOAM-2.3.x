@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "chemistryModel.H"
-#include "reactingMixture.H"
-#include "UniformField.H"
+#include "./chemistryModel.H"
+#include "./mixtures/reactingMixture/reactingMixture.H"
+#include "./fields/Fields/uniformField/UniformField.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

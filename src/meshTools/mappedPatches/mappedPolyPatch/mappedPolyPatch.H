@@ -40,8 +40,8 @@ SourceFiles
 #ifndef mappedPolyPatch_H
 #define mappedPolyPatch_H
 
-#include "polyPatch.H"
-#include "mappedPatchBase.H"
+#include "./meshes/polyMesh/polyPatches/polyPatch/polyPatch.H"
+#include "./mappedPatchBase.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

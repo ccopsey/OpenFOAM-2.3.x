@@ -72,30 +72,30 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "OSspecific.H"
-#include "fvCFD.H"
-#include "IOobjectList.H"
-#include "domainDecomposition.H"
-#include "labelIOField.H"
-#include "labelFieldIOField.H"
-#include "scalarIOField.H"
-#include "scalarFieldIOField.H"
-#include "vectorIOField.H"
-#include "vectorFieldIOField.H"
-#include "sphericalTensorIOField.H"
-#include "sphericalTensorFieldIOField.H"
-#include "symmTensorIOField.H"
-#include "symmTensorFieldIOField.H"
-#include "tensorIOField.H"
-#include "tensorFieldIOField.H"
-#include "pointFields.H"
-#include "regionProperties.H"
+#include "./include/OSspecific.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./domainDecomposition.H"
+#include "./fields/Fields/labelField/labelIOField.H"
+#include "./fields/Fields/labelField/labelFieldIOField.H"
+#include "./fields/Fields/scalarField/scalarIOField.H"
+#include "./fields/Fields/scalarField/scalarFieldIOField.H"
+#include "./fields/Fields/vectorField/vectorIOField.H"
+#include "./fields/Fields/vectorField/vectorFieldIOField.H"
+#include "./fields/Fields/sphericalTensorField/sphericalTensorIOField.H"
+#include "./fields/Fields/sphericalTensorField/sphericalTensorFieldIOField.H"
+#include "./fields/Fields/symmTensorField/symmTensorIOField.H"
+#include "./fields/Fields/symmTensorField/symmTensorFieldIOField.H"
+#include "./fields/Fields/tensorField/tensorIOField.H"
+#include "./fields/Fields/tensorField/tensorFieldIOField.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./regionProperties/regionProperties.H"
 
-#include "readFields.H"
-#include "dimFieldDecomposer.H"
-#include "fvFieldDecomposer.H"
-#include "pointFieldDecomposer.H"
-#include "lagrangianFieldDecomposer.H"
+#include "./readFields.H"
+#include "./dimFieldDecomposer.H"
+#include "./fvFieldDecomposer.H"
+#include "./pointFieldDecomposer.H"
+#include "./lagrangianFieldDecomposer.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
     );
 
     argList::noParallel();
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
     argList::addBoolOption
     (
         "allRegions",
@@ -182,7 +182,7 @@ int main(int argc, char *argv[])
     // Include explicit constant options, have zero from time range
     timeSelector::addOptions(true, false);
 
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
     bool allRegions              = args.optionFound("allRegions");
     bool writeCellDist           = args.optionFound("cellDist");
@@ -193,7 +193,7 @@ int main(int argc, char *argv[])
     bool ifRequiredDecomposition = args.optionFound("ifRequired");
 
     // Set time from database
-    #include "createTime.H"
+    #include "./include/createTime.H"
     // Allow override of time
     instantList times = timeSelector::selectIfPresent(runTime, args);
 

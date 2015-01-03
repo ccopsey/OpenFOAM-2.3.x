@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DevolatilisationModel.H"
+#include "./DevolatilisationModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -133,6 +133,6 @@ void Foam::DevolatilisationModel<CloudType>::info(Ostream& os)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DevolatilisationModelNew.C"
+#include "./DevolatilisationModelNew.C"
 
 // ************************************************************************* //

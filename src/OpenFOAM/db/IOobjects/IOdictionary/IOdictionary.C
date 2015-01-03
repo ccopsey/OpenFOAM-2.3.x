@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "IOdictionary.H"
-#include "objectRegistry.H"
-#include "Pstream.H"
+#include "./IOdictionary.H"
+#include "./db/objectRegistry/objectRegistry.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

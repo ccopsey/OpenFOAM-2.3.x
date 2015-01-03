@@ -26,8 +26,8 @@ License
 #ifndef cellMotionFvPatchFields_H
 #define cellMotionFvPatchFields_H
 
-#include "cellMotionFvPatchField.H"
-#include "fieldTypes.H"
+#include "./cellMotionFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -32,8 +32,8 @@ Description
 #ifndef IOabortCalculation_H
 #define IOabortCalculation_H
 
-#include "abortCalculation.H"
-#include "IOOutputFilter.H"
+#include "./abortCalculation.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "wallBoundedParticle.H"
+#include "./wallBoundedParticle.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

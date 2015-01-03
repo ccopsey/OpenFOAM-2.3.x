@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "polyLineEdge.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./db/error/error.H"
+#include "./polyLineEdge.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

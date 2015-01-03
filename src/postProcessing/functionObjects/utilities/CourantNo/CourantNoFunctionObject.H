@@ -36,8 +36,8 @@ SourceFiles
 #ifndef CourantNoFunctionObject_H
 #define CourantNoFunctionObject_H
 
-#include "CourantNo.H"
-#include "OutputFilterFunctionObject.H"
+#include "./CourantNo.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

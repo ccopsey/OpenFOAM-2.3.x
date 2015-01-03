@@ -99,8 +99,8 @@ SourceFiles
 #ifndef compressiblekOmegaSST_H
 #define compressiblekOmegaSST_H
 
-#include "RASModel.H"
-#include "wallDist.H"
+#include "./RASModel/RASModel.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

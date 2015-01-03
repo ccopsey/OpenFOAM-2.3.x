@@ -28,13 +28,13 @@ License
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "FacePostProcessing.H"
-#include "ParticleCollector.H"
-#include "ParticleErosion.H"
-#include "ParticleTracks.H"
-#include "ParticleTrap.H"
-#include "PatchPostProcessing.H"
-#include "VoidFraction.H"
+#include "./submodels/CloudFunctionObjects/FacePostProcessing/FacePostProcessing.H"
+#include "./submodels/CloudFunctionObjects/ParticleCollector/ParticleCollector.H"
+#include "./submodels/CloudFunctionObjects/ParticleErosion/ParticleErosion.H"
+#include "./submodels/CloudFunctionObjects/ParticleTracks/ParticleTracks.H"
+#include "./submodels/CloudFunctionObjects/ParticleTrap/ParticleTrap.H"
+#include "./submodels/CloudFunctionObjects/PatchPostProcessing/PatchPostProcessing.H"
+#include "./submodels/CloudFunctionObjects/VoidFraction/VoidFraction.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

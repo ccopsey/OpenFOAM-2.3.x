@@ -34,7 +34,7 @@ SourceFiles
 #ifndef autoRefineDriver_H
 #define autoRefineDriver_H
 
-#include "treeBoundBox.H"
+#include "./meshes/treeBoundBox/treeBoundBox.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

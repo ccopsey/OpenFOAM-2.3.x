@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "doxygenXmlParser.H"
-#include "wordRe.H"
+#include "./doxygenXmlParser.H"
+#include "./primitives/strings/wordRe/wordRe.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

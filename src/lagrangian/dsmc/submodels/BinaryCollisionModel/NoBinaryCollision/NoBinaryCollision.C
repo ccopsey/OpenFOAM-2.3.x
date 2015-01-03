@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "NoBinaryCollision.H"
-#include "constants.H"
+#include "./NoBinaryCollision.H"
+#include "./global/constants/constants.H"
 
 using namespace Foam::constant::mathematical;
 

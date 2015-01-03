@@ -26,19 +26,19 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
 
-#include "fvMesh.H"
-#include "Time.H"
-#include "volMesh.H"
-#include "surfaceMesh.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "pointFields.H"
-#include "ReadFields.H"
-#include "interpolationWeights.H"
-#include "uniformInterpolate.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
+#include "./volMesh/volMesh.H"
+#include "./surfaceMesh/surfaceMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./interpolations/interpolationWeights/interpolationWeights/interpolationWeights.H"
+#include "./fields/GeometricFields/GeometricField/uniformInterpolate.H"
 
 using namespace Foam;
 
@@ -205,8 +205,8 @@ int main(int argc, char *argv[])
         "specify type of interpolation (linear or spline)"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     runTime.functionObjects().off();
 
     HashSet<word> selectedFields;
@@ -259,7 +259,7 @@ int main(int argc, char *argv[])
     );
 
 
-    #include "createMesh.H"
+    #include "./include/createMesh.H"
 
     Info<< "Interpolating fields for times:" << endl;
 

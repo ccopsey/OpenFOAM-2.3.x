@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkMesh.H"
-#include "fvMeshSubset.H"
-#include "Time.H"
-#include "cellSet.H"
+#include "./vtkMesh.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
+#include "./db/Time/Time.H"
+#include "./sets/topoSets/cellSet.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -32,8 +32,8 @@ Description
 #ifndef IOblendingFactor_H
 #define IOblendingFactor_H
 
-#include "blendingFactor.H"
-#include "IOOutputFilter.H"
+#include "./blendingFactor.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -70,12 +70,12 @@ Usage
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "IOobjectList.H"
-#include "IOPtrList.H"
-#include "volFields.H"
-#include "stringListOps.H"
-#include "timeSelector.H"
+#include "./global/argList/argList.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./db/IOobjects/IOPtrList/IOPtrList.H"
+#include "./fields/volFields/volFields.H"
+#include "./primitives/strings/lists/stringListOps.H"
+#include "./db/Time/timeSelector.H"
 
 using namespace Foam;
 
@@ -384,7 +384,7 @@ bool merge
 
 int main(int argc, char *argv[])
 {
-    #include "addDictOption.H"
+    #include "./include/addDictOption.H"
     argList::addOption
     (
         "instance",
@@ -411,10 +411,10 @@ int main(int argc, char *argv[])
         "disable matching keys to patch groups"
     );
 
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     // Optionally override controlDict time with -time options
     instantList times = timeSelector::selectIfPresent(runTime, args);
@@ -426,7 +426,7 @@ int main(int argc, char *argv[])
     runTime.setTime(times[0], 0);
     word instance = args.optionLookupOrDefault("instance", runTime.timeName());
 
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     const bool literalRE = args.optionFound("literalRE");
     if (literalRE)
@@ -476,7 +476,7 @@ int main(int argc, char *argv[])
     // Get the replacement rules from a dictionary
 
     const word dictName("changeDictionaryDict");
-    #include "setSystemMeshDictionaryIO.H"
+    #include "./include/setSystemMeshDictionaryIO.H"
     IOdictionary dict(dictIO);
 
     const dictionary& replaceDicts = dict.subDict("dictionaryReplacement");

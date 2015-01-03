@@ -38,7 +38,7 @@ SourceFiles
 #ifndef incompressiblePerfectGas_H
 #define incompressiblePerfectGas_H
 
-#include "autoPtr.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -229,10 +229,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "incompressiblePerfectGasI.H"
+#include "./incompressiblePerfectGasI.H"
 
 #ifdef NoRepository
-#   include "incompressiblePerfectGas.C"
+#   include "./incompressiblePerfectGas.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

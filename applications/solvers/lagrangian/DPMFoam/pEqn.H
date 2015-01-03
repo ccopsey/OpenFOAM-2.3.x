@@ -49,4 +49,4 @@
     }
 }
 
-#include "continuityErrs.H"
+#include "./continuityErrs.H"

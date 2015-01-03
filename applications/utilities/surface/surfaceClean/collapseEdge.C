@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "collapseEdge.H"
+#include "./collapseEdge.H"
 
 //- Sets point neighbours of face to val
 static void markPointNbrs

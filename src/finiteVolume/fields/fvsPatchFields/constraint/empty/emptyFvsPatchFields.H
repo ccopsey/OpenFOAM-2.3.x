@@ -26,8 +26,8 @@ License
 #ifndef emptyFvsPatchFields_H
 #define emptyFvsPatchFields_H
 
-#include "emptyFvsPatchField.H"
-#include "fieldTypes.H"
+#include "./emptyFvsPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

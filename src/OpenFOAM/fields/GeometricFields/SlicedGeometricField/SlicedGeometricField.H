@@ -43,7 +43,7 @@ SourceFiles
 #ifndef SlicedGeometricField_H
 #define SlicedGeometricField_H
 
-#include "GeometricField.H"
+#include "./fields/GeometricFields/GeometricField/GeometricField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -215,7 +215,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "SlicedGeometricField.C"
+#   include "./SlicedGeometricField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

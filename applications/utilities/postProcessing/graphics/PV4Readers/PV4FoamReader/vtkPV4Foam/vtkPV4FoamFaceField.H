@@ -35,7 +35,7 @@ InClass
 #include "vtkMultiBlockDataSet.h"
 #include "vtkPolyData.h"
 
-#include "vtkOpenFOAMTupleRemap.H"
+#include "./vtkOpenFOAMTupleRemap.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

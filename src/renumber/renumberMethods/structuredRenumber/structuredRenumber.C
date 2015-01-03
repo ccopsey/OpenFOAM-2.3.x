@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "structuredRenumber.H"
-#include "addToRunTimeSelectionTable.H"
-#include "topoDistanceData.H"
-#include "fvMeshSubset.H"
-#include "FaceCellWave.H"
+#include "./structuredRenumber.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./meshStructure/topoDistanceData.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
+#include "./algorithms/MeshWave/FaceCellWave.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

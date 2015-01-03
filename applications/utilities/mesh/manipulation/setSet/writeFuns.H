@@ -35,11 +35,11 @@ SourceFiles
 #ifndef writeFuns_H
 #define writeFuns_H
 
-#include "labelList.H"
-#include "floatScalar.H"
-#include "OFstream.H"
-#include "DynamicList.H"
-#include "point.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./primitives/Scalar/floatScalar/floatScalar.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./meshes/primitiveShapes/point/point.H"
 
 using namespace Foam;
 

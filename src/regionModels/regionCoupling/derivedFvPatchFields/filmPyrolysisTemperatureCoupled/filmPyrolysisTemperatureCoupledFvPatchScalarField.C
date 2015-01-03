@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "filmPyrolysisTemperatureCoupledFvPatchScalarField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "surfaceFields.H"
-#include "pyrolysisModel.H"
-#include "surfaceFilmModel.H"
+#include "./filmPyrolysisTemperatureCoupledFvPatchScalarField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./pyrolysisModel/pyrolysisModel.H"
+#include "./surfaceFilmModel/surfaceFilmModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

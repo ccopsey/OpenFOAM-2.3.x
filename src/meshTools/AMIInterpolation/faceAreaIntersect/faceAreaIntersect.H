@@ -37,11 +37,11 @@ SourceFiles
 #ifndef faceAreaIntersect_H
 #define faceAreaIntersect_H
 
-#include "pointField.H"
-#include "FixedList.H"
-#include "plane.H"
-#include "face.H"
-#include "NamedEnum.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./meshes/meshShapes/face/face.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -180,7 +180,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "faceAreaIntersectI.H"
+#include "./faceAreaIntersectI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

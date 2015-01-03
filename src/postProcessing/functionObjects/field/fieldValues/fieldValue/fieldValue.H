@@ -38,12 +38,12 @@ SourceFiles
 #ifndef fieldValue_H
 #define fieldValue_H
 
-#include "functionObjectFile.H"
-#include "Switch.H"
-#include "OFstream.H"
-#include "dictionary.H"
-#include "Field.H"
-#include "runTimeSelectionTables.H"
+#include "./db/functionObjects/functionObjectFile/functionObjectFile.H"
+#include "./primitives/bools/Switch/Switch.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/dictionary/dictionary.H"
+#include "./fields/Fields/Field/Field.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -216,12 +216,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "fieldValueI.H"
+#include "./fieldValueI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "fieldValueTemplates.C"
+    #include "./fieldValueTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

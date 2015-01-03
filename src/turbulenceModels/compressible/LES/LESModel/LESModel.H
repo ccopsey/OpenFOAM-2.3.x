@@ -52,13 +52,13 @@ SourceFiles
 
 #include "compressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/LES/compressibleLESdelta/compressibleLESdelta.H"
-#include "fvm.H"
-#include "fvc.H"
-#include "fvMatrices.H"
-#include "fluidThermo.H"
-#include "bound.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./finiteVolume/fvm/fvm.H"
+#include "./finiteVolume/fvc/fvc.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./fluidThermo/fluidThermo.H"
+#include "./cfdTools/general/bound/bound.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

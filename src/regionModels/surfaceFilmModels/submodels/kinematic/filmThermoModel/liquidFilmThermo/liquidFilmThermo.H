@@ -35,8 +35,8 @@ SourceFiles
 #ifndef liquidFilmThermo_H
 #define liquidFilmThermo_H
 
-#include "filmThermoModel.H"
-#include "liquidProperties.H"
+#include "./submodels/kinematic/filmThermoModel/filmThermoModel/filmThermoModel.H"
+#include "./liquidProperties/liquidProperties.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

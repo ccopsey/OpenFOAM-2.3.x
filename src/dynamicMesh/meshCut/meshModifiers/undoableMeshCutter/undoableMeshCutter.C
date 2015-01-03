@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "undoableMeshCutter.H"
-#include "polyMesh.H"
-#include "polyTopoChange.H"
-#include "DynamicList.H"
-#include "meshCutter.H"
-#include "cellCuts.H"
-#include "splitCell.H"
-#include "mapPolyMesh.H"
-#include "unitConversion.H"
-#include "meshTools.H"
+#include "./undoableMeshCutter.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./meshCut/meshModifiers/meshCutter/meshCutter.H"
+#include "./meshCut/cellCuts/cellCuts.H"
+#include "./meshCut/splitCell/splitCell.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./meshTools/meshTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

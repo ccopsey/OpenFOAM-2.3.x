@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "extrudePatchMesh.H"
+#include "./extrudePatchMesh.H"
 
-#include "createShellMesh.H"
-#include "polyTopoChange.H"
-#include "wallPolyPatch.H"
-#include "emptyPolyPatch.H"
-#include "wedgePolyPatch.H"
+#include "./createShellMesh/createShellMesh.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/wedge/wedgePolyPatch.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

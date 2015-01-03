@@ -35,7 +35,7 @@ SourceFiles
 #ifndef triSurfaceMeshPointSet_H
 #define triSurfaceMeshPointSet_H
 
-#include "sampledSet.H"
+#include "./sampledSet/sampledSet/sampledSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

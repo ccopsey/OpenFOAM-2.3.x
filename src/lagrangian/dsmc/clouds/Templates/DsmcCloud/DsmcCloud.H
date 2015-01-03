@@ -36,14 +36,14 @@ SourceFiles
 #ifndef DsmcCloud_H
 #define DsmcCloud_H
 
-#include "Cloud.H"
-#include "DsmcBaseCloud.H"
-#include "IOdictionary.H"
-#include "autoPtr.H"
-#include "Random.H"
-#include "fvMesh.H"
-#include "volFields.H"
-#include "scalarIOField.H"
+#include "./Cloud/Cloud.H"
+#include "./clouds/baseClasses/DsmcBaseCloud/DsmcBaseCloud.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./primitives/random/Random/Random.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/Fields/scalarField/scalarIOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -473,12 +473,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DsmcCloudI.H"
+#include "./DsmcCloudI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "DsmcCloud.C"
+#   include "./DsmcCloud.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -26,10 +26,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "ulong.H"
-#include "IOstreams.H"
+#include "./ulong.H"
+#include "./db/IOstreams/IOstreams.H"
 
 #include <sstream>
 

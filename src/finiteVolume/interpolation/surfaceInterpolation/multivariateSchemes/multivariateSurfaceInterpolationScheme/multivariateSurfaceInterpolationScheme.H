@@ -35,8 +35,8 @@ SourceFiles
 #ifndef multivariateSurfaceInterpolationScheme_H
 #define multivariateSurfaceInterpolationScheme_H
 
-#include "surfaceInterpolationScheme.H"
-#include "HashTable.H"
+#include "./interpolation/surfaceInterpolation/surfaceInterpolationScheme/surfaceInterpolationScheme.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -228,7 +228,7 @@ makeMultivariateSurfaceInterpolationTypeScheme(SS, tensor)
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "multivariateSurfaceInterpolationScheme.C"
+#   include "./multivariateSurfaceInterpolationScheme.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -63,8 +63,8 @@ SourceFiles
 #ifndef MarshakRadiationMixedFvPatchField_H
 #define MarshakRadiationMixedFvPatchField_H
 
-#include "mixedFvPatchFields.H"
-#include "radiationCoupledBase.H"
+#include "./fields/fvPatchFields/basic/mixed/mixedFvPatchFields.H"
+#include "./derivedFvPatchFields/radiationCoupledBase/radiationCoupledBase.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

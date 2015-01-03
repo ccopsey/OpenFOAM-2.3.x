@@ -35,9 +35,9 @@ SourceFiles
 #ifndef regionCoupledPointPatch_H
 #define regionCoupledPointPatch_H
 
-#include "facePointPatch.H"
-#include "regionCoupledPolyPatch.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./meshes/pointMesh/pointPatches/facePointPatch/facePointPatch.H"
+#include "./regionCoupled/patches/regionCoupledPolyPatch/regionCoupledPolyPatch.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "extendedEdgeMeshFormat.H"
-#include "edgeMeshFormat.H"
-#include "IFstream.H"
-#include "Time.H"
+#include "./extendedEdgeMeshFormat.H"
+#include "./edgeMeshFormats/edgeMesh/edgeMeshFormat.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

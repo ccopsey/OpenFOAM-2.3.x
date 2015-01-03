@@ -127,14 +127,14 @@ SourceFiles
 #ifndef mapDistribute_H
 #define mapDistribute_H
 
-#include "transformList.H"
-#include "labelList.H"
-#include "labelPair.H"
-#include "Pstream.H"
-#include "boolList.H"
-#include "Map.H"
-#include "vectorTensorTransform.H"
-#include "coupledPolyPatch.H"
+#include "./fields/Fields/transformList/transformList.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./primitives/Pair/labelPair.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./primitives/globalIndexAndTransform/vectorTensorTransform/vectorTensorTransform.H"
+#include "./meshes/polyMesh/polyPatches/basic/coupled/coupledPolyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -774,7 +774,7 @@ void mapDistribute::transform::operator()
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "mapDistributeTemplates.C"
+#   include "./mapDistributeTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

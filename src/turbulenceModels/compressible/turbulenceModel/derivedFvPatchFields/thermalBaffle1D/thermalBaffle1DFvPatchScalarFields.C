@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "thermalBaffle1DFvPatchScalarFields.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./thermalBaffle1DFvPatchScalarFields.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

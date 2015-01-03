@@ -44,11 +44,11 @@ SourceFiles
 #ifndef HashTable_H
 #define HashTable_H
 
-#include "label.H"
-#include "uLabel.H"
-#include "word.H"
-#include "Xfer.H"
-#include "className.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/ints/uLabel/uLabel.H"
+#include "./primitives/strings/word/word.H"
+#include "./memory/Xfer/Xfer.H"
+#include "./db/typeInfo/className.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -546,13 +546,13 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "HashTableI.H"
+#   include "./HashTableI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifndef NoHashTableC
 #ifdef NoRepository
-#   include "HashTable.C"
+#   include "./HashTable.C"
 #endif
 #endif
 

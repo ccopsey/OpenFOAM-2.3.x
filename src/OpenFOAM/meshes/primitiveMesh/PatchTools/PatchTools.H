@@ -45,8 +45,8 @@ SourceFiles
 #ifndef PatchTools_H
 #define PatchTools_H
 
-#include "PrimitivePatch.H"
-#include "HashSet.H"
+#include "./meshes/primitiveMesh/_PrimitivePatch/PrimitivePatch.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -310,7 +310,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "PatchTools.C"
+#   include "./PatchTools.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

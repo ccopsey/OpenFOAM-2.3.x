@@ -55,7 +55,7 @@ SeeAlso
 # undef  FOAM_ULABEL_MAX
 # define FOAM_ULABEL_MAX UINT_MAX
 
-# include "uint.H"
+# include "./primitives/ints/uint/uint.H"
 
 namespace Foam
 {
@@ -79,8 +79,8 @@ namespace Foam
 # undef  FOAM_ULABEL_MAX
 # define FOAM_ULABEL_MAX ULONG_MAX
 
-# include "uint.H"
-# include "ulong.H"
+# include "./primitives/ints/uint/uint.H"
+# include "./primitives/ints/ulong/ulong.H"
 
 namespace Foam
 {
@@ -110,8 +110,8 @@ namespace Foam
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "pTraits.H"
-#include "direction.H"
+#include "./primitives/pTraits/pTraits.H"
+#include "./primitives/direction/direction.H"
 
 namespace Foam
 {

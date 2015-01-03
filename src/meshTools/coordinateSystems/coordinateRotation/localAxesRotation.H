@@ -48,9 +48,9 @@ Description
 #ifndef localAxesRotation_H
 #define localAxesRotation_H
 
-#include "point.H"
-#include "vector.H"
-#include "coordinateRotation.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./coordinateRotation.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,10 +35,10 @@ SourceFiles
 #ifndef solidReactionThermo_H
 #define solidReactionThermo_H
 
-#include "basicMultiComponentMixture.H"
-#include "solidThermo.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
+#include "./mixtures/basicMultiComponentMixture/basicMultiComponentMixture.H"
+#include "./solidThermo/solidThermo.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,10 +35,10 @@ SourceFiles
 #ifndef NamedEnum_H
 #define NamedEnum_H
 
-#include "HashTable.H"
-#include "StaticAssert.H"
-#include "stringList.H"
-#include "wordList.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./db/error/StaticAssert.H"
+#include "./primitives/strings/lists/stringList.H"
+#include "./primitives/strings/lists/wordList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -125,7 +125,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NamedEnum.C"
+#   include "./NamedEnum.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

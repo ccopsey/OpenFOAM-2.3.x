@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "volPointInterpolation.H"
-#include "sampledCuttingPlane.H"
-#include "volFieldsFwd.H"
-#include "pointFields.H"
-#include "volPointInterpolation.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
+#include "./sampledCuttingPlane.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

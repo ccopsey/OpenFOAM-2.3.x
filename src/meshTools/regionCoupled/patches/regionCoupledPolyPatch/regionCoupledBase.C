@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "regionCoupledBase.H"
-#include "SubField.H"
-#include "polyMesh.H"
-#include "Time.H"
+#include "./regionCoupledBase.H"
+#include "./fields/Fields/Field/SubField.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/Time/Time.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

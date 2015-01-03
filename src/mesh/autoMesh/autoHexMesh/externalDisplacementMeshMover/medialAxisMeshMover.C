@@ -23,17 +23,17 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "medialAxisMeshMover.H"
-#include "addToRunTimeSelectionTable.H"
-#include "pointFields.H"
-#include "valuePointPatchFields.H"
-#include "PointEdgeWave.H"
-#include "meshRefinement.H"
-#include "unitConversion.H"
-#include "PatchTools.H"
-#include "OBJstream.H"
-#include "pointData.H"
-#include "zeroFixedValuePointPatchFields.H"
+#include "./medialAxisMeshMover.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./fields/pointPatchFields/basic/value/valuePointPatchFields.H"
+#include "./algorithms/PointEdgeWave/PointEdgeWave.H"
+#include "./autoHexMesh/meshRefinement/meshRefinement.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./meshes/primitiveMesh/PatchTools/PatchTools.H"
+#include "./surfaceFormats/obj/OBJstream.H"
+#include "./autoHexMesh/autoHexMeshDriver/pointData/pointData.H"
+#include "./zeroFixedValue/zeroFixedValuePointPatchFields.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

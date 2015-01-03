@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cyclicSlipPointPatchField.H"
-#include "transformField.H"
-#include "symmTransformField.H"
+#include "./cyclicSlipPointPatchField.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./fields/Fields/symmTransformField/symmTransformField.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

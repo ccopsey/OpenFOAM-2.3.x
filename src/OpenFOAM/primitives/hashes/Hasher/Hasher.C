@@ -25,8 +25,8 @@ Description
     Hashing functions, mostly from Bob Jenkins
 \*---------------------------------------------------------------------------*/
 
-#include "Hasher.H"
-#include "HasherInt.H"
+#include "./Hasher.H"
+#include "./HasherInt.H"
 
 #if defined (__GLIBC__)
 #  include <endian.h>

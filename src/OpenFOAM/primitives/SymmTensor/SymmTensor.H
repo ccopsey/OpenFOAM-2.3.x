@@ -38,8 +38,8 @@ SourceFiles
 #ifndef SymmTensor_H
 #define SymmTensor_H
 
-#include "VectorSpace.H"
-#include "SphericalTensor.H"
+#include "./primitives/VectorSpace/VectorSpace.H"
+#include "./primitives/SphericalTensor/SphericalTensor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -155,7 +155,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 // Include inline implementations
-#include "SymmTensorI.H"
+#include "./SymmTensorI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

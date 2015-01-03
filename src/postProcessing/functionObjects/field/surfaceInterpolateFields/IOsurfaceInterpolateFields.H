@@ -32,8 +32,8 @@ Description
 #ifndef IOsurfaceInterpolateFields_H
 #define IOsurfaceInterpolateFields_H
 
-#include "surfaceInterpolateFields.H"
-#include "IOOutputFilter.H"
+#include "./surfaceInterpolateFields.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

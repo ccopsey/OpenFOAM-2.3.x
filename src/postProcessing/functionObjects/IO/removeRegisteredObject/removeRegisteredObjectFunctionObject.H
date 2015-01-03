@@ -36,8 +36,8 @@ SourceFiles
 #ifndef removeRegisteredObjectFunctionObject_H
 #define removeRegisteredObjectFunctionObject_H
 
-#include "removeRegisteredObject.H"
-#include "OutputFilterFunctionObject.H"
+#include "./removeRegisteredObject.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

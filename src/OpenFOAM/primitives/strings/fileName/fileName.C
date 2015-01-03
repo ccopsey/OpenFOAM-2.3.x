@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fileName.H"
-#include "wordList.H"
-#include "DynamicList.H"
-#include "debug.H"
-#include "OSspecific.H"
+#include "./fileName.H"
+#include "./primitives/strings/lists/wordList.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./global/debug/debug.H"
+#include "./include/OSspecific.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -26,8 +26,8 @@ License
 #ifndef thermalBaffle1DFvPatchScalarFields_H
 #define thermalBaffle1DFvPatchScalarFields_H
 
-#include "thermalBaffle1DFvPatchScalarField.H"
-#include "solidThermoPhysicsTypes.H"
+#include "./thermalBaffle1DFvPatchScalarField.H"
+#include "./include/solidThermoPhysicsTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

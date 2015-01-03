@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DILUSmoother.H"
-#include "DILUPreconditioner.H"
+#include "./DILUSmoother.H"
+#include "./matrices/lduMatrix/preconditioners/DILUPreconditioner/DILUPreconditioner.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

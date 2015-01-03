@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "indexedVertex.H"
-#include "point.H"
-#include "Istream.H"
-#include "Ostream.H"
-#include "OStringStream.H"
-#include "IStringStream.H"
+#include "./indexedVertex.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./db/IOstreams/IOstreams/Istream.H"
+#include "./db/IOstreams/IOstreams/Ostream.H"
+#include "./db/IOstreams/StringStreams/OStringStream.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 

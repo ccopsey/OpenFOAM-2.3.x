@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledSets.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "volFields.H"
-#include "ListListOps.H"
-#include "SortableList.H"
-#include "volPointInterpolation.H"
+#include "./sampledSets.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./containers/Lists/ListListOps/ListListOps.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

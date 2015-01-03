@@ -41,8 +41,8 @@ SourceFiles
 #ifndef CompatibilityConstant_H
 #define CompatibilityConstant_H
 
-#include "DataEntry.H"
-#include "dimensionSet.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
+#include "./dimensionSet/dimensionSet.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -147,7 +147,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "CompatibilityConstant.C"
+#   include "./CompatibilityConstant.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

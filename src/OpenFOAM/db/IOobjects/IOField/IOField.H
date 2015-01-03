@@ -35,8 +35,8 @@ SourceFiles
 #ifndef IOField_H
 #define IOField_H
 
-#include "regIOobject.H"
-#include "Field.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./fields/Fields/Field/Field.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -98,7 +98,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "IOField.C"
+#   include "./IOField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

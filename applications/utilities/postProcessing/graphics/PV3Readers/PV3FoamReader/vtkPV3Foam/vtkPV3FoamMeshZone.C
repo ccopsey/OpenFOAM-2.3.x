@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV3Foam.H"
+#include "./vtkPV3Foam.H"
 
 // OpenFOAM includes
-#include "vtkOpenFOAMPoints.H"
+#include "./vtkOpenFOAMPoints.H"
 
 // VTK includes
 #include "vtkPoints.h"

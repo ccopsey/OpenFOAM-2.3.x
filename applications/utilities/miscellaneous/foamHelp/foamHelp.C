@@ -29,8 +29,8 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "helpType.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./helpTypes/helpType/helpType.H"
 
 using namespace Foam;
 
@@ -38,7 +38,7 @@ using namespace Foam;
 
 int main(int argc, char *argv[])
 {
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
     if (argc < 2)
     {
         FatalError
@@ -55,9 +55,9 @@ int main(int argc, char *argv[])
 
     utility().init();
 
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createNamedMesh.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createNamedMesh.H"
 
     utility().execute(args, mesh);
 

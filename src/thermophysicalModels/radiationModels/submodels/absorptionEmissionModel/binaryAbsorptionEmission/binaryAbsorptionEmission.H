@@ -35,7 +35,7 @@ SourceFiles
 #ifndef radiationBinaryAbsorptionEmission_H
 #define radiationBinaryAbsorptionEmission_H
 
-#include "absorptionEmissionModel.H"
+#include "./submodels/absorptionEmissionModel/absorptionEmissionModel/absorptionEmissionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

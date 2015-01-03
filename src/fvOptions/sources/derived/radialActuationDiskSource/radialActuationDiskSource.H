@@ -76,8 +76,8 @@ SourceFiles
 #ifndef radialActuationDiskSource_H
 #define radialActuationDiskSource_H
 
-#include "actuationDiskSource.H"
-#include "FixedList.H"
+#include "./sources/derived/actuationDiskSource/actuationDiskSource.H"
+#include "./containers/Lists/FixedList/FixedList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -179,7 +179,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "radialActuationDiskSourceTemplates.C"
+#   include "./radialActuationDiskSourceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

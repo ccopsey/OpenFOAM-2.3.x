@@ -232,10 +232,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "sutherlandTransportI.H"
+#include "./sutherlandTransportI.H"
 
 #ifdef NoRepository
-#   include "sutherlandTransport.C"
+#   include "./sutherlandTransport.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

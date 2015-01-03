@@ -41,7 +41,7 @@ if (isA<fluidThermo>(thermo()))
     );
     const volVectorField& U = UPtr();
 
-    #include "compressibleCreatePhi.H"
+    #include "./cfdTools/compressible/compressibleCreatePhi.H"
     // Copy phi to autoPtr. Rename to make sure copy is now registered as 'phi'.
     phi.rename("phiFluid");
     phiPtr.reset(new surfaceScalarField("phi", phi));

@@ -46,10 +46,10 @@ SourceFiles
 #ifndef LimitedScheme_H
 #define LimitedScheme_H
 
-#include "limitedSurfaceInterpolationScheme.H"
-#include "LimitFuncs.H"
-#include "NVDTVD.H"
-#include "NVDVTVDV.H"
+#include "./interpolation/surfaceInterpolation/limitedSchemes/limitedSurfaceInterpolationScheme/limitedSurfaceInterpolationScheme.H"
+#include "./LimitFuncs.H"
+#include "./NVDTVD.H"
+#include "./NVDVTVDV.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -233,7 +233,7 @@ limitedSurfaceInterpolationScheme<TYPE>::addMeshFluxConstructorToTable        \
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "LimitedScheme.C"
+#   include "./LimitedScheme.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

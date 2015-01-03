@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "DynamicList.H"
-#include "refinementHistory.H"
-#include "ListOps.H"
-#include "mapPolyMesh.H"
-#include "mapDistributePolyMesh.H"
-#include "polyMesh.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
+#include "./refinementHistory.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistributePolyMesh.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

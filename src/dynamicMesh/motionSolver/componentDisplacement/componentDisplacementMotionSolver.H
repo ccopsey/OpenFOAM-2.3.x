@@ -38,8 +38,8 @@ SourceFiles
 #ifndef componentDisplacementMotionSolver_H
 #define componentDisplacementMotionSolver_H
 
-#include "motionSolver.H"
-#include "pointFields.H"
+#include "./motionSolver/motionSolver/motionSolver.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

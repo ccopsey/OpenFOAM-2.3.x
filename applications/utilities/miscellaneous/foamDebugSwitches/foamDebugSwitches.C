@@ -29,11 +29,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "dictionary.H"
-#include "IFstream.H"
-#include "IOobject.H"
-#include "HashSet.H"
+#include "./global/argList/argList.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/IOobject/IOobject.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
 
 using namespace Foam;
 

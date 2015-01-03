@@ -36,8 +36,8 @@ SourceFiles
 #ifndef fvcReconstruct_H
 #define fvcReconstruct_H
 
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -82,7 +82,7 @@ namespace fvc
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "fvcReconstruct.C"
+#   include "./fvcReconstruct.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

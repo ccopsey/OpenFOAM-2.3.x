@@ -59,7 +59,7 @@ SourceFiles
 #ifndef translatingWallVelocityFvPatchVectorField_H
 #define translatingWallVelocityFvPatchVectorField_H
 
-#include "fixedValueFvPatchFields.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

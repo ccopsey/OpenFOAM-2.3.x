@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "reflectionVectors.H"
-#include "wallFvPatch.H"
-#include "surfaceFields.H"
+#include "./reflectionVectors.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

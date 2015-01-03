@@ -39,7 +39,7 @@ SourceFiles
 #ifndef vorticity_H
 #define vorticity_H
 
-#include "volFieldsFwd.H"
+#include "./fields/volFields/volFieldsFwd.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

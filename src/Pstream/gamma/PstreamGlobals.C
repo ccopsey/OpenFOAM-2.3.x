@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PstreamGlobals.H"
-#include "IOstreams.H"
-#include "Pstream.H"
+#include "./PstreamGlobals.H"
+#include "./db/IOstreams/IOstreams.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
 
 extern "C" {
 

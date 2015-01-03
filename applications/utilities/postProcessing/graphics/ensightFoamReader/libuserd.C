@@ -38,37 +38,37 @@ Description
 
 #include <stdio.h>
 
-#include "fvCFD.H"
-#include "IOobjectList.H"
-#include "Cloud.H"
-#include "passiveParticle.H"
-#include "fvMesh.H"
-#include "cellModeller.H"
-#include "globalFoam.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./Cloud/Cloud.H"
+#include "./passiveParticle/passiveParticle.H"
+#include "./fvMesh/fvMesh.H"
+#include "./meshes/meshShapes/cellModeller/cellModeller.H"
+#include "./globalFoam.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 extern "C"
 {
 
-#include "USERD_API.H"
-#include "global_extern.h"
+#include "./USERD_API.H"
+#include "./global_extern.h"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // same API as in 1.0
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "USERD_bkup.H"
-#include "USERD_get_name_of_reader.H"
-#include "USERD_set_filenames.H"
-#include "USERD_get_number_of_model_parts.H"
-#include "USERD_get_changing_geometry_status.H"
-#include "USERD_get_dataset_query_file_info.H"
-#include "USERD_get_element_label_status.H"
-#include "USERD_get_node_label_status.H"
-#include "USERD_get_number_of_files_in_dataset.H"
-#include "USERD_get_number_of_variables.H"
-#include "USERD_stop_part_building.H"
+#include "./USERD_bkup.H"
+#include "./USERD_get_name_of_reader.H"
+#include "./USERD_set_filenames.H"
+#include "./USERD_get_number_of_model_parts.H"
+#include "./USERD_get_changing_geometry_status.H"
+#include "./USERD_get_dataset_query_file_info.H"
+#include "./USERD_get_element_label_status.H"
+#include "./USERD_get_node_label_status.H"
+#include "./USERD_get_number_of_files_in_dataset.H"
+#include "./USERD_get_number_of_variables.H"
+#include "./USERD_stop_part_building.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -76,58 +76,58 @@ extern "C"
 // (to handle complex variables - not used by OpenFOAM anyway)
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "USERD_get_constant_val.H"
-#include "USERD_get_descrip_lines.H"
-#include "USERD_get_var_value_at_specific.H"
-#include "USERD_get_gold_variable_info.H"
+#include "./USERD_get_constant_val.H"
+#include "./USERD_get_descrip_lines.H"
+#include "./USERD_get_var_value_at_specific.H"
+#include "./USERD_get_gold_variable_info.H"
 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // critical changes with 2.0 from 1.0
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "USERD_get_gold_part_build_info.H"
-#include "USERD_get_num_of_time_steps.H"
-#include "USERD_get_sol_times.H"
-#include "USERD_set_time_set_and_step.H"
+#include "./USERD_get_gold_part_build_info.H"
+#include "./USERD_get_num_of_time_steps.H"
+#include "./USERD_get_sol_times.H"
+#include "./USERD_set_time_set_and_step.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // new additions with 2.0 from 1.0
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "USERD_get_var_by_component.H"
-#include "USERD_get_part_coords.H"
-#include "USERD_get_part_node_ids.H"
-#include "USERD_get_part_elements_by_type.H"
-#include "USERD_get_part_element_ids_by_type.H"
+#include "./USERD_get_var_by_component.H"
+#include "./USERD_get_part_coords.H"
+#include "./USERD_get_part_node_ids.H"
+#include "./USERD_get_part_elements_by_type.H"
+#include "./USERD_get_part_element_ids_by_type.H"
 
-#include "USERD_exit_routine.H"
-#include "USERD_get_model_extents.H"
-#include "USERD_get_reader_version.H"
-#include "USERD_get_reader_release.H"
-#include "USERD_get_number_timesets.H"
-#include "USERD_get_timeset_description.H"
-#include "USERD_get_geom_timeset_number.H"
+#include "./USERD_exit_routine.H"
+#include "./USERD_get_model_extents.H"
+#include "./USERD_get_reader_version.H"
+#include "./USERD_get_reader_release.H"
+#include "./USERD_get_number_timesets.H"
+#include "./USERD_get_timeset_description.H"
+#include "./USERD_get_geom_timeset_number.H"
 
-#include "USERD_get_border_availability.H"
-#include "USERD_get_border_elements_by_type.H"
+#include "./USERD_get_border_availability.H"
+#include "./USERD_get_border_elements_by_type.H"
 
-#include "USERD_get_maxsize_info.H"
-#include "USERD_set_server_number.H"
+#include "./USERD_get_maxsize_info.H"
+#include "./USERD_set_server_number.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 // new additions with 2.03 from 2.02
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "USERD_get_number_of_material_sets.H"
-#include "USERD_get_matf_set_info.H"
-#include "USERD_get_number_of_materials.H"
-#include "USERD_get_matf_var_info.H"
-#include "USERD_size_matf_data.H"
-#include "USERD_load_matf_data.H"
-#include "USERD_get_nsided_conn.H"
-#include "USERD_get_nfaced_nodes_per_face.H"
-#include "USERD_get_nfaced_conn.H"
+#include "./USERD_get_number_of_material_sets.H"
+#include "./USERD_get_matf_set_info.H"
+#include "./USERD_get_number_of_materials.H"
+#include "./USERD_get_matf_var_info.H"
+#include "./USERD_size_matf_data.H"
+#include "./USERD_load_matf_data.H"
+#include "./USERD_get_nsided_conn.H"
+#include "./USERD_get_nfaced_nodes_per_face.H"
+#include "./USERD_get_nfaced_conn.H"
 
 //**********************************************************************
 //======================================================================
@@ -135,7 +135,7 @@ extern "C"
 //======================================================================
 //**********************************************************************
 
-#include "USERD_structured_data.H"
+#include "./USERD_structured_data.H"
 
 }
 

@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "PairCollisionRecord.H"
+#include "./PairCollisionRecord.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -105,7 +105,7 @@ void Foam::PairCollisionRecord<Type>::operator=
 
 // * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * * * //
 
-#include "PairCollisionRecordIO.C"
+#include "./PairCollisionRecordIO.C"
 
 
 // ************************************************************************* //

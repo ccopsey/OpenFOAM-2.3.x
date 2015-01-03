@@ -35,7 +35,7 @@ SourceFiles
 #ifndef staticEngineMesh_H
 #define staticEngineMesh_H
 
-#include "engineMesh.H"
+#include "./engineMesh/engineMesh/engineMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

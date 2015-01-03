@@ -35,7 +35,7 @@ SourceFiles
 #ifndef thermoCloud_H
 #define thermoCloud_H
 
-#include "volFields.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

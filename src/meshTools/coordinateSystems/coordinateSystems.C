@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "coordinateSystems.H"
-#include "IOPtrList.H"
-#include "Time.H"
-#include "stringListOps.H"
+#include "./coordinateSystems.H"
+#include "./db/IOobjects/IOPtrList/IOPtrList.H"
+#include "./db/Time/Time.H"
+#include "./primitives/strings/lists/stringListOps.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

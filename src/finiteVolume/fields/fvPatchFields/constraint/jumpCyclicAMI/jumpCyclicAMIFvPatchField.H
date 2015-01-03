@@ -44,7 +44,7 @@ SourceFiles
 #ifndef jumpCyclicAMIFvPatchField_H
 #define jumpCyclicAMIFvPatchField_H
 
-#include "cyclicAMIFvPatchField.H"
+#include "./fields/fvPatchFields/constraint/cyclicAMI/cyclicAMIFvPatchField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -167,7 +167,7 @@ void jumpCyclicAMIFvPatchField<scalar>::updateInterfaceMatrix
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "jumpCyclicAMIFvPatchField.C"
+#   include "./jumpCyclicAMIFvPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

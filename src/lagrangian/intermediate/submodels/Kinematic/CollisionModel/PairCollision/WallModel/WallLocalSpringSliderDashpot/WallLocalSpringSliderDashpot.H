@@ -33,7 +33,7 @@ Description
 #ifndef WallLocalSpringSliderDashpot_H
 #define WallLocalSpringSliderDashpot_H
 
-#include "WallModel.H"
+#include "./submodels/Kinematic/CollisionModel/PairCollision/WallModel/WallModel/WallModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -181,7 +181,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "WallLocalSpringSliderDashpot.C"
+#   include "./WallLocalSpringSliderDashpot.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

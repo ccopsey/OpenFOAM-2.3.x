@@ -35,10 +35,10 @@ SourceFiles
 #ifndef searchableSurfaceFeatures_H
 #define searchableSurfaceFeatures_H
 
-#include "typeInfo.H"
-#include "runTimeSelectionTables.H"
-#include "searchableSurface.H"
-#include "extendedFeatureEdgeMesh.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./searchableSurface/searchableSurface.H"
+#include "./extendedEdgeMesh/extendedFeatureEdgeMesh/extendedFeatureEdgeMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

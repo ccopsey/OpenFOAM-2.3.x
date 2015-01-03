@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "meshToMesh.H"
-#include "Time.H"
-#include "globalIndex.H"
-#include "meshToMeshMethod.H"
+#include "./meshToMesh.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/globalMeshData/globalIndex.H"
+#include "./calcMethod/meshToMeshMethod/meshToMeshMethod.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

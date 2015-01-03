@@ -36,7 +36,7 @@ SourceFiles
 #ifndef polynomialSolidTransport_H
 #define polynomialSolidTransport_H
 
-#include "Polynomial.H"
+#include "./primitives/functions/Polynomial/Polynomial.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -224,10 +224,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "polynomialSolidTransportI.H"
+#include "./polynomialSolidTransportI.H"
 
 #ifdef NoRepository
-#   include "polynomialSolidTransport.C"
+#   include "./polynomialSolidTransport.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

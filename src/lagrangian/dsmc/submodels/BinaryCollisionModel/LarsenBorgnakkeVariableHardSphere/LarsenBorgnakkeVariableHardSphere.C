@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LarsenBorgnakkeVariableHardSphere.H"
-#include "constants.H"
+#include "./LarsenBorgnakkeVariableHardSphere.H"
+#include "./global/constants/constants.H"
 
 using namespace Foam::constant::mathematical;
 

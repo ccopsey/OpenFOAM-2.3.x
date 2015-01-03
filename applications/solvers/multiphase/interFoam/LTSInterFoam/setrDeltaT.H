@@ -132,7 +132,7 @@
             << ", " << gMax(1/rDeltaT.internalField()) << endl;
     }
 
-    #include "alphaControls.H"
+    #include "./cfdTools/general/include/alphaControls.H"
 
     rSubDeltaT = rDeltaT*nAlphaSubCycles;
 }

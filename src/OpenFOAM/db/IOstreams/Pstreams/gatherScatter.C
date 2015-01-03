@@ -29,11 +29,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "UOPstream.H"
-#include "OPstream.H"
-#include "UIPstream.H"
-#include "IPstream.H"
-#include "contiguous.H"
+#include "./UOPstream.H"
+#include "./OPstream.H"
+#include "./UIPstream.H"
+#include "./IPstream.H"
+#include "./primitives/contiguous/contiguous.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

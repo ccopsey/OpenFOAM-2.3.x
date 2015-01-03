@@ -54,7 +54,7 @@
         rhoMin
     );
 
-    #include "alphavPsi.H"
+    #include "./alphavPsi.H"
 
     p =
     (

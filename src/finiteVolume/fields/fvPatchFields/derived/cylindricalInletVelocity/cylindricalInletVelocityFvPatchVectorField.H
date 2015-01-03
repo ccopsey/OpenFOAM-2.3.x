@@ -73,8 +73,8 @@ SourceFiles
 #ifndef cylindricalInletVelocityFvPatchVectorField_H
 #define cylindricalInletVelocityFvPatchVectorField_H
 
-#include "fixedValueFvPatchFields.H"
-#include "DataEntry.H"
+#include "./fields/fvPatchFields/basic/fixedValue/fixedValueFvPatchFields.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

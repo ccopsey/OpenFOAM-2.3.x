@@ -34,52 +34,52 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "rhoThermo.H"
-#include "turbulenceModel.H"
-#include "fixedGradientFvPatchFields.H"
-#include "regionProperties.H"
-#include "compressibleCourantNo.H"
-#include "solidRegionDiffNo.H"
-#include "solidThermo.H"
-#include "radiationModel.H"
-#include "fvIOoptionList.H"
-#include "coordinateSystem.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./rhoThermo/rhoThermo.H"
+#include "./turbulenceModel.H"
+#include "./fields/fvPatchFields/basic/fixedGradient/fixedGradientFvPatchFields.H"
+#include "./regionProperties/regionProperties.H"
+#include "./fluid/compressibleCourantNo.H"
+#include "./solid/solidRegionDiffNo.H"
+#include "./solidThermo/solidThermo.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./coordinateSystems/coordinateSystem.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
 
     regionProperties rp(runTime);
 
-    #include "createFluidMeshes.H"
-    #include "createSolidMeshes.H"
+    #include "./createFluidMeshes.H"
+    #include "./solid/createSolidMeshes.H"
 
-    #include "createFluidFields.H"
-    #include "createSolidFields.H"
+    #include "./createFluidFields.H"
+    #include "./solid/createSolidFields.H"
 
-    #include "initContinuityErrs.H"
-    #include "readTimeControls.H"
-    #include "readSolidTimeControls.H"
+    #include "./fluid/initContinuityErrs.H"
+    #include "./cfdTools/general/include/readTimeControls.H"
+    #include "./solid/readSolidTimeControls.H"
 
 
-    #include "compressibleMultiRegionCourantNo.H"
-    #include "solidRegionDiffusionNo.H"
-    #include "setInitialMultiRegionDeltaT.H"
+    #include "./compressibleMultiRegionCourantNo.H"
+    #include "./solid/solidRegionDiffusionNo.H"
+    #include "./include/setInitialMultiRegionDeltaT.H"
 
     while (runTime.run())
     {
-        #include "readTimeControls.H"
-        #include "readSolidTimeControls.H"
-        #include "readPIMPLEControls.H"
+        #include "./cfdTools/general/include/readTimeControls.H"
+        #include "./solid/readSolidTimeControls.H"
+        #include "./readPIMPLEControls.H"
 
-        #include "compressibleMultiRegionCourantNo.H"
-        #include "solidRegionDiffusionNo.H"
-        #include "setMultiRegionDeltaT.H"
+        #include "./compressibleMultiRegionCourantNo.H"
+        #include "./solid/solidRegionDiffusionNo.H"
+        #include "./include/setMultiRegionDeltaT.H"
 
         runTime++;
 
@@ -89,8 +89,8 @@ int main(int argc, char *argv[])
         {
             forAll(fluidRegions, i)
             {
-                #include "setRegionFluidFields.H"
-                #include "storeOldFluidFields.H"
+                #include "./setRegionFluidFields.H"
+                #include "./fluid/storeOldFluidFields.H"
             }
         }
 
@@ -104,18 +104,18 @@ int main(int argc, char *argv[])
             {
                 Info<< "\nSolving for fluid region "
                     << fluidRegions[i].name() << endl;
-                #include "setRegionFluidFields.H"
-                #include "readFluidMultiRegionPIMPLEControls.H"
-                #include "solveFluid.H"
+                #include "./setRegionFluidFields.H"
+                #include "./fluid/readFluidMultiRegionPIMPLEControls.H"
+                #include "./solveFluid.H"
             }
 
             forAll(solidRegions, i)
             {
                 Info<< "\nSolving for solid region "
                     << solidRegions[i].name() << endl;
-                #include "setRegionSolidFields.H"
-                #include "readSolidMultiRegionPIMPLEControls.H"
-                #include "solveSolid.H"
+                #include "./solid/setRegionSolidFields.H"
+                #include "./solid/readSolidMultiRegionPIMPLEControls.H"
+                #include "./solveSolid.H"
             }
 
         }

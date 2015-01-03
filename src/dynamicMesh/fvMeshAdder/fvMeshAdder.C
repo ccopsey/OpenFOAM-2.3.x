@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMesh.H"
-#include "fvMeshAdder.H"
-#include "faceCoupleInfo.H"
-#include "fvMesh.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fvMeshAdder.H"
+#include "./polyMeshAdder/faceCoupleInfo.H"
+#include "./fvMesh/fvMesh.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

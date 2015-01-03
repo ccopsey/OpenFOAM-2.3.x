@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "linearSpatial.H"
-#include "addToRunTimeSelectionTable.H"
-#include "volumeType.H"
+#include "./linearSpatial.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./algorithms/indexedOctree/volumeType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

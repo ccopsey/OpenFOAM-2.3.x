@@ -31,11 +31,11 @@ License
    ------ local definitions
  \* ------------------------------------------------------------------------ */
 
-#include "IFstream.H"
-#include "triSurface.H"
-#include "floatVector.H"
-#include "OSspecific.H"
-#include "mergePoints.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./triSurface/triSurface.H"
+#include "./primitives/Vector/floatVector/floatVector.H"
+#include "./include/OSspecific.H"
+#include "./meshes/meshTools/mergePoints.H"
 //#include "memInfo.H"
 
 using namespace Foam;

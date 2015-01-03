@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "forceCoeffs.H"
-#include "dictionary.H"
-#include "Time.H"
-#include "Pstream.H"
-#include "IOmanip.H"
+#include "./forceCoeffs.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/Time/Time.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

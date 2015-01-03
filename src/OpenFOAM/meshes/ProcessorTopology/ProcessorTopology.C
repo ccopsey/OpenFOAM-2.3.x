@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ProcessorTopology.H"
-#include "ListOps.H"
-#include "Pstream.H"
-#include "commSchedule.H"
-#include "boolList.H"
+#include "./ProcessorTopology.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./commSchedule.H"
+#include "./primitives/bools/lists/boolList.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

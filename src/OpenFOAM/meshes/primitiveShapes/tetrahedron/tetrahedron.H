@@ -39,14 +39,14 @@ SourceFiles
 #ifndef tetrahedron_H
 #define tetrahedron_H
 
-#include "point.H"
-#include "primitiveFieldsFwd.H"
-#include "pointHit.H"
-#include "cachedRandom.H"
-#include "Random.H"
-#include "FixedList.H"
-#include "UList.H"
-#include "triPointRef.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
+#include "./meshes/primitiveShapes/objectHit/pointHit.H"
+#include "./primitives/random/cachedRandom/cachedRandom.H"
+#include "./primitives/random/Random/Random.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./containers/Lists/UList/UList.H"
+#include "./meshes/primitiveShapes/triangle/triPointRef.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -322,12 +322,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "tetrahedronI.H"
+#include "./tetrahedronI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "tetrahedron.C"
+#   include "./tetrahedron.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

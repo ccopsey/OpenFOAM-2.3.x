@@ -50,15 +50,15 @@ SourceFiles
 #ifndef lduMatrix_H
 #define lduMatrix_H
 
-#include "lduMesh.H"
-#include "primitiveFieldsFwd.H"
-#include "FieldField.H"
-#include "lduInterfaceFieldPtrsList.H"
-#include "typeInfo.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
-#include "solverPerformance.H"
-#include "InfoProxy.H"
+#include "./meshes/lduMesh/lduMesh.H"
+#include "./fields/Fields/primitiveFieldsFwd.H"
+#include "./fields/FieldFields/FieldField/FieldField.H"
+#include "./matrices/lduMatrix/lduAddressing/lduInterfaceFields/lduInterfaceField/lduInterfaceFieldPtrsList.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./matrices/_LduMatrix/LduMatrix/solverPerformance.H"
+#include "./db/IOstreams/IOstreams/InfoProxy.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -740,7 +740,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "lduMatrixTemplates.C"
+#   include "./lduMatrixTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMesh.H"
-#include "fvcGrad.H"
+#include "./fvMesh/fvMesh.H"
+#include "./finiteVolume/fvc/fvcGrad.H"
 
 template<class Type>
 Foam::GeometricField

@@ -37,12 +37,12 @@ SourceFiles
 #ifndef sampledSurfaces_H
 #define sampledSurfaces_H
 
-#include "sampledSurface.H"
-#include "surfaceWriter.H"
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
-#include "wordReList.H"
-#include "IOobjectList.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./sampledSurface/writers/surfaceWriter.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./primitives/strings/lists/wordReList.H"
+#include "./db/IOobjectList/IOobjectList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -248,7 +248,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "sampledSurfacesTemplates.C"
+#   include "./sampledSurfacesTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

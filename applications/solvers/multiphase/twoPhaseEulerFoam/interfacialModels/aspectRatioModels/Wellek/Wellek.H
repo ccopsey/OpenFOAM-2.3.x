@@ -51,7 +51,7 @@ SourceFiles
 #ifndef Wellek_H
 #define Wellek_H
 
-#include "aspectRatioModel.H"
+#include "./aspectRatioModels/aspectRatioModel/aspectRatioModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

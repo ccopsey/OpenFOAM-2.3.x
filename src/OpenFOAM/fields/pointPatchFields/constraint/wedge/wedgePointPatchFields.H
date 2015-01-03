@@ -26,8 +26,8 @@ License
 #ifndef wedgePointPatchFields_H
 #define wedgePointPatchFields_H
 
-#include "wedgePointPatchField.H"
-#include "fieldTypes.H"
+#include "./wedgePointPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

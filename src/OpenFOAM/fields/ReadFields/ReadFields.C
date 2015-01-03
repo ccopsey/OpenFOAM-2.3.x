@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ReadFields.H"
-#include "HashSet.H"
-#include "Pstream.H"
-#include "IOobjectList.H"
+#include "./ReadFields.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./db/IOobjectList/IOobjectList.H"
 
 // * * * * * * * * * * * * * * * Global Functions  * * * * * * * * * * * * * //
 

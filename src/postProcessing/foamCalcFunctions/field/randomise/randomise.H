@@ -35,8 +35,8 @@ SourceFiles
 #ifndef randomise_H
 #define randomise_H
 
-#include "calcType.H"
-#include "Random.H"
+#include "./calcType/calcType.H"
+#include "./primitives/random/Random/Random.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -129,7 +129,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "writeRandomField.C"
+#   include "./writeRandomField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "proxySurfaceWriter.H"
+#include "./proxySurfaceWriter.H"
 
-#include "MeshedSurfaceProxy.H"
-#include "OFstream.H"
-#include "OSspecific.H"
+#include "./MeshedSurfaceProxy/MeshedSurfaceProxy.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./include/OSspecific.H"
 
-#include "makeSurfaceWriterMethods.H"
+#include "./sampledSurface/writers/makeSurfaceWriterMethods.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

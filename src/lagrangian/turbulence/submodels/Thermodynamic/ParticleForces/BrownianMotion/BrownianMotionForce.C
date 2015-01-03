@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "BrownianMotionForce.H"
-#include "mathematicalConstants.H"
-#include "demandDrivenData.H"
+#include "./BrownianMotionForce.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./include/demandDrivenData.H"
 #include "incompressible/turbulenceModel/turbulenceModel.H"
 #include "compressible/turbulenceModel/turbulenceModel.H"
 

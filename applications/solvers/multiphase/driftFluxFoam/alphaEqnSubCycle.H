@@ -37,7 +37,7 @@
             !(++alphaSubCycle).end();
         )
         {
-            #include "alphaEqn.H"
+            #include "./alphaEqn.H"
             phiAlphaSum += (runTime.deltaT()/totalDeltaT)*phiAlpha;
         }
 
@@ -45,7 +45,7 @@
     }
     else
     {
-        #include "alphaEqn.H"
+        #include "./alphaEqn.H"
     }
 
     // Apply the diffusion term separately to allow implicit solution

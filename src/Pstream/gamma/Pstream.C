@@ -53,10 +53,10 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "Pstream.H"
-#include "PstreamReduceOps.H"
-#include "OSspecific.H"
-#include "PstreamGlobals.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./db/IOstreams/Pstreams/PstreamReduceOps.H"
+#include "./include/OSspecific.H"
+#include "./PstreamGlobals.H"
 
 #include <cstring>
 #include <cstdlib>

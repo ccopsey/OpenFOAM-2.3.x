@@ -35,21 +35,21 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "Switch.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "readMechanicalProperties.H"
-    #include "readThermalProperties.H"
-    #include "readSolidDisplacementFoamControls.H"
-    #include "createFields.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./readMechanicalProperties.H"
+    #include "./readThermalProperties.H"
+    #include "./readSolidDisplacementFoamControls.H"
+    #include "./createFields.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
     {
         Info<< "Iteration: " << runTime.value() << nl << endl;
 
-        #include "readSolidDisplacementFoamControls.H"
+        #include "./readSolidDisplacementFoamControls.H"
 
         int iCorr = 0;
         scalar initialResidual = 0;
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
 
         } while (initialResidual > convergenceTolerance && ++iCorr < nCorr);
 
-        #include "calculateStress.H"
+        #include "./calculateStress.H"
 
         Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
             << "  ClockTime = " << runTime.elapsedClockTime() << " s"

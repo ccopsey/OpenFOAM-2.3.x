@@ -26,7 +26,7 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "FieldField.H"
+#include "./FieldField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -406,6 +406,6 @@ Ostream& operator<<(Ostream& os, const tmp<FieldField<Field, Type> >& tf)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#   include "FieldFieldFunctions.C"
+#   include "./FieldFieldFunctions.C"
 
 // ************************************************************************* //

@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "solidBodyMotionFvMesh.H"
-#include "addToRunTimeSelectionTable.H"
-#include "volFields.H"
-#include "transformField.H"
-#include "cellZoneMesh.H"
-#include "cellSet.H"
-#include "boolList.H"
-#include "syncTools.H"
+#include "./solidBodyMotionFvMesh.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./meshes/polyMesh/zones/ZoneMesh/cellZoneMesh.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

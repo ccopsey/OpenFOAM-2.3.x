@@ -66,9 +66,9 @@ SourceFiles
 #ifndef dynOneEqEddy_H
 #define dynOneEqEddy_H
 
-#include "GenEddyVisc.H"
-#include "simpleFilter.H"
-#include "LESfilter.H"
+#include "./GenEddyVisc/GenEddyVisc.H"
+#include "./LES/LESfilters/simpleFilter/simpleFilter.H"
+#include "./LES/LESfilters/LESfilter/LESfilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "mutkFilmWallFunctionFvPatchScalarField.H"
-#include "fvPatchFieldMapper.H"
-#include "volFields.H"
-#include "RASModel.H"
-#include "addToRunTimeSelectionTable.H"
-#include "surfaceFilmModel.H"
-#include "mappedWallPolyPatch.H"
-#include "mapDistribute.H"
+#include "./mutkFilmWallFunctionFvPatchScalarField.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fields/volFields/volFields.H"
+#include "./RASModel/RASModel.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./surfaceFilmModel/surfaceFilmModel.H"
+#include "./mappedPatches/mappedPolyPatch/mappedWallPolyPatch.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapDistribute/mapDistribute.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

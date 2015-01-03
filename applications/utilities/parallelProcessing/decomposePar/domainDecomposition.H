@@ -36,13 +36,13 @@ SourceFiles
 #ifndef domainDecomposition_H
 #define domainDecomposition_H
 
-#include "fvMesh.H"
-#include "labelList.H"
-#include "SLList.H"
-#include "PtrList.H"
-#include "point.H"
-#include "Time.H"
-#include "volFields.H"
+#include "./fvMesh/fvMesh.H"
+#include "./primitives/ints/lists/labelList.H"
+#include "./containers/LinkedLists/user/SLList.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
 
 
 namespace Foam
@@ -203,7 +203,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "domainDecompositionTemplates.C"
+    #include "./domainDecompositionTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

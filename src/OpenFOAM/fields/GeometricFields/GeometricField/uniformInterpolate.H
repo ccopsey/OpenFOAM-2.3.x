@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "GeometricField.H"
-#include "HashPtrTable.H"
+#include "./GeometricField.H"
+#include "./containers/HashTables/HashPtrTable/HashPtrTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -77,7 +77,7 @@ tmp<GeoField> uniformInterpolate
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "uniformInterpolate.C"
+#   include "./uniformInterpolate.C"
 #endif
 
 // ************************************************************************* //

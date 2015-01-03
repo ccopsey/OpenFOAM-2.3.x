@@ -44,7 +44,7 @@ Description
 #ifndef StandardWallInteraction_H
 #define StandardWallInteraction_H
 
-#include "PatchInteractionModel.H"
+#include "./submodels/Kinematic/PatchInteractionModel/PatchInteractionModel/PatchInteractionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -145,7 +145,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "StandardWallInteraction.C"
+#   include "./StandardWallInteraction.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -52,7 +52,7 @@ SourceFiles
 #ifndef Smagorinsky2_H
 #define Smagorinsky2_H
 
-#include "Smagorinsky.H"
+#include "./Smagorinsky/Smagorinsky.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

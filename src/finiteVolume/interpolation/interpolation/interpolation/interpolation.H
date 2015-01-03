@@ -32,13 +32,13 @@ Description
 #ifndef interpolation_H
 #define interpolation_H
 
-#include "faceList.H"
-#include "volFieldsFwd.H"
-#include "pointFields.H"
-#include "typeInfo.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
-#include "tetIndices.H"
+#include "./meshes/meshShapes/face/faceList.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./meshes/polyMesh/polyMeshTetDecomposition/tetIndices.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -177,7 +177,7 @@ makeInterpolationType(SS, tensor)
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "interpolation.C"
+#   include "./interpolation.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

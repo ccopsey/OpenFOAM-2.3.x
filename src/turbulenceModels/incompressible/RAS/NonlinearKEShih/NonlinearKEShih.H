@@ -39,7 +39,7 @@ SourceFiles
 #ifndef NonlinearKEShih_H
 #define NonlinearKEShih_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

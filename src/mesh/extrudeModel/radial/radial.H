@@ -31,8 +31,8 @@ Description
 #ifndef radial_H
 #define radial_H
 
-#include "extrudeModel.H"
-#include "DataEntry.H"
+#include "./extrudeModel/extrudeModel.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

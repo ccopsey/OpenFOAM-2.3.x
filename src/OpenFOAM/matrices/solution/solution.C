@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "solution.H"
-#include "Time.H"
+#include "./solution.H"
+#include "./db/Time/Time.H"
 
 // These are for old syntax compatibility:
-#include "BICCG.H"
-#include "ICCG.H"
-#include "IStringStream.H"
+#include "./matrices/lduMatrix/solvers/BICCG/BICCG.H"
+#include "./matrices/lduMatrix/solvers/ICCG/ICCG.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
+#include "./db/error/error.H"
 
-#include "UList.H"
-#include "ListLoopM.H"
-#include "contiguous.H"
+#include "./UList.H"
+#include "./containers/Lists/List/ListLoopM.H"
+#include "./primitives/contiguous/contiguous.H"
 
 #include <algorithm>
 
@@ -236,6 +236,6 @@ bool Foam::UList<T>::operator>=(const UList<T>& a) const
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 
-#include "UListIO.C"
+#include "./UListIO.C"
 
 // ************************************************************************* //

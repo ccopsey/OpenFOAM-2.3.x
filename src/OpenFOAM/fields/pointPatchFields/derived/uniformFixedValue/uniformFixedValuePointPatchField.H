@@ -48,8 +48,8 @@ SourceFiles
 #ifndef uniformFixedValuePointPatchField_H
 #define uniformFixedValuePointPatchField_H
 
-#include "fixedValuePointPatchField.H"
-#include "DataEntry.H"
+#include "./fields/pointPatchFields/basic/fixedValue/fixedValuePointPatchField.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -173,7 +173,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#    include "uniformFixedValuePointPatchField.C"
+#    include "./uniformFixedValuePointPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

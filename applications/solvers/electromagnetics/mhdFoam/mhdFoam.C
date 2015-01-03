@@ -48,19 +48,19 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "OSspecific.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./include/OSspecific.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
+    #include "./include/setRootCase.H"
 
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
-    #include "initContinuityErrs.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -68,12 +68,12 @@ int main(int argc, char *argv[])
 
     while (runTime.loop())
     {
-        #include "readPISOControls.H"
-        #include "readBPISOControls.H"
+        #include "./cfdTools/general/include/readPISOControls.H"
+        #include "./readBPISOControls.H"
 
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "CourantNo.H"
+        #include "./cfdTools/incompressible/CourantNo.H"
 
         {
             fvVectorMatrix UEqn
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
                     }
                 }
 
-                #include "continuityErrs.H"
+                #include "./cfdTools/incompressible/continuityErrs.H"
 
                 U = HbyA - rAU*fvc::grad(p);
                 U.correctBoundaryConditions();
@@ -156,7 +156,7 @@ int main(int argc, char *argv[])
 
             phiB -= pBEqn.flux();
 
-            #include "magneticFieldErr.H"
+            #include "./magneticFieldErr.H"
         }
 
         runTime.write();

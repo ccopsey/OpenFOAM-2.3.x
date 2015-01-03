@@ -40,10 +40,10 @@ SourceFiles
 #ifndef block_H
 #define block_H
 
-#include "pointField.H"
-#include "labelList.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
+#include "./primitives/ints/lists/labelList.H"
 
-#include "blockDescriptor.H"
+#include "./blockDescriptor/blockDescriptor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

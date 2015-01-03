@@ -42,9 +42,9 @@ SourceFiles
 #ifndef setTimeStepFunctionObject_H
 #define setTimeStepFunctionObject_H
 
-#include "functionObject.H"
-#include "dictionary.H"
-#include "DataEntry.H"
+#include "./db/functionObjects/functionObject/functionObject.H"
+#include "./db/dictionary/dictionary.H"
+#include "./primitives/functions/DataEntry/DataEntry/DataEntry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

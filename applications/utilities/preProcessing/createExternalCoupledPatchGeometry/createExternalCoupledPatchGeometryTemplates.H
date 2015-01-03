@@ -26,7 +26,7 @@ License
 #ifndef createExternalCoupledPatchGeometryTemplates_H
 #define createExternalCoupledPatchGeometryTemplates_H
 
-#include "word.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -39,7 +39,7 @@ namespace Foam
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "createExternalCoupledPatchGeometryTemplates.C"
+#   include "./createExternalCoupledPatchGeometryTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

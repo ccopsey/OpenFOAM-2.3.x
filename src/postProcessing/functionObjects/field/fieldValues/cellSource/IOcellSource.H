@@ -33,8 +33,8 @@ Description
 #ifndef IOcellSource_H
 #define IOcellSource_H
 
-#include "cellSource.H"
-#include "IOOutputFilter.H"
+#include "./cellSource.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

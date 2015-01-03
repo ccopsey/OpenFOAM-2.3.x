@@ -35,8 +35,8 @@ SourceFiles
 #ifndef arcEdge_H
 #define arcEdge_H
 
-#include "curvedEdge.H"
-#include "cylindricalCS.H"
+#include "./curvedEdge.H"
+#include "./coordinateSystems/cylindricalCS.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -67,11 +67,11 @@ Description
 #ifndef extrudePatchMesh_H
 #define extrudePatchMesh_H
 
-#include "extrudeModel.H"
-#include "autoPtr.H"
+#include "./extrudeModel/extrudeModel.H"
+#include "./memory/autoPtr/autoPtr.H"
 
-#include "fvMesh.H"
-#include "Time.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

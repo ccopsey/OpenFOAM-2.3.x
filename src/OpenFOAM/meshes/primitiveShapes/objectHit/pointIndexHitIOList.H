@@ -32,8 +32,8 @@ Description
 #ifndef pointIndexHitIOList_H
 #define pointIndexHitIOList_H
 
-#include "pointIndexHit.H"
-#include "IOList.H"
+#include "./pointIndexHit.H"
+#include "./db/IOobjects/IOList/IOList.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -38,9 +38,9 @@ SourceFiles
 #ifndef contactAngleForce_H
 #define contactAngleForce_H
 
-#include "force.H"
-#include "distributionModel.H"
-#include "cachedRandom.H"
+#include "./submodels/kinematic/force/force/force.H"
+#include "./distributionModel/distributionModel.H"
+#include "./primitives/random/cachedRandom/cachedRandom.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

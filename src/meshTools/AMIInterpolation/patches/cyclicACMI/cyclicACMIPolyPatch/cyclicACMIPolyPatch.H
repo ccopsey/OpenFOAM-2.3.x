@@ -35,9 +35,9 @@ SourceFiles
 #ifndef cyclicACMIPolyPatch_H
 #define cyclicACMIPolyPatch_H
 
-#include "cyclicAMIPolyPatch.H"
-#include "AMIPatchToPatchInterpolation.H"
-#include "polyBoundaryMesh.H"
+#include "./AMIInterpolation/patches/cyclicAMI/cyclicAMIPolyPatch/cyclicAMIPolyPatch.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIPatchToPatchInterpolation.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -349,12 +349,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "cyclicACMIPolyPatchI.H"
+#include "./cyclicACMIPolyPatchI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "cyclicACMIPolyPatchTemplates.C"
+    #include "./cyclicACMIPolyPatchTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

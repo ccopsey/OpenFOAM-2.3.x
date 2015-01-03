@@ -36,10 +36,10 @@ SourceFiles
 #ifndef solidBodyMotionFvMesh_H
 #define solidBodyMotionFvMesh_H
 
-#include "dynamicFvMesh.H"
-#include "dictionary.H"
-#include "pointIOField.H"
-#include "solidBodyMotionFunction.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./db/dictionary/dictionary.H"
+#include "./meshes/primitiveShapes/point/pointIOField.H"
+#include "./solidBodyMotionFunctions/solidBodyMotionFunction/solidBodyMotionFunction.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

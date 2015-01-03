@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "VTKsurfaceFormatCore.H"
-#include "clock.H"
+#include "./VTKsurfaceFormatCore.H"
+#include "./global/clock/clock.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

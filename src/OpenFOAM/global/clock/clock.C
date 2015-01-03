@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "clock.H"
-#include "string.H"
+#include "./clock.H"
+#include "./primitives/strings/string/string.H"
 
 #include <sstream>
 #include <iomanip>

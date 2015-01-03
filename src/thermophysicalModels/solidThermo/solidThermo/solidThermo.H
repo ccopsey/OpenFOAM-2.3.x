@@ -35,13 +35,13 @@ SourceFiles
 #ifndef solidThermo_H
 #define solidThermo_H
 
-#include "volFields.H"
-#include "runTimeSelectionTables.H"
-#include "fvMesh.H"
-#include "IOdictionary.H"
-#include "autoPtr.H"
-#include "basicThermo.H"
-#include "autoPtr.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./basicThermo/basicThermo.H"
+#include "./memory/autoPtr/autoPtr.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

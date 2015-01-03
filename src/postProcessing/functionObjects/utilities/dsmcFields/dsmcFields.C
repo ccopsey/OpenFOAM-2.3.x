@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "dsmcFields.H"
-#include "volFields.H"
-#include "dictionary.H"
-#include "dsmcCloud.H"
+#include "./dsmcFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./db/dictionary/dictionary.H"
+#include "./clouds/derived/dsmcCloud/dsmcCloud.H"
 
-#include "constants.H"
+#include "./global/constants/constants.H"
 
 using namespace Foam::constant;
 

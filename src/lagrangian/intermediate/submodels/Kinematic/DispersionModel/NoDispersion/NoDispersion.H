@@ -32,7 +32,7 @@ Description
 #ifndef NoDispersion_H
 #define NoDispersion_H
 
-#include "DispersionModel.H"
+#include "./submodels/Kinematic/DispersionModel/DispersionModel/DispersionModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -101,7 +101,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "NoDispersion.C"
+#   include "./NoDispersion.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

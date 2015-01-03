@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "LiftForce.H"
-#include "fvcCurl.H"
+#include "./LiftForce.H"
+#include "./finiteVolume/fvc/fvcCurl.H"
 
 // * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * * //
 

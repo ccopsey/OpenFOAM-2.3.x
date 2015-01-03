@@ -41,8 +41,8 @@ SourceFiles
 #ifndef radiationModelP1_H
 #define radiationModelP1_H
 
-#include "radiationModel.H"
-#include "volFields.H"
+#include "./radiationModel/radiationModel/radiationModel.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

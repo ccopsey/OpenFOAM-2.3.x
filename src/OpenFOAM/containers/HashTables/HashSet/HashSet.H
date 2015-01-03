@@ -44,8 +44,8 @@ Description
 #ifndef HashSet_H
 #define HashSet_H
 
-#include "HashTable.H"
-#include "nil.H"
+#include "./containers/HashTables/HashTable/HashTable.H"
+#include "./primitives/nil/nil.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -218,7 +218,7 @@ typedef HashSet<label, Hash<label> > labelHashSet;
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "HashSet.C"
+#   include "./HashSet.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

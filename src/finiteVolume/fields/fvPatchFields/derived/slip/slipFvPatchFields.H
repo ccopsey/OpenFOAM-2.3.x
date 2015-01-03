@@ -26,8 +26,8 @@ License
 #ifndef slipFvPatchFields_H
 #define slipFvPatchFields_H
 
-#include "slipFvPatchField.H"
-#include "fieldTypes.H"
+#include "./slipFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

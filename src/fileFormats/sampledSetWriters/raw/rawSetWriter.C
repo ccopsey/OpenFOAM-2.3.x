@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "rawSetWriter.H"
-#include "coordSet.H"
-#include "fileName.H"
-#include "OFstream.H"
+#include "./rawSetWriter.H"
+#include "./coordSet/coordSet.H"
+#include "./primitives/strings/fileName/fileName.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

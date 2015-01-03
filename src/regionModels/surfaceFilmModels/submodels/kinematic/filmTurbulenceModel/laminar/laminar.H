@@ -35,7 +35,7 @@ SourceFiles
 #ifndef laminar_H
 #define laminar_H
 
-#include "filmTurbulenceModel.H"
+#include "./submodels/kinematic/filmTurbulenceModel/filmTurbulenceModel/filmTurbulenceModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

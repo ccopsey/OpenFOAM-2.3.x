@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "AC3DsurfaceFormat.H"
-#include "clock.H"
-#include "IStringStream.H"
-#include "tensor.H"
-#include "primitivePatch.H"
+#include "./AC3DsurfaceFormat.H"
+#include "./global/clock/clock.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
+#include "./primitives/Tensor/tensor/tensor.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

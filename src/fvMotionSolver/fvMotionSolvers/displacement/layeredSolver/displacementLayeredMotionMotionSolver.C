@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "displacementLayeredMotionMotionSolver.H"
-#include "addToRunTimeSelectionTable.H"
-#include "pointEdgeStructuredWalk.H"
-#include "pointFields.H"
-#include "PointEdgeWave.H"
-#include "syncTools.H"
-#include "interpolationTable.H"
-#include "mapPolyMesh.H"
-#include "pointConstraints.H"
+#include "./displacementLayeredMotionMotionSolver.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./pointEdgeStructuredWalk.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./algorithms/PointEdgeWave/PointEdgeWave.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./interpolations/interpolationTable/interpolationTable.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
+#include "./interpolation/volPointInterpolation/pointConstraints.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

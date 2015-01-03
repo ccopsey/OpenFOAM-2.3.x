@@ -26,13 +26,13 @@ License
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 // Constants supplied in the main controlDict
-#include "fundamentalConstants.C"
+#include "./fundamental/fundamentalConstants.C"
 
 // Derived constants. Note:order is important
-#include "universalConstants.C"
-#include "electromagneticConstants.C"
-#include "atomicConstants.C"
-#include "physicoChemicalConstants.C"
+#include "./universal/universalConstants.C"
+#include "./electromagnetic/electromagneticConstants.C"
+#include "./atomic/atomicConstants.C"
+#include "./physicoChemical/physicoChemicalConstants.C"
 
 
 // ************************************************************************* //

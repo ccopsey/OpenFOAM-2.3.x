@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fWallFunctionFvPatchScalarField.H"
-#include "RASModel.H"
-#include "fvPatchFieldMapper.H"
-#include "volFields.H"
-#include "wallFvPatch.H"
-#include "v2f.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./fWallFunctionFvPatchScalarField.H"
+#include "./RASModel/RASModel.H"
+#include "./fields/fvPatchFields/fvPatchField/fvPatchFieldMapper.H"
+#include "./fields/volFields/volFields.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./v2f/v2f.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

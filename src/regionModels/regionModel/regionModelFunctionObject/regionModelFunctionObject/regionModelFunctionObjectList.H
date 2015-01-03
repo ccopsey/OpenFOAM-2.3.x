@@ -36,8 +36,8 @@ SourceFiles
 #ifndef regionModelFunctionObjectList_H
 #define regionModelFunctionObjectList_H
 
-#include "PtrList.H"
-#include "regionModelFunctionObject.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./regionModelFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -124,7 +124,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "regionModelFunctionObjectListI.H"
+#include "./regionModelFunctionObjectListI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

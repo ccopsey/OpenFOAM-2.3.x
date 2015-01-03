@@ -37,9 +37,9 @@ SourceFiles
 #ifndef hExponentialThermo_H
 #define hExponentialThermo_H
 
-#include "scalar.H"
-#include "dictionary.H"
-#include "specie.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./db/dictionary/dictionary.H"
+#include "./specie/specie.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -231,8 +231,8 @@ public:
 
 
 #ifdef NoRepository
-#   include "hExponentialThermoI.H"
-#   include "hExponentialThermo.C"
+#   include "./hExponentialThermoI.H"
+#   include "./hExponentialThermo.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

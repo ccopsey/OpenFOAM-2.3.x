@@ -28,9 +28,9 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "Time.H"
-#include "OSspecific.H"
-#include "IStringStream.H"
+#include "./Time.H"
+#include "./include/OSspecific.H"
+#include "./db/IOstreams/StringStreams/IStringStream.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -39,8 +39,8 @@ SourceFiles
 #ifndef SubField_H
 #define SubField_H
 
-#include "SubList.H"
-#include "Field.H"
+#include "./containers/Lists/SubList/SubList.H"
+#include "./Field.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -123,7 +123,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SubFieldI.H"
+#include "./SubFieldI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

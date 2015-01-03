@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "isoSurfaceCell.H"
-#include "dictionary.H"
-#include "polyMesh.H"
-#include "mergePoints.H"
-#include "tetMatcher.H"
-#include "syncTools.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./isoSurfaceCell.H"
+#include "./db/dictionary/dictionary.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./meshes/meshShapes/cellMatcher/tetMatcher.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

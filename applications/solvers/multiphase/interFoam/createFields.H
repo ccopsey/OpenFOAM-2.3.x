@@ -26,7 +26,7 @@
         mesh
     );
 
-    #include "createPhi.H"
+    #include "./cfdTools/incompressible/createPhi.H"
 
 
     Info<< "Reading transportProperties\n" << endl;
@@ -76,7 +76,7 @@
         incompressible::turbulenceModel::New(U, phi, mixture)
     );
 
-    #include "readGravitationalAcceleration.H"
+    #include "./cfdTools/general/include/readGravitationalAcceleration.H"
 
     /*
     dimensionedVector g0(g);

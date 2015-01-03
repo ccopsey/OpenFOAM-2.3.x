@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "temperatureCoupledBase.H"
-#include "volFields.H"
-#include "fluidThermo.H"
-#include "solidThermo.H"
-#include "turbulenceModel.H"
+#include "./temperatureCoupledBase.H"
+#include "./fields/volFields/volFields.H"
+#include "./fluidThermo/fluidThermo.H"
+#include "./solidThermo/solidThermo.H"
+#include "./turbulenceModel.H"
 
 // * * * * * * * * * * * * * Static Member Data  * * * * * * * * * * * * * * //
 

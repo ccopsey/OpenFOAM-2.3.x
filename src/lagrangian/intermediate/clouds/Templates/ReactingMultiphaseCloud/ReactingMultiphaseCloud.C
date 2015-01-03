@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ReactingMultiphaseCloud.H"
+#include "./ReactingMultiphaseCloud.H"
 
-#include "DevolatilisationModel.H"
-#include "SurfaceReactionModel.H"
+#include "./submodels/ReactingMultiphase/DevolatilisationModel/DevolatilisationModel/DevolatilisationModel.H"
+#include "./submodels/ReactingMultiphase/SurfaceReactionModel/SurfaceReactionModel/SurfaceReactionModel.H"
 
 // * * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * //
 

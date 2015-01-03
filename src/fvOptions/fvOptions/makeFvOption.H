@@ -26,8 +26,8 @@ License
 #ifndef makeFvOption_H
 #define makeFvOption_H
 
-#include "fvOption.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./fvOption.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -38,10 +38,10 @@ SourceFiles
 #ifndef vectorTensorTransform_H
 #define vectorTensorTransform_H
 
-#include "tensor.H"
-#include "word.H"
-#include "contiguous.H"
-#include "pointField.H"
+#include "./primitives/Tensor/tensor/tensor.H"
+#include "./primitives/strings/word/word.H"
+#include "./primitives/contiguous/contiguous.H"
+#include "./meshes/primitiveShapes/point/pointField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -245,10 +245,10 @@ inline vectorTensorTransform operator&
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "vectorTensorTransformI.H"
+#include "./vectorTensorTransformI.H"
 
 #ifdef NoRepository
-#   include "vectorTensorTransformTemplates.C"
+#   include "./vectorTensorTransformTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

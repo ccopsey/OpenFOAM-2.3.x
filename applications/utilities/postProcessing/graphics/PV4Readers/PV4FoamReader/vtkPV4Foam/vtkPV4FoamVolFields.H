@@ -30,15 +30,15 @@ InClass
 #define vtkPV4FoamVolFields_H
 
 // OpenFOAM includes
-#include "emptyFvPatchField.H"
-#include "wallPolyPatch.H"
+#include "./fields/fvPatchFields/constraint/empty/emptyFvPatchField.H"
+#include "./meshes/polyMesh/polyPatches/derived/wall/wallPolyPatch.H"
 #include "faceSet.H"
-#include "volPointInterpolation.H"
+#include "./interpolation/volPointInterpolation/volPointInterpolation.H"
 
-#include "vtkPV4FoamFaceField.H"
-#include "vtkPV4FoamPatchField.H"
+#include "./vtkPV4FoamFaceField.H"
+#include "./vtkPV4FoamPatchField.H"
 
-#include "vtkOpenFOAMTupleRemap.H"
+#include "./vtkOpenFOAMTupleRemap.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

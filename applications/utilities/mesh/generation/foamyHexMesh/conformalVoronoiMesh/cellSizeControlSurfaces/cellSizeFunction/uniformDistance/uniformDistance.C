@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "uniformDistance.H"
-#include "addToRunTimeSelectionTable.H"
-#include "volumeType.H"
+#include "./uniformDistance.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./algorithms/indexedOctree/volumeType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

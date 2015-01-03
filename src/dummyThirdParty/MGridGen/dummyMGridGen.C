@@ -25,10 +25,10 @@ License
 
 //extern "C"
 //{
-#include "mgridgen.h"
+#include "./mgridgen.h"
 //}
 
-#include "error.H"
+#include "./db/error/error.H"
 
 using namespace Foam;
 

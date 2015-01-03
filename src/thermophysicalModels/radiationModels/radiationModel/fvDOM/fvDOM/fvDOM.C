@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvDOM.H"
-#include "absorptionEmissionModel.H"
-#include "scatterModel.H"
-#include "constants.H"
-#include "fvm.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./fvDOM.H"
+#include "./submodels/absorptionEmissionModel/absorptionEmissionModel/absorptionEmissionModel.H"
+#include "./submodels/scatterModel/scatterModel/scatterModel.H"
+#include "./global/constants/constants.H"
+#include "./finiteVolume/fvm/fvm.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 using namespace Foam::constant;
 using namespace Foam::constant::mathematical;

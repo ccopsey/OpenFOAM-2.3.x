@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "writePointSet.H"
-#include "OFstream.H"
-#include "writeFuns.H"
+#include "./writePointSet.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./writeFuns.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

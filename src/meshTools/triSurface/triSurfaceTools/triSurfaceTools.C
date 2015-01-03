@@ -23,14 +23,14 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "triSurfaceTools.H"
+#include "./triSurfaceTools.H"
 
-#include "triSurface.H"
-#include "OFstream.H"
-#include "mergePoints.H"
-#include "polyMesh.H"
-#include "plane.H"
-#include "geompack.H"
+#include "./triSurface/triSurface.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./meshes/meshTools/mergePoints.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshes/primitiveShapes/plane/plane.H"
+#include "./geompack/geompack.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

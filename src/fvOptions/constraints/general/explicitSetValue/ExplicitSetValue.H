@@ -51,8 +51,8 @@ SourceFiles
 #ifndef ExplicitSetValue_H
 #define ExplicitSetValue_H
 
-#include "fvOption.H"
-#include "Tuple2.H"
+#include "./fvOptions/fvOption.H"
+#include "./primitives/Tuple2/Tuple2.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -129,8 +129,8 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ExplicitSetValue.C"
-#   include "ExplicitSetValueIO.C"
+#   include "./_ExplicitSetValue.C"
+#   include "./ExplicitSetValueIO.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

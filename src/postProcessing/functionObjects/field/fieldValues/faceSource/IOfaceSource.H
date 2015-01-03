@@ -33,8 +33,8 @@ Description
 #ifndef IOfaceSource_H
 #define IOfaceSource_H
 
-#include "faceSource.H"
-#include "IOOutputFilter.H"
+#include "./faceSource.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

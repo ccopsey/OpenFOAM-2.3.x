@@ -49,7 +49,7 @@ SourceFiles
 #ifndef ThermoSurfaceFilm_H
 #define ThermoSurfaceFilm_H
 
-#include "SurfaceFilmModel.H"
+#include "./submodels/Kinematic/SurfaceFilmModel/SurfaceFilmModel/SurfaceFilmModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -295,7 +295,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "ThermoSurfaceFilm.C"
+#   include "./ThermoSurfaceFilm.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "processorField.H"
-#include "dictionary.H"
-#include "Pstream.H"
+#include "./processorField.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

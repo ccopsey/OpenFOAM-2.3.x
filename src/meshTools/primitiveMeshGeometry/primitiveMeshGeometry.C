@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "primitiveMeshGeometry.H"
-#include "pyramidPointFaceRef.H"
-#include "unitConversion.H"
-#include "triPointRef.H"
+#include "./primitiveMeshGeometry.H"
+#include "./meshes/meshShapes/cell/pyramidPointFaceRef.H"
+#include "./global/unitConversion/unitConversion.H"
+#include "./meshes/primitiveShapes/triangle/triPointRef.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -30,12 +30,12 @@ set(LIBRARIES
   libspecie
 )
 
-include(include.cmake)
-include(../../../../../src/OpenFOAM/include.cmake)
-include(../../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../../src/finiteVolume/include.cmake)
-include(../../../../../src/thermophysicalModels/basic/include.cmake)
-include(../../../../../src/thermophysicalModels/specie/include.cmake)
+include_directories(.)
+include_directories(../../../../../src/OpenFOAM)
+include_directories(../../../../../src/OSspecific/POSIX)
+include_directories(../../../../../src/finiteVolume)
+include_directories(../../../../../src/thermophysicalModels/basic)
+include_directories(../../../../../src/thermophysicalModels/specie)
 
 add_library(librhoCentralFoam ${SOURCES})
 set_target_properties(librhoCentralFoam PROPERTIES PREFIX "")

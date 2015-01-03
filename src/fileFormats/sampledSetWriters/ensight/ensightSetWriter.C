@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ensightSetWriter.H"
-#include "coordSet.H"
-#include "OFstream.H"
-#include "addToRunTimeSelectionTable.H"
-#include "IOmanip.H"
-#include "foamVersion.H"
+#include "./ensightSetWriter.H"
+#include "./coordSet/coordSet.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./db/IOstreams/IOstreams/IOmanip.H"
+#include "./global/foamVersion.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

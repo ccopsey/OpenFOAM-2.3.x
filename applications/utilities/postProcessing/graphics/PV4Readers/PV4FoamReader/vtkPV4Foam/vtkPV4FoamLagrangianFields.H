@@ -31,7 +31,7 @@ InClass
 
 #include "Cloud.H"
 
-#include "vtkOpenFOAMTupleRemap.H"
+#include "./vtkOpenFOAMTupleRemap.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

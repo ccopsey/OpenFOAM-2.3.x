@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "steadyStateD2dt2Scheme.H"
-#include "fvcDiv.H"
-#include "fvMatrices.H"
+#include "./steadyStateD2dt2Scheme.H"
+#include "./finiteVolume/fvc/fvcDiv.H"
+#include "./fvMatrices/fvMatrices.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

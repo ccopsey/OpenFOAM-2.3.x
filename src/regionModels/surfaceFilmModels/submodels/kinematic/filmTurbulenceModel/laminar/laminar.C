@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "laminar.H"
-#include "addToRunTimeSelectionTable.H"
-#include "fvMesh.H"
-#include "fvMatrices.H"
-#include "Time.H"
-#include "volFields.H"
-#include "fvmSup.H"
-#include "kinematicSingleLayer.H"
-#include "zeroGradientFvPatchFields.H"
+#include "./laminar.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./finiteVolume/fvm/fvmSup.H"
+#include "./kinematicSingleLayer/kinematicSingleLayer.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

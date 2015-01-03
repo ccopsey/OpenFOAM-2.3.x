@@ -38,7 +38,7 @@ SourceFiles
 #ifndef constIsoSolidTransport_H
 #define constIsoSolidTransport_H
 
-#include "vector.H"
+#include "./primitives/Vector/vector/vector.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -167,10 +167,10 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "constIsoSolidTransportI.H"
+#include "./constIsoSolidTransportI.H"
 
 #ifdef NoRepository
-#   include "constIsoSolidTransport.C"
+#   include "./constIsoSolidTransport.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

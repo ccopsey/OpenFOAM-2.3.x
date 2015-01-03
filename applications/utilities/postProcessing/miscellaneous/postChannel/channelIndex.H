@@ -35,10 +35,10 @@ SourceFiles
 #ifndef channelIndex_H
 #define channelIndex_H
 
-#include "regionSplit.H"
-#include "direction.H"
-#include "scalarField.H"
-#include "polyMesh.H"
+#include "./regionSplit/regionSplit.H"
+#include "./primitives/direction/direction.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -147,7 +147,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "channelIndexTemplates.C"
+#   include "./channelIndexTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

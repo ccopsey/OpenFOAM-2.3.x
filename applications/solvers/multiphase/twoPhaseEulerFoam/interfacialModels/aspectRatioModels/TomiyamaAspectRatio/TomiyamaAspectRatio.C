@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "TomiyamaAspectRatio.H"
-#include "orderedPhasePair.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./TomiyamaAspectRatio.H"
+#include "./phasePair/orderedPhasePair/orderedPhasePair.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "yPlusLES.H"
-#include "volFields.H"
+#include "./yPlusLES.H"
+#include "./fields/volFields/volFields.H"
 
 #include "incompressible/LES/LESModel/LESModel.H"
 #include "compressible/LES/LESModel/LESModel.H"
-#include "wallFvPatch.H"
-#include "nearWallDist.H"
+#include "./fvMesh/fvPatches/derived/wall/wallFvPatch.H"
+#include "./fvMesh/wallDist/nearWallDist.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

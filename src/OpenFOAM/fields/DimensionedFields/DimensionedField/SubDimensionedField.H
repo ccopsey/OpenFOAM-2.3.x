@@ -40,8 +40,8 @@ SourceFiles
 #ifndef SubDimensionedField_H
 #define SubDimensionedField_H
 
-#include "Field.H"
-#include "SubField.H"
+#include "./fields/Fields/Field/Field.H"
+#include "./fields/Fields/Field/SubField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -128,7 +128,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SubDimensionedFieldI.H"
+#include "./SubDimensionedFieldI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

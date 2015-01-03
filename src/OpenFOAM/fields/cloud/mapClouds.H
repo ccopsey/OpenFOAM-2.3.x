@@ -34,8 +34,8 @@ Description
 #ifndef mapClouds_H
 #define mapClouds_H
 
-#include "cloud.H"
-#include "objectRegistry.H"
+#include "./cloud.H"
+#include "./db/objectRegistry/objectRegistry.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

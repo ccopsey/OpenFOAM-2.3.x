@@ -34,7 +34,7 @@ SourceFiles
 #ifndef searchablePlateFeatures_H
 #define searchablePlateFeatures_H
 
-#include "searchableSurfaceFeatures.H"
+#include "./searchableSurfaceFeatures.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

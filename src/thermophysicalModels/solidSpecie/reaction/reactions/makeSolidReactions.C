@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "makeSolidReaction.H"
-#include "solidArrheniusReactionRate.H"
-#include "solidThermoPhysicsTypes.H"
+#include "./makeSolidReaction.H"
+#include "./reaction/reactionRate/solidArrheniusReactionRate/solidArrheniusReactionRate.H"
+#include "./include/solidThermoPhysicsTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

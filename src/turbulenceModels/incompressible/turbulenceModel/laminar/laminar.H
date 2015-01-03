@@ -35,7 +35,7 @@ SourceFiles
 #ifndef laminar_H
 #define laminar_H
 
-#include "turbulenceModel.H"
+#include "./turbulenceModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

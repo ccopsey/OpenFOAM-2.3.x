@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "MGridGenGAMGAgglomeration.H"
-#include "fvMesh.H"
-#include "addToRunTimeSelectionTable.H"
-#include "processorLduInterface.H"
+#include "./MGridGenGAMGAgglomeration.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./matrices/lduMatrix/lduAddressing/lduInterface/processorLduInterface.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

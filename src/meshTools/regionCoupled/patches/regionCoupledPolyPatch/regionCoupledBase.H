@@ -37,8 +37,8 @@ SourceFiles
 #ifndef regionCoupledBase_H
 #define regionCoupledBase_H
 
-#include "AMIPatchToPatchInterpolation.H"
-#include "polyBoundaryMesh.H"
+#include "./AMIInterpolation/AMIInterpolation/AMIPatchToPatchInterpolation.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -209,7 +209,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "regionCoupledBaseTemplates.C"
+    #include "./regionCoupledBaseTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

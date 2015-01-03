@@ -60,7 +60,7 @@ SourceFiles
 #ifndef timeActivatedFileUpdate_H
 #define timeActivatedFileUpdate_H
 
-#include "Tuple2.H"
+#include "./primitives/Tuple2/Tuple2.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

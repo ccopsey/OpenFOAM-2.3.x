@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "thresholdCellFaces.H"
+#include "./thresholdCellFaces.H"
 
-#include "polyMesh.H"
-#include "DynamicList.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./containers/Lists/DynamicList/DynamicList.H"
 
-#include "emptyPolyPatch.H"
-#include "processorPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

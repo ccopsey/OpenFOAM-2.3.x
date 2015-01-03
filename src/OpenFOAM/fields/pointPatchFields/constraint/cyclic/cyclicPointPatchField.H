@@ -35,8 +35,8 @@ SourceFiles
 #ifndef cyclicPointPatchField_H
 #define cyclicPointPatchField_H
 
-#include "coupledPointPatchField.H"
-#include "cyclicPointPatch.H"
+#include "./fields/pointPatchFields/basic/coupled/coupledPointPatchField.H"
+#include "./meshes/pointMesh/pointPatches/constraint/cyclic/cyclicPointPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -181,7 +181,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#    include "cyclicPointPatchField.C"
+#    include "./cyclicPointPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

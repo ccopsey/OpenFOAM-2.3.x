@@ -23,16 +23,16 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "List.H"
-#include "ListLoopM.H"
+#include "./List.H"
+#include "./ListLoopM.H"
 
-#include "FixedList.H"
-#include "PtrList.H"
-#include "SLList.H"
-#include "IndirectList.H"
-#include "UIndirectList.H"
-#include "BiIndirectList.H"
-#include "contiguous.H"
+#include "./containers/Lists/FixedList/FixedList.H"
+#include "./containers/Lists/PtrList/PtrList.H"
+#include "./containers/LinkedLists/user/SLList.H"
+#include "./containers/Lists/IndirectList/IndirectList.H"
+#include "./containers/Lists/UIndirectList/UIndirectList.H"
+#include "./containers/Lists/BiIndirectList/BiIndirectList.H"
+#include "./primitives/contiguous/contiguous.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -538,6 +538,6 @@ void Foam::List<T>::operator=(const BiIndirectList<T>& lst)
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 
-#include "ListIO.C"
+#include "./ListIO.C"
 
 // ************************************************************************* //

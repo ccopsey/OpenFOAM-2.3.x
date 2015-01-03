@@ -44,10 +44,10 @@ Description
 #ifndef axesRotation_H
 #define axesRotation_H
 
-#include "vector.H"
-#include "coordinateRotation.H"
-#include "dictionary.H"
-#include "runTimeSelectionTables.H"
+#include "./primitives/Vector/vector/vector.H"
+#include "./coordinateRotation.H"
+#include "./db/dictionary/dictionary.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

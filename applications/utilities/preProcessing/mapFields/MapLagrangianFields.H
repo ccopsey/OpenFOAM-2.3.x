@@ -33,11 +33,11 @@ Description
 #ifndef MapLagrangianFields_H
 #define MapLagrangianFields_H
 
-#include "cloud.H"
-#include "GeometricField.H"
-#include "meshToMesh.H"
-#include "IOobjectList.H"
-#include "CompactIOField.H"
+#include "./fields/cloud/cloud.H"
+#include "./fields/GeometricFields/GeometricField/GeometricField.H"
+#include "./meshToMeshInterpolation/meshToMesh/meshToMesh.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./db/IOobjects/CompactIOField/CompactIOField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

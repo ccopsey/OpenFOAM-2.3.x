@@ -37,7 +37,7 @@ SourceFiles
 #ifndef Vector2D_H
 #define Vector2D_H
 
-#include "VectorSpace.H"
+#include "./primitives/VectorSpace/VectorSpace.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -118,7 +118,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 // Include inline implementations
-#include "Vector2DI.H"
+#include "./Vector2DI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -42,13 +42,13 @@ SourceFiles
 #ifndef radiationModel_H
 #define radiationModel_H
 
-#include "IOdictionary.H"
-#include "autoPtr.H"
-#include "runTimeSelectionTables.H"
-#include "volFieldsFwd.H"
-#include "DimensionedField.H"
-#include "fvMatricesFwd.H"
-#include "Switch.H"
+#include "./db/IOobjects/IOdictionary/IOdictionary.H"
+#include "./memory/autoPtr/autoPtr.H"
+#include "./db/runTimeSelection/construction/runTimeSelectionTables.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
+#include "./fvMatrices/fvMatricesFwd.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

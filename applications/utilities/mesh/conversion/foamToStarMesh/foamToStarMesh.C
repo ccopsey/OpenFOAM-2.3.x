@@ -49,11 +49,11 @@ See Also
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
-#include "Time.H"
-#include "polyMesh.H"
-#include "STARCDMeshWriter.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./meshWriter/starcd/STARCDMeshWriter.H"
 
 using namespace Foam;
 
@@ -80,8 +80,8 @@ int main(int argc, char *argv[])
         "suppress writing a boundary (.bnd) file"
     );
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
 
     instantList timeDirs = timeSelector::select0(runTime, args);
 
@@ -101,13 +101,13 @@ int main(int argc, char *argv[])
         }
     }
 
-#   include "createPolyMesh.H"
+#   include "./include/createPolyMesh.H"
 
     forAll(timeDirs, timeI)
     {
         runTime.setTime(timeDirs[timeI], timeI);
 
-#       include "getTimeIndex.H"
+#       include "./getTimeIndex.H"
 
         polyMesh::readUpdateState state = mesh.readUpdate();
 

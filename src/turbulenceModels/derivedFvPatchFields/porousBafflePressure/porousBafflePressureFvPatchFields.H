@@ -26,8 +26,8 @@ License
 #ifndef porousBafflePressureFvPatchFields_H
 #define porousBafflePressureFvPatchFields_H
 
-#include "porousBafflePressureFvPatchField.H"
-#include "fieldTypes.H"
+#include "./porousBafflePressureFvPatchField.H"
+#include "./fields/Fields/fieldTypes.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

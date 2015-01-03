@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "UPtrList.H"
-#include "Ostream.H"
+#include "./UPtrList.H"
+#include "./db/IOstreams/IOstreams/Ostream.H"
 
 // * * * * * * * * * * * * * * * Ostream Operators * * * * * * * * * * * * * //
 

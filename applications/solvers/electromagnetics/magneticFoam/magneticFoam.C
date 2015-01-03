@@ -34,11 +34,11 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "OSspecific.H"
-#include "magnet.H"
-#include "electromagneticConstants.H"
-#include "simpleControl.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./include/OSspecific.H"
+#include "./magnet.H"
+#include "./global/constants/electromagnetic/electromagneticConstants.H"
+#include "./cfdTools/general/solutionControl/simpleControl/simpleControl.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -62,10 +62,10 @@ int main(int argc, char *argv[])
         "write the paramagnetic particle force field"
     );
 
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "createFields.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./createFields.H"
 
     simpleControl simple(mesh);
 

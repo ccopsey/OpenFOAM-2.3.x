@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cellToFace.H"
-#include "polyMesh.H"
-#include "cellSet.H"
-#include "Time.H"
-#include "syncTools.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./cellToFace.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./sets/topoSets/cellSet.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/syncTools/syncTools.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

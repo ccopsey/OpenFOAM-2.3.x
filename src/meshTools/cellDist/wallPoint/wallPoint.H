@@ -37,10 +37,10 @@ SourceFiles
 #ifndef wallPoint_H
 #define wallPoint_H
 
-#include "point.H"
-#include "label.H"
-#include "scalar.H"
-#include "tensor.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./primitives/ints/label/label.H"
+#include "./primitives/Scalar/scalar/scalar.H"
+#include "./primitives/Tensor/tensor/tensor.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -231,7 +231,7 @@ inline bool contiguous<wallPoint>()
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "wallPointI.H"
+#include "./wallPointI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

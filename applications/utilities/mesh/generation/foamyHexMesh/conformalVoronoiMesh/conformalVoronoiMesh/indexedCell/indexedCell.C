@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "indexedCell.H"
+#include "./indexedCell.H"
 
 // * * * * * * * * * * * * * * * *  IOStream operators * * * * * * * * * * * //
 

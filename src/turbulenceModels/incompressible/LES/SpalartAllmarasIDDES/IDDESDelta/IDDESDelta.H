@@ -37,7 +37,7 @@ SourceFiles
 #ifndef IDDESDeltaDelta_H
 #define IDDESDeltaDelta_H
 
-#include "incompressibleLESdelta.H"
+#include "./incompressibleLESdelta/incompressibleLESdelta.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

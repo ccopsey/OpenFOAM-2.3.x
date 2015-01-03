@@ -23,13 +23,13 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "codedFixedValuePointPatchField.H"
-#include "addToRunTimeSelectionTable.H"
-#include "pointPatchFieldMapper.H"
-#include "pointFields.H"
-#include "dynamicCode.H"
-#include "dynamicCodeContext.H"
-#include "stringOps.H"
+#include "./codedFixedValuePointPatchField.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
+#include "./fields/pointPatchFields/pointPatchField/pointPatchFieldMapper.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./db/dynamicLibrary/dynamicCode/dynamicCode.H"
+#include "./db/dynamicLibrary/dynamicCode/dynamicCodeContext.H"
+#include "./primitives/strings/stringOps/stringOps.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

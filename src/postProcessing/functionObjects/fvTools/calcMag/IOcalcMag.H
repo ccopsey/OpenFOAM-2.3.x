@@ -32,8 +32,8 @@ Description
 #ifndef IOcalcMag_H
 #define IOcalcMag_H
 
-#include "calcMag.H"
-#include "IOOutputFilter.H"
+#include "./calcMag.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "sampledSurface.H"
-#include "polyMesh.H"
-#include "demandDrivenData.H"
+#include "./sampledSurface.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./include/demandDrivenData.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

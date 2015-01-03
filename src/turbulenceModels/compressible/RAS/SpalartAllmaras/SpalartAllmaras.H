@@ -72,8 +72,8 @@ SourceFiles
 #ifndef compressibleSpalartAllmaras_H
 #define compressibleSpalartAllmaras_H
 
-#include "RASModel.H"
-#include "wallDist.H"
+#include "./RASModel/RASModel.H"
+#include "./fvMesh/wallDist/wallDist.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SlicedGeometricField.H"
-#include "processorFvPatch.H"
+#include "./SlicedGeometricField.H"
+#include "./fvMesh/fvPatches/constraint/processor/processorFvPatch.H"
 
 // * * * * * * * * * * * * Private Member Functions * * * * * * * * * * * * * //
 

@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "MeshWave.H"
-#include "polyMesh.H"
+#include "./MeshWave.H"
+#include "./meshes/polyMesh/polyMesh.H"
 
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //

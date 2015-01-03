@@ -32,8 +32,8 @@ Description
 #ifndef IOfieldAverage_H
 #define IOfieldAverage_H
 
-#include "fieldAverage.H"
-#include "IOOutputFilter.H"
+#include "./fieldAverage.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

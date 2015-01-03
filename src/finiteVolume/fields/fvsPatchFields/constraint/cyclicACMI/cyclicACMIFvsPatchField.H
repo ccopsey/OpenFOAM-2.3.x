@@ -35,8 +35,8 @@ SourceFiles
 #ifndef cyclicACMIFvsPatchField_H
 #define cyclicACMIFvsPatchField_H
 
-#include "coupledFvsPatchField.H"
-#include "cyclicACMIFvPatch.H"
+#include "./fields/fvsPatchFields/basic/coupled/coupledFvsPatchField.H"
+#include "./fvMesh/fvPatches/constraint/cyclicACMI/cyclicACMIFvPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -140,7 +140,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "cyclicACMIFvsPatchField.C"
+#   include "./cyclicACMIFvsPatchField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

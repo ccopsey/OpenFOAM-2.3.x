@@ -23,22 +23,22 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkPV4Foam.H"
+#include "./vtkPV4Foam.H"
 
 // OpenFOAM includes
 #include "cellSet.H"
 #include "faceSet.H"
 #include "pointSet.H"
-#include "IOobjectList.H"
-#include "IOPtrList.H"
-#include "polyBoundaryMeshEntries.H"
-#include "entry.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./db/IOobjects/IOPtrList/IOPtrList.H"
+#include "./meshes/polyMesh/polyBoundaryMesh/polyBoundaryMeshEntries.H"
+#include "./db/dictionary/entry/entry.H"
 #include "Cloud.H"
-#include "vtkPV4FoamReader.h"
+#include "./PV4Readers/PV4FoamReader/PV4FoamReader/vtkPV4FoamReader.h"
 
 // local headers
-#include "vtkPV4FoamAddToSelection.H"
-#include "vtkPV4FoamUpdateInfoFields.H"
+#include "./vtkPV4FoamAddToSelection.H"
+#include "./vtkPV4FoamUpdateInfoFields.H"
 
 // VTK includes
 #include "vtkDataArraySelection.h"

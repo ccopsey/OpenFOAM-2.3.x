@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "immiscibleIncompressibleThreePhaseMixture.H"
+#include "./immiscibleIncompressibleThreePhaseMixture.H"
 
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //

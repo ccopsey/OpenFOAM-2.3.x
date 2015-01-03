@@ -35,8 +35,8 @@ SourceFiles
 #ifndef extrudedMesh_H
 #define extrudedMesh_H
 
-#include "polyMesh.H"
-#include "extrudeModel.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./extrudeModel/extrudeModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -115,7 +115,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "extrudedMeshTemplates.C"
+#   include "./extrudedMeshTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "multivariateGaussConvectionScheme.H"
-#include "gaussConvectionScheme.H"
-#include "fvMatrices.H"
+#include "./multivariateGaussConvectionScheme.H"
+#include "./finiteVolume/convectionSchemes/gaussConvectionScheme/gaussConvectionScheme.H"
+#include "./fvMatrices/fvMatrices.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

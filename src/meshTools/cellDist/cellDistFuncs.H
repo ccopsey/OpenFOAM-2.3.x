@@ -36,14 +36,14 @@ SourceFiles
 #ifndef cellDistFuncs_H
 #define cellDistFuncs_H
 
-#include "scalarField.H"
-#include "HashSet.H"
-#include "Map.H"
-#include "wordReList.H"
-#include "scalarField.H"
-#include "point.H"
-#include "primitivePatch.H"
-#include "className.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./containers/HashTables/HashSet/HashSet.H"
+#include "./containers/HashTables/Map/Map.H"
+#include "./primitives/strings/lists/wordReList.H"
+#include "./fields/Fields/scalarField/scalarField.H"
+#include "./meshes/primitiveShapes/point/point.H"
+#include "./meshes/primitiveMesh/primitivePatch/primitivePatch.H"
+#include "./db/typeInfo/className.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -162,7 +162,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "cellDistFuncsTemplates.C"
+#   include "./cellDistFuncsTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

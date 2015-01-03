@@ -29,12 +29,12 @@ set(LIBRARIES
   libfiniteVolume
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/finiteVolume/include.cmake)
-include(./tabulatedWallFunction/include.cmake)
-include(../../../../src/turbulenceModels/incompressible/RAS/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/finiteVolume)
+include_directories(./tabulatedWallFunction)
+include_directories(../../../../src/turbulenceModels/incompressible/RAS)
 
 add_executable(wallFunctionTable ${SOURCES})
 

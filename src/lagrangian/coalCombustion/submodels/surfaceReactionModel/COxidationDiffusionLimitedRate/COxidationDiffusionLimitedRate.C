@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "COxidationDiffusionLimitedRate.H"
-#include "mathematicalConstants.H"
+#include "./COxidationDiffusionLimitedRate.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
 using namespace Foam::constant;
 

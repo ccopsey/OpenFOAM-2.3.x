@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "meshTriangulation.H"
-#include "polyMesh.H"
-#include "faceTriangulation.H"
+#include "./meshTriangulation.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./faceTriangulation/faceTriangulation.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

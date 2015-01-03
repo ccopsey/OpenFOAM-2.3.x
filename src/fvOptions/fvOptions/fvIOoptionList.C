@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvIOoptionList.H"
-#include "fvMesh.H"
-#include "Time.H"
+#include "./fvIOoptionList.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/Time/Time.H"
 
 // * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * * //
 

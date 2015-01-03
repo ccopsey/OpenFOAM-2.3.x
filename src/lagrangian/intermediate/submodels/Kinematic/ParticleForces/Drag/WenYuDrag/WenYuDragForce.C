@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "WenYuDragForce.H"
-#include "volFields.H"
+#include "./WenYuDragForce.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * //
 

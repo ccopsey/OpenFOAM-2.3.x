@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "emptyFvPatch.H"
-#include "fvBoundaryMesh.H"
-#include "fvMesh.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./emptyFvPatch.H"
+#include "./fvMesh/fvBoundaryMesh/fvBoundaryMesh.H"
+#include "./fvMesh/fvMesh.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

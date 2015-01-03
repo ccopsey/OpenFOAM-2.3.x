@@ -35,8 +35,8 @@ SourceFiles
 #ifndef singleStepReactingMixture_H
 #define singleStepReactingMixture_H
 
-#include "chemistryReader.H"
-#include "reactingMixture.H"
+#include "./chemistryReaders/chemistryReader/chemistryReader.H"
+#include "./mixtures/reactingMixture/reactingMixture.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -169,12 +169,12 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "singleStepReactingMixtureI.H"
+#include "./singleStepReactingMixtureI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "singleStepReactingMixture.C"
+#   include "./singleStepReactingMixture.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

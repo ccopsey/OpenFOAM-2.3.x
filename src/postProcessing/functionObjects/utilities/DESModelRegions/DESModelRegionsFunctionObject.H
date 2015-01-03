@@ -36,8 +36,8 @@ SourceFiles
 #ifndef DESModelRegionsFunctionObject_H
 #define DESModelRegionsFunctionObject_H
 
-#include "DESModelRegions.H"
-#include "OutputFilterFunctionObject.H"
+#include "./DESModelRegions.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

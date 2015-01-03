@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvcMeshPhi.H"
-#include "fvMesh.H"
-#include "ddtScheme.H"
+#include "./fvcMeshPhi.H"
+#include "./fvMesh/fvMesh.H"
+#include "./finiteVolume/ddtSchemes/ddtScheme/ddtScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

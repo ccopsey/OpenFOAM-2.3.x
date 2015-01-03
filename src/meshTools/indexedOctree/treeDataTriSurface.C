@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "treeDataTriSurface.H"
-#include "triSurfaceTools.H"
+#include "./treeDataTriSurface.H"
+#include "./triSurface/triSurfaceTools/triSurfaceTools.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

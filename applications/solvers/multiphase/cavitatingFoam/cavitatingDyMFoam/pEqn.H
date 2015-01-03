@@ -51,7 +51,7 @@
 
     rho == max(rho0 + psi*p, rhoMin);
 
-    #include "alphavPsi.H"
+    #include "./alphavPsi.H"
 
     p =
     (

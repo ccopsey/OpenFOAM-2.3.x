@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "functionObjectList.H"
-#include "Time.H"
-#include "mapPolyMesh.H"
+#include "./functionObjectList.H"
+#include "./db/Time/Time.H"
+#include "./meshes/polyMesh/mapPolyMesh/mapPolyMesh.H"
 
 // * * * * * * * * * * * * Private Member Functions  * * * * * * * * * * * * //
 

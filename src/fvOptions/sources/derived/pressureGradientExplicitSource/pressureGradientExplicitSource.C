@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "pressureGradientExplicitSource.H"
-#include "fvMatrices.H"
-#include "DimensionedField.H"
-#include "IFstream.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./pressureGradientExplicitSource.H"
+#include "./fvMatrices/fvMatrices.H"
+#include "./fields/DimensionedFields/DimensionedField/DimensionedField.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * Static Member Functions * * * * * * * * * * * * //
 

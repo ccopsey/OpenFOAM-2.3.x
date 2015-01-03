@@ -23,15 +23,15 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "backwardsCompatibilityWallFunctions.H"
+#include "./backwardsCompatibilityWallFunctions.H"
 
-#include "volFields.H"
-#include "calculatedFvPatchField.H"
-#include "nutkWallFunctionFvPatchScalarField.H"
-#include "nutLowReWallFunctionFvPatchScalarField.H"
-#include "epsilonWallFunctionFvPatchScalarField.H"
-#include "kqRWallFunctionFvPatchField.H"
-#include "omegaWallFunctionFvPatchScalarField.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/fvPatchFields/basic/calculated/calculatedFvPatchField.H"
+#include "./derivedFvPatchFields/wallFunctions/nutWallFunctions/nutkWallFunction/nutkWallFunctionFvPatchScalarField.H"
+#include "./derivedFvPatchFields/wallFunctions/nutWallFunctions/nutLowReWallFunction/nutLowReWallFunctionFvPatchScalarField.H"
+#include "./derivedFvPatchFields/wallFunctions/epsilonWallFunctions/epsilonWallFunction/epsilonWallFunctionFvPatchScalarField.H"
+#include "./derivedFvPatchFields/wallFunctions/kqRWallFunctions/kqRWallFunction/kqRWallFunctionFvPatchField.H"
+#include "./derivedFvPatchFields/wallFunctions/omegaWallFunctions/omegaWallFunction/omegaWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

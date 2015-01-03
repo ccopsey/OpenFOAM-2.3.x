@@ -35,7 +35,7 @@ SourceFiles
 #ifndef inversePointDistanceDiffusivity_H
 #define inversePointDistanceDiffusivity_H
 
-#include "uniformDiffusivity.H"
+#include "./motionDiffusivity/uniform/uniformDiffusivity.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

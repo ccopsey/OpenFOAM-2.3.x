@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "SurfaceReactionModel.H"
+#include "./SurfaceReactionModel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -149,7 +149,7 @@ void Foam::SurfaceReactionModel<CloudType>::info(Ostream& os)
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "SurfaceReactionModelNew.C"
+#include "./SurfaceReactionModelNew.C"
 
 // ************************************************************************* //
 

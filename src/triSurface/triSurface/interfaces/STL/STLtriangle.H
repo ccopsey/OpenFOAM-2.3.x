@@ -35,7 +35,7 @@ SourceFiles
 #ifndef STLtriangle_H
 #define STLtriangle_H
 
-#include "STLpoint.H"
+#include "./surfaceFormats/stl/STLpoint.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -107,7 +107,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "STLtriangleI.H"
+#include "./STLtriangleI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

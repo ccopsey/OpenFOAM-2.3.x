@@ -39,8 +39,8 @@ SourceFiles
 #ifndef thermoSingleLayer_H
 #define thermoSingleLayer_H
 
-#include "kinematicSingleLayer.H"
-#include "SLGThermo.H"
+#include "./kinematicSingleLayer/kinematicSingleLayer.H"
+#include "./SLGThermo/SLGThermo.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -416,7 +416,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "thermoSingleLayerI.H"
+#include "./thermoSingleLayerI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

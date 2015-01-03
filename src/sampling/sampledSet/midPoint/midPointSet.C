@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "midPointSet.H"
-#include "polyMesh.H"
-#include "addToRunTimeSelectionTable.H"
+#include "./midPointSet.H"
+#include "./meshes/polyMesh/polyMesh.H"
+#include "./db/runTimeSelection/construction/addToRunTimeSelectionTable.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

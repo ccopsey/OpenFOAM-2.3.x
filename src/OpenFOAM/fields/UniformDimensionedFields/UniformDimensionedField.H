@@ -37,8 +37,8 @@ SourceFiles
 #ifndef UniformDimensionedField_H
 #define UniformDimensionedField_H
 
-#include "regIOobject.H"
-#include "dimensionedType.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./dimensionedTypes/dimensionedType/dimensionedType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -109,7 +109,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "UniformDimensionedField.C"
+#   include "./UniformDimensionedField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

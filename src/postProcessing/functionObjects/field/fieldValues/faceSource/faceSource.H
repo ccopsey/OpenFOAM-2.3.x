@@ -137,11 +137,11 @@ SourceFiles
 #ifndef faceSource_H
 #define faceSource_H
 
-#include "NamedEnum.H"
-#include "fieldValue.H"
-#include "surfaceFieldsFwd.H"
-#include "volFieldsFwd.H"
-#include "surfaceWriter.H"
+#include "./containers/NamedEnum/NamedEnum.H"
+#include "./fieldValues/fieldValue/fieldValue.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./sampledSurface/writers/surfaceWriter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -418,12 +418,12 @@ vector faceSource::processValues
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "faceSourceI.H"
+#include "./faceSourceI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-    #include "faceSourceTemplates.C"
+    #include "./faceSourceTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

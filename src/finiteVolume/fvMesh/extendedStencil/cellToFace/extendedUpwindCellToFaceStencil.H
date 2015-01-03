@@ -44,7 +44,7 @@ SourceFiles
 #ifndef extendedUpwindCellToFaceStencil_H
 #define extendedUpwindCellToFaceStencil_H
 
-#include "extendedCellToFaceStencil.H"
+#include "./extendedCellToFaceStencil.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -193,7 +193,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "extendedUpwindCellToFaceStencilTemplates.C"
+#   include "./extendedUpwindCellToFaceStencilTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

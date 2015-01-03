@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "ORourkeCollision.H"
-#include "mathematicalConstants.H"
-#include "SLGThermo.H"
+#include "./ORourkeCollision.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
+#include "./SLGThermo/SLGThermo.H"
 
 using namespace Foam::constant::mathematical;
 

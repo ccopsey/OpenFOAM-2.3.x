@@ -32,8 +32,8 @@ Description
 #ifndef IOprocessorField_H
 #define IOprocessorField_H
 
-#include "processorField.H"
-#include "IOOutputFilter.H"
+#include "./processorField.H"
+#include "./db/functionObjects/IOOutputFilter/IOOutputFilter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

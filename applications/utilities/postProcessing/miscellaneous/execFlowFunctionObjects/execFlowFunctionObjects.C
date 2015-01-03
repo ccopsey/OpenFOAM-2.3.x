@@ -35,22 +35,22 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "timeSelector.H"
+#include "./global/argList/argList.H"
+#include "./db/Time/timeSelector.H"
 
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "pointFields.H"
-#include "uniformDimensionedFields.H"
-#include "ReadFields.H"
-#include "fvIOoptionList.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./fields/GeometricFields/pointFields/pointFields.H"
+#include "./fields/UniformDimensionedFields/uniformDimensionedFields.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./fvOptions/fvIOoptionList.H"
 
 #include "incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H"
 
 #include "incompressible/RAS/RASModel/RASModel.H"
 #include "incompressible/LES/LESModel/LESModel.H"
 
-#include "fluidThermo.H"
+#include "./fluidThermo/fluidThermo.H"
 #include "compressible/RAS/RASModel/RASModel.H"
 #include "compressible/LES/LESModel/LESModel.H"
 
@@ -299,7 +299,7 @@ void calc
             mesh
         );
 
-        #include "createFvOptions.H"
+        #include "./include/createFvOptions.H"
 
         if (phi.dimensions() == dimVolume/dimTime)
         {
@@ -464,18 +464,18 @@ void calc
 int main(int argc, char *argv[])
 {
     Foam::timeSelector::addOptions();
-    #include "addRegionOption.H"
+    #include "./include/addRegionOption.H"
     Foam::argList::addBoolOption
     (
         "noFlow",
         "suppress creating flow models"
     );
-    #include "addDictOption.H"
+    #include "./include/addDictOption.H"
 
-    #include "setRootCase.H"
-    #include "createTime.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
     Foam::instantList timeDirs = Foam::timeSelector::select0(runTime, args);
-    #include "createNamedMesh.H"
+    #include "./include/createNamedMesh.H"
 
     // Construct functionObjectList
 

@@ -37,32 +37,32 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvCFD.H"
-#include "CMULES.H"
-#include "subCycle.H"
-#include "immiscibleIncompressibleTwoPhaseMixture.H"
-#include "turbulenceModel.H"
-#include "fvcSmooth.H"
-#include "pimpleControl.H"
-#include "fvIOoptionList.H"
-#include "fixedFluxPressureFvPatchScalarField.H"
+#include "./cfdTools/general/include/fvCFD.H"
+#include "./fvMatrices/solvers/MULES/CMULES.H"
+#include "./algorithms/subCycle/subCycle.H"
+#include "./immiscibleIncompressibleTwoPhaseMixture/immiscibleIncompressibleTwoPhaseMixture.H"
+#include "./turbulenceModel.H"
+#include "./finiteVolume/fvc/fvcSmooth/fvcSmooth.H"
+#include "./cfdTools/general/solutionControl/pimpleControl/pimpleControl.H"
+#include "./fvOptions/fvIOoptionList.H"
+#include "./fields/fvPatchFields/derived/fixedFluxPressure/fixedFluxPressureFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
 {
-    #include "setRootCase.H"
-    #include "createTime.H"
-    #include "createMesh.H"
-    #include "initContinuityErrs.H"
+    #include "./include/setRootCase.H"
+    #include "./include/createTime.H"
+    #include "./include/createMesh.H"
+    #include "./cfdTools/general/include/initContinuityErrs.H"
     #include "createFields.H"
 
     pimpleControl pimple(mesh);
 
-    #include "createPrghCorrTypes.H"
+    #include "./cfdTools/general/include/createPrghCorrTypes.H"
     #include "correctPhi.H"
-    #include "CourantNo.H"
-    #include "setInitialrDeltaT.H"
+    #include "./cfdTools/incompressible/CourantNo.H"
+    #include "./setInitialrDeltaT.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -74,15 +74,15 @@ int main(int argc, char *argv[])
 
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        #include "setrDeltaT.H"
+        #include "./setrDeltaT.H"
 
         // --- Pressure-velocity PIMPLE corrector loop
         while (pimple.loop())
         {
-            #include "alphaControls.H"
+            #include "./cfdTools/general/include/alphaControls.H"
 
             #define LTSSOLVE
-            #include "alphaEqnSubCycle.H"
+            #include "./alphaEqnSubCycle.H"
             #undef LTSSOLVE
 
             mixture.correct();

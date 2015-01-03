@@ -23,9 +23,9 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "FTRsurfaceFormat.H"
-#include "Keyed.H"
-#include "IFstream.H"
+#include "./FTRsurfaceFormat.H"
+#include "./containers/Identifiers/Keyed/Keyed.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

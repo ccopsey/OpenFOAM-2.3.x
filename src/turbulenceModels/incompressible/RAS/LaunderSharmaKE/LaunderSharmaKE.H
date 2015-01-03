@@ -51,7 +51,7 @@ SourceFiles
 #ifndef LaunderSharmaKE_H
 #define LaunderSharmaKE_H
 
-#include "RASModel.H"
+#include "./RASModel/RASModel.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -35,7 +35,7 @@ SourceFiles
 #ifndef orthogonalSnGrad_H
 #define orthogonalSnGrad_H
 
-#include "snGradScheme.H"
+#include "./finiteVolume/snGradSchemes/snGradScheme/snGradScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -123,7 +123,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "orthogonalSnGrad.C"
+#   include "./orthogonalSnGrad.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

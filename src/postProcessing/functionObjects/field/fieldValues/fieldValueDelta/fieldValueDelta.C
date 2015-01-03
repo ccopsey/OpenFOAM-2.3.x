@@ -23,11 +23,11 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "fieldValueDelta.H"
-#include "ListOps.H"
-#include "Time.H"
-#include "volFields.H"
-#include "surfaceFields.H"
+#include "./fieldValueDelta.H"
+#include "./containers/Lists/ListOps/ListOps.H"
+#include "./db/Time/Time.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

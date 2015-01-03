@@ -36,7 +36,7 @@ SourceFiles
 #ifndef int_H
 #define int_H
 
-#include "word.H"
+#include "./primitives/strings/word/word.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

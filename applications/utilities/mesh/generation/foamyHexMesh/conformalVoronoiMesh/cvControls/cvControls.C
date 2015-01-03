@@ -23,8 +23,8 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "cvControls.H"
-#include "conformalVoronoiMesh.H"
+#include "./cvControls.H"
+#include "./conformalVoronoiMesh/conformalVoronoiMesh.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

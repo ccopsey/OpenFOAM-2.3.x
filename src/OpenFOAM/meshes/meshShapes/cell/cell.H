@@ -35,8 +35,8 @@ SourceFiles
 #ifndef cell_H
 #define cell_H
 
-#include "faceList.H"
-#include "oppositeFace.H"
+#include "./meshes/meshShapes/face/faceList.H"
+#include "./meshes/meshShapes/face/oppositeFace.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -141,7 +141,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "cellI.H"
+#include "./cellI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

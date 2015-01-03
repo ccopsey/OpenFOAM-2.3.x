@@ -35,7 +35,7 @@ SourceFiles
 #ifndef uncorrectedSnGrad_H
 #define uncorrectedSnGrad_H
 
-#include "snGradScheme.H"
+#include "./finiteVolume/snGradSchemes/snGradScheme/snGradScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -123,7 +123,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "uncorrectedSnGrad.C"
+#   include "./uncorrectedSnGrad.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

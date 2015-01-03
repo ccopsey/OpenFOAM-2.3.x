@@ -23,12 +23,12 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "vtkSurfaceWriter.H"
+#include "./vtkSurfaceWriter.H"
 
-#include "OFstream.H"
-#include "OSspecific.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./include/OSspecific.H"
 
-#include "makeSurfaceWriterMethods.H"
+#include "./sampledSurface/writers/makeSurfaceWriterMethods.H"
 
 // * * * * * * * * * * * * * * Static Data Members * * * * * * * * * * * * * //
 

@@ -29,11 +29,11 @@ set(LIBRARIES
   libtriSurface
 )
 
-include(include.cmake)
-include(../../../../src/OpenFOAM/include.cmake)
-include(../../../../src/OSspecific/POSIX/include.cmake)
-include(../../../../src/triSurface/include.cmake)
-include(../../../../src/meshTools/include.cmake)
+include_directories(.)
+include_directories(../../../../src/OpenFOAM)
+include_directories(../../../../src/OSspecific/POSIX)
+include_directories(../../../../src/triSurface)
+include_directories(../../../../src/meshTools)
 
 add_executable(surfaceClean ${SOURCES})
 

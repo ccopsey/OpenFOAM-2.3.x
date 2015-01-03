@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "error.H"
-#include "products.H"
-#include "VectorSpaceM.H"
-#include "ops.H"
+#include "./db/error/error.H"
+#include "./products.H"
+#include "./VectorSpaceM.H"
+#include "./primitives/ops/ops.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

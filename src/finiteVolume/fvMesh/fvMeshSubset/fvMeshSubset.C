@@ -28,12 +28,12 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "fvMeshSubset.H"
-#include "boolList.H"
-#include "Pstream.H"
-#include "emptyPolyPatch.H"
-#include "demandDrivenData.H"
-#include "cyclicPolyPatch.H"
+#include "./fvMeshSubset.H"
+#include "./primitives/bools/lists/boolList.H"
+#include "./db/IOstreams/Pstreams/Pstream.H"
+#include "./meshes/polyMesh/polyPatches/constraint/empty/emptyPolyPatch.H"
+#include "./include/demandDrivenData.H"
+#include "./meshes/polyMesh/polyPatches/constraint/cyclic/cyclicPolyPatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

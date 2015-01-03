@@ -41,10 +41,10 @@ SourceFiles
 #ifndef CourantNo_H
 #define CourantNo_H
 
-#include "volFieldsFwd.H"
-#include "surfaceFieldsFwd.H"
-#include "OFstream.H"
-#include "Switch.H"
+#include "./fields/volFields/volFieldsFwd.H"
+#include "./fields/surfaceFields/surfaceFieldsFwd.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

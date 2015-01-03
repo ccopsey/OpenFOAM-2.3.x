@@ -32,7 +32,7 @@ Description
 #ifndef globalMemberFunctionSelectionTables_H
 #define globalMemberFunctionSelectionTables_H
 
-#include "memberFunctionSelectionTables.H"
+#include "./db/runTimeSelection/memberFunctions/memberFunctionSelectionTables.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

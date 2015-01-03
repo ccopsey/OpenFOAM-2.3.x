@@ -36,8 +36,8 @@ SourceFiles
 #ifndef cloudInfoFunctionObject_H
 #define cloudInfoFunctionObject_H
 
-#include "cloudInfo.H"
-#include "OutputFilterFunctionObject.H"
+#include "./cloudInfo.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

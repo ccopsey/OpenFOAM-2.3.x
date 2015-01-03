@@ -31,8 +31,8 @@ Description
 #ifndef surfZoneIdentifierList_H
 #define surfZoneIdentifierList_H
 
-#include "surfZoneIdentifier.H"
-#include "List.H"
+#include "./surfZoneIdentifier.H"
+#include "./containers/Lists/List/List.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

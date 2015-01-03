@@ -38,10 +38,10 @@ SourceFiles
 #ifndef regIOobject_H
 #define regIOobject_H
 
-#include "IOobject.H"
-#include "typeInfo.H"
-#include "OSspecific.H"
-#include "NamedEnum.H"
+#include "./db/IOobject/IOobject.H"
+#include "./db/typeInfo/typeInfo.H"
+#include "./include/OSspecific.H"
+#include "./containers/NamedEnum/NamedEnum.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -286,7 +286,7 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "regIOobjectI.H"
+#include "./regIOobjectI.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

@@ -23,10 +23,10 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "patchDist.H"
-#include "patchWave.H"
-#include "fvMesh.H"
-#include "emptyFvPatchFields.H"
+#include "./patchDist.H"
+#include "./cellDist/patchWave/patchWave.H"
+#include "./fvMesh/fvMesh.H"
+#include "./fields/fvPatchFields/constraint/empty/emptyFvPatchFields.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 

@@ -33,19 +33,19 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "IOobjectList.H"
-#include "fvMesh.H"
-#include "polyTopoChange.H"
-#include "ReadFields.H"
-#include "volFields.H"
-#include "surfaceFields.H"
-#include "SortableList.H"
-#include "decompositionMethod.H"
-#include "renumberMethod.H"
-#include "zeroGradientFvPatchFields.H"
-#include "CuthillMcKeeRenumber.H"
-#include "fvMeshSubset.H"
+#include "./global/argList/argList.H"
+#include "./db/IOobjectList/IOobjectList.H"
+#include "./fvMesh/fvMesh.H"
+#include "./polyTopoChange/polyTopoChange/polyTopoChange.H"
+#include "./fields/ReadFields/ReadFields.H"
+#include "./fields/volFields/volFields.H"
+#include "./fields/surfaceFields/surfaceFields.H"
+#include "./containers/Lists/SortableList/SortableList.H"
+#include "./decompositionMethod/decompositionMethod.H"
+#include "./renumberMethod/renumberMethod.H"
+#include "./fields/fvPatchFields/basic/zeroGradient/zeroGradientFvPatchFields.H"
+#include "./CuthillMcKeeRenumber/CuthillMcKeeRenumber.H"
+#include "./fvMesh/fvMeshSubset/fvMeshSubset.H"
 
 #ifdef FOAM_USE_ZOLTAN
 #   include "zoltanRenumber.H"
@@ -625,10 +625,10 @@ int main(int argc, char *argv[])
         "Renumber mesh to minimise bandwidth"
     );
 
-#   include "addRegionOption.H"
-#   include "addOverwriteOption.H"
-#   include "addTimeOptions.H"
-#   include "addDictOption.H"
+#   include "./include/addRegionOption.H"
+#   include "./include/addOverwriteOption.H"
+#   include "./include/addTimeOptions.H"
+#   include "./include/addDictOption.H"
     argList::addBoolOption
     (
         "frontWidth",
@@ -644,19 +644,19 @@ int main(int argc, char *argv[])
 #endif
 
 
-#   include "setRootCase.H"
-#   include "createTime.H"
+#   include "./include/setRootCase.H"
+#   include "./include/createTime.H"
     runTime.functionObjects().off();
 
     // Get times list
     instantList Times = runTime.times();
 
     // set startTime and endTime depending on -time and -latestTime options
-#   include "checkTimeOptions.H"
+#   include "./include/checkTimeOptions.H"
 
     runTime.setTime(Times[startTime], startTime);
 
-#   include "createNamedMesh.H"
+#   include "./include/createNamedMesh.H"
     const word oldInstance = mesh.pointsInstance();
 
     const bool readDict = args.optionFound("dict");
@@ -711,7 +711,7 @@ int main(int argc, char *argv[])
     if (readDict)
     {
         const word dictName("renumberMeshDict");
-        #include "setSystemMeshDictionaryIO.H"
+        #include "./include/setSystemMeshDictionaryIO.H"
 
         Info<< "Renumber according to " << dictName << nl << endl;
 

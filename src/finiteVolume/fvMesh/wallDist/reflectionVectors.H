@@ -34,7 +34,7 @@ SourceFiles
 #ifndef reflectionVectors_H
 #define reflectionVectors_H
 
-#include "volFields.H"
+#include "./fields/volFields/volFields.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

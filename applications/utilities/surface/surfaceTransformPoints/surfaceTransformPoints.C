@@ -37,16 +37,16 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "argList.H"
-#include "OFstream.H"
-#include "IFstream.H"
-#include "boundBox.H"
-#include "transformField.H"
-#include "Pair.H"
-#include "quaternion.H"
-#include "mathematicalConstants.H"
+#include "./global/argList/argList.H"
+#include "./db/IOstreams/Fstreams/OFstream.H"
+#include "./db/IOstreams/Fstreams/IFstream.H"
+#include "./meshes/boundBox/boundBox.H"
+#include "./fields/Fields/transformField/transformField.H"
+#include "./primitives/Pair/Pair.H"
+#include "./primitives/quaternion/quaternion.H"
+#include "./global/constants/mathematical/mathematicalConstants.H"
 
-#include "MeshedSurfaces.H"
+#include "./MeshedSurface/MeshedSurfaces.H"
 
 using namespace Foam;
 using namespace Foam::constant::mathematical;

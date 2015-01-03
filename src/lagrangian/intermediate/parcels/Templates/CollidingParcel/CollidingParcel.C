@@ -23,7 +23,7 @@ License
 
 \*---------------------------------------------------------------------------*/
 
-#include "CollidingParcel.H"
+#include "./CollidingParcel.H"
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -138,6 +138,6 @@ void Foam::CollidingParcel<ParcelType>::transformProperties
 
 // * * * * * * * * * * * * * * IOStream operators  * * * * * * * * * * * * * //
 
-#include "CollidingParcelIO.C"
+#include "./CollidingParcelIO.C"
 
 // ************************************************************************* //

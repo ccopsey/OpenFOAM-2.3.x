@@ -36,8 +36,8 @@ SourceFiles
 #ifndef sampledSurfacesFunctionObject_H
 #define sampledSurfacesFunctionObject_H
 
-#include "sampledSurfaces.H"
-#include "OutputFilterFunctionObject.H"
+#include "./sampledSurface/sampledSurfaces/sampledSurfaces.H"
+#include "./db/functionObjects/OutputFilterFunctionObject/OutputFilterFunctionObject.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

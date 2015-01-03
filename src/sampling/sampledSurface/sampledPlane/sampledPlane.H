@@ -38,8 +38,8 @@ SourceFiles
 #ifndef sampledPlane_H
 #define sampledPlane_H
 
-#include "sampledSurface.H"
-#include "cuttingPlane.H"
+#include "./sampledSurface/sampledSurface/sampledSurface.H"
+#include "./cuttingPlane/cuttingPlane.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -220,7 +220,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "sampledPlaneTemplates.C"
+#   include "./sampledPlaneTemplates.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

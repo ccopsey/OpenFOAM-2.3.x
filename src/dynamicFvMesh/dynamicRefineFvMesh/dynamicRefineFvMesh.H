@@ -68,10 +68,10 @@ SourceFiles
 #ifndef dynamicRefineFvMesh_H
 #define dynamicRefineFvMesh_H
 
-#include "dynamicFvMesh.H"
-#include "hexRef8.H"
-#include "PackedBoolList.H"
-#include "Switch.H"
+#include "./dynamicFvMesh/dynamicFvMesh.H"
+#include "./polyTopoChange/polyTopoChange/hexRef8.H"
+#include "./containers/Lists/PackedList/PackedBoolList.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 

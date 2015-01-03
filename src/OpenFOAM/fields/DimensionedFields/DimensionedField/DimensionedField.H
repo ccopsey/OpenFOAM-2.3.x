@@ -38,9 +38,9 @@ SourceFiles
 #ifndef DimensionedField_H
 #define DimensionedField_H
 
-#include "regIOobject.H"
-#include "Field.H"
-#include "dimensionedType.H"
+#include "./db/regIOobject/regIOobject.H"
+#include "./fields/Fields/Field/Field.H"
+#include "./dimensionedTypes/dimensionedType/dimensionedType.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -335,11 +335,11 @@ public:
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-#include "DimensionedFieldI.H"
-#include "DimensionedFieldFunctions.H"
+#include "./DimensionedFieldI.H"
+#include "./DimensionedFieldFunctions.H"
 
 #ifdef NoRepository
-#   include "DimensionedField.C"
+#   include "./DimensionedField.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

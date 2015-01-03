@@ -32,9 +32,9 @@ Description
 #ifndef LocalInteraction_H
 #define LocalInteraction_H
 
-#include "PatchInteractionModel.H"
-#include "patchInteractionDataList.H"
-#include "Switch.H"
+#include "./submodels/Kinematic/PatchInteractionModel/PatchInteractionModel/PatchInteractionModel.H"
+#include "./patchInteractionDataList.H"
+#include "./primitives/bools/Switch/Switch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -142,7 +142,7 @@ public:
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #ifdef NoRepository
-#   include "LocalInteraction.C"
+#   include "./LocalInteraction.C"
 #endif
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
