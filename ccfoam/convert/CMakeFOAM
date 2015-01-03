@@ -1,0 +1,560 @@
+#!/bin/bash
+#
+#   Copyright (C) 2014-15 Chris Copsey
+#
+#   This file is part of ccFOAM.
+#
+#   ccFOAM is free software: you can redistribute it and/or modify it under the
+#   terms of the GNU General Public License as published by the Free Software
+#   Foundation, either version 3 of the License, or (at your option) any later
+#   version.
+#
+#   ccFOAM is distributed in the hope that it will be useful, but WITHOUT ANY
+#   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#   FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+#   details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+cmakelists () {
+  echo $MAKE_DIR
+  cd $MAKE_DIR/..
+
+  CMAKELISTS="CMakeLists.txt.target"
+
+  LIB_SRC="src"
+  FOAM_APP="applications"
+  while [ ! -d $LIB_SRC ]
+  do
+    LIB_SRC="../$LIB_SRC"
+    FOAM_APP="../$FOAM_APP"
+  done
+  FOAM_SRC="$LIB_SRC"
+  FOAM_SOLVERS="$FOAM_APP/solvers"
+
+  OPTIONS=`cat Make/options | sed -r ':a; s%(.*)/\*.*\*/%\1%; ta; /\/\*/ !b; N; ba' | sed -e ':a' -e 'N' -e '$!ba' -e 's|\\\\\n||g' -e 's|\n\n|\n|g' -e 's|(|{|g' -e 's|)|}|g'`
+
+  DEFINITIONS=""
+  for RULE in `echo "$OPTIONS" | grep "^s\?include" | sed -e 's|^s\?include ||g'`
+  do
+    if [ $RULE == "\${GENERAL_RULES}/mplib\${WM_MPLIB}" ]
+    then
+      DEFINITIONS="$DEFINITIONS -DOMPI_SKIP_MPICXX"
+    fi
+  done
+
+  INCLUDES=""
+  if [ $MAKE_DIR != "src/OpenFOAM/Make" ]
+  then
+    INCLUDES="$INCLUDES $LIB_SRC/OpenFOAM/lnInclude"
+  fi
+  if [ $MAKE_DIR != "src/OSspecific/POSIX/Make" ]
+  then
+    INCLUDES="$INCLUDES $LIB_SRC/OSspecific/POSIX/lnInclude"
+  fi
+  INCLUDES2=""
+  INCLUDES2=`echo "$OPTIONS" | grep "EXE_INC" | grep -v "THIRD_PARTY" | sed -e 's|EXE_INC *= ||g' -e 's|-I||g' -e 's|(|{|g' -e 's|)|}|g'`
+  INCLUDES2=`echo $INCLUDES2 | sed -e 's|${CGAL_INC}|(CGAL_INCLUDE_DIR) (GMP_INCLUDE_DIR) (MPFR_INCLUDE_DIR) (BOOST_INCLUDE_DIR)|g'`
+  INCLUDES2=`echo $INCLUDES2 | sed -e 's|${PINC}|(MPI_CXX_INCLUDE_PATH)|g'`
+  INCLUDES2=`echo $INCLUDES2 | sed -e 's|${METIS_ARCH_PATH}/include|(METIS_INCLUDE_DIR)|g'`
+  INCLUDES2=`echo $INCLUDES2 | sed -e 's|${SCOTCH_ROOT}/include|(SCOTCH_INCLUDE_DIR)|g'`
+  INCLUDES2=`echo $INCLUDES2 | sed -e 's|${ParMGridGen}/MGridGen/Lib/lnInclude|(MGRIDGEN_INCLUDE_DIR)|g'`
+  INCLUDES2=`eval echo \"$INCLUDES2\"`
+  INCLUDES2=`echo $INCLUDES2 | sed -e 's|(|${|g' -e 's|)|}|g'`
+  INCLUDES3=""
+  for INCLUDE2 in $INCLUDES2
+  do
+    if [ ${#INCLUDE2} -gt 21 ] && [ ${INCLUDE2: -22} == "finiteVolume/lnInclude" ]
+    then
+      INCLUDES3="$INCLUDE2 $INCLUDES3"
+    else
+      INCLUDES3="$INCLUDES3 $INCLUDE2"
+    fi
+  done
+  INCLUDES2=$INCLUDES3
+  INCLUDES3=""
+  for INCLUDE2 in $INCLUDES2
+  do
+    if [ ${INCLUDE2} == ".." ]
+    then
+      INCLUDES3="$INCLUDE2 $INCLUDES3"
+    else
+      INCLUDES3="$INCLUDES3 $INCLUDE2"
+    fi
+  done
+  INCLUDES="$INCLUDES $INCLUDES3"
+
+  INCLUDES2="include.cmake"
+  for INCLUDE in $INCLUDES
+  do
+    if [ ${INCLUDE:0:1} == "$" ]
+    then
+      INCLUDES2="$INCLUDES2
+$INCLUDE"
+    else
+      DIRNAME=`echo $INCLUDE | sed -e 's|/\?lnInclude/\?|/include.cmake|g'`
+      if [ ! ${DIRNAME:0:1} == "/" ]
+      then
+        if [ -e $DIRNAME ]
+        then
+          INCLUDES2="$INCLUDES2
+$DIRNAME"
+        fi
+      fi
+    fi
+  done
+  INCLUDES=$INCLUDES2
+
+  FILES=`cat Make/files | sed -r ':a; s%(.*)/\*.*\*/%\1%; ta; /\/\*/ !b; N; ba' | sed -e ':a' -e 'N' -e '$!ba' -e 's|\\\\\n||g' -e 's|\n\n*|\n|g'`
+
+  LIB=`echo "$FILES" | grep "LIB =" | sed -e 's|LIB =||g' -e 's|$(FOAM_LIBBIN)/||g' -e 's|$(FOAM_MPI)/||g' -e 's| ||g'`
+  LIB2=""
+  for L in `echo $LIB | tr '/' ' '`
+  do
+    LIB2="$LIB2`echo $L | sed -e 's|^lib||g'`"
+  done
+  LIB="$LIB2"
+  if [ "$LIB" == "Pstream" ]
+  then
+    LIB="`basename $PWD`$LIB"
+  fi
+  if [ -n "$LIB" ]
+  then
+    LIB="lib$LIB"
+  fi
+
+  LIBS=`echo "$OPTIONS" | grep "EXE_LIBS\|LIB_LIBS" | sed -e 's|EXE_LIBS = \?||g' -e 's|LIB_LIBS = \?||g' -e 's|${FOAM_EXT_LIBBIN}/||g' -e 's|${FOAM_LIBBIN}/||g' -e 's|-l||g'`
+  LIBS=`echo $LIBS | sed -e 's|${CGAL_LIBS}|(CGAL_LIBRARY) (GMP_LIBRARY) (MPFR_LIBRARY) (BOOST_SYSTEM_LIBRARY) (BOOST_THREAD_LIBRARY)|g'`
+  LIBS=`echo $LIBS | sed -e 's|${PLIBS}|(MPI_LIBRARY)|g'`
+  LIBS=`eval echo \"$LIBS\"`
+  LIBS=`echo $LIBS | sed -e 's|(|${|g' -e 's|)|}|g'`
+
+  LIBS2=""
+  for LIBSA in $LIBS
+  do
+    if [ ! ${LIBSA:0:2} == "-L" ]
+    then
+      if [ $LIBSA == "metis" ]
+      then
+        LIBS2="$LIBS2 $LIBSA"
+      elif [ $LIBSA == "MGridGen" ]
+      then
+        LIBS2="$LIBS2 \${MGRIDGEN_LIBRARY}"
+      elif [ $LIBSA == "ParMGridGen" ]
+      then
+        LIBS2="$LIBS2 \${PARMGRIDGEN_LIBRARY}"
+      elif [ $LIBSA == "postCalc.o" ]
+      then
+        LIBS2="$LIBS2 libpostCalc"
+      elif [ $LIBSA == "scotch" ]
+      then
+        LIBS2="$LIBS2 \${SCOTCH_LIBRARY}"
+      elif [ $LIBSA == "scotcherrexit" ]
+      then
+        LIBS2="$LIBS2 \${SCOTCH_ERREXIT_LIBRARY}"
+      elif [ $LIBSA == "ptscotch" ]
+      then
+        LIBS2="$LIBS2 \${PTSCOTCH_LIBRARY} \${SCOTCH_LIBRARY}"
+      elif [ $LIBSA == "ptscotcherrexit" ]
+      then
+        LIBS2="$LIBS2 \${PTSCOTCH_ERREXIT_LIBRARY}"
+      elif [ $LIBSA == "rt" ]
+      then
+        LIBS2="$LIBS2 \${RT_LIBRARIES}"
+      elif [ ${LIBSA:0:1} == "$" ]
+      then
+        LIBS2="$LIBS2 $LIBSA"
+      else
+        LIBS2="$LIBS2 lib$LIBSA"
+      fi
+    fi
+  done
+  LIBS=$LIBS2
+  if [ -z "$LIB" ]
+  then
+    LIBS="libOpenFOAM $LIBS"
+  else
+    if [ "$LIB" == "libOpenFOAM" ]
+    then
+      LIBS="libmpiPstream libOSspecific z"
+    fi
+  fi
+
+  EXE=`echo "$FILES" | grep "EXE =" | sed -e 's|EXE =||g' -e 's|$(FOAM_APPBIN)/||g' -e 's|$(FOAM_USER_APPBIN)/||g' -e 's| ||g'`
+  if [ -n "$EXE" ] && [ $EXE == "extrude2DMesh" ]
+  then
+    EXE="extrude2DMeshApp"
+  fi
+
+  VARIABLES=`echo "$FILES" | grep -v "EXE =" | grep -v "LIB = " | grep "=" | sed -e 's| ||g' -e 's|(|{|g' -e 's|)|}|g'`
+  if [ -n "$VARIABLES" ]
+  then
+    while read VAR
+    do
+      VAR2=`eval echo "$VAR"`
+      eval export -n "$VAR2"
+    done <<< "$VARIABLES"
+  fi
+
+  SOURCES=`echo "$FILES" | grep -v "=" | sed -e 's|(|{|g' -e 's|)|}|g'`
+  SOURCES2=""
+  SOURCES3=""
+  while read SOURCE
+  do
+    if [ -z "$LOOP" ]
+    then
+      if [ "${SOURCE:0:6}" == "#ifdef" ]
+      then
+        LOOP=`echo "$SOURCE" | sed -e 's|#ifdef ||g'`
+        SOURCES3="$SOURCES3
+if($LOOP)
+set(SOURCES
+\${SOURCES}"
+      elif [ "${SOURCE:0:13}" == "#if !defined{" ]
+      then
+        LOOP="NOT`echo "$SOURCE" | sed -e 's|#if !defined{||g' -e 's|}$||g'`"
+        SOURCES3="$SOURCES3
+if($LOOP)
+set(SOURCES
+\${SOURCES}"
+      else
+        SOURCES2="$SOURCES2
+`eval echo $SOURCE`"
+      fi
+    else
+      if [ "$SOURCE" == "#else" ]
+      then
+        SOURCES3="$SOURCES3
+)
+else($LOOP)
+set(SOURCES
+\${SOURCES}"
+      elif [ "$SOURCE" == "#endif" ]
+      then
+        SOURCES3="$SOURCES3
+)
+endif($LOOP)"
+        unset LOOP
+      else
+        SOURCES3="$SOURCES3
+`eval echo $SOURCE`"
+      fi
+    fi
+  done <<< "$SOURCES"
+  SOURCES=$SOURCES2
+  SOURCES2=""
+  FLEX_SOURCES=""
+  for SOURCE in $SOURCES
+  do
+    if [ -f $SOURCE ]
+    then
+      if [ ${#SOURCE} -gt 4 ] && [ ${SOURCE: -5} == ".Cver" ]
+      then
+        DEST=`echo $SOURCE | sed -e 's|Cver$|C|g'`
+        if [ ! -f $DEST ]
+        then
+          cat $SOURCE | sed -e 's|VERSION_STRING|2.3.x|' -e 's|BUILD_STRING|2.3.x|' > $DEST
+        fi
+        SOURCES2="$SOURCES2
+$DEST"
+      elif [ ${SOURCE: -2} == ".L" ]
+      then
+        FLEX_SOURCES="$FLEX_SOURCES $SOURCE"
+        SOURCES2="$SOURCES2
+\${CMAKE_CURRENT_BINARY_DIR}/`echo $SOURCE | sed -e 's|\.L|\.C|g'`"
+      elif [ ${SOURCE: -2} == ".H" ]
+      then
+        SOURCES2="$SOURCES2
+`echo $SOURCE | sed -e 's|\.H$|\.C|g'`"
+      else
+        SOURCES2="$SOURCES2
+$SOURCE"
+      fi
+    elif [ -f `echo $SOURCE | sed -e 's|\.C|\.L|g'` ]
+    then
+      FLEX_SOURCES="$FLEX_SOURCES `echo $SOURCE | sed -e 's|\.C|\.L|g'`"
+      SOURCES2="$SOURCES2
+\${CMAKE_CURRENT_BINARY_DIR}/`echo $SOURCE | sed -e 's|\.L|\.C|g'`"
+    else
+      SOURCES2="$SOURCES2
+$SOURCE"
+    fi
+  done
+  SOURCES=$SOURCES2
+
+  echo "set(SOURCES" >> $CMAKELISTS
+  for SOURCE in $SOURCES
+  do
+    echo "  $SOURCE" >> $CMAKELISTS
+  done
+  echo ")" >> $CMAKELISTS
+
+  echo >> $CMAKELISTS
+
+  if [ -n "$SOURCES3" ]
+  TAB=""
+  then
+    for SOURCE in $SOURCES3
+    do
+      if [ ${SOURCE:0:6} == "endif(" ] || [ ${SOURCE:0:1} == ")" ]
+      then
+        TAB=${TAB:0:-2}
+      fi
+      echo "$TAB`echo "$SOURCE" | sed -e 's|^if(NOT|if(NOT |g' -e 's|^endif(NOT|endif(NOT |g'`" >> $CMAKELISTS
+      if [ ${SOURCE:0:3} == "if(" ] || [ ${SOURCE:0:4} == "set(" ]
+      then
+        TAB="$TAB  "
+      fi
+      if [ ${SOURCE:0:6} == "endif(" ]
+      then
+        echo >> $CMAKELISTS
+      fi
+    done
+  fi
+
+  if [ -n "$LIBS" ]
+  then
+    echo "set(LIBRARIES" >> $CMAKELISTS
+    for LIBA in $LIBS
+    do
+      echo "  $LIBA" >> $CMAKELISTS
+    done
+    echo ")" >> $CMAKELISTS
+    echo >> $CMAKELISTS
+  fi
+
+  if [ -n "$INCLUDES" ]
+  then
+    for INCLUDE in $INCLUDES
+    do
+      if [ ${#INCLUDE} -gt 12 ] && [ ${INCLUDE: -13} == "include.cmake" ]
+      then
+        echo "include($INCLUDE)" >> $CMAKELISTS
+      else
+        echo "include_directories($INCLUDE)" >> $CMAKELISTS
+      fi
+    done
+  fi
+
+  if [ $MAKE_DIR == "src/surfMesh/Make" ]
+  then
+    echo "include_directories(\${ZLIB_INCLUDE_DIR})" >> $CMAKELISTS
+  fi
+  if [ $MAKE_DIR == "src/triSurface/Make" ]
+  then
+    echo "include_directories(\${ZLIB_INCLUDE_DIR})" >> $CMAKELISTS
+  fi
+  if [ $MAKE_DIR == "src/OpenFOAM/Make" ]
+  then
+    echo "include_directories(\${ZLIB_INCLUDE_DIR})" >> $CMAKELISTS
+  fi
+
+  if [ -n "$FLEX_SOURCES" ] || [ $MAKE_DIR == "applications/utilities/thermophysical/chemkinToFoam/Make" ]
+  then
+    echo "include_directories(\${FLEX_INCLUDE_DIR})" >> $CMAKELISTS
+  fi
+  echo >> $CMAKELISTS
+
+  if [ -n "$DEFINITIONS" ]
+  then
+    echo "add_definitions(" >> $CMAKELISTS
+    for DEFINITION in $DEFINITIONS
+    do
+      echo "  $DEFINITION" >> $CMAKELISTS
+    done
+    echo ")" >> $CMAKELISTS
+    echo >> $CMAKELISTS
+  fi
+
+  if [ -n "$FLEX_SOURCES" ]
+  then
+    for FLEX_SOURCE in $FLEX_SOURCES
+    do
+      echo "file(MAKE_DIRECTORY \${CMAKE_CURRENT_BINARY_DIR}/`dirname $FLEX_SOURCE`)" >> $CMAKELISTS
+      echo "flex_target(`basename $FLEX_SOURCE | awk -F. '{print $1}'` $FLEX_SOURCE \${CMAKE_CURRENT_BINARY_DIR}/`echo $FLEX_SOURCE | sed -e 's|\.L|\.C|g'` COMPILE_FLAGS -+)" >> $CMAKELISTS
+    done
+    echo "" >> include.cmake
+    echo >> $CMAKELISTS
+  fi
+
+  if [ -n "$EXE" ]
+  then
+    echo "add_executable(${EXE} \${SOURCES})" >> $CMAKELISTS
+  else
+    echo "add_library($LIB \${SOURCES})" >> $CMAKELISTS
+    echo "set_target_properties($LIB PROPERTIES PREFIX \"\")" >> $CMAKELISTS
+  fi
+
+  echo >> $CMAKELISTS
+
+  if [ -n "$LIBS" ]
+  then
+    if [ -n "$EXE" ]
+    then
+      echo "target_link_libraries($EXE \${LIBRARIES})" >> $CMAKELISTS
+    else
+      echo "target_link_libraries($LIB \${LIBRARIES})" >> $CMAKELISTS
+    fi
+    echo >> $CMAKELISTS
+  fi
+
+  if [ -n "$EXE" ]
+  then
+    echo "install(TARGETS $EXE DESTINATION applications OPTIONAL)" >> $CMAKELISTS
+  else
+    echo "install(TARGETS $LIB DESTINATION lib OPTIONAL)" >> $CMAKELISTS
+  fi
+
+ cd $ROOT_DIR
+}
+
+subdirectory() {
+  cd $DIR
+
+  CMAKELISTS="CMakeLists.txt.subdirectory"
+
+  CHILDREN=`find . -maxdepth 2 -mindepth 2 -name "CMakeLists.txt" | sed -e 's|^\./||g' -e 's|/CMakeLists\.txt||g' | sort`
+
+  if [ -n "$CHILDREN" ]
+  then
+    for CHILD in $CHILDREN
+    do
+      if [ $CHILD == "chtMultiRegionFoam" ] \
+        || [ $CHILD == "chtMultiRegionSimpleFoam" ] \
+      || [ $CHILD == "sonicFoam" ] \
+        || [ $CHILD == "sonicDyMFoam" ] \
+        || [ $CHILD == "sonicLiquidFoam" ] \
+      || [ $CHILD == "reactingFoam" ] \
+      || [ $CHILD == "rhoReactingFoam" ] \
+      || [ $CHILD == "rhoReactingBuoyantFoam" ] \
+      || [ $CHILD == "LTSReactingFoam" ] \
+      || [ $CHILD == "reactingParcelFoam" ] \
+      || [ $CHILD == "DPMFoam" ] \
+      || [ $CHILD == "MPPICFoam" ] \
+      || [ $CHILD == "DPMTurbulenceModels" ] \
+      || [ $CHILD == "twoPhaseEulerFoam" ] \
+        || [ $CHILD == "phaseCompressibleTurbulenceModels" ] \
+        || [ $CHILD == "twoPhaseSystem" ] \
+      || [ $CHILD == "ccm26ToFoam" ] \
+      || [ $CHILD == "cellSizeAndAlignmentGrid" ] \
+      || [ $CHILD == "foamyHexMeshBackgroundMesh" ] \
+      || [ $CHILD == "foamyHexMeshSurfaceSimplify" ] \
+      || [ $CHILD == "foamToTecplot360" ]
+      then
+        echo "#add_subdirectory($CHILD)" >> $CMAKELISTS
+      else
+        echo "add_subdirectory($CHILD)" >> $CMAKELISTS
+     fi
+    done
+  fi
+
+  cd $ROOT_DIR
+}
+
+assemble() {
+  cd $DIR
+
+  if [ -f CMakeLists.txt.subdirectory ] || [ -f CMakeLists.txt.target ]
+  then
+    cat $ROOT_DIR/ccfoam/convert/licence.txt > CMakeLists.txt
+    if [ -f CMakeLists.txt.subdirectory ]
+    then
+      echo >> CMakeLists.txt
+      cat CMakeLists.txt.subdirectory >> CMakeLists.txt
+    fi
+    if [ -f CMakeLists.txt.target ]
+    then
+      echo >> CMakeLists.txt
+      cat CMakeLists.txt.target >> CMakeLists.txt
+    fi
+  fi
+
+  rm -f CMakeLists.txt.subdirectory
+  rm -f CMakeLists.txt.target
+
+  cd $ROOT_DIR
+}
+
+ROOT_DIR=$PWD/$1
+cd $ROOT_DIR
+
+TEMP=`find . -name "CMakeLists.txt"`
+for T in $TEMP
+do
+  if [[ ! $T == */PV3* ]] \
+  && [[ ! $T == */PV4* ]]
+  then
+    rm -rf $T
+  fi
+done
+find . -name "lnInclude" -exec rm -rf {} \;
+find . -name "include.cmake" -exec rm -rf {} \;
+
+
+PASSES="src applications/solvers applications/utilities"
+
+for PASS in $PASSES
+do
+  MAKE_DIRS=`find $PASS -type d -name "Make"`
+  for MAKE_DIR in $MAKE_DIRS
+  do
+    DIR=`dirname $MAKE_DIR`
+    DIR2=`basename $DIR`
+    if [[ ! $DIR == */PV3* ]] && [[ ! $DIR == */PV4* ]] && [ ! $DIR == "src/Pstream/gamma" ] && [ ! $DIR == "src/renumber/zoltanRenumber" ] && [ ! $DIR == "src/renumber/SloanRenumber" ]
+    then
+      echo "$MAKE_DIR"
+      cd $MAKE_DIR/..
+      INCLUDES=""
+      FOLDERS=`find . -type d`
+      for FOLDER in $FOLDERS
+      do
+        COUNT=`find $FOLDER -maxdepth 1 -name "*.C" -o -name "*.H" -o -name "*.L" | wc -w`
+        if [ "$COUNT" -gt 0 ]
+        then
+          INCLUDES="$INCLUDES
+`echo $FOLDER | sed -e 's|^\./||g'`"
+        fi
+      done
+      cat $ROOT_DIR/ccfoam/convert/licence.txt > include.cmake
+      echo >> include.cmake
+      for INCLUDE in `echo "$INCLUDES" | sort`
+      do
+        echo "include_directories(\${PROJECT_SOURCE_DIR}/$DIR/$INCLUDE)" >> include.cmake
+      done
+      cd $ROOT_DIR
+    fi
+  done
+done
+
+#PASSES="applications/utilities/postProcessing/velocityField"
+
+for PASS in $PASSES
+do
+  MAKE_DIRS=`find $PASS -type d -name "Make"`
+  for MAKE_DIR in $MAKE_DIRS
+  do
+    DIR=`dirname $MAKE_DIR`
+    DIR2=`basename $DIR`
+    if [[ ! $DIR == */PV3* ]] && [[ ! $DIR == */PV4* ]] && [ ! $DIR == "src/Pstream/gamma" ] && [ ! $DIR == "src/renumber/zoltanRenumber" ] && [ ! $DIR == "src/renumber/SloanRenumber" ]
+    then
+      cmakelists $MAKE_DIR
+    fi
+  done
+done
+
+DIRS=`find . -depth -type d`
+for DIR in $DIRS
+do
+  DIR2=`basename $DIR`
+  if [[ ! $DIR2 == PV3* ]] && [[ ! $DIR2 == PV4* ]]
+  then
+    subdirectory $DIR
+    assemble $DIR
+  fi
+done
+
+cp ccfoam/convert/CMakeLists.txt.root CMakeLists.txt
+cp ccfoam/convert/CMakeLists.txt.src src/CMakeLists.txt
+cp ccfoam/convert/CMakeLists.txt.etc etc/CMakeLists.txt

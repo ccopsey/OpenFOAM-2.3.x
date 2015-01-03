@@ -1,0 +1,77 @@
+#!/bin/bash
+#
+#   Copyright (C) 2014-15 Chris Copsey
+#
+#   This file is part of ccFOAM.
+#
+#   ccFOAM is free software: you can redistribute it and/or modify it under the
+#   terms of the GNU General Public License as published by the Free Software
+#   Foundation, either version 3 of the License, or (at your option) any later
+#   version.
+#
+#   ccFOAM is distributed in the hope that it will be useful, but WITHOUT ANY
+#   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#   FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+#   details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+source /usr/share/modules/init/bash
+
+module load gcc/4.9.2
+module load cmake/3.0.2/gnu
+
+NAME="metis"
+VERSION="5.1.0"
+LABEL="gnu"
+ROOT_DIR="/build"
+ARCHIVES_DIR="$ROOT_DIR/archives"
+ARCHIVE_PREFIX="${NAME}-${VERSION}"
+ARCHIVE_SUFFIX="tar.gz"
+SRC_DIR="$ROOT_DIR/$NAME"
+SRC_PATH="${SRC_DIR}/${ARCHIVE_PREFIX}"
+INSTALL_PREFIX="/opt"
+URL="http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/metis-5.1.0.tar.gz"
+
+CORES=8
+
+#####
+
+BUILD_DIR="${SRC_PATH}-${LABEL}"
+ARCHIVE_FILE="${ARCHIVE_PREFIX}.${ARCHIVE_SUFFIX}"
+ARCHIVE_PATH="${ARCHIVES_DIR}/${ARCHIVE_FILE}"
+
+if [ ! -d ${ARCHIVES_DIR} ]
+then
+  mkdir -p ${ARCHIVES_DIR}
+fi
+
+if [ ! -f ${ARCHIVE_PATH} ]
+then
+  wget ${URL} -O ${ARCHIVE_PATH}
+fi
+
+if [ ! -d ${SRC_DIR} ]
+then
+  mkdir -p ${SRC_DIR}
+fi
+
+cd ${SRC_DIR}
+
+if [ ! -d ${SRC_PATH} ]
+then
+  tar -zxf ${ARCHIVE_PATH}
+fi
+
+if [ ! -d ${BUILD_DIR} ]
+then
+  mkdir -p ${BUILD_DIR}
+fi
+
+cd ${BUILD_DIR}
+
+cmake ${SRC_PATH} -DCMAKE_VERBOSE_MAKEFILE=1 -DGKLIB_PATH=${SRC_PATH}/GKlib -DCMAKE_INSTALL_PREFIX=${INSTALL_PREFIX}/${NAME}/${VERSION}/${LABEL} \
+&& make -j ${CORES} \
+&& make install

@@ -1,0 +1,80 @@
+#!/bin/bash
+#
+#   Copyright (C) 2014-15 Chris Copsey
+#
+#   This file is part of ccFOAM.
+#
+#   ccFOAM is free software: you can redistribute it and/or modify it under the
+#   terms of the GNU General Public License as published by the Free Software
+#   Foundation, either version 3 of the License, or (at your option) any later
+#   version.
+#
+#   ccFOAM is distributed in the hope that it will be useful, but WITHOUT ANY
+#   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#   FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+#   details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+source /usr/share/modules/init/bash
+
+module load gcc/4.9.2
+module load cmake/3.0.2/gnu
+module load boost/1.57.0/gnu
+module load cgal/4.5/gnu
+module load gmp/6.0.0/gnu
+module load mpfr/3.1.2/gnu
+module load parmgridgen/1.0/gnu
+module load zlib/1.2.8/gnu
+module load flex/2.5.39/gnu
+module load metis/5.1.0/gnu
+module load parmetis/4.0.3/gnu
+module load openmpi/1.6.5/gnu
+module load scotch/6.0.3/gnu
+
+NAME="CMakeFOAM"
+VERSION="2.3.x"
+LABEL="gnu"
+ROOT_DIR="/build/ccFOAM"
+ARCHIVE_PREFIX="${NAME}-${VERSION}"
+SRC_PATH="${ROOT_DIR}/${ARCHIVE_PREFIX}"
+INSTALL_PREFIX="/opt"
+
+CORES=8
+
+#####
+
+BUILD_DIR="${SRC_PATH}-${LABEL}"
+
+if [ ! -d ${BUILD_DIR} ]
+then
+  mkdir -p ${BUILD_DIR}
+fi
+
+cd $BUILD_DIR
+
+# -Wno-deprecated-declarations
+
+cmake ${SRC_PATH} \
+  -DBUILD_SHARED_LIBS=ON \
+  -DCMAKE_INSTALL_PREFIX=/opt/${NAME}/${VERSION}/${LABEL} \
+  -DCMAKE_C_COMPILER=${GCC_ROOT}/bin/gcc \
+  -DCMAKE_CXX_COMPILER=${GCC_ROOT}/bin/g++ \
+  -DBOOST_ROOT=${BOOST_ROOT} \
+  -DCGAL_ROOT=${CGAL_ROOT} \
+  -DFLEX_EXECUTABLE=${FLEX_ROOT}/bin/flex \
+  -DFLEX_INCLUDE_DIR=${FLEX_ROOT}/include \
+  -DGMP_ROOT=${GMP_ROOT} \
+  -DMETIS_ROOT=${METIS_ROOT} \
+  -DMGRIDGEN_ROOT=${PARMGRIDGEN_ROOT} \
+  -DMPFR_ROOT=${MPFR_ROOT} \
+  -DMPI_C_COMPILER=${OPENMPI_ROOT}/bin/mpicc \
+  -DMPI_CXX_COMPILER=${OPENMPI_ROOT}/bin/mpicxx \
+  -DPARMETIS_ROOT=${PARMETIS_ROOT} \
+  -DPARMGRIDGEN_ROOT=${PARMGRIDGEN_ROOT} \
+  -DSCOTCH_ROOT=${SCOTCH_ROOT} \
+  -DZLIB_ROOT=${ZLIB_ROOT} \
+&& make -j ${CORES}\
+&& make all install

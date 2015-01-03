@@ -1,0 +1,96 @@
+#%Module1.0
+#
+#   Copyright (C) 2014 Chris Copsey
+#
+#   This file is part of ccFOAM.
+#
+#   ccFOAM is free software: you can redistribute it and/or modify it under the
+#   terms of the GNU General Public License as published by the Free Software
+#   Foundation, either version 3 of the License, or (at your option) any later
+#   version.
+#
+#   ccFOAM is distributed in the hope that it will be useful, but WITHOUT ANY
+#   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#   FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+#   details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+proc ModulesHelp { } {
+  global dotversion
+  puts stderr "\tIntel Compiler 2015"
+}
+
+module-whatis "Intel Compiler 2015"
+conflict intel
+
+set root /opt/intel/composer_xe_2015.1.133
+
+setenv		INTEL_AR		$root/bin/intel64/xiar
+setenv		INTEL_C_COMPILER	$root/bin/intel64/icc
+setenv		INTEL_CXX_COMPILER	$root/bin/intel64/icpc
+setenv		INTEL_LINKER		$root/bin/intel64/xild
+
+prepend-path	CPATH			$root/ipp/include
+prepend-path    CPATH                   $root/mkl/include
+prepend-path    CPATH                   $root/tbb/include
+
+setenv		GDB_CROSS		$root/debugger/gdb/intel64_mic/bin/gdb-mi
+
+setenv		GDBSERVER_MIC		$root/debugger/gdb/target/mic/bin/gdbserver
+
+prepend-path	INCLUDE			$root/mkl/include
+
+prepend-path	INFOPATH		$root/debugger/gdb/intel64/share/info
+prepend-path	INFOPATH		$root/debugger/gdb/intel64_mic/share/info
+
+prepend-path	INTEL_LICENSE_FILE	$root/licenses
+prepend-path	INTEL_LICENSE_FILE	/opt/intel/licenses
+prepend-path	INTEL_LICENSE_FILE	/home/chris/intel/licenses
+
+setenv		INTEL_PYTHONHOME	$root/debugger/python/intel64/
+
+setenv		IPPROOT			$root/ipp
+
+prepend-path    LD_INCLUDE_PATH         $root/include
+
+prepend-path	LD_LIBRARY_PATH		$root/compiler/lib/intel64
+prepend-path    LD_LIBRARY_PATH         $root/mpirt/lib/intel64
+prepend-path    LD_LIBRARY_PATH         $root/ipp/lib/intel64
+prepend-path    LD_LIBRARY_PATH         $root/mkl/lib/intel64
+prepend-path    LD_LIBRARY_PATH         $root/tbb/lib/intel64/gcc4.4
+
+prepend-path    LIBRARY_PATH            $root/compiler/lib/intel64
+prepend-path    LIBRARY_PATH            $root/ipp/lib/intel64
+prepend-path    LIBRARY_PATH            $root/mkl/lib/intel64
+prepend-path    LIBRARY_PATH            $root/tbb/lib/intel64/gcc4.4
+
+prepend-path	MANPATH			$root/man/en_US
+prepend-path	MANPATH			$root/debugger/gdb/intel64/share/man
+prepend-path	MANPATH			$root/debugger/gdb/intel64_mic/share/man
+
+prepend-path	MIC_LD_LIBRARY_PATH	$root/compiler/lib/mic
+prepend-path	MIC_LD_LIBRARY_PATH	$root/mpirt/lib/mic
+prepend-path	MIC_LD_LIBRARY_PATH	$root/mkl/lib/mic
+prepend-path	MIC_LD_LIBRARY_PATH	$root/tbb/lib/mic
+
+prepend-path	MIC_LIBRARY_PATH	$root/compiler/lib/mic
+prepend-path    MIC_LIBRARY_PATH        $root/mpirt/lib/mic
+prepend-path    MIC_LIBRARY_PATH        $root/tbb/lib/mic
+
+setenv		MKLROOT			$root/mkl
+
+setenv		MPM_LAUNCHER		$root/debugger/mpm/bin/start_mpm.sh
+
+prepend-path	NLSPATH			$root/compiler/lib/intel64/locale/%l_%t/%N
+prepend-path    NLSPATH                 $root/ipp/lib/intel64/locale/%l_%t/%N
+prepend-path    NLSPATH                 $root/mkl/lib/intel64/locale/%l_%t/%N
+prepend-path    NLSPATH                 $root/debugger/gdb/intel64_mic/share/locale/%l_%t/%N
+prepend-path    NLSPATH                 $root/debugger/gdb/intel64/share/locale/%l_%t/%N
+
+prepend-path	PATH			$root/bin/intel64
+prepend-path	PATH			$root/debugger/gdb/intel64_mic/bin
+
+setenv		TBBROOT			$root/tbb
