@@ -1,6 +1,6 @@
 # ccFOAM-2.3.x
 
-[![Build Status](https://travis-ci.org/ccopsey/ccFOAM-2.3.x.svg?branch=CMakeFOAM)](https://travis-ci.org/ccopsey/ccFOAM-2.3.x)
+[![Build Status](https://travis-ci.org/ccopsey/ccFOAM-2.3.x.svg?branch=MultiPlatformFOAM)](https://travis-ci.org/ccopsey/ccFOAM-2.3.x)
 
 ccFOAM is a fork of [OpenFOAM](http://www.openfoam.org) designed to improve ease of build and use.  Without modification to any of the existing project files it intends to add the following enhancements:
 
