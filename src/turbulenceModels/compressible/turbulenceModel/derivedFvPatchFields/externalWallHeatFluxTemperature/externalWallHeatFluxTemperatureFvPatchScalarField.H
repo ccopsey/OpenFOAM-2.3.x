@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 2011-2014 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2015 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -39,9 +39,9 @@ Description
 
     where:
     \vartable
-        h  | heat transfer coefficient [W/m2/K]
+        h  | heat transfer coefficient [W/m^2/K]
         Ta | ambient temperature [K]
-        q  | heat flux [W/m2]
+        q  | heat flux [W/m^2]
     \endvartable
 
     The thermal conductivity, \c kappa, can either be retrieved from the
@@ -54,9 +54,9 @@ Description
     \table
         Property     | Description             | Required    | Default value
         kappa        | thermal conductivity option | yes     |
-        q            | heat flux [W/m2]            | yes*    |
+        q            | heat flux [W/m^2]            | yes*    |
         Ta           | ambient temperature [K]     | yes*    |
-        h            | heat transfer coefficient [W/m/K] | yes*|
+        h            | heat transfer coefficient [W/m^2/K] | yes*|
         thicknessLayers | list of thicknesses per layer [m] | yes |
         kappaLayers  | list of thermal conductivites per layer [W/m/K] | yes |
         kappaName    | name of thermal conductivity field | yes  |
@@ -73,7 +73,7 @@ Description
         Ta              uniform 300.0;
         h               uniform 10.0;
         thicknessLayers (0.1 0.2 0.3 0.4);
-        kappaLayers     (1 2 3 4)
+        kappaLayers     (1 2 3 4);
         value           uniform 300.0;
         kappaName       none;
         QrName          none;

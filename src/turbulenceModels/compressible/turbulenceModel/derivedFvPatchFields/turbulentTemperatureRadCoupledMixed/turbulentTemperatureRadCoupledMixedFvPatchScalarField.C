@@ -123,16 +123,12 @@ turbulentTemperatureRadCoupledMixedFvPatchScalarField
 
         if (thicknessLayers_.size() > 0)
         {
-            // total thermal transmittance by harmonic averaging
+            // Calculate effective thermal resistance by harmonic averaging
             forAll (thicknessLayers_, iLayer)
             {
-                const scalar l = thicknessLayers_[iLayer];
-                if (l > 0.0)
-                {
-                    contactRes_ += l/kappaLayers_[iLayer]; // inverse sum
-                }
+                contactRes_ += thicknessLayers_[iLayer]/kappaLayers_[iLayer];
             }
-            contactRes_ = 1.0/contactRes_; // new total inverse
+            contactRes_ = 1.0/contactRes_;
         }
     }
 
@@ -223,7 +219,7 @@ void turbulentTemperatureRadCoupledMixedFvPatchScalarField::updateCoeffs()
     }
     mpp.distribute(KDeltaNbr);
 
-    scalarField KDelta(kappa(*this)*patch().deltaCoeffs());
+    scalarField KDelta(kappa(Tp)*patch().deltaCoeffs());
 
     scalarField Qr(Tp.size(), 0.0);
     if (QrName_ != "none")
@@ -238,17 +234,15 @@ void turbulentTemperatureRadCoupledMixedFvPatchScalarField::updateCoeffs()
         mpp.distribute(QrNbr);
     }
 
-    scalarField alpha(KDeltaNbr - (Qr + QrNbr)/Tp);
-
-    valueFraction() = alpha/(alpha + KDelta);
-
-    refValue() = (KDeltaNbr*TcNbr)/alpha;
+    valueFraction() = KDeltaNbr/(KDeltaNbr + KDelta);
+    refValue() = TcNbr;
+    refGrad() = (Qr + QrNbr)/kappa(Tp);
 
     mixedFvPatchScalarField::updateCoeffs();
 
     if (debug)
     {
-        scalar Q = gSum(kappa(*this)*patch().magSf()*snGrad());
+        scalar Q = gSum(kappa(Tp)*patch().magSf()*snGrad());
 
         Info<< patch().boundaryMesh().mesh().name() << ':'
             << patch().name() << ':'
@@ -258,9 +252,9 @@ void turbulentTemperatureRadCoupledMixedFvPatchScalarField::updateCoeffs()
             << this->dimensionedInternalField().name() << " :"
             << " heat transfer rate:" << Q
             << " walltemperature "
-            << " min:" << gMin(*this)
-            << " max:" << gMax(*this)
-            << " avg:" << gAverage(*this)
+            << " min:" << gMin(Tp)
+            << " max:" << gMax(Tp)
+            << " avg:" << gAverage(Tp)
             << endl;
     }
 

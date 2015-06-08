@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 2012-2014 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2012-2015 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -44,6 +44,7 @@ namespace fv
     );
 }
 }
+
 
 // * * * * * * * * * * * * * Protected Member Functions  * * * * * * * * * * //
 
@@ -103,6 +104,9 @@ void Foam::fv::MRFSource::addSup
     const label fieldI
 )
 {
+    // Update the velocity boundary conditions for changes in rotation speed
+    mrfPtr_->correctBoundaryVelocity(const_cast<volVectorField&>(eqn.psi()));
+
     // Add to rhs of equation
     mrfPtr_->addCoriolis(eqn, true);
 }
@@ -115,6 +119,9 @@ void Foam::fv::MRFSource::addSup
     const label fieldI
 )
 {
+    // Update the velocity boundary conditions for changes in rotation speed
+    mrfPtr_->correctBoundaryVelocity(const_cast<volVectorField&>(eqn.psi()));
+
     // Add to rhs of equation
     mrfPtr_->addCoriolis(rho, eqn, true);
 }
