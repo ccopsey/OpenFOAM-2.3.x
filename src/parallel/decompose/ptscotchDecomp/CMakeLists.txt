@@ -25,7 +25,7 @@ set(LIBRARIES
   ${PTSCOTCH_LIBRARY}
   ${SCOTCH_LIBRARY}
   ${PTSCOTCH_ERREXIT_LIBRARY}
-  ${RT_LIBRARIES}
+  ${RT_LIBRARY}
 )
 
 include_directories(.)

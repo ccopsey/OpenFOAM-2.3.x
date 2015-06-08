@@ -25,7 +25,7 @@ set(SOURCES
 )
 
 set(LIBRARIES
-  ${MPI_LIBRARY}
+  ${MPI_CXX_LIBRARIES}
 )
 
 include_directories(.)

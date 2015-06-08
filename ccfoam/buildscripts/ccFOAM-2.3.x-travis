@@ -1,0 +1,51 @@
+#!/bin/bash
+#
+#   Copyright (C) 2014-15 Chris Copsey
+#
+#   This file is part of ccFOAM.
+#
+#   ccFOAM is free software: you can redistribute it and/or modify it under the
+#   terms of the GNU General Public License as published by the Free Software
+#   Foundation, either version 3 of the License, or (at your option) any later
+#   version.
+#
+#   ccFOAM is distributed in the hope that it will be useful, but WITHOUT ANY
+#   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#   FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+#   details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+DEPS_DIR="dependencies"
+GRAPHVIZ_DIR="graphviz"
+
+#####
+
+SRC_PATH=`pwd`
+DEPS_PATH="${HOME}/${DEPS_DIR}"
+#LAH="-LAH"
+#GRAPHVIZ_PATH="${HOME}/${GRAPHVIZ_DIR}"
+#GRAPHVIZ="--graphviz=${GRAPHVIZ_PATH}"
+
+# CMake 2.8.7 doesn't build multiple targets in parallel correctly.
+CORES=1
+if [ "$TARGET" == "all" ]
+then
+  CORES=2
+fi
+
+cmake ${LAH} ${GRAPHVIZ} . \
+  -DBUILD_SHARED_LIBS=ON \
+  -DCMAKE_CXX_FLAGS="-w" \
+  -DCGAL_ROOT=${DEPS_PATH}/cgal-4.5-install \
+  -DMETIS_ROOT=${DEPS_PATH}/metis-5.1.0-install \
+  -DPARMETIS_ROOT=${DEPS_PATH}/parmetis-4.0.3-install \
+  -DMGRIDGEN_ROOT=${DEPS_PATH}/parmgridgen-1.0-install \
+  -DPARMGRIDGEN_ROOT=${DEPS_PATH}/parmgridgen-1.0-install \
+  -DSCOTCH_ROOT=${DEPS_PATH}/scotch-6.0.4-install
+
+#cat ${GRAPHVIZ_PATH}
+
+make -j ${CORES} ${TARGET}

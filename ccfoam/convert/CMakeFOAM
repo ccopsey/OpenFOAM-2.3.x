@@ -18,6 +18,8 @@
 #   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+LC_ALL=en_GB
+
 cmakelists () {
   echo $MAKE_DIR
   cd $MAKE_DIR/..
@@ -127,7 +129,7 @@ $DIRNAME"
 
   LIBS=`echo "$OPTIONS" | grep "EXE_LIBS\|LIB_LIBS" | sed -e 's|EXE_LIBS = \?||g' -e 's|LIB_LIBS = \?||g' -e 's|${FOAM_EXT_LIBBIN}/||g' -e 's|${FOAM_LIBBIN}/||g' -e 's|-l||g'`
   LIBS=`echo $LIBS | sed -e 's|${CGAL_LIBS}|(CGAL_LIBRARY) (GMP_LIBRARY) (MPFR_LIBRARY) (BOOST_SYSTEM_LIBRARY) (BOOST_THREAD_LIBRARY)|g'`
-  LIBS=`echo $LIBS | sed -e 's|${PLIBS}|(MPI_LIBRARY)|g'`
+  LIBS=`echo $LIBS | sed -e 's|${PLIBS}|(MPI_CXX_LIBRARIES)|g'`
   LIBS=`eval echo \"$LIBS\"`
   LIBS=`echo $LIBS | sed -e 's|(|${|g' -e 's|)|}|g'`
 
@@ -138,7 +140,7 @@ $DIRNAME"
     then
       if [ $LIBSA == "metis" ]
       then
-        LIBS2="$LIBS2 $LIBSA"
+        LIBS2="$LIBS2 \${METIS_LIBRARY}"
       elif [ $LIBSA == "MGridGen" ]
       then
         LIBS2="$LIBS2 \${MGRIDGEN_LIBRARY}"
@@ -162,7 +164,7 @@ $DIRNAME"
         LIBS2="$LIBS2 \${PTSCOTCH_ERREXIT_LIBRARY}"
       elif [ $LIBSA == "rt" ]
       then
-        LIBS2="$LIBS2 \${RT_LIBRARIES}"
+        LIBS2="$LIBS2 \${RT_LIBRARY}"
       elif [ ${LIBSA:0:1} == "$" ]
       then
         LIBS2="$LIBS2 $LIBSA"
