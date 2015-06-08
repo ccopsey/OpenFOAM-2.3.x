@@ -20,13 +20,13 @@
 
 source /usr/share/modules/init/bash
 
-module load intel/15.0.1
-module load zlib/1.2.8/intel
-module load openmpi/1.6.5/intel
+module load gcc/4.9.2
+module load zlib/1.2.8/gnu
+module load openmpi/1.6.5/gnu
 
 NAME="scotch"
-VERSION="6.0.3"
-LABEL="intel"
+VERSION="6.0.4"
+LABEL="gnu"
 ROOT_DIR="/build"
 ARCHIVES_DIR="$ROOT_DIR/archives"
 ARCHIVE_PREFIX="${NAME}-${VERSION}"
@@ -34,7 +34,7 @@ ARCHIVE_SUFFIX="tar.gz"
 SRC_DIR="$ROOT_DIR/$NAME"
 SRC_PATH="${SRC_DIR}/${ARCHIVE_PREFIX}"
 INSTALL_PREFIX="/opt"
-URL="https://gforge.inria.fr/frs/download.php/file/34099/scotch_6.0.3.tar.gz"
+URL="https://github.com/ccopsey/scotch/archive/6.0.4.tar.gz"
 
 CORES=8
 

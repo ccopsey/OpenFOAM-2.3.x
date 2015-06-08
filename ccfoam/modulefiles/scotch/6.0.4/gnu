@@ -1,3 +1,4 @@
+#%Module1.0
 #
 #   Copyright (C) 2014-15 Chris Copsey
 #
@@ -17,33 +18,21 @@
 #   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-include(FindPackageHandleStandardArgs)
+proc ModulesHelp { } {
+global dotversion
+ 
+puts stderr "\tscotch 6.0.4 (GNU)"
+}
+ 
+module-whatis "scotch 6.0.4 (GNU)"
+conflict scotch
 
-if(NOT METIS_LIBRARY OR NOT METIS_INCLUDE_DIR)
+set		root		/opt/scotch/6.0.4/gnu
 
-  find_path(METIS_INCLUDE_DIR
-    NAMES "metis.h"
-    HINTS ${METIS_INCLUDE_DIR} ${METIS_ROOT}/include ${CMAKE_EXTRA_INCLUDES}
-    PATH_SUFFIXES metis
-  )
+setenv		SCOTCH_ROOT	$root
 
-  if (NOT METIS_INCLUDE_DIR)
-    message(SEND_ERROR "Can not locate METIS include directory")
-  endif()
-
-  find_library(METIS_LIBRARY
-    NAMES "metis"
-    HINTS ${METIS_LIBRARY_DIR} ${METIS_ROOT}/lib ${CMAKE_EXTRA_LIBRARIES}
-  )
-
-  if(NOT METIS_LIBRARY)
-    message(SEND_ERROR "Can not locate METIS library")
-  endif()    
-
-endif()
-
-find_package_handle_standard_args(METIS
-  DEFAULT_MSG
-  METIS_LIBRARY
-  METIS_INCLUDE_DIR
-)
+prepend-path	PATH		$root/bin
+prepend-path	LD_INCLUDE_PATH $root/include
+prepend-path	LD_LIBRARY_PATH	$root/lib
+prepend-path	LIBRARY_PATH	$root/lib
+prepend-path	MANPATH		$root/share/man

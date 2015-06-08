@@ -17,33 +17,6 @@
 #   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-include(FindPackageHandleStandardArgs)
-
-if(NOT METIS_LIBRARY OR NOT METIS_INCLUDE_DIR)
-
-  find_path(METIS_INCLUDE_DIR
-    NAMES "metis.h"
-    HINTS ${METIS_INCLUDE_DIR} ${METIS_ROOT}/include ${CMAKE_EXTRA_INCLUDES}
-    PATH_SUFFIXES metis
-  )
-
-  if (NOT METIS_INCLUDE_DIR)
-    message(SEND_ERROR "Can not locate METIS include directory")
-  endif()
-
-  find_library(METIS_LIBRARY
-    NAMES "metis"
-    HINTS ${METIS_LIBRARY_DIR} ${METIS_ROOT}/lib ${CMAKE_EXTRA_LIBRARIES}
-  )
-
-  if(NOT METIS_LIBRARY)
-    message(SEND_ERROR "Can not locate METIS library")
-  endif()    
-
-endif()
-
-find_package_handle_standard_args(METIS
-  DEFAULT_MSG
-  METIS_LIBRARY
-  METIS_INCLUDE_DIR
-)
+set(GRAPHVIZ_GENERATE_PER_TARGET OFF)
+set(GRAPHVIZ_GENERATE_DEPENDERS OFF)
+set(GRAPHVIZ_EXECUTABLES OFF)

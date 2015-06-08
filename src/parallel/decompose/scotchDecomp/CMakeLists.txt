@@ -24,7 +24,7 @@ set(SOURCES
 set(LIBRARIES
   ${SCOTCH_LIBRARY}
   ${SCOTCH_ERREXIT_LIBRARY}
-  ${RT_LIBRARIES}
+  ${RT_LIBRARY}
 )
 
 include(include.cmake)

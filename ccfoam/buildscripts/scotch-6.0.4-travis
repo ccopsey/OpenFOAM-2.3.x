@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+#   Copyright (C) 2014-15 Chris Copsey
+#
+#   This file is part of ccFOAM.
+#
+#   ccFOAM is free software: you can redistribute it and/or modify it under the
+#   terms of the GNU General Public License as published by the Free Software
+#   Foundation, either version 3 of the License, or (at your option) any later
+#   version.
+#
+#   ccFOAM is distributed in the hope that it will be useful, but WITHOUT ANY
+#   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#   FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+#   details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+URL="https://github.com/ccopsey/scotch/archive/6.0.4.tar.gz"
+NAME="scotch"
+VERSION="6.0.4"
+ARCHIVE_SUFFIX="tar.gz"
+INSTALL_SUFFIX="install"
+DEPS_DIR="dependencies"
+
+CORES=2
+
+#####
+
+WORKSPACE_DIR=`pwd`
+DEPS_PATH="${HOME}/${DEPS_DIR}"
+ARCHIVE_PREFIX="${NAME}-${VERSION}"
+ARCHIVE_FILE="${ARCHIVE_PREFIX}.${ARCHIVE_SUFFIX}"
+SRC_PATH="${DEPS_PATH}/${ARCHIVE_PREFIX}"
+INSTALL_DIR="${ARCHIVE_PREFIX}-${INSTALL_SUFFIX}"
+INSTALL_PATH="${DEPS_PATH}/${INSTALL_DIR}"
+
+if [ ! -d ${DEPS_PATH} ]
+then
+  mkdir -p ${DEPS_PATH}
+fi
+
+if [ ! -f ${DEPS_PATH}/${ARCHIVE_PREFIX} ]
+then
+  cd ${DEPS_PATH}
+
+  wget ${URL} -O ${ARCHIVE_FILE}
+  tar -zxf ${ARCHIVE_FILE} --transform 's|scotch_\([0-9.]*\)|scotch-\1|g'
+fi
+
+mkdir -p ${INSTALL_PATH}
+
+cd ${ARCHIVE_PREFIX}/src
+
+cat Make.inc/Makefile.inc.i686_pc_linux2.shlib | sed -e 's|-lz|-L/usr/lib/x86_64-linux-gnu -lz -lrt|g' -e 's|gcc|mpicc|g' > Makefile.inc
+make ptscotch \
+&& make prefix=${INSTALL_PATH} install

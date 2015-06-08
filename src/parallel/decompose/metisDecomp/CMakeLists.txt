@@ -22,7 +22,7 @@ set(SOURCES
 )
 
 set(LIBRARIES
-  metis
+  ${METIS_LIBRARY}
 )
 
 include(include.cmake)

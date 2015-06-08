@@ -32,7 +32,7 @@ module load flex/2.5.39/gnu
 module load metis/5.1.0/gnu
 module load parmetis/4.0.3/gnu
 module load openmpi/1.6.5/gnu
-module load scotch/6.0.3/gnu
+module load scotch/6.0.4/gnu
 
 NAME="CMakeFOAM"
 VERSION="2.3.x"
