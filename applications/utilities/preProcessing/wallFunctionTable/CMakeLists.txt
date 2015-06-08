@@ -27,6 +27,7 @@ set(LIBRARIES
   libOpenFOAM
   libtabulatedWallFunctions
   libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -35,6 +36,7 @@ include(../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../src/finiteVolume/include.cmake)
 include(./tabulatedWallFunction/include.cmake)
 include(../../../../src/turbulenceModels/incompressible/RAS/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(wallFunctionTable ${SOURCES})
 

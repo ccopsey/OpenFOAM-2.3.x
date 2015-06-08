@@ -35,7 +35,7 @@ set(SOURCES
   submodels/kinematic/injectionModel/injectionModel/injectionModelNew.C
   submodels/kinematic/injectionModel/injectionModelList/injectionModelList.C
   submodels/kinematic/injectionModel/drippingInjection/drippingInjection.C
-  submodels/kinematic/injectionModel/removeInjection/removeInjection.C
+  submodels/kinematic/injectionModel/patchInjection/patchInjection.C
   submodels/kinematic/injectionModel/curvatureSeparation/curvatureSeparation.C
   submodels/kinematic/filmThermoModel/filmThermoModel/filmThermoModel.C
   submodels/kinematic/filmThermoModel/filmThermoModel/filmThermoModelNew.C

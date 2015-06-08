@@ -136,6 +136,7 @@ set(SOURCES
   db/dictionary/functionEntries/codeStream/codeStream.C
   db/dictionary/functionEntries/functionEntry/functionEntry.C
   db/dictionary/functionEntries/includeEntry/includeEntry.C
+  db/dictionary/functionEntries/includeEtcEntry/includeEtcEntry.C
   db/dictionary/functionEntries/includeIfPresentEntry/includeIfPresentEntry.C
   db/dictionary/functionEntries/inputModeEntry/inputModeEntry.C
   db/dictionary/functionEntries/removeEntry/removeEntry.C

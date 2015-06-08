@@ -28,8 +28,9 @@ set(LIBRARIES
   libfluidThermophysicalModels
   libspecie
   libcompressibleRASModels
-  libfiniteVolume
   libgenericPatchFields
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -39,6 +40,7 @@ include(../../../../../src/finiteVolume/include.cmake)
 include_directories(../../../../../src/transportModels)
 include_directories(../../../../../src/turbulenceModels)
 include(../../../../../src/thermophysicalModels/basic/include.cmake)
+include(../../../../../src/meshTools/include.cmake)
 
 add_executable(wallShearStress ${SOURCES})
 

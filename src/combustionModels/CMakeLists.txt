@@ -40,9 +40,10 @@ set(SOURCES
 )
 
 set(LIBRARIES
-  libfiniteVolume
   libcompressibleLESModels
   libchemistryModel
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -58,6 +59,7 @@ include_directories(../../src/turbulenceModels/)
 include(../../src/turbulenceModels/LES/LESdeltas/include.cmake)
 include(../../src/turbulenceModels/LES/LESfilters/include.cmake)
 include(../../src/turbulenceModels/compressible/LES/include.cmake)
+include(../../src/meshTools/include.cmake)
 
 add_library(libcombustionModels ${SOURCES})
 set_target_properties(libcombustionModels PROPERTIES PREFIX "")

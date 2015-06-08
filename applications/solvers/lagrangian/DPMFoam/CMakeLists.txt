@@ -26,8 +26,6 @@ set(SOURCES
 
 set(LIBRARIES
   libOpenFOAM
-  libfiniteVolume
-  libmeshTools
   liblagrangian
   liblagrangianIntermediate
   liblagrangianTurbulentSubModels
@@ -41,6 +39,8 @@ set(LIBRARIES
   libregionModels
   libsurfaceFilmModels
   libsampling
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -48,10 +48,10 @@ include(../../../../src/OpenFOAM/include.cmake)
 include(../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../src/finiteVolume/include.cmake)
 include(./DPMTurbulenceModels/include.cmake)
-include(../../../../src/meshTools/include.cmake)
 include(../../../../src/lagrangian/basic/include.cmake)
 include(../../../../src/lagrangian/intermediate/include.cmake)
 include(../../../../src/thermophysicalModels/specie/include.cmake)
+include(../../../../src/transportModels/compressible/include.cmake)
 include(../../../../src/thermophysicalModels/basic/include.cmake)
 include(../../../../src/thermophysicalModels/reactionThermo/include.cmake)
 include_directories(../../../../src/transportModels)
@@ -60,6 +60,7 @@ include(../../../../src/TurbulenceModels/turbulenceModels/include.cmake)
 include(../../../../src/TurbulenceModels/incompressible/include.cmake)
 include(../../../../src/regionModels/regionModel/include.cmake)
 include(../../../../src/regionModels/surfaceFilmModels/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(DPMFoam ${SOURCES})
 

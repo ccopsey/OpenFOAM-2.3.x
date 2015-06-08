@@ -41,6 +41,7 @@ include(../../../src/OSspecific/POSIX/include.cmake)
 include_directories(..)
 include(../../../src/finiteVolume/include.cmake)
 include(../twoPhaseMixture/include.cmake)
+include(../../../src/meshTools/include.cmake)
 
 add_library(libincompressibleTransportModels ${SOURCES})
 set_target_properties(libincompressibleTransportModels PROPERTIES PREFIX "")

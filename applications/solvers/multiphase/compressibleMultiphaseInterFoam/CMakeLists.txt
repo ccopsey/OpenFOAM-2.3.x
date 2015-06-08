@@ -33,6 +33,7 @@ set(LIBRARIES
   libcompressibleRASModels
   libcompressibleLESModels
   libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -46,6 +47,7 @@ include(../../../../src/thermophysicalModels/basic/include.cmake)
 include(../../../../src/transportModels/twoPhaseMixture/include.cmake)
 include(../../../../src/transportModels/interfaceProperties/include.cmake)
 include_directories(../../../../src/turbulenceModels/compressible/turbulenceModel)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(compressibleMultiphaseInterFoam ${SOURCES})
 

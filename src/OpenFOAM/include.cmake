@@ -70,6 +70,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEnt
 include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEntries/codeStream)
 include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEntries/functionEntry)
 include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEntries/includeEntry)
+include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEntries/includeEtcEntry)
 include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEntries/includeIfPresentEntry)
 include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEntries/inputModeEntry)
 include_directories(${PROJECT_SOURCE_DIR}/src/OpenFOAM/db/dictionary/functionEntries/removeEntry)

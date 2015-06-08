@@ -26,12 +26,14 @@ set(SOURCES
 
 set(LIBRARIES
   libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
 include(../../../../src/OpenFOAM/include.cmake)
 include(../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../src/finiteVolume/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_library(libLESfilters ${SOURCES})
 set_target_properties(libLESfilters PROPERTIES PREFIX "")

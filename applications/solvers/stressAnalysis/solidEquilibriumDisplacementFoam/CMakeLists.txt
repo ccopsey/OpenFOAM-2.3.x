@@ -25,6 +25,7 @@ set(SOURCES
 set(LIBRARIES
   libOpenFOAM
   libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -32,6 +33,7 @@ include(../../../../src/OpenFOAM/include.cmake)
 include(../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../src/finiteVolume/include.cmake)
 include_directories(../solidDisplacementFoam)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(solidEquilibriumDisplacementFoam ${SOURCES})
 

@@ -23,9 +23,10 @@ set(SOURCES
 
 set(LIBRARIES
   libOpenFOAM
-  libfiniteVolume
   libgenericPatchFields
   libfoamCalcFunctions
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -33,6 +34,7 @@ include(../../../../src/OpenFOAM/include.cmake)
 include(../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../src/finiteVolume/include.cmake)
 include(../../../../src/postProcessing/foamCalcFunctions/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(foamCalc ${SOURCES})
 

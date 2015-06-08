@@ -31,6 +31,8 @@ set(LIBRARIES
   libcompressibleRASModels
   libcompressibleLESModels
   libdynamicMesh
+  libdynamicFvMesh
+  libtopoChangerFvMesh
   libmeshTools
 )
 
@@ -44,6 +46,7 @@ include(../../../../../src/thermophysicalModels/basic/include.cmake)
 include(../../../../../src/thermophysicalModels/specie/include.cmake)
 include_directories(../../../../../src/turbulenceModels/compressible/turbulenceModel)
 include(../../../../../src/dynamicMesh/include.cmake)
+include(../../../../../src/dynamicFvMesh/include.cmake)
 include(../../../../../src/meshTools/include.cmake)
 
 add_executable(rhoCentralDyMFoam ${SOURCES})

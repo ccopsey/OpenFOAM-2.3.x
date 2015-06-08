@@ -38,6 +38,7 @@ include(../../../../src/finiteVolume/include.cmake)
 include_directories(../../../../src/turbulenceModels/incompressible/turbulenceModel)
 include_directories(../../../../src/transportModels)
 include_directories(../../../../src/transportModels/incompressible/singlePhaseTransportModel)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(pisoFoam ${SOURCES})
 

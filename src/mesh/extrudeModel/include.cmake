@@ -17,10 +17,13 @@
 #   with ccFOAM.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/cyclicSector)
 include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/extrudeModel)
 include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/linearDirection)
 include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/linearNormal)
 include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/linearRadial)
+include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/planeExtrusion)
 include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/radial)
+include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/sector)
 include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/sigmaRadial)
 include_directories(${PROJECT_SOURCE_DIR}/src/mesh/extrudeModel/wedge)

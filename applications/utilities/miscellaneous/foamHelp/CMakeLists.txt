@@ -26,7 +26,6 @@ set(SOURCES
 set(LIBRARIES
   libOpenFOAM
   libhelpTypes
-  libfiniteVolume
   libincompressibleTurbulenceModel
   libcompressibleTurbulenceModel
   libincompressibleRASModels
@@ -35,6 +34,8 @@ set(LIBRARIES
   libcompressibleLESModels
   libradiationModels
   libfluidThermophysicalModels
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -42,6 +43,7 @@ include(../../../../src/OpenFOAM/include.cmake)
 include(../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../src/finiteVolume/include.cmake)
 include(helpTypes/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(foamHelp ${SOURCES})
 

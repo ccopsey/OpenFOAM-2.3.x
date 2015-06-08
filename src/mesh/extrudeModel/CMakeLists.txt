@@ -21,10 +21,13 @@ set(SOURCES
   extrudeModel/extrudeModel.C
   extrudeModel/extrudeModelNew.C
   linearNormal/linearNormal.C
+  planeExtrusion/planeExtrusion.C
   linearDirection/linearDirection.C
   linearRadial/linearRadial.C
   radial/radial.C
   sigmaRadial/sigmaRadial.C
+  sector/sector.C
+  cyclicSector/cyclicSector.C
   wedge/wedge.C
 )
 

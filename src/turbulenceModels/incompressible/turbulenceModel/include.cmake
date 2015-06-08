@@ -18,6 +18,5 @@
 #
 
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/turbulenceModel/.)
-include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/turbulenceModel/derivedFvPatchFields/atmBoundaryLayerInletVelocity)
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/turbulenceModel/derivedFvPatchFields/turbulentHeatFluxTemperature)
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/turbulenceModel/laminar)

@@ -18,7 +18,10 @@
 #
 
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/backwardsCompatibility/wallFunctions)
+include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/atmBoundaryLayer)
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/atmBoundaryLayerInletEpsilon)
+include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/atmBoundaryLayerInletK)
+include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/atmBoundaryLayerInletVelocity)
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/doc)
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/turbulentMixingLengthDissipationRateInlet)
 include_directories(${PROJECT_SOURCE_DIR}/src/turbulenceModels/incompressible/RAS/derivedFvPatchFields/turbulentMixingLengthFrequencyInlet)

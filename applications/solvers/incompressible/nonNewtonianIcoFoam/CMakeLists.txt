@@ -23,8 +23,9 @@ set(SOURCES
 
 set(LIBRARIES
   libOpenFOAM
-  libfiniteVolume
   libincompressibleTransportModels
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -33,6 +34,7 @@ include(../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../src/finiteVolume/include.cmake)
 include_directories(../../../../src/transportModels)
 include_directories(../../../../src/transportModels/incompressible/singlePhaseTransportModel)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(nonNewtonianIcoFoam ${SOURCES})
 

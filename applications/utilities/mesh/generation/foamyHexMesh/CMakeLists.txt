@@ -28,6 +28,11 @@ set(SOURCES
 
 set(LIBRARIES
   libOpenFOAM
+  ${CGAL_LIBRARY}
+  ${GMP_LIBRARY}
+  ${MPFR_LIBRARY}
+  ${BOOST_SYSTEM_LIBRARY}
+  ${BOOST_THREAD_LIBRARY}
   libconformalVoronoiMesh
   libmeshTools
   libdecompositionMethods

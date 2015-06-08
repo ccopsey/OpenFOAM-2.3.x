@@ -24,8 +24,9 @@ set(SOURCES
 )
 
 set(LIBRARIES
-  libfiniteVolume
   libincompressibleTransportModels
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -38,6 +39,7 @@ include_directories(../../../../../src/transportModels)
 include(../../../../../src/transportModels/twoPhaseMixture/include.cmake)
 include(../../../../../src/transportModels/incompressible/include.cmake)
 include(../../../../../src/transportModels/interfaceProperties/include.cmake)
+include(../../../../../src/meshTools/include.cmake)
 
 add_library(libdriftFluxRelativeVelocityModels ${SOURCES})
 set_target_properties(libdriftFluxRelativeVelocityModels PROPERTIES PREFIX "")

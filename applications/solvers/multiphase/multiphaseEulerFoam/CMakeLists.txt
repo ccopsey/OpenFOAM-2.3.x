@@ -33,6 +33,7 @@ set(LIBRARIES
   libincompressibleLESModels
   libincompressibleRASModels
   libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -49,6 +50,7 @@ include_directories(../../../../src/transportModels/incompressible/singlePhaseTr
 include_directories(../../../../src/turbulenceModels)
 include_directories(../../../../src/turbulenceModels/incompressible/LES/LESModel)
 include(../../../../src/turbulenceModels/LES/LESdeltas/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(multiphaseEulerFoam ${SOURCES})
 

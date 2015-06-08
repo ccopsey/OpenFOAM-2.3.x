@@ -35,6 +35,8 @@ set(SOURCES
   dsmcFields/dsmcFieldsFunctionObject.C
   pressureTools/pressureTools.C
   pressureTools/pressureToolsFunctionObject.C
+  residuals/residuals.C
+  residuals/residualsFunctionObject.C
   scalarTransport/scalarTransport.C
   scalarTransport/scalarTransportFunctionObject.C
   timeActivatedFileUpdate/timeActivatedFileUpdate.C

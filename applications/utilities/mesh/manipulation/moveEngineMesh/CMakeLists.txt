@@ -23,9 +23,10 @@ set(SOURCES
 
 set(LIBRARIES
   libOpenFOAM
-  libfiniteVolume
   libengine
   libdynamicMesh
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -33,6 +34,7 @@ include(../../../../../src/OpenFOAM/include.cmake)
 include(../../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../../src/finiteVolume/include.cmake)
 include(../../../../../src/engine/include.cmake)
+include(../../../../../src/meshTools/include.cmake)
 
 add_executable(moveEngineMesh ${SOURCES})
 

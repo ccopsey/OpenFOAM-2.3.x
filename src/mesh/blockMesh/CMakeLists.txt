@@ -28,6 +28,8 @@ set(SOURCES
   curvedEdges/lineDivide.C
   curvedEdges/BSplineEdge.C
   curvedEdges/splineEdge.C
+  gradingDescriptor/gradingDescriptor.C
+  gradingDescriptor/gradingDescriptors.C
   blockDescriptor/blockDescriptor.C
   blockDescriptor/blockDescriptorEdges.C
   block/block.C

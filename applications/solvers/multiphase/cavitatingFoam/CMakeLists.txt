@@ -29,8 +29,9 @@ set(LIBRARIES
   libincompressibleTurbulenceModel
   libincompressibleRASModels
   libincompressibleLESModels
-  libfiniteVolume
   libbarotropicCompressibilityModel
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -43,6 +44,7 @@ include(../../../../src/transportModels/incompressible/include.cmake)
 include(../../../../src/transportModels/interfaceProperties/include.cmake)
 include_directories(../../../../src/turbulenceModels/incompressible/turbulenceModel)
 include(../../../../src/thermophysicalModels/barotropicCompressibilityModel/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(cavitatingFoam ${SOURCES})
 

@@ -24,8 +24,9 @@ set(SOURCES
 set(LIBRARIES
   libOpenFOAM
   libpostCalc
-  libfiniteVolume
   libgenericPatchFields
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -33,6 +34,7 @@ include(../../../../../src/OpenFOAM/include.cmake)
 include(../../../../../src/OSspecific/POSIX/include.cmake)
 include(../../../../../src/finiteVolume/include.cmake)
 include_directories(../../../../../src/postProcessing/postCalc)
+include(../../../../../src/meshTools/include.cmake)
 
 add_executable(enstrophy ${SOURCES})
 

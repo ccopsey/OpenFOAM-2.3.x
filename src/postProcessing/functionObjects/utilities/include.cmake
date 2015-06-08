@@ -27,6 +27,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/uti
 include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/utilities/Peclet)
 include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/utilities/pressureTools)
 include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/utilities/Q)
+include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/utilities/residuals)
 include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/utilities/scalarTransport)
 include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/utilities/setTimeStep)
 include_directories(${PROJECT_SOURCE_DIR}/src/postProcessing/functionObjects/utilities/timeActivatedFileUpdate)

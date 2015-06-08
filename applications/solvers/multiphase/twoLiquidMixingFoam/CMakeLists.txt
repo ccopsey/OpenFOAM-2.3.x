@@ -29,6 +29,7 @@ set(LIBRARIES
   libincompressibleRASModels
   libincompressibleLESModels
   libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -41,6 +42,7 @@ include_directories(../../../../src/transportModels)
 include(../../../../src/transportModels/incompressible/include.cmake)
 include(../../../../src/transportModels/interfaceProperties/include.cmake)
 include_directories(../../../../src/turbulenceModels/incompressible/turbulenceModel)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(twoLiquidMixingFoam ${SOURCES})
 

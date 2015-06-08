@@ -39,7 +39,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/sub
 include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/kinematic/injectionModel/drippingInjection)
 include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/kinematic/injectionModel/injectionModel)
 include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/kinematic/injectionModel/injectionModelList)
-include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/kinematic/injectionModel/removeInjection)
+include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/kinematic/injectionModel/patchInjection)
 include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/thermo/filmRadiationModel/constantRadiation)
 include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/thermo/filmRadiationModel/filmRadiationModel)
 include_directories(${PROJECT_SOURCE_DIR}/src/regionModels/surfaceFilmModels/submodels/thermo/filmRadiationModel/noRadiation)

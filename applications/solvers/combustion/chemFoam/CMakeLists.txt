@@ -23,7 +23,6 @@ set(SOURCES
 
 set(LIBRARIES
   libOpenFOAM
-  libfiniteVolume
   libcompressibleTurbulenceModel
   libcompressibleRASModels
   libreactionThermophysicalModels
@@ -32,6 +31,8 @@ set(LIBRARIES
   libODE
   libthermophysicalFunctions
   libspecie
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -46,6 +47,7 @@ include(../../../../src/thermophysicalModels/basic/include.cmake)
 include(../../../../src/thermophysicalModels/laminarFlameSpeed/include.cmake)
 include(../../../../src/ODE/include.cmake)
 include(../../../../src/thermophysicalModels/chemistryModel/include.cmake)
+include(../../../../src/meshTools/include.cmake)
 
 add_executable(chemFoam ${SOURCES})
 

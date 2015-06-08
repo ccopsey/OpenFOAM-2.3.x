@@ -28,11 +28,12 @@ set(LIBRARIES
   libcompressibleLESModels
   libLESdeltas
   libreactionThermophysicalModels
-  libfiniteVolume
   libgenericPatchFields
   libspecie
   libfluidThermophysicalModels
   libsolidThermo
+  libfiniteVolume
+  libmeshTools
 )
 
 include(include.cmake)
@@ -45,6 +46,7 @@ include(../../../../../src/thermophysicalModels/specie/include.cmake)
 include(../../../../../src/thermophysicalModels/reactionThermo/include.cmake)
 include(../../../../../src/thermophysicalModels/basic/include.cmake)
 include(../../../../../src/thermophysicalModels/solidThermo/include.cmake)
+include(../../../../../src/meshTools/include.cmake)
 
 add_executable(wallHeatFlux ${SOURCES})
 

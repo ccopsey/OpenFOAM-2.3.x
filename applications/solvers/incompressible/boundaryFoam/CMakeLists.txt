@@ -39,6 +39,7 @@ include_directories(../../../../src/turbulenceModels)
 include_directories(../../../../src/turbulenceModels/incompressible/RAS/RASModel)
 include_directories(../../../../src/transportModels)
 include_directories(../../../../src/transportModels/incompressible/singlePhaseTransportModel)
+include(../../../../src/meshTools/include.cmake)
 include(../../../../src/sampling/include.cmake)
 
 add_executable(boundaryFoam ${SOURCES})
